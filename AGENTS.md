@@ -173,9 +173,20 @@ src/
 ├── content/
 │   ├── testimonials.ts         # 36 testimonials with IDs '1'–'36'
 │   └── blog/                   # MDX blog posts with frontmatter
-│       ├── what-is-direct-response-copywriting.mdx
-│       ├── copywriting-vs-content-writing.mdx
-│       └── what-is-a-swipe-file.mdx
+│       ├── what-is-direct-response-copywriting.mdx   # Tier 0 (original)
+│       ├── copywriting-vs-content-writing.mdx         # Tier 0 (original)
+│       ├── what-is-a-swipe-file.mdx                   # Tier 0 (original)
+│       ├── what-is-a-vsl.mdx                          # Tier 1 — SEO pillar
+│       ├── how-to-write-a-sales-page.mdx              # Tier 1 — SEO pillar
+│       ├── what-is-a-sales-funnel.mdx                 # Tier 1 — SEO pillar
+│       ├── email-copywriting.mdx                      # Tier 1 — SEO pillar
+│       ├── landing-page-copywriting.mdx               # Tier 1 — SEO pillar
+│       ├── health-supplement-copywriting.mdx           # Tier 2 — Industry niche
+│       ├── clickbank-copywriting.mdx                  # Tier 2 — Industry niche
+│       ├── financial-copywriting.mdx                  # Tier 2 — Industry niche
+│       ├── ai-copywriting.mdx                         # Tier 3 — Thought leadership
+│       ├── how-to-hire-a-copywriter.mdx               # Tier 3 — Thought leadership
+│       └── 523m-copywriting-campaign.mdx              # Tier 3 — Narrative case study
 │
 └── lib/
     ├── constants.ts            # Site URL, name, nav links, stats, contact info
@@ -244,7 +255,7 @@ All 12 portfolio items link to the same shared Google Drive folder. There are no
 
 ```bash
 npm run dev          # Start dev server (port 3000)
-npm run build        # Production build (currently 36 static pages)
+npm run build        # Production build (currently 47 static pages)
 npm run start        # Serve production build
 npm run lint         # ESLint
 ```
@@ -263,11 +274,11 @@ Always clear `.next` after making changes to `globals.css`, adding new Tailwind 
 
 ### Build Output
 
-The build generates **36 static pages**:
+The build generates **47 static pages**:
 - 1 homepage, about, contact, testimonials, portfolio, not-found
 - 9 service detail pages + 1 services listing
 - 6 industry detail pages + 1 industries listing
-- 3 blog posts + 1 blog listing
+- 14 blog posts + 1 blog listing
 - 2 case study pages + 1 case studies listing
 - robots.txt, sitemap.xml
 - 1 API route (contact form)
@@ -355,6 +366,52 @@ Site constants are centralized in `src/lib/constants.ts`:
 
 ---
 
+## Blog Content Strategy
+
+### Current Content (14 posts)
+
+Posts are organized in tiers that build topical authority clusters linking to service/industry pages:
+
+| Tier | Purpose | Posts |
+|------|---------|-------|
+| Tier 0 | Original launch posts | what-is-direct-response-copywriting, copywriting-vs-content-writing, what-is-a-swipe-file |
+| Tier 1 | SEO pillar pages | what-is-a-vsl, how-to-write-a-sales-page, what-is-a-sales-funnel, email-copywriting, landing-page-copywriting |
+| Tier 2 | Industry niche authority | health-supplement-copywriting, clickbank-copywriting, financial-copywriting |
+| Tier 3 | Thought leadership | ai-copywriting, how-to-hire-a-copywriter, 523m-copywriting-campaign |
+
+### Blog Post Format
+
+All MDX posts use consistent frontmatter and custom components:
+- **Frontmatter:** title, description, date, author, image, imageAlt, tags, readingTime
+- **10 FAQs** per post (FAQPage JSON-LD generated automatically)
+- **Custom MDX components:** KeyTakeaways, DefinitionBox, ComparisonTable, ExpertQuote, FAQSection
+- **Internal cross-linking:** Each post links to 5-10 related posts + relevant service/industry pages + /contact
+
+### SEO Research Data
+
+Competitive SEO analysis is stored at `/Users/robpalmer/Desktop/RobPalmer.com SEO Report/`:
+- 24 competitor folders with Semrush data (Domain Overview PDFs, Organic Search Positions XLSX, Top Pages, Backlinks)
+- `RobPalmer_SEO_Keyword_Strategy.xlsx` — Master keyword strategy spreadsheet (3,659 keywords, 7 sheets)
+- Key finding: robpalmer.com has Authority 5/100 with near-zero organic visibility; competitive bar is low
+
+### Phase 2 Content (Planned — Keyword-Driven)
+
+9 new posts to fill keyword gaps identified in SEO analysis:
+
+| Post | Primary KW Volume | Priority |
+|------|-------------------|----------|
+| Cold Email Copywriting | 1,600 | HIGH |
+| Website Copywriting | 1,600 | HIGH |
+| UX Copywriting | 480 | MEDIUM |
+| Conversion Copywriting | 390 | HIGH |
+| Facebook Ad Copywriting | 210 | HIGH |
+| Copywriting Bullet Points | 170 | QUICK WIN |
+| Famous Copywriters | 170 | HIGH |
+| Headline Formulas | 110 | HIGH |
+| Direct Mail Copywriting | 110 | QUICK WIN |
+
+---
+
 ## Pending / Future Work
 
 - Wire contact form API route to actual email service (currently logs to console)
@@ -363,3 +420,5 @@ Site constants are centralized in `src/lib/constants.ts`:
 - Cross-browser testing
 - Google Search Console setup
 - Vercel deployment with custom domain
+- Write Phase 2 blog content (9 keyword-driven posts — see Blog Content Strategy)
+- Build out additional topical clusters around highest-volume keyword opportunities
