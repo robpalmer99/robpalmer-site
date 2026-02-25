@@ -1,26 +1,69 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@plugin "@tailwindcss/typography";
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Ink: near-black for authority */
+  --color-ink-950: #0A0A0F;
+  --color-ink-900: #141420;
+  --color-ink-800: #1E1E2E;
+  --color-ink-700: #2D2D40;
+
+  /* Gold: burnished accent, signals ROI/premium */
+  --color-gold-50: #FFF9EB;
+  --color-gold-100: #FFF0CC;
+  --color-gold-200: #FFE099;
+  --color-gold-400: #F5B731;
+  --color-gold-500: #D99E1B;
+  --color-gold-600: #B8840F;
+
+  /* Paper: warm neutrals */
+  --color-paper-50: #FAFAF8;
+  --color-paper-100: #F5F4F0;
+  --color-paper-200: #ECEAE3;
+  --color-paper-300: #D4D1C7;
+  --color-paper-400: #A8A49A;
+  --color-paper-600: #6B6760;
+  --color-paper-800: #3D3A35;
+
+  /* Fonts */
+  --font-heading: var(--font-inter);
+  --font-body: var(--font-lora);
+
+  /* Base font size slightly larger for long-form readability */
+  --text-base: 1.0625rem;
+  --text-base--line-height: 1.75rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    background-color: var(--color-paper-50);
+    color: var(--color-paper-800);
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-ink-950);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--color-gold-200);
+  color: var(--color-ink-950);
+}
+
+/* Prose customization for MDX blog content */
+.prose {
+  --tw-prose-body: var(--color-paper-800);
+  --tw-prose-headings: var(--color-ink-950);
+  --tw-prose-links: var(--color-gold-600);
+  --tw-prose-bold: var(--color-ink-950);
+  --tw-prose-quotes: var(--color-ink-700);
+  --tw-prose-quote-borders: var(--color-gold-400);
 }
