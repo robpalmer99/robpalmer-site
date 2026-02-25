@@ -27,7 +27,7 @@ export function ClientLogoBar({ variant = 'dark', className }: ClientLogoBarProp
         <p
           className={cn(
             'text-center text-sm font-heading uppercase tracking-wider mb-8',
-            variant === 'dark' ? 'text-paper-400' : 'text-paper-400'
+            variant === 'dark' ? 'text-paper-400' : 'text-paper-600'
           )}
         >
           Trusted by Fortune 500 brands and top direct-response marketers

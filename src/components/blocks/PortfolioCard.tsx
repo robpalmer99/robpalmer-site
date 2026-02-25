@@ -54,6 +54,7 @@ export function PortfolioCard({ item }: PortfolioCardProps) {
         {item.result && (
           <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-gold-50 px-3 py-1 text-xs font-heading font-bold text-gold-700 border border-gold-200">
             <svg
+              aria-hidden="true"
               className="w-3.5 h-3.5 text-gold-500"
               fill="none"
               stroke="currentColor"
@@ -74,6 +75,7 @@ export function PortfolioCard({ item }: PortfolioCardProps) {
         <div className="mt-4 flex items-center gap-1 text-sm font-heading font-semibold text-gold-500 group-hover:text-gold-600 transition-colors">
           View sample
           <svg
+            aria-hidden="true"
             className="w-4 h-4 transition-transform group-hover:translate-x-0.5"
             fill="none"
             stroke="currentColor"

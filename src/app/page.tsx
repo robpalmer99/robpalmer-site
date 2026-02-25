@@ -96,6 +96,8 @@ export default function HomePage() {
                 title={service.title}
                 slug={service.slug}
                 description={service.shortDescription}
+                image={service.heroImage}
+                imageAlt={service.heroImageAlt}
               />
             ))}
           </div>

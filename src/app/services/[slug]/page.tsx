@@ -34,6 +34,9 @@ export async function generateMetadata({
   return {
     title: service.metaTitle,
     description: service.metaDescription,
+    alternates: {
+      canonical: `${SITE_URL}/services/${slug}`,
+    },
     openGraph: {
       images: [{ url: service.heroImage, width: 800, height: 400 }],
     },
@@ -232,6 +235,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                       {item.title}
                     </span>
                     <svg
+                      aria-hidden="true"
                       className="w-4 h-4 text-paper-500 group-hover:text-gold-400 transition-colors"
                       fill="none"
                       stroke="currentColor"

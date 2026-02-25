@@ -51,6 +51,7 @@ export function ServiceCard({
         <div className="mt-4 flex items-center gap-1 text-sm font-heading font-semibold text-gold-500 group-hover:text-gold-600 transition-colors">
           Learn more
           <svg
+            aria-hidden="true"
             className="w-4 h-4 transition-transform group-hover:translate-x-1"
             fill="none"
             stroke="currentColor"

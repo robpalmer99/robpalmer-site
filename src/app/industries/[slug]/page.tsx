@@ -32,6 +32,9 @@ export async function generateMetadata({ params }: IndustryPageProps): Promise<M
   return {
     title: industry.metaTitle,
     description: industry.metaDescription,
+    alternates: {
+      canonical: `${SITE_URL}/industries/${slug}`,
+    },
     openGraph: {
       images: [{ url: industry.heroImage, width: 800, height: 400 }],
     },
@@ -218,6 +221,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
                       {item.title}
                     </span>
                     <svg
+                      aria-hidden="true"
                       className="w-4 h-4 text-paper-500 group-hover:text-gold-400 transition-colors"
                       fill="none"
                       stroke="currentColor"

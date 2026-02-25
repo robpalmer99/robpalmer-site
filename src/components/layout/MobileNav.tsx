@@ -1,5 +1,7 @@
 'use client'
 
+import { useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
 import { NAV_LINKS } from '@/lib/constants'
@@ -11,6 +13,13 @@ interface MobileNavProps {
 }
 
 export function MobileNav({ isOpen, onClose }: MobileNavProps) {
+  const pathname = usePathname()
+
+  // Auto-close on route change (e.g. browser back/forward)
+  useEffect(() => {
+    onClose()
+  }, [pathname, onClose])
+
   return (
     <div
       className={cn(
@@ -18,7 +27,7 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
         isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
       )}
     >
-      <nav className="px-4 py-4 space-y-1">
+      <nav className="px-4 py-4 space-y-1" aria-label="Mobile navigation">
         {NAV_LINKS.map((link) => (
           <Link
             key={link.href}

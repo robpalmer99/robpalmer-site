@@ -34,6 +34,7 @@ export function TestimonialCard({
     >
       {/* Quote mark */}
       <svg
+        aria-hidden="true"
         className={cn(
           'w-8 h-8 mb-4',
           variant === 'featured' ? 'text-gold-400' : 'text-gold-400/60'

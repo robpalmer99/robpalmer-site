@@ -75,7 +75,7 @@ export function Footer() {
               className="inline-flex items-center gap-2 text-sm font-heading font-semibold text-gold-400 hover:text-gold-500 transition-colors"
             >
               Book a Strategy Call
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg aria-hidden="true" className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
