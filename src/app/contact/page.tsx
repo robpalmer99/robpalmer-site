@@ -38,6 +38,7 @@ export default function ContactPage() {
                   alt="Rob Palmer"
                   width={64}
                   height={64}
+                  sizes="64px"
                   className="w-16 h-16 rounded-full object-cover"
                 />
                 <div>

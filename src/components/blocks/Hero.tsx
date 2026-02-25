@@ -65,6 +65,7 @@ export function Hero({
                   alt={image.alt}
                   width={288}
                   height={288}
+                  sizes="(max-width: 640px) 224px, (max-width: 1024px) 256px, 288px"
                   className="w-56 sm:w-64 lg:w-72 h-auto rounded-xl"
                   priority
                 />

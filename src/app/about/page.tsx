@@ -43,6 +43,7 @@ export default function AboutPage() {
                   alt="Rob Palmer - Direct-Response Copywriter"
                   width={240}
                   height={240}
+                  sizes="(max-width: 640px) 176px, 224px"
                   className="w-44 h-44 sm:w-56 sm:h-56 rounded-xl object-cover shadow-lg"
                   priority
                 />

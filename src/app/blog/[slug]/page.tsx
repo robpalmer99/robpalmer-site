@@ -132,6 +132,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   alt={post.meta.heroAlt || post.meta.title}
                   width={1200}
                   height={630}
+                  sizes="(max-width: 768px) 100vw, 768px"
                   className="w-full h-auto rounded-xl object-cover"
                   priority
                 />
@@ -175,6 +176,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   alt="Rob Palmer"
                   width={64}
                   height={64}
+                  sizes="64px"
                   className="w-16 h-16 rounded-full object-cover shrink-0"
                 />
                 <div>

@@ -60,6 +60,7 @@ export function ClientLogoBar({ variant = 'dark', className }: ClientLogoBarProp
                 alt={logo.name}
                 width={logo.width}
                 height={logo.height}
+                sizes="120px"
                 className={cn(
                   'h-6 sm:h-8 w-auto object-contain',
                   variant === 'dark' ? 'brightness-0 invert' : ''
