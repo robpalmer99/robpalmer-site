@@ -89,7 +89,7 @@ export function TestimonialCard({
           <div
             className={cn(
               'text-xs',
-              variant === 'featured' ? 'text-paper-400' : 'text-paper-400'
+              variant === 'featured' ? 'text-paper-400' : 'text-paper-600'
             )}
           >
             {testimonial.title}

@@ -30,7 +30,7 @@ export function Header() {
       )}
     >
       <Container>
-        <nav className="flex items-center justify-between h-16 sm:h-20">
+        <nav aria-label="Main navigation" className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <Link href="/" className="block">
             <Logo className="h-10 sm:h-11 w-auto" variant="light" />

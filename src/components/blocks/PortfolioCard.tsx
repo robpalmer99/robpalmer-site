@@ -72,7 +72,7 @@ export function PortfolioCard({ item }: PortfolioCardProps) {
         )}
 
         {/* View sample link */}
-        <div className="mt-4 flex items-center gap-1 text-sm font-heading font-semibold text-gold-500 group-hover:text-gold-600 transition-colors">
+        <div className="mt-4 flex items-center gap-1 text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-500 transition-colors">
           View sample
           <svg
             aria-hidden="true"

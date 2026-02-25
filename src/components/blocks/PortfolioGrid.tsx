@@ -21,7 +21,7 @@ export function PortfolioGrid({ items }: PortfolioGridProps) {
   return (
     <>
       {/* Filter Tabs */}
-      <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+      <div role="group" aria-label="Filter portfolio by category" className="flex flex-wrap items-center justify-center gap-2 mb-10">
         {portfolioCategories.map((category) => {
           const count =
             category === 'All'
@@ -31,10 +31,11 @@ export function PortfolioGrid({ items }: PortfolioGridProps) {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
+              aria-pressed={activeCategory === category}
               className={cn(
                 'inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-heading font-semibold transition-all duration-200',
                 activeCategory === category
-                  ? 'bg-gold-500 text-white shadow-sm'
+                  ? 'bg-ink-950 text-white shadow-sm'
                   : 'bg-paper-100 text-paper-600 hover:bg-paper-200 hover:text-ink-950'
               )}
             >
@@ -43,7 +44,7 @@ export function PortfolioGrid({ items }: PortfolioGridProps) {
                 className={cn(
                   'text-xs rounded-full px-1.5 py-0.5 min-w-[1.25rem] text-center',
                   activeCategory === category
-                    ? 'bg-gold-600 text-gold-100'
+                    ? 'bg-ink-700 text-paper-200'
                     : 'bg-paper-200 text-paper-500'
                 )}
               >
@@ -54,11 +55,18 @@ export function PortfolioGrid({ items }: PortfolioGridProps) {
         })}
       </div>
 
-      {/* Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filteredItems.map((item) => (
-          <PortfolioCard key={item.slug} item={item} />
-        ))}
+      {/* Grid with aria-live for filter changes */}
+      <div aria-live="polite" aria-atomic="false">
+        <p className="sr-only">
+          {filteredItems.length === 0
+            ? 'No portfolio items in this category.'
+            : `Showing ${filteredItems.length} portfolio ${filteredItems.length === 1 ? 'item' : 'items'}.`}
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredItems.map((item) => (
+            <PortfolioCard key={item.slug} item={item} />
+          ))}
+        </div>
       </div>
 
       {/* Empty state */}

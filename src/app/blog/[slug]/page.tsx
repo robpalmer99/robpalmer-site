@@ -142,11 +142,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             {/* Post Meta */}
             <div className="flex flex-wrap items-center gap-3 mb-8 pb-8 border-b border-paper-200">
               <Badge variant="gold">{post.meta.category}</Badge>
-              <span className="text-sm text-paper-400 font-heading">
+              <span className="text-sm text-paper-600 font-heading">
                 {post.meta.readingTime}
               </span>
-              <span className="text-sm text-paper-400 font-heading">•</span>
-              <time className="text-sm text-paper-400 font-heading">
+              <span className="text-sm text-paper-600 font-heading">•</span>
+              <time className="text-sm text-paper-600 font-heading">
                 {formatDate(post.meta.date)}
               </time>
             </div>

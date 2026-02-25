@@ -38,8 +38,8 @@ export function ContactForm() {
 
   if (status === 'sent') {
     return (
-      <div className="bg-green-50 border border-green-200 rounded-xl p-8 text-center">
-        <svg className="w-12 h-12 text-green-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div role="status" aria-live="polite" className="bg-green-50 border border-green-200 rounded-xl p-8 text-center">
+        <svg aria-hidden="true" className="w-12 h-12 text-green-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
         <h3 className="font-heading text-lg font-bold text-ink-950 mb-2">Message Sent</h3>
@@ -51,58 +51,62 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form onSubmit={handleSubmit} className="space-y-5" noValidate>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label htmlFor="name" className="block font-heading text-sm font-medium text-ink-950 mb-1.5">
-            Name
+            Name <span aria-hidden="true" className="text-red-400">*</span>
           </label>
           <input
             type="text"
             id="name"
             name="name"
             required
-            className="w-full px-4 py-3 rounded-lg border border-paper-200 bg-white text-ink-950 font-body text-sm focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent transition-shadow"
+            aria-required="true"
+            className="w-full px-4 py-3 rounded-lg border border-paper-200 bg-white text-ink-950 font-body text-sm transition-shadow"
             placeholder="Your name"
           />
         </div>
         <div>
           <label htmlFor="email" className="block font-heading text-sm font-medium text-ink-950 mb-1.5">
-            Email
+            Email <span aria-hidden="true" className="text-red-400">*</span>
           </label>
           <input
             type="email"
             id="email"
             name="email"
             required
-            className="w-full px-4 py-3 rounded-lg border border-paper-200 bg-white text-ink-950 font-body text-sm focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent transition-shadow"
+            aria-required="true"
+            className="w-full px-4 py-3 rounded-lg border border-paper-200 bg-white text-ink-950 font-body text-sm transition-shadow"
             placeholder="you@example.com"
           />
         </div>
       </div>
       <div>
         <label htmlFor="subject" className="block font-heading text-sm font-medium text-ink-950 mb-1.5">
-          Subject
+          Subject <span aria-hidden="true" className="text-red-400">*</span>
         </label>
         <input
           type="text"
           id="subject"
           name="subject"
           required
-          className="w-full px-4 py-3 rounded-lg border border-paper-200 bg-white text-ink-950 font-body text-sm focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent transition-shadow"
+          aria-required="true"
+          className="w-full px-4 py-3 rounded-lg border border-paper-200 bg-white text-ink-950 font-body text-sm transition-shadow"
           placeholder="What's this about?"
         />
       </div>
       <div>
         <label htmlFor="message" className="block font-heading text-sm font-medium text-ink-950 mb-1.5">
-          Message
+          Message <span aria-hidden="true" className="text-red-400">*</span>
         </label>
         <textarea
           id="message"
           name="message"
           required
+          aria-required="true"
           rows={5}
-          className="w-full px-4 py-3 rounded-lg border border-paper-200 bg-white text-ink-950 font-body text-sm focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent transition-shadow resize-y"
+          className="w-full px-4 py-3 rounded-lg border border-paper-200 bg-white text-ink-950 font-body text-sm transition-shadow resize-y"
           placeholder="Tell me about your project..."
         />
       </div>
@@ -110,11 +114,13 @@ export function ContactForm() {
         <Button type="submit" disabled={status === 'sending'}>
           {status === 'sending' ? 'Sending...' : 'Send Message'}
         </Button>
-        {status === 'error' && (
-          <p className="mt-3 text-sm text-red-500 font-body">
-            Something went wrong. Please try again or book a call instead.
-          </p>
-        )}
+        <div aria-live="assertive" role="alert">
+          {status === 'error' && (
+            <p className="mt-3 text-sm text-red-500 font-body">
+              Something went wrong. Please try again or book a call instead.
+            </p>
+          )}
+        </div>
       </div>
     </form>
   )

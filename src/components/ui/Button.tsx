@@ -32,7 +32,7 @@ export function Button({
     outline:
       'border-2 border-gold-400 text-gold-400 hover:bg-gold-400 hover:text-ink-950 font-heading font-semibold',
     ghost:
-      'text-gold-500 hover:text-gold-600 underline-offset-4 hover:underline font-heading font-medium',
+      'text-gold-600 hover:text-gold-500 underline-offset-4 hover:underline font-heading font-medium',
   }
 
   const sizes = {

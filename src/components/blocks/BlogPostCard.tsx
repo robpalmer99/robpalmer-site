@@ -51,7 +51,7 @@ export function BlogPostCard({
         <div className="flex items-center gap-3 mb-3">
           <Badge variant="gold">{category}</Badge>
           {readingTime && (
-            <span className="text-xs text-paper-400 font-heading">{readingTime}</span>
+            <span className="text-xs text-paper-600 font-heading">{readingTime}</span>
           )}
         </div>
         <h3 className="font-heading text-lg font-bold text-ink-950 group-hover:text-gold-600 transition-colors leading-snug">
@@ -61,8 +61,8 @@ export function BlogPostCard({
           {excerpt}
         </p>
         <div className="mt-4 flex items-center justify-between">
-          <time className="text-xs text-paper-400 font-heading">{formatDate(date)}</time>
-          <span className="text-sm font-heading font-semibold text-gold-500 group-hover:text-gold-600 transition-colors">
+          <time className="text-xs text-paper-600 font-heading">{formatDate(date)}</time>
+          <span className="text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-500 transition-colors">
             Read more →
           </span>
         </div>

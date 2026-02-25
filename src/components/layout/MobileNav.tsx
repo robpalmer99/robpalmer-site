@@ -24,8 +24,9 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
     <div
       className={cn(
         'lg:hidden bg-ink-950 border-t border-ink-700 overflow-hidden transition-all duration-300',
-        isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+        isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
       )}
+      aria-hidden={!isOpen}
     >
       <nav className="px-4 py-4 space-y-1" aria-label="Mobile navigation">
         {NAV_LINKS.map((link) => (
@@ -33,6 +34,7 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
             key={link.href}
             href={link.href}
             onClick={onClose}
+            tabIndex={isOpen ? 0 : -1}
             className="block py-3 px-4 font-heading text-base font-medium text-paper-300 hover:text-gold-400 hover:bg-ink-800 rounded-lg transition-colors"
           >
             {link.label}
