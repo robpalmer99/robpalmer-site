@@ -5,12 +5,16 @@ import { Container } from '@/components/ui/Container'
 import { ServiceCard } from '@/components/blocks/ServiceCard'
 import { CTABanner } from '@/components/blocks/CTABanner'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
+import { SITE_URL } from '@/lib/constants'
 import { services } from './_data/services'
 
 export const metadata: Metadata = {
   title: 'Direct-Response Copywriting Services',
   description:
     'Expert direct-response copywriting services: VSLs, sales pages, email sequences, ads, landing pages, funnels, and upsells. $523M+ in tracked results.',
+  alternates: {
+    canonical: `${SITE_URL}/services`,
+  },
 }
 
 export default function ServicesPage() {

@@ -5,12 +5,16 @@ import { Container } from '@/components/ui/Container'
 import { TestimonialCard } from '@/components/blocks/TestimonialCard'
 import { CTABanner } from '@/components/blocks/CTABanner'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
+import { SITE_URL } from '@/lib/constants'
 import { testimonials } from '@/content/testimonials'
 
 export const metadata: Metadata = {
   title: 'Client Testimonials',
   description:
     'Read what clients say about working with Rob Palmer. 36+ testimonials from CEOs, marketing directors, and top direct-response marketers.',
+  alternates: {
+    canonical: `${SITE_URL}/testimonials`,
+  },
 }
 
 export default function TestimonialsPage() {

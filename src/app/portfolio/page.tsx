@@ -7,12 +7,16 @@ import { CTABanner } from '@/components/blocks/CTABanner'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { Button } from '@/components/ui/Button'
 import { PortfolioGrid } from '@/components/blocks/PortfolioGrid'
+import { SITE_URL } from '@/lib/constants'
 import { portfolioItems } from './_data/portfolio'
 
 export const metadata: Metadata = {
   title: 'Portfolio | Direct-Response Copywriting Work Samples',
   description:
     'Browse VSL scripts, sales pages, email sequences, and full-funnel copy samples from Rob Palmer — veteran direct-response copywriter with $523M+ in tracked results.',
+  alternates: {
+    canonical: `${SITE_URL}/portfolio`,
+  },
 }
 
 export default function PortfolioPage() {

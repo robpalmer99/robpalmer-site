@@ -11,11 +11,15 @@ import { SpecialtyGrid } from '@/components/blocks/SpecialtyGrid'
 import { AboutTestimonials } from '@/components/blocks/AboutTestimonials'
 import { CTABanner } from '@/components/blocks/CTABanner'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
+import { SITE_URL } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'About Rob Palmer | Direct-Response Copywriter',
+  title: 'About | Veteran Direct-Response Copywriter',
   description:
     'Rob Palmer is a veteran direct-response copywriter with 30+ years of experience, Fortune 500 clients including Apple and IBM, and $523M+ in tracked results. Pioneer of blogging (1993) and AI-assisted copywriting.',
+  alternates: {
+    canonical: `${SITE_URL}/about`,
+  },
 }
 
 export default function AboutPage() {

@@ -64,6 +64,21 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
     serviceType: 'Direct-Response Copywriting',
   }
 
+  const faqSchema = industry.faqs.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: industry.faqs.map((faq) => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: faq.answer,
+          },
+        })),
+      }
+    : null
+
   // Get testimonials for this industry
   const industryTestimonials = industry.testimonialIds
     .map((id) => testimonials.find((t) => t.id === id))
@@ -72,6 +87,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
   return (
     <>
       <JsonLd data={serviceSchema} />
+      {faqSchema && <JsonLd data={faqSchema} />}
       <Hero
         variant="page"
         headline={industry.headline}

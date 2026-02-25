@@ -4,11 +4,15 @@ import { Section } from '@/components/ui/Section'
 import { Container } from '@/components/ui/Container'
 import { CTABanner } from '@/components/blocks/CTABanner'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
+import { SITE_URL } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'Apple UK Direct Mail Campaign | Case Study',
   description:
     'How Rob Palmer created a direct mail campaign for Apple Computer UK that beat the control through research-driven direct-response copywriting.',
+  alternates: {
+    canonical: `${SITE_URL}/case-studies/apple-direct-mail-campaign`,
+  },
 }
 
 export default function AppleCaseStudyPage() {

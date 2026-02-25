@@ -5,12 +5,16 @@ import { Container } from '@/components/ui/Container'
 import { CTABanner } from '@/components/blocks/CTABanner'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { BlogPostCard } from '@/components/blocks/BlogPostCard'
+import { SITE_URL } from '@/lib/constants'
 import { getAllBlogPosts } from '@/lib/mdx'
 
 export const metadata: Metadata = {
   title: 'Blog | Direct-Response Copywriting Insights',
   description:
     'Expert insights on direct-response copywriting, VSLs, sales funnels, email marketing, and AI-assisted copywriting from a 30-year veteran.',
+  alternates: {
+    canonical: `${SITE_URL}/blog`,
+  },
 }
 
 export default function BlogPage() {

@@ -4,11 +4,15 @@ import { Section } from '@/components/ui/Section'
 import { Container } from '@/components/ui/Container'
 import { CTABanner } from '@/components/blocks/CTABanner'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
+import { SITE_URL } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'The $523M Secret Weapon Campaign | Belron/Safelite Case Study',
   description:
     'How Rob Palmer created a direct-response campaign for Belron/Safelite that generated $523 million in sales over 9 years — after 5 previous copywriters had failed.',
+  alternates: {
+    canonical: `${SITE_URL}/case-studies/belron-safelite-523m-campaign`,
+  },
 }
 
 export default function BelronCaseStudyPage() {

@@ -6,11 +6,15 @@ import { Container } from '@/components/ui/Container'
 import { CalendlyEmbed } from '@/components/integrations/CalendlyEmbed'
 import { ContactForm } from '@/components/blocks/ContactForm'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
+import { SITE_URL } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'Book a Call | Contact Rob Palmer',
   description:
     'Book a free strategy call with Rob Palmer. Discuss your direct-response copywriting project and how to increase your conversions and revenue.',
+  alternates: {
+    canonical: `${SITE_URL}/contact`,
+  },
 }
 
 export default function ContactPage() {

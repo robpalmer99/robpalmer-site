@@ -5,11 +5,15 @@ import { Container } from '@/components/ui/Container'
 import { CaseStudyCard } from '@/components/blocks/CaseStudyCard'
 import { CTABanner } from '@/components/blocks/CTABanner'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
+import { SITE_URL } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'Case Studies',
   description:
     'Read detailed case studies showing how Rob Palmer has generated $523M+ in tracked results through direct-response copywriting.',
+  alternates: {
+    canonical: `${SITE_URL}/case-studies`,
+  },
 }
 
 export default function CaseStudiesPage() {

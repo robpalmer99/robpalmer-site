@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { getAllServiceSlugs } from '@/app/services/_data/services'
 import { getAllIndustrySlugs } from '@/app/industries/_data/industries'
+import { getAllBlogPosts } from '@/lib/mdx'
 
 const BASE_URL = 'https://robpalmer.com'
 
@@ -45,5 +46,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  return [...staticPages, ...servicePages, ...industryPages]
+  const blogPages: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => ({
+    url: `${BASE_URL}/blog/${post.slug}`,
+    lastModified: post.date ? new Date(post.date) : now,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
+  return [...staticPages, ...servicePages, ...industryPages, ...blogPages]
 }

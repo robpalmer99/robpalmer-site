@@ -79,6 +79,10 @@ const personJsonLd = {
   },
   email: 'rob@robpalmer.com',
   telephone: '+14158549589',
+  sameAs: [
+    'https://www.linkedin.com/in/robpalmer/',
+    'https://en.wikipedia.org/wiki/Justin_Hall#cite_note-2',
+  ],
 }
 
 const websiteJsonLd = {

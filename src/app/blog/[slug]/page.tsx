@@ -77,6 +77,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     headline: post.meta.title,
     description: post.meta.description,
     datePublished: post.meta.date,
+    dateModified: post.meta.date,
     author: {
       '@type': 'Person',
       name: 'Rob Palmer',
