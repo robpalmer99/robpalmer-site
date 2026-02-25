@@ -46,8 +46,42 @@ Portfolio and marketing website for **Rob Palmer**, a veteran direct-response co
 - **Image cards:** h-40 image container, object-cover, group-hover:scale-105 transition
 - **Badges:** Three variants — `default` (paper), `gold`, `dark`
 - **Sections:** Three variants — `default` (paper-50 bg), `alt` (paper-100 bg), `dark` (ink-950 bg)
-- **CTAs:** Gold-500 bg with ink-950 text, or outline variant
+- **CTAs:** Gold-400 bg with ink-950 text, or outline variant
 - **External links:** Open external-link SVG icon, target="_blank" with rel="noopener noreferrer"
+- **Card link text:** Uses `text-gold-600` (not gold-500) for WCAG AA contrast compliance
+- **Meta text:** Uses `text-paper-600` (not paper-400) for WCAG AA contrast compliance
+
+---
+
+## Accessibility
+
+The site follows WCAG 2.1 AA guidelines with the following key implementations:
+
+- **Skip navigation:** "Skip to main content" link in root layout, targets `#main-content` on `<main>`
+- **Focus indicators:** Global `focus-visible` outlines (2px gold-400) on all interactive elements via `globals.css`
+- **Reduced motion:** `@media (prefers-reduced-motion: reduce)` disables all animations/transitions; smooth scroll is conditional on `prefers-reduced-motion: no-preference`
+- **ARIA live regions:** ContactForm success/error messages use `aria-live`; portfolio filter results announced via `aria-live="polite"`
+- **FAQ accordion:** Full ARIA pattern with `aria-expanded`, `aria-controls`, panel IDs, `aria-labelledby`, and `hidden` attribute
+- **MobileNav:** Hidden from accessibility tree when closed (`aria-hidden`, `tabIndex={-1}`, `pointer-events-none`)
+- **Form fields:** Visual `*` required indicators with `aria-required="true"`
+- **Color contrast:** All text meets 4.5:1 ratio (AA) — gold-600 for link text, paper-600 for meta text
+- **Navigation landmarks:** `aria-label` on main nav, mobile nav, portfolio filter group
+- **Decorative elements:** SVG icons use `aria-hidden="true"`
+
+---
+
+## Security
+
+### Security Headers (in `next.config.ts`)
+
+All routes return the following headers:
+- **X-DNS-Prefetch-Control:** on
+- **Strict-Transport-Security:** max-age=63072000; includeSubDomains; preload
+- **X-Frame-Options:** SAMEORIGIN
+- **X-Content-Type-Options:** nosniff
+- **Referrer-Policy:** strict-origin-when-cross-origin
+- **Permissions-Policy:** camera=(), microphone=(), geolocation=(), interest-cohort=()
+- **Content-Security-Policy:** Allowlists for self, Calendly, Vercel Analytics, Vercel Speed Insights
 
 ---
 
@@ -56,12 +90,12 @@ Portfolio and marketing website for **Rob Palmer**, a veteran direct-response co
 ```
 src/
 ├── app/
-│   ├── layout.tsx              # Root layout (fonts, header, footer, analytics)
+│   ├── layout.tsx              # Root layout (fonts, skip nav, header, footer, analytics)
 │   ├── page.tsx                # Homepage
-│   ├── globals.css             # Tailwind config, color tokens, prose overrides
-│   ├── not-found.tsx           # Custom 404 page
+│   ├── globals.css             # Tailwind config, color tokens, a11y styles, prose overrides
+│   ├── not-found.tsx           # Custom 404 page (noindex)
 │   ├── robots.ts               # Robots.txt generation
-│   ├── sitemap.ts              # Sitemap XML generation
+│   ├── sitemap.ts              # Sitemap XML generation (includes blog posts)
 │   │
 │   ├── services/
 │   │   ├── page.tsx            # Services listing (9 services with images)
@@ -70,7 +104,7 @@ src/
 │   │
 │   ├── industries/
 │   │   ├── page.tsx            # Industries listing (6 industries with images)
-│   │   ├── [slug]/page.tsx     # Individual industry detail pages
+│   │   ├── [slug]/page.tsx     # Individual industry detail pages (with FAQPage JSON-LD)
 │   │   └── _data/industries.ts # Industry data (interface + 6 items)
 │   │
 │   ├── portfolio/
@@ -93,12 +127,12 @@ src/
 │
 ├── components/
 │   ├── blocks/                 # Page-level building blocks
-│   │   ├── Hero.tsx            # Hero with variants: home, page
+│   │   ├── Hero.tsx            # Hero with variants: home, page, minimal
 │   │   ├── CTABanner.tsx       # CTA with variants: default, gold
-│   │   ├── FAQAccordion.tsx    # Expandable FAQ section
+│   │   ├── FAQAccordion.tsx    # Expandable FAQ with full ARIA pattern
 │   │   ├── ServiceCard.tsx     # Reusable card for services + industries
 │   │   ├── PortfolioCard.tsx   # Portfolio card with image, badges, result
-│   │   ├── PortfolioGrid.tsx   # Client-side filterable grid (use client)
+│   │   ├── PortfolioGrid.tsx   # Client-side filterable grid with aria-live
 │   │   ├── TestimonialCard.tsx # Testimonial with avatar, quote, attribution
 │   │   ├── BlogPostCard.tsx    # Blog card with featured image
 │   │   ├── CaseStudyCard.tsx   # Case study card
@@ -107,17 +141,17 @@ src/
 │   │   ├── SpecialtyGrid.tsx   # Specialty cards grid
 │   │   ├── CareerTimeline.tsx  # About page timeline
 │   │   ├── AboutTestimonials.tsx
-│   │   └── ContactForm.tsx     # Client-side form component
+│   │   └── ContactForm.tsx     # Client-side form with aria-live + aria-required
 │   │
 │   ├── layout/                 # Persistent layout elements
-│   │   ├── Header.tsx          # Nav with mobile hamburger
+│   │   ├── Header.tsx          # Nav with mobile hamburger, aria-label
 │   │   ├── Footer.tsx
-│   │   ├── MobileNav.tsx       # Slide-out mobile menu
+│   │   ├── MobileNav.tsx       # Slide-out mobile menu (aria-hidden when closed)
 │   │   └── Breadcrumbs.tsx     # Breadcrumb navigation
 │   │
 │   ├── ui/                     # Atomic UI primitives
 │   │   ├── Badge.tsx           # Variants: default, gold, dark
-│   │   ├── Button.tsx          # Variants: primary, outline, ghost
+│   │   ├── Button.tsx          # Variants: primary, secondary, outline, ghost
 │   │   ├── Card.tsx
 │   │   ├── Container.tsx       # max-w-7xl centered container
 │   │   ├── Logo.tsx
@@ -128,8 +162,7 @@ src/
 │   │   ├── DefinitionBox.tsx
 │   │   ├── ExpertQuote.tsx
 │   │   ├── FAQ.tsx
-│   │   ├── KeyTakeaways.tsx
-│   │   └── index.ts            # MDX component registry
+│   │   └── KeyTakeaways.tsx
 │   │
 │   ├── seo/
 │   │   └── JsonLd.tsx          # JSON-LD structured data renderer
@@ -157,8 +190,7 @@ public/images/
 ├── logos/                      # Client/partner logos
 ├── portfolio/                  # Portfolio card thumbnails (12 images)
 ├── services/                   # Service listing page thumbnails
-├── testimonials/               # Client avatar photos (36 images)
-└── hero-bg.jpg                 # Homepage hero background
+└── testimonials/               # Client avatar photos
 ```
 
 ---
@@ -192,12 +224,16 @@ All 12 portfolio items link to the same shared Google Drive folder. There are no
 
 ## SEO & Structured Data
 
+- **Canonical URLs** on all pages via `alternates.canonical` in metadata
+- **Blog posts in sitemap** with lastModified dates from frontmatter
 - Every service detail page has **Service schema** + **FAQPage schema** (JSON-LD)
-- Every industry detail page has **Service schema** (JSON-LD)
+- Every industry detail page has **Service schema** + **FAQPage schema** (JSON-LD)
+- Root layout has **Person schema** (with `sameAs` links) + **WebSite schema**
+- Blog posts have **Article schema** with `datePublished` and `dateModified`
 - All pages have **metaTitle** and **metaDescription** for `<head>`
-- OpenGraph images are set from hero images on service/industry pages
-- Blog posts use frontmatter for title, description, date, author, image
+- OpenGraph images are set from hero images on service/industry/blog pages
 - `robots.ts` and `sitemap.ts` generate at build time
+- 404 page has `robots: { index: false, follow: false }`
 - Content is SEO/GEO optimized — service title keywords are woven throughout all content sections and FAQs
 
 ---
@@ -277,6 +313,8 @@ Same pattern as services but in `src/app/industries/_data/industries.ts` and `pu
 - Headings use `font-heading` (Inter), body text uses `font-body` (Lora)
 - External links get `target="_blank" rel="noopener noreferrer"` + external-link icon
 - All images use Next.js `<Image>` with `fill` + `object-cover` + explicit `sizes` prop
+- Card link text uses `text-gold-600` (not gold-500) for contrast compliance
+- Meta/secondary text uses `text-paper-600` (not paper-400) for contrast compliance
 
 ---
 
@@ -290,11 +328,38 @@ Site constants are centralized in `src/lib/constants.ts`:
 
 ---
 
+## GitHub Issues Backlog
+
+18 issues tracked at https://github.com/robpalmer99/robpalmer-site/issues:
+
+| # | Title | Label |
+|---|-------|-------|
+| 1 | Lock body scroll when mobile nav is open | — |
+| 2 | Add favicon and app icons | — |
+| 3 | Add spam protection to contact form | — |
+| 4 | Extract Header scroll/mobile state into smaller client components | — |
+| 5 | Create default OpenGraph image | — |
+| 6 | Add JSON-LD to case study pages | — |
+| 7 | Improve service/industry content structure for GEO | — |
+| 8 | Add definition boxes to service pages | — |
+| 9 | Add FAQ section to homepage | — |
+| 10 | Move sharp from devDependencies to dependencies | — |
+| 11 | Add explicit Cache-Control headers for static assets | — |
+| 12 | Add rate limiting to contact form API | — |
+| 13 | Improve server-side input validation on contact API | — |
+| 14 | Add semantic list markup to card grids | accessibility |
+| 15 | Add aria-label to StatsBar and ClientLogoBar sections | accessibility |
+| 16 | Add role='img' to Logo SVG component | accessibility |
+| 17 | Add aria-hidden to remaining decorative SVGs | accessibility |
+| 18 | Refine smooth scroll to anchor-only navigation | accessibility |
+
+---
+
 ## Pending / Future Work
 
 - Wire contact form API route to actual email service (currently logs to console)
-- OG image generation
-- Performance audit and Lighthouse optimization
+- OG image generation (issue #5)
+- Favicon and app icons (issue #2)
 - Cross-browser testing
 - Google Search Console setup
 - Vercel deployment with custom domain
