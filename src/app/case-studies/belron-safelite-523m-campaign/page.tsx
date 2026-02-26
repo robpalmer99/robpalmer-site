@@ -6,10 +6,23 @@ import { Section } from '@/components/ui/Section'
 import { Container } from '@/components/ui/Container'
 import { CTABanner } from '@/components/blocks/CTABanner'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
+import { JsonLd } from '@/components/seo/JsonLd'
 import { SITE_URL } from '@/lib/constants'
 import { caseStudies } from '../_data/case-studies'
 
 const cs = caseStudies[0]
+
+const caseStudyJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'The $523M Secret Weapon Campaign | Belron/Safelite Case Study',
+  description: 'How Rob Palmer created a direct-response campaign for Belron/Safelite that generated $523 million in sales over 9 years.',
+  image: `${SITE_URL}${cs.heroImage}`,
+  datePublished: '2024-01-15',
+  author: { '@type': 'Person', name: 'Rob Palmer', url: SITE_URL },
+  publisher: { '@type': 'Person', name: 'Rob Palmer', url: SITE_URL },
+  mainEntityOfPage: `${SITE_URL}/case-studies/belron-safelite-523m-campaign`,
+}
 
 export const metadata: Metadata = {
   title: 'The $523M Secret Weapon Campaign | Belron/Safelite Case Study',
@@ -30,6 +43,7 @@ export const metadata: Metadata = {
 export default function BelronCaseStudyPage() {
   return (
     <>
+      <JsonLd data={caseStudyJsonLd} />
       <Hero
         variant="page"
         headline="The $523M Secret Weapon"

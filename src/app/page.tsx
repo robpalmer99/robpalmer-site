@@ -9,6 +9,8 @@ import { ServiceCard } from '@/components/blocks/ServiceCard'
 import { CaseStudyCard } from '@/components/blocks/CaseStudyCard'
 import { TestimonialCard } from '@/components/blocks/TestimonialCard'
 import { CTABanner } from '@/components/blocks/CTABanner'
+import { FAQAccordion } from '@/components/blocks/FAQAccordion'
+import { JsonLd } from '@/components/seo/JsonLd'
 import { services } from '@/app/services/_data/services'
 import { caseStudies } from '@/app/case-studies/_data/case-studies'
 import { featuredTestimonials } from '@/content/testimonials'
@@ -21,6 +23,27 @@ export const metadata: Metadata = {
   alternates: {
     canonical: SITE_URL,
   },
+}
+
+const homepageFaqs = [
+  { question: 'What types of copywriting do you specialize in?', answer: 'I specialize in direct-response copywriting — the kind that\'s designed to generate a measurable action. This includes video sales letters (VSLs), text sales letters (TSLs), email sequences, landing pages, sales funnels, upsell/downsell pages, and paid ad copy. Every piece I write is engineered to convert.' },
+  { question: 'How much does it cost to hire you?', answer: 'Fees depend on the project scope, complexity, and format. A single email is different from a full VSL + funnel build. I\'ll give you a clear, fixed-price quote after our strategy call — no hourly billing, no surprises. For a general guide, see my blog post on copywriting rates.' },
+  { question: 'What industries do you work with?', answer: 'I\'ve written for health & supplement, financial, e-commerce/DTC, SaaS, info-product, and ClickBank markets. My direct-response principles apply across industries — I adapt the strategy and compliance approach to each vertical.' },
+  { question: 'How do you use AI in your copywriting process?', answer: 'AI is a force multiplier, not a replacement. I use AI tools for research, headline variation generation, competitive analysis, and first-draft acceleration. But the strategic thinking, emotional intelligence, and persuasion architecture come from 30+ years of direct-response experience. You get AI speed with human craft.' },
+  { question: 'What results can I expect?', answer: 'Results vary by market, offer, and traffic quality. That said, my track record includes $523M+ in tracked revenue across campaigns, a 9-year campaign for Belron/Safelite, and consistent wins across ClickBank, DTC, and SaaS markets. I focus on measurable outcomes — conversion rates, AOV, and revenue.' },
+  { question: 'How long does a typical project take?', answer: 'Timeline depends on the deliverable. A single email or landing page might take 3-5 business days. A full VSL or sales funnel build typically takes 2-4 weeks including research, drafting, and revisions. I\'ll confirm the timeline during our strategy call.' },
+  { question: 'Do you offer revisions?', answer: 'Yes. Every project includes a round of revisions to ensure the copy aligns with your voice, brand, and goals. My goal is copy you\'re confident putting in front of your audience.' },
+  { question: 'How do I get started?', answer: 'Book a free strategy call through my contact page. We\'ll discuss your project, goals, and timeline. If we\'re a good fit, I\'ll send you a proposal with a clear scope and fixed price. No pressure, no obligation.' },
+]
+
+const homepageFaqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: homepageFaqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+  })),
 }
 
 export default function HomePage() {
@@ -200,6 +223,21 @@ export default function HomePage() {
           </div>
         </Container>
       </Section>
+
+      {/* FAQ */}
+      <Section variant="alt">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950">
+                Frequently Asked Questions
+              </h2>
+            </div>
+            <FAQAccordion items={homepageFaqs} />
+          </div>
+        </Container>
+      </Section>
+      <JsonLd data={homepageFaqJsonLd} />
 
       {/* Final CTA */}
       <CTABanner

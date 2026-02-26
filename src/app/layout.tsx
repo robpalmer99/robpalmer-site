@@ -34,14 +34,19 @@ export const metadata: Metadata = {
     siteName: 'Rob Palmer - Direct-Response Copywriter',
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
+    images: [{ url: `${SITE_URL}/images/og-default.jpg`, width: 1200, height: 630, alt: 'Rob Palmer - Direct-Response Copywriter' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
+    images: [`${SITE_URL}/images/og-default.jpg`],
   },
   alternates: {
     canonical: SITE_URL,
+  },
+  icons: {
+    icon: '/favicon.ico',
   },
   robots: {
     index: true,

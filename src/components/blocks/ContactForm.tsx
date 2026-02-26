@@ -22,6 +22,7 @@ export function ContactForm() {
           email: data.get('email'),
           subject: data.get('subject'),
           message: data.get('message'),
+          website: data.get('website'),
         }),
       })
 
@@ -109,6 +110,11 @@ export function ContactForm() {
           className="w-full px-4 py-3 rounded-lg border border-paper-200 bg-white text-ink-950 font-body text-sm transition-shadow resize-y"
           placeholder="Tell me about your project..."
         />
+      </div>
+      {/* Honeypot — hidden from real users, bots fill it in */}
+      <div className="absolute opacity-0 top-0 left-0 h-0 w-0 -z-10" aria-hidden="true">
+        <label htmlFor="website">Website</label>
+        <input type="text" id="website" name="website" tabIndex={-1} autoComplete="off" />
       </div>
       <div>
         <Button type="submit" disabled={status === 'sending'}>

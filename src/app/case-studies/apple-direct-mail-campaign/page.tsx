@@ -6,10 +6,23 @@ import { Section } from '@/components/ui/Section'
 import { Container } from '@/components/ui/Container'
 import { CTABanner } from '@/components/blocks/CTABanner'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
+import { JsonLd } from '@/components/seo/JsonLd'
 import { SITE_URL } from '@/lib/constants'
 import { caseStudies } from '../_data/case-studies'
 
 const cs = caseStudies[1]
+
+const caseStudyJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Apple UK Direct Mail Campaign | Case Study',
+  description: 'How Rob Palmer created a direct mail campaign for Apple Computer UK that was so successful it overwhelmed demand and had to be shut down.',
+  image: `${SITE_URL}${cs.heroImage}`,
+  datePublished: '2024-01-10',
+  author: { '@type': 'Person', name: 'Rob Palmer', url: SITE_URL },
+  publisher: { '@type': 'Person', name: 'Rob Palmer', url: SITE_URL },
+  mainEntityOfPage: `${SITE_URL}/case-studies/apple-direct-mail-campaign`,
+}
 
 export const metadata: Metadata = {
   title: 'Apple UK Direct Mail Campaign | Case Study',
@@ -30,6 +43,7 @@ export const metadata: Metadata = {
 export default function AppleCaseStudyPage() {
   return (
     <>
+      <JsonLd data={caseStudyJsonLd} />
       <Hero
         variant="page"
         headline="The Apple UK Direct Mail Campaign"

@@ -22,6 +22,7 @@
     "react-calendly": "^4.4.0",
     "react-dom": "19.1.0",
     "reading-time": "^1.5.0",
+    "sharp": "^0.34.5",
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
@@ -37,7 +38,6 @@
     "rehype-autolink-headings": "^7.1.0",
     "rehype-slug": "^6.0.0",
     "remark-gfm": "^4.0.1",
-    "sharp": "^0.34.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

@@ -2,11 +2,25 @@ import { NextResponse } from 'next/server'
 
 export async function POST(request: Request) {
   try {
-    const { name, email, subject, message } = await request.json()
+    const { name, email, subject, message, website } = await request.json()
+
+    // Honeypot: if 'website' field has a value, it's a bot
+    if (website) {
+      // Return success to bots so they don't retry
+      return NextResponse.json({ success: true })
+    }
 
     if (!name || !email || !subject || !message) {
       return NextResponse.json(
         { error: 'All fields are required' },
+        { status: 400 }
+      )
+    }
+
+    // Basic email format validation
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      return NextResponse.json(
+        { error: 'Invalid email address' },
         { status: 400 }
       )
     }

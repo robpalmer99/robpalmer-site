@@ -17,6 +17,7 @@ interface ClientLogoBarProps {
 export function ClientLogoBar({ variant = 'dark', className }: ClientLogoBarProps) {
   return (
     <section
+      aria-label="Trusted clients and partners"
       className={cn(
         'relative py-12 sm:py-16 border-y',
         variant === 'dark'
