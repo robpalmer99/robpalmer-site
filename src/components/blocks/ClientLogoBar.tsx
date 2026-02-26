@@ -18,29 +18,33 @@ export function ClientLogoBar({ variant = 'dark', className }: ClientLogoBarProp
   return (
     <section
       className={cn(
-        'py-10 sm:py-12',
-        variant === 'dark' ? 'bg-ink-900/50' : 'bg-paper-100',
+        'relative py-12 sm:py-16 border-y',
+        variant === 'dark'
+          ? 'bg-ink-900 border-gold-400/15'
+          : 'bg-paper-100 border-paper-200',
         className
       )}
     >
       <Container>
         <p
           className={cn(
-            'text-center text-sm font-heading uppercase tracking-wider mb-8',
-            variant === 'dark' ? 'text-paper-400' : 'text-paper-600'
+            'text-center text-xs sm:text-sm font-heading uppercase tracking-[0.2em] mb-10 font-semibold',
+            variant === 'dark' ? 'text-gold-400' : 'text-paper-500'
           )}
         >
           Trusted by Fortune 500 brands and top direct-response marketers
         </p>
 
         {/* Fortune 500 text logos */}
-        <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6 mb-8">
+        <div className="flex flex-wrap items-center justify-center gap-x-10 sm:gap-x-14 gap-y-5">
           {FORTUNE_500_CLIENTS.map((client) => (
             <div
               key={client}
               className={cn(
-                'font-heading text-xl sm:text-2xl font-bold tracking-wide opacity-40 hover:opacity-70 transition-opacity',
-                variant === 'dark' ? 'text-paper-200' : 'text-paper-600'
+                'font-heading text-xl sm:text-2xl font-bold tracking-wide',
+                variant === 'dark'
+                  ? 'text-white'
+                  : 'text-paper-500 hover:text-paper-700'
               )}
             >
               {client}
@@ -48,12 +52,25 @@ export function ClientLogoBar({ variant = 'dark', className }: ClientLogoBarProp
           ))}
         </div>
 
+        {/* Divider */}
+        <div
+          className={cn(
+            'mx-auto mt-10 mb-8 max-w-xs border-t',
+            variant === 'dark' ? 'border-gold-400/15' : 'border-paper-200'
+          )}
+        />
+
         {/* Marketplace image logos */}
-        <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 pt-4 border-t border-ink-700/30">
+        <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-5">
           {MARKETPLACE_LOGOS.map((logo) => (
             <div
               key={logo.name}
-              className="opacity-50 hover:opacity-80 transition-opacity"
+              className={cn(
+                'transition-opacity',
+                variant === 'dark'
+                  ? 'opacity-80 hover:opacity-100'
+                  : 'opacity-60 hover:opacity-80'
+              )}
             >
               <Image
                 src={logo.src}
@@ -62,7 +79,7 @@ export function ClientLogoBar({ variant = 'dark', className }: ClientLogoBarProp
                 height={logo.height}
                 sizes="120px"
                 className={cn(
-                  'h-6 sm:h-8 w-auto object-contain',
+                  'h-7 sm:h-8 w-auto object-contain',
                   variant === 'dark' ? 'brightness-0 invert' : ''
                 )}
               />

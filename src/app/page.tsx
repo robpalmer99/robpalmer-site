@@ -10,6 +10,7 @@ import { CaseStudyCard } from '@/components/blocks/CaseStudyCard'
 import { TestimonialCard } from '@/components/blocks/TestimonialCard'
 import { CTABanner } from '@/components/blocks/CTABanner'
 import { services } from '@/app/services/_data/services'
+import { caseStudies } from '@/app/case-studies/_data/case-studies'
 import { featuredTestimonials } from '@/content/testimonials'
 import { SITE_URL } from '@/lib/constants'
 
@@ -118,20 +119,18 @@ export default function HomePage() {
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <CaseStudyCard
-              title="The $523M Secret Weapon Campaign"
-              slug="belron-safelite-523m-campaign"
-              result="$523M"
-              client="Belron / Safelite"
-              description="A campaign that ran for 9 years, generated $523 million in sales, and saved hundreds of lives. Five previous award-winning copywriters had failed at the task."
-            />
-            <CaseStudyCard
-              title="The Apple UK Direct Mail Campaign"
-              slug="apple-direct-mail-campaign"
-              result="A/B Winner"
-              client="Apple Computer UK"
-              description="A direct mail campaign for Apple UK that beat the control and demonstrated the power of research-driven direct-response copywriting."
-            />
+            {caseStudies.map((cs) => (
+              <CaseStudyCard
+                key={cs.slug}
+                title={cs.title}
+                slug={cs.slug}
+                result={cs.result}
+                client={cs.client}
+                description={cs.description}
+                heroImage={cs.heroImage}
+                heroAlt={cs.heroAlt}
+              />
+            ))}
           </div>
         </Container>
       </Section>

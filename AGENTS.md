@@ -112,13 +112,18 @@ src/
 │   │   └── _data/portfolio.ts  # Portfolio data (interface + 12 items)
 │   │
 │   ├── blog/
-│   │   ├── page.tsx            # Blog listing with featured images
-│   │   └── [slug]/page.tsx     # MDX blog post renderer
+│   │   ├── page.tsx            # Blog listing page 1 (paginated, search/filter)
+│   │   ├── [slug]/page.tsx     # MDX blog post renderer (with related posts)
+│   │   ├── _components/
+│   │   │   └── BlogListingLayout.tsx  # Shared layout for blog listing pages
+│   │   └── page/
+│   │       └── [page]/page.tsx # Paginated blog pages 2+ (SSG)
 │   │
 │   ├── case-studies/
-│   │   ├── page.tsx            # Case studies listing
-│   │   ├── belron-safelite-523m-campaign/page.tsx
-│   │   └── apple-direct-mail-campaign/page.tsx
+│   │   ├── page.tsx            # Case studies listing (with results summary banner)
+│   │   ├── _data/case-studies.ts  # Case study data layer
+│   │   ├── belron-safelite-523m-campaign/page.tsx  # Enriched with hero image, metrics, testimonial
+│   │   └── apple-direct-mail-campaign/page.tsx     # Enriched with hero image, metrics, callout
 │   │
 │   ├── testimonials/page.tsx   # All 36 testimonials
 │   ├── about/page.tsx          # About with career timeline and stats
@@ -135,7 +140,8 @@ src/
 │   │   ├── PortfolioGrid.tsx   # Client-side filterable grid with aria-live
 │   │   ├── TestimonialCard.tsx # Testimonial with avatar, quote, attribution
 │   │   ├── BlogPostCard.tsx    # Blog card with featured image
-│   │   ├── CaseStudyCard.tsx   # Case study card
+│   │   ├── BlogGrid.tsx        # Client-side blog grid with search, category filter, pagination
+│   │   ├── CaseStudyCard.tsx   # Case study card (with hero image + gradient overlay)
 │   │   ├── StatsBar.tsx        # Horizontal stats strip
 │   │   ├── ClientLogoBar.tsx   # Partner/client logo strip
 │   │   ├── SpecialtyGrid.tsx   # Specialty cards grid
@@ -144,9 +150,9 @@ src/
 │   │   └── ContactForm.tsx     # Client-side form with aria-live + aria-required
 │   │
 │   ├── layout/                 # Persistent layout elements
-│   │   ├── Header.tsx          # Nav with mobile hamburger, aria-label
+│   │   ├── Header.tsx          # Nav with mobile hamburger, search icon, aria-label
 │   │   ├── Footer.tsx
-│   │   ├── MobileNav.tsx       # Slide-out mobile menu (aria-hidden when closed)
+│   │   ├── MobileNav.tsx       # Slide-out mobile menu with search link (aria-hidden when closed)
 │   │   └── Breadcrumbs.tsx     # Breadcrumb navigation
 │   │
 │   ├── ui/                     # Atomic UI primitives
@@ -197,9 +203,12 @@ src/
 │       ├── copywriting-bullet-points.mdx              # Phase 2 — Keyword-driven (170 vol)
 │       └── direct-mail-copywriting.mdx                # Phase 2 — Keyword-driven (110 vol)
 │
+├── hooks/
+│   └── useDebounce.ts          # Generic debounce hook (used by blog search)
+│
 └── lib/
     ├── constants.ts            # Site URL, name, nav links, stats, contact info
-    ├── mdx.ts                  # MDX file reader + frontmatter parser
+    ├── mdx.ts                  # MDX file reader, frontmatter parser, pagination, related posts
     └── utils.ts                # cn() utility (clsx + tailwind-merge)
 
 public/images/
@@ -230,6 +239,9 @@ Services, industries, and portfolio use a consistent pattern:
 - **Service** (`services.ts`): title, slug, shortDescription, metaTitle, metaDescription, headline, subheadline, heroImage, heroImageAlt, sections[], deliverables[], testimonialIds[], portfolioItems[], faqs[]
 - **Industry** (`industries.ts`): Same shape as Service
 - **PortfolioItem** (`portfolio.ts`): title, slug, category, niche, description, image, imageAlt, result?, client?
+- **CaseStudy** (`case-studies.ts`): slug, title, client, result, description, heroImage, heroAlt, metrics[], testimonial?
+- **BlogPostMeta** (`mdx.ts`): title, description, date, category, tags[], slug, readingTime, published, heroImage?, heroAlt?, faqs?
+- **PaginatedBlogPosts** (`mdx.ts`): posts[], totalPosts, totalPages, currentPage
 - **Testimonial** (`testimonials.ts`): id, quote, author, title, company, image, featured?
 
 ### Testimonial Curation
@@ -239,6 +251,42 @@ Service and industry detail pages display curated testimonials by mapping `testi
 ### Portfolio
 
 All 12 portfolio items link to the same shared Google Drive folder. There are no individual portfolio detail pages. The listing page has client-side category filter tabs (All | VSL | Sales Page | Email | Hybrid).
+
+### Case Studies
+
+Case studies use a data layer at `src/app/case-studies/_data/case-studies.ts`:
+- Exported `caseStudies` array with `CaseStudy` interface
+- Each entry has slug, title, client, result, description, heroImage, heroAlt, metrics[], and optional testimonial
+- Listing page renders a results summary banner (4 stats) + data-driven `CaseStudyCard` grid
+- Detail pages have hero images, key metrics bars, enriched narrative content, testimonial blockquotes, and related links
+- Homepage case study cards also pull from this data layer
+
+### Blog Search & Filter
+
+The blog listing uses `BlogGrid`, a client component (`'use client'`) with:
+- **Search input** with debounced filtering (200ms via `useDebounce` hook)
+- **Category filter tabs** dynamically derived from posts with counts (follows `PortfolioGrid` pattern)
+- **Auto-focus** when arriving via `/blog?search=true` (uses `useSearchParams()` + `useRef`)
+- Wrapped in `<Suspense>` boundary (required by Next.js 15 for `useSearchParams`)
+- A **search icon** (magnifying glass SVG) in the Header desktop nav and MobileNav links to `/blog?search=true`
+
+### Blog Pagination
+
+Route-based SSG pagination with 12 posts per page:
+- `/blog` = page 1 (canonical URL)
+- `/blog/page/2`, `/blog/page/3`, etc. = subsequent pages
+- Shared layout component `BlogListingLayout` used by both routes to avoid duplication
+- `getPaginatedBlogPosts(page)` in `mdx.ts` slices `getAllBlogPosts()` by page
+- `/blog/page/1` redirects to `/blog`; out-of-range pages return 404
+- Pagination controls (← Previous / Next →) hidden when search/filter is active
+
+### Related Posts
+
+Blog posts display 3 related articles after the author bio section:
+- `getRelatedPosts(slug, limit=3)` in `mdx.ts` scores posts by shared category (weight 3) + shared tags
+- Sorted by relevance score descending, then by date descending
+- Rendered as `BlogPostCard` components in a responsive 3-column grid
+- Only shown when related posts exist
 
 ---
 
@@ -283,11 +331,11 @@ Always clear `.next` after making changes to `globals.css`, adding new Tailwind 
 
 ### Build Output
 
-The build generates **56 static pages**:
+The build generates **57 static pages**:
 - 1 homepage, about, contact, testimonials, portfolio, not-found
 - 9 service detail pages + 1 services listing
 - 6 industry detail pages + 1 industries listing
-- 23 blog posts + 1 blog listing
+- 23 blog posts + 2 blog listing pages (paginated)
 - 2 case study pages + 1 case studies listing
 - robots.txt, sitemap.xml
 - 1 API route (contact form)
@@ -308,9 +356,18 @@ Same pattern as services but in `src/app/industries/_data/industries.ts` and `pu
 
 ### Adding a New Blog Post
 
-1. Create `.mdx` file in `src/content/blog/` with frontmatter (title, description, date, author, image, tags)
+1. Create `.mdx` file in `src/content/blog/` with frontmatter (title, description, date, category, tags, published, heroImage, heroAlt, faqs)
 2. Add featured image to `public/images/blog/`
 3. Use custom MDX components from `src/components/mdx/` as needed
+4. Related posts are automatically generated based on shared category and tags
+5. Pagination updates automatically — new pages created at build time when posts exceed 12 per page
+
+### Adding a New Case Study
+
+1. Add entry to `src/app/case-studies/_data/case-studies.ts` with all fields
+2. Add hero image to `public/images/case-studies/`
+3. Create a detail page at `src/app/case-studies/[slug]/page.tsx`
+4. Homepage automatically picks up the new entry from the data layer
 
 ### Adding a New Portfolio Item
 
@@ -344,6 +401,7 @@ Site constants are centralized in `src/lib/constants.ts`:
 - `SITE_URL`: https://robpalmer.com
 - `CONTACT_EMAIL`: rob@robpalmer.com
 - `CALENDLY_URL`: https://calendly.com/rob-palmer-call
+- `STATS`: $523M+ In Tracked Revenue, 30+ Years of Experience, 36+ Client Testimonials, 100s Of Successful Projects
 - `NAV_LINKS`: Services, Case Studies, Testimonials, Blog, About
 
 ---

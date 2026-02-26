@@ -5,6 +5,25 @@ import readingTime from 'reading-time'
 
 const BLOG_DIR = path.join(process.cwd(), 'src/content/blog')
 
+export const POSTS_PER_PAGE = 12
+
+export interface PaginatedBlogPosts {
+  posts: BlogPostMeta[]
+  totalPosts: number
+  totalPages: number
+  currentPage: number
+}
+
+export function getPaginatedBlogPosts(page: number): PaginatedBlogPosts {
+  const allPosts = getAllBlogPosts()
+  const totalPosts = allPosts.length
+  const totalPages = Math.max(1, Math.ceil(totalPosts / POSTS_PER_PAGE))
+  const start = (page - 1) * POSTS_PER_PAGE
+  const posts = allPosts.slice(start, start + POSTS_PER_PAGE)
+
+  return { posts, totalPosts, totalPages, currentPage: page }
+}
+
 export interface BlogFAQ {
   question: string
   answer: string
@@ -98,6 +117,28 @@ export function getBlogPostContent(slug: string): {
     },
     content,
   }
+}
+
+export function getRelatedPosts(slug: string, limit: number = 3): BlogPostMeta[] {
+  const allPosts = getAllBlogPosts()
+  const current = allPosts.find((p) => p.slug === slug)
+  if (!current) return []
+
+  const others = allPosts.filter((p) => p.slug !== slug)
+
+  // Score each post by relevance: same category + shared tags
+  const scored = others.map((post) => {
+    let score = 0
+    if (post.category === current.category) score += 3
+    const sharedTags = post.tags.filter((t) => current.tags.includes(t))
+    score += sharedTags.length
+    return { post, score }
+  })
+
+  // Sort by score desc, then by date desc
+  scored.sort((a, b) => b.score - a.score || new Date(b.post.date).getTime() - new Date(a.post.date).getTime())
+
+  return scored.slice(0, limit).map((s) => s.post)
 }
 
 export function getAllBlogSlugs(): string[] {

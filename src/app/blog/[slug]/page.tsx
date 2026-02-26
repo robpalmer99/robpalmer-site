@@ -17,7 +17,8 @@ import { KeyTakeaways } from '@/components/mdx/KeyTakeaways'
 import { FAQSection, FAQItem } from '@/components/mdx/FAQ'
 import { ComparisonTable } from '@/components/mdx/ComparisonTable'
 import { ExpertQuote } from '@/components/mdx/ExpertQuote'
-import { getBlogPostContent, getAllBlogSlugs } from '@/lib/mdx'
+import { BlogPostCard } from '@/components/blocks/BlogPostCard'
+import { getBlogPostContent, getAllBlogSlugs, getRelatedPosts } from '@/lib/mdx'
 import { formatDate } from '@/lib/utils'
 import { SITE_URL } from '@/lib/constants'
 
@@ -70,6 +71,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   if (!post) {
     notFound()
   }
+
+  const relatedPosts = getRelatedPosts(slug)
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -189,6 +192,30 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 </div>
               </div>
             </div>
+
+            {/* Related Articles */}
+            {relatedPosts.length > 0 && (
+              <div className="mt-12 pt-8 border-t border-paper-200">
+                <h3 className="font-heading text-lg font-bold text-ink-950 mb-6">
+                  Related Articles
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                  {relatedPosts.map((related) => (
+                    <BlogPostCard
+                      key={related.slug}
+                      title={related.title}
+                      slug={related.slug}
+                      excerpt={related.description}
+                      date={related.date}
+                      category={related.category}
+                      readingTime={related.readingTime}
+                      heroImage={related.heroImage}
+                      heroAlt={related.heroAlt}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
           </article>
         </Container>
       </Section>

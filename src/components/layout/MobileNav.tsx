@@ -40,6 +40,28 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
             {link.label}
           </Link>
         ))}
+        <Link
+          href="/blog?search=true"
+          onClick={onClose}
+          tabIndex={isOpen ? 0 : -1}
+          className="flex items-center gap-3 py-3 px-4 font-heading text-base font-medium text-paper-300 hover:text-gold-400 hover:bg-ink-800 rounded-lg transition-colors"
+        >
+          <svg
+            className="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+          Search
+        </Link>
         <div className="pt-3 px-4">
           <Button href="/contact" className="w-full" onClick={onClose}>
             Book a Call

@@ -29,5 +29,5 @@ export const STATS = [
   { value: '$523M+', label: 'In Tracked Revenue' },
   { value: '30+', label: 'Years of Experience' },
   { value: '36+', label: 'Client Testimonials' },
-  { value: '9', label: 'Year Campaign Run' },
+  { value: '100s', label: 'Of Successful Projects' },
 ] as const

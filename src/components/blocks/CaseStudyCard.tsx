@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { cn } from '@/lib/utils'
 
 interface CaseStudyCardProps {
@@ -7,6 +8,8 @@ interface CaseStudyCardProps {
   result: string
   client: string
   description: string
+  heroImage?: string
+  heroAlt?: string
   className?: string
 }
 
@@ -16,6 +19,8 @@ export function CaseStudyCard({
   result,
   client,
   description,
+  heroImage,
+  heroAlt,
   className,
 }: CaseStudyCardProps) {
   return (
@@ -27,13 +32,35 @@ export function CaseStudyCard({
         className
       )}
     >
-      {/* Result banner */}
-      <div className="bg-ink-950 px-6 py-4 sm:px-8">
-        <div className="font-heading text-2xl sm:text-3xl font-bold text-gold-400">
-          {result}
+      {/* Hero image */}
+      {heroImage && (
+        <div className="relative w-full h-48 overflow-hidden">
+          <Image
+            src={heroImage}
+            alt={heroAlt || title}
+            fill
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+          {/* Result badge overlay */}
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink-950/90 to-transparent pt-10 pb-3 px-6">
+            <div className="font-heading text-2xl sm:text-3xl font-bold text-gold-400">
+              {result}
+            </div>
+            <div className="text-sm text-paper-300 font-heading">{client}</div>
+          </div>
         </div>
-        <div className="text-sm text-paper-400 font-heading">{client}</div>
-      </div>
+      )}
+
+      {/* Fallback result banner when no image */}
+      {!heroImage && (
+        <div className="bg-ink-950 px-6 py-4 sm:px-8">
+          <div className="font-heading text-2xl sm:text-3xl font-bold text-gold-400">
+            {result}
+          </div>
+          <div className="text-sm text-paper-400 font-heading">{client}</div>
+        </div>
+      )}
 
       <div className="p-6 sm:p-8">
         <h3 className="font-heading text-lg font-bold text-ink-950 group-hover:text-gold-600 transition-colors">
