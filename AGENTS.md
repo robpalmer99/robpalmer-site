@@ -229,7 +229,17 @@ src/
 │       ├── is-copywriting-dead.mdx                        # Phase 4 T1 — FAQ cluster
 │       ├── how-much-does-a-direct-response-copywriter-cost.mdx  # Phase 4 T1 — Pricing guide
 │       ├── lessons-from-gary-halbert.mdx                  # Phase 4 T1 — Legends
-│       └── eugene-schwartz-breakthrough-advertising-lessons.mdx  # Phase 4 T1 — Legends
+│       ├── eugene-schwartz-breakthrough-advertising-lessons.mdx  # Phase 4 T1 — Legends
+│       ├── state-of-vsl-marketing-2026.mdx                    # Phase 4 T2 — Trend piece
+│       ├── copywriter-vs-content-writer-for-sales.mdx         # Phase 4 T2 — Comparison
+│       ├── vsl-vs-sales-page.mdx                              # Phase 4 T2 — Comparison
+│       ├── long-form-copy-vs-short-form-copy.mdx              # Phase 4 T2 — Comparison
+│       ├── product-launch-email-sequence-case-study.mdx       # Phase 4 T2 — Case study
+│       ├── upsell-sequence-doubled-aov-case-study.mdx         # Phase 4 T2 — Case study
+│       ├── generative-engine-optimization-for-copywriters.mdx # Phase 4 T2 — AI/GEO
+│       ├── geo-copywriting-guide.mdx                          # Phase 4 T2 — AI/GEO
+│       ├── david-ogilvy-ai-copywriting.mdx                    # Phase 4 T2 — Legends
+│       └── 30-years-of-copywriting-lessons.mdx                # Phase 4 T2 — Career
 │
 ├── hooks/
 │   └── useDebounce.ts          # Generic debounce hook (used by blog search)
@@ -463,7 +473,7 @@ Site constants are centralized in `src/lib/constants.ts`:
 
 ## Blog Content Strategy
 
-### Current Content (56 posts)
+### Current Content (66 posts)
 
 Posts are organized in tiers that build topical authority clusters linking to service/industry pages:
 
@@ -478,6 +488,7 @@ Posts are organized in tiers that build topical authority clusters linking to se
 | Phase 3 Tier 2 | Strategic keyword gaps | small-business-copywriting, saas-copywriting, how-to-write-ad-copy, best-copywriting-books, sales-copywriter, direct-response-vs-brand-marketing, vsl-copywriting |
 | Phase 3 Tier 3 | Long-tail keywords | sales-letter-examples, copywriting-rates, copywriting-portfolio-examples, copywriting-niches, long-form-sales-copy, ecommerce-copywriting, b2b-copywriting, storytelling-in-copywriting, sales-page-examples, aida-copywriting, how-to-write-email-subject-lines |
 | Phase 4 Tier 1 | Trend/comparison/legend posts | state-of-direct-response-copywriting-2026, state-of-ai-copywriting-2026, freelance-copywriter-vs-marketing-agency, in-house-copywriter-vs-freelance, vsl-cold-traffic-conversion-case-study, fortune-500-copywriting-lessons, is-copywriting-dead, how-much-does-a-direct-response-copywriter-cost, lessons-from-gary-halbert, eugene-schwartz-breakthrough-advertising-lessons |
+| Phase 4 Tier 2 | Mid-priority content expansion | state-of-vsl-marketing-2026, copywriter-vs-content-writer-for-sales, vsl-vs-sales-page, long-form-copy-vs-short-form-copy, product-launch-email-sequence-case-study, upsell-sequence-doubled-aov-case-study, generative-engine-optimization-for-copywriters, geo-copywriting-guide, david-ogilvy-ai-copywriting, 30-years-of-copywriting-lessons |
 
 ### Blog Post Format
 
@@ -554,7 +565,7 @@ Competitive SEO analysis is stored at `/Users/robpalmer/Desktop/RobPalmer.com SE
 | AIDA Copywriting Formula | aida-copywriting | ✅ Done |
 | Email Subject Line Writing Guide | how-to-write-email-subject-lines | ✅ Done |
 
-### Phase 4 Content Plan (TIER 1 COMPLETED — 10 of 28 posts published)
+### Phase 4 Content Plan (TIERS 1-2 COMPLETED — 20 of 28 posts published)
 
 **Category 1: "State of..." Trend Pieces (4 posts)**
 
@@ -612,6 +623,7 @@ Competitive SEO analysis is stored at `/Users/robpalmer/Desktop/RobPalmer.com SE
 **Implementation order:** Tier 1 first (posts 1,2,5,6,12,13,17,18,24,25), then Tier 2 (3,7,8,9,14,15,19,20,26,28), then Tier 3 (4,10,11,16,21,22,23,27).
 
 **Tier 1 status: COMPLETED** — All 10 HIGH priority posts written, hero images generated, build verified.
+**Tier 2 status: COMPLETED** — All 10 MEDIUM-HIGH priority posts written, hero images generated, build verified.
 
 ---
 
