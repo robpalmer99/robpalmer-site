@@ -208,7 +208,18 @@ src/
 │       ├── best-copywriting-books.mdx                 # Phase 3 T2 — Keyword-driven (390+ vol)
 │       ├── sales-copywriter.mdx                       # Phase 3 T2 — Keyword-driven (350+ vol)
 │       ├── direct-response-vs-brand-marketing.mdx     # Phase 3 T2 — Keyword-driven (300+ vol)
-│       └── vsl-copywriting.mdx                        # Phase 3 T2 — Keyword-driven (170+ vol)
+│       ├── vsl-copywriting.mdx                        # Phase 3 T2 — Keyword-driven (170+ vol)
+│       ├── sales-letter-examples.mdx                  # Phase 3 T3 — Long-tail
+│       ├── copywriting-rates.mdx                      # Phase 3 T3 — Long-tail
+│       ├── copywriting-portfolio-examples.mdx         # Phase 3 T3 — Long-tail
+│       ├── copywriting-niches.mdx                     # Phase 3 T3 — Long-tail
+│       ├── long-form-sales-copy.mdx                   # Phase 3 T3 — Long-tail
+│       ├── ecommerce-copywriting.mdx                  # Phase 3 T3 — Long-tail
+│       ├── b2b-copywriting.mdx                        # Phase 3 T3 — Long-tail
+│       ├── storytelling-in-copywriting.mdx            # Phase 3 T3 — Long-tail
+│       ├── sales-page-examples.mdx                    # Phase 3 T3 — Long-tail
+│       ├── aida-copywriting.mdx                       # Phase 3 T3 — Long-tail
+│       └── how-to-write-email-subject-lines.mdx       # Phase 3 T3 — Long-tail
 │
 ├── hooks/
 │   └── useDebounce.ts          # Generic debounce hook (used by blog search)
@@ -319,7 +330,7 @@ Blog posts display 3 related articles after the author bio section:
 
 ```bash
 npm run dev          # Start dev server (port 3000)
-npm run build        # Production build (currently 56 static pages)
+npm run build        # Production build (currently ~76 static pages)
 npm run start        # Serve production build
 npm run lint         # ESLint
 ```
@@ -338,11 +349,11 @@ Always clear `.next` after making changes to `globals.css`, adding new Tailwind 
 
 ### Build Output
 
-The build generates **70 static pages**:
+The build generates **~76 static pages**:
 - 1 homepage, about, contact, testimonials, portfolio, not-found
 - 9 service detail pages + 1 services listing
 - 6 industry detail pages + 1 industries listing
-- 35 blog posts + 3 blog listing pages (paginated)
+- 46 blog posts + 4 blog listing pages (paginated at 12/page)
 - 2 case study pages + 1 case studies listing
 - robots.txt, sitemap.xml
 - 1 API route (contact form)
@@ -442,7 +453,7 @@ Site constants are centralized in `src/lib/constants.ts`:
 
 ## Blog Content Strategy
 
-### Current Content (35 posts)
+### Current Content (46 posts)
 
 Posts are organized in tiers that build topical authority clusters linking to service/industry pages:
 
@@ -455,6 +466,7 @@ Posts are organized in tiers that build topical authority clusters linking to se
 | Phase 2 | Keyword-driven (SEO gaps) | cold-email-copywriting, website-copywriting, conversion-copywriting, facebook-ad-copywriting, headline-formulas, famous-copywriters, ux-copywriting, copywriting-bullet-points, direct-mail-copywriting |
 | Phase 3 Tier 1 | High-impact keyword gaps | copywriting-services, how-to-write-a-sales-letter, how-to-write-a-headline, copywriting-psychology, copywriting-formulas |
 | Phase 3 Tier 2 | Strategic keyword gaps | small-business-copywriting, saas-copywriting, how-to-write-ad-copy, best-copywriting-books, sales-copywriter, direct-response-vs-brand-marketing, vsl-copywriting |
+| Phase 3 Tier 3 | Long-tail keywords | sales-letter-examples, copywriting-rates, copywriting-portfolio-examples, copywriting-niches, long-form-sales-copy, ecommerce-copywriting, b2b-copywriting, storytelling-in-copywriting, sales-page-examples, aida-copywriting, how-to-write-email-subject-lines |
 
 ### Blog Post Format
 
@@ -513,6 +525,24 @@ Competitive SEO analysis is stored at `/Users/robpalmer/Desktop/RobPalmer.com SE
 | Direct Response vs Brand Marketing | 300+ | 8-17 | ✅ Done |
 | VSL Copywriting | 170+ | 10-12 | ✅ Done |
 
+### Phase 3 Tier 3 Content (COMPLETED — Long-Tail Keywords)
+
+11 posts targeting long-tail keyword opportunities:
+
+| Post | Slug | Status |
+|------|------|--------|
+| Sales Letter Examples & Templates | sales-letter-examples | ✅ Done |
+| Copywriting Rates & Pricing Guide | copywriting-rates | ✅ Done |
+| Copywriting Portfolio Examples | copywriting-portfolio-examples | ✅ Done |
+| Most Profitable Copywriting Niches | copywriting-niches | ✅ Done |
+| Long-Form Sales Copy Guide | long-form-sales-copy | ✅ Done |
+| E-Commerce Copywriting Guide | ecommerce-copywriting | ✅ Done |
+| B2B Copywriting Guide | b2b-copywriting | ✅ Done |
+| Storytelling in Copywriting | storytelling-in-copywriting | ✅ Done |
+| Sales Page Examples | sales-page-examples | ✅ Done |
+| AIDA Copywriting Formula | aida-copywriting | ✅ Done |
+| Email Subject Line Writing Guide | how-to-write-email-subject-lines | ✅ Done |
+
 ---
 
 ## Pending / Future Work
@@ -522,4 +552,3 @@ Competitive SEO analysis is stored at `/Users/robpalmer/Desktop/RobPalmer.com SE
 - Favicon and app icons (issue #2)
 - Cross-browser testing
 - Google Search Console setup
-- Phase 3 Tier 3 blog content (11 long-tail keyword posts)
