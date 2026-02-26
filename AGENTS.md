@@ -201,7 +201,14 @@ src/
 │       ├── famous-copywriters.mdx                     # Phase 2 — Keyword-driven (170 vol)
 │       ├── ux-copywriting.mdx                         # Phase 2 — Keyword-driven (480 vol)
 │       ├── copywriting-bullet-points.mdx              # Phase 2 — Keyword-driven (170 vol)
-│       └── direct-mail-copywriting.mdx                # Phase 2 — Keyword-driven (110 vol)
+│       ├── direct-mail-copywriting.mdx                # Phase 2 — Keyword-driven (110 vol)
+│       ├── small-business-copywriting.mdx             # Phase 3 T2 — Keyword-driven (600+ vol)
+│       ├── saas-copywriting.mdx                       # Phase 3 T2 — Keyword-driven (510+ vol)
+│       ├── how-to-write-ad-copy.mdx                   # Phase 3 T2 — Keyword-driven (390+ vol)
+│       ├── best-copywriting-books.mdx                 # Phase 3 T2 — Keyword-driven (390+ vol)
+│       ├── sales-copywriter.mdx                       # Phase 3 T2 — Keyword-driven (350+ vol)
+│       ├── direct-response-vs-brand-marketing.mdx     # Phase 3 T2 — Keyword-driven (300+ vol)
+│       └── vsl-copywriting.mdx                        # Phase 3 T2 — Keyword-driven (170+ vol)
 │
 ├── hooks/
 │   └── useDebounce.ts          # Generic debounce hook (used by blog search)
@@ -331,11 +338,11 @@ Always clear `.next` after making changes to `globals.css`, adding new Tailwind 
 
 ### Build Output
 
-The build generates **63 static pages**:
+The build generates **70 static pages**:
 - 1 homepage, about, contact, testimonials, portfolio, not-found
 - 9 service detail pages + 1 services listing
 - 6 industry detail pages + 1 industries listing
-- 28 blog posts + 3 blog listing pages (paginated)
+- 35 blog posts + 3 blog listing pages (paginated)
 - 2 case study pages + 1 case studies listing
 - robots.txt, sitemap.xml
 - 1 API route (contact form)
@@ -435,7 +442,7 @@ Site constants are centralized in `src/lib/constants.ts`:
 
 ## Blog Content Strategy
 
-### Current Content (28 posts)
+### Current Content (35 posts)
 
 Posts are organized in tiers that build topical authority clusters linking to service/industry pages:
 
@@ -447,6 +454,7 @@ Posts are organized in tiers that build topical authority clusters linking to se
 | Tier 3 | Thought leadership | ai-copywriting, how-to-hire-a-copywriter, 523m-copywriting-campaign |
 | Phase 2 | Keyword-driven (SEO gaps) | cold-email-copywriting, website-copywriting, conversion-copywriting, facebook-ad-copywriting, headline-formulas, famous-copywriters, ux-copywriting, copywriting-bullet-points, direct-mail-copywriting |
 | Phase 3 Tier 1 | High-impact keyword gaps | copywriting-services, how-to-write-a-sales-letter, how-to-write-a-headline, copywriting-psychology, copywriting-formulas |
+| Phase 3 Tier 2 | Strategic keyword gaps | small-business-copywriting, saas-copywriting, how-to-write-ad-copy, best-copywriting-books, sales-copywriter, direct-response-vs-brand-marketing, vsl-copywriting |
 
 ### Blog Post Format
 
@@ -491,17 +499,19 @@ Competitive SEO analysis is stored at `/Users/robpalmer/Desktop/RobPalmer.com SE
 | Copywriting Psychology | 600+ | 7-24 | ✅ Done |
 | Copywriting Formulas | 300+ | 19-28 | ✅ Done |
 
-### Phase 3 Tier 2 Content (PLANNED — Strategic Keywords)
+### Phase 3 Tier 2 Content (COMPLETED — Strategic Keywords)
+
+7 posts targeting strategic keyword clusters:
 
 | Post | Combined KW Volume | KD | Status |
 |------|-------------------|-----|--------|
-| Small Business Copywriting | 600+ | 5-14 | Planned |
-| SaaS Copywriting | 510+ | 7-14 | Planned |
-| How to Write Ad Copy | 390+ | 35 | Planned |
-| Best Copywriting Books | 390+ | 10 | Planned |
-| Sales Copywriter | 350+ | 1-12 | Planned |
-| Direct Response vs Brand Marketing | 300+ | 8-17 | Planned |
-| VSL Copywriting | 170+ | 10-12 | Planned |
+| Small Business Copywriting | 600+ | 5-14 | ✅ Done |
+| SaaS Copywriting | 510+ | 7-14 | ✅ Done |
+| How to Write Ad Copy | 390+ | 35 | ✅ Done |
+| Best Copywriting Books | 390+ | 10 | ✅ Done |
+| Sales Copywriter | 350+ | 1-12 | ✅ Done |
+| Direct Response vs Brand Marketing | 300+ | 8-17 | ✅ Done |
+| VSL Copywriting | 170+ | 10-12 | ✅ Done |
 
 ---
 
@@ -512,5 +522,4 @@ Competitive SEO analysis is stored at `/Users/robpalmer/Desktop/RobPalmer.com SE
 - Favicon and app icons (issue #2)
 - Cross-browser testing
 - Google Search Console setup
-- Phase 3 Tier 2 blog content (7 strategic keyword posts)
 - Phase 3 Tier 3 blog content (11 long-tail keyword posts)

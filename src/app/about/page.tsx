@@ -64,11 +64,11 @@ export default function AboutPage() {
                   </strong>{' '}
                   Stefan Georgi, founder of Copy Accelerator, hired me as{' '}
                   <strong className="text-ink-950">Copy Chief for CA Labs.</strong>{' '}
-                  And in 1993, I published what is widely recognized as the{' '}
+                  And today, I work with marketers and business owners across the
+                  globe — from{' '}
                   <strong className="text-ink-950">
-                    world&apos;s first blog
-                  </strong>{' '}
-                  — years before the term was even coined.
+                    the United States to the United Arab Emirates.
+                  </strong>
                 </p>
                 <p>
                   I have been writing copy longer than the internet has existed.
@@ -214,38 +214,47 @@ export default function AboutPage() {
       {/* ───────────────────────────── Career Timeline ───────────────────────────── */}
       <CareerTimeline />
 
-      {/* ───────────────────────────── World's First Blogger ───────────────────────────── */}
+      {/* ───────────────────────────── Working with Marketers Worldwide ───────────────────────────── */}
       <Section>
         <Container>
           <div className="max-w-3xl mx-auto">
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mb-6">
-              The World&apos;s First Blogger
+              Working with Marketers Worldwide
             </h2>
             <div className="space-y-5 text-lg text-paper-700 leading-relaxed font-body">
               <p>
-                In June 1993, I published what is widely recognized as the
-                world&apos;s first blog — a regularly updated online journal
-                years before the term &ldquo;blog&rdquo; was even coined.
-                This piece of internet history is{' '}
+                Direct-response copywriting has always been a craft that
+                transcends borders — because{' '}
                 <strong className="text-ink-950">
-                  referenced by Wikipedia
+                  human psychology is universal.
                 </strong>{' '}
-                in its timeline of early web publishing.
-              </p>
-              <p>
-                I mention this not to brag about being early to something, but
-                because it reveals a pattern that defines my entire career:{' '}
+                A compelling headline works whether your customer is in New York,
+                London, Dubai, or Sydney. And today, I work with clients across
+                the globe — from{' '}
                 <strong className="text-ink-950">
-                  I go where the opportunity is before the crowd arrives.
+                  the United States and the United Kingdom to the United Arab
+                  Emirates and Australia.
                 </strong>
               </p>
               <p>
-                I was writing direct-response copy before the internet existed. I
-                was publishing online content before anyone called it a blog. I
-                was building digital sales funnels before &ldquo;funnel&rdquo;
-                became a marketing buzzword. And today, I am at the cutting edge
-                of AI-assisted copywriting — because the best copywriters do not
-                fear new tools. They weaponize them.
+                I embraced remote work long before the world was forced into it.
+                For years, I have built my business around the freedom to live
+                and work from wherever I choose — from beachside apartments in{' '}
+                <strong className="text-ink-950">Thailand</strong> to coastal
+                cities in{' '}
+                <strong className="text-ink-950">Australia</strong>, and
+                everywhere in between. This is not a lifestyle experiment. It is
+                a deliberate strategy that keeps me sharp, inspired, and deeply
+                connected to international markets.
+              </p>
+              <p>
+                For my clients, it means one thing:{' '}
+                <strong className="text-ink-950">
+                  world-class direct-response copy delivered on time, every time
+                </strong>{' '}
+                — no matter what time zone you are in. Video calls, shared
+                documents, fast turnarounds. The work is seamless. The results
+                speak for themselves.
               </p>
             </div>
           </div>
