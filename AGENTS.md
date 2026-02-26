@@ -239,7 +239,15 @@ src/
 │       ├── generative-engine-optimization-for-copywriters.mdx # Phase 4 T2 — AI/GEO
 │       ├── geo-copywriting-guide.mdx                          # Phase 4 T2 — AI/GEO
 │       ├── david-ogilvy-ai-copywriting.mdx                    # Phase 4 T2 — Legends
-│       └── 30-years-of-copywriting-lessons.mdx                # Phase 4 T2 — Career
+│       ├── 30-years-of-copywriting-lessons.mdx                # Phase 4 T2 — Career
+│       ├── state-of-email-marketing-2026.mdx                  # Phase 4 T3 — Trend piece
+│       ├── sales-funnel-vs-single-sales-page.mdx              # Phase 4 T3 — Comparison
+│       ├── direct-mail-vs-digital-marketing.mdx               # Phase 4 T3 — Comparison
+│       ├── clickbank-funnel-roas-case-study.mdx               # Phase 4 T3 — Case study
+│       ├── what-does-a-copywriter-do.mdx                      # Phase 4 T3 — FAQ cluster
+│       ├── how-long-should-a-sales-page-be.mdx                # Phase 4 T3 — FAQ cluster
+│       ├── how-to-start-a-copywriting-career.mdx              # Phase 4 T3 — Career
+│       └── forgotten-copywriters-better-than-famous.mdx       # Phase 4 T3 — Legends
 │
 ├── hooks/
 │   └── useDebounce.ts          # Generic debounce hook (used by blog search)
@@ -473,7 +481,7 @@ Site constants are centralized in `src/lib/constants.ts`:
 
 ## Blog Content Strategy
 
-### Current Content (66 posts)
+### Current Content (74 posts)
 
 Posts are organized in tiers that build topical authority clusters linking to service/industry pages:
 
@@ -489,6 +497,7 @@ Posts are organized in tiers that build topical authority clusters linking to se
 | Phase 3 Tier 3 | Long-tail keywords | sales-letter-examples, copywriting-rates, copywriting-portfolio-examples, copywriting-niches, long-form-sales-copy, ecommerce-copywriting, b2b-copywriting, storytelling-in-copywriting, sales-page-examples, aida-copywriting, how-to-write-email-subject-lines |
 | Phase 4 Tier 1 | Trend/comparison/legend posts | state-of-direct-response-copywriting-2026, state-of-ai-copywriting-2026, freelance-copywriter-vs-marketing-agency, in-house-copywriter-vs-freelance, vsl-cold-traffic-conversion-case-study, fortune-500-copywriting-lessons, is-copywriting-dead, how-much-does-a-direct-response-copywriter-cost, lessons-from-gary-halbert, eugene-schwartz-breakthrough-advertising-lessons |
 | Phase 4 Tier 2 | Mid-priority content expansion | state-of-vsl-marketing-2026, copywriter-vs-content-writer-for-sales, vsl-vs-sales-page, long-form-copy-vs-short-form-copy, product-launch-email-sequence-case-study, upsell-sequence-doubled-aov-case-study, generative-engine-optimization-for-copywriters, geo-copywriting-guide, david-ogilvy-ai-copywriting, 30-years-of-copywriting-lessons |
+| Phase 4 Tier 3 | Completing Phase 4 plan | state-of-email-marketing-2026, sales-funnel-vs-single-sales-page, direct-mail-vs-digital-marketing, clickbank-funnel-roas-case-study, what-does-a-copywriter-do, how-long-should-a-sales-page-be, how-to-start-a-copywriting-career, forgotten-copywriters-better-than-famous |
 
 ### Blog Post Format
 
@@ -565,7 +574,7 @@ Competitive SEO analysis is stored at `/Users/robpalmer/Desktop/RobPalmer.com SE
 | AIDA Copywriting Formula | aida-copywriting | ✅ Done |
 | Email Subject Line Writing Guide | how-to-write-email-subject-lines | ✅ Done |
 
-### Phase 4 Content Plan (TIERS 1-2 COMPLETED — 20 of 28 posts published)
+### Phase 4 Content Plan (COMPLETED — all 28 posts published)
 
 **Category 1: "State of..." Trend Pieces (4 posts)**
 
@@ -624,6 +633,7 @@ Competitive SEO analysis is stored at `/Users/robpalmer/Desktop/RobPalmer.com SE
 
 **Tier 1 status: COMPLETED** — All 10 HIGH priority posts written, hero images generated, build verified.
 **Tier 2 status: COMPLETED** — All 10 MEDIUM-HIGH priority posts written, hero images generated, build verified.
+**Tier 3 status: COMPLETED** — All 8 MEDIUM priority posts written, hero images generated, build verified.
 
 ---
 
