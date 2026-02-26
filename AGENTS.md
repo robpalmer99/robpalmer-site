@@ -543,12 +543,67 @@ Competitive SEO analysis is stored at `/Users/robpalmer/Desktop/RobPalmer.com SE
 | AIDA Copywriting Formula | aida-copywriting | ✅ Done |
 | Email Subject Line Writing Guide | how-to-write-email-subject-lines | ✅ Done |
 
+### Phase 4 Content Plan (PLANNED — 28 posts across 5 content types)
+
+**Category 1: "State of..." Trend Pieces (4 posts)**
+
+| # | Title | Slug | Priority |
+|---|-------|------|----------|
+| 1 | The 2026 State of Direct Response Copywriting | state-of-direct-response-copywriting-2026 | HIGH |
+| 2 | The State of AI Copywriting in 2026 | state-of-ai-copywriting-2026 | HIGH |
+| 3 | The State of VSL Marketing in 2026 | state-of-vsl-marketing-2026 | MEDIUM-HIGH |
+| 4 | The State of Email Marketing in 2026 | state-of-email-marketing-2026 | MEDIUM |
+
+**Category 2: Comparison / Versus Posts (7 posts)**
+
+| # | Title | Slug | Priority |
+|---|-------|------|----------|
+| 5 | Freelance Copywriter vs. Marketing Agency | freelance-copywriter-vs-marketing-agency | HIGH |
+| 6 | In-House Copywriter vs. Freelance Specialist | in-house-copywriter-vs-freelance | HIGH |
+| 7 | Copywriter vs. Content Writer: Why Hiring the Wrong One Costs You Sales | copywriter-vs-content-writer-for-sales | HIGH |
+| 8 | VSL vs. Sales Page: Which Converts Better? | vsl-vs-sales-page | MEDIUM-HIGH |
+| 9 | Long-Form vs. Short-Form Copy: When Each One Wins | long-form-copy-vs-short-form-copy | MEDIUM-HIGH |
+| 10 | Sales Funnel vs. Single Sales Page | sales-funnel-vs-single-sales-page | MEDIUM |
+| 11 | Direct Mail vs. Digital Marketing | direct-mail-vs-digital-marketing | MEDIUM |
+
+**Category 3: Client Result Narratives (5 posts)**
+
+| # | Title | Slug | Priority |
+|---|-------|------|----------|
+| 12 | How I Wrote a VSL That Converted 8% on Cold Traffic | vsl-cold-traffic-conversion-case-study | HIGH |
+| 13 | What Writing for Apple, IBM, and Microsoft Taught Me | fortune-500-copywriting-lessons | HIGH |
+| 14 | Inside a $2M Product Launch: The Email Sequence | product-launch-email-sequence-case-study | MEDIUM-HIGH |
+| 15 | How a Single Upsell Sequence Doubled AOV | upsell-sequence-doubled-aov-case-study | MEDIUM-HIGH |
+| 16 | The ClickBank Funnel That Hit 300% ROAS | clickbank-funnel-roas-case-study | MEDIUM |
+
+**Category 4: FAQ Cluster Posts (7 posts)**
+
+| # | Title | Slug | Priority |
+|---|-------|------|----------|
+| 17 | Is Copywriting Dead in 2026? A $523M Answer | is-copywriting-dead | HIGH |
+| 18 | How Much Does a Direct Response Copywriter Cost in 2026? | how-much-does-a-direct-response-copywriter-cost | HIGH |
+| 19 | What Is GEO (Generative Engine Optimization)? | generative-engine-optimization-for-copywriters | MEDIUM-HIGH |
+| 20 | How to Write Copy That AI Engines Will Cite | geo-copywriting-guide | MEDIUM-HIGH |
+| 21 | What Does a Copywriter Actually Do? | what-does-a-copywriter-do | MEDIUM |
+| 22 | How Long Should a Sales Page Be? | how-long-should-a-sales-page-be | MEDIUM |
+| 23 | How to Start a Copywriting Career in 2026 | how-to-start-a-copywriting-career | MEDIUM |
+
+**Category 5: Guest/Interview Deep Dives (5 posts)**
+
+| # | Title | Slug | Priority |
+|---|-------|------|----------|
+| 24 | Lessons From Gary Halbert | lessons-from-gary-halbert | HIGH |
+| 25 | What Eugene Schwartz's "Breakthrough Advertising" Teaches About Modern Funnels | eugene-schwartz-breakthrough-advertising-lessons | HIGH |
+| 26 | What David Ogilvy Would Do With AI | david-ogilvy-ai-copywriting | MEDIUM-HIGH |
+| 27 | 5 Forgotten Copywriters Who Were Better Than the Famous Ones | forgotten-copywriters-better-than-famous | MEDIUM |
+| 28 | What 30 Years of Copywriting Taught Me That No Book Covers | 30-years-of-copywriting-lessons | MEDIUM |
+
+**Implementation order:** Tier 1 first (posts 1,2,5,6,12,13,17,18,24,25), then Tier 2 (3,7,8,9,14,15,19,20,26,28), then Tier 3 (4,10,11,16,21,22,23,27).
+
 ---
 
 ## Pending / Future Work
 
-- Wire contact form API route to actual email service (currently logs to console)
-- OG image generation (issue #5)
-- Favicon and app icons (issue #2)
+- Wire contact form API route to actual email service (needs Resend API key or similar)
 - Cross-browser testing
 - Google Search Console setup
