@@ -186,7 +186,16 @@ src/
 │       ├── financial-copywriting.mdx                  # Tier 2 — Industry niche
 │       ├── ai-copywriting.mdx                         # Tier 3 — Thought leadership
 │       ├── how-to-hire-a-copywriter.mdx               # Tier 3 — Thought leadership
-│       └── 523m-copywriting-campaign.mdx              # Tier 3 — Narrative case study
+│       ├── 523m-copywriting-campaign.mdx              # Tier 3 — Narrative case study
+│       ├── cold-email-copywriting.mdx                 # Phase 2 — Keyword-driven (1,600 vol)
+│       ├── website-copywriting.mdx                    # Phase 2 — Keyword-driven (1,600 vol)
+│       ├── conversion-copywriting.mdx                 # Phase 2 — Keyword-driven (390 vol)
+│       ├── facebook-ad-copywriting.mdx                # Phase 2 — Keyword-driven (210 vol)
+│       ├── headline-formulas.mdx                      # Phase 2 — Keyword-driven (110 vol)
+│       ├── famous-copywriters.mdx                     # Phase 2 — Keyword-driven (170 vol)
+│       ├── ux-copywriting.mdx                         # Phase 2 — Keyword-driven (480 vol)
+│       ├── copywriting-bullet-points.mdx              # Phase 2 — Keyword-driven (170 vol)
+│       └── direct-mail-copywriting.mdx                # Phase 2 — Keyword-driven (110 vol)
 │
 └── lib/
     ├── constants.ts            # Site URL, name, nav links, stats, contact info
@@ -255,7 +264,7 @@ All 12 portfolio items link to the same shared Google Drive folder. There are no
 
 ```bash
 npm run dev          # Start dev server (port 3000)
-npm run build        # Production build (currently 47 static pages)
+npm run build        # Production build (currently 56 static pages)
 npm run start        # Serve production build
 npm run lint         # ESLint
 ```
@@ -274,11 +283,11 @@ Always clear `.next` after making changes to `globals.css`, adding new Tailwind 
 
 ### Build Output
 
-The build generates **47 static pages**:
+The build generates **56 static pages**:
 - 1 homepage, about, contact, testimonials, portfolio, not-found
 - 9 service detail pages + 1 services listing
 - 6 industry detail pages + 1 industries listing
-- 14 blog posts + 1 blog listing
+- 23 blog posts + 1 blog listing
 - 2 case study pages + 1 case studies listing
 - robots.txt, sitemap.xml
 - 1 API route (contact form)
@@ -368,7 +377,7 @@ Site constants are centralized in `src/lib/constants.ts`:
 
 ## Blog Content Strategy
 
-### Current Content (14 posts)
+### Current Content (23 posts)
 
 Posts are organized in tiers that build topical authority clusters linking to service/industry pages:
 
@@ -378,6 +387,7 @@ Posts are organized in tiers that build topical authority clusters linking to se
 | Tier 1 | SEO pillar pages | what-is-a-vsl, how-to-write-a-sales-page, what-is-a-sales-funnel, email-copywriting, landing-page-copywriting |
 | Tier 2 | Industry niche authority | health-supplement-copywriting, clickbank-copywriting, financial-copywriting |
 | Tier 3 | Thought leadership | ai-copywriting, how-to-hire-a-copywriter, 523m-copywriting-campaign |
+| Phase 2 | Keyword-driven (SEO gaps) | cold-email-copywriting, website-copywriting, conversion-copywriting, facebook-ad-copywriting, headline-formulas, famous-copywriters, ux-copywriting, copywriting-bullet-points, direct-mail-copywriting |
 
 ### Blog Post Format
 
@@ -394,21 +404,21 @@ Competitive SEO analysis is stored at `/Users/robpalmer/Desktop/RobPalmer.com SE
 - `RobPalmer_SEO_Keyword_Strategy.xlsx` — Master keyword strategy spreadsheet (3,659 keywords, 7 sheets)
 - Key finding: robpalmer.com has Authority 5/100 with near-zero organic visibility; competitive bar is low
 
-### Phase 2 Content (Planned — Keyword-Driven)
+### Phase 2 Content (COMPLETED — Keyword-Driven)
 
-9 new posts to fill keyword gaps identified in SEO analysis:
+9 posts written to fill keyword gaps identified in SEO analysis:
 
-| Post | Primary KW Volume | Priority |
-|------|-------------------|----------|
-| Cold Email Copywriting | 1,600 | HIGH |
-| Website Copywriting | 1,600 | HIGH |
-| UX Copywriting | 480 | MEDIUM |
-| Conversion Copywriting | 390 | HIGH |
-| Facebook Ad Copywriting | 210 | HIGH |
-| Copywriting Bullet Points | 170 | QUICK WIN |
-| Famous Copywriters | 170 | HIGH |
-| Headline Formulas | 110 | HIGH |
-| Direct Mail Copywriting | 110 | QUICK WIN |
+| Post | Primary KW Volume | Priority | Status |
+|------|-------------------|----------|--------|
+| Cold Email Copywriting | 1,600 | HIGH | ✅ Done |
+| Website Copywriting | 1,600 | HIGH | ✅ Done |
+| UX Copywriting | 480 | MEDIUM | ✅ Done |
+| Conversion Copywriting | 390 | HIGH | ✅ Done |
+| Facebook Ad Copywriting | 210 | HIGH | ✅ Done |
+| Copywriting Bullet Points | 170 | QUICK WIN | ✅ Done |
+| Famous Copywriters | 170 | HIGH | ✅ Done |
+| Headline Formulas | 110 | HIGH | ✅ Done |
+| Direct Mail Copywriting | 110 | QUICK WIN | ✅ Done |
 
 ---
 
@@ -420,5 +430,4 @@ Competitive SEO analysis is stored at `/Users/robpalmer/Desktop/RobPalmer.com SE
 - Cross-browser testing
 - Google Search Console setup
 - Vercel deployment with custom domain
-- Write Phase 2 blog content (9 keyword-driven posts — see Blog Content Strategy)
-- Build out additional topical clusters around highest-volume keyword opportunities
+- Build out additional topical clusters around highest-volume keyword opportunities (Phase 2 complete — 9 posts written)
