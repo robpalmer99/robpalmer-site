@@ -331,11 +331,11 @@ Always clear `.next` after making changes to `globals.css`, adding new Tailwind 
 
 ### Build Output
 
-The build generates **57 static pages**:
+The build generates **63 static pages**:
 - 1 homepage, about, contact, testimonials, portfolio, not-found
 - 9 service detail pages + 1 services listing
 - 6 industry detail pages + 1 industries listing
-- 23 blog posts + 2 blog listing pages (paginated)
+- 28 blog posts + 3 blog listing pages (paginated)
 - 2 case study pages + 1 case studies listing
 - robots.txt, sitemap.xml
 - 1 API route (contact form)
@@ -435,7 +435,7 @@ Site constants are centralized in `src/lib/constants.ts`:
 
 ## Blog Content Strategy
 
-### Current Content (23 posts)
+### Current Content (28 posts)
 
 Posts are organized in tiers that build topical authority clusters linking to service/industry pages:
 
@@ -446,6 +446,7 @@ Posts are organized in tiers that build topical authority clusters linking to se
 | Tier 2 | Industry niche authority | health-supplement-copywriting, clickbank-copywriting, financial-copywriting |
 | Tier 3 | Thought leadership | ai-copywriting, how-to-hire-a-copywriter, 523m-copywriting-campaign |
 | Phase 2 | Keyword-driven (SEO gaps) | cold-email-copywriting, website-copywriting, conversion-copywriting, facebook-ad-copywriting, headline-formulas, famous-copywriters, ux-copywriting, copywriting-bullet-points, direct-mail-copywriting |
+| Phase 3 Tier 1 | High-impact keyword gaps | copywriting-services, how-to-write-a-sales-letter, how-to-write-a-headline, copywriting-psychology, copywriting-formulas |
 
 ### Blog Post Format
 
@@ -478,6 +479,30 @@ Competitive SEO analysis is stored at `/Users/robpalmer/Desktop/RobPalmer.com SE
 | Headline Formulas | 110 | HIGH | ✅ Done |
 | Direct Mail Copywriting | 110 | QUICK WIN | ✅ Done |
 
+### Phase 3 Tier 1 Content (COMPLETED — High-Impact Keywords)
+
+5 posts targeting the highest-value uncovered keyword clusters:
+
+| Post | Combined KW Volume | KD | Status |
+|------|-------------------|-----|--------|
+| Copywriting Services | 3,600+ | 6-40 | ✅ Done |
+| How to Write a Sales Letter | 1,200+ | 18-31 | ✅ Done |
+| How to Write a Headline | 640+ | 17-27 | ✅ Done |
+| Copywriting Psychology | 600+ | 7-24 | ✅ Done |
+| Copywriting Formulas | 300+ | 19-28 | ✅ Done |
+
+### Phase 3 Tier 2 Content (PLANNED — Strategic Keywords)
+
+| Post | Combined KW Volume | KD | Status |
+|------|-------------------|-----|--------|
+| Small Business Copywriting | 600+ | 5-14 | Planned |
+| SaaS Copywriting | 510+ | 7-14 | Planned |
+| How to Write Ad Copy | 390+ | 35 | Planned |
+| Best Copywriting Books | 390+ | 10 | Planned |
+| Sales Copywriter | 350+ | 1-12 | Planned |
+| Direct Response vs Brand Marketing | 300+ | 8-17 | Planned |
+| VSL Copywriting | 170+ | 10-12 | Planned |
+
 ---
 
 ## Pending / Future Work
@@ -487,5 +512,5 @@ Competitive SEO analysis is stored at `/Users/robpalmer/Desktop/RobPalmer.com SE
 - Favicon and app icons (issue #2)
 - Cross-browser testing
 - Google Search Console setup
-- Vercel deployment with custom domain
-- Build out additional topical clusters around highest-volume keyword opportunities (Phase 2 complete — 9 posts written)
+- Phase 3 Tier 2 blog content (7 strategic keyword posts)
+- Phase 3 Tier 3 blog content (11 long-tail keyword posts)
