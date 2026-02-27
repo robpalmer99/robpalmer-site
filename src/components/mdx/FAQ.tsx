@@ -7,7 +7,7 @@ export function FAQItem({ question, children }: FAQItemProps) {
   return (
     <div className="not-prose py-6 border-b border-paper-200 last:border-b-0">
       <h3 className="font-heading text-lg font-bold text-ink-950 mb-3">{question}</h3>
-      <div className="text-paper-600 font-body text-base leading-relaxed">{children}</div>
+      <div className="text-ink-700 font-body text-base leading-relaxed">{children}</div>
     </div>
   )
 }

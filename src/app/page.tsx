@@ -73,7 +73,7 @@ export default function HomePage() {
               Most Copywriters Write Content.{' '}
               <span className="text-gold-500">I Write Conversions.</span>
             </h2>
-            <div className="mt-8 space-y-6 text-lg text-paper-600 leading-relaxed font-body text-left">
+            <div className="mt-8 space-y-6 text-lg text-ink-700 leading-relaxed font-body text-left">
               <p>
                 There is a difference between a copywriter who can string words
                 together and one who can engineer a persuasion sequence that turns
@@ -108,7 +108,7 @@ export default function HomePage() {
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950">
               Direct-Response Copy That Moves the Needle
             </h2>
-            <p className="mt-4 text-lg text-paper-600 font-body max-w-2xl mx-auto">
+            <p className="mt-4 text-lg text-ink-700 font-body max-w-2xl mx-auto">
               From VSLs to email sequences, every piece of copy is engineered for
               one thing: results.
             </p>
@@ -200,7 +200,7 @@ export default function HomePage() {
                 <span className="text-gold-500">Human-Crafted.</span>
               </h2>
             </div>
-            <div className="space-y-6 text-lg text-paper-600 leading-relaxed font-body">
+            <div className="space-y-6 text-lg text-ink-700 leading-relaxed font-body">
               <p>
                 I was writing copy before the internet existed. I was the
                 world&apos;s first blogger in 1993. And today, I am at the

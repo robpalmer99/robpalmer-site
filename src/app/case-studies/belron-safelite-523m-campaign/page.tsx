@@ -87,7 +87,7 @@ export default function BelronCaseStudyPage() {
             </div>
 
             {/* Content */}
-            <div className="space-y-6 text-lg text-paper-600 leading-relaxed font-body">
+            <div className="space-y-6 text-lg text-ink-700 leading-relaxed font-body">
               <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
                 The Challenge
               </h2>

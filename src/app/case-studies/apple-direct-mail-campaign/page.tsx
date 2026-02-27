@@ -87,7 +87,7 @@ export default function AppleCaseStudyPage() {
             </div>
 
             {/* Content */}
-            <div className="space-y-6 text-lg text-paper-600 leading-relaxed font-body">
+            <div className="space-y-6 text-lg text-ink-700 leading-relaxed font-body">
               <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
                 The Challenge
               </h2>
@@ -161,7 +161,7 @@ export default function AppleCaseStudyPage() {
                 <h3 className="font-heading text-lg font-bold text-ink-950 mb-3">
                   The Campaign That Was &ldquo;Too Successful&rdquo;
                 </h3>
-                <p className="text-base text-paper-600 font-body leading-relaxed">
+                <p className="text-base text-ink-700 font-body leading-relaxed">
                   The direct sales generated such massive demand that Apple dealers
                   faced empty stores as their market was cannibalised. Despite
                   Apple&apos;s assurances that direct customers would visit dealers

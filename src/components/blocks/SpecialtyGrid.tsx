@@ -84,7 +84,7 @@ export function SpecialtyGrid() {
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950">
               What I Specialize In
             </h2>
-            <p className="mt-4 text-lg text-paper-600 font-body">
+            <p className="mt-4 text-lg text-ink-700 font-body">
               High-stakes direct-response copy. Every project is a strategic
               engagement designed to deliver measurable ROI.
             </p>
@@ -100,7 +100,7 @@ export function SpecialtyGrid() {
                 <h3 className="font-heading text-lg font-bold text-ink-950 group-hover:text-gold-600 transition-colors">
                   {service.title}
                 </h3>
-                <p className="mt-2 text-sm text-paper-600 font-body leading-relaxed">
+                <p className="mt-2 text-sm text-ink-700 font-body leading-relaxed">
                   {service.description}
                 </p>
               </Link>
@@ -116,7 +116,7 @@ export function SpecialtyGrid() {
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950">
               Verticals I Work In
             </h2>
-            <p className="mt-4 text-lg text-paper-600 font-body">
+            <p className="mt-4 text-lg text-ink-700 font-body">
               Deep vertical expertise across the highest-converting
               direct-response markets.
             </p>
@@ -131,7 +131,7 @@ export function SpecialtyGrid() {
                 <h3 className="font-heading text-lg font-bold text-ink-950 group-hover:text-gold-600 transition-colors">
                   {vertical.title}
                 </h3>
-                <p className="mt-2 text-sm text-paper-600 font-body leading-relaxed">
+                <p className="mt-2 text-sm text-ink-700 font-body leading-relaxed">
                   {vertical.description}
                 </p>
               </Link>

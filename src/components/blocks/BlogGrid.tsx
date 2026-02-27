@@ -230,7 +230,7 @@ export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], curren
                   <h3 className="font-heading text-base font-bold text-ink-950 group-hover:text-gold-600 transition-colors leading-snug">
                     {result.title}
                   </h3>
-                  <p className="mt-1.5 text-sm text-paper-600 leading-relaxed font-body line-clamp-2">
+                  <p className="mt-1.5 text-sm text-ink-700 leading-relaxed font-body line-clamp-2">
                     {result.description}
                   </p>
                   <span className="mt-3 inline-block text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-500 transition-colors">

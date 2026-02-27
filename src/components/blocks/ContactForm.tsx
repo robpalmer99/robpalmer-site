@@ -44,7 +44,7 @@ export function ContactForm() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
         <h3 className="font-heading text-lg font-bold text-ink-950 mb-2">Message Sent</h3>
-        <p className="text-paper-600 font-body">
+        <p className="text-ink-700 font-body">
           Thanks for reaching out. I&apos;ll get back to you shortly.
         </p>
       </div>

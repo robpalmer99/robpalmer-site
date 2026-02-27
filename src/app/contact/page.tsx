@@ -54,7 +54,7 @@ export default function ContactPage() {
               <h3 className="font-heading text-lg font-bold text-ink-950 mb-4">
                 Who This Call Is For
               </h3>
-              <div className="space-y-4 text-paper-600 font-body">
+              <div className="space-y-4 text-ink-700 font-body">
                 <p>
                   This call is for business owners and marketing directors who
                   need direct-response copy that drives measurable results —
@@ -83,7 +83,7 @@ export default function ContactPage() {
             <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950 mb-3 text-center">
               For All Other Inquiries
             </h2>
-            <p className="text-paper-600 font-body text-center mb-10">
+            <p className="text-ink-700 font-body text-center mb-10">
               Not ready for a call? No problem. Drop me a message and I&apos;ll get back to you within 24 hours.
             </p>
             <ContactForm />

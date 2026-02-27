@@ -46,7 +46,7 @@ export function PortfolioCard({ item }: PortfolioCardProps) {
         )}
 
         {/* Description */}
-        <p className="mt-2 text-sm text-paper-600 leading-relaxed font-body line-clamp-2">
+        <p className="mt-2 text-sm text-ink-700 leading-relaxed font-body line-clamp-2">
           {item.description}
         </p>
 

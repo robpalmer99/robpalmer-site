@@ -33,7 +33,7 @@ export default function PortfolioPage() {
       <section className="bg-paper-50 pb-2">
         <Container>
           <div className="max-w-3xl mx-auto text-center -mt-2">
-            <p className="text-lg text-paper-600 leading-relaxed font-body">
+            <p className="text-lg text-ink-700 leading-relaxed font-body">
               Every piece below was written to sell — not to win creative
               awards. These samples represent a cross-section of the{' '}
               <strong className="text-ink-950">1,200+ projects</strong> I&apos;ve
@@ -101,7 +101,7 @@ export default function PortfolioPage() {
               <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
                 Explore More
               </h2>
-              <p className="mt-3 text-lg text-paper-600 font-body">
+              <p className="mt-3 text-lg text-ink-700 font-body">
                 See the services behind these results, or read what clients have
                 to say.
               </p>
@@ -138,7 +138,7 @@ export default function PortfolioPage() {
                   <h3 className="font-heading text-lg font-bold text-ink-950 group-hover:text-gold-600 transition-colors">
                     {card.title}
                   </h3>
-                  <p className="mt-2 text-sm text-paper-600 leading-relaxed font-body">
+                  <p className="mt-2 text-sm text-ink-700 leading-relaxed font-body">
                     {card.description}
                   </p>
                   <div className="mt-4 flex items-center gap-1 text-sm font-heading font-semibold text-gold-500 group-hover:text-gold-600 transition-colors">

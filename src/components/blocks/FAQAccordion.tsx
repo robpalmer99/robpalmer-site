@@ -64,7 +64,7 @@ export function FAQAccordion({ items, className }: FAQAccordionProps) {
                 isOpen ? 'max-h-[2000px] opacity-100 mt-2' : 'max-h-0 opacity-0'
               )}
             >
-              <p className="text-paper-600 text-base leading-relaxed font-body pb-2">
+              <p className="text-ink-700 text-base leading-relaxed font-body pb-2">
                 {item.answer}
               </p>
             </div>

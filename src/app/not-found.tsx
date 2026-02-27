@@ -22,7 +22,7 @@ export default function NotFound() {
       <Section>
         <Container>
           <div className="max-w-xl mx-auto text-center py-12">
-            <p className="text-lg text-paper-600 font-body mb-8">
+            <p className="text-lg text-ink-700 font-body mb-8">
               The page you are looking for does not exist or has been moved.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -26,7 +26,7 @@ export function AboutTestimonials() {
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950">
             What Clients Say
           </h2>
-          <p className="mt-4 text-lg text-paper-600 font-body">
+          <p className="mt-4 text-lg text-ink-700 font-body">
             From Fortune 500 CEOs to ClickBank vendors — here is what it is like
             to work with me.
           </p>

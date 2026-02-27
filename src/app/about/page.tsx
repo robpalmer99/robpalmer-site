@@ -48,7 +48,7 @@ export default function AboutPage() {
                   priority
                 />
               </div>
-              <div className="space-y-4 text-lg text-paper-700 leading-relaxed font-body">
+              <div className="space-y-4 text-lg text-ink-700 leading-relaxed font-body">
                 <p>
                   I am a direct-response copywriter who has generated over{' '}
                   <strong className="text-ink-950">
@@ -90,7 +90,7 @@ export default function AboutPage() {
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mb-6">
               The $523M Campaign That Five Copywriters Failed to Crack
             </h2>
-            <div className="space-y-5 text-lg text-paper-700 leading-relaxed font-body">
+            <div className="space-y-5 text-lg text-ink-700 leading-relaxed font-body">
               <p>
                 Belron International — known in the US as Safelite AutoGlass — is
                 the world&apos;s largest vehicle glass repair and replacement
@@ -176,7 +176,7 @@ export default function AboutPage() {
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mb-6">
               Fortune 500 Foundations
             </h2>
-            <div className="space-y-5 text-lg text-paper-700 leading-relaxed font-body">
+            <div className="space-y-5 text-lg text-ink-700 leading-relaxed font-body">
               <p>
                 My career began in the golden age of direct mail, writing
                 campaigns for{' '}
@@ -221,7 +221,7 @@ export default function AboutPage() {
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mb-6">
               Working with Marketers Worldwide
             </h2>
-            <div className="space-y-5 text-lg text-paper-700 leading-relaxed font-body">
+            <div className="space-y-5 text-lg text-ink-700 leading-relaxed font-body">
               <p>
                 Direct-response copywriting has always been a craft that
                 transcends borders — because{' '}
@@ -340,7 +340,7 @@ export default function AboutPage() {
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mb-6">
               What It&apos;s Like Working With Me
             </h2>
-            <div className="space-y-5 text-lg text-paper-700 leading-relaxed font-body">
+            <div className="space-y-5 text-lg text-ink-700 leading-relaxed font-body">
               <p>
                 I do not do content production, blog posts for SEO, or low-level
                 copywriting tasks. Every project I take on is a{' '}
@@ -378,7 +378,7 @@ export default function AboutPage() {
                       <h3 className="font-heading text-base font-bold text-ink-950">
                         {item.title}
                       </h3>
-                      <p className="mt-1 text-sm text-paper-600 font-body leading-relaxed">
+                      <p className="mt-1 text-sm text-ink-700 font-body leading-relaxed">
                         {item.text}
                       </p>
                     </div>

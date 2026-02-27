@@ -186,7 +186,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   <h3 className="font-heading font-bold text-ink-950">
                     Rob Palmer
                   </h3>
-                  <p className="text-sm text-paper-600 font-body mt-1">
+                  <p className="text-sm text-ink-700 font-body mt-1">
                     Rob Palmer is a veteran direct-response copywriter with 30+ years of experience and $523M+ in tracked results. His clients include Apple, IBM, Microsoft, and Citibank. He specializes in VSLs, sales funnels, and email sequences for ClickBank and DTC brands, leveraging AI to amplify battle-tested direct-response principles.
                   </p>
                 </div>

@@ -127,7 +127,7 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
                 <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
                   {section.heading}
                 </h2>
-                <p className="mt-4 text-lg text-paper-600 leading-relaxed font-body">
+                <p className="mt-4 text-lg text-ink-700 leading-relaxed font-body">
                   {section.content}
                 </p>
               </div>
@@ -144,7 +144,7 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
               <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
                 What You Get
               </h2>
-              <p className="mt-3 text-lg text-paper-600 font-body">
+              <p className="mt-3 text-lg text-ink-700 font-body">
                 Every deliverable is built on proven direct-response frameworks
                 — not templates.
               </p>
@@ -158,7 +158,7 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
                   <h3 className="font-heading text-base font-bold text-ink-950">
                     {item.title}
                   </h3>
-                  <p className="mt-2 text-sm text-paper-600 font-body leading-relaxed">
+                  <p className="mt-2 text-sm text-ink-700 font-body leading-relaxed">
                     {item.description}
                   </p>
                 </div>
@@ -275,7 +275,7 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
               <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
                 Services for Your Vertical
               </h2>
-              <p className="mt-3 text-lg text-paper-600 font-body">
+              <p className="mt-3 text-lg text-ink-700 font-body">
                 I offer a full range of direct-response copywriting services
                 tailored to your niche.
               </p>
