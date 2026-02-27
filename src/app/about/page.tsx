@@ -36,7 +36,7 @@ export default function AboutPage() {
       <Section>
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="flex flex-col sm:flex-row items-start gap-8 mb-10">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8 mb-10">
               <div className="shrink-0">
                 <Image
                   src="/images/headshots/rob-palmer-clean.png"
