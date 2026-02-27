@@ -3,34 +3,28 @@ import { Container } from '@/components/ui/Container'
 
 const milestones = [
   {
-    era: 'Early 1990s',
-    title: 'Fortune 500 Direct Mail',
+    era: 'Early Career',
+    title: 'Fortune 500 Direct Response',
     description:
-      'Cut teeth writing direct-response campaigns for Apple, IBM, Microsoft, Citibank, and Morgan Stanley. Learned the fundamentals of persuasion that still drive conversions today.',
-  },
-  {
-    era: 'June 1993',
-    title: "World's First Blog Published",
-    description:
-      'Published what is widely recognized as the world\'s first blog — years before the term "blog" was even coined. Referenced by Wikipedia as a pioneering moment in internet history.',
+      'Built foundations writing direct-response campaigns for Apple, IBM, Microsoft, Citibank, and Morgan Stanley — learning the research-driven persuasion principles that still power every campaign I write today.',
   },
   {
     era: '2000s',
-    title: 'The $523M Campaign',
+    title: 'The $523M Belron Campaign',
     description:
-      'Wrote the Belron/Safelite direct-response campaign that five previous copywriters had failed to crack. It ran for nine consecutive years and generated $523 million in tracked sales.',
+      'Wrote the Belron/Safelite campaign that five previous copywriters had failed to crack. Research-first strategy. Emotion-driven copy. $523 million in tracked results.',
   },
   {
     era: '2010s',
-    title: 'Digital Direct Response',
+    title: 'Digital Funnels & ClickBank',
     description:
-      'Transitioned to digital — VSLs, sales funnels, email sequences, and ClickBank offers. Applied battle-tested direct mail principles to the new medium with devastating effect.',
+      'Moved into VSLs, sales funnels, email sequences, and ClickBank offers — applying proven direct-response frameworks to digital channels and scaling results for DTC and info product brands.',
   },
   {
-    era: 'Today',
-    title: 'AI-Powered Copywriting',
+    era: 'Now',
+    title: 'AI-Powered Conversion Strategy',
     description:
-      'Operating at the cutting edge of AI-assisted direct-response copywriting. Using AI to research faster, test more variations, and scale what works — amplified by 30+ years of craft.',
+      'Building high-converting funnels and campaigns using AI-powered research, rapid variation testing, and CRO. Platform-fluent across Meta, YouTube, and TikTok. Offer strategy, funnel architecture, and copy — all under one roof.',
   },
 ]
 
@@ -40,11 +34,11 @@ export function CareerTimeline() {
       <Container>
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-paper-50">
-            Three Decades at the Frontier
+            Always at the Frontier
           </h2>
           <p className="mt-4 text-lg text-paper-400 font-body">
-            From Fortune 500 boardrooms to the cutting edge of AI — a career
-            built on being first.
+            From Fortune 500 boardrooms to AI-powered funnels — a career
+            built on adapting faster than the market.
           </p>
         </div>
         <div className="relative max-w-3xl mx-auto">

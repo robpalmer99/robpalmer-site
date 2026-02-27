@@ -14,9 +14,9 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { SITE_URL } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'About | Veteran Direct-Response Copywriter',
+  title: 'About | Direct-Response Copywriter & Conversion Strategist',
   description:
-    'Rob Palmer is a veteran direct-response copywriter with 30+ years of experience, Fortune 500 clients including Apple and IBM, and $523M+ in tracked results. Pioneer of blogging (1993) and AI-assisted copywriting.',
+    'Rob Palmer is a direct-response copywriter and conversion strategist with $523M+ in tracked results. He builds high-converting funnels, offers, and campaigns using AI-powered research and modern ad platforms like Meta, YouTube, and TikTok.',
   alternates: {
     canonical: `${SITE_URL}/about`,
   },
@@ -28,7 +28,7 @@ export default function AboutPage() {
       <Hero
         variant="page"
         headline="About Rob Palmer"
-        subheadline="The direct-response copywriter behind $523M+ in tracked results. Fortune 500 foundations. AI-powered edge."
+        subheadline="Direct-response copywriter and conversion strategist. $523M+ in tracked results. AI-powered. Platform-fluent. Results-obsessed."
       />
       <Breadcrumbs items={[{ label: 'About' }]} />
 
@@ -50,29 +50,38 @@ export default function AboutPage() {
               </div>
               <div className="space-y-4 text-lg text-ink-700 leading-relaxed font-body">
                 <p>
-                  I am a direct-response copywriter who has generated over{' '}
+                  I am a direct-response copywriter and conversion strategist
+                  who has generated over{' '}
                   <strong className="text-ink-950">
                     $523 million in tracked revenue
                   </strong>{' '}
-                  for clients ranging from Fortune 500 corporations to
-                  today&apos;s top ClickBank vendors and DTC brands.
+                  for clients across the globe — from ClickBank vendors and DTC
+                  brands to Fortune 500 corporations.
                 </p>
                 <p>
-                  The CEO of Belron International once called me his{' '}
+                  Today, I help marketers and business owners build{' '}
+                  <strong className="text-ink-950">
+                    high-converting offers, funnels, and campaigns
+                  </strong>{' '}
+                  that scale profitably on platforms like Meta, YouTube, and
+                  TikTok. I combine deep direct-response expertise with{' '}
+                  <strong className="text-ink-950">
+                    AI-powered research, modern CRO strategies,
+                  </strong>{' '}
+                  and a relentless focus on what actually moves the needle.
+                </p>
+                <p>
+                  Stefan Georgi, founder of Copy Accelerator, hired me as{' '}
+                  <strong className="text-ink-950">Copy Chief for CA Labs.</strong>{' '}
+                  The CEO of Belron International called me his{' '}
                   <strong className="text-ink-950">
                     &ldquo;Secret Weapon.&rdquo;
                   </strong>{' '}
-                  Stefan Georgi, founder of Copy Accelerator, hired me as{' '}
-                  <strong className="text-ink-950">Copy Chief for CA Labs.</strong>{' '}
-                  And today, I work with marketers and business owners across the
-                  globe — from{' '}
+                  And right now, I am working with clients from{' '}
                   <strong className="text-ink-950">
-                    the United States to the United Arab Emirates.
-                  </strong>
-                </p>
-                <p>
-                  I have been writing copy longer than the internet has existed.
-                  And I am still at the frontier.
+                    the United States to the United Arab Emirates
+                  </strong>{' '}
+                  — building the campaigns that drive their growth.
                 </p>
               </div>
             </div>
@@ -83,178 +92,63 @@ export default function AboutPage() {
       {/* ───────────────────────────── Stats Bar ───────────────────────────── */}
       <StatsBar variant="dark" />
 
-      {/* ───────────────────────────── The $523M Story ───────────────────────────── */}
+      {/* ───────────────────────────── What I Do Today ───────────────────────────── */}
       <Section>
         <Container>
           <div className="max-w-3xl mx-auto">
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mb-6">
-              The $523M Campaign That Five Copywriters Failed to Crack
+              What I Do Today
             </h2>
             <div className="space-y-5 text-lg text-ink-700 leading-relaxed font-body">
               <p>
-                Belron International — known in the US as Safelite AutoGlass — is
-                the world&apos;s largest vehicle glass repair and replacement
-                company. They needed a direct-response campaign to drive auto
-                glass replacement bookings. The challenge: windshield damage is a
-                safety issue, and the copy had to make people act{' '}
-                <em>before</em> an accident, not after.
+                The direct-response landscape moves fast — new platforms, new
+                formats, new buyer behaviors. I stay ahead of it so my clients
+                do not have to. Here is what that looks like in practice:
               </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
+                {[
+                  {
+                    label: 'Offer Strategy',
+                    detail:
+                      'I work with clients to architect irresistible offers — pricing, bonuses, guarantees, and upsell flows engineered to maximize revenue per visitor.',
+                  },
+                  {
+                    label: 'Full Funnel Builds',
+                    detail:
+                      'From the ad to the thank-you page, I build complete conversion funnels — VSLs, sales pages, email sequences, order forms, and upsell/downsell flows that work as a system.',
+                  },
+                  {
+                    label: 'Conversion Rate Optimization',
+                    detail:
+                      'I do not just write copy and walk away. I analyze performance data, identify bottlenecks, and optimize every stage of your funnel to maximize profit.',
+                  },
+                  {
+                    label: 'Platform-Fluent Campaigns',
+                    detail:
+                      'I write campaigns optimized for today\'s ad platforms — Meta, YouTube, and TikTok — understanding the compliance rules, format constraints, and audience behaviors unique to each.',
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.label}
+                    className="rounded-lg border border-paper-200 bg-white p-5 shadow-sm"
+                  >
+                    <h3 className="font-heading text-sm font-semibold uppercase tracking-wider text-gold-600 mb-2">
+                      {item.label}
+                    </h3>
+                    <p className="text-sm text-ink-700 font-body leading-relaxed">
+                      {item.detail}
+                    </p>
+                  </div>
+                ))}
+              </div>
               <p>
-                Five previous award-winning copywriters had tried and failed to
-                meet performance targets. Each had led with features and
-                convenience. None of them cracked the code.
-              </p>
-              <p>
-                I dug deeper. Through extensive research, I discovered that the
-                most powerful motivator was not convenience — it was{' '}
-                <strong className="text-ink-950">fear.</strong> Specifically, the
-                fear of a damaged windshield failing during an accident. The fear
-                that a cracked windshield could endanger the people you love
-                most.
-              </p>
-              <p>
-                I rewrote the campaign around that emotional core — combining
-                classic direct-response storytelling with urgency triggers and
-                social proof. The result:
-              </p>
-              <ul className="space-y-3 pl-4">
-                <li className="flex items-start gap-3">
-                  <span className="mt-1.5 w-2 h-2 rounded-full bg-gold-500 flex-shrink-0" />
-                  <span>
-                    The campaign ran for{' '}
-                    <strong className="text-ink-950">
-                      nine consecutive years
-                    </strong>{' '}
-                    without fatigue
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1.5 w-2 h-2 rounded-full bg-gold-500 flex-shrink-0" />
-                  <span>
-                    It generated{' '}
-                    <strong className="text-ink-950">
-                      $523 million in tracked sales
-                    </strong>
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1.5 w-2 h-2 rounded-full bg-gold-500 flex-shrink-0" />
-                  <span>
-                    It contributed to{' '}
-                    <strong className="text-ink-950">
-                      saving hundreds of lives
-                    </strong>{' '}
-                    by motivating timely windshield replacements
-                  </span>
-                </li>
-              </ul>
-              <p>
-                Gary Lubner, CEO of Belron International, told me:{' '}
-                <em>
-                  &ldquo;You are our secret weapon. Keep your diary clear,
-                  please!&rdquo;
-                </em>
-              </p>
-              <p>
-                <Link
-                  href="/case-studies/belron-safelite-523m-campaign"
-                  className="inline-flex items-center gap-2 font-heading text-sm font-semibold text-gold-600 hover:text-gold-700 transition-colors"
-                >
-                  Read the full Belron case study
-                  <span aria-hidden="true">&rarr;</span>
-                </Link>
-              </p>
-            </div>
-          </div>
-        </Container>
-      </Section>
-
-      {/* ───────────────────────────── Fortune 500 Foundations ───────────────────────────── */}
-      <Section variant="alt">
-        <Container>
-          <div className="max-w-3xl mx-auto">
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mb-6">
-              Fortune 500 Foundations
-            </h2>
-            <div className="space-y-5 text-lg text-ink-700 leading-relaxed font-body">
-              <p>
-                My career began in the golden age of direct mail, writing
-                campaigns for{' '}
+                Whether you need a single high-converting VSL or a complete
+                funnel strategy from scratch, I bring the same
+                approach:{' '}
                 <strong className="text-ink-950">
-                  Apple, IBM, Microsoft, Citibank, and Morgan Stanley.
+                  deep research, proven frameworks, and relentless optimization
                 </strong>{' '}
-                Those Fortune 500 boardrooms taught me something that most
-                copywriters never learn: rigorous, research-driven persuasion at
-                scale.
-              </p>
-              <p>
-                When you write for Apple, every word is scrutinized. When you
-                write for Morgan Stanley, the compliance bar is unforgiving.
-                When you write for IBM, you learn to translate complexity into
-                clarity. These are the foundations that still inform every piece
-                of copy I write today — because{' '}
-                <strong className="text-ink-950">
-                  human psychology does not change, even when the medium does.
-                </strong>
-              </p>
-              <p>
-                The persuasion principles that drove direct mail response rates
-                in the 1990s are the same principles that drive VSL conversion
-                rates today. The medium is different. The fundamentals are
-                timeless.
-              </p>
-            </div>
-          </div>
-        </Container>
-      </Section>
-
-      {/* ───────────────────────────── Client Logos ───────────────────────────── */}
-      <ClientLogoBar variant="light" />
-
-      {/* ───────────────────────────── Career Timeline ───────────────────────────── */}
-      <CareerTimeline />
-
-      {/* ───────────────────────────── Working with Marketers Worldwide ───────────────────────────── */}
-      <Section>
-        <Container>
-          <div className="max-w-3xl mx-auto">
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mb-6">
-              Working with Marketers Worldwide
-            </h2>
-            <div className="space-y-5 text-lg text-ink-700 leading-relaxed font-body">
-              <p>
-                Direct-response copywriting has always been a craft that
-                transcends borders — because{' '}
-                <strong className="text-ink-950">
-                  human psychology is universal.
-                </strong>{' '}
-                A compelling headline works whether your customer is in New York,
-                London, Dubai, or Sydney. And today, I work with clients across
-                the globe — from{' '}
-                <strong className="text-ink-950">
-                  the United States and the United Kingdom to the United Arab
-                  Emirates and Australia.
-                </strong>
-              </p>
-              <p>
-                I embraced remote work long before the world was forced into it.
-                For years, I have built my business around the freedom to live
-                and work from wherever I choose — from beachside apartments in{' '}
-                <strong className="text-ink-950">Thailand</strong> to coastal
-                cities in{' '}
-                <strong className="text-ink-950">Australia</strong>, and
-                everywhere in between. This is not a lifestyle experiment. It is
-                a deliberate strategy that keeps me sharp, inspired, and deeply
-                connected to international markets.
-              </p>
-              <p>
-                For my clients, it means one thing:{' '}
-                <strong className="text-ink-950">
-                  world-class direct-response copy delivered on time, every time
-                </strong>{' '}
-                — no matter what time zone you are in. Video calls, shared
-                documents, fast turnarounds. The work is seamless. The results
-                speak for themselves.
+                until the numbers hit.
               </p>
             </div>
           </div>
@@ -270,32 +164,34 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-5 text-lg text-paper-300 leading-relaxed font-body">
               <p>
-                I use AI as a{' '}
-                <strong className="text-paper-50">force multiplier</strong>, not
-                a replacement for craft. Here is what that looks like in
-                practice:
+                Most copywriters are either ignoring AI or using it as a crutch.
+                I use it as a{' '}
+                <strong className="text-paper-50">force multiplier</strong> —
+                combining cutting-edge AI tools with deep direct-response
+                expertise to deliver faster, sharper, and more data-driven
+                campaigns.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
                 {[
                   {
-                    label: 'Market Research',
+                    label: 'AI-Powered Research',
                     detail:
-                      'AI helps me analyze thousands of competitor ads, reviews, and forums to understand what your market actually wants — in hours, not weeks.',
+                      'I use AI to analyze thousands of competitor ads, reviews, and forums in hours — uncovering the angles, pain points, and desires that drive conversions.',
                   },
                   {
-                    label: 'Headline Testing',
+                    label: 'Rapid Variation Testing',
                     detail:
-                      'I generate and evaluate more headline variations than any human-only process could produce, then apply 30 years of intuition to pick the winners.',
+                      'AI lets me generate and evaluate more headline and hook variations than any human-only process could produce — then I apply strategic judgment to pick the winners.',
                   },
                   {
-                    label: 'Competitive Analysis',
+                    label: 'Funnel Intelligence',
                     detail:
-                      'AI-powered funnel mapping lets me reverse-engineer what is working for your competitors at scale — then build something better.',
+                      'AI-powered funnel mapping lets me reverse-engineer what is working for your competitors at scale — then build something that outperforms it.',
                   },
                   {
-                    label: 'Speed & Precision',
+                    label: 'Speed Without Compromise',
                     detail:
-                      'Faster research means faster delivery. More testing means sharper copy. The result: campaigns that launch sooner and convert harder.',
+                      'Faster research and deeper analysis means campaigns launch sooner and convert harder — without cutting corners on strategy or craft.',
                   },
                 ].map((item) => (
                   <div
@@ -312,22 +208,133 @@ export default function AboutPage() {
                 ))}
               </div>
               <p>
-                This is not about replacing the craft with technology. It is
-                about amplifying{' '}
-                <strong className="text-paper-50">
-                  decades of direct-response experience
-                </strong>{' '}
-                with the most powerful tools available. The strategic thinking,
-                the emotional intelligence, the persuasion architecture that
-                turns words into revenue — that only comes from thousands of
-                tested campaigns and 30+ years of learning what actually works.
+                Technology changes constantly. I stay at the cutting edge of
+                it — because in direct response, the copywriter who adapts
+                fastest{' '}
+                <strong className="text-paper-50">wins.</strong>
               </p>
             </div>
           </div>
         </Container>
       </Section>
 
-      {/* ───────────────────────────── Specialties & Industries ───────────────────────────── */}
+      {/* ───────────────────────────── The $523M Story ───────────────────────────── */}
+      <Section>
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mb-6">
+              The $523M Campaign
+            </h2>
+            <div className="space-y-5 text-lg text-ink-700 leading-relaxed font-body">
+              <p>
+                Belron International — known in the US as Safelite AutoGlass —
+                needed a direct-response campaign to drive windshield
+                replacement bookings. Five previous copywriters had tried and
+                failed. Each had led with features and convenience. None of
+                them cracked the code.
+              </p>
+              <p>
+                Through deep research, I discovered that the most powerful
+                motivator was not convenience — it was{' '}
+                <strong className="text-ink-950">fear.</strong> The fear of a
+                damaged windshield failing during an accident. I rebuilt the
+                campaign around that emotional core — and the result speaks
+                for itself:
+              </p>
+              <ul className="space-y-3 pl-4">
+                <li className="flex items-start gap-3">
+                  <span className="mt-1.5 w-2 h-2 rounded-full bg-gold-500 flex-shrink-0" />
+                  <span>
+                    <strong className="text-ink-950">
+                      $523 million in tracked sales
+                    </strong>
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1.5 w-2 h-2 rounded-full bg-gold-500 flex-shrink-0" />
+                  <span>
+                    Campaign ran for{' '}
+                    <strong className="text-ink-950">
+                      nine consecutive years
+                    </strong>{' '}
+                    without fatigue
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1.5 w-2 h-2 rounded-full bg-gold-500 flex-shrink-0" />
+                  <span>
+                    Contributed to{' '}
+                    <strong className="text-ink-950">
+                      saving hundreds of lives
+                    </strong>{' '}
+                    through timely replacements
+                  </span>
+                </li>
+              </ul>
+              <p>
+                The CEO of Belron told me:{' '}
+                <em>
+                  &ldquo;You are our secret weapon.&rdquo;
+                </em>{' '}
+                That same research-first, insight-driven approach is what I
+                bring to every project today — whether it is a ClickBank VSL
+                or a multi-channel DTC funnel.
+              </p>
+              <p>
+                <Link
+                  href="/case-studies/belron-safelite-523m-campaign"
+                  className="inline-flex items-center gap-2 font-heading text-sm font-semibold text-gold-600 hover:text-gold-700 transition-colors"
+                >
+                  Read the full case study
+                  <span aria-hidden="true">&rarr;</span>
+                </Link>
+              </p>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      {/* ───────────────────────────── Client Logos ───────────────────────────── */}
+      <ClientLogoBar variant="light" />
+
+      {/* ───────────────────────────── Career Timeline ───────────────────────────── */}
+      <CareerTimeline />
+
+      {/* ───────────────────────────── Working with Clients Worldwide ───────────────────────────── */}
+      <Section>
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mb-6">
+              Working with Clients Worldwide
+            </h2>
+            <div className="space-y-5 text-lg text-ink-700 leading-relaxed font-body">
+              <p>
+                I work with marketers, founders, and business owners
+                across the globe — from{' '}
+                <strong className="text-ink-950">
+                  the United States and the United Kingdom to the United Arab
+                  Emirates and Australia.
+                </strong>{' '}
+                Direct response transcends borders because{' '}
+                <strong className="text-ink-950">
+                  human psychology is universal.
+                </strong>
+              </p>
+              <p>
+                For my clients, it means one thing:{' '}
+                <strong className="text-ink-950">
+                  world-class strategy and copy delivered on time, every time
+                </strong>{' '}
+                — no matter what time zone you are in. Video calls, shared
+                documents, fast turnarounds. The work is seamless. The results
+                speak for themselves.
+              </p>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      {/* ───────────────────────────── Specialties & Verticals ───────────────────────────── */}
       <SpecialtyGrid />
 
       {/* ───────────────────────────── Testimonials ───────────────────────────── */}
@@ -357,12 +364,12 @@ export default function AboutPage() {
                     text: 'Every project begins with thorough audience research, competitive analysis, and offer assessment. I do not start writing until I understand your market inside and out.',
                   },
                   {
-                    title: 'Fast, Reliable Delivery',
-                    text: 'Multiple clients have commented on how fast I work without sacrificing quality. When you need copy that is both excellent and on time, that is what you get.',
+                    title: 'Full-Stack Funnel Thinking',
+                    text: 'I do not write copy in isolation. I think about your entire funnel — from the ad platform to the upsell flow — and optimize every touchpoint for maximum revenue.',
                   },
                   {
-                    title: 'Battle-Tested Frameworks',
-                    text: 'My copy is built on proven direct-response frameworks refined over 30+ years. No guesswork. No trendy tactics that fail next month. Just copy that converts.',
+                    title: 'Fast, Reliable Delivery',
+                    text: 'Multiple clients have commented on how fast I work without sacrificing quality. AI-powered research accelerates my process without cutting corners on strategy.',
                   },
                   {
                     title: 'Measurable Results',
@@ -392,7 +399,7 @@ export default function AboutPage() {
 
       {/* ───────────────────────────── CTA ───────────────────────────── */}
       <CTABanner
-        headline="Ready to put 30 years of direct-response expertise to work?"
+        headline="Ready to build a campaign that actually converts?"
         subtext="Book a free strategy call and let's discuss how I can help grow your business."
       />
     </>
