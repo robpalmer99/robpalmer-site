@@ -30,14 +30,14 @@
   --font-body: var(--font-lora);
 
   /* Base font size slightly larger for long-form readability */
-  --text-base: 1.0625rem;
-  --text-base--line-height: 1.75rem;
+  --text-base: 1.125rem;
+  --text-base--line-height: 1.85rem;
 }
 
 @layer base {
   body {
     background-color: var(--color-paper-50);
-    color: var(--color-paper-800);
+    color: var(--color-ink-700);
     font-family: var(--font-body);
   }
 
@@ -88,7 +88,7 @@
 
 /* Prose customization for MDX blog content */
 .prose {
-  --tw-prose-body: var(--color-paper-800);
+  --tw-prose-body: var(--color-ink-700);
   --tw-prose-headings: var(--color-ink-950);
   --tw-prose-links: var(--color-gold-600);
   --tw-prose-bold: var(--color-ink-950);

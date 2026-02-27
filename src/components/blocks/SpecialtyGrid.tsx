@@ -41,35 +41,35 @@ const services = [
   },
 ]
 
-const industries = [
+const verticals = [
   {
     title: 'Health & Supplements',
-    slug: '/industries/health-supplement-copywriter',
+    slug: '/verticals/health-supplement-copywriter',
     description: 'Compliance-aware DR copy for supplements and nutraceuticals.',
   },
   {
     title: 'Financial Services',
-    slug: '/industries/financial-copywriter',
+    slug: '/verticals/financial-copywriter',
     description: 'DR copy for investing, trading, and financial products.',
   },
   {
     title: 'E-Commerce & DTC',
-    slug: '/industries/ecommerce-dtc-copywriter',
+    slug: '/verticals/ecommerce-dtc-copywriter',
     description: 'Conversion copy for online brands and DTC products.',
   },
   {
     title: 'ClickBank',
-    slug: '/industries/clickbank-copywriter',
+    slug: '/verticals/clickbank-copywriter',
     description: 'Proven funnels built for the ClickBank marketplace.',
   },
   {
     title: 'SaaS',
-    slug: '/industries/saas-copywriter',
+    slug: '/verticals/saas-copywriter',
     description: 'DR principles applied to software marketing.',
   },
   {
     title: 'Info Products',
-    slug: '/industries/info-product-copywriter',
+    slug: '/verticals/info-product-copywriter',
     description: 'Launch sequences and evergreen systems for digital products.',
   },
 ]
@@ -109,12 +109,12 @@ export function SpecialtyGrid() {
         </Container>
       </Section>
 
-      {/* Industries */}
+      {/* Verticals */}
       <Section>
         <Container>
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950">
-              Industries I Work In
+              Verticals I Work In
             </h2>
             <p className="mt-4 text-lg text-paper-600 font-body">
               Deep vertical expertise across the highest-converting
@@ -122,17 +122,17 @@ export function SpecialtyGrid() {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
-            {industries.map((industry) => (
+            {verticals.map((vertical) => (
               <Link
-                key={industry.slug}
-                href={industry.slug}
+                key={vertical.slug}
+                href={vertical.slug}
                 className="group block rounded-xl border border-paper-200 bg-white p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5"
               >
                 <h3 className="font-heading text-lg font-bold text-ink-950 group-hover:text-gold-600 transition-colors">
-                  {industry.title}
+                  {vertical.title}
                 </h3>
                 <p className="mt-2 text-sm text-paper-600 font-body leading-relaxed">
-                  {industry.description}
+                  {vertical.description}
                 </p>
               </Link>
             ))}

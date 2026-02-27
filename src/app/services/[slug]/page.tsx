@@ -265,7 +265,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
         </Section>
       )}
 
-      {/* ───────────────────────────── Related Industries ───────────────────────────── */}
+      {/* ───────────────────────────── Related Verticals ───────────────────────────── */}
       <Section
         variant={service.portfolioItems.length > 0 ? 'default' : 'alt'}
       >
@@ -273,7 +273,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-10">
               <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
-                Industries I Write For
+                Verticals I Write For
               </h2>
               <p className="mt-3 text-lg text-paper-600 font-body">
                 Deep experience across verticals that demand direct-response
@@ -284,40 +284,40 @@ export default async function ServicePage({ params }: ServicePageProps) {
               {[
                 {
                   label: 'Health & Supplements',
-                  href: '/industries/health-supplement-copywriter',
+                  href: '/verticals/health-supplement-copywriter',
                 },
                 {
                   label: 'Financial Services',
-                  href: '/industries/financial-copywriter',
+                  href: '/verticals/financial-copywriter',
                 },
                 {
                   label: 'E-Commerce & DTC',
-                  href: '/industries/ecommerce-dtc-copywriter',
+                  href: '/verticals/ecommerce-dtc-copywriter',
                 },
                 {
                   label: 'ClickBank',
-                  href: '/industries/clickbank-copywriter',
+                  href: '/verticals/clickbank-copywriter',
                 },
-                { label: 'SaaS', href: '/industries/saas-copywriter' },
+                { label: 'SaaS', href: '/verticals/saas-copywriter' },
                 {
                   label: 'Info Products',
-                  href: '/industries/info-product-copywriter',
+                  href: '/verticals/info-product-copywriter',
                 },
-              ].map((industry) => (
+              ].map((vertical) => (
                 <Link
-                  key={industry.href}
-                  href={industry.href}
+                  key={vertical.href}
+                  href={vertical.href}
                   className="group block rounded-xl border border-paper-200 bg-white p-4 text-center shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5"
                 >
                   <span className="font-heading text-sm font-semibold text-ink-950 group-hover:text-gold-600 transition-colors">
-                    {industry.label}
+                    {vertical.label}
                   </span>
                 </Link>
               ))}
             </div>
             <div className="text-center mt-6">
-              <Button href="/industries" variant="outline">
-                View All Industries
+              <Button href="/verticals" variant="outline">
+                View All Verticals
               </Button>
             </div>
           </div>

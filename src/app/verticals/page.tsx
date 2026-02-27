@@ -6,39 +6,39 @@ import { ServiceCard } from '@/components/blocks/ServiceCard'
 import { CTABanner } from '@/components/blocks/CTABanner'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { SITE_URL } from '@/lib/constants'
-import { industries } from '@/app/industries/_data/industries'
+import { verticals } from '@/app/verticals/_data/verticals'
 
 export const metadata: Metadata = {
-  title: 'Industries | Direct-Response Copywriting by Niche',
+  title: 'Verticals | Direct-Response Copywriting by Niche',
   description:
     'Rob Palmer writes high-converting direct-response copy for health supplements, financial services, e-commerce, ClickBank, SaaS, and info products.',
   alternates: {
-    canonical: `${SITE_URL}/industries`,
+    canonical: `${SITE_URL}/verticals`,
   },
 }
 
-export default function IndustriesPage() {
+export default function VerticalsPage() {
   return (
     <>
       <Hero
         variant="page"
-        headline="Industry Expertise"
+        headline="Vertical Expertise"
         subheadline="Direct-response copy tailored to the specific demands, compliance requirements, and buyer psychology of your niche."
       />
-      <Breadcrumbs items={[{ label: 'Industries' }]} />
+      <Breadcrumbs items={[{ label: 'Verticals' }]} />
 
       <Section>
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {industries.map((industry) => (
+            {verticals.map((vertical) => (
               <ServiceCard
-                key={industry.slug}
-                title={industry.title}
-                slug={industry.slug}
-                description={industry.shortDescription}
-                image={industry.heroImage}
-                imageAlt={industry.heroImageAlt}
-                basePath="/industries"
+                key={vertical.slug}
+                title={vertical.title}
+                slug={vertical.slug}
+                description={vertical.shortDescription}
+                image={vertical.heroImage}
+                imageAlt={vertical.heroImageAlt}
+                basePath="/verticals"
               />
             ))}
           </div>
@@ -47,7 +47,7 @@ export default function IndustriesPage() {
 
       <CTABanner
         headline="Need copy for a different niche?"
-        subtext="I have written for dozens of industries. Let's talk about yours."
+        subtext="I have written for dozens of verticals. Let's talk about yours."
       />
     </>
   )

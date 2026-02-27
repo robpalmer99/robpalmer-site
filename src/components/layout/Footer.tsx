@@ -37,10 +37,10 @@ export function Footer() {
               ))}
               <li>
                 <Link
-                  href="/industries"
+                  href="/verticals"
                   className="text-sm text-paper-400 hover:text-gold-400 transition-colors"
                 >
-                  Industries
+                  Verticals
                 </Link>
               </li>
               <li>

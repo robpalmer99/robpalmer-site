@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { getAllServiceSlugs } from '@/app/services/_data/services'
-import { getAllIndustrySlugs } from '@/app/industries/_data/industries'
+import { getAllVerticalSlugs } from '@/app/verticals/_data/verticals'
 import { getAllBlogPosts } from '@/lib/mdx'
 
 const BASE_URL = 'https://robpalmer.com'
@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: BASE_URL, lastModified: now, changeFrequency: 'weekly', priority: 1.0 },
     { url: `${BASE_URL}/about`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/services`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${BASE_URL}/industries`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/verticals`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/case-studies`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     {
       url: `${BASE_URL}/case-studies/belron-safelite-523m-campaign`,
@@ -39,8 +39,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  const industryPages: MetadataRoute.Sitemap = getAllIndustrySlugs().map((slug) => ({
-    url: `${BASE_URL}/industries/${slug}`,
+  const verticalPages: MetadataRoute.Sitemap = getAllVerticalSlugs().map((slug) => ({
+    url: `${BASE_URL}/verticals/${slug}`,
     lastModified: now,
     changeFrequency: 'monthly' as const,
     priority: 0.8,
@@ -53,5 +53,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...staticPages, ...servicePages, ...industryPages, ...blogPages]
+  return [...staticPages, ...servicePages, ...verticalPages, ...blogPages]
 }

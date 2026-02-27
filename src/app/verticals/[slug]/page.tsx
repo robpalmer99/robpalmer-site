@@ -14,61 +14,61 @@ import { Button } from '@/components/ui/Button'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { SITE_URL } from '@/lib/constants'
 import { testimonials } from '@/content/testimonials'
-import { getIndustryBySlug, getAllIndustrySlugs } from '@/app/industries/_data/industries'
+import { getVerticalBySlug, getAllVerticalSlugs } from '@/app/verticals/_data/verticals'
 
-interface IndustryPageProps {
+interface VerticalPageProps {
   params: Promise<{ slug: string }>
 }
 
 export async function generateStaticParams() {
-  return getAllIndustrySlugs().map((slug) => ({ slug }))
+  return getAllVerticalSlugs().map((slug) => ({ slug }))
 }
 
-export async function generateMetadata({ params }: IndustryPageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: VerticalPageProps): Promise<Metadata> {
   const { slug } = await params
-  const industry = getIndustryBySlug(slug)
-  if (!industry) return {}
+  const vertical = getVerticalBySlug(slug)
+  if (!vertical) return {}
 
   return {
-    title: industry.metaTitle,
-    description: industry.metaDescription,
+    title: vertical.metaTitle,
+    description: vertical.metaDescription,
     alternates: {
-      canonical: `${SITE_URL}/industries/${slug}`,
+      canonical: `${SITE_URL}/verticals/${slug}`,
     },
     openGraph: {
-      images: [{ url: industry.heroImage, width: 800, height: 400 }],
+      images: [{ url: vertical.heroImage, width: 800, height: 400 }],
     },
   }
 }
 
-export default async function IndustryPage({ params }: IndustryPageProps) {
+export default async function VerticalPage({ params }: VerticalPageProps) {
   const { slug } = await params
-  const industry = getIndustryBySlug(slug)
+  const vertical = getVerticalBySlug(slug)
 
-  if (!industry) {
+  if (!vertical) {
     notFound()
   }
 
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: industry.title,
-    description: industry.metaDescription,
+    name: vertical.title,
+    description: vertical.metaDescription,
     provider: {
       '@type': 'Person',
       name: 'Rob Palmer',
       url: SITE_URL,
     },
-    url: `${SITE_URL}/industries/${slug}`,
+    url: `${SITE_URL}/verticals/${slug}`,
     areaServed: 'Worldwide',
     serviceType: 'Direct-Response Copywriting',
   }
 
-  const faqSchema = industry.faqs.length > 0
+  const faqSchema = vertical.faqs.length > 0
     ? {
         '@context': 'https://schema.org',
         '@type': 'FAQPage',
-        mainEntity: industry.faqs.map((faq) => ({
+        mainEntity: vertical.faqs.map((faq) => ({
           '@type': 'Question',
           name: faq.question,
           acceptedAnswer: {
@@ -79,8 +79,8 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
       }
     : null
 
-  // Get testimonials for this industry
-  const industryTestimonials = industry.testimonialIds
+  // Get testimonials for this vertical
+  const verticalTestimonials = vertical.testimonialIds
     .map((id) => testimonials.find((t) => t.id === id))
     .filter(Boolean)
 
@@ -90,13 +90,13 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
       {faqSchema && <JsonLd data={faqSchema} />}
       <Hero
         variant="page"
-        headline={industry.headline}
-        subheadline={industry.subheadline}
+        headline={vertical.headline}
+        subheadline={vertical.subheadline}
       />
       <Breadcrumbs
         items={[
-          { label: 'Industries', href: '/industries' },
-          { label: industry.title },
+          { label: 'Verticals', href: '/verticals' },
+          { label: vertical.title },
         ]}
       />
 
@@ -106,8 +106,8 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
           <div className="max-w-4xl mx-auto -mt-4 pb-8">
             <div className="relative w-full h-56 sm:h-72 md:h-80 rounded-xl overflow-hidden shadow-lg">
               <Image
-                src={industry.heroImage}
-                alt={industry.heroImageAlt}
+                src={vertical.heroImage}
+                alt={vertical.heroImageAlt}
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 896px"
@@ -122,7 +122,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
       <Section>
         <Container>
           <div className="max-w-3xl mx-auto space-y-10">
-            {industry.sections.map((section, index) => (
+            {vertical.sections.map((section, index) => (
               <div key={index}>
                 <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
                   {section.heading}
@@ -150,7 +150,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {industry.deliverables.map((item, index) => (
+              {vertical.deliverables.map((item, index) => (
                 <div
                   key={index}
                   className="rounded-xl border border-paper-200 bg-white p-5 shadow-sm"
@@ -170,13 +170,13 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
 
       {/* ───────────────────────────── Mid-page CTA ───────────────────────────── */}
       <CTABanner
-        headline={`Ready to scale your ${industry.title.toLowerCase().replace(' copywriter', '')} campaigns?`}
+        headline={`Ready to scale your ${vertical.title.toLowerCase().replace(' copywriter', '')} campaigns?`}
         subtext="Book a free strategy call to discuss your project."
         variant="gold"
       />
 
       {/* ───────────────────────────── Industry Testimonials ───────────────────────────── */}
-      {industryTestimonials.length > 0 && (
+      {verticalTestimonials.length > 0 && (
         <Section>
           <Container>
             <div className="max-w-4xl mx-auto">
@@ -186,7 +186,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
                 </h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {industryTestimonials.map(
+                {verticalTestimonials.map(
                   (testimonial) =>
                     testimonial && (
                       <TestimonialCard
@@ -211,7 +211,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
       )}
 
       {/* ───────────────────────────── Portfolio Samples ───────────────────────────── */}
-      {industry.portfolioItems.length > 0 && (
+      {vertical.portfolioItems.length > 0 && (
         <Section variant="dark">
           <Container>
             <div className="max-w-4xl mx-auto">
@@ -224,7 +224,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
                 </p>
               </div>
               <div className="flex flex-wrap items-center justify-center gap-4">
-                {industry.portfolioItems.map((item, index) => (
+                {vertical.portfolioItems.map((item, index) => (
                   <a
                     key={index}
                     href="https://drive.google.com/drive/folders/1ivFq-UhqthNnaGhlp6nJOc1G9s7H4iDI"
@@ -268,12 +268,12 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
       )}
 
       {/* ───────────────────────────── Related Services ───────────────────────────── */}
-      <Section variant={industry.portfolioItems.length > 0 ? 'default' : 'alt'}>
+      <Section variant={vertical.portfolioItems.length > 0 ? 'default' : 'alt'}>
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-10">
               <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
-                Services for Your Industry
+                Services for Your Vertical
               </h2>
               <p className="mt-3 text-lg text-paper-600 font-body">
                 I offer a full range of direct-response copywriting services
@@ -308,14 +308,14 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
       </Section>
 
       {/* ───────────────────────────── FAQ ───────────────────────────── */}
-      {industry.faqs.length > 0 && (
+      {vertical.faqs.length > 0 && (
         <Section variant="alt">
           <Container>
             <div className="max-w-3xl mx-auto">
               <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950 text-center mb-8">
                 Frequently Asked Questions
               </h2>
-              <FAQAccordion items={industry.faqs} />
+              <FAQAccordion items={vertical.faqs} />
             </div>
           </Container>
         </Section>

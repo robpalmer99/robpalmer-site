@@ -73,7 +73,7 @@ export default function HomePage() {
               Most Copywriters Write Content.{' '}
               <span className="text-gold-500">I Write Conversions.</span>
             </h2>
-            <div className="mt-8 space-y-6 text-lg text-paper-600 leading-relaxed font-body text-left sm:text-center">
+            <div className="mt-8 space-y-6 text-lg text-paper-600 leading-relaxed font-body text-left">
               <p>
                 There is a difference between a copywriter who can string words
                 together and one who can engineer a persuasion sequence that turns

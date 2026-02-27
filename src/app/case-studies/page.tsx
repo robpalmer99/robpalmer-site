@@ -40,8 +40,8 @@ export default function CaseStudiesPage() {
               <div className="mt-1 text-xs font-heading uppercase tracking-wider text-paper-400">Client Calibre</div>
             </div>
             <div>
-              <div className="font-heading text-2xl sm:text-3xl font-bold text-gold-400">9 Years</div>
-              <div className="mt-1 text-xs font-heading uppercase tracking-wider text-paper-400">Longest Campaign Run</div>
+              <div className="font-heading text-2xl sm:text-3xl font-bold text-gold-400">100s</div>
+              <div className="mt-1 text-xs font-heading uppercase tracking-wider text-paper-400">Of Successful Projects</div>
             </div>
             <div>
               <div className="font-heading text-2xl sm:text-3xl font-bold text-gold-400">30+</div>

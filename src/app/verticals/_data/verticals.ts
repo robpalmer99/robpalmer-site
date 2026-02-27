@@ -1,6 +1,6 @@
 import type { FAQItem } from '@/components/blocks/FAQAccordion'
 
-export interface Industry {
+export interface Vertical {
   title: string
   slug: string
   shortDescription: string
@@ -26,7 +26,7 @@ export interface Industry {
   faqs: FAQItem[]
 }
 
-export const industries: Industry[] = [
+export const verticals: Vertical[] = [
   {
     title: 'Health & Supplement Copywriter',
     slug: 'health-supplement-copywriter',
@@ -549,10 +549,10 @@ export const industries: Industry[] = [
   },
 ]
 
-export function getIndustryBySlug(slug: string): Industry | undefined {
-  return industries.find((i) => i.slug === slug)
+export function getVerticalBySlug(slug: string): Vertical | undefined {
+  return verticals.find((v) => v.slug === slug)
 }
 
-export function getAllIndustrySlugs(): string[] {
-  return industries.map((i) => i.slug)
+export function getAllVerticalSlugs(): string[] {
+  return verticals.map((v) => v.slug)
 }
