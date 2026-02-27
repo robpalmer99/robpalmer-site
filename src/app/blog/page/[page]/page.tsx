@@ -47,6 +47,7 @@ export default async function PaginatedBlogPage({ params }: PaginatedBlogPagePro
   }
 
   const { posts, totalPages, currentPage } = getPaginatedBlogPosts(pageNum)
+  const allPosts = getAllBlogPosts()
 
   // Out of range
   if (pageNum > totalPages) {
@@ -56,6 +57,7 @@ export default async function PaginatedBlogPage({ params }: PaginatedBlogPagePro
   return (
     <BlogListingLayout
       posts={posts}
+      allPosts={allPosts}
       currentPage={currentPage}
       totalPages={totalPages}
     />

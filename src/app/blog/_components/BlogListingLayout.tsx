@@ -9,11 +9,12 @@ import type { BlogPostMeta } from '@/lib/mdx'
 
 interface BlogListingLayoutProps {
   posts: BlogPostMeta[]
+  allPosts: BlogPostMeta[]
   currentPage: number
   totalPages: number
 }
 
-export function BlogListingLayout({ posts, currentPage, totalPages }: BlogListingLayoutProps) {
+export function BlogListingLayout({ posts, allPosts, currentPage, totalPages }: BlogListingLayoutProps) {
   return (
     <>
       <Hero
@@ -28,6 +29,7 @@ export function BlogListingLayout({ posts, currentPage, totalPages }: BlogListin
           <Suspense>
             <BlogGrid
               posts={posts}
+              allPosts={allPosts}
               currentPage={currentPage}
               totalPages={totalPages}
             />

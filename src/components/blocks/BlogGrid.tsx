@@ -10,11 +10,12 @@ import type { BlogPostMeta } from '@/lib/mdx'
 
 interface BlogGridProps {
   posts: BlogPostMeta[]
+  allPosts?: BlogPostMeta[]
   currentPage?: number
   totalPages?: number
 }
 
-export function BlogGrid({ posts, currentPage = 1, totalPages = 1 }: BlogGridProps) {
+export function BlogGrid({ posts, allPosts = posts, currentPage = 1, totalPages = 1 }: BlogGridProps) {
   const [searchQuery, setSearchQuery] = useState('')
   const [activeCategory, setActiveCategory] = useState('All')
   const debouncedQuery = useDebounce(searchQuery, 200)
@@ -28,15 +29,17 @@ export function BlogGrid({ posts, currentPage = 1, totalPages = 1 }: BlogGridPro
     }
   }, [searchParams])
 
-  // Derive categories from posts
+  // Derive categories from all posts (not just current page)
   const categories = useMemo(() => {
-    const cats = Array.from(new Set(posts.map((p) => p.category))).sort()
+    const cats = Array.from(new Set(allPosts.map((p) => p.category))).sort()
     return ['All', ...cats]
-  }, [posts])
+  }, [allPosts])
 
-  // Filter posts by category and search query
+  const isFiltered = activeCategory !== 'All' || debouncedQuery.trim() !== ''
+
+  // Filter posts: when filtering, search across ALL posts; otherwise show paginated posts
   const filteredPosts = useMemo(() => {
-    let results = posts
+    let results = isFiltered ? allPosts : posts
 
     // Category filter
     if (activeCategory !== 'All') {
@@ -60,9 +63,7 @@ export function BlogGrid({ posts, currentPage = 1, totalPages = 1 }: BlogGridPro
     }
 
     return results
-  }, [posts, activeCategory, debouncedQuery])
-
-  const isFiltered = activeCategory !== 'All' || debouncedQuery.trim() !== ''
+  }, [posts, allPosts, activeCategory, debouncedQuery, isFiltered])
 
   function clearFilters() {
     setSearchQuery('')
@@ -144,8 +145,8 @@ export function BlogGrid({ posts, currentPage = 1, totalPages = 1 }: BlogGridPro
         {categories.map((category) => {
           const count =
             category === 'All'
-              ? posts.length
-              : posts.filter((p) => p.category === category).length
+              ? allPosts.length
+              : allPosts.filter((p) => p.category === category).length
           return (
             <button
               key={category}
@@ -177,8 +178,8 @@ export function BlogGrid({ posts, currentPage = 1, totalPages = 1 }: BlogGridPro
       {/* Results count */}
       {isFiltered && filteredPosts.length > 0 && (
         <p className="text-sm text-paper-500 font-body text-center mb-6">
-          Showing {filteredPosts.length} of {posts.length} post
-          {posts.length !== 1 ? 's' : ''}
+          Showing {filteredPosts.length} of {allPosts.length} post
+          {allPosts.length !== 1 ? 's' : ''}
           {debouncedQuery.trim() && (
             <>
               {' '}

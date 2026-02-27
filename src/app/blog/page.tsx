@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { BlogListingLayout } from './_components/BlogListingLayout'
 import { SITE_URL } from '@/lib/constants'
-import { getPaginatedBlogPosts } from '@/lib/mdx'
+import { getPaginatedBlogPosts, getAllBlogPosts } from '@/lib/mdx'
 
 export const metadata: Metadata = {
   title: 'Blog | Direct-Response Copywriting Insights',
@@ -14,10 +14,12 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   const { posts, totalPages } = getPaginatedBlogPosts(1)
+  const allPosts = getAllBlogPosts()
 
   return (
     <BlogListingLayout
       posts={posts}
+      allPosts={allPosts}
       currentPage={1}
       totalPages={totalPages}
     />
