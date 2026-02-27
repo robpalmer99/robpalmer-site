@@ -1,4 +1,7 @@
 import { NextResponse } from 'next/server'
+import { Resend } from 'resend'
+
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(request: Request) {
   try {
@@ -25,20 +28,13 @@ export async function POST(request: Request) {
       )
     }
 
-    // For now, log the submission. In production, integrate with:
-    // - Resend (recommended for Vercel): https://resend.com
-    // - SendGrid, Mailgun, or similar
-    // - Or a webhook to Zapier/Make
-    console.log('Contact form submission:', { name, email, subject, message })
-
-    // TODO: Send email notification
-    // Example with Resend:
-    // await resend.emails.send({
-    //   from: 'contact@robpalmer.com',
-    //   to: 'rob@robpalmer.com',
-    //   subject: `[Website] ${subject}`,
-    //   text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
-    // })
+    await resend.emails.send({
+      from: 'Rob Palmer Website <contact@robpalmer.com>',
+      to: 'rob@gofreelance.com',
+      replyTo: email,
+      subject: `[Website] ${subject}`,
+      text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\n${message}`,
+    })
 
     return NextResponse.json({ success: true })
   } catch {

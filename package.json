@@ -22,6 +22,7 @@
     "react-calendly": "^4.4.0",
     "react-dom": "19.1.0",
     "reading-time": "^1.5.0",
+    "resend": "^6.9.2",
     "sharp": "^0.34.5",
     "tailwind-merge": "^3.5.0"
   },
