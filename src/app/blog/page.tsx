@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { BlogListingLayout } from './_components/BlogListingLayout'
 import { SITE_URL } from '@/lib/constants'
 import { getPaginatedBlogPosts, getAllBlogPosts } from '@/lib/mdx'
+import { getSiteSearchIndex } from '@/lib/search'
 
 export const metadata: Metadata = {
   title: 'Blog | Direct-Response Copywriting Insights',
@@ -15,11 +16,13 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   const { posts, totalPages } = getPaginatedBlogPosts(1)
   const allPosts = getAllBlogPosts()
+  const siteSearchIndex = getSiteSearchIndex()
 
   return (
     <BlogListingLayout
       posts={posts}
       allPosts={allPosts}
+      siteSearchIndex={siteSearchIndex}
       currentPage={1}
       totalPages={totalPages}
     />

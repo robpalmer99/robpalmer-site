@@ -6,16 +6,19 @@ import Link from 'next/link'
 import { BlogPostCard } from './BlogPostCard'
 import { useDebounce } from '@/hooks/useDebounce'
 import { cn } from '@/lib/utils'
+import { Badge } from '@/components/ui/Badge'
 import type { BlogPostMeta } from '@/lib/mdx'
+import type { SiteSearchResult } from '@/lib/search'
 
 interface BlogGridProps {
   posts: BlogPostMeta[]
   allPosts?: BlogPostMeta[]
+  siteSearchIndex?: SiteSearchResult[]
   currentPage?: number
   totalPages?: number
 }
 
-export function BlogGrid({ posts, allPosts = posts, currentPage = 1, totalPages = 1 }: BlogGridProps) {
+export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], currentPage = 1, totalPages = 1 }: BlogGridProps) {
   const [searchQuery, setSearchQuery] = useState('')
   const [activeCategory, setActiveCategory] = useState('All')
   const debouncedQuery = useDebounce(searchQuery, 200)
@@ -36,6 +39,7 @@ export function BlogGrid({ posts, allPosts = posts, currentPage = 1, totalPages 
   }, [allPosts])
 
   const isFiltered = activeCategory !== 'All' || debouncedQuery.trim() !== ''
+  const isSearching = debouncedQuery.trim() !== ''
 
   // Filter posts: when filtering, search across ALL posts; otherwise show paginated posts
   const filteredPosts = useMemo(() => {
@@ -65,6 +69,17 @@ export function BlogGrid({ posts, allPosts = posts, currentPage = 1, totalPages 
     return results
   }, [posts, allPosts, activeCategory, debouncedQuery, isFiltered])
 
+  // Site-wide search results (services, verticals, case studies, portfolio)
+  const siteResults = useMemo(() => {
+    const query = debouncedQuery.toLowerCase().trim()
+    if (!query) return []
+    return siteSearchIndex.filter((item) => item.searchableText.includes(query))
+  }, [siteSearchIndex, debouncedQuery])
+
+  const totalResults = isSearching
+    ? filteredPosts.length + siteResults.length
+    : filteredPosts.length
+
   function clearFilters() {
     setSearchQuery('')
     setActiveCategory('All')
@@ -80,7 +95,7 @@ export function BlogGrid({ posts, allPosts = posts, currentPage = 1, totalPages 
       {/* Search Input */}
       <div className="max-w-xl mx-auto mb-8">
         <label htmlFor="blog-search" className="sr-only">
-          Search blog posts
+          Search all content
         </label>
         <div className="relative">
           {/* Magnifying glass icon */}
@@ -103,7 +118,7 @@ export function BlogGrid({ posts, allPosts = posts, currentPage = 1, totalPages 
             ref={searchInputRef}
             id="blog-search"
             type="search"
-            placeholder="Search articles..."
+            placeholder="Search all content..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full pl-11 pr-10 py-3 rounded-lg border border-paper-200 bg-white text-ink-950 font-body text-sm transition-shadow placeholder:text-paper-400 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-gold-400"
@@ -176,10 +191,9 @@ export function BlogGrid({ posts, allPosts = posts, currentPage = 1, totalPages 
       </div>
 
       {/* Results count */}
-      {isFiltered && filteredPosts.length > 0 && (
+      {isFiltered && totalResults > 0 && (
         <p className="text-sm text-paper-500 font-body text-center mb-6">
-          Showing {filteredPosts.length} of {allPosts.length} post
-          {allPosts.length !== 1 ? 's' : ''}
+          Showing {totalResults} result{totalResults !== 1 ? 's' : ''}
           {debouncedQuery.trim() && (
             <>
               {' '}
@@ -192,31 +206,70 @@ export function BlogGrid({ posts, allPosts = posts, currentPage = 1, totalPages 
       {/* Grid with aria-live for filter changes */}
       <div aria-live="polite" aria-atomic="false">
         <p className="sr-only">
-          {filteredPosts.length === 0
-            ? 'No blog posts match your current filters.'
-            : `Showing ${filteredPosts.length} blog ${filteredPosts.length === 1 ? 'post' : 'posts'}.`}
+          {totalResults === 0 && isFiltered
+            ? 'No results match your current filters.'
+            : `Showing ${totalResults} ${totalResults === 1 ? 'result' : 'results'}.`}
         </p>
 
-        {filteredPosts.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredPosts.map((post) => (
-              <BlogPostCard
-                key={post.slug}
-                title={post.title}
-                slug={post.slug}
-                excerpt={post.description}
-                date={post.date}
-                category={post.category}
-                readingTime={post.readingTime}
-                heroImage={post.heroImage}
-                heroAlt={post.heroAlt}
-              />
-            ))}
+        {/* Site-wide results (shown when searching) */}
+        {isSearching && siteResults.length > 0 && (
+          <div className="mb-10">
+            <h2 className="text-lg font-heading font-bold text-ink-950 mb-4">
+              Pages
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {siteResults.map((result) => (
+                <Link
+                  key={result.url + result.title}
+                  href={result.url}
+                  className="group block rounded-xl border border-paper-200 bg-white shadow-sm overflow-hidden p-5 transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5"
+                >
+                  <div className="flex items-center gap-2 mb-2">
+                    <Badge variant="default">{result.type}</Badge>
+                  </div>
+                  <h3 className="font-heading text-base font-bold text-ink-950 group-hover:text-gold-600 transition-colors leading-snug">
+                    {result.title}
+                  </h3>
+                  <p className="mt-1.5 text-sm text-paper-600 leading-relaxed font-body line-clamp-2">
+                    {result.description}
+                  </p>
+                  <span className="mt-3 inline-block text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-500 transition-colors">
+                    View page →
+                  </span>
+                </Link>
+              ))}
+            </div>
           </div>
-        ) : (
+        )}
+
+        {/* Blog post results */}
+        {filteredPosts.length > 0 ? (
+          <>
+            {isSearching && siteResults.length > 0 && (
+              <h2 className="text-lg font-heading font-bold text-ink-950 mb-4">
+                Articles
+              </h2>
+            )}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {filteredPosts.map((post) => (
+                <BlogPostCard
+                  key={post.slug}
+                  title={post.title}
+                  slug={post.slug}
+                  excerpt={post.description}
+                  date={post.date}
+                  category={post.category}
+                  readingTime={post.readingTime}
+                  heroImage={post.heroImage}
+                  heroAlt={post.heroAlt}
+                />
+              ))}
+            </div>
+          </>
+        ) : isFiltered && siteResults.length === 0 ? (
           <div className="text-center py-16">
             <p className="text-lg text-paper-500 font-body mb-4">
-              No posts match your current filters.
+              No results match your current filters.
             </p>
             <button
               onClick={clearFilters}
@@ -225,7 +278,7 @@ export function BlogGrid({ posts, allPosts = posts, currentPage = 1, totalPages 
               Clear all filters
             </button>
           </div>
-        )}
+        ) : null}
       </div>
 
       {/* Pagination */}

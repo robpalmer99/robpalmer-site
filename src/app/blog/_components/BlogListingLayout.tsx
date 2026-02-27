@@ -6,15 +6,17 @@ import { CTABanner } from '@/components/blocks/CTABanner'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { BlogGrid } from '@/components/blocks/BlogGrid'
 import type { BlogPostMeta } from '@/lib/mdx'
+import type { SiteSearchResult } from '@/lib/search'
 
 interface BlogListingLayoutProps {
   posts: BlogPostMeta[]
   allPosts: BlogPostMeta[]
+  siteSearchIndex: SiteSearchResult[]
   currentPage: number
   totalPages: number
 }
 
-export function BlogListingLayout({ posts, allPosts, currentPage, totalPages }: BlogListingLayoutProps) {
+export function BlogListingLayout({ posts, allPosts, siteSearchIndex, currentPage, totalPages }: BlogListingLayoutProps) {
   return (
     <>
       <Hero
@@ -30,6 +32,7 @@ export function BlogListingLayout({ posts, allPosts, currentPage, totalPages }: 
             <BlogGrid
               posts={posts}
               allPosts={allPosts}
+              siteSearchIndex={siteSearchIndex}
               currentPage={currentPage}
               totalPages={totalPages}
             />
