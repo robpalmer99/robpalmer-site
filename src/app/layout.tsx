@@ -85,10 +85,29 @@ const personJsonLd = {
   },
   email: 'rob@robpalmer.com',
   telephone: '+14158549589',
+  image: `${SITE_URL}/images/headshots/rob-palmer-clean.png`,
   sameAs: [
     'https://www.linkedin.com/in/robpalmer/',
     'https://en.wikipedia.org/wiki/Justin_Hall#cite_note-2',
   ],
+}
+
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Rob Palmer Copywriting',
+  url: SITE_URL,
+  logo: `${SITE_URL}/images/og-default.jpg`,
+  founder: {
+    '@type': 'Person',
+    name: 'Rob Palmer',
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: '+14158549589',
+    email: 'rob@robpalmer.com',
+    contactType: 'sales',
+  },
 }
 
 const websiteJsonLd = {
@@ -120,6 +139,7 @@ export default function RootLayout({
         </a>
         <JsonLd data={personJsonLd} />
         <JsonLd data={websiteJsonLd} />
+        <JsonLd data={organizationJsonLd} />
         <Header />
         <main id="main-content" className="min-h-screen">{children}</main>
         <Footer />

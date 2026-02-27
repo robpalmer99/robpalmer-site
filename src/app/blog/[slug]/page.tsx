@@ -61,6 +61,14 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
         images: [{ url: `${SITE_URL}${post.meta.heroImage}`, width: 1200, height: 630 }],
       }),
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.meta.title,
+      description: post.meta.description,
+      ...(post.meta.heroImage && {
+        images: [`${SITE_URL}${post.meta.heroImage}`],
+      }),
+    },
   }
 }
 
@@ -87,10 +95,22 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       url: SITE_URL,
     },
     publisher: {
-      '@type': 'Person',
-      name: 'Rob Palmer',
+      '@type': 'Organization',
+      name: 'Rob Palmer Copywriting',
       url: SITE_URL,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}/images/og-default.jpg`,
+      },
     },
+    ...(post.meta.heroImage && {
+      image: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}${post.meta.heroImage}`,
+        width: 1200,
+        height: 630,
+      },
+    }),
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `${SITE_URL}/blog/${slug}`,

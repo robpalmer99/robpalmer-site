@@ -38,7 +38,15 @@ export async function generateMetadata({
       canonical: `${SITE_URL}/services/${slug}`,
     },
     openGraph: {
+      title: service.metaTitle,
+      description: service.metaDescription,
       images: [{ url: service.heroImage, width: 800, height: 400 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: service.metaTitle,
+      description: service.metaDescription,
+      images: [service.heroImage],
     },
   }
 }

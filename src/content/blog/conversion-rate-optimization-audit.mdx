@@ -1,0 +1,264 @@
+---
+title: "How to Run a CRO Audit (The Copy-First Approach)"
+description: "Learn how to run a conversion rate optimization audit that starts with copy — the highest-impact variable most CRO audits ignore."
+date: "2026-02-27"
+category: "Copywriting Strategy"
+tags: ["conversion rate optimization audit", "CRO audit", "conversion audit", "A/B testing", "copywriting", "conversion rate optimization"]
+published: true
+heroImage: "/images/blog/conversion-rate-optimization-audit.jpg"
+heroAlt: "Magnifying glass over a landing page wireframe with annotated copy elements — representing a conversion rate optimization audit"
+faqs:
+  - question: "What is a CRO audit?"
+    answer: "A CRO audit (conversion rate optimization audit) is a systematic evaluation of a website or landing page to identify what is preventing visitors from converting. It examines copy, design, user experience, and technical elements to find gaps and opportunities. The best CRO audits prioritize findings by impact so you fix the highest-leverage issues first."
+  - question: "How often should you do a conversion rate optimization audit?"
+    answer: "Run a full CRO audit quarterly for your highest-traffic pages, and immediately after any major change in traffic source, offer, or audience. Pages with active paid traffic benefit from monthly audits focused on the top-tier copy elements. The goal is not constant redesign — it is disciplined evaluation and testing on a regular cadence."
+  - question: "What is the most important thing to audit for CRO?"
+    answer: "The headline and value proposition. These two elements determine whether a visitor stays or bounces within the first 2-3 seconds, and headline changes alone can swing conversion rates by 50-200%. Most CRO audits begin with page speed and button colors while ignoring a broken headline, which is like polishing the exterior of a car that will not start."
+  - question: "How long does a CRO audit take?"
+    answer: "A thorough CRO audit of a single page takes 2-4 hours, including copy analysis, user experience review, technical checks, and documentation of findings. An audit of a full funnel — landing page, sales page, email sequence, and upsell flow — takes 1-3 days. The time investment pays back quickly because it focuses your optimization efforts on the changes most likely to move the needle."
+  - question: "What is the difference between a CRO audit and A/B testing?"
+    answer: "A CRO audit is the diagnostic phase — it identifies what is broken and what should be tested. A/B testing is the validation phase — it proves whether a specific change actually improves conversion rates. The audit generates hypotheses; the tests validate them. Running A/B tests without an audit is like prescribing medicine without diagnosing the patient."
+  - question: "Can I do a CRO audit myself or do I need to hire someone?"
+    answer: "You can run a basic CRO audit yourself using the framework in this guide. However, an experienced conversion copywriter or CRO specialist brings pattern recognition from hundreds of audits — they spot issues faster and prioritize more accurately. If your page is generating significant revenue, the ROI on a professional audit is typically substantial because finding even one high-impact copy issue can double conversion rates."
+  - question: "What tools do I need for a CRO audit?"
+    answer: "At minimum, you need Google Analytics for traffic and conversion data, a heatmap tool like Hotjar or Microsoft Clarity for behavioral insights, and your own eyes for reading the copy critically. A/B testing tools like VWO or Optimizely are needed for the testing phase. But tools are secondary — the highest-impact audit findings come from reading the copy and asking whether it answers the visitor's real questions."
+  - question: "What is a copy-first CRO audit?"
+    answer: "A copy-first CRO audit prioritizes evaluating the words on the page — headlines, value propositions, CTAs, proof elements, and objection handling — before examining design, UX, or technical factors. This approach is based on the consistent finding that copy changes produce 50-200% conversion lifts while design and technical changes produce 5-20%. You fix the highest-impact variable first."
+  - question: "How do I turn CRO audit findings into actual improvements?"
+    answer: "Organize your findings into a prioritized testing roadmap. Rank each issue by estimated impact (copy issues first, then design, then technical), required effort, and confidence level. Test one change at a time to isolate causation. Start with the highest-impact, highest-confidence finding — usually a headline or value proposition rewrite — and work your way down the list."
+  - question: "Does a CRO audit work for ecommerce, SaaS, and B2B?"
+    answer: "Yes. The copy-first audit framework applies to any page with a conversion goal — ecommerce product pages, SaaS landing pages, B2B lead generation forms, newsletter signups, and webinar registrations. The specific conversion action differs, but the audit process is the same: evaluate whether the copy clearly communicates the value, builds trust, handles objections, and tells the visitor exactly what to do next."
+---
+
+<KeyTakeaways>
+- Most CRO audits start with heatmaps, page speed, and button colors — but copy is the highest-impact conversion variable, and it should be audited first
+- A copy-first CRO audit evaluates five elements in order: headline, CTAs, proof, objection handling, and copy-design alignment — the same elements that produce 50-200% conversion lifts when improved
+- The headline alone carries roughly 80% of a page's conversion performance — if your audit does not spend disproportionate time on the headline, you are auditing the wrong things
+- Technical CRO factors (page speed, mobile rendering, form friction) matter, but they are amplifiers of good copy — they cannot rescue a broken message
+- Every audit finding should become a testable hypothesis with a specific predicted outcome, not a vague note to "improve the copy"
+- The goal of a CRO audit is not a report — it is a prioritized testing roadmap that tells you exactly what to test first, second, and third
+</KeyTakeaways>
+
+## Why Most CRO Audits Miss the Biggest Lever
+
+Here is what happens in most conversion rate optimization audits: someone installs Hotjar, stares at a heatmap for twenty minutes, notices that visitors are not scrolling past the third fold, and concludes that the page is "too long." Or they run a PageSpeed Insights test, see a 67 score, and spend the next two sprints compressing images and deferring JavaScript. Or — my personal favorite — they A/B test a green button against an orange button and call it optimization.
+
+None of this is wrong, exactly. It is just backwards.
+
+The highest-impact variable on any landing page, [sales page](/blog/how-to-write-a-sales-page), or product page is the copy. The words. The headline that either stops a visitor or loses them. The value proposition that either resonates or falls flat. The CTA that either earns a click or gets ignored. The proof that either builds trust or gets skimmed past. These are the elements that swing [conversion rates](/blog/what-is-conversion-rate-optimization) by 50-200% in a single test. Page speed improvements move the needle 5-15%. Button colors, 2-5% if you are lucky.
+
+Yet most CRO audit frameworks — the templates you download, the agency checklists, the "ultimate guides" — bury copy assessment somewhere between "check your 404 pages" and "verify your favicon." They treat copy as one variable among dozens when it is the variable that outweighs all the others combined.
+
+I have spent 30+ years writing and testing [direct-response copy](/blog/what-is-direct-response-copywriting) — [sales pages](/blog/how-to-write-a-sales-page), [landing pages](/blog/landing-page-copywriting), [VSLs](/blog/what-is-a-vsl), [email sequences](/blog/email-copywriting), and complete [funnel architectures](/blog/what-is-a-sales-funnel) — contributing to $523M+ in tracked results. And I can tell you from decades of split-testing that the audit should start with the copy, because that is where the biggest conversion wins live. Everything else is important, but it is secondary.
+
+This guide is the CRO audit most teams never do: a systematic, copy-first framework for diagnosing why a page is underperforming and identifying the changes most likely to produce a measurable conversion lift.
+
+## What Is a Conversion Rate Optimization Audit?
+
+<DefinitionBox term="Conversion Rate Optimization Audit">
+A systematic evaluation of a website, landing page, or funnel to identify what is preventing visitors from converting — and to prioritize the changes most likely to improve conversion rates. A CRO audit examines copy, design, user experience, and technical factors, then produces a prioritized testing roadmap based on estimated impact. The best CRO audits are not technology exercises — they are diagnostic tools that start with the message and work outward.
+</DefinitionBox>
+
+A **conversion rate optimization audit** is not a checklist you rush through in an afternoon. It is a disciplined diagnostic process — the equivalent of a doctor's examination before prescribing treatment. You do not prescribe A/B tests without first understanding the symptoms. And the symptoms, in most cases, are in the copy.
+
+The audit has two phases. Phase one — the copy audit — evaluates whether the words on the page are doing their job: communicating value, building trust, handling objections, and compelling action. Phase two — the technical audit — evaluates whether the infrastructure is supporting or undermining that copy: page speed, mobile experience, form design, tracking accuracy.
+
+Most audit frameworks reverse this order. They start with the technical infrastructure and treat the copy as an afterthought. That is like checking the plumbing in a house before confirming it has walls.
+
+The copy-first approach does not mean you ignore technical factors. It means you audit the variable with the highest conversion impact first, so when you move to testing, you are testing the changes most likely to produce results.
+
+## The Copy-First CRO Audit Framework
+
+This is the five-step copy audit I use when evaluating a page — whether it is my own work, a client's existing page, or a competitor analysis. Each step targets a specific conversion lever, and the steps are ordered by impact.
+
+### Step 1: Audit the Headline and Value Proposition
+
+The [headline](/blog/how-to-write-a-headline) is the single most important element on any page. It is not the most important element among several roughly equal elements — it is the element that determines whether everything else on the page gets read at all. David Ogilvy's famous observation that five times as many people read the headline as read the body copy has been validated by decades of testing. If the headline fails, nothing else on the page matters.
+
+Here is what to evaluate:
+
+**Does the headline communicate a specific benefit in under 3 seconds?** Read the headline as if you have never seen the page before. Can you immediately understand what the visitor gets and why it matters? "Welcome to Our Platform" fails this test. "Cut Your Customer Acquisition Cost by 40% in 90 Days" passes it.
+
+**Does the headline match the traffic source?** If a visitor clicked an ad promising "free shipping on first orders," does the landing page headline reinforce that promise? Message mismatch between the ad and the headline is one of the most common — and most costly — conversion killers. The visitor arrived with a specific expectation. If the headline does not meet it within seconds, they leave.
+
+**Is the headline specific enough that it could not describe a competitor?** If you can swap your headline onto three competitors' pages and it still works, your headline is not specific enough. Specificity is what separates headlines that convert from headlines that communicate nothing.
+
+**Does the value proposition pass the "so what" test?** After reading the headline and subheadline, can a stranger immediately answer: "What is this? Who is it for? Why should I care? What do I do next?" If any of those questions remain unanswered, the value proposition has gaps.
+
+Use [headline formulas](/blog/headline-formulas) as a diagnostic tool here. If your current headline does not fit any proven formula structure — benefit-driven, curiosity-based, proof-anchored — it may be costing you conversions simply through structural weakness.
+
+<ExpertQuote
+  quote="On the average, five times as many people read the headline as read the body copy. When you have written your headline, you have spent eighty cents out of your dollar."
+  author="David Ogilvy"
+  title="Founder of Ogilvy & Mather"
+/>
+
+### Step 2: Audit the Call to Action
+
+The CTA is where the conversion happens — or does not. A weak CTA turns an interested visitor into a bounced session. A strong CTA turns interest into action.
+
+**Does the CTA use a specific action verb that describes the value received?** "Submit" tells the visitor what you want them to do. "Get My Free Conversion Audit" tells them what they get. This distinction consistently produces 20-40% lifts. The CTA should complete the sentence "I want to..." from the visitor's perspective.
+
+**Is there one clear primary CTA, or are you diluting attention across multiple competing actions?** Every additional CTA on a page splits the visitor's decision-making. A page that asks visitors to "Start a free trial," "Download the whitepaper," "Watch the demo," and "Request a consultation" simultaneously is not offering choice — it is creating confusion. One page, one primary action.
+
+**Does the CTA appear at the right points in the page flow?** Above the fold for high-awareness visitors who already know what they want. After the proof section for visitors who need convincing. After the objection-handling section for skeptical visitors. A single CTA placement forces all visitors to scroll to the same point regardless of their readiness — which means you lose some of them along the way.
+
+**Is there a clear reason to act now?** Urgency is not about fake countdown timers or "only 3 left" badges. Genuine urgency comes from communicating the cost of inaction — what the visitor continues to lose by not solving their problem today. If your CTA gives no reason to act now rather than "later," most visitors will choose later. And later never comes.
+
+### Step 3: Audit Proof Elements
+
+Proof is what separates a claim from a credible promise. Without proof, your copy is just assertions — and visitors have learned to ignore assertions from every ad they have ever seen. The question is not whether you have proof, but whether your proof is specific, credible, and strategically placed.
+
+**Are testimonials specific and outcome-focused, or vague and generic?** "Great product, highly recommend!" adds nothing. "We switched from [competitor] and reduced our cost per lead from $47 to $18 within 60 days" is proof that converts. The best testimonials include the customer's name, company, specific results, and a timeframe. Every missing detail reduces credibility.
+
+**Do case studies include hard numbers?** Revenue generated. Percentage improvements. Time to results. Cost savings. Specific, verifiable numbers create trust because they are falsifiable — and visitors know that. "Increased conversions significantly" is marketing language. "Increased conversions from 2.1% to 5.8% in 90 days" is evidence.
+
+**Is proof placed where skepticism peaks — not just at the bottom of the page?** Most pages dump all testimonials into a section at the bottom. But skepticism does not wait until the bottom — it appears throughout the reading experience. Place relevant proof immediately after each major claim. If you claim fast results in the headline, the first testimonial the visitor sees should confirm fast results.
+
+**Do you have proof that addresses different objections?** Price objections need ROI proof. Trust objections need credibility proof (logos, certifications, media mentions). Quality objections need outcome proof (case studies, before-and-after). A single type of proof leaves the other objections unaddressed. Audit whether your proof portfolio covers the full spectrum of visitor concerns.
+
+### Step 4: Audit Objection Handling
+
+Every visitor arrives with reasons not to convert. These are not theoretical — they are predictable, based on what you are selling, who you are selling to, and what the conversion action requires. Your copy either addresses these objections or ignores them. Ignoring them does not make them disappear — it just means the visitor leaves with their objections intact.
+
+**Have you identified the top 3-5 objections your audience has?** If you cannot list them immediately, your copy is not addressing them because you do not know what they are. Sources for objection intelligence: sales team conversations, customer service tickets, negative reviews (yours and competitors'), survey responses, and social media complaints. This is [voice-of-customer research](/blog/copywriting-psychology), and it is the foundation of effective objection handling.
+
+**Does the copy address objections proactively, or does it wait for the reader to raise them?** The best [conversion copy](/blog/conversion-copywriting) brings up objections before the reader does and then resolves them — a technique Claude Hopkins called "pre-emptive refutation." A section that says "You might be wondering if this works for small teams with limited budgets..." followed by proof that it does is more persuasive than hoping the reader never has that thought.
+
+**Is the risk reversed?** Guarantees, free trials, "cancel anytime" policies, money-back promises — these are not just nice gestures. They are conversion tools that shift the risk from the buyer to the seller. If your audit reveals no risk-reversal element on the page, you have found one of the most common and most fixable conversion gaps.
+
+**Does the FAQ section address real objections or just softball questions?** Most FAQ sections are written by the marketing team and contain questions like "Why is your product so amazing?" Real objections are uncomfortable — "Is this worth the price?" "Will it actually work for my situation?" "What happens if I do not like it?" An honest FAQ section that handles these directly converts better than a polished FAQ that avoids them.
+
+### Step 5: Audit Copy-Design Alignment
+
+Copy and design are not independent variables — they are partners. The design should serve the copy, not compete with it. This step evaluates whether the visual presentation is helping or hindering the persuasion architecture.
+
+**Does the visual hierarchy match the persuasion hierarchy?** The most important copy element — usually the headline — should receive the most visual prominence. The CTA should be unmissable. Proof elements should be visually distinct from body copy. If a design element is competing with the headline for attention, or if the CTA is the same visual weight as a navigation link, the design is working against the conversion goal.
+
+**Is the above-the-fold area earning its real estate?** The first screen a visitor sees (before scrolling) must communicate: what this is, who it is for, what the benefit is, and what to do next. If the above-the-fold area is dominated by a hero image with a vague tagline layered on top, you are wasting the most valuable real estate on the page.
+
+**Are long copy sections broken up for scannability?** Not every visitor reads linearly. Many scan for the sections relevant to them — and if your copy is one continuous wall of text, scanners will miss key proof, objection handling, and CTA opportunities. Subheadlines, bullet points, pull quotes, and visual breaks should guide the scanning eye to the most important content.
+
+**Does the mobile experience preserve the copy hierarchy?** More than half of web traffic is mobile. If your headline gets truncated, your CTA disappears below three folds of scrolling, or your testimonials become unreadable on a small screen, you are losing conversions from your largest traffic segment. Mobile is not a scaled-down version of desktop — it should be audited as its own experience.
+
+<ComparisonTable
+  caption="Copy-First CRO Audit: Impact Hierarchy"
+  headers='["Audit Area", "Typical Conversion Impact", "Common Issues Found"]'
+  rows='[["Headline / Value Proposition", "50-200%+ lift potential", "Vague, generic, no specific benefit, message mismatch with traffic source"],["CTA Copy and Placement", "20-80% lift potential", "Generic labels (Submit, Learn More), single placement, no urgency, competing CTAs"],["Proof Elements", "30-100% lift potential", "Vague testimonials, no numbers, proof buried at bottom of page, missing objection-specific proof"],["Objection Handling", "20-60% lift potential", "Objections ignored, no risk reversal, FAQ avoids real concerns, no proactive refutation"],["Copy-Design Alignment", "10-40% lift potential", "Visual hierarchy fights copy hierarchy, poor above-the-fold usage, walls of text, broken mobile experience"]]'
+/>
+
+## The Technical Audit: After Copy, Not Before
+
+Once the copy audit is complete, the technical audit validates that the infrastructure is supporting the message. These elements rarely produce large conversion lifts on their own — but they can prevent your optimized copy from performing at its potential.
+
+**Page speed.** A page that takes more than 3 seconds to load loses a significant percentage of visitors before they read a single word. Run Google PageSpeed Insights and address any critical issues — especially on mobile. But do not spend three months optimizing load time while your headline says "Welcome."
+
+**Mobile rendering.** Open the page on an actual phone (not just a browser simulator). Read the copy. Tap the CTA. Fill out the form. The experience should be effortless. If you have to pinch, zoom, or squint, conversions are leaking.
+
+**Form friction.** Every field on a form is a conversion barrier. Audit each field and ask: "Do I absolutely need this to fulfill the conversion goal?" Name and email are usually sufficient for a lead generation page. Asking for phone number, company size, annual revenue, and "how did you hear about us" on the first touchpoint is asking the visitor to do your qualification work before you have earned their trust.
+
+**Tracking and analytics.** You cannot optimize what you cannot measure. Verify that your conversion tracking is accurate — firing on the correct events, not double-counting, and attributing to the right sources. I have audited pages where the "high conversion rate" turned out to be a tracking error. Garbage data leads to garbage decisions. Check this before you test anything.
+
+**Cross-browser and cross-device testing.** Open the page in Chrome, Safari, Firefox, and Edge. Open it on iOS and Android. If the CTA button is hidden on Safari or the form is broken on older Android devices, you are losing conversions from traffic segments you are paying to acquire.
+
+## Tools for a CRO Audit
+
+Tools support the audit process — they do not replace it. The most important audit tool is a pair of experienced eyes reading the copy from the visitor's perspective. That said, the right tools provide data that sharpens your audit findings and validates your hypotheses.
+
+**Google Analytics** provides the foundation: traffic volume, conversion rates by source, bounce rates, and user flow. Look at conversion rate by traffic source, not blended averages. A page converting at 3% overall might be converting at 8% from email traffic and 1% from paid — which tells you the copy is resonating with warm audiences but failing with cold traffic. That is a completely different problem than "the page converts at 3%."
+
+**Heatmap tools** (Hotjar, Microsoft Clarity) show where visitors click, scroll, and hover. Heatmaps are useful for confirming hypotheses from the copy audit — if your heatmap shows that visitors are not scrolling to your proof section, and your copy audit found that proof is buried below the third fold, the data confirms the diagnosis. But do not let heatmaps replace the copy audit. A heatmap tells you what visitors are doing; the copy audit tells you why.
+
+**Session recordings** let you watch real visitors interact with your page. Watch 20-30 sessions focused on the specific copy sections you flagged in the audit. Are visitors pausing at the headline, or scrolling past it immediately? Are they reading the testimonials, or skipping them? Session recordings turn your copy audit from theory into observed behavior.
+
+**A/B testing platforms** (VWO, Optimizely, Google Optimize) are for the testing phase after the audit. The audit produces hypotheses; the testing platform validates them. Do not start testing before you have completed the audit — otherwise you are testing random changes instead of informed hypotheses.
+
+## Common CRO Audit Mistakes
+
+After decades of reviewing pages and advising on [conversion optimization](/blog/what-is-conversion-rate-optimization), I have seen the same audit mistakes repeated across industries. Avoiding these is as important as following the framework.
+
+**Starting with tools instead of copy.** The most common mistake. Teams install heatmap software, configure dashboards, and spend weeks in analytics before anyone reads the page's copy from the visitor's perspective. The tools are secondary. The copy is primary. Read the page first — with fresh eyes, as if you have never seen it — and note every point where the message is unclear, unpersuasive, or missing. Then use the tools to validate what your reading revealed.
+
+**Auditing the page you built, not the page visitors experience.** You know your product intimately. You understand the jargon. You know what the CTA leads to. Your visitors do not. The audit must be done from the visitor's perspective — ideally by someone who was not involved in creating the page. If you must audit your own page, use the "24-hour rule": do not look at the page for a day, then read it fresh. The gaps become visible when the creator's bias fades.
+
+**Treating all findings as equal.** A CRO audit will surface dozens of potential improvements. If you try to fix them all simultaneously, you will change everything and learn nothing. The power of a copy-first audit is prioritization — headline issues before CTA issues, CTA issues before form field issues, form field issues before page speed issues. Impact hierarchy determines testing order.
+
+**Testing too many changes at once.** If you rewrite the headline, redesign the proof section, and shorten the form in a single test, and conversions improve, which change caused the improvement? You do not know. You will never know. Test one variable at a time. The discipline is slower, but the learnings are permanent.
+
+**Auditing once and never again.** Audiences evolve. Traffic sources shift. Competitors change their messaging. A page that converted well six months ago may have new gaps today. Treat the CRO audit as a recurring discipline, not a one-time project. Quarterly audits of your highest-traffic pages keep your conversion rates from silently decaying.
+
+**Ignoring the offer itself.** No amount of copy optimization can compensate for an offer nobody wants. If your audit reveals that the headline is clear, the proof is strong, the CTA is specific, and the page still does not convert — the problem might not be the copy. It might be the offer. The best conversion copywriting in the world cannot sell something the market does not want at a price it will not pay. Sometimes the audit conclusion is "change the offer," and that is a valid finding.
+
+## Turning Audit Findings Into a Testing Roadmap
+
+The output of a CRO audit is not a report. It is a testing roadmap — a prioritized list of hypotheses, ranked by estimated impact, that tells your team exactly what to test and in what order.
+
+Here is how to structure it:
+
+**Step 1: List every finding from your audit.** Every gap, every weak element, every missing component. Be specific: "Headline does not communicate a measurable benefit" is actionable. "Copy needs improvement" is not.
+
+**Step 2: Categorize by impact tier.** Copy findings in Tier 1 (highest impact). Design and UX findings in Tier 2. Technical findings in Tier 3. Within each tier, rank by your confidence in the diagnosis — findings supported by both the copy analysis and behavioral data (heatmaps, session recordings) rank higher than copy-only observations.
+
+**Step 3: Frame each finding as a testable hypothesis.** "If we rewrite the headline to include a specific, measurable benefit, we expect conversion rate to increase by at least 30% based on the current headline's lack of specificity and the high bounce rate on the page." This is not a guess — it is a reasoned prediction based on the audit evidence.
+
+**Step 4: Estimate effort for each test.** A headline rewrite takes a day. A complete proof section overhaul takes a week. A page speed optimization project takes a sprint. Match effort estimates to impact estimates, and prioritize high-impact, low-effort tests first.
+
+**Step 5: Execute sequentially.** Start with the highest-impact finding. Test it. Measure the result. If the hypothesis was validated, lock in the change and move to finding two. If it was invalidated, analyze why, refine the hypothesis, and test again. This discipline — audit, hypothesize, test, measure, iterate — is the [CRO process](/blog/conversion-rate-optimization-checklist) that compounds results over time.
+
+<ComparisonTable
+  caption="CRO Testing Priority Matrix"
+  headers='["Priority", "Finding Type", "Expected Impact", "Typical Test Duration"]'
+  rows='[["1 (Test First)", "Headline / value proposition rewrite", "50-200%+ lift", "2-4 weeks"],["2", "CTA copy and placement optimization", "20-80% lift", "2-3 weeks"],["3", "Proof element restructuring", "30-100% lift", "2-4 weeks"],["4", "Objection handling additions", "20-60% lift", "2-3 weeks"],["5", "Copy-design alignment fixes", "10-40% lift", "2-4 weeks"],["6", "Form friction reduction", "10-30% lift", "1-2 weeks"],["7", "Page speed optimization", "5-15% lift", "1-3 weeks"],["8", "Mobile experience fixes", "5-20% lift", "1-2 weeks"]]'
+/>
+
+## The Audit Your Pages Actually Need
+
+Most businesses have never had their pages audited by someone who reads copy for a living. They have had designers critique the layout, developers audit the code, and analytics teams study the dashboards — but nobody has sat down and read the words on the page from the visitor's perspective and asked the hard questions: Is this headline stopping anyone? Does the proof actually prove anything? Is there a reason to act today?
+
+That is what a copy-first conversion rate optimization audit delivers. Not a spreadsheet of technical metrics. Not a heatmap annotated with arrows. A clear, prioritized diagnosis of why visitors are not converting and what to change — starting with the variable that has the highest impact on the outcome.
+
+If your pages are generating traffic but not generating results, the answer is almost certainly in the copy. Whether you are running [ecommerce pages](/blog/ecommerce-conversion-rate-optimization), [B2B lead generation funnels](/blog/b2b-conversion-rate-optimization), or [sales pages](/blog/how-to-write-a-sales-page), the copy-first audit framework identifies the gaps that tools alone cannot see.
+
+I have been running these audits — and rewriting the copy to close the gaps — for over 30 years. If you want a professional eye on your conversion pages, [let's talk about what your copy is leaving on the table](/contact). Every engagement starts with exactly this kind of systematic, copy-first diagnosis — because you cannot fix what you have not accurately identified.
+
+<FAQSection>
+<FAQItem question="What is a CRO audit?">
+A CRO audit (conversion rate optimization audit) is a systematic evaluation of a website or landing page to identify what is preventing visitors from converting. It examines copy, design, user experience, and technical elements to find gaps and opportunities. The best CRO audits prioritize findings by impact so you fix the highest-leverage issues first.
+</FAQItem>
+
+<FAQItem question="How often should you do a conversion rate optimization audit?">
+Run a full CRO audit quarterly for your highest-traffic pages, and immediately after any major change in traffic source, offer, or audience. Pages with active paid traffic benefit from monthly audits focused on the top-tier copy elements. The goal is not constant redesign — it is disciplined evaluation and testing on a regular cadence.
+</FAQItem>
+
+<FAQItem question="What is the most important thing to audit for CRO?">
+The headline and value proposition. These two elements determine whether a visitor stays or bounces within the first 2-3 seconds, and headline changes alone can swing conversion rates by 50-200%. Most CRO audits begin with page speed and button colors while ignoring a broken headline, which is like polishing the exterior of a car that will not start.
+</FAQItem>
+
+<FAQItem question="How long does a CRO audit take?">
+A thorough CRO audit of a single page takes 2-4 hours, including copy analysis, user experience review, technical checks, and documentation of findings. An audit of a full funnel — landing page, sales page, email sequence, and upsell flow — takes 1-3 days. The time investment pays back quickly because it focuses your optimization efforts on the changes most likely to move the needle.
+</FAQItem>
+
+<FAQItem question="What is the difference between a CRO audit and A/B testing?">
+A CRO audit is the diagnostic phase — it identifies what is broken and what should be tested. A/B testing is the validation phase — it proves whether a specific change actually improves conversion rates. The audit generates hypotheses; the tests validate them. Running A/B tests without an audit is like prescribing medicine without diagnosing the patient.
+</FAQItem>
+
+<FAQItem question="Can I do a CRO audit myself or do I need to hire someone?">
+You can run a basic CRO audit yourself using the framework in this guide. However, an experienced conversion copywriter or CRO specialist brings pattern recognition from hundreds of audits — they spot issues faster and prioritize more accurately. If your page is generating significant revenue, the ROI on a professional audit is typically substantial because finding even one high-impact copy issue can double conversion rates.
+</FAQItem>
+
+<FAQItem question="What tools do I need for a CRO audit?">
+At minimum, you need Google Analytics for traffic and conversion data, a heatmap tool like Hotjar or Microsoft Clarity for behavioral insights, and your own eyes for reading the copy critically. A/B testing tools like VWO or Optimizely are needed for the testing phase. But tools are secondary — the highest-impact audit findings come from reading the copy and asking whether it answers the visitor's real questions.
+</FAQItem>
+
+<FAQItem question="What is a copy-first CRO audit?">
+A copy-first CRO audit prioritizes evaluating the words on the page — headlines, value propositions, CTAs, proof elements, and objection handling — before examining design, UX, or technical factors. This approach is based on the consistent finding that copy changes produce 50-200% conversion lifts while design and technical changes produce 5-20%. You fix the highest-impact variable first.
+</FAQItem>
+
+<FAQItem question="How do I turn CRO audit findings into actual improvements?">
+Organize your findings into a prioritized testing roadmap. Rank each issue by estimated impact (copy issues first, then design, then technical), required effort, and confidence level. Test one change at a time to isolate causation. Start with the highest-impact, highest-confidence finding — usually a headline or value proposition rewrite — and work your way down the list.
+</FAQItem>
+
+<FAQItem question="Does a CRO audit work for ecommerce, SaaS, and B2B?">
+Yes. The copy-first audit framework applies to any page with a conversion goal — ecommerce product pages, SaaS landing pages, B2B lead generation forms, newsletter signups, and webinar registrations. The specific conversion action differs, but the audit process is the same: evaluate whether the copy clearly communicates the value, builds trust, handles objections, and tells the visitor exactly what to do next.
+</FAQItem>
+</FAQSection>

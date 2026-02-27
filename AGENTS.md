@@ -247,7 +247,17 @@ src/
 │       ├── what-does-a-copywriter-do.mdx                      # Phase 4 T3 — FAQ cluster
 │       ├── how-long-should-a-sales-page-be.mdx                # Phase 4 T3 — FAQ cluster
 │       ├── how-to-start-a-copywriting-career.mdx              # Phase 4 T3 — Career
-│       └── forgotten-copywriters-better-than-famous.mdx       # Phase 4 T3 — Legends
+│       ├── forgotten-copywriters-better-than-famous.mdx       # Phase 4 T3 — Legends
+│       ├── what-is-conversion-rate-optimization.mdx          # CRO Cluster — Pillar
+│       ├── conversion-rate-optimization-checklist.mdx        # CRO Cluster T1 — Checklist
+│       ├── b2b-conversion-rate-optimization.mdx              # CRO Cluster T1 — B2B
+│       ├── ecommerce-conversion-rate-optimization.mdx        # CRO Cluster T1 — Ecommerce
+│       ├── conversion-rate-optimization-audit.mdx            # CRO Cluster T2 — Audit
+│       ├── conversion-rate-optimization-strategies.mdx       # CRO Cluster T2 — Strategies
+│       ├── conversion-rate-optimization-case-studies.mdx     # CRO Cluster T2 — Case Studies
+│       ├── personalization-conversion-rate-optimization.mdx  # CRO Cluster T2 — Personalization
+│       ├── landing-page-conversion-rate-optimization.mdx     # CRO Cluster T3 — Landing Pages
+│       └── benefits-of-conversion-rate-optimization.mdx      # CRO Cluster T3 — Benefits
 │
 ├── hooks/
 │   └── useDebounce.ts          # Generic debounce hook (used by blog search)
@@ -358,7 +368,7 @@ Blog posts display 3 related articles after the author bio section:
 
 ```bash
 npm run dev          # Start dev server (port 3000)
-npm run build        # Production build (currently ~76 static pages)
+npm run build        # Production build (currently ~123 static pages)
 npm run start        # Serve production build
 npm run lint         # ESLint
 ```
@@ -377,11 +387,11 @@ Always clear `.next` after making changes to `globals.css`, adding new Tailwind 
 
 ### Build Output
 
-The build generates **~76 static pages**:
+The build generates **~123 static pages**:
 - 1 homepage, about, contact, testimonials, portfolio, not-found
 - 9 service detail pages + 1 services listing
 - 6 industry detail pages + 1 industries listing
-- 46 blog posts + 4 blog listing pages (paginated at 12/page)
+- 86 blog posts + 7 blog listing pages (paginated at 12/page)
 - 2 case study pages + 1 case studies listing
 - robots.txt, sitemap.xml
 - 1 API route (contact form)
@@ -481,7 +491,7 @@ Site constants are centralized in `src/lib/constants.ts`:
 
 ## Blog Content Strategy
 
-### Current Content (74 posts)
+### Current Content (86 posts)
 
 Posts are organized in tiers that build topical authority clusters linking to service/industry pages:
 
@@ -634,6 +644,25 @@ Competitive SEO analysis is stored at `/Users/robpalmer/Desktop/RobPalmer.com SE
 **Tier 1 status: COMPLETED** — All 10 HIGH priority posts written, hero images generated, build verified.
 **Tier 2 status: COMPLETED** — All 10 MEDIUM-HIGH priority posts written, hero images generated, build verified.
 **Tier 3 status: COMPLETED** — All 8 MEDIUM priority posts written, hero images generated, build verified.
+
+### CRO Content Cluster (COMPLETED — 10 posts)
+
+A topical authority cluster around Conversion Rate Optimization, building on Rob Palmer's direct-response expertise. All 10 posts are interlinked and cross-linked from all 76 existing posts.
+
+| Tier | Post | Slug | Status |
+|------|------|------|--------|
+| Pillar | What Is Conversion Rate Optimization? | what-is-conversion-rate-optimization | ✅ Done |
+| Tier 1 | CRO Checklist | conversion-rate-optimization-checklist | ✅ Done |
+| Tier 1 | B2B CRO | b2b-conversion-rate-optimization | ✅ Done |
+| Tier 1 | Ecommerce CRO | ecommerce-conversion-rate-optimization | ✅ Done |
+| Tier 2 | CRO Audit | conversion-rate-optimization-audit | ✅ Done |
+| Tier 2 | CRO Strategies | conversion-rate-optimization-strategies | ✅ Done |
+| Tier 2 | CRO Case Studies | conversion-rate-optimization-case-studies | ✅ Done |
+| Tier 2 | Personalization & CRO | personalization-conversion-rate-optimization | ✅ Done |
+| Tier 3 | Landing Page CRO | landing-page-conversion-rate-optimization | ✅ Done |
+| Tier 3 | Benefits of CRO | benefits-of-conversion-rate-optimization | ✅ Done |
+
+**Cross-linking:** All 86 blog posts contain contextual internal links to relevant CRO cluster posts. CRO cluster posts link to each other, to relevant service/industry pages, and to /contact.
 
 ---
 
