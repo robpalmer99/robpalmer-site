@@ -20,6 +20,7 @@ Portfolio and marketing website for **Rob Palmer**, a veteran direct-response co
 | Blog content | MDX via next-mdx-remote | 6.x |
 | Image optimization | sharp | 0.34 |
 | Analytics | @vercel/analytics + @vercel/speed-insights | — |
+| Google Analytics | @next/third-parties (GoogleAnalytics) | G-ND4QM9PG6P |
 | Scheduling | react-calendly | 4.x |
 | Utilities | clsx, tailwind-merge, gray-matter, reading-time | — |
 | Deployment target | Vercel | — |
@@ -81,7 +82,7 @@ All routes return the following headers:
 - **X-Content-Type-Options:** nosniff
 - **Referrer-Policy:** strict-origin-when-cross-origin
 - **Permissions-Policy:** camera=(), microphone=(), geolocation=(), interest-cohort=()
-- **Content-Security-Policy:** Allowlists for self, Calendly, Vercel Analytics, Vercel Speed Insights
+- **Content-Security-Policy:** Allowlists for self, Calendly, Vercel Analytics, Vercel Speed Insights, Google Analytics / GTM
 
 ---
 
@@ -90,7 +91,7 @@ All routes return the following headers:
 ```
 src/
 ├── app/
-│   ├── layout.tsx              # Root layout (fonts, skip nav, header, footer, analytics)
+│   ├── layout.tsx              # Root layout (fonts, skip nav, header, footer, analytics, Google Analytics)
 │   ├── page.tsx                # Homepage
 │   ├── globals.css             # Tailwind config, color tokens, a11y styles, prose overrides
 │   ├── not-found.tsx           # Custom 404 page (noindex)
@@ -389,11 +390,11 @@ Always clear `.next` after making changes to `globals.css`, adding new Tailwind 
 
 ### Build Output
 
-The build generates **~120 static pages**:
-- 1 homepage, about, contact, testimonials, portfolio, not-found
+The build generates **~140+ static pages**:
+- 1 homepage, about, contact, testimonials, portfolio, terms, privacy, not-found
 - 9 service detail pages + 1 services listing
 - 6 vertical detail pages + 1 verticals listing
-- 84 blog posts + 7 blog listing pages (paginated at 12/page)
+- 105 blog posts + 9 blog listing pages (paginated at 12/page)
 - 2 case study pages + 1 case studies listing
 - robots.txt, sitemap.xml
 - 1 API route (contact form)
@@ -743,7 +744,22 @@ A topical authority cluster around Conversion Rate Optimization, building on Rob
 
 ---
 
-## Pending / Future Work
+## Project Status: COMPLETE
 
-- Cross-browser testing
-- Google Search Console setup
+All planned features, content, and infrastructure work have been completed:
+
+- **18/18 GitHub issues** resolved (infrastructure, accessibility, security)
+- **105 blog posts** published across 6 content phases (Tiers 0–3, Phases 2–6, CRO cluster)
+- **9 services**, **6 verticals**, **12 portfolio items**, **2 case studies**, **36 testimonials** — all live
+- **Google Analytics** (G-ND4QM9PG6P) integrated via `@next/third-parties`
+- **Vercel Analytics** + **Speed Insights** active
+- **WCAG 2.1 AA** accessibility compliance verified
+- **Security headers** including CSP with all third-party domains allowlisted
+- **SEO/GEO optimized** with JSON-LD structured data, sitemaps, canonical URLs, and 10 FAQs per blog post
+
+### Post-Launch Recommendations
+
+- Set up **Google Search Console** and submit sitemap
+- Monitor **Core Web Vitals** via Vercel Speed Insights dashboard
+- Cross-browser testing (Safari, Firefox, Edge)
+- Monitor Google Analytics for traffic patterns and conversion tracking

@@ -33,11 +33,11 @@ const securityHeaders = [
     key: 'Content-Security-Policy',
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://assets.calendly.com https://va.vercel-scripts.com https://vitals.vercel-insights.com",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://assets.calendly.com https://va.vercel-scripts.com https://vitals.vercel-insights.com https://www.googletagmanager.com",
       "style-src 'self' 'unsafe-inline' https://assets.calendly.com",
       "img-src 'self' data: https:",
       "font-src 'self'",
-      "connect-src 'self' https://calendly.com https://assets.calendly.com https://va.vercel-scripts.com https://vitals.vercel-insights.com",
+      "connect-src 'self' https://calendly.com https://assets.calendly.com https://va.vercel-scripts.com https://vitals.vercel-insights.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com",
       "frame-src https://calendly.com",
       "frame-ancestors 'none'",
       "base-uri 'self'",
