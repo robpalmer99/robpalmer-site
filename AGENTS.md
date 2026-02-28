@@ -150,9 +150,10 @@ src/
 │   │   └── ContactForm.tsx     # Client-side form with aria-live + aria-required
 │   │
 │   ├── layout/                 # Persistent layout elements
-│   │   ├── Header.tsx          # Nav with mobile hamburger, search icon, aria-label
+│   │   ├── Header.tsx          # Nav with scroll-aware styling via useScrolled hook
 │   │   ├── Footer.tsx
-│   │   ├── MobileNav.tsx       # Slide-out mobile menu with search link (aria-hidden when closed)
+│   │   ├── MobileMenu.tsx      # Self-contained mobile menu (button + body lock + MobileNav)
+│   │   ├── MobileNav.tsx       # Slide-out mobile nav panel (aria-hidden when closed)
 │   │   └── Breadcrumbs.tsx     # Breadcrumb navigation
 │   │
 │   ├── ui/                     # Atomic UI primitives
@@ -260,7 +261,8 @@ src/
 │       └── benefits-of-conversion-rate-optimization.mdx      # CRO Cluster T3 — Benefits
 │
 ├── hooks/
-│   └── useDebounce.ts          # Generic debounce hook (used by blog search)
+│   ├── useDebounce.ts          # Generic debounce hook (used by blog search)
+│   └── useScrolled.ts          # Scroll detection hook (used by Header)
 │
 └── lib/
     ├── constants.ts            # Site URL, name, nav links, stats, contact info
@@ -471,7 +473,7 @@ Site constants are centralized in `src/lib/constants.ts`:
 | 1 | Lock body scroll when mobile nav is open | — | ✅ Done (Header.tsx) |
 | 2 | Add favicon and app icons | — | ✅ Done (favicon.ico + apple-icon.png) |
 | 3 | Add spam protection to contact form | — | ✅ Done (honeypot field) |
-| 4 | Extract Header scroll/mobile state into smaller client components | — | Open |
+| 4 | Extract Header scroll/mobile state into smaller client components | — | ✅ Done (useScrolled hook + MobileMenu component) |
 | 5 | Create default OpenGraph image | — | ✅ Done (og-default.jpg) |
 | 6 | Add JSON-LD to case study pages | — | ✅ Done (both case studies) |
 | 7 | Improve service/industry content structure for GEO | — | Open |

@@ -23,7 +23,7 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
   return (
     <div
       className={cn(
-        'lg:hidden bg-ink-950 border-t border-ink-700 overflow-hidden transition-all duration-300',
+        'absolute left-0 right-0 top-full lg:hidden bg-ink-950 border-t border-ink-700 overflow-hidden transition-all duration-300',
         isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
       )}
       aria-hidden={!isOpen}
