@@ -493,7 +493,7 @@ Site constants are centralized in `src/lib/constants.ts`:
 
 ## Blog Content Strategy
 
-### Current Content (84 posts)
+### Current Content (105 posts)
 
 Posts are organized in tiers that build topical authority clusters linking to service/vertical pages:
 
@@ -510,6 +510,8 @@ Posts are organized in tiers that build topical authority clusters linking to se
 | Phase 4 Tier 1 | Trend/comparison/legend posts | state-of-direct-response-copywriting-2026, state-of-ai-copywriting-2026, freelance-copywriter-vs-marketing-agency, in-house-copywriter-vs-freelance, vsl-cold-traffic-conversion-case-study, fortune-500-copywriting-lessons, is-copywriting-dead, how-much-does-a-direct-response-copywriter-cost, lessons-from-gary-halbert, eugene-schwartz-breakthrough-advertising-lessons |
 | Phase 4 Tier 2 | Mid-priority content expansion | state-of-vsl-marketing-2026, copywriter-vs-content-writer-for-sales, vsl-vs-sales-page, long-form-copy-vs-short-form-copy, product-launch-email-sequence-case-study, upsell-sequence-doubled-aov-case-study, generative-engine-optimization-for-copywriters, geo-copywriting-guide, david-ogilvy-ai-copywriting, 30-years-of-copywriting-lessons |
 | Phase 4 Tier 3 | Completing Phase 4 plan | state-of-email-marketing-2026, sales-funnel-vs-single-sales-page, direct-mail-vs-digital-marketing, clickbank-funnel-roas-case-study, what-does-a-copywriter-do, how-long-should-a-sales-page-be, how-to-start-a-copywriting-career, forgotten-copywriters-better-than-famous |
+| Phase 5 | Category fill (min 5 per category) | history-of-direct-response-advertising, history-of-sales-letters, golden-age-of-advertising, history-of-direct-mail-marketing, copywriting-tools, ai-copywriting-tools, copywriting-templates, headline-analyzer-tools, copywriter-salary, copywriting-skills, freelance-copywriting-guide, chatgpt-for-copywriting, ai-vs-human-copywriting, copywriting-examples, claude-hopkins-scientific-advertising-lessons, state-of-landing-pages-2026 |
+| Phase 6 | AI hiring funnel cluster | ai-copywriting-prompts, can-ai-write-sales-copy, ai-sales-page-generator, ai-email-sequence-generator, ai-ad-copy-examples |
 
 ### Blog Post Format
 
@@ -665,6 +667,79 @@ A topical authority cluster around Conversion Rate Optimization, building on Rob
 | Tier 3 | Benefits of CRO | benefits-of-conversion-rate-optimization | ✅ Done |
 
 **Cross-linking:** All 84 blog posts contain contextual internal links to relevant CRO cluster posts. CRO cluster posts link to each other, to relevant service/vertical pages, and to /contact.
+
+### Phase 5: Category Fill (COMPLETED — 16 posts)
+
+16 posts written to ensure every blog category has a minimum of 5 posts:
+
+**Copywriting History (4 posts — category now at 5)**
+
+| Post | Slug | Status |
+|------|------|--------|
+| History of Direct Response Advertising | history-of-direct-response-advertising | ✅ Done |
+| The History of Sales Letters | history-of-sales-letters | ✅ Done |
+| The Golden Age of Advertising | golden-age-of-advertising | ✅ Done |
+| The History of Direct Mail Marketing | history-of-direct-mail-marketing | ✅ Done |
+
+**Copywriting Tools (4 posts — category now at 5)**
+
+| Post | Slug | Status |
+|------|------|--------|
+| The Best Copywriting Tools in 2026 | copywriting-tools | ✅ Done |
+| AI Copywriting Tools: A Direct-Response Copywriter's Honest Assessment | ai-copywriting-tools | ✅ Done |
+| Copywriting Templates: 10 Proven Frameworks | copywriting-templates | ✅ Done |
+| Headline Analyzer Tools: Do They Actually Work? | headline-analyzer-tools | ✅ Done |
+
+**Career Insights (3 posts — category now at 5)**
+
+| Post | Slug | Status |
+|------|------|--------|
+| Copywriter Salary in 2026 | copywriter-salary | ✅ Done |
+| The 10 Copywriting Skills That Separate Six-Figure Writers | copywriting-skills | ✅ Done |
+| Freelance Copywriting: The Complete Guide | freelance-copywriting-guide | ✅ Done |
+
+**AI & Technology (2 posts — category now at 5)**
+
+| Post | Slug | Status |
+|------|------|--------|
+| How to Use ChatGPT for Copywriting | chatgpt-for-copywriting | ✅ Done |
+| AI vs Human Copywriting | ai-vs-human-copywriting | ✅ Done |
+
+**Copywriting Fundamentals (1 post — category now at 5)**
+
+| Post | Slug | Status |
+|------|------|--------|
+| Copywriting Examples: 15 Techniques You Can Steal | copywriting-examples | ✅ Done |
+
+**Copywriting Legends (1 post — category now at 5)**
+
+| Post | Slug | Status |
+|------|------|--------|
+| Lessons From Claude Hopkins: Scientific Advertising | claude-hopkins-scientific-advertising-lessons | ✅ Done |
+
+**Industry Trends (1 post — category now at 5)**
+
+| Post | Slug | Status |
+|------|------|--------|
+| The State of Landing Pages in 2026 | state-of-landing-pages-2026 | ✅ Done |
+
+### Phase 6: AI Hiring Funnel Cluster (COMPLETED — 5 posts)
+
+5 posts targeting high-intent AI copywriting keywords that funnel searchers from DIY to hiring a professional. These keywords capture people exploring AI for copywriting who often conclude they need expert help — making this cluster a client acquisition channel.
+
+**Funnel flow:** Discovery → Evaluation → Realization → Hire
+
+| Funnel Stage | Post | Slug | Primary Keywords | Status |
+|-------------|------|------|-----------------|--------|
+| Discovery | AI Copywriting Prompts: 20 Frameworks | ai-copywriting-prompts | AI copywriting prompts, ChatGPT prompts for copywriting | ✅ Done |
+| Evaluation | Can AI Write Sales Copy? An Honest Answer | can-ai-write-sales-copy | can AI write sales copy, does AI copywriting work | ✅ Done |
+| Realization | AI Sales Page Generators: What They Get Right and Wrong | ai-sales-page-generator | AI sales page generator, AI sales copy generator | ✅ Done |
+| Realization | AI Email Sequence Generators: Can AI Write Email That Converts? | ai-email-sequence-generator | AI email sequence generator, AI email marketing copy | ✅ Done |
+| ROI Math | AI Ad Copy Examples: What AI Ads Look Like | ai-ad-copy-examples | AI ad copy examples, AI Facebook ad copy | ✅ Done |
+
+**AI & Technology category now at 10 posts total** — a strong topical authority cluster.
+
+**Cross-linking:** All 105 blog posts contain contextual internal links to related posts, service/vertical pages, and /contact.
 
 ---
 
