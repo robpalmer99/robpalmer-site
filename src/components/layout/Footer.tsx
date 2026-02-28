@@ -87,9 +87,15 @@ export function Footer() {
           <p className="text-xs text-paper-400">
             &copy; {new Date().getFullYear()} Rob Palmer. All rights reserved.
           </p>
-          <p className="text-xs text-paper-400">
-            Direct-Response Copywriter &bull; AI-Powered &bull; Battle-Tested
-          </p>
+          <div className="flex items-center gap-4 text-xs text-paper-400">
+            <Link href="/privacy" className="hover:text-gold-400 transition-colors">
+              Privacy Policy
+            </Link>
+            <span aria-hidden="true">&bull;</span>
+            <Link href="/terms" className="hover:text-gold-400 transition-colors">
+              Terms &amp; Conditions
+            </Link>
+          </div>
         </div>
       </Container>
     </footer>

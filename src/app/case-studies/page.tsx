@@ -53,20 +53,21 @@ export default function CaseStudiesPage() {
 
       <Section>
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <ul role="list" className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {caseStudies.map((cs) => (
-              <CaseStudyCard
-                key={cs.slug}
-                title={cs.title}
-                slug={cs.slug}
-                result={cs.result}
-                client={cs.client}
-                description={cs.description}
-                heroImage={cs.heroImage}
-                heroAlt={cs.heroAlt}
-              />
+              <li key={cs.slug}>
+                <CaseStudyCard
+                  title={cs.title}
+                  slug={cs.slug}
+                  result={cs.result}
+                  client={cs.client}
+                  description={cs.description}
+                  heroImage={cs.heroImage}
+                  heroAlt={cs.heroAlt}
+                />
+              </li>
             ))}
-          </div>
+          </ul>
         </Container>
       </Section>
 

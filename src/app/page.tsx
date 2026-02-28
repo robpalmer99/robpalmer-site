@@ -113,18 +113,19 @@ export default function HomePage() {
               one thing: results.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <ul role="list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.slice(0, 6).map((service) => (
-              <ServiceCard
-                key={service.slug}
-                title={service.title}
-                slug={service.slug}
-                description={service.shortDescription}
-                image={service.heroImage}
-                imageAlt={service.heroImageAlt}
-              />
+              <li key={service.slug}>
+                <ServiceCard
+                  title={service.title}
+                  slug={service.slug}
+                  description={service.shortDescription}
+                  image={service.heroImage}
+                  imageAlt={service.heroImageAlt}
+                />
+              </li>
             ))}
-          </div>
+          </ul>
           <div className="mt-8 text-center">
             <Button href="/services" variant="ghost">
               View all services →
@@ -141,20 +142,21 @@ export default function HomePage() {
               Results That Speak for Themselves
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <ul role="list" className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {caseStudies.map((cs) => (
-              <CaseStudyCard
-                key={cs.slug}
-                title={cs.title}
-                slug={cs.slug}
-                result={cs.result}
-                client={cs.client}
-                description={cs.description}
-                heroImage={cs.heroImage}
-                heroAlt={cs.heroAlt}
-              />
+              <li key={cs.slug}>
+                <CaseStudyCard
+                  title={cs.title}
+                  slug={cs.slug}
+                  result={cs.result}
+                  client={cs.client}
+                  description={cs.description}
+                  heroImage={cs.heroImage}
+                  heroAlt={cs.heroAlt}
+                />
+              </li>
             ))}
-          </div>
+          </ul>
         </Container>
       </Section>
 
@@ -173,15 +175,16 @@ export default function HomePage() {
               What Clients Say
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <ul role="list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {featuredTestimonials.slice(0, 3).map((testimonial) => (
-              <TestimonialCard
-                key={testimonial.id}
-                testimonial={testimonial}
-                variant="default"
-              />
+              <li key={testimonial.id}>
+                <TestimonialCard
+                  testimonial={testimonial}
+                  variant="default"
+                />
+              </li>
             ))}
-          </div>
+          </ul>
           <div className="mt-8 text-center">
             <Button href="/testimonials" variant="ghost">
               Read all testimonials →

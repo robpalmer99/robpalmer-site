@@ -89,23 +89,24 @@ export function SpecialtyGrid() {
               engagement designed to deliver measurable ROI.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+          <ul role="list" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
             {services.map((service) => (
-              <Link
-                key={service.slug}
-                href={service.slug}
-                className="group block rounded-xl border border-paper-200 bg-white p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5"
-              >
-                <div className="text-2xl mb-3">{service.icon}</div>
-                <h3 className="font-heading text-lg font-bold text-ink-950 group-hover:text-gold-600 transition-colors">
-                  {service.title}
-                </h3>
-                <p className="mt-2 text-sm text-ink-700 font-body leading-relaxed">
-                  {service.description}
-                </p>
-              </Link>
+              <li key={service.slug}>
+                <Link
+                  href={service.slug}
+                  className="group block rounded-xl border border-paper-200 bg-white p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5"
+                >
+                  <div className="text-2xl mb-3">{service.icon}</div>
+                  <h3 className="font-heading text-lg font-bold text-ink-950 group-hover:text-gold-600 transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-ink-700 font-body leading-relaxed">
+                    {service.description}
+                  </p>
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
         </Container>
       </Section>
 
@@ -121,22 +122,23 @@ export function SpecialtyGrid() {
               direct-response markets.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+          <ul role="list" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
             {verticals.map((vertical) => (
-              <Link
-                key={vertical.slug}
-                href={vertical.slug}
-                className="group block rounded-xl border border-paper-200 bg-white p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5"
-              >
-                <h3 className="font-heading text-lg font-bold text-ink-950 group-hover:text-gold-600 transition-colors">
-                  {vertical.title}
-                </h3>
-                <p className="mt-2 text-sm text-ink-700 font-body leading-relaxed">
-                  {vertical.description}
-                </p>
-              </Link>
+              <li key={vertical.slug}>
+                <Link
+                  href={vertical.slug}
+                  className="group block rounded-xl border border-paper-200 bg-white p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5"
+                >
+                  <h3 className="font-heading text-lg font-bold text-ink-950 group-hover:text-gold-600 transition-colors">
+                    {vertical.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-ink-700 font-body leading-relaxed">
+                    {vertical.description}
+                  </p>
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
         </Container>
       </Section>
     </>

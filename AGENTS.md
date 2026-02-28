@@ -102,10 +102,10 @@ src/
 │   │   ├── [slug]/page.tsx     # Individual service detail pages
 │   │   └── _data/services.ts   # Service data (interface + 9 items)
 │   │
-│   ├── industries/
-│   │   ├── page.tsx            # Industries listing (6 industries with images)
-│   │   ├── [slug]/page.tsx     # Individual industry detail pages (with FAQPage JSON-LD)
-│   │   └── _data/industries.ts # Industry data (interface + 6 items)
+│   ├── verticals/
+│   │   ├── page.tsx            # Verticals listing (6 verticals with images)
+│   │   ├── [slug]/page.tsx     # Individual vertical detail pages (with FAQPage JSON-LD)
+│   │   └── _data/verticals.ts  # Vertical data (interface + 6 items)
 │   │
 │   ├── portfolio/
 │   │   ├── page.tsx            # Portfolio listing with client-side category filters
@@ -135,7 +135,7 @@ src/
 │   │   ├── Hero.tsx            # Hero with variants: home, page, minimal
 │   │   ├── CTABanner.tsx       # CTA with variants: default, gold
 │   │   ├── FAQAccordion.tsx    # Expandable FAQ with full ARIA pattern
-│   │   ├── ServiceCard.tsx     # Reusable card for services + industries
+│   │   ├── ServiceCard.tsx     # Reusable card for services + verticals
 │   │   ├── PortfolioCard.tsx   # Portfolio card with image, badges, result
 │   │   ├── PortfolioGrid.tsx   # Client-side filterable grid with aria-live
 │   │   ├── TestimonialCard.tsx # Testimonial with avatar, quote, attribution
@@ -150,9 +150,10 @@ src/
 │   │   └── ContactForm.tsx     # Client-side form with aria-live + aria-required
 │   │
 │   ├── layout/                 # Persistent layout elements
-│   │   ├── Header.tsx          # Nav with mobile hamburger, search icon, aria-label
+│   │   ├── Header.tsx          # Nav with scroll-aware styling via useScrolled hook
 │   │   ├── Footer.tsx
-│   │   ├── MobileNav.tsx       # Slide-out mobile menu with search link (aria-hidden when closed)
+│   │   ├── MobileMenu.tsx      # Self-contained mobile menu (button + body lock + MobileNav)
+│   │   ├── MobileNav.tsx       # Slide-out mobile nav panel (aria-hidden when closed)
 │   │   └── Breadcrumbs.tsx     # Breadcrumb navigation
 │   │
 │   ├── ui/                     # Atomic UI primitives
@@ -260,7 +261,8 @@ src/
 │       └── benefits-of-conversion-rate-optimization.mdx      # CRO Cluster T3 — Benefits
 │
 ├── hooks/
-│   └── useDebounce.ts          # Generic debounce hook (used by blog search)
+│   ├── useDebounce.ts          # Generic debounce hook (used by blog search)
+│   └── useScrolled.ts          # Scroll detection hook (used by Header)
 │
 └── lib/
     ├── constants.ts            # Site URL, name, nav links, stats, contact info
@@ -271,7 +273,7 @@ public/images/
 ├── blog/                       # Blog featured images
 ├── case-studies/               # Case study images
 ├── headshots/                  # Rob Palmer headshots
-├── industries/                 # Industry listing page thumbnails
+├── industries/                 # Vertical listing page thumbnails (directory kept as "industries")
 ├── logos/                      # Client/partner logos
 ├── portfolio/                  # Portfolio card thumbnails (12 images)
 ├── services/                   # Service listing page thumbnails
@@ -284,16 +286,16 @@ public/images/
 
 ### Data-Driven Pages
 
-Services, industries, and portfolio use a consistent pattern:
+Services, verticals, and portfolio use a consistent pattern:
 
 1. **Data file** in `_data/` directory defines an interface + exported array
 2. **Listing page** imports the array and renders cards
-3. **Detail page** (services/industries) uses `generateStaticParams()` + `getXBySlug()` for static generation
+3. **Detail page** (services/verticals) uses `generateStaticParams()` + `getXBySlug()` for static generation
 
 ### Key Interfaces
 
 - **Service** (`services.ts`): title, slug, shortDescription, metaTitle, metaDescription, headline, subheadline, heroImage, heroImageAlt, sections[], deliverables[], testimonialIds[], portfolioItems[], faqs[]
-- **Industry** (`industries.ts`): Same shape as Service
+- **Vertical** (`verticals.ts`): Same shape as Service
 - **PortfolioItem** (`portfolio.ts`): title, slug, category, niche, description, image, imageAlt, result?, client?
 - **CaseStudy** (`case-studies.ts`): slug, title, client, result, description, heroImage, heroAlt, metrics[], testimonial?
 - **BlogPostMeta** (`mdx.ts`): title, description, date, category, tags[], slug, readingTime, published, heroImage?, heroAlt?, faqs?
@@ -302,7 +304,7 @@ Services, industries, and portfolio use a consistent pattern:
 
 ### Testimonial Curation
 
-Service and industry detail pages display curated testimonials by mapping `testimonialIds` (string arrays) to the master testimonials list. IDs are strings '1' through '36'.
+Service and vertical detail pages display curated testimonials by mapping `testimonialIds` (string arrays) to the master testimonials list. IDs are strings '1' through '36'.
 
 ### Portfolio
 
@@ -351,11 +353,11 @@ Blog posts display 3 related articles after the author bio section:
 - **Canonical URLs** on all pages via `alternates.canonical` in metadata
 - **Blog posts in sitemap** with lastModified dates from frontmatter
 - Every service detail page has **Service schema** + **FAQPage schema** (JSON-LD)
-- Every industry detail page has **Service schema** + **FAQPage schema** (JSON-LD)
+- Every vertical detail page has **Service schema** + **FAQPage schema** (JSON-LD)
 - Root layout has **Person schema** (with `sameAs` links) + **WebSite schema**
 - Blog posts have **Article schema** with `datePublished` and `dateModified`
 - All pages have **metaTitle** and **metaDescription** for `<head>`
-- OpenGraph images are set from hero images on service/industry/blog pages
+- OpenGraph images are set from hero images on service/vertical/blog pages
 - `robots.ts` and `sitemap.ts` generate at build time
 - 404 page has `robots: { index: false, follow: false }`
 - Content is SEO/GEO optimized — service title keywords are woven throughout all content sections and FAQs
@@ -387,11 +389,11 @@ Always clear `.next` after making changes to `globals.css`, adding new Tailwind 
 
 ### Build Output
 
-The build generates **~123 static pages**:
+The build generates **~120 static pages**:
 - 1 homepage, about, contact, testimonials, portfolio, not-found
 - 9 service detail pages + 1 services listing
-- 6 industry detail pages + 1 industries listing
-- 86 blog posts + 7 blog listing pages (paginated at 12/page)
+- 6 vertical detail pages + 1 verticals listing
+- 84 blog posts + 7 blog listing pages (paginated at 12/page)
 - 2 case study pages + 1 case studies listing
 - robots.txt, sitemap.xml
 - 1 API route (contact form)
@@ -406,9 +408,9 @@ The build generates **~123 static pages**:
 2. Add a thumbnail image to `public/images/services/`
 3. Build will automatically generate the detail page via `generateStaticParams()`
 
-### Adding a New Industry
+### Adding a New Vertical
 
-Same pattern as services but in `src/app/industries/_data/industries.ts` and `public/images/industries/`.
+Same pattern as services but in `src/app/verticals/_data/verticals.ts` and `public/images/industries/`.
 
 ### Adding a New Blog Post
 
@@ -466,34 +468,34 @@ Site constants are centralized in `src/lib/constants.ts`:
 
 18 issues tracked at https://github.com/robpalmer99/robpalmer-site/issues:
 
-| # | Title | Label |
-|---|-------|-------|
-| 1 | Lock body scroll when mobile nav is open | — |
-| 2 | Add favicon and app icons | — |
-| 3 | Add spam protection to contact form | — |
-| 4 | Extract Header scroll/mobile state into smaller client components | — |
-| 5 | Create default OpenGraph image | — |
-| 6 | Add JSON-LD to case study pages | — |
-| 7 | Improve service/industry content structure for GEO | — |
-| 8 | Add definition boxes to service pages | — |
-| 9 | Add FAQ section to homepage | — |
-| 10 | Move sharp from devDependencies to dependencies | — |
-| 11 | Add explicit Cache-Control headers for static assets | — |
-| 12 | Add rate limiting to contact form API | — |
-| 13 | Improve server-side input validation on contact API | — |
-| 14 | Add semantic list markup to card grids | accessibility |
-| 15 | Add aria-label to StatsBar and ClientLogoBar sections | accessibility |
-| 16 | Add role='img' to Logo SVG component | accessibility |
-| 17 | Add aria-hidden to remaining decorative SVGs | accessibility |
-| 18 | Refine smooth scroll to anchor-only navigation | accessibility |
+| # | Title | Label | Status |
+|---|-------|-------|--------|
+| 1 | Lock body scroll when mobile nav is open | — | ✅ Done (Header.tsx) |
+| 2 | Add favicon and app icons | — | ✅ Done (favicon.ico + apple-icon.png) |
+| 3 | Add spam protection to contact form | — | ✅ Done (honeypot field) |
+| 4 | Extract Header scroll/mobile state into smaller client components | — | ✅ Done (useScrolled hook + MobileMenu component) |
+| 5 | Create default OpenGraph image | — | ✅ Done (og-default.jpg) |
+| 6 | Add JSON-LD to case study pages | — | ✅ Done (both case studies) |
+| 7 | Improve service/industry content structure for GEO | — | ✅ Done (bullet lists in sections, scannable content) |
+| 8 | Add definition boxes to service pages | — | ✅ Done (DefinitionBox on 9 services + 6 verticals) |
+| 9 | Add FAQ section to homepage | — | ✅ Done (FAQAccordion + FAQPage JSON-LD) |
+| 10 | Move sharp from devDependencies to dependencies | — | ✅ Done (in dependencies) |
+| 11 | Add explicit Cache-Control headers for static assets | — | ✅ Done (next.config.ts) |
+| 12 | Add rate limiting to contact form API | — | ✅ Done (in-memory per-IP, 5/min) |
+| 13 | Improve server-side input validation on contact API | — | ✅ Done (type checks + length limits) |
+| 14 | Add semantic list markup to card grids | accessibility | ✅ Done (12 grids, ul/li + role="list") |
+| 15 | Add aria-label to StatsBar and ClientLogoBar sections | accessibility | ✅ Done |
+| 16 | Add role='img' to Logo SVG component | accessibility | ✅ Done |
+| 17 | Add aria-hidden to remaining decorative SVGs | accessibility | ✅ Done (FAQ.tsx, KeyTakeaways.tsx) |
+| 18 | Refine smooth scroll to anchor-only navigation | accessibility | ✅ Done (html:has(:target) scoping) |
 
 ---
 
 ## Blog Content Strategy
 
-### Current Content (86 posts)
+### Current Content (84 posts)
 
-Posts are organized in tiers that build topical authority clusters linking to service/industry pages:
+Posts are organized in tiers that build topical authority clusters linking to service/vertical pages:
 
 | Tier | Purpose | Posts |
 |------|---------|-------|
@@ -515,7 +517,7 @@ All MDX posts use consistent frontmatter and custom components:
 - **Frontmatter:** title, description, date, author, image, imageAlt, tags, readingTime
 - **10 FAQs** per post (FAQPage JSON-LD generated automatically)
 - **Custom MDX components:** KeyTakeaways, DefinitionBox, ComparisonTable, ExpertQuote, FAQSection
-- **Internal cross-linking:** Each post links to 5-10 related posts + relevant service/industry pages + /contact
+- **Internal cross-linking:** Each post links to 5-10 related posts + relevant service/vertical pages + /contact
 
 ### SEO Research Data
 
@@ -662,12 +664,11 @@ A topical authority cluster around Conversion Rate Optimization, building on Rob
 | Tier 3 | Landing Page CRO | landing-page-conversion-rate-optimization | ✅ Done |
 | Tier 3 | Benefits of CRO | benefits-of-conversion-rate-optimization | ✅ Done |
 
-**Cross-linking:** All 86 blog posts contain contextual internal links to relevant CRO cluster posts. CRO cluster posts link to each other, to relevant service/industry pages, and to /contact.
+**Cross-linking:** All 84 blog posts contain contextual internal links to relevant CRO cluster posts. CRO cluster posts link to each other, to relevant service/vertical pages, and to /contact.
 
 ---
 
 ## Pending / Future Work
 
-- Wire contact form API route to actual email service (needs Resend API key or similar)
 - Cross-browser testing
 - Google Search Console setup

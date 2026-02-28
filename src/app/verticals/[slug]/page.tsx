@@ -12,6 +12,7 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
 import { JsonLd } from '@/components/seo/JsonLd'
+import { DefinitionBox } from '@/components/ui/DefinitionBox'
 import { SITE_URL } from '@/lib/constants'
 import { testimonials } from '@/content/testimonials'
 import { getVerticalBySlug, getAllVerticalSlugs } from '@/app/verticals/_data/verticals'
@@ -126,6 +127,20 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
         </Container>
       </section>
 
+      {/* ───────────────────────────── Definition Box ───────────────────────────── */}
+      {vertical.definition && (
+        <Section>
+          <Container>
+            <div className="max-w-3xl mx-auto">
+              <DefinitionBox
+                term={vertical.definition.term}
+                definition={vertical.definition.text}
+              />
+            </div>
+          </Container>
+        </Section>
+      )}
+
       {/* ───────────────────────────── Main Content Sections ───────────────────────────── */}
       <Section>
         <Container>
@@ -138,6 +153,19 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
                 <p className="mt-4 text-lg text-ink-700 leading-relaxed font-body">
                   {section.content}
                 </p>
+                {section.bullets && (
+                  <ul role="list" className="mt-4 space-y-2">
+                    {section.bullets.map((bullet, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start gap-3 text-lg text-ink-700 font-body leading-relaxed"
+                      >
+                        <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gold-400" aria-hidden="true" />
+                        {bullet}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             ))}
           </div>

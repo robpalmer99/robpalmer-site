@@ -29,18 +29,19 @@ export default function ServicesPage() {
 
       <Section>
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <ul role="list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service) => (
-              <ServiceCard
-                key={service.slug}
-                title={service.title}
-                slug={service.slug}
-                description={service.shortDescription}
-                image={service.heroImage}
-                imageAlt={service.heroImageAlt}
-              />
+              <li key={service.slug}>
+                <ServiceCard
+                  title={service.title}
+                  slug={service.slug}
+                  description={service.shortDescription}
+                  image={service.heroImage}
+                  imageAlt={service.heroImageAlt}
+                />
+              </li>
             ))}
-          </div>
+          </ul>
         </Container>
       </Section>
 
