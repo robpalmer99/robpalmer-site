@@ -17,6 +17,7 @@ export interface Vertical {
   sections: {
     heading: string
     content: string
+    bullets?: string[]
   }[]
   deliverables: {
     title: string
@@ -57,7 +58,16 @@ export const verticals: Vertical[] = [
       {
         heading: 'Deep Experience Across Health Verticals',
         content:
-          'I have written high-converting funnels for supplement brands across every major sub-niche — weight loss, anti-aging, nootropics, joint health, digestive health, energy boosters, sleep aids, and more. Each category has its own compliance boundaries, buyer psychology, and proven angles. I understand the specific language patterns that resonate with health-conscious buyers and the funnel architectures that maximize average order value in this space. My health supplement VSLs and sales pages have generated millions in revenue for both ClickBank vendors and independent DTC brands.',
+          'Each category has its own compliance boundaries, buyer psychology, and proven angles. I understand the specific language patterns that resonate with health-conscious buyers and the funnel architectures that maximize average order value in this space. My health supplement VSLs and sales pages have generated millions in revenue for both ClickBank vendors and independent DTC brands.',
+        bullets: [
+          'Weight loss supplements',
+          'Anti-aging and longevity',
+          'Nootropics and brain health',
+          'Joint health and mobility',
+          'Digestive health and gut supplements',
+          'Energy boosters and performance',
+          'Sleep aids and stress relief',
+        ],
       },
       {
         heading: 'Compliance-Aware Copy That Still Converts',
@@ -245,7 +255,13 @@ export const verticals: Vertical[] = [
       {
         heading: 'Beyond Product Descriptions',
         content:
-          'Most e-commerce copywriters write product descriptions. I write persuasion systems. Your product page is not just a description — it is a sales page in miniature. Your email sequence is not just "touching base" — it is a strategic revenue engine. Your ad creative is not just getting clicks — it is pre-qualifying buyers so your funnel works harder. Every piece of copy I write for your brand is engineered to move a specific metric: conversion rate, average order value, or customer lifetime value.',
+          'Most e-commerce copywriters write product descriptions. I write persuasion systems. Every piece of copy I write for your brand is engineered to move a specific metric.',
+        bullets: [
+          'Product pages built as sales pages in miniature — not just descriptions',
+          'Email sequences designed as strategic revenue engines — not just "touching base"',
+          'Ad creative that pre-qualifies buyers so your funnel works harder',
+          'Every touchpoint targeted at conversion rate, average order value, or customer lifetime value',
+        ],
       },
       {
         heading: 'Maximizing Customer Lifetime Value',
@@ -337,7 +353,15 @@ export const verticals: Vertical[] = [
       {
         heading: 'Complete ClickBank Funnels',
         content:
-          'I build complete ClickBank funnels from front-end to back-end: VSL or TSL sales page, order bump, OTO1 upsell, OTO2 upsell, downsell, and thank-you page. Each step is optimized to maximize average order value while keeping refund rates manageable. The most successful ClickBank offers are not built on a single great sales page — they are built on a complete system where every step lifts the overall economics of the funnel.',
+          'Each step is optimized to maximize average order value while keeping refund rates manageable. The most successful ClickBank offers are not built on a single great sales page — they are built on a complete system where every step lifts the overall economics of the funnel.',
+        bullets: [
+          'VSL or TSL sales page — the front-end conversion engine',
+          'Order bump — an immediate add-on at checkout',
+          'OTO1 upsell — the primary post-purchase offer',
+          'OTO2 upsell — a complementary or premium upgrade',
+          'Downsell — a lower-priced alternative for declined upsells',
+          'Thank-you page — confirmation plus next-step engagement',
+        ],
       },
       {
         heading: 'ClickBank Compliance Done Right',
@@ -424,7 +448,13 @@ export const verticals: Vertical[] = [
       {
         heading: 'The Full SaaS Customer Journey',
         content:
-          'SaaS revenue is not a single conversion — it is a journey from awareness to trial to paid to upgrade to retention. I write copy for every stage: ad creative that drives qualified trials, onboarding sequences that drive activation, upgrade emails that convert free users to paid, and retention campaigns that reduce churn. Each piece is connected to the next in a cohesive persuasion system. Most SaaS companies optimize individual steps in isolation. I optimize the entire journey.',
+          'SaaS revenue is not a single conversion — it is a journey from awareness to trial to paid to upgrade to retention. Each piece is connected to the next in a cohesive persuasion system. Most SaaS companies optimize individual steps in isolation. I optimize the entire journey.',
+        bullets: [
+          'Ad creative that drives qualified trials',
+          'Onboarding sequences that drive activation',
+          'Upgrade emails that convert free users to paid',
+          'Retention campaigns that reduce churn',
+        ],
       },
       {
         heading: 'Translating Features into Revenue',
@@ -521,7 +551,13 @@ export const verticals: Vertical[] = [
       {
         heading: 'High-Ticket Coaching and Program Copy',
         content:
-          'High-ticket coaching programs and masterminds require a fundamentally different copywriting approach. The prospect is making a significant financial commitment, which means the copy needs to pre-qualify, build deep trust, demonstrate transformational value, and justify the investment — all before the sales call. I write application funnels, long-form sales pages, webinar scripts, and email sequences specifically designed for high-ticket conversion. The goal is to deliver prospects who are pre-sold before they ever speak to your sales team.',
+          'High-ticket coaching programs and masterminds require a fundamentally different copywriting approach. The prospect is making a significant financial commitment, which means the copy needs to pre-qualify, build deep trust, demonstrate transformational value, and justify the investment — all before the sales call. The goal is to deliver prospects who are pre-sold before they ever speak to your sales team.',
+        bullets: [
+          'Application funnels that pre-qualify high-intent prospects',
+          'Long-form sales pages that justify premium pricing',
+          'Webinar scripts that build authority and drive applications',
+          'Email sequences designed for high-ticket conversion',
+        ],
       },
       {
         heading: 'Webinar Scripts That Convert',

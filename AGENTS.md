@@ -476,7 +476,7 @@ Site constants are centralized in `src/lib/constants.ts`:
 | 4 | Extract Header scroll/mobile state into smaller client components | — | ✅ Done (useScrolled hook + MobileMenu component) |
 | 5 | Create default OpenGraph image | — | ✅ Done (og-default.jpg) |
 | 6 | Add JSON-LD to case study pages | — | ✅ Done (both case studies) |
-| 7 | Improve service/industry content structure for GEO | — | Open |
+| 7 | Improve service/industry content structure for GEO | — | ✅ Done (bullet lists in sections, scannable content) |
 | 8 | Add definition boxes to service pages | — | ✅ Done (DefinitionBox on 9 services + 6 verticals) |
 | 9 | Add FAQ section to homepage | — | ✅ Done (FAQAccordion + FAQPage JSON-LD) |
 | 10 | Move sharp from devDependencies to dependencies | — | ✅ Done (in dependencies) |

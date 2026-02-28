@@ -17,6 +17,7 @@ export interface Service {
   sections: {
     heading: string
     content: string
+    bullets?: string[]
   }[]
   deliverables: {
     title: string
@@ -62,12 +63,26 @@ export const services: Service[] = [
       {
         heading: 'The Rob Palmer VSL Copywriting Process',
         content:
-          'Every VSL I write follows a battle-tested process refined over three decades of direct-response copywriting. Phase one is deep audience research — mining forums, reviews, competitor funnels, and customer feedback to map your prospect\'s emotional landscape. Phase two is strategic architecture — building the persuasion framework that will carry the prospect from hook to close. Phase three is the actual writing, where every sentence is crafted to maintain momentum and build desire. Phase four is revision, where I stress-test every section against the question: would this keep a cold, skeptical prospect watching? The result is a VSL script engineered for conversion, not just completion.',
+          'Every VSL I write follows a battle-tested process refined over three decades of direct-response copywriting. The result is a VSL script engineered for conversion, not just completion.',
+        bullets: [
+          'Phase 1: Deep audience research — mining forums, reviews, competitor funnels, and customer feedback to map your prospect\'s emotional landscape',
+          'Phase 2: Strategic architecture — building the persuasion framework that carries the prospect from hook to close',
+          'Phase 3: Writing — every sentence crafted to maintain momentum and build desire',
+          'Phase 4: Revision — stress-testing every section against the question: would this keep a cold, skeptical prospect watching?',
+        ],
       },
       {
         heading: 'VSL Copywriting Across Industries',
         content:
-          'I have written high-converting VSLs for health and supplement brands, financial publishers, e-commerce and DTC companies, ClickBank vendors, SaaS platforms, and info product businesses. Each industry has unique compliance requirements, buyer psychology, and proven persuasion angles. A VSL for a joint health supplement requires a completely different approach than a VSL for a stock trading newsletter or a SaaS onboarding tool. My cross-industry experience means I bring proven frameworks to your niche without the trial-and-error learning curve that costs you time and ad spend.',
+          'Each industry has unique compliance requirements, buyer psychology, and proven persuasion angles. A VSL for a joint health supplement requires a completely different approach than a VSL for a stock trading newsletter or a SaaS onboarding tool. My cross-industry experience means I bring proven frameworks to your niche without the trial-and-error learning curve that costs you time and ad spend.',
+        bullets: [
+          'Health and supplement brands',
+          'Financial publishers',
+          'E-commerce and DTC companies',
+          'ClickBank vendors',
+          'SaaS platforms',
+          'Info product businesses',
+        ],
       },
       {
         heading: 'AI-Enhanced VSL Research and Development',
@@ -172,7 +187,12 @@ export const services: Service[] = [
       {
         heading: 'Sales Pages That Actually Sell',
         content:
-          'A great sales page is not just well-written — it is strategically engineered. Every headline, subhead, bullet point, and call to action serves a specific purpose in the persuasion architecture. I build sales pages that move the reader from "who is this?" to "take my money" through a carefully orchestrated sequence of emotional triggers and logical proof. The opening must hook the reader and identify their pain. The middle must build desire through stories, proof, and benefits. The close must make the offer irresistible while overcoming every objection. Miss any of these stages and conversions collapse.',
+          'A great sales page is not just well-written — it is strategically engineered. Every headline, subhead, bullet point, and call to action serves a specific purpose in the persuasion architecture. I build sales pages that move the reader from "who is this?" to "take my money" through a carefully orchestrated sequence. Miss any of these stages and conversions collapse.',
+        bullets: [
+          'The opening must hook the reader and identify their pain',
+          'The middle must build desire through stories, proof, and benefits',
+          'The close must make the offer irresistible while overcoming every objection',
+        ],
       },
       {
         heading: 'My Sales Page Copywriting Process',
@@ -302,7 +322,13 @@ export const services: Service[] = [
       {
         heading: 'Sales Letter Copywriting Across Formats',
         content:
-          'Whether you need a classic direct mail package, a digital TSL for a ClickBank offer, a magalog-style sales letter, or a letter-format email series, my sales letter copywriting adapts the fundamental principles to your specific format and audience. I understand how to modulate voice, length, and persuasion intensity based on the relationship between sender and reader, the complexity of the offer, and the competitive landscape of your market. Every sales letter I write is engineered to convert — not just communicate.',
+          'My sales letter copywriting adapts the fundamental principles to your specific format and audience. I understand how to modulate voice, length, and persuasion intensity based on the relationship between sender and reader, the complexity of the offer, and the competitive landscape of your market. Every sales letter I write is engineered to convert — not just communicate.',
+        bullets: [
+          'Classic direct mail packages',
+          'Digital TSLs for ClickBank and affiliate offers',
+          'Magalog-style sales letters',
+          'Letter-format email series',
+        ],
       },
     ],
     deliverables: [
@@ -412,7 +438,13 @@ export const services: Service[] = [
       {
         heading: 'Nurture, Abandon Cart, and Automated Sequences',
         content:
-          'Beyond launches, email copywriting powers your business on autopilot. Welcome sequences that turn new subscribers into engaged fans. Nurture sequences that build trust over weeks and months. Abandon cart emails that recover revenue left on the table. Re-engagement campaigns that revive cold subscribers. Each type of email sequence requires different strategic thinking, voice, and cadence. I tailor every sequence to match your brand voice, audience expectations, and revenue goals — creating automated email assets that generate revenue 24 hours a day without additional ad spend.',
+          'Beyond launches, email copywriting powers your business on autopilot. Each type of email sequence requires different strategic thinking, voice, and cadence. I tailor every sequence to match your brand voice, audience expectations, and revenue goals — creating automated email assets that generate revenue 24 hours a day without additional ad spend.',
+        bullets: [
+          'Welcome sequences that turn new subscribers into engaged fans',
+          'Nurture sequences that build trust over weeks and months',
+          'Abandon cart emails that recover revenue left on the table',
+          'Re-engagement campaigns that revive cold subscribers',
+        ],
       },
       {
         heading: 'AI-Enhanced Email Copywriting',
@@ -522,7 +554,13 @@ export const services: Service[] = [
       {
         heading: 'Platform-Specific Ad Copywriting',
         content:
-          'Every advertising platform has its own rules, best practices, and audience behavior patterns. Facebook and Meta ads require hooks that work in a fast-scrolling feed with short attention spans. Google Search ads must match user intent with precision and compete for click-through rate against other advertisers. YouTube ads need to earn the first five seconds before the skip button appears. Native ads must blend with editorial content while still driving action. As an ad copywriter who has written across all major platforms, I tailor the copy strategy, format, and voice to match each platform\'s unique dynamics.',
+          'Every advertising platform has its own rules, best practices, and audience behavior patterns. As an ad copywriter who has written across all major platforms, I tailor the copy strategy, format, and voice to match each platform\'s unique dynamics.',
+        bullets: [
+          'Facebook and Meta ads — hooks that work in a fast-scrolling feed with short attention spans',
+          'Google Search ads — precision intent-matching that competes for click-through rate',
+          'YouTube ads — earning the first five seconds before the skip button appears',
+          'Native ads — blending with editorial content while still driving action',
+        ],
       },
       {
         heading: 'Compliance-Aware Ad Copy',
@@ -762,7 +800,15 @@ export const services: Service[] = [
       {
         heading: 'Sales Funnel Copywriting Across Industries',
         content:
-          'I have built complete sales funnels for ClickBank vendors, health and supplement brands, financial publishers, SaaS companies, e-commerce and DTC brands, and info product businesses. Each industry has different optimal funnel structures, price points, and upsell strategies. A supplement funnel needs compliance-aware copy and subscription-focused upsells. A SaaS funnel needs feature-focused sales pages and annual plan upgrades. My cross-industry experience as a sales funnel copywriter means I can recommend and execute the funnel architecture that maximizes revenue in your specific market.',
+          'Each industry has different optimal funnel structures, price points, and upsell strategies. My cross-industry experience as a sales funnel copywriter means I can recommend and execute the funnel architecture that maximizes revenue in your specific market.',
+        bullets: [
+          'ClickBank vendors — affiliate-optimized funnels with high EPC',
+          'Health and supplement brands — compliance-aware copy with subscription-focused upsells',
+          'Financial publishers — long-form persuasion with regulatory guardrails',
+          'SaaS companies — feature-focused sales pages and annual plan upgrades',
+          'E-commerce and DTC brands — product launch funnels with AOV maximization',
+          'Info product businesses — high-ticket funnels with webinar and application paths',
+        ],
       },
     ],
     deliverables: [
@@ -867,7 +913,12 @@ export const services: Service[] = [
       {
         heading: 'The Psychology of Post-Purchase Upselling',
         content:
-          'Effective upsell copywriting leverages several psychological principles that are unique to the post-purchase moment. Commitment and consistency — the buyer has already said yes and wants to remain consistent with that decision. The endowment effect — they already feel ownership of the initial product and want to protect their investment. Momentum — the buying energy is at its peak and declining with every second. A skilled upsell copywriter harnesses all of these forces to present the upsell as the obvious, logical, and desirable next step — not an interruption in the buying process.',
+          'Effective upsell copywriting leverages several psychological principles that are unique to the post-purchase moment. A skilled upsell copywriter harnesses all of these forces to present the upsell as the obvious, logical, and desirable next step — not an interruption in the buying process.',
+        bullets: [
+          'Commitment and consistency — the buyer has already said yes and wants to remain consistent with that decision',
+          'The endowment effect — they already feel ownership of the initial product and want to protect their investment',
+          'Momentum — the buying energy is at its peak and declining with every second',
+        ],
       },
       {
         heading: 'Upsell and Downsell Sequence Architecture',
@@ -982,7 +1033,14 @@ export const services: Service[] = [
       {
         heading: 'How I Help Your Team',
         content:
-          'I work with your copywriting team to build AI-assisted workflows that actually improve output quality — not just quantity. This includes auditing your current copy process to identify where AI can add genuine value, designing AI-enhanced workflows tailored to your specific needs and platforms, developing custom prompt frameworks that produce on-brand and conversion-focused copy, training your team on execution with hands-on practice sessions, and establishing quality control systems that catch the subtle ways AI degrades persuasion. The result: your team produces better copy, faster, with measurable improvements in conversion metrics.',
+          'I work with your copywriting team to build AI-assisted workflows that actually improve output quality — not just quantity. The result: your team produces better copy, faster, with measurable improvements in conversion metrics.',
+        bullets: [
+          'Auditing your current copy process to identify where AI can add genuine value',
+          'Designing AI-enhanced workflows tailored to your specific needs and platforms',
+          'Developing custom prompt frameworks that produce on-brand, conversion-focused copy',
+          'Training your team on execution with hands-on practice sessions',
+          'Establishing quality control systems that catch the subtle ways AI degrades persuasion',
+        ],
       },
       {
         heading: 'The Competitive Advantage of AI Copywriting',
