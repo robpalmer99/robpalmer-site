@@ -11,6 +11,12 @@ const ipRequests = new Map<string, number[]>()
 
 function isRateLimited(ip: string): boolean {
   const now = Date.now()
+
+  // Evict stale IPs on each call (cheap for a contact form's traffic)
+  for (const [key, ts] of ipRequests) {
+    if (ts.every((t) => now - t >= RATE_LIMIT_WINDOW_MS)) ipRequests.delete(key)
+  }
+
   const timestamps = (ipRequests.get(ip) ?? []).filter(
     (t) => now - t < RATE_LIMIT_WINDOW_MS
   )
@@ -22,16 +28,6 @@ function isRateLimited(ip: string): boolean {
   ipRequests.set(ip, timestamps)
   return false
 }
-
-// Periodically evict stale entries so the map doesn't grow unbounded
-setInterval(() => {
-  const now = Date.now()
-  for (const [ip, timestamps] of ipRequests) {
-    const active = timestamps.filter((t) => now - t < RATE_LIMIT_WINDOW_MS)
-    if (active.length === 0) ipRequests.delete(ip)
-    else ipRequests.set(ip, active)
-  }
-}, 60_000)
 
 // ---------- Validation helpers ----------
 const MAX_NAME = 200
