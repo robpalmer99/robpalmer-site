@@ -10,6 +10,10 @@ export interface Vertical {
   subheadline: string
   heroImage: string
   heroImageAlt: string
+  definition?: {
+    term: string
+    text: string
+  }
   sections: {
     heading: string
     content: string
@@ -40,6 +44,10 @@ export const verticals: Vertical[] = [
       'High-converting copy for supplements and health products — without crossing compliance lines.',
     heroImage: '/images/industries/health-supplements.jpg',
     heroImageAlt: 'Health supplements and natural products',
+    definition: {
+      term: 'health & supplement copywriting',
+      text: 'Health and supplement copywriting is direct-response copy written specifically for nutritional supplements, nutraceuticals, and health products. It requires balancing aggressive conversion tactics with FTC and FDA compliance — writing claims that are persuasive enough to sell but careful enough to pass regulatory review and advertising platform policies.',
+    },
     sections: [
       {
         heading: 'The Health Supplement Copy Challenge',
@@ -135,6 +143,10 @@ export const verticals: Vertical[] = [
       'Direct-response copy for financial services, investing, and trading brands.',
     heroImage: '/images/industries/financial-services.jpg',
     heroImageAlt: 'Financial markets and trading data',
+    definition: {
+      term: 'financial copywriting',
+      text: 'Financial copywriting is direct-response copy for financial services, investment products, trading platforms, and financial publishers. It demands deep market literacy, regulatory awareness (SEC, FINRA, FTC), and the ability to build trust with the most skeptical audience in direct response — people who have been burned by financial promises before.',
+    },
     sections: [
       {
         heading: 'Financial Copy That Converts and Complies',
@@ -220,6 +232,10 @@ export const verticals: Vertical[] = [
       'Conversion copy that turns browsers into buyers and buyers into repeat customers.',
     heroImage: '/images/industries/ecommerce-dtc.jpg',
     heroImageAlt: 'E-commerce shopping and online retail',
+    definition: {
+      term: 'e-commerce & DTC copywriting',
+      text: 'E-commerce and DTC (direct-to-consumer) copywriting is conversion-focused copy for online brands that sell directly to customers. It spans every revenue touchpoint — product pages, ad creative, email sequences, upsells, and retention campaigns — engineered as a connected system to maximize conversion rate, average order value, and customer lifetime value.',
+    },
     sections: [
       {
         heading: 'DTC Copy That Drives Revenue',
@@ -303,6 +319,10 @@ export const verticals: Vertical[] = [
       'High-converting ClickBank funnels that attract affiliates and maximize EPC.',
     heroImage: '/images/industries/clickbank.jpg',
     heroImageAlt: 'Digital marketing analytics and performance metrics',
+    definition: {
+      term: 'ClickBank copywriting',
+      text: 'ClickBank copywriting is direct-response copy built specifically for the ClickBank affiliate marketplace. It requires understanding ClickBank\'s unique ecosystem — affiliate incentives, EPC (earnings per click) economics, gravity scoring, and compliance review processes — to create funnels that convert buyers AND attract top affiliates to promote your offer.',
+    },
     sections: [
       {
         heading: 'ClickBank Funnels That Win',
@@ -391,6 +411,10 @@ export const verticals: Vertical[] = [
       'Direct-response copy that drives trials, conversions, and MRR growth.',
     heroImage: '/images/industries/saas.jpg',
     heroImageAlt: 'Software dashboard and data analytics',
+    definition: {
+      term: 'SaaS copywriting',
+      text: 'SaaS copywriting is persuasive copy for software-as-a-service companies, covering every stage of the customer lifecycle — from trial sign-up through activation, upgrade, and retention. Unlike traditional SaaS marketing that leads with features, direct-response SaaS copy focuses on driving measurable actions tied to business metrics like MRR, churn rate, and customer lifetime value.',
+    },
     sections: [
       {
         heading: 'SaaS Copy With a Direct-Response Edge',
@@ -474,6 +498,10 @@ export const verticals: Vertical[] = [
       'Launch sequences and sales systems that turn expertise into scalable revenue.',
     heroImage: '/images/industries/info-products.jpg',
     heroImageAlt: 'Online learning and digital education',
+    definition: {
+      term: 'info product copywriting',
+      text: 'Info product copywriting is direct-response copy for digital knowledge products — online courses, coaching programs, membership sites, and digital downloads. Because info products have no physical form, the copy must create desire for an intangible transformation, making it one of the most demanding specialties in direct response.',
+    },
     sections: [
       {
         heading: 'Info Products Live and Die by Their Copy',

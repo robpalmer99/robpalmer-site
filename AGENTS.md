@@ -475,7 +475,7 @@ Site constants are centralized in `src/lib/constants.ts`:
 | 5 | Create default OpenGraph image | — | ✅ Done (og-default.jpg) |
 | 6 | Add JSON-LD to case study pages | — | ✅ Done (both case studies) |
 | 7 | Improve service/industry content structure for GEO | — | Open |
-| 8 | Add definition boxes to service pages | — | Open |
+| 8 | Add definition boxes to service pages | — | ✅ Done (DefinitionBox on 9 services + 6 verticals) |
 | 9 | Add FAQ section to homepage | — | ✅ Done (FAQAccordion + FAQPage JSON-LD) |
 | 10 | Move sharp from devDependencies to dependencies | — | ✅ Done (in dependencies) |
 | 11 | Add explicit Cache-Control headers for static assets | — | ✅ Done (next.config.ts) |

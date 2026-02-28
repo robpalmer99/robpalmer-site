@@ -12,6 +12,7 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
 import { JsonLd } from '@/components/seo/JsonLd'
+import { DefinitionBox } from '@/components/ui/DefinitionBox'
 import { SITE_URL } from '@/lib/constants'
 import { testimonials } from '@/content/testimonials'
 import { getServiceBySlug, getAllServiceSlugs } from '../_data/services'
@@ -123,6 +124,20 @@ export default async function ServicePage({ params }: ServicePageProps) {
           </div>
         </Container>
       </section>
+
+      {/* ───────────────────────────── Definition Box ───────────────────────────── */}
+      {service.definition && (
+        <Section>
+          <Container>
+            <div className="max-w-3xl mx-auto">
+              <DefinitionBox
+                term={service.definition.term}
+                definition={service.definition.text}
+              />
+            </div>
+          </Container>
+        </Section>
+      )}
 
       {/* ───────────────────────────── Main Content Sections ───────────────────────────── */}
       <Section>

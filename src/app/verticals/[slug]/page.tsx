@@ -12,6 +12,7 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
 import { JsonLd } from '@/components/seo/JsonLd'
+import { DefinitionBox } from '@/components/ui/DefinitionBox'
 import { SITE_URL } from '@/lib/constants'
 import { testimonials } from '@/content/testimonials'
 import { getVerticalBySlug, getAllVerticalSlugs } from '@/app/verticals/_data/verticals'
@@ -125,6 +126,20 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
           </div>
         </Container>
       </section>
+
+      {/* ───────────────────────────── Definition Box ───────────────────────────── */}
+      {vertical.definition && (
+        <Section>
+          <Container>
+            <div className="max-w-3xl mx-auto">
+              <DefinitionBox
+                term={vertical.definition.term}
+                definition={vertical.definition.text}
+              />
+            </div>
+          </Container>
+        </Section>
+      )}
 
       {/* ───────────────────────────── Main Content Sections ───────────────────────────── */}
       <Section>

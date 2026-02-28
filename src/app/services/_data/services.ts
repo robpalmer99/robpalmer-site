@@ -10,6 +10,10 @@ export interface Service {
   subheadline: string
   heroImage: string
   heroImageAlt: string
+  definition?: {
+    term: string
+    text: string
+  }
   sections: {
     heading: string
     content: string
@@ -40,6 +44,10 @@ export const services: Service[] = [
       'High-converting video sales letters that turn cold traffic into paying customers.',
     heroImage: '/images/services/vsl-copywriter.jpg',
     heroImageAlt: 'Video production and storytelling for VSL copywriting',
+    definition: {
+      term: 'a VSL (Video Sales Letter)',
+      text: 'A video sales letter is a long-form video presentation — typically 15 to 45 minutes — that uses a structured persuasion sequence to sell a product or service. Unlike traditional video ads, a VSL replaces or supplements a written sales page, guiding the viewer through a complete sales argument from hook to close.',
+    },
     sections: [
       {
         heading: 'Why Hire a Specialist VSL Copywriter?',
@@ -151,6 +159,10 @@ export const services: Service[] = [
       'Long-form sales pages engineered to convert browsers into buyers.',
     heroImage: '/images/services/sales-page-copywriter.jpg',
     heroImageAlt: 'Writing and crafting persuasive sales page copy',
+    definition: {
+      term: 'a sales page',
+      text: 'A sales page is a long-form web page dedicated to a single objective: persuading the reader to buy a product or service. Unlike typical website pages, a sales page follows a structured persuasion sequence — headline, problem, agitation, solution, proof, offer, and close — designed to convert visitors into customers without any other navigation distractions.',
+    },
     sections: [
       {
         heading: 'Why Hire a Specialist Sales Page Copywriter?',
@@ -262,6 +274,10 @@ export const services: Service[] = [
       'Classic direct-response sales letters refined for the digital age.',
     heroImage: '/images/services/sales-letter-copywriter.jpg',
     heroImageAlt: 'Direct mail letter and envelope for sales letter copywriting',
+    definition: {
+      term: 'a sales letter',
+      text: 'A sales letter is a written persuasion piece — delivered digitally or via direct mail — that follows a structured argument to sell a product, service, or idea. Also called a TSL (text sales letter) in digital marketing, it uses the same proven direct-response framework as a VSL but in written form, relying on compelling copy rather than video to drive the sale.',
+    },
     sections: [
       {
         heading: 'Why Hire a Specialist Sales Letter Copywriter?',
@@ -373,6 +389,10 @@ export const services: Service[] = [
       'Email sequences that build relationships and drive revenue on autopilot.',
     heroImage: '/images/services/email-copywriter.jpg',
     heroImageAlt: 'Email marketing and inbox management for email copywriting',
+    definition: {
+      term: 'email copywriting',
+      text: 'Email copywriting is the craft of writing persuasive emails — sequences, broadcasts, and automations — that drive a specific action: a click, a purchase, a sign-up, or a reply. In direct-response marketing, email sequences are engineered as multi-step persuasion systems, not one-off blasts, with each message building on the last to move the reader toward conversion.',
+    },
     sections: [
       {
         heading: 'Why Hire a Specialist Email Copywriter?',
@@ -484,6 +504,10 @@ export const services: Service[] = [
       'Scroll-stopping ad copy that turns paid traffic into profit.',
     heroImage: '/images/services/ad-copywriter.jpg',
     heroImageAlt: 'Social media advertising and marketing for ad copywriting',
+    definition: {
+      term: 'ad copywriting',
+      text: 'Ad copywriting is the art of writing short-form persuasive text for paid advertising platforms — Facebook, Google, YouTube, TikTok, and native networks. The goal is to stop the scroll, qualify the prospect, and compel a click in as few words as possible, bridging the gap between cold traffic and your sales funnel.',
+    },
     sections: [
       {
         heading: 'Why Hire a Specialist Ad Copywriter?',
@@ -595,6 +619,10 @@ export const services: Service[] = [
       'Landing pages engineered for maximum conversion rate.',
     heroImage: '/images/services/landing-page-copywriter.jpg',
     heroImageAlt: 'Web design and landing page on laptop for landing page copywriting',
+    definition: {
+      term: 'a landing page',
+      text: 'A landing page is a standalone web page built for a single conversion goal — capturing a lead, driving a sale, or prompting a specific action. Unlike regular website pages, landing pages strip away navigation and distractions, focusing entirely on persuading the visitor to take one clearly defined next step.',
+    },
     sections: [
       {
         heading: 'Why Hire a Specialist Landing Page Copywriter?',
@@ -706,6 +734,10 @@ export const services: Service[] = [
       'End-to-end funnel copy optimized for maximum AOV and lifetime value.',
     heroImage: '/images/services/sales-funnel-copywriter.jpg',
     heroImageAlt: 'Marketing funnel and conversion strategy for sales funnel copywriting',
+    definition: {
+      term: 'a sales funnel',
+      text: 'A sales funnel is a multi-step marketing system that guides prospects from first awareness through to purchase and beyond. Each step — ad, landing page, sales page, order bump, upsell, downsell, and follow-up sequence — is engineered to maximize both conversion rate and average order value across the entire customer journey.',
+    },
     sections: [
       {
         heading: 'Why Hire a Specialist Sales Funnel Copywriter?',
@@ -817,6 +849,10 @@ export const services: Service[] = [
       'Post-purchase copy that turns one sale into three.',
     heroImage: '/images/services/upsell-downsell-copywriter.jpg',
     heroImageAlt: 'E-commerce checkout and purchase optimization for upsell copywriting',
+    definition: {
+      term: 'upsell & downsell copy',
+      text: 'Upsell and downsell copy are post-purchase persuasion pages that appear immediately after a customer buys. An upsell offers a complementary or premium product at a higher price; a downsell offers a scaled-back alternative if the upsell is declined. Together, they maximize average order value (AOV) from existing buyers — the most profitable traffic you will ever have.',
+    },
     sections: [
       {
         heading: 'Why Hire a Specialist Upsell & Downsell Copywriter?',
@@ -928,6 +964,10 @@ export const services: Service[] = [
       'Get AI speed without losing human craft. Strategic consulting for teams who want to use AI right.',
     heroImage: '/images/services/ai-copywriting-consultant.jpg',
     heroImageAlt: 'Artificial intelligence and technology for AI copywriting consulting',
+    definition: {
+      term: 'AI copywriting consulting',
+      text: 'AI copywriting consulting is a strategic service that helps businesses integrate artificial intelligence tools into their copywriting and marketing workflows. It combines human direct-response expertise with AI capabilities — research, variation generation, competitive analysis, and workflow automation — to produce better copy faster without sacrificing persuasion quality.',
+    },
     sections: [
       {
         heading: 'Why Hire an AI Copywriting Consultant?',
