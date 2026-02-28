@@ -38,7 +38,7 @@ export function AboutTestimonials() {
                 <li key={testimonial.id}>
                   <TestimonialCard
                     testimonial={testimonial}
-                    variant={testimonial.id === '1' ? 'featured' : 'default'}
+                    variant="default"
                   />
                 </li>
               )
