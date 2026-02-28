@@ -29,19 +29,20 @@ export default function VerticalsPage() {
 
       <Section>
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <ul role="list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {verticals.map((vertical) => (
-              <ServiceCard
-                key={vertical.slug}
-                title={vertical.title}
-                slug={vertical.slug}
-                description={vertical.shortDescription}
-                image={vertical.heroImage}
-                imageAlt={vertical.heroImageAlt}
-                basePath="/verticals"
-              />
+              <li key={vertical.slug}>
+                <ServiceCard
+                  title={vertical.title}
+                  slug={vertical.slug}
+                  description={vertical.shortDescription}
+                  image={vertical.heroImage}
+                  imageAlt={vertical.heroImageAlt}
+                  basePath="/verticals"
+                />
+              </li>
             ))}
-          </div>
+          </ul>
         </Container>
       </Section>
 

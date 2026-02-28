@@ -217,28 +217,29 @@ export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], curren
             <h2 className="text-lg font-heading font-bold text-ink-950 mb-4">
               Pages
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <ul role="list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {siteResults.map((result) => (
-                <Link
-                  key={result.url + result.title}
-                  href={result.url}
-                  className="group block rounded-xl border border-paper-200 bg-white shadow-sm overflow-hidden p-5 transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5"
-                >
-                  <div className="flex items-center gap-2 mb-2">
-                    <Badge variant="default">{result.type}</Badge>
-                  </div>
-                  <h3 className="font-heading text-base font-bold text-ink-950 group-hover:text-gold-600 transition-colors leading-snug">
-                    {result.title}
-                  </h3>
-                  <p className="mt-1.5 text-sm text-ink-700 leading-relaxed font-body line-clamp-2">
-                    {result.description}
-                  </p>
-                  <span className="mt-3 inline-block text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-500 transition-colors">
-                    View page →
-                  </span>
-                </Link>
+                <li key={result.url + result.title}>
+                  <Link
+                    href={result.url}
+                    className="group block rounded-xl border border-paper-200 bg-white shadow-sm overflow-hidden p-5 transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5"
+                  >
+                    <div className="flex items-center gap-2 mb-2">
+                      <Badge variant="default">{result.type}</Badge>
+                    </div>
+                    <h3 className="font-heading text-base font-bold text-ink-950 group-hover:text-gold-600 transition-colors leading-snug">
+                      {result.title}
+                    </h3>
+                    <p className="mt-1.5 text-sm text-ink-700 leading-relaxed font-body line-clamp-2">
+                      {result.description}
+                    </p>
+                    <span className="mt-3 inline-block text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-500 transition-colors">
+                      View page →
+                    </span>
+                  </Link>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         )}
 
@@ -250,21 +251,22 @@ export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], curren
                 Articles
               </h2>
             )}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <ul role="list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredPosts.map((post) => (
-                <BlogPostCard
-                  key={post.slug}
-                  title={post.title}
-                  slug={post.slug}
-                  excerpt={post.description}
-                  date={post.date}
-                  category={post.category}
-                  readingTime={post.readingTime}
-                  heroImage={post.heroImage}
-                  heroAlt={post.heroAlt}
-                />
+                <li key={post.slug}>
+                  <BlogPostCard
+                    title={post.title}
+                    slug={post.slug}
+                    excerpt={post.description}
+                    date={post.date}
+                    category={post.category}
+                    readingTime={post.readingTime}
+                    heroImage={post.heroImage}
+                    heroAlt={post.heroAlt}
+                  />
+                </li>
               ))}
-            </div>
+            </ul>
           </>
         ) : isFiltered && siteResults.length === 0 ? (
           <div className="text-center py-16">

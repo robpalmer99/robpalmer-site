@@ -62,11 +62,13 @@ export function PortfolioGrid({ items }: PortfolioGridProps) {
             ? 'No portfolio items in this category.'
             : `Showing ${filteredItems.length} portfolio ${filteredItems.length === 1 ? 'item' : 'items'}.`}
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <ul role="list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredItems.map((item) => (
-            <PortfolioCard key={item.slug} item={item} />
+            <li key={item.slug}>
+              <PortfolioCard item={item} />
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
 
       {/* Empty state */}

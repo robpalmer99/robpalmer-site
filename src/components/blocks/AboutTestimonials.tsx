@@ -31,18 +31,19 @@ export function AboutTestimonials() {
             to work with me.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <ul role="list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {selectedTestimonials.map(
             (testimonial) =>
               testimonial && (
-                <TestimonialCard
-                  key={testimonial.id}
-                  testimonial={testimonial}
-                  variant={testimonial.id === '1' ? 'featured' : 'default'}
-                />
+                <li key={testimonial.id}>
+                  <TestimonialCard
+                    testimonial={testimonial}
+                    variant={testimonial.id === '1' ? 'featured' : 'default'}
+                  />
+                </li>
               )
           )}
-        </div>
+        </ul>
         <div className="text-center mt-10">
           <Link
             href="/testimonials"

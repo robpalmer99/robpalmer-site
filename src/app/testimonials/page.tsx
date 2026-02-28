@@ -29,15 +29,16 @@ export default function TestimonialsPage() {
 
       <Section>
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <ul role="list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((testimonial) => (
-              <TestimonialCard
-                key={testimonial.id}
-                testimonial={testimonial}
-                variant={testimonial.featured ? 'featured' : 'default'}
-              />
+              <li key={testimonial.id}>
+                <TestimonialCard
+                  testimonial={testimonial}
+                  variant={testimonial.featured ? 'featured' : 'default'}
+                />
+              </li>
             ))}
-          </div>
+          </ul>
         </Container>
       </Section>
 
