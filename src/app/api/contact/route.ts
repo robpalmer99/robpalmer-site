@@ -1,7 +1,11 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+let resend: Resend
+function getResend() {
+  if (!resend) resend = new Resend(process.env.RESEND_API_KEY)
+  return resend
+}
 
 // ---------- Rate limiting (in-memory, per-IP) ----------
 const RATE_LIMIT_WINDOW_MS = 60_000 // 1 minute
@@ -114,7 +118,7 @@ export async function POST(request: Request) {
     const trimmedSubject = subject.trim()
     const trimmedMessage = message.trim()
 
-    await resend.emails.send({
+    await getResend().emails.send({
       from: 'Rob Palmer Website <contact@robpalmer.com>',
       to: 'rob@gofreelance.com',
       replyTo: trimmedEmail,
