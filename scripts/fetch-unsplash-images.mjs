@@ -214,10 +214,17 @@ async function main() {
   const attributions = [];
   let downloaded = 0;
   let failed = 0;
+  let skipped = 0;
 
   for (const slug of slugs) {
     const query = IMAGE_MAP[slug];
     const dest = path.join(IMAGES_DIR, `${slug}.jpg`);
+
+    if (fs.existsSync(dest)) {
+      console.log(`  SKIP  ${slug} — already exists`);
+      skipped++;
+      continue;
+    }
 
     try {
       const searchUrl = `https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&per_page=1&orientation=landscape`;
@@ -258,20 +265,41 @@ async function main() {
   }
 
   // Write attribution file (required by Unsplash terms)
+  // Merge with existing attributions so partial runs don't lose prior entries
   const attrPath = path.join(IMAGES_DIR, "ATTRIBUTION.md");
+  const attrMap = new Map();
+
+  if (fs.existsSync(attrPath)) {
+    const existing = fs.readFileSync(attrPath, "utf-8");
+    for (const line of existing.split("\n")) {
+      const match = line.match(/^- \*\*([^*]+)\*\*/);
+      if (match) {
+        attrMap.set(match[1], line);
+      }
+    }
+  }
+
+  for (const a of attributions) {
+    attrMap.set(
+      a.slug,
+      `- **${a.slug}**: Photo by [${a.photographer}](${a.profileUrl}?utm_source=robpalmer_site&utm_medium=referral) on [Unsplash](${a.photoUrl}?utm_source=robpalmer_site&utm_medium=referral)`
+    );
+  }
+
+  const sortedLines = [...attrMap.entries()]
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([, line]) => line);
+
   const attrContent = [
     "# Image Attribution",
     "",
     "Images sourced from [Unsplash](https://unsplash.com) under the [Unsplash License](https://unsplash.com/license).",
     "",
-    ...attributions.map(
-      (a) =>
-        `- **${a.slug}**: Photo by [${a.photographer}](${a.profileUrl}?utm_source=robpalmer_site&utm_medium=referral) on [Unsplash](${a.photoUrl}?utm_source=robpalmer_site&utm_medium=referral)`
-    ),
+    ...sortedLines,
   ].join("\n");
   fs.writeFileSync(attrPath, attrContent);
 
-  console.log(`\nDone! ${downloaded} downloaded, ${failed} failed.`);
+  console.log(`\nDone! ${downloaded} downloaded, ${skipped} skipped, ${failed} failed.`);
   console.log(`Attribution file: ${attrPath}`);
 }
 
