@@ -25,7 +25,7 @@ export function TestimonialCard({
   return (
     <div
       className={cn(
-        'rounded-xl p-6 sm:p-8',
+        'rounded-xl p-6 sm:p-8 h-full flex flex-col',
         variant === 'featured'
           ? 'bg-ink-950 text-white border border-ink-700'
           : 'bg-white border border-paper-200 shadow-sm',
@@ -47,7 +47,7 @@ export function TestimonialCard({
 
       <blockquote
         className={cn(
-          'text-base leading-relaxed font-body',
+          'text-base leading-relaxed font-body flex-1',
           variant === 'featured' ? 'text-paper-200' : 'text-paper-800'
         )}
       >
