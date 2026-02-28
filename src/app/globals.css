@@ -47,9 +47,11 @@
   }
 }
 
-/* Smooth scrolling for anchor links — only when user hasn't opted out */
+/* Smooth scrolling scoped to same-page anchor clicks only.
+   html:has(:target) activates after a #fragment navigation,
+   so page transitions / programmatic scrollTo stay instant. */
 @media (prefers-reduced-motion: no-preference) {
-  html {
+  html:has(:target) {
     scroll-behavior: smooth;
   }
 }

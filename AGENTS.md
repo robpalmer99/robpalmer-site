@@ -469,23 +469,23 @@ Site constants are centralized in `src/lib/constants.ts`:
 | # | Title | Label | Status |
 |---|-------|-------|--------|
 | 1 | Lock body scroll when mobile nav is open | — | ✅ Done (Header.tsx) |
-| 2 | Add favicon and app icons | — | Partial (favicon.ico exists, no apple-touch-icon) |
+| 2 | Add favicon and app icons | — | ✅ Done (favicon.ico + apple-icon.png) |
 | 3 | Add spam protection to contact form | — | ✅ Done (honeypot field) |
 | 4 | Extract Header scroll/mobile state into smaller client components | — | Open |
 | 5 | Create default OpenGraph image | — | ✅ Done (og-default.jpg) |
 | 6 | Add JSON-LD to case study pages | — | ✅ Done (both case studies) |
 | 7 | Improve service/industry content structure for GEO | — | Open |
 | 8 | Add definition boxes to service pages | — | Open |
-| 9 | Add FAQ section to homepage | — | Open |
+| 9 | Add FAQ section to homepage | — | ✅ Done (FAQAccordion + FAQPage JSON-LD) |
 | 10 | Move sharp from devDependencies to dependencies | — | ✅ Done (in dependencies) |
 | 11 | Add explicit Cache-Control headers for static assets | — | ✅ Done (next.config.ts) |
-| 12 | Add rate limiting to contact form API | — | Open |
-| 13 | Improve server-side input validation on contact API | — | Open |
-| 14 | Add semantic list markup to card grids | accessibility | Open |
+| 12 | Add rate limiting to contact form API | — | ✅ Done (in-memory per-IP, 5/min) |
+| 13 | Improve server-side input validation on contact API | — | ✅ Done (type checks + length limits) |
+| 14 | Add semantic list markup to card grids | accessibility | ✅ Done (12 grids, ul/li + role="list") |
 | 15 | Add aria-label to StatsBar and ClientLogoBar sections | accessibility | ✅ Done |
 | 16 | Add role='img' to Logo SVG component | accessibility | ✅ Done |
-| 17 | Add aria-hidden to remaining decorative SVGs | accessibility | Open |
-| 18 | Refine smooth scroll to anchor-only navigation | accessibility | Open |
+| 17 | Add aria-hidden to remaining decorative SVGs | accessibility | ✅ Done (FAQ.tsx, KeyTakeaways.tsx) |
+| 18 | Refine smooth scroll to anchor-only navigation | accessibility | ✅ Done (html:has(:target) scoping) |
 
 ---
 
