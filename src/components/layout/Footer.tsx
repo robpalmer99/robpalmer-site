@@ -25,32 +25,29 @@ export function Footer() {
               Navigation
             </h3>
             <ul className="space-y-2">
-              {NAV_LINKS.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-paper-400 hover:text-gold-400 transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-              <li>
-                <Link
-                  href="/verticals"
-                  className="text-sm text-paper-400 hover:text-gold-400 transition-colors"
-                >
-                  Verticals
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/portfolio"
-                  className="text-sm text-paper-400 hover:text-gold-400 transition-colors"
-                >
-                  Portfolio
-                </Link>
-              </li>
+              {NAV_LINKS.map((item) =>
+                'href' in item ? (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      className="text-sm text-paper-400 hover:text-gold-400 transition-colors"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ) : (
+                  item.children.map((child) => (
+                    <li key={child.href}>
+                      <Link
+                        href={child.href}
+                        className="text-sm text-paper-400 hover:text-gold-400 transition-colors"
+                      >
+                        {child.label}
+                      </Link>
+                    </li>
+                  ))
+                )
+              )}
               <li>
                 <Link
                   href="/contact"

@@ -9,13 +9,24 @@ export const CALENDLY_URL =
 export const CONTACT_EMAIL = 'rob@robpalmer.com'
 export const CONTACT_PHONE = '(415) 854-9589'
 
-export const NAV_LINKS = [
+type NavLink = { readonly label: string; readonly href: string }
+type NavDropdown = { readonly label: string; readonly children: readonly NavLink[] }
+export type NavItem = NavLink | NavDropdown
+
+export const NAV_LINKS: readonly NavItem[] = [
   { label: 'Services', href: '/services' },
-  { label: 'Case Studies', href: '/case-studies' },
+  {
+    label: 'Experience',
+    children: [
+      { label: 'Case Studies', href: '/case-studies' },
+      { label: 'Portfolio', href: '/portfolio' },
+      { label: 'Verticals', href: '/verticals' },
+    ],
+  },
   { label: 'Testimonials', href: '/testimonials' },
   { label: 'Blog', href: '/blog' },
   { label: 'About', href: '/about' },
-] as const
+]
 
 export const FORTUNE_500_CLIENTS = [
   'Apple',
