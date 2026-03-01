@@ -12,7 +12,7 @@ export function PortfolioCard({ item }: PortfolioCardProps) {
       href="https://drive.google.com/drive/folders/1ivFq-UhqthNnaGhlp6nJOc1G9s7H4iDI"
       target="_blank"
       rel="noopener noreferrer"
-      className="group block rounded-xl border border-paper-200 bg-white shadow-sm overflow-hidden transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5"
+      className="group flex flex-col h-full rounded-xl border border-paper-200 bg-white shadow-sm overflow-hidden transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5"
     >
       {/* Image */}
       <div className="relative w-full h-40 overflow-hidden">
@@ -26,7 +26,7 @@ export function PortfolioCard({ item }: PortfolioCardProps) {
       </div>
 
       {/* Content */}
-      <div className="p-5">
+      <div className="p-5 flex flex-col flex-1">
         {/* Badges */}
         <div className="flex items-center gap-2 mb-3">
           <Badge variant="gold">{item.category}</Badge>
@@ -72,7 +72,7 @@ export function PortfolioCard({ item }: PortfolioCardProps) {
         )}
 
         {/* View sample link */}
-        <div className="mt-4 flex items-center gap-1 text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-500 transition-colors">
+        <div className="mt-auto pt-4 flex items-center gap-1 text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-500 transition-colors">
           View sample
           <svg
             aria-hidden="true"
