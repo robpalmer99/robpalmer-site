@@ -27,7 +27,7 @@ export function CaseStudyCard({
     <Link
       href={`/case-studies/${slug}`}
       className={cn(
-        'group block rounded-xl border border-paper-200 bg-white overflow-hidden shadow-sm',
+        'group flex flex-col h-full rounded-xl border border-paper-200 bg-white overflow-hidden shadow-sm',
         'transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5',
         className
       )}
@@ -62,11 +62,11 @@ export function CaseStudyCard({
         </div>
       )}
 
-      <div className="p-6 sm:p-8">
+      <div className="flex flex-col flex-1 p-6 sm:p-8">
         <h3 className="font-heading text-lg font-bold text-ink-950 group-hover:text-gold-600 transition-colors">
           {title}
         </h3>
-        <p className="mt-3 text-sm text-ink-700 leading-relaxed font-body">{description}</p>
+        <p className="mt-3 flex-1 text-sm text-ink-700 leading-relaxed font-body">{description}</p>
         <div className="mt-4 flex items-center gap-1 text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-500 transition-colors">
           Read the case study
           <svg

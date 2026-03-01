@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Hero } from '@/components/blocks/Hero'
 import { Section } from '@/components/ui/Section'
 import { Container } from '@/components/ui/Container'
+import { FadeIn } from '@/components/ui/FadeIn'
 import { CalendlyEmbed } from '@/components/integrations/CalendlyEmbed'
 import { ContactForm } from '@/components/blocks/ContactForm'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
@@ -31,7 +32,7 @@ export default function ContactPage() {
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
             {/* Left: Contact info */}
-            <div className="lg:col-span-2">
+            <FadeIn direction="left" className="lg:col-span-2">
               <div className="flex items-center gap-4 mb-6">
                 <Image
                   src="/images/headshots/rob-palmer-clean.png"
@@ -39,7 +40,7 @@ export default function ContactPage() {
                   width={64}
                   height={64}
                   sizes="64px"
-                  className="w-16 h-16 rounded-full object-cover"
+                  className="w-16 h-16 rounded-full object-cover ring-2 ring-gold-400/20"
                 />
                 <div>
                   <h2 className="font-heading text-xl font-bold text-ink-950">
@@ -66,27 +67,31 @@ export default function ContactPage() {
                   tracked results, let&apos;s talk.
                 </p>
               </div>
-            </div>
+            </FadeIn>
 
             {/* Right: Calendly */}
-            <div className="lg:col-span-3">
+            <FadeIn delay={200} className="lg:col-span-3">
               <CalendlyEmbed />
-            </div>
+            </FadeIn>
           </div>
         </Container>
       </Section>
 
       {/* Contact Form */}
-      <Section className="bg-paper-100">
+      <Section className="bg-paper-100" divider>
         <Container>
           <div className="max-w-2xl mx-auto">
-            <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950 mb-3 text-center">
-              For All Other Inquiries
-            </h2>
-            <p className="text-ink-700 font-body text-center mb-10">
-              Not ready for a call? No problem. Drop me a message and I&apos;ll get back to you within 24 hours.
-            </p>
-            <ContactForm />
+            <FadeIn>
+              <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950 mb-3 text-center">
+                For All Other Inquiries
+              </h2>
+              <p className="text-ink-700 font-body text-center mb-10">
+                Not ready for a call? No problem. Drop me a message and I&apos;ll get back to you within 24 hours.
+              </p>
+            </FadeIn>
+            <FadeIn delay={150}>
+              <ContactForm />
+            </FadeIn>
           </div>
         </Container>
       </Section>

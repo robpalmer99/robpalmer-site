@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Hero } from '@/components/blocks/Hero'
 import { Section } from '@/components/ui/Section'
 import { Container } from '@/components/ui/Container'
+import { FadeIn } from '@/components/ui/FadeIn'
 import { ServiceCard } from '@/components/blocks/ServiceCard'
 import { CTABanner } from '@/components/blocks/CTABanner'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
@@ -30,15 +31,17 @@ export default function ServicesPage() {
       <Section>
         <Container>
           <ul role="list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service) => (
+            {services.map((service, index) => (
               <li key={service.slug}>
-                <ServiceCard
-                  title={service.title}
-                  slug={service.slug}
-                  description={service.shortDescription}
-                  image={service.heroImage}
-                  imageAlt={service.heroImageAlt}
-                />
+                <FadeIn delay={index * 80} className="h-full">
+                  <ServiceCard
+                    title={service.title}
+                    slug={service.slug}
+                    description={service.shortDescription}
+                    image={service.heroImage}
+                    imageAlt={service.heroImageAlt}
+                  />
+                </FadeIn>
               </li>
             ))}
           </ul>

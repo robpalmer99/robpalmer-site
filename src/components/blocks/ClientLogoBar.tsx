@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Container } from '@/components/ui/Container'
+import { FadeIn } from '@/components/ui/FadeIn'
 import { FORTUNE_500_CLIENTS } from '@/lib/constants'
 import { cn } from '@/lib/utils'
 
@@ -27,29 +28,32 @@ export function ClientLogoBar({ variant = 'dark', className }: ClientLogoBarProp
       )}
     >
       <Container>
-        <p
-          className={cn(
-            'text-center text-xs sm:text-sm font-heading uppercase tracking-[0.2em] mb-10 font-semibold',
-            variant === 'dark' ? 'text-gold-400' : 'text-paper-500'
-          )}
-        >
-          Trusted by Fortune 500 brands and top direct-response marketers
-        </p>
+        <FadeIn>
+          <p
+            className={cn(
+              'text-center text-xs sm:text-sm font-heading uppercase tracking-[0.2em] mb-10 font-semibold',
+              variant === 'dark' ? 'text-gold-400' : 'text-paper-500'
+            )}
+          >
+            Trusted by Fortune 500 brands and top direct-response marketers
+          </p>
+        </FadeIn>
 
-        {/* Fortune 500 text logos */}
+        {/* Fortune 500 text logos with stagger */}
         <div className="flex flex-wrap items-center justify-center gap-x-10 sm:gap-x-14 gap-y-5">
-          {FORTUNE_500_CLIENTS.map((client) => (
-            <div
-              key={client}
-              className={cn(
-                'font-heading text-xl sm:text-2xl font-bold tracking-wide',
-                variant === 'dark'
-                  ? 'text-white'
-                  : 'text-paper-500 hover:text-paper-700'
-              )}
-            >
-              {client}
-            </div>
+          {FORTUNE_500_CLIENTS.map((client, index) => (
+            <FadeIn key={client} delay={index * 80} duration={500} direction="none">
+              <div
+                className={cn(
+                  'font-heading text-xl sm:text-2xl font-bold tracking-wide transition-colors duration-200',
+                  variant === 'dark'
+                    ? 'text-white/80 hover:text-white'
+                    : 'text-paper-500 hover:text-paper-700'
+                )}
+              >
+                {client}
+              </div>
+            </FadeIn>
           ))}
         </div>
 
@@ -57,34 +61,35 @@ export function ClientLogoBar({ variant = 'dark', className }: ClientLogoBarProp
         <div
           className={cn(
             'mx-auto mt-10 mb-8 max-w-xs border-t',
-            variant === 'dark' ? 'border-gold-400/15' : 'border-paper-200'
+            variant === 'dark' ? 'border-gold-400/20' : 'border-paper-200'
           )}
         />
 
-        {/* Marketplace image logos */}
+        {/* Marketplace image logos with stagger */}
         <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-5">
-          {MARKETPLACE_LOGOS.map((logo) => (
-            <div
-              key={logo.name}
-              className={cn(
-                'transition-opacity',
-                variant === 'dark'
-                  ? 'opacity-80 hover:opacity-100'
-                  : 'opacity-60 hover:opacity-80'
-              )}
-            >
-              <Image
-                src={logo.src}
-                alt={logo.name}
-                width={logo.width}
-                height={logo.height}
-                sizes="120px"
+          {MARKETPLACE_LOGOS.map((logo, index) => (
+            <FadeIn key={logo.name} delay={400 + index * 100} duration={500} direction="none">
+              <div
                 className={cn(
-                  'h-7 sm:h-8 w-auto object-contain',
-                  variant === 'dark' ? 'brightness-0 invert' : ''
+                  'transition-opacity duration-200',
+                  variant === 'dark'
+                    ? 'opacity-80 hover:opacity-100'
+                    : 'opacity-60 hover:opacity-80'
                 )}
-              />
-            </div>
+              >
+                <Image
+                  src={logo.src}
+                  alt={logo.name}
+                  width={logo.width}
+                  height={logo.height}
+                  sizes="120px"
+                  className={cn(
+                    'h-7 sm:h-8 w-auto object-contain',
+                    variant === 'dark' ? 'brightness-0 invert' : ''
+                  )}
+                />
+              </div>
+            </FadeIn>
           ))}
         </div>
       </Container>

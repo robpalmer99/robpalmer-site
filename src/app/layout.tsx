@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Lora } from 'next/font/google'
+import { Fraunces, Lora } from 'next/font/google'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
@@ -9,9 +9,9 @@ import { JsonLd } from '@/components/seo/JsonLd'
 import { SITE_URL, SITE_TITLE, SITE_DESCRIPTION } from '@/lib/constants'
 import './globals.css'
 
-const inter = Inter({
+const fraunces = Fraunces({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-fraunces',
   display: 'swap',
 })
 
@@ -129,7 +129,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${lora.variable}`}>
+    <html lang="en" className={`${fraunces.variable} ${lora.variable}`}>
       <body className="antialiased">
         <GoogleAnalytics gaId="G-ND4QM9PG6P" />
         <a

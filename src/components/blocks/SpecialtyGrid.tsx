@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Section } from '@/components/ui/Section'
 import { Container } from '@/components/ui/Container'
+import { FadeIn } from '@/components/ui/FadeIn'
 
 const services = [
   {
@@ -78,32 +79,36 @@ export function SpecialtyGrid() {
   return (
     <>
       {/* Services */}
-      <Section variant="alt">
+      <Section variant="alt" divider>
         <Container>
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950">
-              What I Specialize In
-            </h2>
-            <p className="mt-4 text-lg text-ink-700 font-body">
-              High-stakes direct-response copy. Every project is a strategic
-              engagement designed to deliver measurable ROI.
-            </p>
+            <FadeIn>
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950">
+                What I Specialize In
+              </h2>
+              <p className="mt-4 text-lg text-ink-700 font-body">
+                High-stakes direct-response copy. Every project is a strategic
+                engagement designed to deliver measurable ROI.
+              </p>
+            </FadeIn>
           </div>
           <ul role="list" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
-            {services.map((service) => (
+            {services.map((service, index) => (
               <li key={service.slug}>
-                <Link
-                  href={service.slug}
-                  className="group block rounded-xl border border-paper-200 bg-white p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5"
-                >
-                  <div className="text-2xl mb-3">{service.icon}</div>
-                  <h3 className="font-heading text-lg font-bold text-ink-950 group-hover:text-gold-600 transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-ink-700 font-body leading-relaxed">
-                    {service.description}
-                  </p>
-                </Link>
+                <FadeIn delay={index * 80} className="h-full">
+                  <Link
+                    href={service.slug}
+                    className="group flex flex-col h-full rounded-xl border border-paper-200 bg-white p-6 shadow-sm border-t-2 border-t-gold-400/40 transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-1"
+                  >
+                    <div className="text-2xl mb-3">{service.icon}</div>
+                    <h3 className="font-heading text-lg font-bold text-ink-950 group-hover:text-gold-600 transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="mt-2 text-sm text-ink-700 font-body leading-relaxed flex-1">
+                      {service.description}
+                    </p>
+                  </Link>
+                </FadeIn>
               </li>
             ))}
           </ul>
@@ -114,28 +119,32 @@ export function SpecialtyGrid() {
       <Section>
         <Container>
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950">
-              Verticals I Work In
-            </h2>
-            <p className="mt-4 text-lg text-ink-700 font-body">
-              Deep vertical expertise across the highest-converting
-              direct-response markets.
-            </p>
+            <FadeIn>
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950">
+                Verticals I Work In
+              </h2>
+              <p className="mt-4 text-lg text-ink-700 font-body">
+                Deep vertical expertise across the highest-converting
+                direct-response markets.
+              </p>
+            </FadeIn>
           </div>
           <ul role="list" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
-            {verticals.map((vertical) => (
+            {verticals.map((vertical, index) => (
               <li key={vertical.slug}>
-                <Link
-                  href={vertical.slug}
-                  className="group block rounded-xl border border-paper-200 bg-white p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5"
-                >
-                  <h3 className="font-heading text-lg font-bold text-ink-950 group-hover:text-gold-600 transition-colors">
-                    {vertical.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-ink-700 font-body leading-relaxed">
-                    {vertical.description}
-                  </p>
-                </Link>
+                <FadeIn delay={index * 80} className="h-full">
+                  <Link
+                    href={vertical.slug}
+                    className="group flex flex-col h-full rounded-xl border border-paper-200 bg-white p-6 shadow-sm border-t-2 border-t-gold-400/40 transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-1"
+                  >
+                    <h3 className="font-heading text-lg font-bold text-ink-950 group-hover:text-gold-600 transition-colors">
+                      {vertical.title}
+                    </h3>
+                    <p className="mt-2 text-sm text-ink-700 font-body leading-relaxed flex-1">
+                      {vertical.description}
+                    </p>
+                  </Link>
+                </FadeIn>
               </li>
             ))}
           </ul>

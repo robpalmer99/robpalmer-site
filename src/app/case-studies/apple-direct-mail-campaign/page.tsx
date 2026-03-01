@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { Hero } from '@/components/blocks/Hero'
 import { Section } from '@/components/ui/Section'
 import { Container } from '@/components/ui/Container'
+import { FadeIn } from '@/components/ui/FadeIn'
+import { CountUp } from '@/components/ui/CountUp'
 import { CTABanner } from '@/components/blocks/CTABanner'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { JsonLd } from '@/components/seo/JsonLd'
@@ -60,31 +62,36 @@ export default function AppleCaseStudyPage() {
         <Container>
           <article className="max-w-3xl mx-auto">
             {/* Hero Image */}
-            <div className="mb-10 -mx-4 sm:mx-0">
-              <Image
-                src={cs.heroImage}
-                alt={cs.heroAlt}
-                width={1200}
-                height={800}
-                sizes="(max-width: 768px) 100vw, 768px"
-                className="w-full h-auto rounded-xl object-cover"
-                priority
-              />
-            </div>
+            <FadeIn duration={800}>
+              <div className="mb-10 -mx-4 sm:mx-0">
+                <Image
+                  src={cs.heroImage}
+                  alt={cs.heroAlt}
+                  width={1200}
+                  height={800}
+                  sizes="(max-width: 768px) 100vw, 768px"
+                  className="w-full h-auto rounded-xl object-cover"
+                  priority
+                />
+              </div>
+            </FadeIn>
 
             {/* Key Metrics Bar */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12 p-6 rounded-xl bg-ink-950">
-              {cs.metrics.map((metric) => (
-                <div key={metric.label} className="text-center">
-                  <div className="font-heading text-2xl sm:text-3xl font-bold text-gold-400">
-                    {metric.value}
+            <FadeIn delay={100}>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12 p-6 rounded-xl bg-ink-950 noise-overlay">
+                {cs.metrics.map((metric) => (
+                  <div key={metric.label} className="relative z-10 text-center">
+                    <CountUp
+                      value={metric.value}
+                      className="font-heading text-3xl sm:text-4xl font-bold text-gold-400 tracking-tight"
+                    />
+                    <div className="mt-2 text-xs font-heading uppercase tracking-wider text-paper-400">
+                      {metric.label}
+                    </div>
                   </div>
-                  <div className="mt-1 text-xs font-heading uppercase tracking-wider text-paper-400">
-                    {metric.label}
-                  </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            </FadeIn>
 
             {/* Content */}
             <div className="space-y-6 text-lg text-ink-700 leading-relaxed font-body">

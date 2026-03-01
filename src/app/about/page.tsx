@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Hero } from '@/components/blocks/Hero'
 import { Section } from '@/components/ui/Section'
 import { Container } from '@/components/ui/Container'
+import { FadeIn } from '@/components/ui/FadeIn'
 import { ClientLogoBar } from '@/components/blocks/ClientLogoBar'
 import { StatsBar } from '@/components/blocks/StatsBar'
 import { CareerTimeline } from '@/components/blocks/CareerTimeline'
@@ -37,53 +38,58 @@ export default function AboutPage() {
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8 mb-10">
-              <div className="shrink-0">
-                <Image
-                  src="/images/headshots/rob-palmer-clean.png"
-                  alt="Rob Palmer - Direct-Response Copywriter"
-                  width={240}
-                  height={240}
-                  sizes="(max-width: 640px) 176px, 224px"
-                  className="w-44 h-44 sm:w-56 sm:h-56 rounded-xl object-cover shadow-lg"
-                  priority
-                />
-              </div>
-              <div className="space-y-4 text-lg text-ink-700 leading-relaxed font-body">
-                <p>
-                  I am a direct-response copywriter and conversion strategist
-                  who has generated over{' '}
-                  <strong className="text-ink-950">
-                    $523 million in tracked revenue
-                  </strong>{' '}
-                  for clients across the globe — from ClickBank vendors and DTC
-                  brands to Fortune 500 corporations.
-                </p>
-                <p>
-                  Today, I help marketers and business owners build{' '}
-                  <strong className="text-ink-950">
-                    high-converting offers, funnels, and campaigns
-                  </strong>{' '}
-                  that scale profitably on platforms like Meta, YouTube, and
-                  TikTok. I combine deep direct-response expertise with{' '}
-                  <strong className="text-ink-950">
-                    AI-powered research, modern CRO strategies,
-                  </strong>{' '}
-                  and a relentless focus on what actually moves the needle.
-                </p>
-                <p>
-                  Stefan Georgi, founder of Copy Accelerator, hired me as{' '}
-                  <strong className="text-ink-950">Copy Chief for CA Labs.</strong>{' '}
-                  The CEO of Belron International called me his{' '}
-                  <strong className="text-ink-950">
-                    &ldquo;Secret Weapon.&rdquo;
-                  </strong>{' '}
-                  And right now, I am working with clients from{' '}
-                  <strong className="text-ink-950">
-                    the United States to the United Arab Emirates
-                  </strong>{' '}
-                  — building the campaigns that drive their growth.
-                </p>
-              </div>
+              <FadeIn direction="left" duration={700}>
+                <div className="shrink-0 relative">
+                  <div className="absolute -inset-2 rounded-xl bg-gold-400/10 blur-lg" />
+                  <Image
+                    src="/images/headshots/rob-palmer-clean.png"
+                    alt="Rob Palmer - Direct-Response Copywriter"
+                    width={240}
+                    height={240}
+                    sizes="(max-width: 640px) 176px, 224px"
+                    className="relative w-44 h-44 sm:w-56 sm:h-56 rounded-xl object-cover shadow-lg ring-2 ring-gold-400/20"
+                    priority
+                  />
+                </div>
+              </FadeIn>
+              <FadeIn delay={150} duration={700}>
+                <div className="space-y-4 text-lg text-ink-700 leading-relaxed font-body">
+                  <p>
+                    I am a direct-response copywriter and conversion strategist
+                    who has generated over{' '}
+                    <strong className="text-ink-950">
+                      $523 million in tracked revenue
+                    </strong>{' '}
+                    for clients across the globe — from ClickBank vendors and DTC
+                    brands to Fortune 500 corporations.
+                  </p>
+                  <p>
+                    Today, I help marketers and business owners build{' '}
+                    <strong className="text-ink-950">
+                      high-converting offers, funnels, and campaigns
+                    </strong>{' '}
+                    that scale profitably on platforms like Meta, YouTube, and
+                    TikTok. I combine deep direct-response expertise with{' '}
+                    <strong className="text-ink-950">
+                      AI-powered research, modern CRO strategies,
+                    </strong>{' '}
+                    and a relentless focus on what actually moves the needle.
+                  </p>
+                  <p>
+                    Stefan Georgi, founder of Copy Accelerator, hired me as{' '}
+                    <strong className="text-ink-950">Copy Chief for CA Labs.</strong>{' '}
+                    The CEO of Belron International called me his{' '}
+                    <strong className="text-ink-950">
+                      &ldquo;Secret Weapon.&rdquo;
+                    </strong>{' '}
+                    And right now, I am working with clients from{' '}
+                    <strong className="text-ink-950">
+                      the United States to the United Arab Emirates
+                    </strong>{' '}
+                    — building the campaigns that drive their growth.
+                  </p>
+                </div>
+              </FadeIn>
             </div>
           </div>
         </Container>
@@ -93,18 +99,22 @@ export default function AboutPage() {
       <StatsBar variant="dark" />
 
       {/* ───────────────────────────── What I Do Today ───────────────────────────── */}
-      <Section>
+      <Section divider>
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mb-6">
-              What I Do Today
-            </h2>
+            <FadeIn>
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mb-6">
+                What I Do Today
+              </h2>
+            </FadeIn>
             <div className="space-y-5 text-lg text-ink-700 leading-relaxed font-body">
-              <p>
-                The direct-response landscape moves fast — new platforms, new
-                formats, new buyer behaviors. I stay ahead of it so my clients
-                do not have to. Here is what that looks like in practice:
-              </p>
+              <FadeIn delay={100}>
+                <p>
+                  The direct-response landscape moves fast — new platforms, new
+                  formats, new buyer behaviors. I stay ahead of it so my clients
+                  do not have to. Here is what that looks like in practice:
+                </p>
+              </FadeIn>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
                 {[
                   {
@@ -127,29 +137,30 @@ export default function AboutPage() {
                     detail:
                       'I write campaigns optimized for today\'s ad platforms — Meta, YouTube, and TikTok — understanding the compliance rules, format constraints, and audience behaviors unique to each.',
                   },
-                ].map((item) => (
-                  <div
-                    key={item.label}
-                    className="rounded-lg border border-paper-200 bg-white p-5 shadow-sm"
-                  >
-                    <h3 className="font-heading text-sm font-semibold uppercase tracking-wider text-gold-600 mb-2">
-                      {item.label}
-                    </h3>
-                    <p className="text-sm text-ink-700 font-body leading-relaxed">
-                      {item.detail}
-                    </p>
-                  </div>
+                ].map((item, index) => (
+                  <FadeIn key={item.label} delay={200 + index * 100} className="h-full">
+                    <div className="rounded-lg border border-paper-200 bg-white p-5 shadow-sm border-t-2 border-t-gold-400/40 h-full">
+                      <h3 className="font-heading text-sm font-semibold uppercase tracking-wider text-gold-600 mb-2">
+                        {item.label}
+                      </h3>
+                      <p className="text-sm text-ink-700 font-body leading-relaxed">
+                        {item.detail}
+                      </p>
+                    </div>
+                  </FadeIn>
                 ))}
               </div>
-              <p>
-                Whether you need a single high-converting VSL or a complete
-                funnel strategy from scratch, I bring the same
-                approach:{' '}
-                <strong className="text-ink-950">
-                  deep research, proven frameworks, and relentless optimization
-                </strong>{' '}
-                until the numbers hit.
-              </p>
+              <FadeIn>
+                <p>
+                  Whether you need a single high-converting VSL or a complete
+                  funnel strategy from scratch, I bring the same
+                  approach:{' '}
+                  <strong className="text-ink-950">
+                    deep research, proven frameworks, and relentless optimization
+                  </strong>{' '}
+                  until the numbers hit.
+                </p>
+              </FadeIn>
             </div>
           </div>
         </Container>
@@ -159,18 +170,22 @@ export default function AboutPage() {
       <Section variant="dark">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-paper-50 mb-6">
-              AI-Powered. Human-Crafted.
-            </h2>
+            <FadeIn>
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-paper-50 mb-6">
+                AI-Powered. Human-Crafted.
+              </h2>
+            </FadeIn>
             <div className="space-y-5 text-lg text-paper-300 leading-relaxed font-body">
-              <p>
-                Most copywriters are either ignoring AI or using it as a crutch.
-                I use it as a{' '}
-                <strong className="text-paper-50">force multiplier</strong> —
-                combining cutting-edge AI tools with deep direct-response
-                expertise to deliver faster, sharper, and more data-driven
-                campaigns.
-              </p>
+              <FadeIn delay={100}>
+                <p>
+                  Most copywriters are either ignoring AI or using it as a crutch.
+                  I use it as a{' '}
+                  <strong className="text-paper-50">force multiplier</strong> —
+                  combining cutting-edge AI tools with deep direct-response
+                  expertise to deliver faster, sharper, and more data-driven
+                  campaigns.
+                </p>
+              </FadeIn>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
                 {[
                   {
@@ -193,102 +208,113 @@ export default function AboutPage() {
                     detail:
                       'Faster research and deeper analysis means campaigns launch sooner and convert harder — without cutting corners on strategy or craft.',
                   },
-                ].map((item) => (
-                  <div
-                    key={item.label}
-                    className="rounded-lg border border-ink-700 bg-ink-900/50 p-5"
-                  >
-                    <h3 className="font-heading text-sm font-semibold uppercase tracking-wider text-gold-400 mb-2">
-                      {item.label}
-                    </h3>
-                    <p className="text-sm text-paper-400 font-body leading-relaxed">
-                      {item.detail}
-                    </p>
-                  </div>
+                ].map((item, index) => (
+                  <FadeIn key={item.label} delay={200 + index * 100} className="h-full">
+                    <div className="rounded-lg border border-ink-700 bg-ink-900/50 p-5 border-t-2 border-t-gold-400/30 h-full">
+                      <h3 className="font-heading text-sm font-semibold uppercase tracking-wider text-gold-400 mb-2">
+                        {item.label}
+                      </h3>
+                      <p className="text-sm text-paper-400 font-body leading-relaxed">
+                        {item.detail}
+                      </p>
+                    </div>
+                  </FadeIn>
                 ))}
               </div>
-              <p>
-                Technology changes constantly. I stay at the cutting edge of
-                it — because in direct response, the copywriter who adapts
-                fastest{' '}
-                <strong className="text-paper-50">wins.</strong>
-              </p>
+              <FadeIn>
+                <p>
+                  Technology changes constantly. I stay at the cutting edge of
+                  it — because in direct response, the copywriter who adapts
+                  fastest{' '}
+                  <strong className="text-paper-50">wins.</strong>
+                </p>
+              </FadeIn>
             </div>
           </div>
         </Container>
       </Section>
 
       {/* ───────────────────────────── The $523M Story ───────────────────────────── */}
-      <Section>
+      <Section divider>
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mb-6">
-              The $523M Campaign
-            </h2>
+            <FadeIn>
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mb-6">
+                The $523M Campaign
+              </h2>
+            </FadeIn>
             <div className="space-y-5 text-lg text-ink-700 leading-relaxed font-body">
-              <p>
-                Belron International — known in the US as Safelite AutoGlass —
-                needed a direct-response campaign to drive windshield
-                replacement bookings. Five previous copywriters had tried and
-                failed. Each had led with features and convenience. None of
-                them cracked the code.
-              </p>
-              <p>
-                Through deep research, I discovered that the most powerful
-                motivator was not convenience — it was{' '}
-                <strong className="text-ink-950">fear.</strong> The fear of a
-                damaged windshield failing during an accident. I rebuilt the
-                campaign around that emotional core — and the result speaks
-                for itself:
-              </p>
-              <ul className="space-y-3 pl-4">
-                <li className="flex items-start gap-3">
-                  <span className="mt-1.5 w-2 h-2 rounded-full bg-gold-500 flex-shrink-0" />
-                  <span>
-                    <strong className="text-ink-950">
-                      $523 million in tracked sales
-                    </strong>
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1.5 w-2 h-2 rounded-full bg-gold-500 flex-shrink-0" />
-                  <span>
-                    Campaign ran for{' '}
-                    <strong className="text-ink-950">
-                      nine consecutive years
-                    </strong>{' '}
-                    without fatigue
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1.5 w-2 h-2 rounded-full bg-gold-500 flex-shrink-0" />
-                  <span>
-                    Contributed to{' '}
-                    <strong className="text-ink-950">
-                      saving hundreds of lives
-                    </strong>{' '}
-                    through timely replacements
-                  </span>
-                </li>
-              </ul>
-              <p>
-                The CEO of Belron told me:{' '}
-                <em>
-                  &ldquo;You are our secret weapon.&rdquo;
-                </em>{' '}
-                That same research-first, insight-driven approach is what I
-                bring to every project today — whether it is a ClickBank VSL
-                or a multi-channel DTC funnel.
-              </p>
-              <p>
-                <Link
-                  href="/case-studies/belron-safelite-523m-campaign"
-                  className="inline-flex items-center gap-2 font-heading text-sm font-semibold text-gold-600 hover:text-gold-700 transition-colors"
-                >
-                  Read the full case study
-                  <span aria-hidden="true">&rarr;</span>
-                </Link>
-              </p>
+              <FadeIn delay={100}>
+                <p>
+                  Belron International — known in the US as Safelite AutoGlass —
+                  needed a direct-response campaign to drive windshield
+                  replacement bookings. Five previous copywriters had tried and
+                  failed. Each had led with features and convenience. None of
+                  them cracked the code.
+                </p>
+              </FadeIn>
+              <FadeIn delay={200}>
+                <p>
+                  Through deep research, I discovered that the most powerful
+                  motivator was not convenience — it was{' '}
+                  <strong className="text-ink-950">fear.</strong> The fear of a
+                  damaged windshield failing during an accident. I rebuilt the
+                  campaign around that emotional core — and the result speaks
+                  for itself:
+                </p>
+              </FadeIn>
+              <FadeIn delay={300}>
+                <ul className="space-y-3 pl-4">
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1.5 w-2 h-2 rounded-full bg-gold-500 flex-shrink-0" />
+                    <span>
+                      <strong className="text-ink-950">
+                        $523 million in tracked sales
+                      </strong>
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1.5 w-2 h-2 rounded-full bg-gold-500 flex-shrink-0" />
+                    <span>
+                      Campaign ran for{' '}
+                      <strong className="text-ink-950">
+                        nine consecutive years
+                      </strong>{' '}
+                      without fatigue
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1.5 w-2 h-2 rounded-full bg-gold-500 flex-shrink-0" />
+                    <span>
+                      Contributed to{' '}
+                      <strong className="text-ink-950">
+                        saving hundreds of lives
+                      </strong>{' '}
+                      through timely replacements
+                    </span>
+                  </li>
+                </ul>
+              </FadeIn>
+              <FadeIn delay={400}>
+                <p>
+                  The CEO of Belron told me:{' '}
+                  <em>
+                    &ldquo;You are our secret weapon.&rdquo;
+                  </em>{' '}
+                  That same research-first, insight-driven approach is what I
+                  bring to every project today — whether it is a ClickBank VSL
+                  or a multi-channel DTC funnel.
+                </p>
+                <p className="mt-5">
+                  <Link
+                    href="/case-studies/belron-safelite-523m-campaign"
+                    className="inline-flex items-center gap-2 font-heading text-sm font-semibold text-gold-600 hover:text-gold-700 transition-colors"
+                  >
+                    Read the full case study
+                    <span aria-hidden="true">&rarr;</span>
+                  </Link>
+                </p>
+              </FadeIn>
             </div>
           </div>
         </Container>
@@ -304,32 +330,36 @@ export default function AboutPage() {
       <Section>
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mb-6">
-              Working with Clients Worldwide
-            </h2>
-            <div className="space-y-5 text-lg text-ink-700 leading-relaxed font-body">
-              <p>
-                I work with marketers, founders, and business owners
-                across the globe — from{' '}
-                <strong className="text-ink-950">
-                  the United States and the United Kingdom to the United Arab
-                  Emirates and Australia.
-                </strong>{' '}
-                Direct response transcends borders because{' '}
-                <strong className="text-ink-950">
-                  human psychology is universal.
-                </strong>
-              </p>
-              <p>
-                For my clients, it means one thing:{' '}
-                <strong className="text-ink-950">
-                  world-class strategy and copy delivered on time, every time
-                </strong>{' '}
-                — no matter what time zone you are in. Video calls, shared
-                documents, fast turnarounds. The work is seamless. The results
-                speak for themselves.
-              </p>
-            </div>
+            <FadeIn>
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mb-6">
+                Working with Clients Worldwide
+              </h2>
+            </FadeIn>
+            <FadeIn delay={150}>
+              <div className="space-y-5 text-lg text-ink-700 leading-relaxed font-body">
+                <p>
+                  I work with marketers, founders, and business owners
+                  across the globe — from{' '}
+                  <strong className="text-ink-950">
+                    the United States and the United Kingdom to the United Arab
+                    Emirates and Australia.
+                  </strong>{' '}
+                  Direct response transcends borders because{' '}
+                  <strong className="text-ink-950">
+                    human psychology is universal.
+                  </strong>
+                </p>
+                <p>
+                  For my clients, it means one thing:{' '}
+                  <strong className="text-ink-950">
+                    world-class strategy and copy delivered on time, every time
+                  </strong>{' '}
+                  — no matter what time zone you are in. Video calls, shared
+                  documents, fast turnarounds. The work is seamless. The results
+                  speak for themselves.
+                </p>
+              </div>
+            </FadeIn>
           </div>
         </Container>
       </Section>
@@ -341,22 +371,26 @@ export default function AboutPage() {
       <AboutTestimonials />
 
       {/* ───────────────────────────── My Approach / Working With Me ───────────────────────────── */}
-      <Section>
+      <Section divider>
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mb-6">
-              What It&apos;s Like Working With Me
-            </h2>
+            <FadeIn>
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mb-6">
+                What It&apos;s Like Working With Me
+              </h2>
+            </FadeIn>
             <div className="space-y-5 text-lg text-ink-700 leading-relaxed font-body">
-              <p>
-                I do not do content production, blog posts for SEO, or low-level
-                copywriting tasks. Every project I take on is a{' '}
-                <strong className="text-ink-950">
-                  strategic, high-impact engagement
-                </strong>{' '}
-                designed to deliver measurable ROI.
-              </p>
-              <p>Here is what you can expect:</p>
+              <FadeIn delay={100}>
+                <p>
+                  I do not do content production, blog posts for SEO, or low-level
+                  copywriting tasks. Every project I take on is a{' '}
+                  <strong className="text-ink-950">
+                    strategic, high-impact engagement
+                  </strong>{' '}
+                  designed to deliver measurable ROI.
+                </p>
+                <p className="mt-5">Here is what you can expect:</p>
+              </FadeIn>
               <div className="space-y-4 my-6">
                 {[
                   {
@@ -375,21 +409,20 @@ export default function AboutPage() {
                     title: 'Measurable Results',
                     text: 'I write copy designed to move specific metrics — conversions, AOV, ROAS, revenue. Every engagement is accountable to real numbers, not vanity metrics.',
                   },
-                ].map((item) => (
-                  <div
-                    key={item.title}
-                    className="flex items-start gap-4 rounded-lg border border-paper-200 bg-white p-5"
-                  >
-                    <div className="mt-0.5 w-2 h-2 rounded-full bg-gold-500 flex-shrink-0" />
-                    <div>
-                      <h3 className="font-heading text-base font-bold text-ink-950">
-                        {item.title}
-                      </h3>
-                      <p className="mt-1 text-sm text-ink-700 font-body leading-relaxed">
-                        {item.text}
-                      </p>
+                ].map((item, index) => (
+                  <FadeIn key={item.title} delay={200 + index * 100}>
+                    <div className="flex items-start gap-4 rounded-lg border border-paper-200 bg-white p-5 shadow-sm">
+                      <div className="mt-0.5 w-2 h-2 rounded-full bg-gold-500 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-heading text-base font-bold text-ink-950">
+                          {item.title}
+                        </h3>
+                        <p className="mt-1 text-sm text-ink-700 font-body leading-relaxed">
+                          {item.text}
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                  </FadeIn>
                 ))}
               </div>
             </div>

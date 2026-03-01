@@ -37,20 +37,29 @@ Portfolio and marketing website for **Rob Palmer**, a veteran direct-response co
 
 ### Typography
 
-- **Headings:** Inter (`--font-heading` / `font-heading` class)
+- **Headings:** Fraunces (`--font-heading` / `font-heading` class) — distinctive old-style serif with optical sizing
 - **Body:** Lora (`--font-body` / `font-body` class)
 - Base font size: 1.0625rem for long-form readability
 
 ### Component Patterns
 
-- **Cards:** Rounded-xl, paper-200 border, white bg, shadow-sm, hover:shadow-md + hover:border-gold-200 + hover:-translate-y-0.5
-- **Image cards:** h-40 image container, object-cover, group-hover:scale-105 transition
+- **Cards:** Rounded-xl, paper-200 border, white bg, shadow-sm, hover:shadow-md + hover:border-gold-200 + hover:-translate-y-0.5, gold top border accent (`border-t-2 border-t-gold-400/40`)
+- **Image cards:** h-48 image container, object-cover, group-hover:scale-105 transition
 - **Badges:** Three variants — `default` (paper), `gold`, `dark`
-- **Sections:** Three variants — `default` (paper-50 bg), `alt` (paper-100 bg), `dark` (ink-950 bg)
-- **CTAs:** Gold-400 bg with ink-950 text, or outline variant
+- **Sections:** Three variants — `default` (paper-50 bg), `alt` (paper-100 bg), `dark` (ink-950 bg with noise overlay)
+- **CTAs:** Gold-400 bg with ink-950 text, hover scale + colored shadow, or outline variant
 - **External links:** Open external-link SVG icon, target="_blank" with rel="noopener noreferrer"
 - **Card link text:** Uses `text-gold-600` (not gold-500) for WCAG AA contrast compliance
 - **Meta text:** Uses `text-paper-600` (not paper-400) for WCAG AA contrast compliance
+
+### Animation & Motion System
+
+- **FadeIn component** (`src/components/ui/FadeIn.tsx`): Client component using IntersectionObserver for scroll-triggered entrance animations. Props: `direction` (up/down/left/right), `delay`, `duration`, `distance`, `threshold`. Respects `prefers-reduced-motion`.
+- **CountUp component** (`src/components/ui/CountUp.tsx`): Animated number counter parsing prefixes/suffixes ($, +, M, %) from value strings. Uses easeOutQuart easing, triggered on scroll via IntersectionObserver.
+- **Stagger pattern:** Card grids use `delay={index * 80}` (or `index * 100`, `index * 150`) for cascading reveal. Testimonials page uses `(index % 6) * 80` to avoid excessive delays with 36+ items.
+- **Hero animations:** Staggered text reveals with gold glow effects, headshot with gold ring and subtle glow
+- **Noise texture:** CSS `noise-overlay` class via inline SVG data URI for tactile depth on dark sections
+- **Section dividers:** Gold accent line between major content sections via `section-divider` class
 
 ---
 
@@ -108,6 +117,11 @@ src/
 │   │   ├── [slug]/page.tsx     # Individual vertical detail pages (with FAQPage JSON-LD)
 │   │   └── _data/verticals.ts  # Vertical data (interface + 6 items)
 │   │
+│   ├── industries/
+│   │   ├── page.tsx            # Industries listing (6 industries with images)
+│   │   ├── [slug]/page.tsx     # Individual industry detail pages (with FAQPage JSON-LD)
+│   │   └── _data/industries.ts # Industry data (interface + 6 items)
+│   │
 │   ├── portfolio/
 │   │   ├── page.tsx            # Portfolio listing with client-side category filters
 │   │   └── _data/portfolio.ts  # Portfolio data (interface + 12 items)
@@ -162,8 +176,10 @@ src/
 │   │   ├── Button.tsx          # Variants: primary, secondary, outline, ghost
 │   │   ├── Card.tsx
 │   │   ├── Container.tsx       # max-w-7xl centered container
+│   │   ├── CountUp.tsx         # Animated number counter (scroll-triggered)
+│   │   ├── FadeIn.tsx          # Scroll-triggered entrance animation (IntersectionObserver)
 │   │   ├── Logo.tsx
-│   │   └── Section.tsx         # Variants: default, alt, dark
+│   │   └── Section.tsx         # Variants: default, alt, dark (with noise overlay)
 │   │
 │   ├── mdx/                    # Custom MDX components for blog
 │   │   ├── ComparisonTable.tsx
@@ -390,10 +406,11 @@ Always clear `.next` after making changes to `globals.css`, adding new Tailwind 
 
 ### Build Output
 
-The build generates **~140+ static pages**:
+The build generates **~156 static pages**:
 - 1 homepage, about, contact, testimonials, portfolio, terms, privacy, not-found
 - 9 service detail pages + 1 services listing
 - 6 vertical detail pages + 1 verticals listing
+- 6 industry detail pages + 1 industries listing
 - 105 blog posts + 9 blog listing pages (paginated at 12/page)
 - 2 case study pages + 1 case studies listing
 - robots.txt, sitemap.xml
@@ -412,6 +429,10 @@ The build generates **~140+ static pages**:
 ### Adding a New Vertical
 
 Same pattern as services but in `src/app/verticals/_data/verticals.ts` and `public/images/industries/`.
+
+### Adding a New Industry
+
+Same pattern as services/verticals but in `src/app/industries/_data/industries.ts`.
 
 ### Adding a New Blog Post
 
@@ -446,7 +467,7 @@ Same pattern as services but in `src/app/verticals/_data/verticals.ts` and `publ
 ### Styling Rules
 
 - Always use the design token colors (`ink-*`, `gold-*`, `paper-*`) — never raw hex or Tailwind defaults
-- Headings use `font-heading` (Inter), body text uses `font-body` (Lora)
+- Headings use `font-heading` (Fraunces), body text uses `font-body` (Lora)
 - External links get `target="_blank" rel="noopener noreferrer"` + external-link icon
 - All images use Next.js `<Image>` with `fill` + `object-cover` + explicit `sizes` prop
 - Card link text uses `text-gold-600` (not gold-500) for contrast compliance
@@ -750,7 +771,8 @@ All planned features, content, and infrastructure work have been completed:
 
 - **18/18 GitHub issues** resolved (infrastructure, accessibility, security)
 - **105 blog posts** published across 6 content phases (Tiers 0–3, Phases 2–6, CRO cluster)
-- **9 services**, **6 verticals**, **12 portfolio items**, **2 case studies**, **36 testimonials** — all live
+- **9 services**, **6 verticals**, **6 industries**, **12 portfolio items**, **2 case studies**, **36 testimonials** — all live
+- **Site-wide design upgrade**: Fraunces heading font, scroll-triggered FadeIn animations, CountUp animated stats, noise textures, gold accents, staggered card reveals across all 156 pages
 - **Google Analytics** (G-ND4QM9PG6P) integrated via `@next/third-parties`
 - **Vercel Analytics** + **Speed Insights** active
 - **WCAG 2.1 AA** accessibility compliance verified

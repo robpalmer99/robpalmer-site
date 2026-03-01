@@ -13,72 +13,63 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
 import { JsonLd } from '@/components/seo/JsonLd'
-import { DefinitionBox } from '@/components/ui/DefinitionBox'
 import { SITE_URL } from '@/lib/constants'
 import { testimonials } from '@/content/testimonials'
-import { getVerticalBySlug, getAllVerticalSlugs } from '@/app/verticals/_data/verticals'
+import { getIndustryBySlug, getAllIndustrySlugs } from '@/app/industries/_data/industries'
 
-interface VerticalPageProps {
+interface IndustryPageProps {
   params: Promise<{ slug: string }>
 }
 
 export async function generateStaticParams() {
-  return getAllVerticalSlugs().map((slug) => ({ slug }))
+  return getAllIndustrySlugs().map((slug) => ({ slug }))
 }
 
-export async function generateMetadata({ params }: VerticalPageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: IndustryPageProps): Promise<Metadata> {
   const { slug } = await params
-  const vertical = getVerticalBySlug(slug)
-  if (!vertical) return {}
+  const industry = getIndustryBySlug(slug)
+  if (!industry) return {}
 
   return {
-    title: vertical.metaTitle,
-    description: vertical.metaDescription,
+    title: industry.metaTitle,
+    description: industry.metaDescription,
     alternates: {
-      canonical: `${SITE_URL}/verticals/${slug}`,
+      canonical: `${SITE_URL}/industries/${slug}`,
     },
     openGraph: {
-      title: vertical.metaTitle,
-      description: vertical.metaDescription,
-      images: [{ url: vertical.heroImage, width: 800, height: 400 }],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: vertical.metaTitle,
-      description: vertical.metaDescription,
-      images: [vertical.heroImage],
+      images: [{ url: industry.heroImage, width: 800, height: 400 }],
     },
   }
 }
 
-export default async function VerticalPage({ params }: VerticalPageProps) {
+export default async function IndustryPage({ params }: IndustryPageProps) {
   const { slug } = await params
-  const vertical = getVerticalBySlug(slug)
+  const industry = getIndustryBySlug(slug)
 
-  if (!vertical) {
+  if (!industry) {
     notFound()
   }
 
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: vertical.title,
-    description: vertical.metaDescription,
+    name: industry.title,
+    description: industry.metaDescription,
     provider: {
       '@type': 'Person',
       name: 'Rob Palmer',
       url: SITE_URL,
     },
-    url: `${SITE_URL}/verticals/${slug}`,
+    url: `${SITE_URL}/industries/${slug}`,
     areaServed: 'Worldwide',
     serviceType: 'Direct-Response Copywriting',
   }
 
-  const faqSchema = vertical.faqs.length > 0
+  const faqSchema = industry.faqs.length > 0
     ? {
         '@context': 'https://schema.org',
         '@type': 'FAQPage',
-        mainEntity: vertical.faqs.map((faq) => ({
+        mainEntity: industry.faqs.map((faq) => ({
           '@type': 'Question',
           name: faq.question,
           acceptedAnswer: {
@@ -89,8 +80,8 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
       }
     : null
 
-  // Get testimonials for this vertical
-  const verticalTestimonials = vertical.testimonialIds
+  // Get testimonials for this industry
+  const industryTestimonials = industry.testimonialIds
     .map((id) => testimonials.find((t) => t.id === id))
     .filter(Boolean)
 
@@ -100,13 +91,13 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
       {faqSchema && <JsonLd data={faqSchema} />}
       <Hero
         variant="page"
-        headline={vertical.headline}
-        subheadline={vertical.subheadline}
+        headline={industry.headline}
+        subheadline={industry.subheadline}
       />
       <Breadcrumbs
         items={[
-          { label: 'Verticals', href: '/verticals' },
-          { label: vertical.title },
+          { label: 'Industries', href: '/industries' },
+          { label: industry.title },
         ]}
       />
 
@@ -117,8 +108,8 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
             <div className="max-w-4xl mx-auto -mt-4 pb-8">
               <div className="relative w-full h-56 sm:h-72 md:h-80 rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src={vertical.heroImage}
-                  alt={vertical.heroImageAlt}
+                  src={industry.heroImage}
+                  alt={industry.heroImageAlt}
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 896px"
@@ -130,48 +121,19 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
         </Container>
       </section>
 
-      {/* ───────────────────────────── Definition Box ───────────────────────────── */}
-      {vertical.definition && (
-        <Section>
-          <Container>
-            <FadeIn>
-              <div className="max-w-3xl mx-auto">
-                <DefinitionBox
-                  term={vertical.definition.term}
-                  definition={vertical.definition.text}
-                />
-              </div>
-            </FadeIn>
-          </Container>
-        </Section>
-      )}
-
       {/* ───────────────────────────── Main Content Sections ───────────────────────────── */}
       <Section>
         <Container>
           <div className="max-w-3xl mx-auto space-y-10">
-            {vertical.sections.map((section, index) => (
+            {industry.sections.map((section, index) => (
               <FadeIn key={index} delay={index * 100}>
                 <div>
                   <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
                     {section.heading}
                   </h2>
-                  <p className="mt-4 text-lg text-ink-700 leading-relaxed font-body">
+                  <p className="mt-4 text-lg text-paper-600 leading-relaxed font-body">
                     {section.content}
                   </p>
-                  {section.bullets && (
-                    <ul role="list" className="mt-4 space-y-2">
-                      {section.bullets.map((bullet, i) => (
-                        <li
-                          key={i}
-                          className="flex items-start gap-3 text-lg text-ink-700 font-body leading-relaxed"
-                        >
-                          <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gold-400" aria-hidden="true" />
-                          {bullet}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
                 </div>
               </FadeIn>
             ))}
@@ -188,20 +150,22 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
                 <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
                   What You Get
                 </h2>
-                <p className="mt-3 text-lg text-ink-700 font-body">
+                <p className="mt-3 text-lg text-paper-600 font-body">
                   Every deliverable is built on proven direct-response frameworks
                   — not templates.
                 </p>
               </div>
             </FadeIn>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {vertical.deliverables.map((item, index) => (
+              {industry.deliverables.map((item, index) => (
                 <FadeIn key={index} delay={index * 80} className="h-full">
-                  <div className="rounded-xl border border-paper-200 bg-white p-5 shadow-sm border-t-2 border-t-gold-400/40 h-full">
+                  <div
+                    className="rounded-xl border border-paper-200 bg-white p-5 shadow-sm border-t-2 border-t-gold-400/40 h-full"
+                  >
                     <h3 className="font-heading text-base font-bold text-ink-950">
                       {item.title}
                     </h3>
-                    <p className="mt-2 text-sm text-ink-700 font-body leading-relaxed">
+                    <p className="mt-2 text-sm text-paper-600 font-body leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -214,13 +178,13 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
 
       {/* ───────────────────────────── Mid-page CTA ───────────────────────────── */}
       <CTABanner
-        headline={`Ready to scale your ${vertical.title.toLowerCase().replace(' copywriter', '')} campaigns?`}
+        headline={`Ready to scale your ${industry.title.toLowerCase().replace(' copywriter', '')} campaigns?`}
         subtext="Book a free strategy call to discuss your project."
         variant="gold"
       />
 
       {/* ───────────────────────────── Industry Testimonials ───────────────────────────── */}
-      {verticalTestimonials.length > 0 && (
+      {industryTestimonials.length > 0 && (
         <Section>
           <Container>
             <div className="max-w-4xl mx-auto">
@@ -232,7 +196,7 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
                 </div>
               </FadeIn>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {verticalTestimonials.map(
+                {industryTestimonials.map(
                   (testimonial, index) =>
                     testimonial && (
                       <FadeIn key={testimonial.id} delay={index * 100} className="h-full">
@@ -258,7 +222,7 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
       )}
 
       {/* ───────────────────────────── Portfolio Samples ───────────────────────────── */}
-      {vertical.portfolioItems.length > 0 && (
+      {industry.portfolioItems.length > 0 && (
         <Section variant="dark">
           <Container>
             <div className="max-w-4xl mx-auto">
@@ -273,7 +237,7 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
                 </div>
               </FadeIn>
               <div className="flex flex-wrap items-center justify-center gap-4">
-                {vertical.portfolioItems.map((item, index) => (
+                {industry.portfolioItems.map((item, index) => (
                   <FadeIn key={index} delay={index * 80}>
                     <a
                       href="https://drive.google.com/drive/folders/1ivFq-UhqthNnaGhlp6nJOc1G9s7H4iDI"
@@ -320,18 +284,15 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
       )}
 
       {/* ───────────────────────────── Related Services ───────────────────────────── */}
-      <Section
-        variant={vertical.portfolioItems.length > 0 ? 'default' : 'alt'}
-        divider
-      >
+      <Section variant={industry.portfolioItems.length > 0 ? 'default' : 'alt'} divider>
         <Container>
           <div className="max-w-4xl mx-auto">
             <FadeIn>
               <div className="text-center mb-10">
                 <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
-                  Services for Your Vertical
+                  Services for Your Industry
                 </h2>
-                <p className="mt-3 text-lg text-ink-700 font-body">
+                <p className="mt-3 text-lg text-paper-600 font-body">
                   I offer a full range of direct-response copywriting services
                   tailored to your niche.
                 </p>
@@ -368,7 +329,7 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
       </Section>
 
       {/* ───────────────────────────── FAQ ───────────────────────────── */}
-      {vertical.faqs.length > 0 && (
+      {industry.faqs.length > 0 && (
         <Section variant="alt">
           <Container>
             <div className="max-w-3xl mx-auto">
@@ -378,7 +339,7 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
                 </h2>
               </FadeIn>
               <FadeIn delay={100}>
-                <FAQAccordion items={vertical.faqs} />
+                <FAQAccordion items={industry.faqs} />
               </FadeIn>
             </div>
           </Container>

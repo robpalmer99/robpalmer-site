@@ -26,11 +26,11 @@ export function Button({
 }: ButtonProps) {
   const variants = {
     primary:
-      'bg-gold-400 text-ink-950 hover:bg-gold-500 active:bg-gold-600 font-heading font-semibold shadow-sm',
+      'bg-gold-400 text-ink-950 hover:bg-gold-500 hover:scale-[1.02] active:scale-[0.98] active:bg-gold-600 font-heading font-semibold shadow-md shadow-gold-400/20',
     secondary:
-      'bg-ink-950 text-paper-50 hover:bg-ink-800 active:bg-ink-700 font-heading font-semibold shadow-sm',
+      'bg-ink-950 text-paper-50 hover:bg-ink-800 hover:scale-[1.02] active:scale-[0.98] active:bg-ink-700 font-heading font-semibold shadow-md shadow-ink-950/20',
     outline:
-      'border-2 border-gold-400 text-gold-400 hover:bg-gold-400 hover:text-ink-950 font-heading font-semibold',
+      'border-2 border-gold-400 text-gold-400 hover:bg-gold-400 hover:text-ink-950 hover:scale-[1.02] active:scale-[0.98] font-heading font-semibold backdrop-blur-sm',
     ghost:
       'text-gold-600 hover:text-gold-500 underline-offset-4 hover:underline font-heading font-medium',
   }

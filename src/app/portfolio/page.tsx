@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { Hero } from '@/components/blocks/Hero'
 import { Section } from '@/components/ui/Section'
 import { Container } from '@/components/ui/Container'
+import { FadeIn } from '@/components/ui/FadeIn'
+import { CountUp } from '@/components/ui/CountUp'
 import { CTABanner } from '@/components/blocks/CTABanner'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { PortfolioGrid } from '@/components/blocks/PortfolioGrid'
@@ -31,16 +33,18 @@ export default function PortfolioPage() {
       {/* ───────────────────────────── Intro ───────────────────────────── */}
       <section className="bg-paper-50 pb-2">
         <Container>
-          <div className="max-w-3xl mx-auto text-center -mt-2">
-            <p className="text-lg text-ink-700 leading-relaxed font-body">
-              Every piece below was written to sell — not to win creative
-              awards. These samples represent a cross-section of the{' '}
-              <strong className="text-ink-950">1,200+ projects</strong> I&apos;ve
-              delivered across health, finance, info products, SaaS, and
-              direct-response verticals. Click any card to view the full sample
-              in my portfolio drive.
-            </p>
-          </div>
+          <FadeIn>
+            <div className="max-w-3xl mx-auto text-center -mt-2">
+              <p className="text-lg text-ink-700 leading-relaxed font-body">
+                Every piece below was written to sell — not to win creative
+                awards. These samples represent a cross-section of the{' '}
+                <strong className="text-ink-950">1,200+ projects</strong> I&apos;ve
+                delivered across health, finance, info products, SaaS, and
+                direct-response verticals. Click any card to view the full sample
+                in my portfolio drive.
+              </p>
+            </div>
+          </FadeIn>
         </Container>
       </section>
 
@@ -62,30 +66,35 @@ export default function PortfolioPage() {
       <Section variant="dark">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-10">
-              <h2 className="font-heading text-2xl sm:text-3xl font-bold text-paper-50">
-                Results That Speak for Themselves
-              </h2>
-              <p className="mt-3 text-lg text-paper-400 font-body">
-                A snapshot of what my copy has delivered across these and other
-                projects.
-              </p>
-            </div>
+            <FadeIn>
+              <div className="text-center mb-10">
+                <h2 className="font-heading text-2xl sm:text-3xl font-bold text-paper-50">
+                  Results That Speak for Themselves
+                </h2>
+                <p className="mt-3 text-lg text-paper-400 font-body">
+                  A snapshot of what my copy has delivered across these and other
+                  projects.
+                </p>
+              </div>
+            </FadeIn>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
               {[
                 { stat: '$523M+', label: 'Tracked Revenue' },
                 { stat: '1,200+', label: 'Projects Delivered' },
                 { stat: '8%+', label: 'Avg. Cold Traffic CVR' },
                 { stat: '300%+', label: 'ROAS Across Campaigns' },
-              ].map((item) => (
-                <div key={item.label} className="text-center">
-                  <div className="font-heading text-3xl sm:text-4xl font-bold text-gold-400">
-                    {item.stat}
+              ].map((item, index) => (
+                <FadeIn key={item.label} delay={index * 100}>
+                  <div className="text-center">
+                    <CountUp
+                      value={item.stat}
+                      className="font-heading text-4xl sm:text-5xl font-bold text-gold-400 tracking-tight"
+                    />
+                    <div className="mt-2 text-sm font-heading font-medium text-paper-400 uppercase tracking-wide">
+                      {item.label}
+                    </div>
                   </div>
-                  <div className="mt-2 text-sm font-heading font-medium text-paper-400 uppercase tracking-wide">
-                    {item.label}
-                  </div>
-                </div>
+                </FadeIn>
               ))}
             </div>
           </div>
@@ -93,18 +102,20 @@ export default function PortfolioPage() {
       </Section>
 
       {/* ───────────────────────────── Related Links ───────────────────────────── */}
-      <Section>
+      <Section divider>
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-10">
-              <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
-                Explore More
-              </h2>
-              <p className="mt-3 text-lg text-ink-700 font-body">
-                See the services behind these results, or read what clients have
-                to say.
-              </p>
-            </div>
+            <FadeIn>
+              <div className="text-center mb-10">
+                <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
+                  Explore More
+                </h2>
+                <p className="mt-3 text-lg text-ink-700 font-body">
+                  See the services behind these results, or read what clients have
+                  to say.
+                </p>
+              </div>
+            </FadeIn>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               {[
                 {
@@ -128,36 +139,37 @@ export default function PortfolioPage() {
                   href: '/case-studies',
                   cta: 'Read Case Studies',
                 },
-              ].map((card) => (
-                <Link
-                  key={card.href}
-                  href={card.href}
-                  className="group block rounded-xl border border-paper-200 bg-white p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5"
-                >
-                  <h3 className="font-heading text-lg font-bold text-ink-950 group-hover:text-gold-600 transition-colors">
-                    {card.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-ink-700 leading-relaxed font-body">
-                    {card.description}
-                  </p>
-                  <div className="mt-4 flex items-center gap-1 text-sm font-heading font-semibold text-gold-500 group-hover:text-gold-600 transition-colors">
-                    {card.cta}
-                    <svg
-                      aria-hidden="true"
-                      className="w-4 h-4 transition-transform group-hover:translate-x-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
-                  </div>
-                </Link>
+              ].map((card, index) => (
+                <FadeIn key={card.href} delay={index * 100} className="h-full">
+                  <Link
+                    href={card.href}
+                    className="group flex flex-col h-full rounded-xl border border-paper-200 bg-white p-6 shadow-sm border-t-2 border-t-gold-400/40 transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-1"
+                  >
+                    <h3 className="font-heading text-lg font-bold text-ink-950 group-hover:text-gold-600 transition-colors">
+                      {card.title}
+                    </h3>
+                    <p className="mt-2 text-sm text-ink-700 leading-relaxed font-body flex-1">
+                      {card.description}
+                    </p>
+                    <div className="mt-4 flex items-center gap-1 text-sm font-heading font-semibold text-gold-500 group-hover:text-gold-600 transition-colors">
+                      {card.cta}
+                      <svg
+                        aria-hidden="true"
+                        className="w-4 h-4 transition-transform group-hover:translate-x-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M17 8l4 4m0 0l-4 4m4-4H3"
+                        />
+                      </svg>
+                    </div>
+                  </Link>
+                </FadeIn>
               ))}
             </div>
           </div>

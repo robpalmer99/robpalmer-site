@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Hero } from '@/components/blocks/Hero'
 import { Section } from '@/components/ui/Section'
 import { Container } from '@/components/ui/Container'
+import { FadeIn } from '@/components/ui/FadeIn'
 import { TestimonialCard } from '@/components/blocks/TestimonialCard'
 import { CTABanner } from '@/components/blocks/CTABanner'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
@@ -30,12 +31,14 @@ export default function TestimonialsPage() {
       <Section>
         <Container>
           <ul role="list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.map((testimonial) => (
+            {testimonials.map((testimonial, index) => (
               <li key={testimonial.id}>
-                <TestimonialCard
-                  testimonial={testimonial}
-                  variant={testimonial.featured ? 'featured' : 'default'}
-                />
+                <FadeIn delay={(index % 6) * 80} className="h-full">
+                  <TestimonialCard
+                    testimonial={testimonial}
+                    variant={testimonial.featured ? 'featured' : 'default'}
+                  />
+                </FadeIn>
               </li>
             ))}
           </ul>

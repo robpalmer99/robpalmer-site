@@ -1,4 +1,5 @@
 import { Container } from '@/components/ui/Container'
+import { CountUp } from '@/components/ui/CountUp'
 import { STATS } from '@/lib/constants'
 import { cn } from '@/lib/utils'
 
@@ -23,15 +24,15 @@ export function StatsBar({ variant = 'dark', className }: StatsBarProps) {
             <div key={index}>
               <dt
                 className={cn(
-                  'font-heading text-3xl sm:text-4xl font-bold',
+                  'font-heading text-4xl sm:text-5xl font-bold tracking-tight',
                   variant === 'dark' ? 'text-gold-400' : 'text-ink-950'
                 )}
               >
-                {stat.value}
+                <CountUp value={stat.value} />
               </dt>
               <dd
                 className={cn(
-                  'mt-1 text-sm font-heading uppercase tracking-wider',
+                  'mt-2 text-sm font-heading uppercase tracking-wider',
                   variant === 'dark' ? 'text-paper-400' : 'text-paper-600'
                 )}
               >

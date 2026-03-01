@@ -25,13 +25,13 @@ export function ServiceCard({
     <Link
       href={`${basePath}/${slug}`}
       className={cn(
-        'group block rounded-xl border border-paper-200 bg-white shadow-sm overflow-hidden',
-        'transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5',
+        'group flex flex-col h-full rounded-xl border border-paper-200 border-t-2 border-t-gold-400/40 bg-white shadow-sm overflow-hidden',
+        'transition-all duration-200 hover:shadow-lg hover:shadow-gold-400/5 hover:border-gold-200 hover:-translate-y-1',
         className
       )}
     >
       {image && (
-        <div className="relative w-full h-40 overflow-hidden">
+        <div className="relative w-full h-48 overflow-hidden">
           <Image
             src={image}
             alt={imageAlt || title}
@@ -41,11 +41,11 @@ export function ServiceCard({
           />
         </div>
       )}
-      <div className={cn('p-6 sm:p-8', image && 'sm:p-6')}>
+      <div className={cn('flex flex-col flex-1 p-6 sm:p-8', image && 'sm:p-6')}>
         <h3 className="font-heading text-lg font-bold text-ink-950 group-hover:text-gold-600 transition-colors">
           {title}
         </h3>
-        <p className="mt-3 text-sm text-ink-700 leading-relaxed font-body">
+        <p className="mt-3 flex-1 text-sm text-ink-700 leading-relaxed font-body">
           {description}
         </p>
         <div className="mt-4 flex items-center gap-1 text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-500 transition-colors">

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Section } from '@/components/ui/Section'
 import { Container } from '@/components/ui/Container'
+import { FadeIn } from '@/components/ui/FadeIn'
 import { TestimonialCard } from '@/components/blocks/TestimonialCard'
 import { testimonials } from '@/content/testimonials'
 
@@ -23,23 +24,27 @@ export function AboutTestimonials() {
     <Section variant="gold">
       <Container>
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950">
-            What Clients Say
-          </h2>
-          <p className="mt-4 text-lg text-ink-700 font-body">
-            From Fortune 500 CEOs to ClickBank vendors — here is what it is like
-            to work with me.
-          </p>
+          <FadeIn>
+            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950">
+              What Clients Say
+            </h2>
+            <p className="mt-4 text-lg text-ink-700 font-body">
+              From Fortune 500 CEOs to ClickBank vendors — here is what it is like
+              to work with me.
+            </p>
+          </FadeIn>
         </div>
         <ul role="list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {selectedTestimonials.map(
-            (testimonial) =>
+            (testimonial, index) =>
               testimonial && (
                 <li key={testimonial.id}>
-                  <TestimonialCard
-                    testimonial={testimonial}
-                    variant="default"
-                  />
+                  <FadeIn delay={index * 100} className="h-full">
+                    <TestimonialCard
+                      testimonial={testimonial}
+                      variant="default"
+                    />
+                  </FadeIn>
                 </li>
               )
           )}
