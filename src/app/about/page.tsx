@@ -41,15 +41,16 @@ export default function AboutPage() {
               <FadeIn direction="left" duration={700}>
                 <div className="shrink-0 relative">
                   <div className="absolute -inset-2 rounded-xl bg-gold-400/10 blur-lg" />
-                  <Image
-                    src="/images/headshots/rob-palmer-clean.png"
-                    alt="Rob Palmer - Direct-Response Copywriter"
-                    width={240}
-                    height={240}
-                    sizes="(max-width: 640px) 176px, 224px"
-                    className="relative w-44 h-44 sm:w-56 sm:h-56 rounded-xl object-cover shadow-lg ring-2 ring-gold-400/20"
-                    priority
-                  />
+                  <div className="relative w-44 h-44 sm:w-56 sm:h-56 rounded-xl overflow-hidden shadow-lg ring-2 ring-gold-400/20">
+                    <Image
+                      src="/images/headshots/rob-palmer-clean.png"
+                      alt="Rob Palmer - Direct-Response Copywriter"
+                      fill
+                      sizes="(max-width: 640px) 176px, 224px"
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
                 </div>
               </FadeIn>
               <FadeIn delay={150} duration={700}>
