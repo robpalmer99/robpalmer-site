@@ -220,10 +220,18 @@ async function main() {
     const query = IMAGE_MAP[slug];
     const dest = path.join(IMAGES_DIR, `${slug}.jpg`);
 
+    // Skip files that already exist AND are real photos (>80KB).
+    // Placeholder images (text-on-solid-background) are typically <80KB.
+    const PLACEHOLDER_THRESHOLD = 80_000;
     if (fs.existsSync(dest)) {
-      console.log(`  SKIP  ${slug} — already exists`);
-      skipped++;
-      continue;
+      const fileSize = fs.statSync(dest).size;
+      if (fileSize >= PLACEHOLDER_THRESHOLD) {
+        console.log(`  SKIP  ${slug} — already has real image (${(fileSize / 1024).toFixed(0)}KB)`);
+        skipped++;
+        continue;
+      }
+      console.log(`  REPLACE  ${slug} — placeholder detected (${(fileSize / 1024).toFixed(0)}KB)`);
+      fs.unlinkSync(dest);
     }
 
     try {
