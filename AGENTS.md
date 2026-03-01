@@ -303,16 +303,17 @@ public/images/
 
 ### Data-Driven Pages
 
-Services, verticals, and portfolio use a consistent pattern:
+Services, verticals, industries, and portfolio use a consistent pattern:
 
 1. **Data file** in `_data/` directory defines an interface + exported array
 2. **Listing page** imports the array and renders cards
-3. **Detail page** (services/verticals) uses `generateStaticParams()` + `getXBySlug()` for static generation
+3. **Detail page** (services/verticals/industries) uses `generateStaticParams()` + `getXBySlug()` for static generation
 
 ### Key Interfaces
 
 - **Service** (`services.ts`): title, slug, shortDescription, metaTitle, metaDescription, headline, subheadline, heroImage, heroImageAlt, sections[], deliverables[], testimonialIds[], portfolioItems[], faqs[]
 - **Vertical** (`verticals.ts`): Same shape as Service
+- **Industry** (`industries.ts`): Same shape as Service
 - **PortfolioItem** (`portfolio.ts`): title, slug, category, niche, description, image, imageAlt, result?, client?
 - **CaseStudy** (`case-studies.ts`): slug, title, client, result, description, heroImage, heroAlt, metrics[], testimonial?
 - **BlogPostMeta** (`mdx.ts`): title, description, date, category, tags[], slug, readingTime, published, heroImage?, heroAlt?, faqs?
@@ -325,7 +326,7 @@ Service and vertical detail pages display curated testimonials by mapping `testi
 
 ### Portfolio
 
-All 12 portfolio items link to the same shared Google Drive folder. There are no individual portfolio detail pages. The listing page has client-side category filter tabs (All | VSL | Sales Page | Email | Hybrid).
+All 12 portfolio items link to the same shared Google Drive folder. There are no individual portfolio detail pages. The listing page has a prominent "Browse My Portfolio" button linking to the full Google Drive folder, plus client-side category filter tabs (All | VSL | Sales Page | Email | Hybrid). Portfolio cards use equal-height flex layout with `mt-auto` on the "View sample" link.
 
 ### Case Studies
 
