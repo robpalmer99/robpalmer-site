@@ -1,8 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Badge } from '@/components/ui/Badge'
-import { cn } from '@/lib/utils'
-import { formatDate } from '@/lib/utils'
+import { cn, formatDate } from '@/lib/utils'
 
 interface BlogPostCardProps {
   title: string
@@ -61,7 +60,7 @@ export function BlogPostCard({
           {excerpt}
         </p>
         <div className="mt-4 flex items-center justify-between">
-          <time className="text-xs text-paper-600 font-heading">{formatDate(date)}</time>
+          <time dateTime={date} className="text-xs text-paper-600 font-heading">{formatDate(date)}</time>
           <span className="text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-500 transition-colors">
             Read more →
           </span>

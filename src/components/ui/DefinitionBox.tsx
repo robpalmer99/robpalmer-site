@@ -9,9 +9,10 @@ export function DefinitionBox({ term, definition }: DefinitionBoxProps) {
       <dt className="font-heading text-sm font-semibold uppercase tracking-wider text-gold-600 mb-2">
         What is {term}?
       </dt>
-      <dd className="text-lg text-ink-700 leading-relaxed font-body">
-        {definition}
-      </dd>
+      <dd
+        className="text-lg text-ink-700 leading-relaxed font-body [&_a]:text-gold-600 [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-gold-700"
+        dangerouslySetInnerHTML={{ __html: definition }}
+      />
     </div>
   )
 }

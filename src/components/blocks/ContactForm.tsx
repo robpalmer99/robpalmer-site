@@ -5,10 +5,12 @@ import { Button } from '@/components/ui/Button'
 
 export function ContactForm() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
+  const [errorMessage, setErrorMessage] = useState('')
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     setStatus('sending')
+    setErrorMessage('')
 
     const form = e.currentTarget
     const data = new FormData(form)
@@ -30,9 +32,12 @@ export function ContactForm() {
         setStatus('sent')
         form.reset()
       } else {
+        const body = await res.json().catch(() => null)
+        setErrorMessage(body?.error || 'Something went wrong. Please try again or book a call instead.')
         setStatus('error')
       }
     } catch {
+      setErrorMessage('Something went wrong. Please try again or book a call instead.')
       setStatus('error')
     }
   }
@@ -64,6 +69,7 @@ export function ContactForm() {
             name="name"
             required
             aria-required="true"
+            maxLength={200}
             className="w-full px-4 py-3 rounded-lg border border-paper-200 bg-white text-ink-950 font-body text-sm transition-shadow"
             placeholder="Your name"
           />
@@ -78,6 +84,7 @@ export function ContactForm() {
             name="email"
             required
             aria-required="true"
+            maxLength={254}
             className="w-full px-4 py-3 rounded-lg border border-paper-200 bg-white text-ink-950 font-body text-sm transition-shadow"
             placeholder="you@example.com"
           />
@@ -93,6 +100,7 @@ export function ContactForm() {
           name="subject"
           required
           aria-required="true"
+          maxLength={300}
           className="w-full px-4 py-3 rounded-lg border border-paper-200 bg-white text-ink-950 font-body text-sm transition-shadow"
           placeholder="What's this about?"
         />
@@ -106,6 +114,7 @@ export function ContactForm() {
           name="message"
           required
           aria-required="true"
+          maxLength={5000}
           rows={5}
           className="w-full px-4 py-3 rounded-lg border border-paper-200 bg-white text-ink-950 font-body text-sm transition-shadow resize-y"
           placeholder="Tell me about your project..."
@@ -123,7 +132,7 @@ export function ContactForm() {
         <div aria-live="assertive" role="alert">
           {status === 'error' && (
             <p className="mt-3 text-sm text-red-500 font-body">
-              Something went wrong. Please try again or book a call instead.
+              {errorMessage}
             </p>
           )}
         </div>

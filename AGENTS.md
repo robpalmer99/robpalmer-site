@@ -56,7 +56,7 @@ Portfolio and marketing website for **Rob Palmer**, a veteran direct-response co
 
 - **FadeIn component** (`src/components/ui/FadeIn.tsx`): Client component using IntersectionObserver for scroll-triggered entrance animations. Props: `direction` (up/down/left/right), `delay`, `duration`, `distance`, `threshold`. Respects `prefers-reduced-motion`.
 - **CountUp component** (`src/components/ui/CountUp.tsx`): Animated number counter parsing prefixes/suffixes ($, +, M, %) from value strings. Uses easeOutQuart easing, triggered on scroll via IntersectionObserver.
-- **Stagger pattern:** Card grids use `delay={index * 80}` (or `index * 100`, `index * 150`) for cascading reveal. Testimonials page uses `(index % 6) * 80` to avoid excessive delays with 36+ items.
+- **Stagger pattern:** Card grids use `delay={index * 80}` (or `index * 100`, `index * 150`) for cascading reveal. Testimonials page uses `(index % 6) * 80` to avoid excessive delays.
 - **Hero animations:** Staggered text reveals with gold glow effects, headshot with gold ring and subtle glow
 - **Noise texture:** CSS `noise-overlay` class via inline SVG data URI for tactile depth on dark sections
 - **Section dividers:** Gold accent line between major content sections via `section-divider` class
@@ -72,8 +72,9 @@ The site follows WCAG 2.1 AA guidelines with the following key implementations:
 - **Reduced motion:** `@media (prefers-reduced-motion: reduce)` disables all animations/transitions; smooth scroll is conditional on `prefers-reduced-motion: no-preference`
 - **ARIA live regions:** ContactForm success/error messages use `aria-live`; portfolio filter results announced via `aria-live="polite"`
 - **FAQ accordion:** Full ARIA pattern with `aria-expanded`, `aria-controls`, panel IDs, `aria-labelledby`, and `hidden` attribute
+- **Desktop dropdown:** `DropdownNav` component with full keyboard support — Enter/Space toggle, Escape close, Arrow key navigation between menu items, `aria-expanded`, `aria-haspopup="true"`, `aria-controls`, `role="menu"`, `role="menuitem"`, click-outside-to-close
 - **MobileNav:** Hidden from accessibility tree when closed (`aria-hidden`, `tabIndex={-1}`, `pointer-events-none`)
-- **Form fields:** Visual `*` required indicators with `aria-required="true"`
+- **Form fields:** Visual `*` required indicators with `aria-required="true"`, `maxLength` attributes matching server-side limits
 - **Color contrast:** All text meets 4.5:1 ratio (AA) — gold-600 for link text, paper-600 for meta text
 - **Navigation landmarks:** `aria-label` on main nav, mobile nav, portfolio filter group
 - **Decorative elements:** SVG icons use `aria-hidden="true"`
@@ -91,7 +92,7 @@ All routes return the following headers:
 - **X-Content-Type-Options:** nosniff
 - **Referrer-Policy:** strict-origin-when-cross-origin
 - **Permissions-Policy:** camera=(), microphone=(), geolocation=(), interest-cohort=()
-- **Content-Security-Policy:** Allowlists for self, Calendly, Vercel Analytics, Vercel Speed Insights, Google Analytics / GTM
+- **Content-Security-Policy:** Allowlists for self, Calendly, Vercel Analytics, Vercel Speed Insights, Google Analytics / GTM (no `unsafe-eval`)
 
 ---
 
@@ -104,6 +105,7 @@ src/
 │   ├── page.tsx                # Homepage
 │   ├── globals.css             # Tailwind config, color tokens, a11y styles, prose overrides
 │   ├── not-found.tsx           # Custom 404 page (noindex)
+│   ├── error.tsx               # Root error boundary with recovery UI
 │   ├── robots.ts               # Robots.txt generation
 │   ├── sitemap.ts              # Sitemap XML generation (includes blog posts)
 │   │
@@ -116,11 +118,6 @@ src/
 │   │   ├── page.tsx            # Verticals listing (6 verticals with images)
 │   │   ├── [slug]/page.tsx     # Individual vertical detail pages (with FAQPage JSON-LD)
 │   │   └── _data/verticals.ts  # Vertical data (interface + 6 items)
-│   │
-│   ├── industries/
-│   │   ├── page.tsx            # Industries listing (6 industries with images)
-│   │   ├── [slug]/page.tsx     # Individual industry detail pages (with FAQPage JSON-LD)
-│   │   └── _data/industries.ts # Industry data (interface + 6 items)
 │   │
 │   ├── portfolio/
 │   │   ├── page.tsx            # Portfolio listing with client-side category filters
@@ -140,10 +137,10 @@ src/
 │   │   ├── belron-safelite-523m-campaign/page.tsx  # Enriched with hero image, metrics, testimonial
 │   │   └── apple-direct-mail-campaign/page.tsx     # Enriched with hero image, metrics, callout
 │   │
-│   ├── testimonials/page.tsx   # All 36 testimonials
+│   ├── testimonials/page.tsx   # All testimonials (count derived dynamically)
 │   ├── about/page.tsx          # About with career timeline and stats
 │   ├── contact/page.tsx        # Contact form + Calendly embed
-│   └── api/contact/route.ts    # Contact form API endpoint
+│   └── api/contact/route.ts    # Contact form API (trim-before-validate, rate limiting, honeypot)
 │
 ├── components/
 │   ├── blocks/                 # Page-level building blocks
@@ -162,10 +159,10 @@ src/
 │   │   ├── SpecialtyGrid.tsx   # Specialty cards grid
 │   │   ├── CareerTimeline.tsx  # About page timeline
 │   │   ├── AboutTestimonials.tsx
-│   │   └── ContactForm.tsx     # Client-side form with aria-live + aria-required
+│   │   └── ContactForm.tsx     # Client-side form with aria-live, aria-required, maxLength, server error display
 │   │
 │   ├── layout/                 # Persistent layout elements
-│   │   ├── Header.tsx          # Nav with scroll-aware styling via useScrolled hook
+│   │   ├── Header.tsx          # Nav with scroll-aware styling, DropdownNav for keyboard-accessible desktop dropdown
 │   │   ├── Footer.tsx
 │   │   ├── MobileMenu.tsx      # Self-contained mobile menu (button + body lock + MobileNav)
 │   │   ├── MobileNav.tsx       # Slide-out mobile nav panel (aria-hidden when closed)
@@ -177,7 +174,7 @@ src/
 │   │   ├── Card.tsx
 │   │   ├── Container.tsx       # max-w-7xl centered container
 │   │   ├── CountUp.tsx         # Animated number counter (scroll-triggered)
-│   │   ├── FadeIn.tsx          # Scroll-triggered entrance animation (IntersectionObserver)
+│   │   ├── FadeIn.tsx          # Scroll-triggered entrance animation (IntersectionObserver, FadeIn only)
 │   │   ├── Logo.tsx
 │   │   └── Section.tsx         # Variants: default, alt, dark (with noise overlay)
 │   │
@@ -195,7 +192,7 @@ src/
 │       └── CalendlyEmbed.tsx   # Calendly scheduling widget
 │
 ├── content/
-│   ├── testimonials.ts         # 36 testimonials with IDs '1'–'36'
+│   ├── testimonials.ts         # Testimonials with IDs '1'–'36' (count derived dynamically via TESTIMONIAL_COUNT)
 │   └── blog/                   # MDX blog posts with frontmatter
 │       ├── what-is-direct-response-copywriting.mdx   # Tier 0 (original)
 │       ├── copywriting-vs-content-writing.mdx         # Tier 0 (original)
@@ -282,8 +279,8 @@ src/
 │   └── useScrolled.ts          # Scroll detection hook (used by Header)
 │
 └── lib/
-    ├── constants.ts            # Site URL, name, nav links, stats, contact info
-    ├── mdx.ts                  # MDX file reader, frontmatter parser, pagination, related posts
+    ├── constants.ts            # Site URL, name, nav links, stats, contact info, TESTIMONIAL_COUNT
+    ├── mdx.ts                  # MDX file reader, frontmatter parser, pagination, related posts (memoized)
     └── utils.ts                # cn() utility (clsx + tailwind-merge)
 
 public/images/
@@ -303,17 +300,16 @@ public/images/
 
 ### Data-Driven Pages
 
-Services, verticals, industries, and portfolio use a consistent pattern:
+Services, verticals, and portfolio use a consistent pattern:
 
 1. **Data file** in `_data/` directory defines an interface + exported array
 2. **Listing page** imports the array and renders cards
-3. **Detail page** (services/verticals/industries) uses `generateStaticParams()` + `getXBySlug()` for static generation
+3. **Detail page** (services/verticals) uses `generateStaticParams()` + `getXBySlug()` for static generation
 
 ### Key Interfaces
 
 - **Service** (`services.ts`): title, slug, shortDescription, metaTitle, metaDescription, headline, subheadline, heroImage, heroImageAlt, sections[], deliverables[], testimonialIds[], portfolioItems[], faqs[]
 - **Vertical** (`verticals.ts`): Same shape as Service
-- **Industry** (`industries.ts`): Same shape as Service
 - **PortfolioItem** (`portfolio.ts`): title, slug, category, niche, description, image, imageAlt, result?, client?
 - **CaseStudy** (`case-studies.ts`): slug, title, client, result, description, heroImage, heroAlt, metrics[], testimonial?
 - **BlogPostMeta** (`mdx.ts`): title, description, date, category, tags[], slug, readingTime, published, heroImage?, heroAlt?, faqs?
@@ -375,7 +371,8 @@ Blog posts display 3 related articles after the author bio section:
 - Root layout has **Person schema** (with `sameAs` links) + **WebSite schema**
 - Blog posts have **Article schema** with `datePublished` and `dateModified`
 - All pages have **metaTitle** and **metaDescription** for `<head>`
-- OpenGraph images are set from hero images on service/vertical/blog pages
+- OpenGraph images use absolute URLs (`${SITE_URL}${heroImage}`) on service/vertical/blog pages
+- Blog `<time>` elements include `dateTime` attribute for machine readability
 - `robots.ts` and `sitemap.ts` generate at build time
 - 404 page has `robots: { index: false, follow: false }`
 - Content is SEO/GEO optimized — service title keywords are woven throughout all content sections and FAQs
@@ -407,15 +404,15 @@ Always clear `.next` after making changes to `globals.css`, adding new Tailwind 
 
 ### Build Output
 
-The build generates **~156 static pages**:
-- 1 homepage, about, contact, testimonials, portfolio, terms, privacy, not-found
+The build generates **~149 static pages**:
+- 1 homepage, about, contact, testimonials, portfolio, terms, privacy, not-found, error
 - 9 service detail pages + 1 services listing
 - 6 vertical detail pages + 1 verticals listing
-- 6 industry detail pages + 1 industries listing
 - 105 blog posts + 9 blog listing pages (paginated at 12/page)
 - 2 case study pages + 1 case studies listing
 - robots.txt, sitemap.xml
 - 1 API route (contact form)
+- `/industries` and `/industries/:slug` 301 redirect to `/verticals` and `/verticals/:slug`
 
 ---
 
@@ -430,10 +427,6 @@ The build generates **~156 static pages**:
 ### Adding a New Vertical
 
 Same pattern as services but in `src/app/verticals/_data/verticals.ts` and `public/images/industries/`.
-
-### Adding a New Industry
-
-Same pattern as services/verticals but in `src/app/industries/_data/industries.ts`.
 
 ### Adding a New Blog Post
 
@@ -482,8 +475,9 @@ Site constants are centralized in `src/lib/constants.ts`:
 - `SITE_URL`: https://robpalmer.com
 - `CONTACT_EMAIL`: rob@robpalmer.com
 - `CALENDLY_URL`: https://calendly.com/rob-palmer-call
-- `STATS`: $523M+ In Tracked Revenue, 30+ Years of Experience, 36+ Client Testimonials, 100s Of Successful Projects
-- `NAV_LINKS`: Services, Case Studies, Testimonials, Blog, About
+- `TESTIMONIAL_COUNT`: Dynamically derived from `testimonials.length` (e.g. `"36+"`)
+- `STATS`: $523M+ In Tracked Revenue, 5 Fortune 500 Clients, TESTIMONIAL_COUNT Client Testimonials, 100s Of Successful Projects
+- `NAV_LINKS`: Services, Experience (dropdown: Case Studies, Portfolio, Verticals), Testimonials, Blog, About
 
 ---
 
@@ -772,12 +766,13 @@ All planned features, content, and infrastructure work have been completed:
 
 - **18/18 GitHub issues** resolved (infrastructure, accessibility, security)
 - **105 blog posts** published across 6 content phases (Tiers 0–3, Phases 2–6, CRO cluster)
-- **9 services**, **6 verticals**, **6 industries**, **12 portfolio items**, **2 case studies**, **36 testimonials** — all live
+- **9 services**, **6 verticals**, **12 portfolio items**, **2 case studies**, **36 testimonials** — all live (industries removed, 301 redirects to verticals)
 - **Site-wide design upgrade**: Fraunces heading font, scroll-triggered FadeIn animations, CountUp animated stats, noise textures, gold accents, staggered card reveals across all 156 pages
 - **Google Analytics** (G-ND4QM9PG6P) integrated via `@next/third-parties`
 - **Vercel Analytics** + **Speed Insights** active
 - **WCAG 2.1 AA** accessibility compliance verified
-- **Security headers** including CSP with all third-party domains allowlisted
+- **Security headers** including CSP with all third-party domains allowlisted (no `unsafe-eval`)
+- **Root error boundary** (`error.tsx`) with recovery UI
 - **SEO/GEO optimized** with JSON-LD structured data, sitemaps, canonical URLs, and 10 FAQs per blog post
 
 ### Post-Launch Recommendations

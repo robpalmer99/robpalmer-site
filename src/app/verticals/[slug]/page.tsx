@@ -14,9 +14,10 @@ import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { DefinitionBox } from '@/components/ui/DefinitionBox'
-import { SITE_URL } from '@/lib/constants'
+import { SITE_URL, TESTIMONIAL_COUNT } from '@/lib/constants'
 import { testimonials } from '@/content/testimonials'
-import { getVerticalBySlug, getAllVerticalSlugs } from '@/app/verticals/_data/verticals'
+import { getVerticalBySlug, getAllVerticalSlugs, verticals as allVerticals } from '@/app/verticals/_data/verticals'
+import { services } from '@/app/services/_data/services'
 
 interface VerticalPageProps {
   params: Promise<{ slug: string }>
@@ -40,13 +41,13 @@ export async function generateMetadata({ params }: VerticalPageProps): Promise<M
     openGraph: {
       title: vertical.metaTitle,
       description: vertical.metaDescription,
-      images: [{ url: vertical.heroImage, width: 800, height: 400 }],
+      images: [{ url: `${SITE_URL}${vertical.heroImage}`, width: 1200, height: 630 }],
     },
     twitter: {
       card: 'summary_large_image',
       title: vertical.metaTitle,
       description: vertical.metaDescription,
-      images: [vertical.heroImage],
+      images: [`${SITE_URL}${vertical.heroImage}`],
     },
   }
 }
@@ -156,9 +157,10 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
                   <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
                     {section.heading}
                   </h2>
-                  <p className="mt-4 text-lg text-ink-700 leading-relaxed font-body">
-                    {section.content}
-                  </p>
+                  <p
+                    className="mt-4 text-lg text-ink-700 leading-relaxed font-body [&_a]:text-gold-600 [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-gold-700"
+                    dangerouslySetInnerHTML={{ __html: section.content }}
+                  />
                   {section.bullets && (
                     <ul role="list" className="mt-4 space-y-2">
                       {section.bullets.map((bullet, i) => (
@@ -248,7 +250,7 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
                   href="/testimonials"
                   className="inline-flex items-center gap-2 font-heading text-sm font-semibold text-gold-600 hover:text-gold-700 transition-colors"
                 >
-                  Read all 36+ testimonials
+                  Read all {TESTIMONIAL_COUNT} testimonials
                   <span aria-hidden="true">&rarr;</span>
                 </Link>
               </div>
@@ -338,19 +340,19 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
               </div>
             </FadeIn>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-              {[
-                { label: 'VSL Copywriting', href: '/services/vsl-copywriter' },
-                { label: 'Sales Pages', href: '/services/sales-page-copywriter' },
-                { label: 'Email Sequences', href: '/services/email-copywriter' },
-                { label: 'Full Funnels', href: '/services/sales-funnel-copywriter' },
-              ].map((service, index) => (
-                <FadeIn key={service.href} delay={index * 80}>
+              {(vertical.relatedServices
+                ? services.filter((s) =>
+                    vertical.relatedServices!.includes(s.slug)
+                  )
+                : services.slice(0, 4)
+              ).map((svc, index) => (
+                <FadeIn key={svc.slug} delay={index * 80}>
                   <Link
-                    href={service.href}
+                    href={`/services/${svc.slug}`}
                     className="group block rounded-xl border border-paper-200 bg-white p-4 text-center shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-1"
                   >
                     <span className="font-heading text-sm font-semibold text-ink-950 group-hover:text-gold-600 transition-colors">
-                      {service.label}
+                      {svc.title}
                     </span>
                   </Link>
                 </FadeIn>
@@ -366,6 +368,50 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
           </div>
         </Container>
       </Section>
+
+      {/* ───────────────────────────── Related Verticals ───────────────────────────── */}
+      {vertical.relatedVerticals && vertical.relatedVerticals.length > 0 && (
+        <Section divider>
+          <Container>
+            <div className="max-w-4xl mx-auto">
+              <FadeIn>
+                <div className="text-center mb-10">
+                  <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
+                    Related Verticals
+                  </h2>
+                  <p className="mt-3 text-lg text-ink-700 font-body">
+                    Explore other industries where I deliver results-driven copy.
+                  </p>
+                </div>
+              </FadeIn>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                {vertical.relatedVerticals
+                  .map((slug) => allVerticals.find((v) => v.slug === slug))
+                  .filter(Boolean)
+                  .map((related, index) => (
+                    <FadeIn key={related!.slug} delay={index * 80}>
+                      <Link
+                        href={`/verticals/${related!.slug}`}
+                        className="group block rounded-xl border border-paper-200 bg-white p-4 text-center shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-1"
+                      >
+                        <span className="font-heading text-sm font-semibold text-ink-950 group-hover:text-gold-600 transition-colors">
+                          {related!.title}
+                        </span>
+                      </Link>
+                    </FadeIn>
+                  ))}
+              </div>
+              <FadeIn>
+                <div className="text-center mt-6">
+                  <Button href="/verticals" variant="outline">
+                    View All Verticals
+                  </Button>
+                </div>
+              </FadeIn>
+            </div>
+          </Container>
+        </Section>
+      )}
 
       {/* ───────────────────────────── FAQ ───────────────────────────── */}
       {vertical.faqs.length > 0 && (

@@ -12,7 +12,9 @@ import { TestimonialCard } from '@/components/blocks/TestimonialCard'
 import { CTABanner } from '@/components/blocks/CTABanner'
 import { FAQAccordion } from '@/components/blocks/FAQAccordion'
 import { JsonLd } from '@/components/seo/JsonLd'
+import Link from 'next/link'
 import { services } from '@/app/services/_data/services'
+import { verticals } from '@/app/verticals/_data/verticals'
 import { caseStudies } from '@/app/case-studies/_data/case-studies'
 import { featuredTestimonials } from '@/content/testimonials'
 import { SITE_URL } from '@/lib/constants'
@@ -139,6 +141,44 @@ export default function HomePage() {
             <div className="mt-8 text-center">
               <Button href="/services" variant="ghost">
                 View all services →
+              </Button>
+            </div>
+          </FadeIn>
+        </Container>
+      </Section>
+
+      {/* Industries / Verticals */}
+      <Section divider>
+        <Container>
+          <FadeIn>
+            <div className="text-center mb-12">
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950">
+                Industries I Specialize In
+              </h2>
+              <p className="mt-4 text-lg text-ink-700 font-body max-w-2xl mx-auto">
+                Deep vertical expertise across the industries that demand
+                direct-response excellence.
+              </p>
+            </div>
+          </FadeIn>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
+            {verticals.map((vertical, index) => (
+              <FadeIn key={vertical.slug} delay={index * 80}>
+                <Link
+                  href={`/verticals/${vertical.slug}`}
+                  className="group block rounded-xl border border-paper-200 bg-white p-5 text-center shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-1"
+                >
+                  <span className="font-heading text-sm font-semibold text-ink-950 group-hover:text-gold-600 transition-colors">
+                    {vertical.title}
+                  </span>
+                </Link>
+              </FadeIn>
+            ))}
+          </div>
+          <FadeIn delay={500}>
+            <div className="mt-8 text-center">
+              <Button href="/verticals" variant="ghost">
+                View all verticals →
               </Button>
             </div>
           </FadeIn>

@@ -4,6 +4,7 @@ import { Container } from '@/components/ui/Container'
 import { FadeIn } from '@/components/ui/FadeIn'
 import { TestimonialCard } from '@/components/blocks/TestimonialCard'
 import { testimonials } from '@/content/testimonials'
+import { TESTIMONIAL_COUNT } from '@/lib/constants'
 
 // Hand-picked testimonials that showcase different credibility angles
 const selectedIds = [
@@ -54,7 +55,7 @@ export function AboutTestimonials() {
             href="/testimonials"
             className="inline-flex items-center gap-2 font-heading text-sm font-semibold text-gold-600 hover:text-gold-700 transition-colors"
           >
-            Read all 36+ testimonials
+            Read all {TESTIMONIAL_COUNT} testimonials
             <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>

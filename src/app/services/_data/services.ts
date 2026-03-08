@@ -29,6 +29,8 @@ export interface Service {
     category: string
   }[]
   faqs: FAQItem[]
+  relatedServices?: string[]
+  relatedVerticals?: string[]
 }
 
 export const services: Service[] = [
@@ -160,6 +162,8 @@ export const services: Service[] = [
           'VSL copywriting pricing is project-based and depends on the length of the VSL, complexity of the offer, amount of research required, and whether additional deliverables like hook variations or audience research briefs are included. Pricing is discussed during our initial strategy call. The investment typically delivers multiples of ROI through increased front-end conversions.',
       },
     ],
+    relatedServices: ['sales-page-copywriter', 'sales-funnel-copywriter'],
+    relatedVerticals: ['health-supplement-copywriter', 'clickbank-copywriter'],
   },
   {
     title: 'Sales Page Copywriter',
@@ -280,6 +284,8 @@ export const services: Service[] = [
           'A typical sales page project takes 2-4 weeks from briefing to final draft. This includes audience research, competitive analysis, strategic planning, writing, and one revision round. Complex offers or highly regulated industries may require additional time for research and compliance review.',
       },
     ],
+    relatedServices: ['vsl-copywriter', 'landing-page-copywriter'],
+    relatedVerticals: ['ecommerce-dtc-copywriter', 'info-product-copywriter'],
   },
   {
     title: 'Sales Letter Copywriter',
@@ -401,6 +407,8 @@ export const services: Service[] = [
           'Sales letter copywriting is priced on a project basis depending on the length, complexity, and research requirements. Pricing is discussed during our initial strategy call. Whether you need a digital TSL or a full direct mail package, the investment is structured to deliver measurable return through increased conversions.',
       },
     ],
+    relatedServices: ['sales-page-copywriter', 'email-copywriter'],
+    relatedVerticals: ['financial-copywriter', 'health-supplement-copywriter'],
   },
   {
     title: 'Email Copywriter',
@@ -522,6 +530,8 @@ export const services: Service[] = [
           'Email copywriting is priced per sequence, with the cost depending on the number of emails, complexity of the strategy, and amount of research required. Individual broadcast emails are also available on a per-email basis. Pricing is discussed during our initial strategy call.',
       },
     ],
+    relatedServices: ['sales-funnel-copywriter', 'upsell-downsell-copywriter'],
+    relatedVerticals: ['ecommerce-dtc-copywriter', 'saas-copywriter'],
   },
   {
     title: 'Ad Copywriter',
@@ -565,7 +575,7 @@ export const services: Service[] = [
       {
         heading: 'Compliance-Aware Ad Copy',
         content:
-          'One of the biggest challenges in ad copywriting is staying compliant with platform policies — especially in regulated industries like health supplements and financial services. An ad that gets rejected or flagged does not just waste time, it can put your entire ad account at risk. I write ad copy that pushes the boundaries of what is allowed without crossing them, using proven language patterns and angles that satisfy platform reviewers while still driving strong click-through and conversion rates. This compliance-aware approach protects your accounts while maximizing your advertising ROI.',
+          'One of the biggest challenges in ad copywriting is staying compliant with platform policies — especially in regulated industries like health supplements and financial services. Violating <a href="https://www.ftc.gov/business-guidance/advertising-and-marketing" target="_blank" rel="noopener noreferrer">FTC advertising guidelines</a> or platform policies does not just waste time, it can put your entire ad account at risk. I write ad copy that pushes the boundaries of what is allowed without crossing them, using proven language patterns and angles that satisfy platform reviewers while still driving strong click-through and conversion rates. This compliance-aware approach protects your accounts while maximizing your advertising ROI.',
       },
       {
         heading: 'Testing Frameworks for Ad Copy',
@@ -643,6 +653,8 @@ export const services: Service[] = [
           'Ad copywriting is typically priced per ad suite (a set of variations for a specific campaign) or on a retainer basis for ongoing ad copy needs. Pricing depends on the number of platforms, variations required, and complexity. Details are discussed during our initial strategy call.',
       },
     ],
+    relatedServices: ['landing-page-copywriter', 'sales-funnel-copywriter'],
+    relatedVerticals: ['ecommerce-dtc-copywriter', 'saas-copywriter'],
   },
   {
     title: 'Landing Page Copywriter',
@@ -758,6 +770,8 @@ export const services: Service[] = [
           'Landing page copywriting is priced on a project basis, depending on the complexity of the offer, the amount of research required, and the deliverables included. Pricing is discussed during our initial strategy call. Given that even small conversion improvements on a landing page can generate significant ROI, the investment typically pays for itself quickly.',
       },
     ],
+    relatedServices: ['ad-copywriter', 'sales-page-copywriter'],
+    relatedVerticals: ['saas-copywriter', 'ecommerce-dtc-copywriter'],
   },
   {
     title: 'Sales Funnel Copywriter',
@@ -881,6 +895,8 @@ export const services: Service[] = [
           'Sales funnel copywriting is priced as a complete project, with the cost depending on the number of pages, complexity of the offer, and whether email sequences are included. Because funnel copy touches every revenue lever in your business, it tends to be the highest-ROI copywriting investment. Pricing is discussed during our initial strategy call.',
       },
     ],
+    relatedServices: ['vsl-copywriter', 'email-copywriter', 'upsell-downsell-copywriter'],
+    relatedVerticals: ['clickbank-copywriter', 'info-product-copywriter'],
   },
   {
     title: 'Upsell & Downsell Copywriter',
@@ -1001,6 +1017,8 @@ export const services: Service[] = [
           'Upsell and downsell copywriting is typically priced per sequence, with the cost depending on the number of upsell and downsell pages, whether order bumps and thank-you pages are included, and the complexity of the offers. Given that upsell copy directly increases revenue from existing traffic, it tends to deliver the fastest ROI of any copywriting investment.',
       },
     ],
+    relatedServices: ['sales-funnel-copywriter', 'email-copywriter'],
+    relatedVerticals: ['clickbank-copywriter', 'health-supplement-copywriter'],
   },
   {
     title: 'AI Copywriting Consultant',
@@ -1023,7 +1041,7 @@ export const services: Service[] = [
       {
         heading: 'Why Hire an AI Copywriting Consultant?',
         content:
-          'Everyone has access to ChatGPT, Claude, and a growing army of AI writing tools. Almost no one is using them to produce copy that actually converts. Most teams are generating mediocre first drafts, publishing them with minimal editing, and wondering why their conversion rates are dropping. The problem is not the technology — it is the strategy. AI is a force multiplier, but if you multiply zero direct-response skill by ten, you still get zero. An AI copywriting consultant bridges that gap: bringing the direct-response expertise that tells the AI what to write, and the quality control processes that ensure the output actually drives conversions.',
+          'Everyone has access to <a href="https://openai.com/chatgpt" target="_blank" rel="noopener noreferrer">ChatGPT</a>, <a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Claude</a>, and a growing army of AI writing tools. Almost no one is using them to produce copy that actually converts. Most teams are generating mediocre first drafts, publishing them with minimal editing, and wondering why their conversion rates are dropping. The problem is not the technology — it is the strategy. AI is a force multiplier, but if you multiply zero direct-response skill by ten, you still get zero. An AI copywriting consultant bridges that gap: bringing the direct-response expertise that tells the AI what to write, and the quality control processes that ensure the output actually drives conversions.',
       },
       {
         heading: 'Most Teams Are Using AI Wrong',
@@ -1122,6 +1140,8 @@ export const services: Service[] = [
           'AI copywriting consulting is priced on a project basis, with the scope depending on team size, complexity of your copy needs, and depth of training required. Options range from a focused workflow audit to a comprehensive multi-week engagement with ongoing optimization support. Pricing is discussed during our initial strategy call.',
       },
     ],
+    relatedServices: ['vsl-copywriter', 'email-copywriter'],
+    relatedVerticals: ['saas-copywriter', 'info-product-copywriter'],
   },
 ]
 

@@ -17,10 +17,12 @@ import { KeyTakeaways } from '@/components/mdx/KeyTakeaways'
 import { FAQSection, FAQItem } from '@/components/mdx/FAQ'
 import { ComparisonTable } from '@/components/mdx/ComparisonTable'
 import { ExpertQuote } from '@/components/mdx/ExpertQuote'
+import Link from 'next/link'
 import { BlogPostCard } from '@/components/blocks/BlogPostCard'
 import { getBlogPostContent, getAllBlogSlugs, getRelatedPosts } from '@/lib/mdx'
 import { formatDate } from '@/lib/utils'
 import { SITE_URL } from '@/lib/constants'
+import { getRelatedPages } from '@/lib/content-links'
 
 const mdxComponents = {
   DefinitionBox,
@@ -81,6 +83,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   const relatedPosts = getRelatedPosts(slug)
+  const relatedPages = getRelatedPages(post.meta.category, post.meta.tags)
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -169,7 +172,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 {post.meta.readingTime}
               </span>
               <span className="text-sm text-paper-600 font-heading">•</span>
-              <time className="text-sm text-paper-600 font-heading">
+              <time dateTime={post.meta.date} className="text-sm text-paper-600 font-heading">
                 {formatDate(post.meta.date)}
               </time>
             </div>
@@ -234,6 +237,49 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                     />
                   ))}
                 </div>
+              </div>
+            )}
+
+            {/* Related Services & Verticals */}
+            {(relatedPages.services.length > 0 ||
+              relatedPages.verticals.length > 0) && (
+              <div className="mt-12 pt-8 border-t border-paper-200">
+                {relatedPages.services.length > 0 && (
+                  <div className="mb-6">
+                    <h3 className="font-heading text-sm font-bold text-ink-700 uppercase tracking-wider mb-3">
+                      Explore Related Services
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
+                      {relatedPages.services.map((svc) => (
+                        <Link
+                          key={svc.slug}
+                          href={`/services/${svc.slug}`}
+                          className="inline-block rounded-full border border-paper-200 bg-paper-50 px-4 py-1.5 text-sm font-body font-medium text-ink-800 transition-colors hover:border-gold-300 hover:bg-gold-50 hover:text-gold-700"
+                        >
+                          {svc.title}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                {relatedPages.verticals.length > 0 && (
+                  <div>
+                    <h3 className="font-heading text-sm font-bold text-ink-700 uppercase tracking-wider mb-3">
+                      Industry Expertise
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
+                      {relatedPages.verticals.map((vert) => (
+                        <Link
+                          key={vert.slug}
+                          href={`/verticals/${vert.slug}`}
+                          className="inline-block rounded-full border border-paper-200 bg-paper-50 px-4 py-1.5 text-sm font-body font-medium text-ink-800 transition-colors hover:border-gold-300 hover:bg-gold-50 hover:text-gold-700"
+                        >
+                          {vert.title}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             )}
           </article>

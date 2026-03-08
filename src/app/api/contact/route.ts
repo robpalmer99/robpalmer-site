@@ -8,6 +8,8 @@ function getResend() {
 }
 
 // ---------- Rate limiting (in-memory, per-IP) ----------
+// Note: In-memory rate limiting is best-effort on Vercel serverless.
+// Each cold start gets a fresh Map. The honeypot field provides additional bot protection.
 const RATE_LIMIT_WINDOW_MS = 60_000 // 1 minute
 const RATE_LIMIT_MAX = 5 // max requests per window
 
@@ -79,44 +81,45 @@ export async function POST(request: Request) {
       )
     }
 
-    // Length limits
-    if (name.length > MAX_NAME) {
+    // Trim all inputs before validation
+    const trimmedName = name.trim()
+    const trimmedEmail = email.trim()
+    const trimmedSubject = subject.trim()
+    const trimmedMessage = message.trim()
+
+    // Length limits (checked against trimmed values)
+    if (trimmedName.length > MAX_NAME) {
       return NextResponse.json(
         { error: `Name must be ${MAX_NAME} characters or fewer` },
         { status: 400 }
       )
     }
-    if (email.length > MAX_EMAIL) {
+    if (trimmedEmail.length > MAX_EMAIL) {
       return NextResponse.json(
         { error: `Email must be ${MAX_EMAIL} characters or fewer` },
         { status: 400 }
       )
     }
-    if (subject.length > MAX_SUBJECT) {
+    if (trimmedSubject.length > MAX_SUBJECT) {
       return NextResponse.json(
         { error: `Subject must be ${MAX_SUBJECT} characters or fewer` },
         { status: 400 }
       )
     }
-    if (message.length > MAX_MESSAGE) {
+    if (trimmedMessage.length > MAX_MESSAGE) {
       return NextResponse.json(
         { error: `Message must be ${MAX_MESSAGE.toLocaleString()} characters or fewer` },
         { status: 400 }
       )
     }
 
-    // Email format validation
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    // Email format validation (checked against trimmed value)
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmedEmail)) {
       return NextResponse.json(
         { error: 'Invalid email address' },
         { status: 400 }
       )
     }
-
-    const trimmedName = name.trim()
-    const trimmedEmail = email.trim()
-    const trimmedSubject = subject.trim()
-    const trimmedMessage = message.trim()
 
     await getResend().emails.send({
       from: 'Rob Palmer Website <contact@robpalmer.com>',

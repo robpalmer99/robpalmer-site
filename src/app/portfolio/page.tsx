@@ -8,8 +8,9 @@ import { CountUp } from '@/components/ui/CountUp'
 import { CTABanner } from '@/components/blocks/CTABanner'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { PortfolioGrid } from '@/components/blocks/PortfolioGrid'
-import { SITE_URL } from '@/lib/constants'
+import { SITE_URL, TESTIMONIAL_COUNT } from '@/lib/constants'
 import { portfolioItems } from './_data/portfolio'
+import { verticals } from '@/app/verticals/_data/verticals'
 
 export const metadata: Metadata = {
   title: 'Portfolio | Direct-Response Copywriting Work Samples',
@@ -141,7 +142,7 @@ export default function PortfolioPage() {
                 {
                   title: 'Client Testimonials',
                   description:
-                    '36+ verified testimonials from clients who hired me to write their highest-stakes copy.',
+                    `${TESTIMONIAL_COUNT} verified testimonials from clients who hired me to write their highest-stakes copy.`,
                   href: '/testimonials',
                   cta: 'Read Testimonials',
                 },
@@ -185,6 +186,26 @@ export default function PortfolioPage() {
                 </FadeIn>
               ))}
             </div>
+
+            {/* Browse by Industry */}
+            <FadeIn delay={400}>
+              <div className="mt-10 pt-8 border-t border-paper-200">
+                <h3 className="font-heading text-sm font-bold text-ink-700 uppercase tracking-wider mb-4 text-center">
+                  Browse by Industry
+                </h3>
+                <div className="flex flex-wrap justify-center gap-2">
+                  {verticals.map((vertical) => (
+                    <Link
+                      key={vertical.slug}
+                      href={`/verticals/${vertical.slug}`}
+                      className="inline-block rounded-full border border-paper-200 bg-paper-50 px-4 py-1.5 text-sm font-body font-medium text-ink-800 transition-colors hover:border-gold-300 hover:bg-gold-50 hover:text-gold-700"
+                    >
+                      {vertical.title}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </FadeIn>
           </div>
         </Container>
       </Section>

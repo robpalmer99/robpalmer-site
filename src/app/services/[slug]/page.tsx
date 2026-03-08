@@ -14,9 +14,10 @@ import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { DefinitionBox } from '@/components/ui/DefinitionBox'
-import { SITE_URL } from '@/lib/constants'
+import { SITE_URL, TESTIMONIAL_COUNT } from '@/lib/constants'
 import { testimonials } from '@/content/testimonials'
-import { getServiceBySlug, getAllServiceSlugs } from '../_data/services'
+import { getServiceBySlug, getAllServiceSlugs, services as allServices } from '../_data/services'
+import { verticals } from '@/app/verticals/_data/verticals'
 
 interface ServicePageProps {
   params: Promise<{ slug: string }>
@@ -42,13 +43,13 @@ export async function generateMetadata({
     openGraph: {
       title: service.metaTitle,
       description: service.metaDescription,
-      images: [{ url: service.heroImage, width: 800, height: 400 }],
+      images: [{ url: `${SITE_URL}${service.heroImage}`, width: 1200, height: 630 }],
     },
     twitter: {
       card: 'summary_large_image',
       title: service.metaTitle,
       description: service.metaDescription,
-      images: [service.heroImage],
+      images: [`${SITE_URL}${service.heroImage}`],
     },
   }
 }
@@ -154,9 +155,10 @@ export default async function ServicePage({ params }: ServicePageProps) {
                   <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
                     {section.heading}
                   </h2>
-                  <p className="mt-4 text-lg text-ink-700 leading-relaxed font-body">
-                    {section.content}
-                  </p>
+                  <p
+                    className="mt-4 text-lg text-ink-700 leading-relaxed font-body [&_a]:text-gold-600 [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-gold-700"
+                    dangerouslySetInnerHTML={{ __html: section.content }}
+                  />
                   {section.bullets && (
                     <ul role="list" className="mt-4 space-y-2">
                       {section.bullets.map((bullet, i) => (
@@ -247,7 +249,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                     href="/testimonials"
                     className="inline-flex items-center gap-2 font-heading text-sm font-semibold text-gold-600 hover:text-gold-700 transition-colors"
                   >
-                    Read all 36+ testimonials
+                    Read all {TESTIMONIAL_COUNT} testimonials
                     <span aria-hidden="true">&rarr;</span>
                   </Link>
                 </div>
@@ -319,11 +321,56 @@ export default async function ServicePage({ params }: ServicePageProps) {
         </Section>
       )}
 
+      {/* ───────────────────────────── Related Services ───────────────────────────── */}
+      {service.relatedServices && service.relatedServices.length > 0 && (
+        <Section
+          variant={service.portfolioItems.length > 0 ? 'default' : 'alt'}
+          divider
+        >
+          <Container>
+            <div className="max-w-4xl mx-auto">
+              <FadeIn>
+                <div className="text-center mb-10">
+                  <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
+                    Related Services
+                  </h2>
+                  <p className="mt-3 text-lg text-ink-700 font-body">
+                    Other direct-response copywriting services that complement{' '}
+                    {service.title.toLowerCase()}.
+                  </p>
+                </div>
+              </FadeIn>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                {service.relatedServices
+                  .map((slug) => allServices.find((s) => s.slug === slug))
+                  .filter(Boolean)
+                  .map((related, index) => (
+                    <FadeIn key={related!.slug} delay={index * 80}>
+                      <Link
+                        href={`/services/${related!.slug}`}
+                        className="group block rounded-xl border border-paper-200 bg-white p-4 text-center shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-1"
+                      >
+                        <span className="font-heading text-sm font-semibold text-ink-950 group-hover:text-gold-600 transition-colors">
+                          {related!.title}
+                        </span>
+                      </Link>
+                    </FadeIn>
+                  ))}
+              </div>
+              <FadeIn>
+                <div className="text-center mt-6">
+                  <Button href="/services" variant="outline">
+                    View All Services
+                  </Button>
+                </div>
+              </FadeIn>
+            </div>
+          </Container>
+        </Section>
+      )}
+
       {/* ───────────────────────────── Related Verticals ───────────────────────────── */}
-      <Section
-        variant={service.portfolioItems.length > 0 ? 'default' : 'alt'}
-        divider
-      >
+      <Section variant="alt" divider>
         <Container>
           <div className="max-w-4xl mx-auto">
             <FadeIn>
@@ -338,36 +385,19 @@ export default async function ServicePage({ params }: ServicePageProps) {
               </div>
             </FadeIn>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-              {[
-                {
-                  label: 'Health & Supplements',
-                  href: '/verticals/health-supplement-copywriter',
-                },
-                {
-                  label: 'Financial Services',
-                  href: '/verticals/financial-copywriter',
-                },
-                {
-                  label: 'E-Commerce & DTC',
-                  href: '/verticals/ecommerce-dtc-copywriter',
-                },
-                {
-                  label: 'ClickBank',
-                  href: '/verticals/clickbank-copywriter',
-                },
-                { label: 'SaaS', href: '/verticals/saas-copywriter' },
-                {
-                  label: 'Info Products',
-                  href: '/verticals/info-product-copywriter',
-                },
-              ].map((vertical, index) => (
-                <FadeIn key={vertical.href} delay={index * 80}>
+              {(service.relatedVerticals
+                ? verticals.filter((v) =>
+                    service.relatedVerticals!.includes(v.slug)
+                  )
+                : verticals
+              ).map((vertical, index) => (
+                <FadeIn key={vertical.slug} delay={index * 80}>
                   <Link
-                    href={vertical.href}
+                    href={`/verticals/${vertical.slug}`}
                     className="group block rounded-xl border border-paper-200 bg-white p-4 text-center shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-1"
                   >
                     <span className="font-heading text-sm font-semibold text-ink-950 group-hover:text-gold-600 transition-colors">
-                      {vertical.label}
+                      {vertical.title}
                     </span>
                   </Link>
                 </FadeIn>

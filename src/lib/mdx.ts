@@ -43,7 +43,11 @@ export interface BlogPostMeta {
   faqs?: BlogFAQ[]
 }
 
+let _cachedPosts: BlogPostMeta[] | null = null
+
 export function getAllBlogPosts(): BlogPostMeta[] {
+  if (_cachedPosts) return _cachedPosts
+
   if (!fs.existsSync(BLOG_DIR)) {
     return []
   }
@@ -58,6 +62,7 @@ export function getAllBlogPosts(): BlogPostMeta[] {
     .filter((post): post is BlogPostMeta => post !== null && post.published)
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 
+  _cachedPosts = posts
   return posts
 }
 

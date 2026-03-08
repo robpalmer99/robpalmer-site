@@ -29,6 +29,8 @@ export interface Vertical {
     category: string
   }[]
   faqs: FAQItem[]
+  relatedServices?: string[]
+  relatedVerticals?: string[]
 }
 
 export const verticals: Vertical[] = [
@@ -47,7 +49,7 @@ export const verticals: Vertical[] = [
     heroImageAlt: 'Health supplements and natural products',
     definition: {
       term: 'health & supplement copywriting',
-      text: 'Health and supplement copywriting is direct-response copy written specifically for nutritional supplements, nutraceuticals, and health products. It requires balancing aggressive conversion tactics with FTC and FDA compliance — writing claims that are persuasive enough to sell but careful enough to pass regulatory review and advertising platform policies.',
+      text: 'Health and supplement copywriting is direct-response copy written specifically for nutritional supplements, nutraceuticals, and health products. It requires balancing aggressive conversion tactics with <a href="https://www.ftc.gov/business-guidance/advertising-and-marketing/health-claims" target="_blank" rel="noopener noreferrer">FTC</a> and <a href="https://www.fda.gov/food/dietary-supplements" target="_blank" rel="noopener noreferrer">FDA</a> compliance — writing claims that are persuasive enough to sell but careful enough to pass regulatory review and advertising platform policies.',
     },
     sections: [
       {
@@ -139,6 +141,8 @@ export const verticals: Vertical[] = [
           'Conversion rates vary by offer, traffic source, and price point. However, my health supplement funnels consistently outperform industry averages. One client reported 8% conversion on cold traffic from a funnel I wrote. I focus on writing copy that moves specific metrics — not just vanity numbers.',
       },
     ],
+    relatedServices: ['vsl-copywriter', 'sales-page-copywriter', 'sales-letter-copywriter'],
+    relatedVerticals: ['clickbank-copywriter', 'ecommerce-dtc-copywriter'],
   },
   {
     title: 'Financial Copywriter',
@@ -161,7 +165,7 @@ export const verticals: Vertical[] = [
       {
         heading: 'Financial Copy That Converts and Complies',
         content:
-          'Financial copywriting demands a unique combination of persuasion skill and regulatory awareness. Having written for Fortune 500 financial brands including Morgan Stanley and Citibank, I understand how to craft compelling financial offers that respect compliance boundaries. Whether you are selling a trading newsletter, an investment course, a financial advisory service, or an insurance product, the copy needs to be aggressive enough to convert while careful enough to stay within SEC, FINRA, and FTC regulations.',
+          'Financial copywriting demands a unique combination of persuasion skill and regulatory awareness. Having written for Fortune 500 financial brands including Morgan Stanley and Citibank, I understand how to craft compelling financial offers that respect compliance boundaries. Whether you are selling a trading newsletter, an investment course, a financial advisory service, or an insurance product, the copy needs to be aggressive enough to convert while careful enough to stay within <a href="https://www.sec.gov" target="_blank" rel="noopener noreferrer">SEC</a>, <a href="https://www.finra.org" target="_blank" rel="noopener noreferrer">FINRA</a>, and <a href="https://www.ftc.gov" target="_blank" rel="noopener noreferrer">FTC</a> regulations.',
       },
       {
         heading: 'Fortune 500 Financial Foundations',
@@ -228,6 +232,8 @@ export const verticals: Vertical[] = [
           'Yes, I write for crypto, forex, and trading platforms. These niches have especially strict compliance requirements and skeptical audiences, which makes strong direct-response fundamentals even more critical. I focus on education-led angles that build trust before presenting the offer.',
       },
     ],
+    relatedServices: ['sales-letter-copywriter', 'email-copywriter', 'landing-page-copywriter'],
+    relatedVerticals: ['saas-copywriter', 'info-product-copywriter'],
   },
   {
     title: 'E-Commerce & DTC Copywriter',
@@ -321,6 +327,8 @@ export const verticals: Vertical[] = [
           'My DTC copy is designed to move three core metrics: conversion rate (turning more browsers into buyers), average order value (through upsells and cross-sells), and customer lifetime value (through retention and re-engagement sequences). The specific improvements depend on your current baseline, but the goal is always measurable revenue growth.',
       },
     ],
+    relatedServices: ['email-copywriter', 'ad-copywriter', 'landing-page-copywriter'],
+    relatedVerticals: ['health-supplement-copywriter', 'saas-copywriter'],
   },
   {
     title: 'ClickBank Copywriter',
@@ -337,13 +345,13 @@ export const verticals: Vertical[] = [
     heroImageAlt: 'Digital marketing analytics and performance metrics',
     definition: {
       term: 'ClickBank copywriting',
-      text: 'ClickBank copywriting is direct-response copy built specifically for the ClickBank affiliate marketplace. It requires understanding ClickBank\'s unique ecosystem — affiliate incentives, EPC (earnings per click) economics, gravity scoring, and compliance review processes — to create funnels that convert buyers AND attract top affiliates to promote your offer.',
+      text: 'ClickBank copywriting is direct-response copy built specifically for the <a href="https://www.clickbank.com" target="_blank" rel="noopener noreferrer">ClickBank</a> affiliate marketplace. It requires understanding ClickBank\'s unique ecosystem — affiliate incentives, EPC (earnings per click) economics, gravity scoring, and compliance review processes — to create funnels that convert buyers AND attract top affiliates to promote your offer.',
     },
     sections: [
       {
         heading: 'ClickBank Funnels That Win',
         content:
-          'ClickBank is a unique marketplace with its own ecosystem of affiliates, buyers, and success patterns. Writing copy that succeeds on ClickBank requires understanding what motivates affiliates to promote your offer, what converts ClickBank\'s buyer demographics, and how to structure funnels that maximize earnings per click (EPC) while maintaining sustainable refund rates. I have built ClickBank funnels that generate consistent, scalable revenue — the kind that attract top affiliates and keep them promoting month after month.',
+          '<a href="https://www.clickbank.com" target="_blank" rel="noopener noreferrer">ClickBank</a> is a unique marketplace with its own ecosystem of affiliates, buyers, and success patterns. Writing copy that succeeds on ClickBank requires understanding what motivates affiliates to promote your offer, what converts ClickBank\'s buyer demographics, and how to structure funnels that maximize earnings per click (EPC) while maintaining sustainable refund rates. I have built ClickBank funnels that generate consistent, scalable revenue — the kind that attract top affiliates and keep them promoting month after month.',
       },
       {
         heading: 'Engineered for Affiliate Appeal',
@@ -421,6 +429,8 @@ export const verticals: Vertical[] = [
           'Low refund rates start with honest, specific copy that sets accurate expectations. I avoid over-promising and focus on building genuine desire for the actual product being delivered. I also optimize the post-purchase experience — thank-you pages, onboarding emails, and consumption sequences — to ensure buyers feel good about their purchase.',
       },
     ],
+    relatedServices: ['vsl-copywriter', 'sales-funnel-copywriter', 'upsell-downsell-copywriter'],
+    relatedVerticals: ['health-supplement-copywriter', 'info-product-copywriter'],
   },
   {
     title: 'SaaS Copywriter',
@@ -514,6 +524,8 @@ export const verticals: Vertical[] = [
           'Both. B2B SaaS copy requires addressing multiple stakeholders and justifying ROI to decision-makers. B2C SaaS copy requires simplicity and emotional resonance. I adapt my approach to match your specific audience and sales motion.',
       },
     ],
+    relatedServices: ['landing-page-copywriter', 'email-copywriter', 'ad-copywriter'],
+    relatedVerticals: ['ecommerce-dtc-copywriter', 'financial-copywriter'],
   },
   {
     title: 'Info Product Copywriter',
@@ -610,6 +622,8 @@ export const verticals: Vertical[] = [
           'I work with you to define the transformation your course delivers, identify the ideal buyer, and craft the positioning before writing a word of copy. In fact, writing the sales copy first is a proven strategy — it forces clarity on the offer and validates demand before you invest in creating the content.',
       },
     ],
+    relatedServices: ['vsl-copywriter', 'sales-funnel-copywriter', 'email-copywriter'],
+    relatedVerticals: ['clickbank-copywriter', 'health-supplement-copywriter'],
   },
 ]
 

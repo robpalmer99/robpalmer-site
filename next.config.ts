@@ -33,7 +33,7 @@ const securityHeaders = [
     key: 'Content-Security-Policy',
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://assets.calendly.com https://va.vercel-scripts.com https://vitals.vercel-insights.com https://www.googletagmanager.com",
+      "script-src 'self' 'unsafe-inline' https://assets.calendly.com https://va.vercel-scripts.com https://vitals.vercel-insights.com https://www.googletagmanager.com",
       "style-src 'self' 'unsafe-inline' https://assets.calendly.com",
       "img-src 'self' data: https:",
       "font-src 'self'",
@@ -69,6 +69,64 @@ const nextConfig: NextConfig = {
           { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
         ],
       },
+    ]
+  },
+  async redirects() {
+    const oldBlogSlugs = [
+      '/10-ways-to-halve-your-google-ad-spend-and-double-your-leads',
+      '/forget-features-benefits-to-sell-more-focus-on-this-instead',
+      '/how-to-deploy-the-pyramid-of-promises-to-maximize-trust-and-sales',
+      '/how-to-sell-with-stories-turning-emotion-into-cash-in-the-bank',
+      '/borrow-the-money-making-secrets-of-political-fundraisers',
+      '/how-to-out-compete-big-brands-without-losing-your-shirt',
+      '/the-ultimate-writers-guide-to-good-style',
+      '/are-you-making-these-mistakes-in-email-marketing',
+      '/why-you-should-love-saturated-markets-dive-right-in',
+      '/customer-lifetime-value-win-the-facebook-ads-auction-every-time-2',
+      '/aerodynamic-copywriting',
+      '/copywriter-101-killer-copywriting-strategies-that-make-more-sales',
+      '/the-p-for-persuasion-copywriting-system-a-principle-that-pimps-your-profits',
+      '/nepal',
+      '/secret-weapon',
+      '/podcast-guest',
+      '/sales-funnel-optimization-the-weakest-link-problem',
+    ]
+
+    return [
+      {
+        source: '/industries',
+        destination: '/verticals',
+        permanent: true,
+      },
+      {
+        source: '/industries/:slug',
+        destination: '/verticals/:slug',
+        permanent: true,
+      },
+      // Old WordPress tag pages
+      {
+        source: '/tag/:path*',
+        destination: '/',
+        permanent: true,
+      },
+      // Old WordPress category pages
+      {
+        source: '/category/:path*',
+        destination: '/',
+        permanent: true,
+      },
+      // Old blog pagination
+      {
+        source: '/blog/page/:path*',
+        destination: '/',
+        permanent: true,
+      },
+      // Old blog posts and pages
+      ...oldBlogSlugs.map((slug) => ({
+        source: slug,
+        destination: '/',
+        permanent: true as const,
+      })),
     ]
   },
 }

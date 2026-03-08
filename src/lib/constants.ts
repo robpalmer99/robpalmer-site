@@ -36,9 +36,12 @@ export const FORTUNE_500_CLIENTS = [
   'Morgan Stanley',
 ] as const
 
+import { testimonials } from '@/content/testimonials'
+export const TESTIMONIAL_COUNT = `${testimonials.length}+`
+
 export const STATS = [
   { value: '$523M+', label: 'In Tracked Revenue' },
   { value: '5', label: 'Fortune 500 Clients' },
-  { value: '36+', label: 'Client Testimonials' },
+  { value: TESTIMONIAL_COUNT, label: 'Client Testimonials' },
   { value: '100s', label: 'Of Successful Projects' },
-] as const
+]
