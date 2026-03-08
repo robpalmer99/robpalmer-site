@@ -777,7 +777,7 @@ All planned features, content, and infrastructure work have been completed:
 
 ### Post-Launch Recommendations
 
-- Set up **Google Search Console** and submit sitemap
-- Monitor **Core Web Vitals** via Vercel Speed Insights dashboard
-- Cross-browser testing (Safari, Firefox, Edge)
+- ~~Set up **Google Search Console** and submit sitemap~~ ✅ Done — verified and sitemap submitted
+- Monitor **Core Web Vitals** via Vercel Speed Insights dashboard (check when traffic increases)
+- Cross-browser testing (Safari, Firefox, Edge) (check when traffic increases)
 - Monitor Google Analytics for traffic patterns and conversion tracking
