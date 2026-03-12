@@ -128,6 +128,27 @@ const nextConfig: NextConfig = {
         destination: '/blog',
         permanent: true,
       },
+      // Old WordPress pages with traffic — redirect to best equivalent
+      {
+        source: '/17-proven-bullet-point-tactics-that-skyrocket-engagement-sales',
+        destination: '/blog/copywriting-bullet-points',
+        permanent: true,
+      },
+      {
+        source: '/how-a-secret-weapon-hit-523m-in-sales-saved-hundreds-of-lives',
+        destination: '/case-studies/belron-safelite-523m-campaign',
+        permanent: true,
+      },
+      {
+        source: '/apple',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/home-cloned-at-2023-06-04-001834',
+        destination: '/',
+        permanent: true,
+      },
       // Old blog posts and pages
       ...oldBlogSlugs.map((slug) => ({
         source: slug,
