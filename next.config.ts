@@ -90,6 +90,7 @@ const nextConfig: NextConfig = {
       '/secret-weapon',
       '/podcast-guest',
       '/sales-funnel-optimization-the-weakest-link-problem',
+      '/how-i-became-the-worlds-first-blogger-digital-nomad-pioneer',
     ]
 
     return [
@@ -118,7 +119,13 @@ const nextConfig: NextConfig = {
       // Old blog pagination
       {
         source: '/blog/page/:path*',
-        destination: '/',
+        destination: '/blog',
+        permanent: true,
+      },
+      // Old blog post URLs that were under /blog/ path
+      {
+        source: '/blog/ai-sales-page-generator',
+        destination: '/blog',
         permanent: true,
       },
       // Old blog posts and pages
