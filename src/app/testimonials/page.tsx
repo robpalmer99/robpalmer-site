@@ -10,7 +10,7 @@ import { SITE_URL, TESTIMONIAL_COUNT } from '@/lib/constants'
 import { testimonials } from '@/content/testimonials'
 
 export const metadata: Metadata = {
-  title: 'Client Testimonials | Rob Palmer – Direct-Response Copywriter',
+  title: { absolute: 'Client Testimonials | Rob Palmer – Direct-Response Copywriter' },
   description:
     `Read what clients say about working with Rob Palmer. ${TESTIMONIAL_COUNT} testimonials from CEOs, marketing directors, and top direct-response marketers.`,
   alternates: {
