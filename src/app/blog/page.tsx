@@ -5,7 +5,7 @@ import { getPaginatedBlogPosts, getAllBlogPosts } from '@/lib/mdx'
 import { getSiteSearchIndex } from '@/lib/search'
 
 export const metadata: Metadata = {
-  title: 'Blog | Direct-Response Copywriting Insights',
+  title: 'Blog | Direct-Response Copywriting Tips & Insights | Rob Palmer',
   description:
     'Expert insights on direct-response copywriting, VSLs, sales funnels, email marketing, and AI-assisted copywriting from a 30-year veteran.',
   alternates: {
