@@ -3,7 +3,7 @@
 > **For agents:** This is the canonical SEO roadmap. Update status fields as posts are completed.
 > Check this file before starting any blog content work to avoid duplication and stay on-strategy.
 >
-> **Last reviewed:** 2026-03-18 | **Total posts live:** 127
+> **Last reviewed:** 2026-03-21 | **Total posts live:** 130
 
 ---
 
@@ -107,7 +107,7 @@ A post can support multiple pages via `tags` — but each post has one primary c
 
 | Status | Slug | Title | Primary Keyword | Notes |
 |--------|------|-------|----------------|-------|
-| `[ ]` | `google-ads-copywriting` | Google Ads Copywriting: How to Write PPC Copy That Earns Clicks and Converts | Google ads copywriting | High commercial intent |
+| `[x]` | `google-ads-copywriting` | Google Ads Copywriting: How to Write PPC Copy That Earns Clicks and Converts | Google ads copywriting | High commercial intent |
 | `[ ]` | `youtube-ad-copywriting` | YouTube Ad Copywriting: Hooks, Scripts, and Skippable Ad Formulas | YouTube ad copywriting | YouTube pre-roll = VSL lite; connects to VSL service |
 | `[ ]` | `native-ad-copywriting` | Native Ad Copywriting: How to Write Taboola and Outbrain Copy That Scales | native ad copywriting | Common traffic source in health/financial niches |
 | `[ ]` | `ad-copywriting-examples` | 27 Ad Copywriting Examples From Real High-Converting Campaigns | ad copywriting examples | Examples posts rank well and build links |
@@ -140,7 +140,7 @@ A post can support multiple pages via `tags` — but each post has one primary c
 |--------|------|-------|----------------|-------|
 | `[ ]` | `pas-copywriting-formula` | PAS Copywriting Formula: Problem-Agitate-Solution With Examples | PAS copywriting formula | AIDA post exists; PAS is equally searched |
 | `[ ]` | `before-after-bridge-copywriting` | Before-After-Bridge Copywriting: The BAB Formula That Works Everywhere | before after bridge copywriting | Strong formula post; low competition |
-| `[ ]` | `copywriting-hooks` | Copywriting Hooks: 47 Proven Opening Lines That Stop the Scroll | copywriting hooks | Hook writing is high-volume; connects to VSL/ads |
+| `[x]` | `copywriting-hooks` | Copywriting Hooks: 47 Proven Opening Lines That Stop the Scroll | copywriting hooks | Hook writing is high-volume; connects to VSL/ads |
 | `[ ]` | `guarantee-copywriting` | Guarantee Copywriting: How to Write Risk Reversals That Remove the Final Objection | guarantee copywriting | Persuasion tactic; links to all sales page posts |
 | `[ ]` | `price-anchoring-copywriting` | Price Anchoring in Copywriting: How to Make Your Offer Feel Like a Bargain | price anchoring copywriting | Conversion technique; connects sales page + funnel |
 
