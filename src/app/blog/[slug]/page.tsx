@@ -23,6 +23,7 @@ import { getBlogPostContent, getAllBlogSlugs, getRelatedPosts } from '@/lib/mdx'
 import { formatDate } from '@/lib/utils'
 import { SITE_URL } from '@/lib/constants'
 import { getRelatedPages } from '@/lib/content-links'
+import { ShareButtons } from '@/components/ui/ShareButtons'
 
 const mdxComponents = {
   DefinitionBox,
@@ -175,6 +176,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <time dateTime={post.meta.date} className="text-sm text-paper-600 font-heading">
                 {formatDate(post.meta.date)}
               </time>
+              <span className="text-sm text-paper-600 font-heading">•</span>
+              <ShareButtons url={`${SITE_URL}/blog/${slug}`} title={post.meta.title} />
             </div>
 
             {/* Post Content */}
@@ -193,6 +196,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 }}
               />
             </div>
+
+            {/* Share Banner */}
+            <ShareButtons url={`${SITE_URL}/blog/${slug}`} title={post.meta.title} variant="banner" />
 
             {/* Author Bio */}
             <div className="mt-12 pt-8 border-t border-paper-200">
