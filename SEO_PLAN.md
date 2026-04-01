@@ -3,7 +3,7 @@
 > **For agents:** This is the canonical SEO roadmap. Update status fields as posts are completed.
 > Check this file before starting any blog content work to avoid duplication and stay on-strategy.
 >
-> **Last reviewed:** 2026-03-21 | **Total posts live:** 130
+> **Last reviewed:** 2026-04-01 | **Total posts live:** 131
 
 ---
 
@@ -169,7 +169,7 @@ For reference — these clusters have sufficient coverage (≥4 posts).
 
 | Cluster | Post Count | Key Posts |
 |---------|-----------|-----------|
-| VSL | 6 | vsl-copywriting, what-is-a-vsl, vsl-cold-traffic-conversion-case-study, state-of-vsl-marketing-2026, long-form-sales-letter-vs-vsl, vsl-vs-sales-page |
+| VSL | 7 | vsl-copywriting, what-is-a-vsl, vsl-cold-traffic-conversion-case-study, state-of-vsl-marketing-2026, long-form-sales-letter-vs-vsl, vsl-vs-sales-page, free-vsl-copywriting-guide |
 | Sales Page | 6 | how-to-write-a-sales-page, sales-page-examples, how-long-should-a-sales-page-be, course-sales-page-copywriting, single-sales-page-vs-full-funnel, landing-page-vs-sales-page |
 | Email | 9 | email-copywriting, cold-email-copywriting, how-to-write-email-subject-lines, state-of-email-marketing-2026, email-sequence-vs-sales-funnel, saas-email-onboarding-sequences, ecommerce-email-flows, ai-email-sequence-generator, product-launch-email-sequence-case-study |
 | Landing Page | 6 | landing-page-copywriting, state-of-landing-pages-2026, landing-page-conversion-rate-optimization, landing-page-vs-sales-page, webinar-registration-page-copy, saas-landing-page-copy |
