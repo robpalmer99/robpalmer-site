@@ -157,6 +157,44 @@ const nextConfig: NextConfig = {
         destination: '/',
         permanent: true,
       },
+      // Service slug typo
+      {
+        source: '/services/sales-page-copywriting',
+        destination: '/services/sales-page-copywriter',
+        permanent: true,
+      },
+      // Old WordPress pages
+      {
+        source: '/home',
+        destination: '/',
+        permanent: true,
+      },
+      // Old blog posts with topical redirects
+      {
+        source: '/10-easy-ways-to-improve-your-google-ads-click-through-rate',
+        destination: '/blog/google-ads-copywriting',
+        permanent: true,
+      },
+      {
+        source: '/understanding-the-buyers-journey-aka-how-to-sell-a-horse',
+        destination: '/blog/direct-response-decision-framework',
+        permanent: true,
+      },
+      {
+        source: '/talk-em-down-from-the-ledge-marketing-save-your-prospect-from-making-a-suicidal-mistake',
+        destination: '/blog/conversion-copywriting',
+        permanent: true,
+      },
+      {
+        source: '/10-compelling-reasons-to-ditch-google-and-switch-to-facebook-ads',
+        destination: '/blog/facebook-ad-copywriting',
+        permanent: true,
+      },
+      {
+        source: '/10-steps-to-hiring-the-best-content-marketing-agency-in-2019',
+        destination: '/blog/how-to-hire-a-copywriter',
+        permanent: true,
+      },
       // Old blog posts and pages
       ...oldBlogSlugs.map((slug) => ({
         source: slug,
