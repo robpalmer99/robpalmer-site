@@ -7,6 +7,30 @@ import * as Sentry from "@sentry/nextjs";
 Sentry.init({
   dsn: "https://0b510f2d0ab66699aa23696dfecd40ed@o4511144096038912.ingest.us.sentry.io/4511144172060672",
 
+  // Ignore common errors caused by browser extensions, not our code
+  ignoreErrors: [
+    // Browser extension script injection failures
+    "Failed to execute 'importScripts' on 'WorkerGlobalScope'",
+    // Common extension / ad-blocker noise
+    "ResizeObserver loop",
+    "ResizeObserver loop completed with undelivered notifications",
+    // Extensions injecting into the page
+    /^Script error\.?$/,
+    // Chrome extensions
+    /chrome-extension:\/\//,
+    /moz-extension:\/\//,
+  ],
+  denyUrls: [
+    // Browser extensions
+    /extensions\//i,
+    /^chrome:\/\//i,
+    /^chrome-extension:\/\//i,
+    /^moz-extension:\/\//i,
+    /^safari-extension:\/\//i,
+    // Common ad/tracking scripts
+    /^blob:/,
+  ],
+
   // Add optional integrations for additional features
   integrations: [Sentry.replayIntegration()],
 
