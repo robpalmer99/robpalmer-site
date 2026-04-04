@@ -1124,55 +1124,101 @@ export const services: Service[] = [
     metaTitle: 'Sales Funnel Copywriter | End-to-End Funnel Copy',
     metaDescription:
       'Expert sales funnel copywriter with $523M+ in tracked results. End-to-end funnel copy from ad to upsell, optimized for maximum AOV and customer lifetime value.',
-    headline: 'Sales Funnel Copywriter',
+    headline: 'The Sales Funnel Copywriter Behind $523M+ in Results',
     subheadline:
-      'End-to-end funnel copy optimized for maximum AOV and lifetime value.',
+      'I write every page in your funnel \u2014 ads, landing pages, VSLs, sales pages, upsells, downsells, and email sequences \u2014 as a single persuasion system. The result: funnels that have generated $30M, $40M, and $27M for individual offers.',
     heroImage: '/images/services/sales-funnel-copywriter.jpg',
     heroImageAlt: 'Marketing funnel and conversion strategy for sales funnel copywriting',
-    definition: {
-      term: 'a sales funnel',
-      text: 'A sales funnel is a multi-step marketing system that guides prospects from first awareness through to purchase and beyond. Each step — ad, landing page, sales page, order bump, upsell, downsell, and follow-up sequence — is engineered to maximize both conversion rate and average order value across the entire customer journey.',
+    heroStats: {
+      primary: { value: '$523M+', label: 'Tracked Client Results' },
+      secondary: [
+        { value: '$30M+', label: 'Single Funnel Revenue' },
+        { value: '4%', label: 'Peak Funnel Conversion' },
+        { value: '40+', label: 'Years Direct Response' },
+      ],
+    },
+    credentialBar: {
+      heading: 'Complete funnels written for',
+      items: [
+        'ClickBank #1 Offers',
+        'Copy Accelerator (as Copy Chief)',
+        'DTC Brands',
+        'Supplement Marketers',
+        'Financial Publishers',
+        'Info Product Launches',
+      ],
     },
     sections: [
       {
-        heading: 'Why Hire a Specialist Sales Funnel Copywriter?',
+        heading: 'Why Most Funnels Leak Revenue at Every Step',
         content:
-          'A sales funnel is a system — and the copy at every step of that system must work together as a cohesive whole. Most businesses build their funnels piecemeal: one copywriter writes the ads, another writes the landing page, a third writes the sales page, and nobody writes the upsells with any strategic thought at all. The result is a funnel full of disconnects that leak revenue at every transition. A specialist sales funnel copywriter thinks in systems. Every piece of copy — from the first ad impression to the final downsell — is part of a unified persuasion architecture designed to maximize both conversion rate and average order value.',
+          'Here is how most funnels get built: one copywriter writes the ads. Another writes the landing page. A third writes the sales page. Nobody writes the upsells with any strategic thought at all. And the email follow-up? That is whoever had time. <strong>The result is a funnel full of disconnects that leak revenue at every transition.</strong> The ad promises one thing, the landing page says something slightly different, the sales page shifts tone again, and the upsells feel like they were bolted on as an afterthought. Each disconnect is a conversion drop. Multiply that across 5\u20138 pages and you are leaving 30\u201350% of your potential revenue on the table. A sales funnel is a system. The copy at every step must work together as a single persuasion narrative. That requires one strategic mind writing every page \u2014 not a committee of freelancers who have never spoken to each other.',
       },
       {
-        heading: 'Funnels That Maximize Every Click',
+        heading: 'What a $30M Funnel Looks Like From the Inside',
         content:
-          'A funnel is only as strong as its weakest step. I write complete funnel copy — ads, landing pages, sales pages, order bumps, upsells, and downsells — ensuring every transition is seamless and every step maximizes revenue. My sales funnel copywriting has generated $523M+ in tracked results for clients across health, finance, e-commerce, and info product verticals. The key is treating the funnel as a single persuasion narrative that unfolds across multiple pages, with each step building on the emotional momentum created by the previous one.',
+          'The <strong>Mobile Profits</strong> funnel did not generate <strong>$30 million</strong> because any single page was brilliant. It generated $30 million because every page in the funnel was engineered as part of one system. The ads pre-qualified traffic with the right hook. The VSL converted cold prospects at up to <strong>4%</strong>. The upsell sequence increased AOV without eroding trust. And the email follow-up captured the prospects who were not ready to buy on the first visit. That is what end-to-end sales funnel copywriting looks like: <strong>every page building on the emotional momentum of the previous one</strong>, every transition seamless, every upsell feeling like the natural next step. The same systems approach drove a <strong>$40M supplement funnel</strong> (Gluco 6), a <strong>$27M financial funnel</strong>, and a biz-op funnel converting at <strong>4.8% on the front end</strong>.',
       },
       {
-        heading: 'Funnel Architecture and Copy Strategy',
+        heading: 'The Copy Chief That Top Copywriters Hire',
         content:
-          'Before I write a single word of funnel copy, I map the complete customer journey from first touch to final purchase. This includes identifying the optimal funnel structure for your offer, planning the persuasion arc across all pages, determining where to place upsells and order bumps for maximum take rates, and engineering the email follow-up sequences that capture revenue from prospects who do not buy immediately. This strategic planning phase is what separates professional sales funnel copywriting from simply writing individual pages and hoping they work together.',
+          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park. These are people who build funnels for a living and know exactly what separates a funnel that scales from one that stalls. They work with me because I think in systems \u2014 not just pages.',
       },
       {
-        heading: 'Maximizing Average Order Value',
+        heading: 'How I Architect a Funnel That Maximizes Every Click',
         content:
-          'The real money in any funnel is not the front-end sale — it is the upsells, downsells, and order bumps that increase average order value. As a sales funnel copywriter, I engineer every post-purchase step to feel like a natural extension of the original buying decision. The upsell copy references the product they just bought, reinforces their smart decision, and presents the upgrade as the logical next step. This approach typically increases AOV by 30 to 100 percent without eroding customer trust or increasing refund rates.',
-      },
-      {
-        heading: 'Sales Funnel Copywriting Across Industries',
-        content:
-          'Each industry has different optimal funnel structures, price points, and upsell strategies. My cross-industry experience as a sales funnel copywriter means I can recommend and execute the funnel architecture that maximizes revenue in your specific market.',
+          'Before I write a single word, I map the complete customer journey from first touch to final purchase. Every decision in the funnel architecture is tied to a specific revenue outcome.',
         bullets: [
-          'ClickBank vendors — affiliate-optimized funnels with high EPC',
-          'Health and supplement brands — compliance-aware copy with subscription-focused upsells',
-          'Financial publishers — long-form persuasion with regulatory guardrails',
-          'SaaS companies — feature-focused sales pages and annual plan upgrades',
-          'E-commerce and DTC brands — product launch funnels with AOV maximization',
-          'Info product businesses — high-ticket funnels with webinar and application paths',
+          'Funnel strategy \u2014 I determine the optimal structure for your offer: how many upsells, where to place order bumps, whether you need a VSL or TSL on the front end, and how the email sequence integrates.',
+          'Persuasion arc \u2014 I plan the emotional narrative that unfolds across all pages. Each step builds on the momentum of the previous one so the prospect never feels a disconnect.',
+          'AOV engineering \u2014 I design upsells and downsells that feel like natural extensions of the original purchase, not random product pitches. This approach typically increases AOV by 30\u2013100% without increasing refund rates.',
+          'Conversion optimization \u2014 I deliver split test variations for every high-leverage page, with a testing roadmap that tells you what to test first and why.',
         ],
+      },
+      {
+        heading: 'The AOV Multiplier Most Funnels Miss',
+        content:
+          'The front-end sale gets all the attention. But <strong>the real money in any funnel is behind the buy button</strong> \u2014 the upsells, downsells, and order bumps that turn a $47 customer into a $150 customer. Most businesses treat post-purchase pages as an afterthought. I treat them as the most profitable copy in the entire funnel. The psychology is specific: the buyer has already committed, their wallet is open, and their brain is primed to say yes again \u2014 <em>if</em> the next offer feels like a logical extension of what they just bought. I engineer every post-purchase step to leverage that psychology, referencing the product they just bought, reinforcing their decision, and presenting the upgrade as the obvious next move.',
+      },
+      {
+        heading: 'Sales Funnel Copywriting for Every Vertical',
+        content:
+          'Different industries need different funnel structures. A supplement funnel with subscription upsells runs completely differently from a high-ticket coaching funnel with an application step. I have built complete funnels across all of them.',
+        bullets: [
+          'ClickBank vendors \u2014 affiliate-optimized funnels with high EPC, including the $30M Mobile Profits funnel (#1 on ClickBank)',
+          'Health and supplement brands \u2014 compliance-aware copy with subscription-focused upsells, including the $40M Gluco 6 funnel',
+          'Financial publishers \u2014 long-form persuasion funnels with regulatory guardrails',
+          'E-commerce and DTC brands \u2014 product launch funnels with AOV maximization',
+          'Info product businesses \u2014 high-ticket funnels with webinar and application paths',
+          'SaaS companies \u2014 trial-to-paid funnels with onboarding sequences',
+        ],
+      },
+    ],
+    caseStudies: [
+      {
+        name: 'Mobile Profits',
+        category: 'Complete Biz-Op Funnel',
+        metric: '$30M Generated',
+        detail: 'Up to 4% conversion. #1 ClickBank offer. Full funnel copy.',
+      },
+      {
+        name: 'Gluco 6',
+        category: 'Supplement Funnel',
+        metric: '$40M Generated',
+        detail: 'Complete funnel: VSL, upsells, email sequence.',
+      },
+      {
+        name: 'Biz-Op Hybrid Funnel',
+        category: 'Sales Page + VSL',
+        metric: '4.8% Front-End',
+        detail: 'Full-funnel copy including upsell sequence.',
       },
     ],
     deliverables: [
       {
         title: 'Complete Funnel Copy',
         description:
-          'All copy for every step of your funnel — ads, landing pages, sales pages, order forms, upsells, downsells, and thank-you pages.',
+          'All copy for every step \u2014 ads, landing pages, sales pages, order forms, upsells, downsells, and thank-you pages.',
       },
       {
         title: 'Funnel Architecture Map',
@@ -1182,7 +1228,7 @@ export const services: Service[] = [
       {
         title: 'Email Follow-Up Sequence',
         description:
-          'Post-purchase and abandoned cart email sequences designed to maximize customer lifetime value and recover lost sales.',
+          'Post-purchase and abandoned cart email sequences designed to maximize lifetime value and recover lost sales.',
       },
       {
         title: 'Order Bump Copy',
@@ -1192,50 +1238,58 @@ export const services: Service[] = [
       {
         title: 'Split Test Variations',
         description:
-          'Alternative versions of key funnel elements — headlines, offers, CTAs — designed for systematic A/B testing.',
+          'Alternative versions of key funnel elements \u2014 headlines, offers, CTAs \u2014 designed for systematic A/B testing.',
       },
       {
         title: 'Funnel Optimization Guide',
         description:
-          'Strategic document outlining testing priorities, key metrics to track, and optimization roadmap for ongoing improvement.',
+          'Testing priorities, key metrics, and optimization roadmap for ongoing improvement after launch.',
       },
     ],
-    testimonialIds: ['5', '4', '18', '12'],
+    deliverablesHeading: 'What You Get When You Hire Me',
+    deliverablesSubtext:
+      'Every deliverable is engineered to maximize revenue across the entire funnel \u2014 not just one page.',
+    testimonialIds: ['5', '4', '2', '18'],
     portfolioItems: [
       { title: 'Complete Health Supplement Funnel', category: 'Funnel' },
       { title: 'Info Product Launch Funnel', category: 'Funnel' },
       { title: 'E-Commerce DTC Funnel', category: 'Funnel' },
     ],
+    midCta: {
+      headline: 'Ready for a funnel that maximizes every click?',
+      subtext:
+        'Book a free strategy call. I\u2019ll audit your current funnel and show you exactly where the revenue is leaking.',
+    },
     faqs: [
       {
         question: 'What does a sales funnel copywriter do?',
         answer:
-          'A sales funnel copywriter writes all the copy that moves a prospect through the buying journey — from the initial ad or email to the landing page, sales page, order form, upsells, downsells, and follow-up sequences. The goal is to maximize conversion at every step and increase average order value while maintaining a cohesive persuasion narrative throughout.',
+          'I write all the copy that moves a prospect through the buying journey \u2014 from the initial ad to the landing page, sales page or VSL, order form, upsells, downsells, and email follow-up sequences. The key difference from hiring separate copywriters for each page: I design the entire funnel as one persuasion system, so every transition is seamless and every page builds on the momentum of the previous one.',
       },
       {
         question: 'How many pages are in a typical sales funnel?',
         answer:
-          'A typical direct-response funnel includes 5-8 pages: a landing or opt-in page, a sales page, an order form, 1-3 upsell pages, a downsell page, and a thank-you page. More complex funnels may include additional elements like webinar registration pages, replay pages, or application pages. I recommend the optimal structure based on your offer and market.',
+          'A typical direct-response funnel includes 5\u20138 pages: landing or opt-in page, sales page or VSL, order form, 1\u20133 upsell pages, a downsell page, and a thank-you page. More complex funnels add webinar registration, replay pages, or application pages. I recommend the optimal structure based on your offer, price point, and traffic source.',
       },
       {
         question: 'How long does it take to write a complete funnel?',
         answer:
-          'A complete funnel copywriting project typically takes 4-6 weeks from briefing to final deliverables. This includes research, strategic architecture planning, writing all funnel pages, email sequences, and one revision round. The timeline depends on the number of pages and complexity of the offer.',
+          'A complete funnel typically takes 4\u20136 weeks from briefing to final deliverables. That includes deep research, funnel architecture planning, writing every page, email sequences, and one revision round. The timeline depends on the number of pages and offer complexity. I never rush the research or architecture phases \u2014 that is where funnel revenue is won or lost.',
       },
       {
         question: 'Can you write funnel copy for ClickFunnels or other platforms?',
         answer:
-          'Yes. I write funnel copy that works across all major funnel-building platforms including ClickFunnels, Kartra, Kajabi, Shopify, and custom-built funnels. The copy is platform-agnostic — great funnel copy converts regardless of what software renders it.',
+          'Yes. I write funnel copy that works across ClickFunnels, Kartra, Kajabi, Shopify, and custom-built funnels. The copy is platform-agnostic \u2014 the Mobile Profits funnel that generated $30M would convert regardless of what software rendered it. Great funnel copy is about persuasion architecture, not platform features.',
       },
       {
         question: 'What is the most important page in a sales funnel?',
         answer:
-          'Every page matters, but the sales page typically has the biggest impact on overall funnel performance because it is where the primary buying decision happens. That said, I have seen funnels where optimizing the upsell sequence had a bigger impact on revenue than improving the sales page, because the upsells dramatically increased AOV. A specialist sales funnel copywriter treats every page as a revenue lever.',
+          'The sales page or VSL typically has the biggest impact on front-end conversion. But I have seen funnels where optimizing the upsell sequence had a bigger impact on total revenue than improving the sales page \u2014 because the upsells increased AOV by 50\u2013100%. That is why a funnel copywriter needs to treat every page as a revenue lever, not just the front end.',
       },
       {
         question: 'How much does sales funnel copywriting cost?',
         answer:
-          'Sales funnel copywriting is priced as a complete project, with the cost depending on the number of pages, complexity of the offer, and whether email sequences are included. Because funnel copy touches every revenue lever in your business, it tends to be the highest-ROI copywriting investment. Pricing is discussed during our initial strategy call.',
+          'Funnel copywriting is priced as a complete project, depending on the number of pages, offer complexity, and whether email sequences are included. It is the highest-ROI copywriting investment you can make \u2014 because it touches every revenue lever in your business simultaneously. A funnel that increases front-end conversion by 1% and AOV by 30% on the same traffic changes your entire unit economics.',
       },
     ],
     relatedServices: ['vsl-copywriter', 'email-copywriter', 'upsell-downsell-copywriter'],
