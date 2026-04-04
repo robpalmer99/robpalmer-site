@@ -109,6 +109,38 @@ export default async function ServicePage({ params }: ServicePageProps) {
         ]}
       />
 
+      {/* ───────────────────────────── Hero Stats Bar ───────────────────────────── */}
+      {service.heroStats && (
+        <section className="bg-ink-950 text-white noise-overlay py-10 sm:py-12">
+          <Container>
+            <FadeIn duration={800}>
+              <div className="max-w-4xl mx-auto text-center">
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-gold-400">
+                  {service.heroStats.primary.value}
+                </div>
+                <div className="mt-1 text-sm sm:text-base text-paper-400 font-body uppercase tracking-wide">
+                  {service.heroStats.primary.label}
+                </div>
+                {service.heroStats.secondary && service.heroStats.secondary.length > 0 && (
+                  <div className="mt-6 flex flex-wrap items-center justify-center gap-6 sm:gap-10">
+                    {service.heroStats.secondary.map((stat, index) => (
+                      <div key={index} className="text-center">
+                        <div className="text-2xl sm:text-3xl font-heading font-bold text-white">
+                          {stat.value}
+                        </div>
+                        <div className="mt-0.5 text-xs sm:text-sm text-paper-400 font-body uppercase tracking-wide">
+                          {stat.label}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </FadeIn>
+          </Container>
+        </section>
+      )}
+
       {/* ───────────────────────────── Hero Image ───────────────────────────── */}
       <section className="bg-paper-50">
         <Container>
@@ -129,8 +161,29 @@ export default async function ServicePage({ params }: ServicePageProps) {
         </Container>
       </section>
 
-      {/* ───────────────────────────── Definition Box ───────────────────────────── */}
-      {service.definition && (
+      {/* ───────────────────────────── Credential Bar or Definition Box ───────────────────────────── */}
+      {service.credentialBar ? (
+        <Section>
+          <Container>
+            <FadeIn>
+              <div className="max-w-4xl mx-auto text-center">
+                {service.credentialBar.heading && (
+                  <p className="text-sm text-paper-600 font-body uppercase tracking-wider mb-4">
+                    {service.credentialBar.heading}
+                  </p>
+                )}
+                <div className="flex flex-wrap items-center justify-center gap-3">
+                  {service.credentialBar.items.map((item, index) => (
+                    <Badge key={index} variant="gold">
+                      {item}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+            </FadeIn>
+          </Container>
+        </Section>
+      ) : service.definition ? (
         <Section>
           <Container>
             <FadeIn>
@@ -143,7 +196,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
             </FadeIn>
           </Container>
         </Section>
-      )}
+      ) : null}
 
       {/* ───────────────────────────── Main Content Sections ───────────────────────────── */}
       <Section>
@@ -179,6 +232,46 @@ export default async function ServicePage({ params }: ServicePageProps) {
         </Container>
       </Section>
 
+      {/* ───────────────────────────── Case Studies ───────────────────────────── */}
+      {service.caseStudies && service.caseStudies.length > 0 && (
+        <Section variant="gold">
+          <Container>
+            <div className="max-w-4xl mx-auto">
+              <FadeIn>
+                <div className="text-center mb-10">
+                  <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
+                    Proven VSL Results
+                  </h2>
+                  <p className="mt-3 text-lg text-ink-700 font-body">
+                    Real numbers from real offers.
+                  </p>
+                </div>
+              </FadeIn>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                {service.caseStudies.map((study, index) => (
+                  <FadeIn key={index} delay={index * 80} className="h-full">
+                    <div className="rounded-xl border border-paper-200 bg-white p-6 shadow-sm h-full text-center">
+                      <Badge variant="gold">{study.category}</Badge>
+                      <h3 className="mt-3 font-heading text-lg font-bold text-ink-950">
+                        {study.name}
+                      </h3>
+                      <div className="mt-2 text-3xl sm:text-4xl font-heading font-bold text-gold-600">
+                        {study.metric}
+                      </div>
+                      {study.detail && (
+                        <p className="mt-2 text-sm text-ink-700 font-body">
+                          {study.detail}
+                        </p>
+                      )}
+                    </div>
+                  </FadeIn>
+                ))}
+              </div>
+            </div>
+          </Container>
+        </Section>
+      )}
+
       {/* ───────────────────────────── Key Deliverables ───────────────────────────── */}
       <Section variant="alt" divider>
         <Container>
@@ -186,11 +279,10 @@ export default async function ServicePage({ params }: ServicePageProps) {
             <FadeIn>
               <div className="text-center mb-10">
                 <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
-                  What You Get
+                  {service.deliverablesHeading || 'What You Get'}
                 </h2>
                 <p className="mt-3 text-lg text-ink-700 font-body">
-                  Every deliverable is built on proven direct-response frameworks
-                  — not templates.
+                  {service.deliverablesSubtext || 'Every deliverable is built on proven direct-response frameworks — not templates.'}
                 </p>
               </div>
             </FadeIn>
@@ -214,8 +306,8 @@ export default async function ServicePage({ params }: ServicePageProps) {
 
       {/* ───────────────────────────── Mid-page CTA ───────────────────────────── */}
       <CTABanner
-        headline={`Ready to hire a ${service.title.toLowerCase()}?`}
-        subtext="Book a free strategy call to discuss your project."
+        headline={service.midCta?.headline || `Ready to hire a ${service.title.toLowerCase()}?`}
+        subtext={service.midCta?.subtext || 'Book a free strategy call to discuss your project.'}
         variant="gold"
       />
 
