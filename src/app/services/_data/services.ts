@@ -1487,117 +1487,171 @@ export const services: Service[] = [
       'Strategic AI copywriting consulting for teams and businesses. Workflow design, prompt engineering, and quality control — so your team gets AI speed without losing human craft.',
     metaTitle: 'AI Copywriting Consultant | AI-Powered Copy Strategy',
     metaDescription:
-      'Hire an AI copywriting consultant with 30+ years of direct-response experience. Rob Palmer helps teams integrate AI into their copywriting workflow without sacrificing quality or conversions.',
-    headline: 'AI Copywriting Consultant',
+      'Hire an AI copywriting consultant with 40+ years of direct-response experience. Rob Palmer helps teams integrate AI into their copywriting workflow without sacrificing quality or conversions.',
+    headline: 'The AI Copywriting Consultant With $523M+ in DR Results',
     subheadline:
-      'Get AI speed without losing human craft. Strategic consulting for teams who want to use AI right.',
+      'Your team has AI tools. What they don\u2019t have is 40 years of direct-response pattern recognition to tell those tools what to write. I bridge that gap \u2014 so you get AI speed without losing human craft.',
     heroImage: '/images/services/ai-copywriting-consultant.jpg',
     heroImageAlt: 'Artificial intelligence and technology for AI copywriting consulting',
-    definition: {
-      term: 'AI copywriting consulting',
-      text: 'AI copywriting consulting is a strategic service that helps businesses integrate artificial intelligence tools into their copywriting and marketing workflows. It combines human direct-response expertise with AI capabilities — research, variation generation, competitive analysis, and workflow automation — to produce better copy faster without sacrificing persuasion quality.',
+    heroStats: {
+      primary: { value: '40+ Years', label: 'Direct-Response Expertise Powering AI Workflows' },
+      secondary: [
+        { value: '$523M+', label: 'Tracked Client Results' },
+        { value: '200+', label: 'Frameworks in Vault' },
+        { value: 'Daily', label: 'AI Tool Usage Since 2023' },
+      ],
+    },
+    credentialBar: {
+      heading: 'AI copywriting consulting for',
+      items: [
+        'Copy Accelerator (as Copy Chief)',
+        'Direct-Response Teams',
+        'ClickBank Vendors',
+        'DTC Brands',
+        'Marketing Agencies',
+        'Solo Entrepreneurs',
+      ],
     },
     sections: [
       {
-        heading: 'Why Hire an AI Copywriting Consultant?',
+        heading: 'Your Team Has AI. They Still Can\u2019t Write Copy That Converts.',
         content:
-          'Everyone has access to <a href="https://openai.com/chatgpt" target="_blank" rel="noopener noreferrer">ChatGPT</a>, <a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Claude</a>, and a growing army of AI writing tools. Almost no one is using them to produce copy that actually converts. Most teams are generating mediocre first drafts, publishing them with minimal editing, and wondering why their conversion rates are dropping. The problem is not the technology — it is the strategy. AI is a force multiplier, but if you multiply zero direct-response skill by ten, you still get zero. An AI copywriting consultant bridges that gap: bringing the direct-response expertise that tells the AI what to write, and the quality control processes that ensure the output actually drives conversions.',
+          'Everyone has access to <a href="https://openai.com/chatgpt" target="_blank" rel="noopener noreferrer">ChatGPT</a>, <a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Claude</a>, and a growing army of AI writing tools. Almost no one is using them to produce copy that actually converts. Here is what I see: teams prompt AI with vague instructions, accept the first output, make surface-level edits, and publish. <strong>The result is copy that reads smoothly but sells poorly.</strong> Conversion rates drop. The team blames AI. But the problem is not the technology. AI is a force multiplier \u2014 but if you multiply zero direct-response skill by ten, you still get zero. What your team needs is not a better AI tool. It is <strong>someone who knows what great converting copy looks like</strong> designing the workflows, writing the prompts, and building the quality control systems that turn AI from a content generator into a conversion machine.',
       },
       {
-        heading: 'Most Teams Are Using AI Wrong',
+        heading: 'Why I Am Uniquely Positioned to Solve This',
         content:
-          'The most common mistake I see is teams using AI as a replacement for copywriting skill rather than an amplifier of it. They prompt ChatGPT with vague instructions, accept the first output, make surface-level edits, and publish. The result is copy that reads smoothly but lacks the persuasion architecture, emotional resonance, and strategic specificity that drives conversions. AI-generated copy tends to be generic, wordy, and structurally predictable — all traits that kill conversion rates. An AI copywriting consultant teaches your team to use AI as a research tool, an ideation accelerator, and a first-draft generator — while keeping the strategic thinking and persuasion craft firmly in human hands.',
+          'Most AI copywriting consultants are either <em>AI experts who do not understand direct response</em> or <em>copywriters who dabble in AI on the side</em>. I am neither. I have spent <strong>40+ years writing direct-response copy that has generated $523M+ in tracked results</strong> \u2014 VSLs, sales pages, email sequences, funnels, and ads across every major vertical. And I have spent the last several years building a <strong>vault of 200+ proven copywriting frameworks</strong> \u2014 Schwartz, Georgi, Kell, Makepeace, Carlton, Halbert \u2014 that I use as the strategic foundation for AI-assisted workflows. When I build an AI copywriting system for your team, the AI is not guessing what good copy looks like. It is guided by the same frameworks behind eight-figure offers. That is the difference between AI-generated content and AI-assisted direct-response copy.',
+      },
+      {
+        heading: 'The Copy Chief That Top Copywriters Hire',
+        content:
+          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. That role required evaluating, improving, and systematizing copywriting processes across dozens of high-performing copywriters and brands. It is the same skill set that makes AI copywriting consulting work: knowing what good looks like, building systems that produce it consistently, and training teams to maintain quality at scale.',
       },
       {
         heading: 'How I Help Your Team',
         content:
-          'I work with your copywriting team to build AI-assisted workflows that actually improve output quality — not just quantity. The result: your team produces better copy, faster, with measurable improvements in conversion metrics.',
+          'I work with your copywriting team to build AI-assisted workflows that actually improve output quality \u2014 not just quantity. Every engagement is customized to your specific copy types, markets, and team capabilities.',
         bullets: [
-          'Auditing your current copy process to identify where AI can add genuine value',
-          'Designing AI-enhanced workflows tailored to your specific needs and platforms',
-          'Developing custom prompt frameworks that produce on-brand, conversion-focused copy',
-          'Training your team on execution with hands-on practice sessions',
-          'Establishing quality control systems that catch the subtle ways AI degrades persuasion',
+          'Copy process audit \u2014 I identify where AI can add genuine value and where it is currently degrading your output quality',
+          'Custom AI workflow design \u2014 research, ideation, drafting, editing, and quality control phases, all tailored to your specific copy types (VSLs, sales pages, emails, ads)',
+          'Prompt engineering frameworks \u2014 not generic prompts, but systems built on proven direct-response frameworks that produce conversion-focused output',
+          'Hands-on team training \u2014 practical sessions where your team learns to use AI tools with the strategic thinking that drives conversions',
+          'Quality control playbooks \u2014 checklists and review processes that catch the subtle ways AI degrades persuasion, specificity, and emotional resonance',
         ],
       },
       {
-        heading: 'The Competitive Advantage of AI Copywriting',
+        heading: 'The Competitive Advantage Window Is Closing',
         content:
-          'The teams that figure out AI-assisted copywriting first will have an insurmountable competitive advantage. They will research markets in hours instead of weeks. They will test ten headline variations where competitors test two. They will analyze competitor funnels at scale and identify winning angles before anyone else. They will produce more copy, test more variations, and optimize faster than teams relying on either pure human effort or unguided AI output. I have spent 30+ years mastering direct-response copywriting and the last several years integrating AI into that craft. As an AI copywriting consultant, I can compress your team\'s learning curve from years to weeks — and give you a process that keeps improving as AI tools evolve.',
+          'The teams that figure out AI-assisted copywriting first will have an insurmountable advantage. They will research markets in hours instead of weeks. They will test ten headline variations where competitors test two. They will analyze competitor funnels at scale and find winning angles before anyone else. <strong>Right now, most teams are wasting this advantage on generic AI output.</strong> I can compress your team\u2019s learning curve from years to weeks \u2014 and give you a process that keeps improving as AI tools evolve. After 40+ years of direct response and several years of deep AI integration, I know exactly where AI adds leverage and where it creates liability. Your team gets the benefit of both.',
       },
       {
         heading: 'AI Copywriting for Direct-Response Brands',
         content:
-          'My AI copywriting consulting is specifically designed for direct-response brands and teams — not content marketers or brand copywriters. The frameworks I build are optimized for the specific demands of conversion-focused copy: VSLs, sales pages, email sequences, ad copy, and funnel assets. This means the prompt engineering, quality control processes, and workflow design are all calibrated to produce copy that drives measurable actions — clicks, opt-ins, purchases, and revenue — not just impressions and engagement metrics.',
+          'My AI copywriting consulting is specifically designed for direct-response brands and teams \u2014 not content marketers or brand copywriters. The frameworks I build are optimized for copy that drives measurable actions: clicks, opt-ins, purchases, and revenue.',
+        bullets: [
+          'VSL and sales page workflows \u2014 AI-assisted research, mechanism development, and hook generation guided by proven persuasion frameworks',
+          'Email sequence systems \u2014 AI-powered audience segmentation, subject line testing, and sequence architecture',
+          'Ad copy production \u2014 systematic hook generation, angle testing, and compliance-aware variation at scale',
+          'Funnel optimization \u2014 AI-assisted competitor analysis, conversion diagnostics, and split test planning',
+        ],
+      },
+    ],
+    caseStudies: [
+      {
+        name: 'Framework Vault',
+        category: 'AI Knowledge Base',
+        metric: '200+ Frameworks',
+        detail: 'Schwartz, Georgi, Kell, Makepeace, Carlton, Halbert \u2014 systematized for AI workflows.',
+      },
+      {
+        name: 'Copy Accelerator',
+        category: 'Copy Chief Role',
+        metric: 'Hired by Stefan Georgi',
+        detail: 'Systematizing copywriting quality across dozens of brands.',
+      },
+      {
+        name: 'AI-Enhanced Funnels',
+        category: 'Client Results',
+        metric: '$523M+ Tracked',
+        detail: 'AI research powering the same frameworks behind eight-figure results.',
       },
     ],
     deliverables: [
       {
         title: 'Copy Process Audit',
         description:
-          'Comprehensive review of your current copywriting workflow, identifying bottlenecks and opportunities for AI integration.',
+          'Comprehensive review of your current copywriting workflow, identifying where AI adds value and where it is degrading output.',
       },
       {
         title: 'Custom AI Workflow Design',
         description:
-          'Tailored AI-assisted workflow for your team, covering research, ideation, drafting, editing, and quality control phases.',
+          'Tailored AI-assisted workflow covering research, ideation, drafting, editing, and quality control \u2014 built for your specific copy types.',
       },
       {
         title: 'Prompt Engineering Framework',
         description:
-          'Library of tested prompts and prompt templates customized for your products, markets, and copy types.',
+          'Library of tested prompts built on proven DR frameworks, customized for your products, markets, and copy types.',
       },
       {
         title: 'Team Training Sessions',
         description:
-          'Hands-on training workshops teaching your team to use AI tools effectively while maintaining conversion-focused quality.',
+          'Hands-on workshops teaching your team to use AI with the strategic thinking that drives conversions \u2014 not generic AI training.',
       },
       {
         title: 'Quality Control Playbook',
         description:
-          'Checklist and review processes for catching the common ways AI degrades persuasion, clarity, and brand voice.',
+          'Checklists and review processes for catching the subtle ways AI degrades persuasion, specificity, and brand voice.',
       },
       {
         title: 'Ongoing Optimization',
         description:
-          'Follow-up consultation to review results, refine workflows, and adapt to new AI tools and capabilities.',
+          'Follow-up consultation to review results, refine workflows, and adapt to new AI capabilities as they emerge.',
       },
     ],
-    testimonialIds: ['2', '7', '19', '22'],
+    deliverablesHeading: 'What You Get When You Hire Me',
+    deliverablesSubtext:
+      'Every deliverable is designed to give your team AI speed with direct-response quality \u2014 a system they can run independently.',
+    testimonialIds: ['2', '4', '6', '7'],
     portfolioItems: [
-      { title: 'AI Workflow Design — Marketing Team', category: 'Consulting' },
-      { title: 'Prompt Framework — Health Niche', category: 'Consulting' },
+      { title: 'AI Workflow Design \u2014 Marketing Team', category: 'Consulting' },
+      { title: 'Prompt Framework \u2014 Health Niche', category: 'Consulting' },
     ],
+    midCta: {
+      headline: 'Ready to make AI actually work for your copy team?',
+      subtext:
+        'Book a free strategy call. I\u2019ll tell you exactly where AI is helping your output and where it\u2019s quietly making it worse.',
+    },
     faqs: [
       {
         question: 'What does an AI copywriting consultation involve?',
         answer:
-          'A typical engagement starts with an audit of your current copywriting process and output quality. Then I design a customized AI-assisted workflow, develop prompt frameworks for your specific use cases, train your team on execution, and establish quality control checkpoints. The goal is a repeatable system your team can run independently after the engagement concludes.',
+          'It starts with an audit of your current copywriting process and output quality. Then I design a customized AI-assisted workflow, develop prompt frameworks for your specific use cases, train your team on execution, and establish quality control checkpoints. The goal is a repeatable system your team runs independently after the engagement concludes \u2014 not a dependency on me.',
       },
       {
         question: 'Is AI copywriting consulting for teams or individuals?',
         answer:
-          'Both. I work with marketing teams at established companies who want to integrate AI into their existing workflow, and with individual entrepreneurs who want to leverage AI to produce better copy without hiring a full-time copywriter. The approach is customized to your specific situation, team size, and goals.',
+          'Both. I work with marketing teams at established companies who want to integrate AI into their workflow, and with individual entrepreneurs who want to leverage AI without hiring a full-time copywriter. The approach is customized to your situation. A solo founder gets a different system than a 10-person copy team.',
       },
       {
         question: 'Do you train our team on AI copywriting tools?',
         answer:
-          'Yes. Training is a core part of every AI copywriting consulting engagement. I teach your team how to use AI tools effectively for research, ideation, drafting, and editing — while maintaining the direct-response principles that actually drive conversions. This is not a generic AI workshop. It is hands-on training built around your specific products, markets, and copy needs.',
+          'Yes \u2014 and this is not a generic AI workshop. I teach your team to use AI tools for research, ideation, drafting, and editing while maintaining the direct-response principles that drive conversions. Training is hands-on, built around your specific products and markets, and includes the prompt frameworks and quality control systems we design together.',
       },
       {
         question: 'How is AI copywriting consulting different from just using ChatGPT?',
         answer:
-          'ChatGPT is a general-purpose tool. Without direct-response expertise guiding it, it produces generic copy that reads well but does not convert. My consulting gives your team the strategic frameworks, prompt engineering techniques, and quality control processes to get conversion-focused output from AI tools — the kind of copy that actually moves metrics, not just fills pages.',
+          'ChatGPT is a general-purpose tool. Without direct-response expertise guiding it, it produces copy that reads well but does not convert. My consulting gives your team the strategic frameworks (built on 200+ proven DR frameworks from my vault), prompt engineering techniques, and quality control processes to get conversion-focused output \u2014 the kind that moves metrics, not just fills pages.',
       },
       {
         question: 'What AI tools do you work with?',
         answer:
-          'I work with all major AI writing tools including ChatGPT, Claude, Gemini, and specialized copywriting AI platforms. The frameworks and processes I build are tool-agnostic — they work regardless of which AI tool you prefer, and they adapt as new tools emerge and existing ones improve.',
+          'ChatGPT, Claude, Gemini, and specialized platforms. But the tool matters less than the system around it. The workflows and prompt frameworks I build are tool-agnostic \u2014 they work regardless of which AI you prefer, and they adapt as tools evolve. I have been using AI daily in my own copywriting practice since 2023 and stay current as capabilities advance.',
       },
       {
         question: 'How much does AI copywriting consulting cost?',
         answer:
-          'AI copywriting consulting is priced on a project basis, with the scope depending on team size, complexity of your copy needs, and depth of training required. Options range from a focused workflow audit to a comprehensive multi-week engagement with ongoing optimization support. Pricing is discussed during our initial strategy call.',
+          'Pricing is project-based, depending on team size, copy complexity, and training depth. Options range from a focused workflow audit to a comprehensive multi-week engagement. But here is how I think about it: a team that produces better-converting copy 3x faster is not an expense \u2014 it is the highest-leverage investment in your marketing operation.',
       },
     ],
     relatedServices: ['vsl-copywriter', 'email-copywriter'],
