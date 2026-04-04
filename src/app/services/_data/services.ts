@@ -945,47 +945,101 @@ export const services: Service[] = [
     metaTitle: 'Landing Page Copywriter | High-Converting Landing Pages',
     metaDescription:
       'Expert landing page copywriter with $523M+ in tracked results. High-converting landing pages for lead generation, webinar registration, and direct sales.',
-    headline: 'Landing Page Copywriter',
+    headline: 'The Landing Page Copywriter Behind $523M+ in Results',
     subheadline:
-      'Landing pages engineered for maximum conversion rate.',
+      'Your landing page is where ad spend becomes revenue or gets wasted. I write landing pages that convert \u2014 with results like 8% on cold traffic, 4.8% front-end conversion, and squeeze pages that crush previous controls.',
     heroImage: '/images/services/landing-page-copywriter.jpg',
     heroImageAlt: 'Web design and landing page on laptop for landing page copywriting',
-    definition: {
-      term: 'a landing page',
-      text: 'A landing page is a standalone web page built for a single conversion goal — capturing a lead, driving a sale, or prompting a specific action. Unlike regular website pages, landing pages strip away navigation and distractions, focusing entirely on persuading the visitor to take one clearly defined next step.',
+    heroStats: {
+      primary: { value: '$523M+', label: 'Tracked Client Results' },
+      secondary: [
+        { value: '8%', label: 'Cold Traffic Conversion' },
+        { value: '4.8%', label: 'Front-End Conversion' },
+        { value: '40+', label: 'Years Direct Response' },
+      ],
+    },
+    credentialBar: {
+      heading: 'Landing pages written for',
+      items: [
+        'Lead Generation Funnels',
+        'Webinar Registration',
+        'ClickBank Vendors',
+        'DTC Brands',
+        'SaaS Free Trials',
+        'Info Product Launches',
+      ],
     },
     sections: [
       {
-        heading: 'Why Hire a Specialist Landing Page Copywriter?',
+        heading: 'Why Most Landing Pages Leak Money',
         content:
-          'A landing page has exactly one job: convert visitors into leads or customers. That single-minded focus makes landing page copywriting one of the most challenging specialties in direct response. Every element on the page — headline, subhead, body copy, social proof, form fields, and CTA button — must work together as a conversion machine with zero wasted space. A specialist landing page copywriter understands that the copy is not about what you want to say — it is about what your prospect needs to hear to take the action you want them to take. That prospect-first approach, built on research and testing, is what separates high-converting landing pages from the ones that leak visitors.',
+          'You are paying for every click that hits your landing page. Every single one. And right now, most of those clicks are bouncing \u2014 <strong>landing, scanning the headline, and leaving without taking action.</strong> The standard landing page conversion rate across industries is 2\u20135%. That means 95\u201398% of the traffic you paid for is walking away. Most of the time it is not because the offer is bad. It is because the landing page copy does not do its job. A landing page has exactly one job: convert the visitor into a lead or a buyer. That requires every element \u2014 headline, subhead, body copy, social proof, form fields, and CTA button \u2014 working together as a single conversion system with zero wasted space. One weak headline, one moment of friction, one unanswered objection \u2014 and the click you paid for is gone.',
       },
       {
-        heading: 'Landing Pages That Convert',
+        heading: 'What a Landing Page That "Crushes the Old One" Looks Like',
         content:
-          'A great landing page is a conversion machine. Every element — headline, sub-headline, body copy, social proof, and CTA — works together to move your visitor toward a single action. I build landing pages that eliminate friction, address objections, and make saying yes the easiest decision your prospect makes all day. Whether your goal is lead capture, webinar registration, free trial signup, or direct purchase, the principles are the same: match the message to the traffic source, make the offer irresistibly clear, and remove every possible reason to say no.',
+          'When a lead-gen specialist told me my squeeze page copy was <strong>"crushing the old one,"</strong> that was not a lucky rewrite. It was the result of the same process I use on every landing page: <strong>deep research into what the prospect actually needs to hear</strong> to take the next step, then building the page around those triggers with zero filler. The same approach drove an <strong>8% conversion rate on cold traffic</strong> for a DTC funnel, <strong>4.8% front-end conversion</strong> on a biz-op landing page, and a <strong>22% trial-to-paid lift</strong> on a SaaS onboarding page. The pattern is always the same: the headline matches the promise that earned the click, the copy addresses the one objection standing between the visitor and the action, and the CTA makes saying yes feel like the easiest decision they will make all day.',
       },
       {
-        heading: 'Landing Page Copywriting for Lead Generation',
+        heading: 'The Copy Chief That Top Copywriters Hire',
         content:
-          'Lead generation landing pages require a specific balance of persuasion and restraint. You need to create enough desire for the lead magnet to overcome the friction of entering personal information — but you also need to pre-qualify the lead so your sales team is not wasting time on unqualified prospects. My landing page copywriting for lead gen focuses on communicating the specific, tangible value of your offer while setting clear expectations about what happens next. The result is higher conversion rates AND higher lead quality.',
+          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park. These are people who test landing pages obsessively and know exactly what converts. They work with me because my copy performs \u2014 on landing pages, squeeze pages, and every other page that sits between ad spend and revenue.',
       },
       {
-        heading: 'Message Match and Traffic Alignment',
+        heading: 'Message Match: The Conversion Killer Nobody Talks About',
         content:
-          'One of the most overlooked aspects of landing page copywriting is message match — ensuring that the landing page copy aligns precisely with the ad, email, or content that drove the visitor there. When a prospect clicks an ad about a specific problem and lands on a page about something different, conversion rates collapse. I write landing pages that maintain perfect message continuity from traffic source to conversion, matching the language, tone, and promise that earned the click in the first place.',
+          'Here is why your landing page might be underperforming even with good copy: <strong>the message does not match the traffic source.</strong> Your prospect clicked an ad about a specific problem. They land on a page about something slightly different. The disconnect is subtle \u2014 maybe just a different angle or tone \u2014 but the conversion rate drops off a cliff. I write landing pages that maintain perfect message continuity from traffic source to conversion. That means the headline echoes the promise that earned the click, the language matches what the prospect expects to see, and the entire page feels like the natural next step \u2014 not a new conversation. This is one of the highest-leverage optimizations in landing page copywriting, and most copywriters ignore it completely.',
       },
       {
-        heading: 'Testing and Optimization',
+        heading: 'How I Write a Landing Page That Converts',
         content:
-          'The best landing page copywriters know that the first version is never the final version. I approach landing page copywriting with a testing mindset, delivering copy that includes built-in optimization opportunities: headline alternatives, CTA variations, and different proof element arrangements. I also provide strategic guidance on what to test first based on the expected impact on conversion rates, so your optimization efforts generate maximum ROI from minimum testing volume.',
+          'Every landing page I write follows a process refined over four decades. Each phase is tied to a specific conversion outcome.',
+        bullets: [
+          'Phase 1: Traffic source analysis \u2014 I study the ads, emails, or content driving traffic to understand exactly what promise earned the click. The landing page must fulfill that promise instantly.',
+          'Phase 2: Single-action architecture \u2014 I strip the page down to one goal, one offer, and one CTA. Every element either advances that conversion or gets cut.',
+          'Phase 3: Above-the-fold optimization \u2014 the headline, subhead, and CTA must make the value proposition clear in under 3 seconds. I deliver multiple variations for split testing.',
+          'Phase 4: Friction elimination \u2014 form field optimization, microcopy, trust signals, and social proof placement, all designed to remove every reason to hesitate.',
+        ],
+      },
+      {
+        heading: 'Landing Pages for Every Conversion Goal',
+        content:
+          'Different landing page types require different persuasion strategies. A lead-gen squeeze page needs enough desire to overcome form friction while pre-qualifying the lead. A webinar registration page must sell the event, not the product. A free trial page must reduce perceived risk to near zero. I have written high-converting landing pages across all of them.',
+        bullets: [
+          'Lead generation squeeze pages \u2014 including pages that crushed previous controls',
+          'Webinar and event registration pages',
+          'Free trial and SaaS signup pages \u2014 including a sequence that drove 22% trial-to-paid lift',
+          'Direct-sale landing pages for ClickBank, DTC, and info product offers',
+          'Bridge pages between ads and long-form sales funnels',
+          'Opt-in pages for email list building and lead magnets',
+        ],
+      },
+    ],
+    caseStudies: [
+      {
+        name: 'DTC Funnel Landing Page',
+        category: 'Lead Gen',
+        metric: '8% Cold Traffic Conversion',
+        detail: 'Landing page feeding a direct-sale funnel.',
+      },
+      {
+        name: 'Biz-Op Landing Page',
+        category: 'Direct Sale',
+        metric: '4.8% Front-End Conversion',
+        detail: 'Hybrid landing page with embedded VSL.',
+      },
+      {
+        name: 'Chatterkick Onboarding',
+        category: 'SaaS Trial',
+        metric: '22% Trial-to-Paid Lift',
+        detail: 'Landing page and onboarding flow for SaaS platform.',
       },
     ],
     deliverables: [
       {
         title: 'Full Landing Page Copy',
         description:
-          'Complete landing page copy optimized for your specific conversion goal — lead capture, registration, trial signup, or direct sale.',
+          'Complete landing page copy optimized for your specific conversion goal \u2014 lead capture, registration, trial signup, or direct sale.',
       },
       {
         title: 'Headline & CTA Variations',
@@ -1013,42 +1067,50 @@ export const services: Service[] = [
           'One comprehensive revision round plus testing prioritization guide for ongoing optimization.',
       },
     ],
-    testimonialIds: ['16', '24', '29', '22'],
+    deliverablesHeading: 'What You Get When You Hire Me',
+    deliverablesSubtext:
+      'Every deliverable is engineered to maximize conversion rate \u2014 not just fill a page.',
+    testimonialIds: ['16', '4', '2', '6'],
     portfolioItems: [
-      { title: 'Lead Gen Landing Page — SaaS', category: 'Landing Page' },
+      { title: 'Lead Gen Landing Page \u2014 SaaS', category: 'Landing Page' },
       { title: 'Webinar Registration Page', category: 'Landing Page' },
       { title: 'Free Trial Signup Page', category: 'Landing Page' },
     ],
+    midCta: {
+      headline: 'Ready for a landing page that actually converts?',
+      subtext:
+        'Book a free strategy call. I\u2019ll tell you exactly where your current page is leaking conversions \u2014 and how to fix it.',
+    },
     faqs: [
       {
         question: 'What is the difference between a landing page and a sales page?',
         answer:
-          'A landing page is typically shorter and focused on a single conversion action like lead capture, webinar registration, or free trial signup. A sales page is longer and designed to take someone through the entire buying decision in one visit. Both require direct-response copywriting skills, but the strategy, length, and persuasion intensity differ significantly.',
+          'A landing page is typically shorter and focused on a single conversion action \u2014 lead capture, webinar registration, or free trial signup. A sales page is longer and designed to take someone through the entire buying decision in one visit. Both require direct-response skills, but landing pages demand tighter copy, faster value communication, and ruthless elimination of friction. I write both.',
       },
       {
         question: 'What makes a landing page convert well?',
         answer:
-          'High-converting landing pages share several characteristics: a clear, benefit-driven headline that matches the traffic source, focused copy that addresses a single offer, strong social proof, minimal navigation distractions, and a prominent CTA with low-friction form design. The specific formula depends on your offer, audience, and traffic temperature.',
+          'Message match with the traffic source, a headline that communicates the value proposition in under 3 seconds, focused copy that addresses a single offer, strong social proof, and a CTA with minimal friction. But the biggest factor most people miss is what I call the "promise chain" \u2014 the landing page must instantly fulfill the promise that earned the click. Break that chain and conversions collapse.',
       },
       {
         question: 'Do you design landing pages or just write the copy?',
         answer:
-          'I focus on the copy, which is the primary driver of landing page conversion rates. However, I provide wireframe guidance, layout recommendations, and design notes so your designer or developer can build the page in a way that supports the copy strategy. Copy and design should work together, and I make sure my deliverables facilitate that.',
+          'I focus on the copy, which is the primary driver of landing page conversion rates. But I deliver above-the-fold wireframes, layout recommendations, and design notes so your designer or developer builds the page in a way that supports the copy strategy. Copy and design must work together \u2014 my deliverables ensure they do.',
       },
       {
         question: 'How important is the headline on a landing page?',
         answer:
-          'The headline is the single most important element on any landing page. It determines whether a visitor stays or bounces in the first 2-3 seconds. That is why I deliver multiple headline variations for testing — even a small improvement in headline performance can dramatically increase overall conversion rates.',
+          'The headline determines whether a visitor stays or bounces in the first 2\u20133 seconds. On paid traffic, every bounce is money lost. That is why I deliver multiple headline variations for testing \u2014 even a small headline improvement can dramatically increase your conversion rate and cut your effective cost per lead or sale.',
       },
       {
         question: 'Can you write landing pages for paid traffic campaigns?',
         answer:
-          'Yes, and this is one of my specialties. Landing pages for paid traffic require precise message match with the ads driving the traffic, and they need to convert efficiently because every non-converting visitor costs you money. I work closely with your media buying team to ensure the landing page copy aligns with your ad angles and audience targeting.',
+          'This is one of my specialities. Landing pages for paid traffic must convert efficiently because every non-converting visitor costs you money. I study your ad angles and audience targeting to ensure the landing page copy creates a seamless experience from click to conversion \u2014 not a disconnect that wastes ad spend.',
       },
       {
         question: 'How much does landing page copywriting cost?',
         answer:
-          'Landing page copywriting is priced on a project basis, depending on the complexity of the offer, the amount of research required, and the deliverables included. Pricing is discussed during our initial strategy call. Given that even small conversion improvements on a landing page can generate significant ROI, the investment typically pays for itself quickly.',
+          'Landing page copywriting is project-based, and pricing depends on complexity, research scope, and deliverables. But here is how I think about it: if your landing page converts at 3% instead of 2%, that is a 50% improvement on the same traffic. At serious daily ad budgets, that difference pays for the copywriter in the first week and keeps paying every day after.',
       },
     ],
     relatedServices: ['ad-copywriter', 'sales-page-copywriter'],
