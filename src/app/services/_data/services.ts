@@ -1303,52 +1303,107 @@ export const services: Service[] = [
     metaTitle: 'Upsell & Downsell Copywriter | Maximize AOV',
     metaDescription:
       'Expert upsell and downsell copywriter with $523M+ in tracked results. Post-purchase copy that maximizes average order value without eroding customer trust.',
-    headline: 'Upsell & Downsell Copywriter',
+    headline: 'The Upsell & Downsell Copywriter Behind $523M+ in Results',
     subheadline:
-      'Post-purchase copy that turns one sale into three.',
+      'The most profitable copy in your funnel is behind the buy button. I write upsell and downsell sequences that increase AOV by 30\u2013100% \u2014 without a single additional ad dollar.',
     heroImage: '/images/services/upsell-downsell-copywriter.jpg',
     heroImageAlt: 'E-commerce checkout and purchase optimization for upsell copywriting',
-    definition: {
-      term: 'upsell & downsell copy',
-      text: 'Upsell and downsell copy are post-purchase persuasion pages that appear immediately after a customer buys. An upsell offers a complementary or premium product at a higher price; a downsell offers a scaled-back alternative if the upsell is declined. Together, they maximize average order value (AOV) from existing buyers — the most profitable traffic you will ever have.',
+    heroStats: {
+      primary: { value: '30\u2013100%', label: 'Typical AOV Increase' },
+      secondary: [
+        { value: '$0', label: 'Additional Ad Spend Required' },
+        { value: '40+', label: 'Years Direct Response' },
+        { value: '$523M+', label: 'Tracked Client Results' },
+      ],
+    },
+    credentialBar: {
+      heading: 'Upsell sequences written for',
+      items: [
+        'ClickBank #1 Offers',
+        'Supplement Funnels',
+        'DTC Brands',
+        'Info Product Launches',
+        'SaaS Platforms',
+        'Financial Publishers',
+      ],
     },
     sections: [
       {
-        heading: 'Why Hire a Specialist Upsell & Downsell Copywriter?',
+        heading: 'You Have a Converting Front End. Now You Are Leaving Money on the Table.',
         content:
-          'The moment after a customer says yes is the most profitable moment in your entire funnel — and it is the moment most businesses handle the worst. Generic upsell pages with weak copy and disconnected offers leave enormous revenue on the table. A specialist upsell and downsell copywriter understands the unique psychology of the post-purchase moment: the buyer has already committed, their wallet is open, and their brain is wired to say yes again if the next offer feels like a natural, logical extension of what they just bought. That psychology requires a specific approach to copy, offer positioning, and urgency that differs fundamentally from front-end sales copywriting.',
+          'Your funnel is working. Traffic is converting. But when you look at your average order value, you know there is more there. <strong>The moment after a customer says yes is the most profitable moment in your entire funnel</strong> \u2014 and it is the moment most businesses handle the worst. Generic upsell pages with disconnected offers and weak copy. Downsells that feel like a guilt trip. Order bumps that nobody clicks. Every one of those is revenue you already earned the right to collect \u2014 because the hardest part is already done. The customer has their wallet open. Their brain is primed to say yes again. All you need is copy that makes the next offer feel like the natural, logical, obvious next step. That is a specific skill \u2014 and it is fundamentally different from front-end sales copywriting.',
       },
       {
-        heading: 'The Easiest Revenue You Will Ever Generate',
+        heading: 'What 30\u2013100% More Revenue Looks Like on the Same Traffic',
         content:
-          'The right upsell copy can double or triple your average order value without requiring a single additional ad dollar. Think about what that means for your business: you are paying the same acquisition cost but extracting two to three times more revenue from each customer. I write upsell and downsell sequences that feel like a natural extension of the original offer — not a cash grab. The key is making each upsell genuinely enhance the value of the product the customer just purchased, so saying yes feels like the smart thing to do rather than a pressure tactic.',
+          'Think about what a 50% AOV increase means for your business. You are paying the <em>exact same acquisition cost</em> but extracting 50% more revenue from each customer. Your front-end breakeven point drops. Your media buyer can bid more aggressively. Your entire funnel economics shift. The upsell sequences I wrote for funnels like <strong>Mobile Profits ($30M, #1 on ClickBank)</strong> and <strong>Gluco 6 ($40M)</strong> were not afterthoughts \u2014 they were engineered as part of the conversion system from day one. Each upsell referenced the product the customer just bought, reinforced their decision, and presented the upgrade as the obvious next move. The result: AOV increases that made the difference between a profitable funnel and an eight-figure funnel.',
       },
       {
-        heading: 'The Psychology of Post-Purchase Upselling',
+        heading: 'The Post-Purchase Psychology Most Copywriters Miss',
         content:
-          'Effective upsell copywriting leverages several psychological principles that are unique to the post-purchase moment. A skilled upsell copywriter harnesses all of these forces to present the upsell as the obvious, logical, and desirable next step — not an interruption in the buying process.',
+          'Upsell copy is not just "more selling." It leverages psychological forces that only exist in the post-purchase moment \u2014 and they are decaying with every second. A specialist upsell copywriter knows how to harness all of them before the window closes.',
         bullets: [
-          'Commitment and consistency — the buyer has already said yes and wants to remain consistent with that decision',
-          'The endowment effect — they already feel ownership of the initial product and want to protect their investment',
-          'Momentum — the buying energy is at its peak and declining with every second',
+          'Commitment and consistency \u2014 the buyer just said yes and their brain wants to stay consistent with that decision. The upsell must feel like a continuation, not a new pitch.',
+          'The endowment effect \u2014 they already feel ownership of the initial product. The upsell is positioned as protecting and enhancing that investment.',
+          'Buying momentum \u2014 the energy is at its peak the moment after the first purchase and declining every second. The copy must be concise, confident, and friction-free.',
+          'Trust transfer \u2014 you just delivered on the front-end promise. That trust carries forward, but only if the upsell feels genuine and not like a bait-and-switch.',
         ],
       },
       {
-        heading: 'Upsell and Downsell Sequence Architecture',
+        heading: 'How I Architect an Upsell Sequence That Maximizes AOV',
         content:
-          'The best upsell sequences are not just a series of unrelated offers — they are a strategic escalation designed to maximize revenue while maintaining customer satisfaction. The first upsell is typically the most closely related to the initial purchase, commanding the highest take rate. If declined, the downsell offers a lower-priced alternative or a different angle on the same value. Subsequent upsells may offer complementary products, subscriptions, or premium upgrades. I architect each sequence to maximize total AOV while keeping refund rates low and customer satisfaction high.',
+          'The best upsell sequences are not random product offers \u2014 they are a strategic escalation designed to extract maximum revenue while keeping refund rates low and customer satisfaction high.',
+        bullets: [
+          'Upsell 1 \u2014 the most closely related to the initial purchase, commanding the highest take rate. This is where 60\u201370% of your upsell revenue comes from.',
+          'Downsell 1 \u2014 if they decline, a lower-priced alternative or different angle on the same value. This recovers revenue from price-sensitive buyers.',
+          'Upsell 2 \u2014 a complementary product, subscription, or premium upgrade. Take rates are lower but still profitable because the traffic is free.',
+          'Order bump \u2014 a small add-on on the checkout page with 20\u201340% take rates. Low friction, high incremental revenue.',
+          'Thank-you page \u2014 reinforces the buying decision, reduces refund anxiety, and seeds future engagement.',
+        ],
+      },
+      {
+        heading: 'The Copy Chief That Top Copywriters Hire',
+        content:
+          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff gave me a public shoutout for knocking it out of the park. These are people who understand that the upsell sequence is where funnel profitability is won or lost. They work with me because I treat post-purchase copy with the same strategic rigor as the front end \u2014 not as an afterthought.',
       },
       {
         heading: 'Upsell Copywriting Across Industries',
         content:
-          'I have written upsell and downsell sequences for health supplement funnels, financial info products, e-commerce and DTC brands, ClickBank offers, SaaS platforms, and coaching programs. Each industry has different optimal upsell strategies. Supplement funnels often benefit from subscription upsells and multi-bottle bundles. Info products benefit from coaching or community upgrades. SaaS platforms benefit from annual plan upsells and feature tier upgrades. My cross-industry experience means I can recommend and execute the upsell strategy that maximizes revenue in your specific market.',
+          'Every industry has different optimal upsell strategies. The wrong upsell structure for your market will leave money on the table or, worse, increase refund rates. I have written converting upsell sequences across all of them.',
+        bullets: [
+          'Supplement funnels \u2014 subscription upsells, multi-bottle bundles, and complementary formula offers',
+          'ClickBank and affiliate offers \u2014 high-EPC upsell sequences that keep affiliates promoting your offer',
+          'Info products and coaching \u2014 premium tier upgrades, community access, and done-for-you add-ons',
+          'E-commerce and DTC \u2014 product bundles, warranty upsells, and VIP subscription tiers',
+          'SaaS platforms \u2014 annual plan upgrades, feature tier upsells, and onboarding add-ons',
+        ],
+      },
+    ],
+    caseStudies: [
+      {
+        name: 'Mobile Profits',
+        category: 'Biz-Op Upsell Sequence',
+        metric: '$30M Total Funnel',
+        detail: 'Upsell sequence engineered as part of #1 ClickBank offer.',
+      },
+      {
+        name: 'Gluco 6',
+        category: 'Supplement Upsells',
+        metric: '$40M Total Funnel',
+        detail: 'Subscription and bundle upsells for cold traffic funnel.',
+      },
+      {
+        name: 'Supplement Funnel',
+        category: 'Post-Purchase Sequence',
+        metric: '300% ROAS',
+        detail: 'Upsell sequence that shifted funnel from breakeven to profitable.',
       },
     ],
     deliverables: [
       {
         title: 'Upsell Page Copy',
         description:
-          'Complete copy for 1-3 upsell pages with video script or text sales letter format, urgency elements, and one-click CTA.',
+          'Complete copy for 1\u20133 upsell pages with video script or text format, urgency elements, and one-click CTA.',
       },
       {
         title: 'Downsell Page Copy',
@@ -1358,60 +1413,68 @@ export const services: Service[] = [
       {
         title: 'Order Bump Copy',
         description:
-          'Compelling order bump copy for the checkout page that adds value and increases AOV with minimal friction.',
+          'Compelling order bump copy for the checkout page \u2014 typically 20\u201340% take rates with the right positioning.',
       },
       {
         title: 'Upsell Sequence Strategy',
         description:
-          'Strategic document outlining the optimal upsell flow, offer sequencing, pricing, and expected take rates.',
+          'Strategic document outlining optimal upsell flow, offer sequencing, pricing, and expected take rates for your market.',
       },
       {
         title: 'Thank-You Page Copy',
         description:
-          'Post-purchase thank-you page that reinforces the buying decision, reduces refund anxiety, and sets up future engagement.',
+          'Post-purchase page that reinforces the buying decision, reduces refund anxiety, and seeds future engagement.',
       },
       {
         title: 'Revision Round',
         description:
-          'One comprehensive revision round across the full upsell/downsell sequence, plus optimization recommendations.',
+          'One comprehensive revision round across the full sequence, plus optimization recommendations.',
       },
     ],
-    testimonialIds: ['4', '5', '18', '14'],
+    deliverablesHeading: 'What You Get When You Hire Me',
+    deliverablesSubtext:
+      'Every deliverable is engineered to maximize the revenue you extract from traffic you have already paid for.',
+    testimonialIds: ['4', '5', '2', '18'],
     portfolioItems: [
       { title: 'Supplement Funnel Upsell Sequence', category: 'Upsell' },
       { title: 'Info Product Upsell Chain', category: 'Upsell' },
       { title: 'E-Commerce Order Bump + Upsell', category: 'Upsell' },
     ],
+    midCta: {
+      headline: 'Ready to stop leaving money behind the buy button?',
+      subtext:
+        'Book a free strategy call. I\u2019ll audit your current upsell sequence and tell you exactly how much AOV you\u2019re leaving on the table.',
+    },
     faqs: [
       {
         question: 'How much can upsells increase AOV?',
         answer:
-          'Well-crafted upsell sequences typically increase average order value by 30 to 100 percent. In some niches, I have seen upsell sequences triple the initial purchase value. The key is making each upsell feel like a logical and desirable next step rather than a hard sell, and pricing the upsells relative to the initial purchase in a way that feels proportional.',
+          'Well-crafted upsell sequences typically increase average order value by 30\u2013100%. In some niches, I have seen upsell sequences triple the initial purchase value. The key is making each upsell feel like a logical next step \u2014 not a hard sell \u2014 and pricing relative to the initial purchase in a way that feels proportional and fair.',
       },
       {
         question: 'What is the difference between an upsell and a downsell?',
         answer:
-          'An upsell is a higher-value offer presented after the initial purchase — such as a premium version, bundle, or complementary product. A downsell is a lower-priced alternative offered when the customer declines the upsell. Downsells recover revenue from customers who wanted more value but were not ready for the upsell price point.',
+          'An upsell is a higher-value offer presented after the initial purchase \u2014 a premium version, bundle, or complementary product. A downsell is a lower-priced alternative offered when the customer declines the upsell. Downsells recover revenue from buyers who wanted more value but were not ready for the upsell price point. Both should feel like natural extensions of the original purchase.',
       },
       {
         question: 'What is an order bump?',
         answer:
-          'An order bump is a small add-on offer presented directly on the checkout page, typically with a checkbox. Because the customer is already in the process of entering payment information, order bumps have very high take rates (often 20-40 percent) and can significantly increase AOV with minimal friction. I write order bump copy that positions the add-on as an irresistible complement to the main purchase.',
+          'An order bump is a small add-on offer on the checkout page, typically with a checkbox. Because the customer is already entering payment information, order bumps see 20\u201340% take rates and can significantly increase AOV with almost zero friction. I write order bump copy that positions the add-on as the obvious complement to the main purchase.',
       },
       {
         question: 'How many upsells should a funnel have?',
         answer:
-          'Most funnels perform best with 1-3 upsell offers plus 1-2 downsells. Too few and you leave money on the table. Too many and you risk annoying customers and increasing refund rates. The optimal number depends on your market, offer complexity, and price points. I recommend the sequence structure based on your specific business goals.',
+          'Most funnels perform best with 1\u20133 upsells plus 1\u20132 downsells. Too few and you leave money on the table. Too many and you risk refund spikes and customer fatigue. The optimal number depends on your market, price points, and offer complexity. I recommend the structure based on what I have seen work in your specific vertical.',
       },
       {
         question: 'Do upsells increase refund rates?',
         answer:
-          'Poorly executed upsells can increase refund rates, but well-crafted upsell sequences typically have no negative impact on refunds. The key is ensuring each upsell genuinely enhances the value of the original purchase and is presented in a way that feels helpful rather than pushy. My approach prioritizes long-term customer satisfaction alongside short-term revenue maximization.',
+          'Bad upsells do. Good upsells do not. The difference is whether the upsell genuinely enhances the value of the original purchase or feels like a cash grab. My approach is to make every upsell something the customer is genuinely glad they bought \u2014 because that protects your refund rate, your affiliate relationships, and your long-term customer value.',
       },
       {
         question: 'How much does upsell copywriting cost?',
         answer:
-          'Upsell and downsell copywriting is typically priced per sequence, with the cost depending on the number of upsell and downsell pages, whether order bumps and thank-you pages are included, and the complexity of the offers. Given that upsell copy directly increases revenue from existing traffic, it tends to deliver the fastest ROI of any copywriting investment.',
+          'Upsell copywriting is priced per sequence, depending on the number of pages and offer complexity. But here is how I think about it: upsell copy increases revenue from traffic you have already paid for. There is no additional ad spend, no additional acquisition cost. It is the highest-margin copywriting investment in your business \u2014 and the ROI is usually measurable within the first week.',
       },
     ],
     relatedServices: ['sales-funnel-copywriter', 'email-copywriter'],
