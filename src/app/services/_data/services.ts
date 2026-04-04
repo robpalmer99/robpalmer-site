@@ -2012,6 +2012,186 @@ export const services: Service[] = [
     relatedServices: ['ad-copywriter', 'landing-page-copywriter'],
     relatedVerticals: ['ecommerce-dtc-copywriter', 'health-supplement-copywriter'],
   },
+  {
+    title: 'Conversion Rate Optimization',
+    slug: 'conversion-rate-optimization',
+    shortDescription:
+      'Copy-driven CRO that increases conversions on your existing traffic. Headline testing, funnel diagnostics, and persuasion audits from a 40-year DR veteran with $523M+ in results.',
+    metaTitle: 'Conversion Rate Optimization | Copy-Driven CRO Services',
+    metaDescription:
+      'Conversion rate optimization from a direct-response copywriter with $523M+ in tracked results. Copy audits, headline testing, funnel diagnostics, and persuasion architecture that increases conversions on your existing traffic.',
+    headline: 'Conversion Rate Optimization From a $523M+ Copywriter',
+    subheadline:
+      'Most CRO focuses on button colors and page layouts. I optimize the thing that actually drives conversions: the copy. Headlines, hooks, offers, proof, objection handling, and closes \u2014 tested and refined by a 40-year direct-response veteran.',
+    heroImage: '/images/services/conversion-rate-optimization.jpg',
+    heroImageAlt: 'Analytics dashboard showing conversion rates and optimization metrics',
+    heroStats: {
+      primary: { value: '$523M+', label: 'Tracked Client Results' },
+      secondary: [
+        { value: '8%', label: 'Cold Traffic Conversion' },
+        { value: '300%', label: 'ROAS Improvement' },
+        { value: '40+', label: 'Years Optimizing Copy' },
+      ],
+    },
+    credentialBar: {
+      heading: 'CRO and copy optimization for',
+      items: [
+        'VSLs & Sales Pages',
+        'Landing Pages & Funnels',
+        'Facebook & Meta Ads',
+        'Email Sequences',
+        'ClickBank Vendors',
+        'DTC Brands',
+      ],
+    },
+    sections: [
+      {
+        heading: 'You Are Paying for Traffic That Is Not Converting. The Fix Is Not What You Think.',
+        content:
+          'Your funnel is getting traffic. But the conversion rate is stuck. You have tried changing the button color, moving the CTA above the fold, adding a countdown timer, swapping the hero image. <strong>Nothing moved the needle.</strong> Here is why: those are cosmetic changes to a structural problem. The #1 driver of conversion rate on any page is the <em>copy</em> \u2014 the headline, the hook, the mechanism, the proof, the objection handling, and the close. A headline that speaks to the wrong awareness level will kill conversions no matter how beautiful the page design is. A close that fails to handle the final objection will lose the sale regardless of what color the button is. Copy-driven CRO is the highest-leverage optimization you can make because it addresses the thing your prospect actually reads, believes, and responds to.',
+      },
+      {
+        heading: 'What Copy-Driven CRO Looks Like in Practice',
+        content:
+          'When a client came to me with a funnel "doing great" at 8% cold traffic conversion, the copy architecture was already solid \u2014 because it was built on deep audience research and proven persuasion frameworks from the start. But most funnels I audit are not starting from that baseline. They have headlines written from guesswork instead of research, mechanism sections that confuse instead of convince, proof sections with generic testimonials instead of specific results, and closes that create doubt instead of resolving it. <strong>Fixing those structural copy problems is where the conversion rate lives.</strong> I have seen headline changes alone lift conversion rates by 30\u201350%. Rewriting a close sequence has doubled take rates on upsell pages. And restructuring a VSL\u2019s first 90 seconds has cut drop-off rates in half. These are not theoretical improvements \u2014 they are the predictable result of applying 40+ years of pattern recognition to copy that was written without it.',
+      },
+      {
+        heading: 'The Copy Chief That Top Copywriters Hire to Optimize',
+        content:
+          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. That role was pure CRO: reviewing existing copy, identifying what was underperforming and why, and providing the specific rewrites that moved the metrics. Justin Goff gave me a public shoutout for knocking it out of the park. Caleb O\u2019Dowd celebrated getting "that bump in conversions." These are people who live and die by conversion rates. They brought me in because I can look at a piece of copy \u2014 a VSL, a sales page, an email sequence, an ad \u2014 and see exactly where it is losing the prospect and exactly how to fix it.',
+      },
+      {
+        heading: 'My CRO Process: Diagnose, Prioritize, Test',
+        content:
+          'I do not guess at what is broken. I diagnose it systematically using the same frameworks behind $523M+ in tracked results, then prioritize fixes by expected impact on conversion rate.',
+        bullets: [
+          'Copy audit \u2014 I analyze every element of your page or funnel against proven persuasion frameworks: Schwartz awareness levels, PASTOR, the Perry Belcher 21-step sequence, and the specific frameworks that match your offer type.',
+          'Conversion diagnostics \u2014 where are prospects dropping off? Is the headline failing to earn the next line? Is the mechanism confusing? Is the close missing an objection? I identify the specific copy elements that are killing conversions.',
+          'Prioritized fix list \u2014 not every fix has the same impact. I rank optimization opportunities by expected lift so you test the highest-leverage changes first.',
+          'Test-ready rewrites \u2014 I do not just tell you what is wrong. I write the specific copy alternatives you need to run split tests: headlines, hooks, closes, proof sections, and CTAs.',
+          'Testing roadmap \u2014 a clear plan for what to test, in what order, with specific hypotheses for each test so you learn something whether it wins or loses.',
+        ],
+      },
+      {
+        heading: 'CRO Across Every Funnel Asset',
+        content:
+          'Conversion rate optimization is not a single-page exercise. Every step in your funnel is a conversion point \u2014 and a potential leak. I optimize copy across all of them.',
+        bullets: [
+          'VSL and video optimization \u2014 hook testing, retention analysis, close sequence rewrites. Where are viewers dropping off and what copy changes will keep them watching?',
+          'Sales page and TSL optimization \u2014 headline testing, proof section restructuring, objection handling, and CTA refinement.',
+          'Landing page optimization \u2014 above-the-fold copy, message match with traffic sources, form friction reduction, and headline split testing.',
+          'Ad copy optimization \u2014 hook testing, angle rotation, and compliance-aware variation for Facebook, Instagram, and other platforms.',
+          'Email sequence optimization \u2014 subject line testing, open rate improvement, click-through optimization, and sequence architecture refinement.',
+          'Upsell and AOV optimization \u2014 post-purchase copy rewrites, offer positioning, and downsell sequence testing.',
+        ],
+      },
+      {
+        heading: 'AI-Powered CRO Analysis',
+        content:
+          'I use AI to accelerate every phase of conversion rate optimization \u2014 analyzing competitor pages at scale, mining customer language from thousands of reviews, testing headline variations before spending a dollar on traffic, and identifying patterns across your analytics that manual review would miss. But the strategic judgment that turns analysis into conversion lifts \u2014 knowing <em>which</em> headline to test, <em>why</em> the close is failing, <em>what</em> objection the proof section needs to address \u2014 comes from 40+ years of direct-response experience. AI gives me speed. Experience gives me accuracy. You get both.',
+      },
+    ],
+    caseStudies: [
+      {
+        name: 'DTC Funnel CRO',
+        category: 'Full Funnel Optimization',
+        metric: '8% Cold Traffic Conversion',
+        detail: 'Copy-driven optimization across landing page and sales funnel.',
+      },
+      {
+        name: 'Supplement Ad CRO',
+        category: 'Ad Copy Optimization',
+        metric: '300% ROAS',
+        detail: 'Hook testing and angle optimization on Facebook ads.',
+      },
+      {
+        name: 'Biz-Op Funnel CRO',
+        category: 'Funnel Optimization',
+        metric: '4.8% Front-End Conversion',
+        detail: 'Hybrid sales page and VSL copy optimization.',
+      },
+    ],
+    deliverables: [
+      {
+        title: 'Copy Audit Report',
+        description:
+          'Comprehensive analysis of your existing copy against proven persuasion frameworks, with specific diagnostics on where conversions are being lost.',
+      },
+      {
+        title: 'Prioritized Optimization Plan',
+        description:
+          'Ranked list of copy changes by expected conversion impact, so you test the highest-leverage improvements first.',
+      },
+      {
+        title: 'Test-Ready Rewrites',
+        description:
+          'Specific copy alternatives for headlines, hooks, closes, proof sections, and CTAs \u2014 ready to split test immediately.',
+      },
+      {
+        title: 'Headline & Hook Variations',
+        description:
+          'Multiple headline and hook options for A/B testing, each targeting a different emotional angle or awareness level.',
+      },
+      {
+        title: 'Funnel Leak Analysis',
+        description:
+          'Page-by-page breakdown of where prospects are dropping off in your funnel, with copy-specific fixes for each leak point.',
+      },
+      {
+        title: 'Testing Roadmap',
+        description:
+          'Clear testing plan with specific hypotheses, priority order, and guidance on interpreting results for iterative improvement.',
+      },
+    ],
+    deliverablesHeading: 'What You Get When You Hire Me',
+    deliverablesSubtext:
+      'Every deliverable is designed to increase conversions on your existing traffic \u2014 the highest-ROI improvement you can make.',
+    testimonialIds: ['18', '4', '2', '6'],
+    portfolioItems: [
+      { title: 'Funnel CRO \u2014 Health Supplement', category: 'CRO' },
+      { title: 'Landing Page Optimization \u2014 DTC', category: 'CRO' },
+      { title: 'VSL Hook Testing \u2014 Biz-Op', category: 'CRO' },
+    ],
+    midCta: {
+      headline: 'Ready to increase conversions on your existing traffic?',
+      subtext:
+        'Book a free strategy call. I\u2019ll tell you exactly where your copy is losing prospects \u2014 and what to test first.',
+    },
+    faqs: [
+      {
+        question: 'What is conversion rate optimization (CRO)?',
+        answer:
+          'Conversion rate optimization is the process of increasing the percentage of visitors who take a desired action \u2014 buying a product, opting in, clicking through, or completing a form. My approach to CRO focuses on the #1 driver of conversion rate: the copy. Headlines, hooks, proof, objection handling, and closes have more impact on conversions than any design or UX change.',
+      },
+      {
+        question: 'How is copy-driven CRO different from traditional CRO?',
+        answer:
+          'Traditional CRO often focuses on UX, page layout, button placement, and design tweaks. Those matter, but they are secondary to the copy. A beautifully designed page with a weak headline will underperform an ugly page with a great headline every time. My CRO focuses on the persuasion architecture \u2014 the strategic sequencing of copy elements that moves a prospect from skepticism to action. That is where the biggest conversion lifts live.',
+      },
+      {
+        question: 'What types of pages can you optimize?',
+        answer:
+          'VSLs, sales pages, TSLs, landing pages, email sequences, Facebook and Instagram ads, upsell pages, order forms, and complete funnels. Every page that has a conversion goal has copy that can be optimized. I audit the full funnel and prioritize the changes that will have the biggest impact on your revenue.',
+      },
+      {
+        question: 'How do you know what to test first?',
+        answer:
+          'Pattern recognition from 40+ years of direct response. After auditing thousands of pages and funnels, I know where the highest-leverage copy changes are for each page type. Headlines and hooks are almost always the first test because they determine whether anyone reads the rest. After that, closes and objection handling typically have the next biggest impact. I provide a prioritized testing roadmap so you are not wasting time on low-impact changes.',
+      },
+      {
+        question: 'How much can CRO improve my conversion rate?',
+        answer:
+          'It depends on where you are starting. Pages with untested copy and structural persuasion problems often see 30\u201350% lifts from headline changes alone. Full copy rewrites on underperforming pages can double or triple conversion rates. Even well-optimized pages typically have 10\u201320% upside from systematic testing. The key insight: a 1% conversion rate improvement on the same traffic is pure profit \u2014 no additional ad spend required.',
+      },
+      {
+        question: 'How much does conversion rate optimization cost?',
+        answer:
+          'CRO is priced on a project basis, depending on the scope of the audit (single page vs. full funnel), the number of test-ready rewrites needed, and whether ongoing optimization support is included. But here is how I think about it: improving your conversion rate by even half a percent on serious traffic pays for the engagement in the first week. CRO is the only marketing investment that makes every other marketing investment work harder.',
+      },
+    ],
+    relatedServices: ['sales-funnel-copywriter', 'landing-page-copywriter'],
+    relatedVerticals: ['ecommerce-dtc-copywriter', 'clickbank-copywriter'],
+  },
 ]
 
 export function getServiceBySlug(slug: string): Service | undefined {
