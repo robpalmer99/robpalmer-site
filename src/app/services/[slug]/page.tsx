@@ -240,7 +240,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               <FadeIn>
                 <div className="text-center mb-10">
                   <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
-                    Proven VSL Results
+                    Proven Results
                   </h2>
                   <p className="mt-3 text-lg text-ink-700 font-body">
                     Real numbers from real offers.

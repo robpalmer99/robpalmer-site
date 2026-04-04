@@ -236,56 +236,104 @@ export const services: Service[] = [
     title: 'Sales Page Copywriter',
     slug: 'sales-page-copywriter',
     shortDescription:
-      'Long-form sales pages that convert browsers into buyers. Proven frameworks, rigorous testing, real results.',
+      'Long-form sales pages and TSLs that convert browsers into buyers. Proven frameworks, rigorous testing, real results.',
     metaTitle: 'Sales Page Copywriter | High-Converting Sales Copy',
     metaDescription:
-      'Expert sales page copywriter with $523M+ in tracked results. Long-form sales pages and landing pages that convert for ClickBank, DTC, and info product brands.',
-    headline: 'Sales Page Copywriter',
+      'Expert sales page copywriter with $523M+ in tracked results. Long-form sales pages and TSLs that convert for ClickBank, DTC, and info product brands.',
+    headline: 'The Sales Page Copywriter Behind $523M+ in Results',
     subheadline:
-      'Long-form sales pages engineered to convert browsers into buyers.',
+      'I write long-form sales pages and text sales letters that convert cold traffic into buyers \u2014 with results like 8% conversion rates, 340% ROAS, and offers that scale to eight figures.',
     heroImage: '/images/services/sales-page-copywriter.jpg',
     heroImageAlt: 'Writing and crafting persuasive sales page copy',
-    definition: {
-      term: 'a sales page',
-      text: 'A sales page is a long-form web page dedicated to a single objective: persuading the reader to buy a product or service. Unlike typical website pages, a sales page follows a structured persuasion sequence — headline, problem, agitation, solution, proof, offer, and close — designed to convert visitors into customers without any other navigation distractions.',
+    heroStats: {
+      primary: { value: '$523M+', label: 'Tracked Client Results' },
+      secondary: [
+        { value: '8%', label: 'Cold Traffic Conversion' },
+        { value: '340%', label: 'ROAS on Facebook' },
+        { value: '40+', label: 'Years Direct Response' },
+      ],
+    },
+    credentialBar: {
+      heading: 'Trusted by',
+      items: [
+        'ClickBank Platinum Vendors',
+        'Copy Accelerator (as Copy Chief)',
+        'DTC Brands',
+        'Info Product Creators',
+        'Financial Publishers',
+      ],
     },
     sections: [
       {
-        heading: 'Why Hire a Specialist Sales Page Copywriter?',
+        heading: 'Why Most Sales Pages Bleed Money Instead of Making It',
         content:
-          'A sales page is the hardest-working piece of copy in your business. It has to take a stranger — often a cold, skeptical stranger who arrived from a paid ad — and persuade them to hand over their money in a single visit. That is a fundamentally different job than writing emails, blog posts, or brand copy. A specialist sales page copywriter understands the persuasion architecture required: the strategic sequencing of headlines, subheads, body copy, social proof, and calls to action that moves a reader through awareness, interest, desire, and action. Without that architecture, you are just publishing words on a page and hoping for the best.',
+          'You are sending traffic to a sales page. The clicks are coming in. But the conversion rate is sitting at 0.5% \u2014 maybe 1% on a good day. You have tried tweaking the headline, swapping the hero image, testing different button colors. Nothing moves the needle. Here is why: <strong>the problem is not cosmetic. It is structural.</strong> A sales page is not a brochure with a buy button. It is a long-form persuasion sequence \u2014 a text sales letter (TSL) \u2014 that must take a cold, skeptical stranger and walk them from "who is this?" to "take my money" in a single visit. That requires strategic architecture: the right hook for your audience\'s awareness level, pain agitation that makes them feel the cost of inaction, a mechanism that makes your solution feel genuinely different, proof that eliminates doubt, and a close that handles every objection standing between them and their credit card. Miss any one of those stages and conversions collapse. Most sales page copywriters get the words right but the architecture wrong. That is why their pages read well and sell poorly.',
       },
       {
-        heading: 'Sales Pages That Actually Sell',
+        heading: 'What an 8% Cold Traffic Conversion Rate Looks Like',
         content:
-          'A great sales page is not just well-written — it is strategically engineered. Every headline, subhead, bullet point, and call to action serves a specific purpose in the persuasion architecture. I build sales pages that move the reader from "who is this?" to "take my money" through a carefully orchestrated sequence. Miss any of these stages and conversions collapse.',
+          'When a client told me their funnel was "doing great" at 8% on cold traffic, that was not luck. It was the result of a sales page built on the same direct-response architecture I have refined over 40+ years \u2014 deep audience research that found the exact emotional triggers driving purchase decisions, a unique mechanism that made the offer feel new, and a persuasion sequence mapped to Schwartz\'s awareness levels. The same approach drove <strong>340% ROAS on Facebook</strong> for an info product sales page (Abundant), <strong>5.7% opt-in-to-sale</strong> for a financial services TSL (Monetari Fund), and <strong>4.8% front-end conversion</strong> on a hybrid sales page for a business opportunity offer. These are not flukes. They are the predictable outcome of applying battle-tested frameworks \u2014 PASTOR, the Perry Belcher 21-step sequence, the Brain Audit objection model \u2014 to deep customer research. That is what separates a sales page that scales from one that sits there burning ad spend.',
+      },
+      {
+        heading: 'The Copy Chief That Top Copywriters Hire',
+        content:
+          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park. These are people who have seen thousands of sales pages. They hired me and endorsed me because my work performs. When the best in the industry need a sales page copywriter they can trust with their own offers, they call me. That is the level of sales page copywriting you get access to when we work together.',
+      },
+      {
+        heading: 'How I Write a Sales Page That Converts Cold Traffic',
+        content:
+          'Every sales page and TSL I write follows a process refined over four decades of direct-response copywriting. Each phase is tied to a specific conversion outcome \u2014 not just an activity.',
         bullets: [
-          'The opening must hook the reader and identify their pain',
-          'The middle must build desire through stories, proof, and benefits',
-          'The close must make the offer irresistible while overcoming every objection',
+          'Phase 1: Deep audience research \u2014 I mine forums, reviews, competitor pages, and customer feedback to find the exact language your prospects use to describe their pain. The hook and headline come from here, not from a brainstorming session.',
+          'Phase 2: Objection mapping \u2014 I identify every objection that could kill the sale and build the persuasion sequence to address each one at exactly the right moment. This is where most sales pages fail \u2014 they answer objections too early, too late, or not at all.',
+          'Phase 3: Architecture and writing \u2014 I build the full sales page structure: headline, lead, story, mechanism, proof stack, offer build, close, and guarantee. Every sentence stress-tested against one question: does this move the reader closer to buying?',
+          'Phase 4: Revision and optimization \u2014 headline variations for split testing, tightened transitions, and a wireframe showing your design team exactly where every element goes.',
         ],
       },
       {
-        heading: 'My Sales Page Copywriting Process',
+        heading: 'AI-Powered Research. Human-Crafted Persuasion.',
         content:
-          'My sales page copywriting process starts with understanding your customer better than they understand themselves. Through AI-powered research and three decades of direct-response intuition, I identify the exact emotional triggers that drive purchase decisions in your market. Then I build a sales page that hits every one of those triggers in the right sequence. I map the customer journey from first touch to purchase, identify every objection that could kill the sale, and systematically address each one through copy, social proof, and offer structure. The result is a sales page that does not just look professional — it converts.',
+          'While your competitors\' copywriters are doing manual research, my AI-enhanced process analyzes <strong>dozens of competitor sales pages</strong>, mines thousands of customer reviews, and tests headline angles \u2014 all before I write a single word. You get the strategic depth of a week-long research sprint compressed into 48 hours. But here is what AI cannot do: it cannot feel what your prospect feels. It cannot build the emotional escalation that makes someone scroll past the price and click the buy button instead of closing the tab. It cannot architect a guarantee and close sequence that overcomes the final objection your prospect did not even know they had. That comes from 40+ years of direct-response experience. AI gives me speed and data. Experience gives me judgment. You get both.',
       },
       {
-        heading: 'Long-Form vs. Short-Form Sales Pages',
+        heading: 'Sales Page Copywriting for Health, Finance, DTC, and Beyond',
         content:
-          'One of the most common questions I get as a sales page copywriter is whether to go long or short. The answer depends on your offer, your audience, and your traffic temperature. Cold traffic almost always requires long-form sales pages because you need to build trust, establish credibility, and overcome more objections. Warm traffic from your email list can sometimes convert with shorter pages because the relationship already exists. I analyze your specific funnel dynamics and recommend the optimal length — then write every word to justify its place on the page.',
+          'A sales page for a $47 supplement uses completely different techniques than a TSL for a $2,000 coaching program or a $997 SaaS annual plan. Each industry has unique compliance requirements, buyer psychology, and proven persuasion patterns. I have written converting sales pages across all of them.',
+        bullets: [
+          'Health and supplement brands \u2014 including sales pages supporting $40M+ in VSL funnel revenue',
+          'Financial publishers \u2014 compliant long-form TSLs for investment and newsletter offers',
+          'Info products and coaching \u2014 including a sales page that hit 340% ROAS on Facebook (Abundant)',
+          'E-commerce and DTC companies',
+          'ClickBank vendors and affiliates',
+          'Business opportunity offers \u2014 including a hybrid page converting at 4.8% on the front end',
+        ],
+      },
+    ],
+    caseStudies: [
+      {
+        name: 'Abundant',
+        category: 'Info Product Sales Page',
+        metric: '340% ROAS',
+        detail: 'Facebook cold traffic. Storytelling-driven long-form TSL.',
       },
       {
-        heading: 'Sales Page Copywriting for Every Niche',
-        content:
-          'I have written high-converting sales pages for health supplements, financial newsletters, e-commerce products, ClickBank offers, SaaS platforms, coaching programs, and info products. Each niche has unique buyer psychology, compliance requirements, and proven persuasion patterns. A sales page for a $47 supplement uses different techniques than a sales page for a $2,000 coaching program or a $997 SaaS annual plan. My cross-industry experience as a sales page copywriter means I bring battle-tested frameworks to your market while adapting the approach to fit your specific audience and price point.',
+        name: 'Monetari Fund',
+        category: 'Financial TSL',
+        metric: '5.7% Opt-in to Sale',
+        detail: 'Compliant financial services sales page.',
+      },
+      {
+        name: 'Biz-Op Hybrid',
+        category: 'Sales Page + VSL',
+        metric: '4.8% Front-End Conversion',
+        detail: 'Full-funnel copy including upsell sequence.',
       },
     ],
     deliverables: [
       {
         title: 'Full Sales Page Copy',
         description:
-          'Complete long-form sales page (typically 3,000-10,000 words) with headlines, subheads, body copy, bullet points, testimonial placement, and CTAs.',
+          'Complete long-form sales page or TSL (typically 3,000\u201310,000 words) with headlines, subheads, body copy, bullet points, testimonial placement, and CTAs.',
       },
       {
         title: 'Headline Variations',
@@ -313,42 +361,50 @@ export const services: Service[] = [
           'One comprehensive revision round based on your feedback, plus recommendations for A/B testing priorities.',
       },
     ],
-    testimonialIds: ['5', '14', '10', '33'],
+    deliverablesHeading: 'What You Get When You Hire Me',
+    deliverablesSubtext:
+      'Every deliverable is engineered to maximize your conversion rate \u2014 not just fill a Google Doc.',
+    testimonialIds: ['5', '4', '2', '6'],
     portfolioItems: [
       { title: 'Long-Form Supplement Sales Page', category: 'Sales Page' },
       { title: 'Info Product Launch Page', category: 'Sales Page' },
       { title: 'SaaS Annual Plan Sales Page', category: 'Sales Page' },
     ],
+    midCta: {
+      headline: 'Ready for a sales page that actually converts?',
+      subtext:
+        'Book a free strategy call. I\u2019ll tell you honestly whether I can beat what you\u2019re running now.',
+    },
     faqs: [
       {
         question: 'What makes a great sales page copywriter?',
         answer:
-          'A great sales page copywriter combines deep audience research skills, mastery of persuasion architecture, and the ability to write compelling prose that keeps readers scrolling. They understand that every element on the page — from the headline to the guarantee to the CTA button text — serves a strategic purpose. Experience matters enormously because you need pattern recognition from hundreds of tested sales pages to know what works in different markets.',
+          'Pattern recognition from hundreds of tested sales pages and TSLs across different markets. A great sales page copywriter does not guess what works \u2014 they know, because they have seen the data from decades of split tests. They understand that every element on the page serves a strategic purpose, and they have the discipline to cut anything that does not advance the sale. That is what 40+ years of direct-response experience gives you.',
       },
       {
         question: 'What makes a sales page different from a landing page?',
         answer:
-          'A sales page is a long-form persuasive document designed to take a reader from awareness to purchase in a single visit. A landing page is typically shorter and designed for a single action like email opt-in or webinar registration. Both require direct-response copywriting skills, but sales pages demand deeper persuasion architecture and more comprehensive objection handling.',
+          'A sales page (also called a TSL or text sales letter) is a long-form persuasion sequence designed to take a reader from awareness to purchase in a single visit. A landing page is typically shorter and designed for a single action like an email opt-in or webinar registration. Both require direct-response skills, but sales pages demand deeper persuasion architecture, more comprehensive objection handling, and a complete offer build with guarantee and close.',
       },
       {
         question: 'How long should a sales page be?',
         answer:
-          'Sales page length depends on your offer price, audience temperature, and complexity. As a general rule, higher prices require longer pages, cold traffic requires longer pages, and complex offers require longer pages. I have written converting sales pages from 2,000 words to over 10,000 words. The right length is however long it takes to address every objection and build enough desire to close the sale.',
+          'It depends on your offer price, traffic temperature, and complexity. Cold traffic and higher prices require longer pages \u2014 you need more proof and more objection handling. I have written converting sales pages from 2,000 words to over 10,000 words. The right length is however long it takes to address every objection and build enough desire to close the sale. Not a word more, not a word less.',
       },
       {
         question: 'How much does sales page copywriting cost?',
         answer:
-          'Sales page copywriting pricing depends on the complexity of the offer, the amount of research required, and the length of the final piece. I work on a project basis with pricing discussed during our initial strategy call. The investment typically pays for itself many times over through increased conversions — a well-written sales page can generate revenue for years.',
+          'Sales page copywriting is project-based, and pricing depends on offer complexity, research scope, and length. We discuss specifics on a strategy call. But here is how I think about it: a sales page converting at 4% instead of 1% on the same traffic does not just pay for itself \u2014 it changes the economics of your entire funnel. The question is not what a sales page costs. It is what a bad sales page costs you every day it is running.',
       },
       {
         question: 'Do you write sales pages for specific industries?',
         answer:
-          'I write sales pages for health and supplements, financial services, e-commerce and DTC, ClickBank offers, SaaS, and info products. Each industry has specific compliance requirements and buyer psychology that I factor into the sales page strategy and copy.',
+          'I write sales pages and TSLs for health and supplements, financial services, e-commerce and DTC, ClickBank offers, info products, coaching programs, and SaaS. Each industry has specific compliance requirements and buyer psychology. My cross-industry experience means I bring proven frameworks to your niche \u2014 including results like 340% ROAS on an info product sales page and 5.7% opt-in-to-sale on a financial TSL.',
       },
       {
         question: 'How long does it take to write a sales page?',
         answer:
-          'A typical sales page project takes 2-4 weeks from briefing to final draft. This includes audience research, competitive analysis, strategic planning, writing, and one revision round. Complex offers or highly regulated industries may require additional time for research and compliance review.',
+          'A typical sales page project takes 2\u20134 weeks from briefing to final draft. That includes deep audience research, competitive analysis, objection mapping, strategic architecture, writing, and one comprehensive revision round. I never shortcut the research phase \u2014 that is where the conversion rate lives.',
       },
     ],
     relatedServices: ['vsl-copywriter', 'landing-page-copywriter'],
