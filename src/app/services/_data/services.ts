@@ -597,53 +597,99 @@ export const services: Service[] = [
     metaTitle: 'Email Copywriter | Revenue-Driving Email Sequences',
     metaDescription:
       'Expert email copywriter for direct-response brands. Launch sequences, nurture series, abandon cart emails, and daily broadcasts that drive revenue. $523M+ in tracked results.',
-    headline: 'Email Copywriter',
+    headline: 'The Email Copywriter Behind $523M+ in Results',
     subheadline:
-      'Email sequences that build relationships and drive revenue on autopilot.',
+      'I write email sequences that turn subscribers into buyers \u2014 launch sequences, nurture series, abandon cart flows, and daily broadcasts engineered by a 40-year direct-response veteran.',
     heroImage: '/images/services/email-copywriter.jpg',
     heroImageAlt: 'Email marketing and inbox management for email copywriting',
-    definition: {
-      term: 'email copywriting',
-      text: 'Email copywriting is the craft of writing persuasive emails — sequences, broadcasts, and automations — that drive a specific action: a click, a purchase, a sign-up, or a reply. In direct-response marketing, email sequences are engineered as multi-step persuasion systems, not one-off blasts, with each message building on the last to move the reader toward conversion.',
+    heroStats: {
+      primary: { value: '$523M+', label: 'Tracked Client Results' },
+      secondary: [
+        { value: '22%', label: 'Trial-to-Paid Lift' },
+        { value: '40+', label: 'Years Direct Response' },
+        { value: '300%', label: 'ROAS on Email-Driven Funnels' },
+      ],
+    },
+    credentialBar: {
+      heading: 'Email sequences written for',
+      items: [
+        'ClickBank Platinum Vendors',
+        'SaaS Platforms',
+        'DTC Brands',
+        'Info Product Launches',
+        'Supplement Marketers',
+      ],
     },
     sections: [
       {
-        heading: 'Why Hire a Specialist Email Copywriter?',
+        heading: 'Why Most Email Sequences Lose Money Instead of Making It',
         content:
-          'Email is the highest-ROI marketing channel available — but only when the copy is good enough to earn opens, hold attention, and drive clicks. Most businesses treat email as an afterthought, sending bland newsletters and promotional blasts that their subscribers ignore or unsubscribe from. A specialist email copywriter understands that every email is a micro-persuasion event: the subject line must earn the open, the opening line must earn the scroll, and every paragraph must earn the next. That discipline — applied across an entire sequence — is what turns a dormant email list into a revenue engine.',
+          'You have a list. You are sending emails. But the open rates are sliding, the click-throughs are flat, and your revenue-per-subscriber number makes you wince. <strong>The problem is not your list. It is what you are sending them.</strong> Most businesses treat email like a megaphone \u2014 blast the list, hope for clicks, repeat. That is not email marketing. That is noise. And your subscribers know the difference. A real email sequence is a <em>multi-step persuasion system</em> where every message has a specific strategic job: the subject line earns the open, the first sentence earns the scroll, and every paragraph earns the next. Miss any of those and the email dies in the inbox. Applied across a full sequence \u2014 launch, nurture, abandon cart, or daily broadcast \u2014 that discipline is what turns a dormant list into a revenue engine.',
       },
       {
-        heading: 'Email Sequences That Get Read and Get Results',
+        heading: 'What a 22% Trial-to-Paid Lift Looks Like',
         content:
-          'Most email copy is forgettable. It gets deleted, ignored, or triggers an unsubscribe. My email sequences are designed to be the one email your subscriber actually looks forward to opening. Through strategic storytelling, pattern interrupts, and irresistible subject lines, I write emails that build genuine relationships while driving revenue. The key is understanding that email is a conversation, not a broadcast. Every email should feel like it was written by a real person to a real person — because it was. That personal, direct-response approach is what separates emails that convert from emails that get marked as spam.',
+          'When <strong>Chatterkick</strong> (a SaaS platform) needed an onboarding email sequence that actually converted free trials into paying customers, the result was a <strong>22% trial-to-paid lift</strong>. That did not happen because of a clever subject line. It happened because the sequence was architectured as a persuasion system \u2014 behavior-triggered messages that met each user where they were in the product, addressed the specific objection holding them back at that moment, and moved them toward the upgrade at exactly the right time. The same strategic approach has driven email sequences supporting <strong>$30M+ VSL funnels</strong>, <strong>300% ROAS</strong> on email-driven supplement offers, and launch sequences that have generated millions across health, finance, and info product markets. Email is still the highest-ROI marketing channel available. But only when the copy is engineered to convert \u2014 not just to fill inboxes.',
+      },
+      {
+        heading: 'The Copy Chief That Top Copywriters Hire',
+        content:
+          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park. These are people who understand that email sequences are the backbone of every profitable funnel. They hired me because my copy performs across every channel \u2014 including the emails that drive traffic to the offers.',
       },
       {
         heading: 'Launch Sequences That Maximize Revenue Windows',
         content:
-          'A product launch lives or dies on its email sequence. The pre-launch emails build anticipation and desire. The launch emails create urgency and overcome objections. The post-launch emails capture fence-sitters and extend the buying window. As an email copywriter specializing in direct-response launches, I engineer every email in the sequence to serve a specific strategic purpose — building toward the moment when your subscriber is most likely to buy. My launch sequences have generated millions in revenue across health, finance, e-commerce, and info product launches.',
+          'A product launch lives or dies on its email sequence. The pre-launch emails must build anticipation without giving away the close. The launch emails must create urgency and overcome every objection in real time. The post-launch emails must capture fence-sitters before the window shuts. Every email in the sequence has a specific strategic job \u2014 and if one email underperforms, the whole launch suffers.',
+        bullets: [
+          'Pre-launch: seed the problem, tease the mechanism, build desire over 3\u20135 emails before the cart opens',
+          'Launch: urgency, proof stacking, objection handling, and multiple angle emails that hit different segments of your list',
+          'Post-launch: fence-sitter emails, deadline reminders, and the final "door closing" sequence that captures 20\u201340% of total launch revenue',
+          'Post-purchase: onboarding, upsell sequences, and referral triggers that maximize customer lifetime value',
+        ],
       },
       {
         heading: 'Nurture, Abandon Cart, and Automated Sequences',
         content:
-          'Beyond launches, email copywriting powers your business on autopilot. Each type of email sequence requires different strategic thinking, voice, and cadence. I tailor every sequence to match your brand voice, audience expectations, and revenue goals — creating automated email assets that generate revenue 24 hours a day without additional ad spend.',
+          'Beyond launches, email copywriting powers your business on autopilot. Each sequence type requires different strategic thinking, voice, and cadence. I engineer every automated sequence to generate revenue 24 hours a day without additional ad spend.',
         bullets: [
-          'Welcome sequences that turn new subscribers into engaged fans',
-          'Nurture sequences that build trust over weeks and months',
-          'Abandon cart emails that recover revenue left on the table',
-          'Re-engagement campaigns that revive cold subscribers',
+          'Welcome sequences that turn new subscribers into engaged buyers within the first 7 days',
+          'Nurture sequences that build trust and authority over weeks \u2014 so when you make an offer, the list is primed',
+          'Abandon cart emails that recover 10\u201315% of revenue left on the table',
+          'Re-engagement campaigns that revive cold subscribers before you have to purge them',
+          'Daily broadcast emails that build audience relationships and drive consistent daily revenue',
         ],
       },
       {
-        heading: 'AI-Enhanced Email Copywriting',
+        heading: 'AI-Powered Research. Human-Crafted Emails.',
         content:
-          'I use AI to accelerate every phase of email copywriting — from subject line generation and audience research to sequence planning and performance analysis. AI helps me test more subject line variations, identify winning emotional angles faster, and analyze what is working across your email metrics at scale. But the strategic thinking behind the sequence architecture, the emotional resonance of the storytelling, and the persuasion techniques that drive clicks — that is the product of three decades of direct-response email experience that no AI can replicate.',
+          'My AI-enhanced process analyzes your existing email metrics, mines competitor sequences, and tests subject line angles \u2014 all before I write the first email. You get deeper audience insight and faster iteration. But here is what AI cannot do: it cannot write an email that feels like it was written by a real person to a real person. It cannot build the kind of voice and personality that makes someone look forward to your emails instead of ignoring them. That comes from 40+ years of writing direct-response copy that people actually read. AI gives me speed and data. Experience gives me voice. You get both.',
+      },
+    ],
+    caseStudies: [
+      {
+        name: 'Chatterkick',
+        category: 'SaaS Email Sequence',
+        metric: '22% Trial-to-Paid Lift',
+        detail: 'Behavior-triggered onboarding sequence for SaaS platform.',
+      },
+      {
+        name: 'Supplement Launch',
+        category: 'Launch Email Sequence',
+        metric: '300% ROAS',
+        detail: 'Full launch sequence supporting VSL funnel. Cold traffic.',
+      },
+      {
+        name: 'Info Product Launch',
+        category: 'Launch Sequence',
+        metric: 'Millions in Revenue',
+        detail: 'Multi-week email sequence for digital product launch.',
       },
     ],
     deliverables: [
       {
         title: 'Complete Email Sequence',
         description:
-          'Full sequence of emails (typically 5-15 emails) with subject lines, preview text, body copy, and CTAs for each.',
+          'Full sequence of emails (typically 5\u201315 emails) with subject lines, preview text, body copy, and CTAs for each.',
       },
       {
         title: 'Subject Line Variations',
@@ -671,42 +717,50 @@ export const services: Service[] = [
           'One comprehensive revision round across the full sequence, plus recommendations for ongoing optimization.',
       },
     ],
-    testimonialIds: ['22', '19', '28', '30'],
+    deliverablesHeading: 'What You Get When You Hire Me',
+    deliverablesSubtext:
+      'Every deliverable is engineered to turn your email list into a revenue asset \u2014 not just a subscriber count.',
+    testimonialIds: ['22', '4', '2', '6'],
     portfolioItems: [
       { title: 'Product Launch Email Sequence', category: 'Email' },
       { title: 'Abandon Cart Recovery Emails', category: 'Email' },
       { title: 'Daily Broadcast Series', category: 'Email' },
     ],
+    midCta: {
+      headline: 'Ready for email sequences that actually drive revenue?',
+      subtext:
+        'Book a free strategy call. I\u2019ll audit your current email performance and tell you exactly where the revenue is hiding.',
+    },
     faqs: [
       {
         question: 'What types of email sequences do you write?',
         answer:
-          'I write launch sequences, welcome and nurture sequences, abandon cart sequences, re-engagement campaigns, daily and weekly broadcast emails, automated sales sequences, and post-purchase follow-up series. Each type requires a different strategic approach, and I tailor the tone, frequency, and persuasion intensity to match your audience and goals.',
+          'Launch sequences, welcome and nurture sequences, abandon cart flows, re-engagement campaigns, daily and weekly broadcasts, automated sales sequences, onboarding sequences (like the Chatterkick sequence that delivered a 22% trial-to-paid lift), and post-purchase follow-up series. Each type requires a different strategic approach, and I tailor tone, frequency, and persuasion intensity to match your audience and goals.',
       },
       {
         question: 'How many emails are in a typical sequence?',
         answer:
-          'It depends on the sequence type and goal. Launch sequences typically run 7-15 emails. Welcome and nurture sequences can be 5-10 emails. Abandon cart sequences are usually 3-5 emails. I recommend the optimal number based on your specific funnel, audience, and revenue goals.',
+          'It depends on the sequence type and goal. Launch sequences typically run 7\u201315 emails. Welcome and nurture sequences are 5\u201310. Abandon cart sequences are 3\u20135. Onboarding sequences vary based on product complexity. I recommend the optimal number based on your specific funnel and revenue goals \u2014 every email must earn its place in the sequence.',
       },
       {
         question: 'Do you write email copy for specific platforms?',
         answer:
-          'I write email copy that works across all major platforms — Klaviyo, ActiveCampaign, ConvertKit, Mailchimp, Drip, Ontraport, and others. The copy principles are universal. I can also provide platform-specific formatting notes if your team needs them.',
+          'I write email copy that works across all major platforms \u2014 Klaviyo, ActiveCampaign, ConvertKit, Mailchimp, Drip, Ontraport, and others. The persuasion principles are universal. I can also provide platform-specific formatting and automation logic notes if your team needs them.',
       },
       {
         question: 'How do you measure email copywriting success?',
         answer:
-          'The metrics that matter for email copywriting are open rates, click-through rates, conversion rates, and revenue per email. I write with these metrics in mind and can provide recommendations for A/B testing subject lines, CTAs, and sequence timing to continuously improve performance.',
+          'The metrics that matter are open rates, click-through rates, conversion rates, and revenue per email. But the metric I care about most is revenue per subscriber \u2014 because that is what tells you whether your email program is actually working as a business asset. I write with all of these in mind and provide testing recommendations to continuously improve performance.',
       },
       {
         question: 'Can you write daily broadcast emails?',
         answer:
-          'Yes. Daily broadcasts are one of the most powerful email strategies for building audience relationships and driving consistent revenue. I can write a bank of daily emails, create templates and frameworks for your team, or provide a combination of both to keep your email program running consistently.',
+          'Yes. Daily broadcasts are one of the most powerful strategies for building audience relationships and driving consistent revenue. The Ben Settle model, the Seinfeld method, soap opera sequences \u2014 I know them all and can adapt the approach to fit your brand voice. I can write a bank of daily emails, create templates and frameworks for your team, or both.',
       },
       {
         question: 'How much does email copywriting cost?',
         answer:
-          'Email copywriting is priced per sequence, with the cost depending on the number of emails, complexity of the strategy, and amount of research required. Individual broadcast emails are also available on a per-email basis. Pricing is discussed during our initial strategy call.',
+          'Email copywriting is priced per sequence, with the cost depending on the number of emails, strategic complexity, and research required. But here is how I think about it: an email sequence that converts 2% more of your existing list costs you nothing in additional ad spend. It is pure margin. The question is not what the emails cost \u2014 it is how much revenue your current emails are leaving on the table every day.',
       },
     ],
     relatedServices: ['sales-funnel-copywriter', 'upsell-downsell-copywriter'],
