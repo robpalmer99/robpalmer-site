@@ -774,58 +774,98 @@ export const services: Service[] = [
     metaTitle: 'Ad Copywriter | Facebook, Google & YouTube Ad Copy',
     metaDescription:
       'Expert ad copywriter for direct-response brands. High-converting Facebook, Google, YouTube, and native ad copy with scroll-stopping hooks and proven frameworks.',
-    headline: 'Ad Copywriter',
+    headline: 'The Ad Copywriter Behind $523M+ in Results',
     subheadline:
-      'Scroll-stopping ad copy that turns paid traffic into profit.',
+      'I write the ads that feed the funnels \u2014 Facebook, Google, YouTube, and native ad copy that has driven 300% ROAS, 4% VSL conversion rates, and eight-figure offers across health, finance, and DTC.',
     heroImage: '/images/services/ad-copywriter.jpg',
     heroImageAlt: 'Social media advertising and marketing for ad copywriting',
-    definition: {
-      term: 'ad copywriting',
-      text: 'Ad copywriting is the art of writing short-form persuasive text for paid advertising platforms — Facebook, Google, YouTube, TikTok, and native networks. The goal is to stop the scroll, qualify the prospect, and compel a click in as few words as possible, bridging the gap between cold traffic and your sales funnel.',
+    heroStats: {
+      primary: { value: '$523M+', label: 'Tracked Client Results' },
+      secondary: [
+        { value: '300%', label: 'ROAS on Paid Traffic' },
+        { value: '40+', label: 'Years Direct Response' },
+        { value: '4%', label: 'Peak Cold Traffic Conversion' },
+      ],
+    },
+    credentialBar: {
+      heading: 'Ad copy written for',
+      items: [
+        'Facebook & Meta',
+        'Google Search',
+        'YouTube Pre-Roll',
+        'Native (Taboola/Outbrain)',
+        'ClickBank Vendors',
+        'DTC Brands',
+      ],
     },
     sections: [
       {
-        heading: 'Why Hire a Specialist Ad Copywriter?',
+        heading: 'Why Most Ads Waste Money Instead of Making It',
         content:
-          'Paid advertising is the most expensive form of copywriting per word — because every word either makes money or wastes it. A specialist ad copywriter understands that ad copy is not just creative writing in a small format. It is the strategic intersection of audience psychology, platform algorithms, compliance requirements, and direct-response persuasion compressed into the smallest possible space. The hook must stop the scroll in under two seconds. The body must build enough desire to earn the click. And the entire ad must work within the platform\'s content policies while still being compelling enough to outperform every other ad competing for your prospect\'s attention.',
+          'You are spending $500, $5,000, maybe $50,000 a day on ads. And for every dollar you put in, you need more than a dollar back \u2014 fast. <strong>Your ad copy is the most expensive writing in your business, measured per word.</strong> Every word either makes money or burns it. Most ad copy fails because the copywriter treats it like creative writing in a small format. It is not. It is the strategic intersection of audience psychology, platform algorithms, compliance rules, and direct-response persuasion \u2014 all compressed into a hook that has less than two seconds to earn attention. The hook must stop the scroll. The body must build enough desire to earn the click. And the entire ad must pre-qualify the traffic so you are not paying for clicks that will never convert downstream. Get any of those wrong and your ad spend is subsidizing Meta\'s revenue, not yours.',
       },
       {
-        heading: 'Ads That Stop the Scroll',
+        heading: 'The Ads Behind 300% ROAS and Eight-Figure Funnels',
         content:
-          'In a world where your prospect scrolls past thousands of ads per day, your ad copy has milliseconds to earn attention. I write ad copy that stops the scroll through unexpected angles, emotional hooks, and curiosity gaps that make clicking irresistible. But stopping the scroll is only half the job — the ad also needs to pre-qualify the click so you are not paying for traffic that will never convert. My ad copywriting approach balances attention-grabbing hooks with prospect qualification to deliver clicks that actually convert downstream in your funnel.',
+          'The ads I write are not standalone pieces of creative. They are the <em>front door</em> to funnels that have generated tens of millions. The ads that drove cold traffic to the <strong>Mobile Profits VSL ($30M, #1 on ClickBank)</strong> had to do one specific job: stop a stranger mid-scroll, create enough curiosity to earn the click, and deliver that click to a VSL where they would watch for 30+ minutes. That requires a completely different approach than brand advertising or boosted posts. My ad copy for supplement offers has driven <strong>300% ROAS</strong> on Facebook. For financial publishers, I have written compliant ads that survived platform review while still out-converting generic "safe" copy by multiples. The pattern across all of them: <strong>deep audience research that finds the angle competitors missed</strong>, hooks built on emotional triggers rather than clever wordplay, and systematic testing that finds winners faster.',
+      },
+      {
+        heading: 'The Copy Chief That Top Copywriters Hire',
+        content:
+          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park. Marc Lindsay, a direct-response media buyer, told me "one of your ads has just taken the lead" on a competitive campaign. These are people who test hundreds of ads and know exactly what converts. They work with me because my ad copy performs.',
       },
       {
         heading: 'Platform-Specific Ad Copywriting',
         content:
-          'Every advertising platform has its own rules, best practices, and audience behavior patterns. As an ad copywriter who has written across all major platforms, I tailor the copy strategy, format, and voice to match each platform\'s unique dynamics.',
+          'Every platform has its own algorithm, audience behavior, and compliance rules. An ad that crushes on Facebook will die on YouTube. A Google Search ad that wins clicks needs completely different copy mechanics than a native ad on Taboola. I write for all of them \u2014 and I know the difference.',
         bullets: [
-          'Facebook and Meta ads — hooks that work in a fast-scrolling feed with short attention spans',
-          'Google Search ads — precision intent-matching that competes for click-through rate',
-          'YouTube ads — earning the first five seconds before the skip button appears',
-          'Native ads — blending with editorial content while still driving action',
+          'Facebook and Meta ads \u2014 hooks engineered for a fast-scrolling feed where you have under 2 seconds to earn attention. Primary text, headlines, and descriptions optimized as a system.',
+          'Google Search ads \u2014 precision intent-matching that competes for click-through rate against every other ad bidding on the same keyword.',
+          'YouTube pre-roll ads \u2014 scripts that earn the first 5 seconds before the skip button appears, then hold attention long enough to drive the click.',
+          'Native ads (Taboola, Outbrain) \u2014 copy that blends with editorial content while still qualifying the click and driving downstream conversion.',
         ],
       },
       {
-        heading: 'Compliance-Aware Ad Copy',
+        heading: 'Compliance-Aware Ad Copy That Still Converts',
         content:
-          'One of the biggest challenges in ad copywriting is staying compliant with platform policies — especially in regulated industries like health supplements and financial services. Violating <a href="https://www.ftc.gov/business-guidance/advertising-and-marketing" target="_blank" rel="noopener noreferrer">FTC advertising guidelines</a> or platform policies does not just waste time, it can put your entire ad account at risk. I write ad copy that pushes the boundaries of what is allowed without crossing them, using proven language patterns and angles that satisfy platform reviewers while still driving strong click-through and conversion rates. This compliance-aware approach protects your accounts while maximizing your advertising ROI.',
+          'If you are running ads in health, supplements, or finance, you know the nightmare: <strong>write compliant copy and conversions tank. Write converting copy and your ad account gets flagged.</strong> Most ad copywriters pick one side. I have spent decades finding the angles that do both \u2014 proven language patterns that satisfy <a href="https://www.ftc.gov/business-guidance/advertising-and-marketing" target="_blank" rel="noopener noreferrer">FTC guidelines</a> and platform reviewers while still driving strong click-through and ROAS. This is not about being timid. It is about being strategic. Compliant copy that nobody clicks is just as useless as aggressive copy that gets your account banned.',
       },
       {
-        heading: 'Testing Frameworks for Ad Copy',
+        heading: 'Systematic Testing, Not Guesswork',
         content:
-          'The best ad copywriters are not just writers — they are systematic testers. I approach ad copywriting with a testing framework that identifies the key variables to test: hooks, angles, CTAs, proof elements, and emotional triggers. Rather than writing a single ad and hoping it works, I deliver sets of variations designed to be tested against each other, with clear hypotheses about what each variation is designed to learn. This systematic approach to ad copy testing means you find winning ads faster and scale your campaigns more efficiently.',
+          'I do not write a single ad and hope it works. I deliver <strong>testing suites</strong> \u2014 sets of 5\u201310 variations per campaign with different hooks, angles, emotional triggers, and CTAs, each designed to test a specific hypothesis. This systematic approach means you find winning ads faster, kill losers earlier, and scale campaigns more efficiently. After 40+ years of direct response, I know which variables move the needle and in what order to test them.',
+      },
+    ],
+    caseStudies: [
+      {
+        name: 'Supplement Ad Campaign',
+        category: 'Facebook Ads',
+        metric: '300% ROAS',
+        detail: 'Cold traffic to VSL funnel. Compliance-approved.',
+      },
+      {
+        name: 'Mobile Profits Ads',
+        category: 'Multi-Platform',
+        metric: '$30M Funnel Revenue',
+        detail: 'Ad copy feeding the #1 ClickBank offer.',
+      },
+      {
+        name: 'Financial Publisher Ads',
+        category: 'Native + Facebook',
+        metric: 'Multi-Platform Winner',
+        detail: 'Compliant ads for regulated financial vertical.',
       },
     ],
     deliverables: [
       {
         title: 'Ad Copy Suites',
         description:
-          'Sets of 5-10 ad variations per campaign, with multiple hooks, angles, and CTAs designed for systematic split testing.',
+          'Sets of 5\u201310 ad variations per campaign, with multiple hooks, angles, and CTAs designed for systematic split testing.',
       },
       {
         title: 'Platform-Specific Formatting',
         description:
-          'Ad copy formatted to each platform\'s specifications — character limits, headline/description structure, and creative notes.',
+          'Ad copy formatted to each platform\'s specs \u2014 character limits, headline/description structure, and creative direction notes.',
       },
       {
         title: 'Hook Library',
@@ -835,55 +875,63 @@ export const services: Service[] = [
       {
         title: 'Audience Angle Matrix',
         description:
-          'Strategic document mapping different audience segments to the specific emotional angles and proof elements most likely to convert them.',
+          'Strategic document mapping different audience segments to the emotional angles and proof elements most likely to convert them.',
       },
       {
         title: 'Compliance Review Notes',
         description:
-          'Platform compliance considerations for each ad, especially for regulated industries like health and finance.',
+          'Platform compliance considerations for each ad, with flagged language and compliant alternatives for regulated industries.',
       },
       {
         title: 'Testing Roadmap',
         description:
-          'Prioritized testing plan showing which ad elements to test first and how to iterate based on results.',
+          'Prioritized testing plan showing which ad elements to test first, in what order, and how to iterate based on results.',
       },
     ],
-    testimonialIds: ['15', '16', '4', '5'],
+    deliverablesHeading: 'What You Get When You Hire Me',
+    deliverablesSubtext:
+      'Every deliverable is engineered to find winning ads faster \u2014 not just fill your creative library.',
+    testimonialIds: ['15', '4', '2', '6'],
     portfolioItems: [
-      { title: 'Facebook Ad Suite — Health Niche', category: 'Ads' },
+      { title: 'Facebook Ad Suite \u2014 Health Niche', category: 'Ads' },
       { title: 'YouTube Pre-Roll Ads', category: 'Ads' },
       { title: 'Native Ad Campaign', category: 'Ads' },
     ],
+    midCta: {
+      headline: 'Ready for ads that actually convert?',
+      subtext:
+        'Book a free strategy call. I\u2019ll look at what you\u2019re running now and tell you where the ROAS is hiding.',
+    },
     faqs: [
       {
         question: 'What platforms do you write ads for?',
         answer:
-          'I write ad copy for Facebook and Meta, Google Search, YouTube, TikTok, and native advertising platforms like Taboola and Outbrain. Each platform has different best practices, compliance requirements, and audience behavior patterns, and I tailor the copy accordingly.',
+          'Facebook and Meta, Google Search, YouTube pre-roll, TikTok, and native platforms like Taboola and Outbrain. Each platform has different algorithm dynamics, compliance requirements, and audience behavior. I tailor the copy mechanics to each one \u2014 because an ad that crushes on Facebook will often die on native, and vice versa.',
       },
       {
         question: 'How many ad variations do you write per campaign?',
         answer:
-          'I typically deliver 5-10 ad variations per campaign, designed as a testing suite with different hooks, angles, and CTAs. This gives you enough variation to run meaningful split tests and find winning combinations faster than testing a single ad at a time.',
+          'I typically deliver 5\u201310 variations per campaign, designed as a testing suite with different hooks, angles, and CTAs. This gives you enough variation to run meaningful split tests and find winning combinations faster than testing one ad at a time. Each variation has a clear hypothesis behind it \u2014 not random creative.',
       },
       {
         question: 'Do you write video ad scripts?',
         answer:
-          'Yes. I write scripts for video ads including YouTube pre-roll, Facebook and Instagram video ads, TikTok ads, and UGC-style video scripts. Video ad scripts require different pacing and hook mechanics than static ads, and I adapt the approach accordingly.',
+          'Yes. I write scripts for YouTube pre-roll, Facebook and Instagram video ads, TikTok ads, and UGC-style video scripts. Video ads require different pacing and hook mechanics than static copy \u2014 you have to earn the first 5 seconds before the skip button appears. That is a fundamentally different skill than writing text ads.',
       },
       {
         question: 'How do you handle ad compliance for health and finance?',
         answer:
-          'I have extensive experience writing ad copy for regulated industries. I use proven language patterns and angles that satisfy platform reviewers while maintaining strong persuasion. This includes careful wording of claims, strategic use of disclaimers, and angles that focus on benefits rather than specific medical or financial outcomes.',
+          'This is one of my specialities. I have written compliant ad copy for supplement offers, financial publishers, and ClickBank vendors for years \u2014 including ads that drove 300% ROAS while passing platform review. The key is knowing the specific language patterns that satisfy reviewers while preserving persuasive power. I also provide compliance notes flagging any language your legal team should review.',
       },
       {
         question: 'Can you write ad copy that matches my existing funnel?',
         answer:
-          'Absolutely. In fact, this is the ideal approach. Ad copy should be strategically aligned with your landing page, sales page, and follow-up sequence to create a seamless experience from click to conversion. I review your existing funnel assets to ensure the ad copy pre-qualifies traffic and sets up the downstream conversion.',
+          'This is the ideal approach. Ad copy should be strategically aligned with your landing page, VSL, or sales page to create a seamless experience from click to conversion. I review your existing funnel assets to ensure the ads pre-qualify traffic and set up the downstream conversion \u2014 not just drive clicks.',
       },
       {
         question: 'How much does ad copywriting cost?',
         answer:
-          'Ad copywriting is typically priced per ad suite (a set of variations for a specific campaign) or on a retainer basis for ongoing ad copy needs. Pricing depends on the number of platforms, variations required, and complexity. Details are discussed during our initial strategy call.',
+          'Ad copywriting is priced per suite (a set of variations for a specific campaign) or on a retainer for ongoing needs. But here is how I think about it: if your current ads are converting at 1% and new copy gets you to 1.5%, that is a 50% improvement on the same ad spend. At serious daily budgets, that difference pays for the copywriter in the first week.',
       },
     ],
     relatedServices: ['landing-page-copywriter', 'sales-funnel-copywriter'],
