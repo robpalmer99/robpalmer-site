@@ -50,9 +50,11 @@ export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], curren
       results = results.filter((post) => post.category === activeCategory)
     }
 
-    // Search filter
+    // Search filter — match all words (AND logic) so "claude skills" finds posts
+    // containing both "claude" and "skills" anywhere in the searchable text
     const query = debouncedQuery.toLowerCase().trim()
     if (query) {
+      const queryWords = query.split(/\s+/).filter(Boolean)
       results = results.filter((post) => {
         const searchableText = [
           post.title,
@@ -62,7 +64,7 @@ export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], curren
         ]
           .join(' ')
           .toLowerCase()
-        return searchableText.includes(query)
+        return queryWords.every((word) => searchableText.includes(word))
       })
     }
 
@@ -73,7 +75,10 @@ export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], curren
   const siteResults = useMemo(() => {
     const query = debouncedQuery.toLowerCase().trim()
     if (!query) return []
-    return siteSearchIndex.filter((item) => item.searchableText.includes(query))
+    const queryWords = query.split(/\s+/).filter(Boolean)
+    return siteSearchIndex.filter((item) =>
+      queryWords.every((word) => item.searchableText.includes(word))
+    )
   }, [siteSearchIndex, debouncedQuery])
 
   const totalResults = isSearching
