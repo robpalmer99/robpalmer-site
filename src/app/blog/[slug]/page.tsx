@@ -190,7 +190,22 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                     remarkPlugins: [remarkGfm],
                     rehypePlugins: [
                       rehypeSlug,
-                      [rehypeAutolinkHeadings, { behavior: 'wrap' }],
+                      [
+                        rehypeAutolinkHeadings,
+                        {
+                          behavior: 'wrap',
+                          test(node: { children?: { tagName?: string; children?: unknown[] }[] }) {
+                            // Skip headings that already contain <a> tags to avoid
+                            // nested anchors (invalid HTML → hydration mismatch)
+                            function hasLink(n: unknown): boolean {
+                              const el = n as { tagName?: string; children?: unknown[] }
+                              if (el.tagName === 'a') return true
+                              return el.children?.some(hasLink) ?? false
+                            }
+                            return !node.children?.some(hasLink)
+                          },
+                        },
+                      ],
                     ],
                   },
                 }}
