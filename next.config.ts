@@ -98,7 +98,6 @@ const nextConfig: NextConfig = {
       '/secret-weapon',
       '/podcast-guest',
       '/sales-funnel-optimization-the-weakest-link-problem',
-      '/how-i-became-the-worlds-first-blogger-digital-nomad-pioneer',
     ]
 
     return [
@@ -127,6 +126,12 @@ const nextConfig: NextConfig = {
       // Old blog pagination
       {
         source: '/blog/page/:path*',
+        destination: '/blog',
+        permanent: true,
+      },
+      // Old WordPress root pagination
+      {
+        source: '/page/:path*',
         destination: '/blog',
         permanent: true,
       },
@@ -193,6 +198,16 @@ const nextConfig: NextConfig = {
       {
         source: '/10-steps-to-hiring-the-best-content-marketing-agency-in-2019',
         destination: '/blog/how-to-hire-a-copywriter',
+        permanent: true,
+      },
+      {
+        source: '/what-content-marketing-is-how-it-generates-inbound-sales',
+        destination: '/blog/copywriter-vs-content-writer-for-sales',
+        permanent: true,
+      },
+      {
+        source: '/how-i-became-the-worlds-first-blogger-digital-nomad-pioneer',
+        destination: '/blog/worlds-first-blogger-digital-nomad-pioneer',
         permanent: true,
       },
       // Old blog posts and pages
