@@ -1,7 +1,10 @@
+'use client'
+
 import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
 import { FadeIn } from '@/components/ui/FadeIn'
 import { cn } from '@/lib/utils'
+import { trackCTAClick } from '@/lib/analytics'
 
 interface CTABannerProps {
   headline?: string
@@ -57,6 +60,7 @@ export function CTABanner({
               variant={variant === 'gold' ? 'secondary' : 'primary'}
               size="lg"
               className="shrink-0"
+              onClick={() => trackCTAClick(buttonText)}
             >
               {buttonText}
             </Button>

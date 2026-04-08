@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Button } from '@/components/ui/Button'
+import { trackContactFormSubmit } from '@/lib/analytics'
 
 export function ContactForm() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
@@ -29,6 +30,7 @@ export function ContactForm() {
       })
 
       if (res.ok) {
+        trackContactFormSubmit()
         setStatus('sent')
         form.reset()
       } else {
