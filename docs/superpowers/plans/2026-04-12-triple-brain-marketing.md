@@ -1,0 +1,342 @@
+# Triple Brain Marketing Blog Post Implementation Plan
+
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+
+**Goal:** Write and publish a ~4,500-word MDX blog post positioning "Triple Brain Marketing" as Rob Palmer's unique, unmatched approach -- combining 40 years of DR expertise, custom Claude Code skills, and a proprietary Copywriting Vault.
+
+**Architecture:** Single MDX file following existing blog conventions. Uses four MDX components (KeyTakeaways, DefinitionBox, ExpertQuote, ComparisonTable). Classic DR structure: three failures > reveal > bridge > close. CTA links to `/contact`. Hero image placeholder until asset is created.
+
+**Tech Stack:** MDX, Next.js, existing blog infrastructure and MDX components.
+
+**Spec:** `docs/superpowers/specs/2026-04-12-triple-brain-marketing-design.md`
+
+---
+
+### Task 1: Write the MDX frontmatter and FAQs
+
+**Files:**
+- Create: `src/content/blog/triple-brain-marketing.mdx`
+
+**Context:** Follow the exact frontmatter format used by existing posts. See `src/content/blog/claude-code-copywriting-skills.mdx` for reference. CTA links in blog posts go to `/contact` (not directly to Calendly). Hero image uses a placeholder path for now. All 10 FAQs must be written with complete answers in the style of existing FAQ answers (2-4 sentences, specific, authoritative).
+
+- [ ] **Step 1: Create the MDX file with complete frontmatter**
+
+Write the file with this frontmatter (FAQ answers written in full below):
+
+```mdx
+---
+title: "Triple Brain Marketing: Why One Brain Will Never Be Enough Again"
+description: "Your copywriter uses one brain. AI tools use another. Triple Brain Marketing combines 40 years of direct response expertise, AI-powered Claude Code skills, and a proprietary copywriting vault to deliver results no single approach can match."
+date: "2026-04-12"
+category: "AI Copywriting"
+tags: ["Triple Brain Marketing", "AI copywriting", "direct response marketing", "copywriting vault", "Claude Code skills"]
+published: true
+heroImage: "/images/blog/triple-brain-marketing.jpg"
+heroAlt: "Triple Brain Marketing — the combination of human expertise, AI skills, and a proven copywriting vault that no single approach can match"
+faqs:
+  - question: "What is Triple Brain Marketing?"
+    answer: "Triple Brain Marketing is the integration of three distinct advantages into a single copywriting process: 40+ years of direct response expertise with $523 million in tracked results, Claude Code enhanced with custom-built copywriting skill files, and a proprietary Copywriting Vault containing 1,239 files of proven frameworks, swipe, templates, and battle-tested copy. No other copywriter combines all three — most rely on one brain at best."
+  - question: "Can I just use AI to write my own copy?"
+    answer: "You can, and it will produce competent, generic content that converts poorly. AI without direct response expertise does not understand awareness levels, mechanism-driven persuasion, emotional architecture, or the dozens of proven frameworks that separate copy from content. The result reads smoothly and sells weakly — which is worse than bad copy, because it feels good enough to ship."
+  - question: "What makes your AI setup different from other copywriters using AI?"
+    answer: "Most copywriters using AI are prompting a general-purpose tool with generic instructions. I have built a suite of structured skill files for Claude Code that encode specific direct response frameworks, headline formulas, evaluation criteria, and compliance rules — not vague instructions like 'write compelling copy.' These skills are free and publicly available so you can see exactly what powers the system."
+  - question: "What is in the Copywriting Vault?"
+    answer: "The Copywriting Vault is a proprietary Obsidian knowledge base containing 190 proven copywriting frameworks and principles, 193 swipe pieces from the greatest direct response copywriters in history, 125 sets of detailed book and course notes, 76 battle-ready templates, and 512 pieces of my own tested and measured copy — all cross-referenced by copywriter, market, and persuasion technique."
+  - question: "What industries do you work in?"
+    answer: "I have written direct response copy across health and supplements, business opportunities, financial publishing, SaaS, ecommerce, survival, and self-improvement — with tracked results in all of them. The direct response principles that drive conversions are universal; the market-specific knowledge in my Vault means I do not start from scratch in any of these verticals."
+  - question: "How fast is turnaround with Triple Brain Marketing?"
+    answer: "The Triple Brain approach compresses timelines significantly. Work that takes a traditional copywriter weeks can be completed in days because AI handles research synthesis, variation generation, and first-draft speed while my experience directs the strategy and my Vault provides proven reference material. Exact timelines depend on the project scope — we discuss this on the strategy call."
+  - question: "What does it cost to work with you?"
+    answer: "Project fees vary based on scope, format, and complexity. I work on a per-project basis, not hourly, and pricing is discussed on the strategy call after I understand your specific situation, goals, and what you need. The relevant question is not what the copy costs — it is what the copy is worth relative to the traffic you are sending to it."
+  - question: "What formats do you write?"
+    answer: "VSL scripts, long-form sales pages, sales letters, email sequences, Meta ad copy, landing pages, advertorials, upsell pages, webinar scripts, and complete sales funnels. Every format I write uses the Triple Brain approach — direct response expertise guiding the strategy, AI skills accelerating execution, and the Vault providing proven frameworks and reference material."
+  - question: "Can I see examples of your work?"
+    answer: "Yes. My portfolio includes work across multiple industries and formats, and I am happy to share relevant samples on the strategy call. I also publish detailed breakdowns of direct response principles, copywriting frameworks, and real campaign insights on this blog — which itself demonstrates the quality and depth of thinking I bring to client work."
+  - question: "How do I get started?"
+    answer: "Book a free strategy call. We will discuss your offer, your traffic, your current conversion metrics, and your revenue goals. I will give you an honest assessment of whether Triple Brain Marketing is the right fit for your situation — and if it is, exactly what the engagement looks like. No pressure, no obligation."
+---
+```
+
+- [ ] **Step 2: Verify the file parses correctly**
+
+Run: `cd /Users/robpalmer/dev/robpalmer-site && npx next build 2>&1 | head -30`
+
+If there are YAML parse errors, fix quote escaping in FAQ answers. The most common issue is apostrophes inside single-quoted YAML strings.
+
+- [ ] **Step 3: Commit**
+
+```bash
+git add src/content/blog/triple-brain-marketing.mdx
+git commit -m "feat: add Triple Brain Marketing post — frontmatter and FAQs"
+```
+
+---
+
+### Task 2: Write the opening hook and KeyTakeaways
+
+**Files:**
+- Modify: `src/content/blog/triple-brain-marketing.mdx` (append after frontmatter closing `---`)
+
+**Context:** The opening must establish "you're outgunned" tension immediately. Follow the pattern in `is-copywriting-dead.mdx` — short punchy opening paragraphs, then KeyTakeaways component. Use the `direct-response-copy` skill to write this section with maximum DR impact.
+
+- [ ] **Step 1: Write the KeyTakeaways and opening hook**
+
+Append after the closing `---` of frontmatter. The KeyTakeaways component uses markdown bullet syntax inside JSX tags. The opening should be 2-3 short paragraphs establishing urgency before transitioning into the body.
+
+```mdx
+<KeyTakeaways>
+- Triple Brain Marketing combines 40 years of direct response expertise, AI-powered Claude Code skills, and a proprietary 1,239-file Copywriting Vault — a combination no other copywriter or AI tool can replicate
+- Traditional copywriters, DIY AI, and "AI-powered" marketers each fail for a different reason — and every failure traces back to a missing brain
+- Each brain multiplies the others: experience directs strategy, skills enforce proven frameworks, and the Vault provides battle-tested reference material
+- The result is copy that is faster than traditional, deeper than AI, and more proven than anything an "AI-powered" generalist can produce
+- There is one way to get Triple Brain Marketing working on your business — book a strategy call
+</KeyTakeaways>
+
+Right now, your competitors are making one of three mistakes with their marketing copy. Every single one of those mistakes is costing them money — and most of them do not even know it.
+
+Some hired a copywriter. Good move, ten years ago. Others fired the copywriter and handed everything to AI. Faster, cheaper, and noticeably worse. A few found a marketer who claims to use AI — better than nothing, but still bringing a butter knife to a gunfight.
+
+There is a fourth option. It requires three brains working together, not one. And right now, there is exactly one place in the world you can get it.
+```
+
+- [ ] **Step 2: Verify build**
+
+Run: `cd /Users/robpalmer/dev/robpalmer-site && npx next build 2>&1 | tail -5`
+Expected: Build succeeds.
+
+- [ ] **Step 3: Commit**
+
+```bash
+git add src/content/blog/triple-brain-marketing.mdx
+git commit -m "feat: add opening hook and KeyTakeaways to Triple Brain post"
+```
+
+---
+
+### Task 3: Write the three failures sections
+
+**Files:**
+- Modify: `src/content/blog/triple-brain-marketing.mdx` (append after opening)
+
+**Context:** Three H2 sections, each structured as problem > consequence > what's missing. Use the `direct-response-copy` skill. Each section should be 150-250 words. Follow with a DefinitionBox defining Triple Brain Marketing. Internal links to existing posts where natural (e.g., `/blog/what-is-direct-response-copywriting`, `/blog/eugene-schwartz-breakthrough-advertising-lessons`).
+
+Important: In the ComparisonTable component, do NOT use apostrophes inside the `rows` prop — this breaks MDX parsing. Use backticks or rephrase to avoid them.
+
+- [ ] **Step 1: Write all three failure sections and the DefinitionBox**
+
+Append after the opening paragraphs:
+
+```mdx
+## The Copywriter Who Works Alone
+
+You hired a direct response copywriter. Someone with real chops — maybe a decade of experience, a portfolio of winners, a solid understanding of [persuasion architecture](/blog/what-is-direct-response-copywriting). Good instinct. Wrong era.
+
+That copywriter is working with one brain. Their own. And one brain, no matter how experienced, cannot process your entire competitive landscape in seconds. It cannot generate fifty headline variations and test each one against proven frameworks simultaneously. It cannot cross-reference what is converting right now in your market against a database of 190 proven copywriting principles, find the pattern match, and apply it — all before lunch.
+
+Your competitors who are leveraging AI effectively are producing more copy, testing more variations, and iterating faster than any single human can match. Your one-brain copywriter is doing excellent work. They are also being outrun by the clock.
+
+What is missing: AI leverage.
+
+## The AI Shortcut That Costs More Than It Saves
+
+You fired the copywriter. Or you never hired one. Either way, you opened ChatGPT, typed "write me a sales page for my product," and got something back in ninety seconds.
+
+It read smoothly. It sounded professional. And when you put traffic to it, almost nothing happened.
+
+AI without [direct response expertise](/blog/what-is-direct-response-copywriting) does not understand [awareness levels](/blog/eugene-schwartz-breakthrough-advertising-lessons). It does not know how to build a mechanism that makes your product feel inevitable. It does not understand the difference between a story lead and a proclamation lead, or when to use each. It does not know that "saves you time" is a surface benefit and the real close lives three levels deeper — in the specific anxiety your prospect feels at 2am when they cannot sleep because of the problem your product solves.
+
+AI without direct response expertise produces content, not copy. It reads like a term paper pretending to be a sales letter. And the worst part is that it feels good enough to ship — which means you send paid traffic to it, burn through your ad budget, and conclude that "the market is saturated" when the real problem was the copy.
+
+What is missing: 40 years of knowing what actually converts.
+
+## The "AI-Powered" Marketer With a Learner's Permit
+
+So you found a marketer who uses AI. They are faster than the traditional copywriter and smarter than the raw AI approach. Progress.
+
+But look under the hood. They are prompting a general-purpose tool with generic instructions. They do not have a curated library of proven swipe from [Halbert](/blog/lessons-from-gary-halbert), [Schwartz](/blog/eugene-schwartz-breakthrough-advertising-lessons), Carlton, and Makepeace. They do not have 512 pieces of battle-tested copy to draw from — copy that was written, tested against real traffic, measured, and refined. They do not have detailed notes from RMBC II, Great Leads, and Breakthrough Advertising loaded, cross-referenced, and instantly accessible.
+
+They are flying a fighter jet with a learner's permit. The aircraft is capable. The pilot is not.
+
+The gap between "uses AI" and "has spent decades building a proprietary knowledge system that feeds AI with proven, battle-tested material" is the gap between competent and dominant. And in direct response, competent does not pay for the traffic.
+
+What is missing: the vault.
+
+<DefinitionBox term="Triple Brain Marketing">
+The integration of deep human expertise, purpose-built AI capability, and a proprietary knowledge system to produce direct response copy that no single approach can match. Triple Brain Marketing combines a copywriter's 40+ years of direct response experience, AI enhanced with custom-built skill files encoding proven frameworks, and a 1,239-file vault of swipe, templates, course notes, and battle-tested copy — creating a compound advantage that is faster than traditional, deeper than AI, and more proven than anything a generalist can produce.
+</DefinitionBox>
+```
+
+- [ ] **Step 2: Verify build**
+
+Run: `cd /Users/robpalmer/dev/robpalmer-site && npx next build 2>&1 | tail -5`
+Expected: Build succeeds.
+
+- [ ] **Step 3: Commit**
+
+```bash
+git add src/content/blog/triple-brain-marketing.mdx
+git commit -m "feat: add three failures sections and DefinitionBox to Triple Brain post"
+```
+
+---
+
+### Task 4: Write the Triple Brain reveal section
+
+**Files:**
+- Modify: `src/content/blog/triple-brain-marketing.mdx` (append after DefinitionBox)
+
+**Context:** This is the turn — from pain to solution. One H2 with three H3 subsections. Confident, proof-heavy, forward-looking. Include an ExpertQuote component. Link to the skills post. Use the `direct-response-copy` skill.
+
+The ExpertQuote component takes props: `quote`, `author`, `title` (optional). Example: `<ExpertQuote quote="Text" author="Name" title="Book" />`
+
+- [ ] **Step 1: Write the reveal section with all three brains**
+
+Append after the DefinitionBox:
+
+```mdx
+## Triple Brain Marketing
+
+There is a fourth option. I call it Triple Brain Marketing. And I am the only person in the world who can deliver it.
+
+Not because I am the best copywriter alive — there are writers I admire enormously. Not because I use the best AI — Claude is available to anyone. And not because I have the biggest swipe file — although I would put mine against any collection in the industry.
+
+It is because I am the only one who has combined all three into a single, integrated system where each brain makes the other two dramatically more powerful.
+
+### Brain One: 40 Years of Direct Response Expertise
+
+I have spent over four decades writing [direct response copy](/blog/what-is-direct-response-copywriting) — the kind of copy where the results are tracked to the penny and you do not get paid if it does not perform. [Sales pages](/services/sales-page-copywriter), [VSL scripts](/services/vsl-copywriter), [email sequences](/services/email-sequence-copywriter), [Meta ads](/services/facebook-ad-copywriter), [sales funnels](/services/sales-funnel-copywriter) — across health supplements, business opportunities, financial publishing, SaaS, ecommerce, and survival markets.
+
+Over [$523 million in tracked campaign results](/blog/523m-copywriting-campaign). Clients from Apple to ClickBank. Thousands of controls written, tested, and measured.
+
+This is not "marketing experience" in the vague, LinkedIn-bio sense. This is pattern recognition built across four decades of copy that had to sell or the client did not pay. I know which [lead type](/blog/famous-copywriters) to use at each [awareness level](/blog/eugene-schwartz-breakthrough-advertising-lessons). I know when a mechanism needs more proof and when it needs more curiosity. I know the difference between a benefit that sounds good in a brainstorm and a benefit that closes at 2am when someone is alone with their credit card.
+
+That pattern recognition is what tells the AI what to write.
+
+### Brain Two: Claude Code With Custom Copywriting Skills
+
+I do not use AI the way most people use AI. I do not type "write me a sales page" and hope for the best.
+
+I use Claude Code — the most capable AI coding and writing tool available — running a suite of [custom-built copywriting skill files](/blog/claude-code-copywriting-skills) that I designed and built myself. These are not prompts. They are structured files that encode specific direct response frameworks, headline formulas, evaluation criteria, compliance rules, and quality standards into a format Claude applies consistently on every project.
+
+Five skills covering the complete workflow: [direct response copy](/blog/claude-code-direct-response-copy-skill) for sales pages, VSLs, and emails. [Ad copy](/blog/claude-code-ad-copy-skill) for Meta ads and video scripts. [Landing page copy](/blog/claude-code-landing-page-copy-skill) for bridge pages. [Copychiefing](/blog/claude-code-copychief-skill) for structured copy review. [Compliance checking](/blog/claude-code-compliance-checker-skill) for platform policy audits.
+
+I built these skills. They are free. You can see exactly how they work. But having the skills without the experience and the vault is like having a recipe without knowing how to cook and without access to quality ingredients.
+
+The skills are what tell the AI how to write.
+
+### Brain Three: The Copywriting Vault
+
+<ExpertQuote quote="The best copywriters are the most tenacious researchers. Like miners, they dig, drill, dynamite, and chip until they have carloads of valuable ore." author="Gary Halbert" title="The Boron Letters" />
+
+Over decades of writing and studying direct response, I have built something that does not exist anywhere else: a proprietary Copywriting Vault.
+
+It is a structured knowledge base containing 190 proven copywriting frameworks and principles — from [PAS](/blog/copywriting-formulas) to RMBC to the E5 Method. 193 swipe pieces from the [greatest direct response copywriters who ever lived](/blog/famous-copywriters) — Halbert, Schwartz, Carlton, Makepeace, Bencivenga, Ogilvy, Caples, Sugarman. 125 sets of detailed notes from the best copywriting books and courses ever created — Breakthrough Advertising, the Boron Letters, $100M Offers, Scientific Advertising, the VSL Blueprint.
+
+76 battle-ready templates for every format I write. And 512 pieces of my own copy — written, tested against real traffic, measured, and refined across four decades.
+
+All of it cross-referenced by copywriter, by market, by persuasion technique. When I need a mechanism-driven opening for a supplement VSL, I do not start from a blank page. I start from a curated library of every mechanism-driven opening that has ever worked — from my own copy and from the best in the business — and Claude has access to all of it.
+
+The Vault is what gives the AI proven material to draw from.
+```
+
+- [ ] **Step 2: Verify build**
+
+Run: `cd /Users/robpalmer/dev/robpalmer-site && npx next build 2>&1 | tail -5`
+Expected: Build succeeds.
+
+- [ ] **Step 3: Commit**
+
+```bash
+git add src/content/blog/triple-brain-marketing.mdx
+git commit -m "feat: add Triple Brain reveal section with three brains"
+```
+
+---
+
+### Task 5: Write the bridge section with ComparisonTable and the close
+
+**Files:**
+- Modify: `src/content/blog/triple-brain-marketing.mdx` (append after Brain Three)
+
+**Context:** Bridge section is short (2-3 paragraphs + ComparisonTable). Close section is a hard CTA linking to `/contact`. The ComparisonTable component takes `headers` and `rows` as JSON string props and an optional `caption` string. CRITICAL: Do not use apostrophes inside the `rows` or `headers` JSON strings — this breaks MDX parsing. Rephrase to avoid them entirely.
+
+- [ ] **Step 1: Write the bridge and close sections**
+
+Append after the Vault section:
+
+```mdx
+## Why This Changes Your Results
+
+Each brain multiplies the others. That is the part most people miss.
+
+My experience tells Claude what to write — the strategic decisions that determine whether copy converts or flatlines. The skill files tell Claude how to write it — enforcing proven frameworks, headline formulas, and evaluation criteria on every draft. The Vault gives Claude proven material to draw from — not generic training data, but curated, battle-tested reference material from the best direct response copywriters in history and from my own four decades of measured results.
+
+The output is not additive. It is compound. Copy that would take a traditional copywriter weeks comes out in days. Copy that AI alone would get 60 percent right comes out at 95 percent. Copy that an "AI-powered" marketer would need to revise six times lands on the first or second draft — because the frameworks, the expertise, and the proven reference material are all working together from the first word.
+
+<ComparisonTable
+  headers='["Capability", "Traditional Copywriter", "DIY AI", "AI-Powered Marketer", "Triple Brain"]'
+  rows='[["DR expertise", "Yes", "No", "Sometimes", "40 years, $523M tracked"], ["AI speed and scale", "No", "Yes", "Yes", "Yes + custom skill files"], ["Proven swipe and frameworks", "Their own (maybe)", "None", "None", "1,239-file vault"], ["Compliance knowledge", "Varies", "Generic caution", "Basic", "Platform-specific skill"], ["Output quality", "Good but slow", "Fast but flat", "Fast but shallow", "Fast, deep, and proven"]]'
+  caption="How Triple Brain Marketing compares to every other approach"
+/>
+
+## Get Triple Brain Marketing Working on Your Business
+
+Your competitors are choosing between three losing options right now. One brain when three are available. A knife when there is a guided missile on the table.
+
+If you want copy that combines 40 years of direct response expertise, the most capable AI running custom-built copywriting skills, and a proprietary vault of 1,239 files of proven frameworks, swipe, templates, and battle-tested copy — there is one way to get it.
+
+**[Book a free strategy call](/contact)** and let us discuss your offer, your traffic, your goals, and exactly how Triple Brain Marketing applies to your specific situation. No pressure, no obligation — just an honest conversation about what your copy could be doing for your revenue.
+```
+
+- [ ] **Step 2: Verify build**
+
+Run: `cd /Users/robpalmer/dev/robpalmer-site && npx next build 2>&1 | tail -5`
+Expected: Build succeeds with no errors.
+
+- [ ] **Step 3: Commit**
+
+```bash
+git add src/content/blog/triple-brain-marketing.mdx
+git commit -m "feat: add bridge section, ComparisonTable, and close CTA to Triple Brain post"
+```
+
+---
+
+### Task 6: Full build verification and final review
+
+**Files:**
+- Read: `src/content/blog/triple-brain-marketing.mdx` (full file review)
+
+**Context:** Verify the complete post builds, renders correctly, and follows all project conventions from CLAUDE.md. Check internal links resolve to existing pages. Count approximate word length (target ~4,500).
+
+- [ ] **Step 1: Run full build**
+
+Run: `cd /Users/robpalmer/dev/robpalmer-site && npm run build 2>&1 | tail -20`
+Expected: Build succeeds, no errors.
+
+- [ ] **Step 2: Verify word count**
+
+Run: `cd /Users/robpalmer/dev/robpalmer-site && cat src/content/blog/triple-brain-marketing.mdx | sed '/^---$/,/^---$/d' | sed 's/<[^>]*>//g' | wc -w`
+Expected: Approximately 3,500-5,000 words (body content, excluding frontmatter and HTML tags).
+
+- [ ] **Step 3: Verify internal links exist**
+
+Run: `cd /Users/robpalmer/dev/robpalmer-site && for slug in what-is-direct-response-copywriting eugene-schwartz-breakthrough-advertising-lessons lessons-from-gary-halbert famous-copywriters copywriting-formulas 523m-copywriting-campaign claude-code-copywriting-skills claude-code-direct-response-copy-skill claude-code-ad-copy-skill claude-code-landing-page-copy-skill claude-code-copychief-skill claude-code-compliance-checker-skill; do test -f "src/content/blog/${slug}.mdx" && echo "OK: $slug" || echo "MISSING: $slug"; done`
+Expected: All links resolve to existing files.
+
+- [ ] **Step 4: Read through the full post for quality**
+
+Read the entire file and check for:
+- Consistent voice (confident, DR authority)
+- No orphaned MDX components
+- No apostrophes inside ComparisonTable rows prop
+- DefinitionBox and ExpertQuote render correctly
+- CTA links to `/contact`
+- Service page links use correct slugs
+
+- [ ] **Step 5: Commit any fixes if needed**
+
+```bash
+git add src/content/blog/triple-brain-marketing.mdx
+git commit -m "fix: final review fixes for Triple Brain Marketing post"
+```
