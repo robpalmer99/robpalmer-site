@@ -20,7 +20,40 @@ if (!Sentry.getClient()) {
       // Chrome extensions
       /chrome-extension:\/\//,
       /moz-extension:\/\//,
+      // Hydration mismatches almost always caused by browser translators
+      // (Google Translate, Safari Translate) or extensions mutating the DOM
+      // before React hydrates. Real hydration bugs show up with component
+      // stack traces in dev and tend to be caught in CI.
+      /Hydration failed/i,
+      /There was an error while hydrating/i,
+      /Text content does not match server-rendered HTML/i,
+      /Minified React error #(418|419|422|423|425)/,
     ],
+
+    // Drop Replay-generated hydration diffs entirely. These are almost always
+    // false positives from browser in-page translators (Chrome/Safari auto-
+    // translate wraps every text node in <font> tags, which Replay sees as a
+    // DOM mismatch against the SSR HTML). Real React hydration errors still
+    // flow through `ignoreErrors` patterns above if they slip past this.
+    beforeSend(event) {
+      const message =
+        event.message ||
+        event.exception?.values?.[0]?.value ||
+        ""
+      if (/hydrat/i.test(message)) {
+        return null
+      }
+      // Sentry's Replay hydration-error integration tags events with this
+      // category; drop them regardless of message.
+      const tags = (event.tags || {}) as Record<string, unknown>
+      if (
+        tags.replay_hydration_error === true ||
+        tags["replay.hydrate_error"] === true
+      ) {
+        return null
+      }
+      return event
+    },
     denyUrls: [
       // Browser extensions
       /extensions\//i,

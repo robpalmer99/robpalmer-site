@@ -3,6 +3,10 @@ import { Container } from '@/components/ui/Container'
 import { Logo } from '@/components/ui/Logo'
 import { NAV_LINKS } from '@/lib/constants'
 
+// Evaluated once at build time so it's deterministic across SSR and
+// client hydration. Rebuild after year rollover to refresh.
+const COPYRIGHT_YEAR = new Date().getFullYear()
+
 export function Footer() {
   return (
     <footer className="bg-ink-900 text-paper-300 pt-16 pb-8">
@@ -82,7 +86,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-paper-400">
-            &copy; {new Date().getFullYear()} Rob Palmer. All rights reserved.
+            &copy; {COPYRIGHT_YEAR} Rob Palmer. All rights reserved.
           </p>
           <div className="flex items-center gap-4 text-xs text-paper-400">
             <Link href="/privacy" className="hover:text-gold-400 transition-colors">
