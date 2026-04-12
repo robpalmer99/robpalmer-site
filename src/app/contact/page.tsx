@@ -95,6 +95,41 @@ export default function ContactPage() {
           </div>
         </Container>
       </Section>
+
+      {/* Business Verification */}
+      <Section divider>
+        <Container>
+          <div className="max-w-xl mx-auto text-center">
+            <FadeIn>
+              <Image
+                src="/images/headshots/rob-palmer-clean.png"
+                alt="Robert Palmer"
+                width={120}
+                height={120}
+                sizes="120px"
+                className="w-30 h-30 rounded-full object-cover ring-2 ring-gold-400/20 mx-auto mb-6"
+              />
+              <h2 className="font-heading text-2xl font-bold text-ink-950 mb-4">
+                Business Verification
+              </h2>
+              <dl className="space-y-2 text-ink-700 font-body text-lg">
+                <div>
+                  <dt className="font-semibold text-ink-950 inline">Name: </dt>
+                  <dd className="inline">Robert Palmer</dd>
+                </div>
+                <div>
+                  <dt className="font-semibold text-ink-950 inline">Phone: </dt>
+                  <dd className="inline">+612958415182</dd>
+                </div>
+                <div>
+                  <dt className="font-semibold text-ink-950 inline">Email: </dt>
+                  <dd className="inline">rob@gofreelance.com</dd>
+                </div>
+              </dl>
+            </FadeIn>
+          </div>
+        </Container>
+      </Section>
     </>
   )
 }
