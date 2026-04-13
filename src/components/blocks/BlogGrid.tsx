@@ -24,13 +24,14 @@ export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], curren
   const debouncedQuery = useDebounce(searchQuery, 200)
   const searchInputRef = useRef<HTMLInputElement>(null)
   const searchParams = useSearchParams()
+  const shouldFocusSearch = searchParams.get('search') === 'true'
 
   // Auto-focus search input when arriving via nav search icon
   useEffect(() => {
-    if (searchParams.get('search') === 'true' && searchInputRef.current) {
+    if (shouldFocusSearch && searchInputRef.current) {
       searchInputRef.current.focus()
     }
-  }, [searchParams])
+  }, [shouldFocusSearch])
 
   // Derive categories from all posts (not just current page)
   const categories = useMemo(() => {

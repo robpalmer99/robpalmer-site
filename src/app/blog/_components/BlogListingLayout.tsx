@@ -28,7 +28,7 @@ export function BlogListingLayout({ posts, allPosts, siteSearchIndex, currentPag
 
       <Section>
         <Container>
-          <Suspense>
+          <Suspense fallback={null}>
             <BlogGrid
               posts={posts}
               allPosts={allPosts}
