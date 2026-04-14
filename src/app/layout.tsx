@@ -130,7 +130,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${fraunces.variable} ${lora.variable}`}>
-      <body className="antialiased">
+      <body className="antialiased" suppressHydrationWarning>
         <GoogleAnalytics gaId="G-ND4QM9PG6P" />
         <a
           href="#main-content"

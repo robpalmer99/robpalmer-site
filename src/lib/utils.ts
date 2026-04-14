@@ -6,7 +6,9 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatDate(dateString: string): string {
-  const date = new Date(dateString)
+  // Append time+timezone to prevent Date from interpreting YYYY-MM-DD as UTC
+  // midnight, which shifts back a day in western-hemisphere browsers.
+  const date = new Date(dateString + 'T00:00:00')
   return date.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
