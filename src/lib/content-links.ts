@@ -104,6 +104,9 @@ const tagToService: Record<string, string> = {
   'ai copywriting tools': 'ai-copywriting-consultant',
   chatgpt: 'ai-copywriting-consultant',
   'direct mail': 'sales-letter-copywriter',
+  'direct response': 'sales-page-copywriter',
+  'hire copywriter': 'sales-page-copywriter',
+  'direct response copywriter': 'vsl-copywriter',
 }
 
 const tagToVertical: Record<string, string> = {
