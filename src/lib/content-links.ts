@@ -107,6 +107,9 @@ const tagToService: Record<string, string> = {
   'direct response': 'sales-page-copywriter',
   'hire copywriter': 'sales-page-copywriter',
   'direct response copywriter': 'vsl-copywriter',
+  advertorial: 'ad-copywriter',
+  'advertorial copywriter': 'ad-copywriter',
+  'native advertising': 'ad-copywriter',
 }
 
 const tagToVertical: Record<string, string> = {
