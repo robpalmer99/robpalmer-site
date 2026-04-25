@@ -50,6 +50,10 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
+  // Disable Next's built-in trailing-slash redirect so our redirects() rules
+  // can match /old-slug/ directly and collapse legacy WP URLs to one 308 hop.
+  // A catch-all strip rule at the end of redirects() handles everything else.
+  skipTrailingSlashRedirect: true,
   images: {
     formats: ['image/avif', 'image/webp'],
   },
@@ -185,7 +189,19 @@ const nextConfig: NextConfig = {
       { source: '/page/:path*', destination: '/blog', permanent: true },
     ]
 
-    return [...withTrailingSlash(literalRedirects), ...wildcardRedirects]
+    // Catch-all: anything still ending in / that wasn't matched above gets
+    // stripped to its non-slash form (replaces Next's built-in behaviour).
+    const stripTrailingSlash: R = {
+      source: '/:path+/',
+      destination: '/:path+',
+      permanent: true,
+    }
+
+    return [
+      ...withTrailingSlash(literalRedirects),
+      ...wildcardRedirects,
+      stripTrailingSlash,
+    ]
   },
 }
 
