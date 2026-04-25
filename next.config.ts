@@ -100,47 +100,22 @@ const nextConfig: NextConfig = {
       '/sales-funnel-optimization-the-weakest-link-problem',
     ]
 
-    return [
-      {
-        source: '/industries',
-        destination: '/verticals',
-        permanent: true,
-      },
-      {
-        source: '/industries/:slug',
-        destination: '/verticals/:slug',
-        permanent: true,
-      },
-      // Old WordPress tag pages
-      {
-        source: '/tag/:path*',
-        destination: '/',
-        permanent: true,
-      },
-      // Old WordPress category pages
-      {
-        source: '/category/:path*',
-        destination: '/',
-        permanent: true,
-      },
-      // Old blog pagination
-      {
-        source: '/blog/page/:path*',
-        destination: '/blog',
-        permanent: true,
-      },
-      // Old WordPress root pagination
-      {
-        source: '/page/:path*',
-        destination: '/blog',
-        permanent: true,
-      },
+    type R = { source: string; destination: string; permanent: true }
+
+    // Next.js auto-strips trailing slashes (308) before redirect rules run, so
+    // /old-slug/ becomes a 2-hop chain (308 → 308 → 200). Emit a trailing-slash
+    // variant for every literal-path redirect so old WP URLs collapse to 1 hop.
+    const withTrailingSlash = (rs: R[]): R[] =>
+      rs.flatMap((r) => {
+        const isWildcard = r.source.includes(':') || r.source.includes('*')
+        if (isWildcard || r.source === '/' || r.source.endsWith('/')) return [r]
+        return [r, { ...r, source: r.source + '/' }]
+      })
+
+    const literalRedirects: R[] = [
+      { source: '/industries', destination: '/verticals', permanent: true },
       // Old blog post URLs that were under /blog/ path
-      {
-        source: '/blog/ai-sales-page-generator',
-        destination: '/blog',
-        permanent: true,
-      },
+      { source: '/blog/ai-sales-page-generator', destination: '/blog', permanent: true },
       // Old WordPress pages with traffic — redirect to best equivalent
       {
         source: '/17-proven-bullet-point-tactics-that-skyrocket-engagement-sales',
@@ -152,16 +127,8 @@ const nextConfig: NextConfig = {
         destination: '/case-studies/belron-safelite-523m-campaign',
         permanent: true,
       },
-      {
-        source: '/apple',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/home-cloned-at-2023-06-04-001834',
-        destination: '/',
-        permanent: true,
-      },
+      { source: '/apple', destination: '/', permanent: true },
+      { source: '/home-cloned-at-2023-06-04-001834', destination: '/', permanent: true },
       // Service slug typo
       {
         source: '/services/sales-page-copywriting',
@@ -169,11 +136,7 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       // Old WordPress pages
-      {
-        source: '/home',
-        destination: '/',
-        permanent: true,
-      },
+      { source: '/home', destination: '/', permanent: true },
       // Old blog posts with topical redirects
       {
         source: '/10-easy-ways-to-improve-your-google-ads-click-through-rate',
@@ -210,13 +173,19 @@ const nextConfig: NextConfig = {
         destination: '/blog/worlds-first-blogger-digital-nomad-pioneer',
         permanent: true,
       },
-      // Old blog posts and pages
-      ...oldBlogSlugs.map((slug) => ({
-        source: slug,
-        destination: '/',
-        permanent: true as const,
-      })),
+      ...oldBlogSlugs.map((slug): R => ({ source: slug, destination: '/', permanent: true })),
     ]
+
+    const wildcardRedirects: R[] = [
+      { source: '/industries/:slug', destination: '/verticals/:slug', permanent: true },
+      // Old WordPress tag and category pages
+      { source: '/tag/:path*', destination: '/', permanent: true },
+      { source: '/category/:path*', destination: '/', permanent: true },
+      // Old WordPress root pagination (/page/2/, /page/3/, ...)
+      { source: '/page/:path*', destination: '/blog', permanent: true },
+    ]
+
+    return [...withTrailingSlash(literalRedirects), ...wildcardRedirects]
   },
 }
 
