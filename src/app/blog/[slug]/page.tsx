@@ -111,8 +111,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       image: {
         '@type': 'ImageObject',
         url: `${SITE_URL}${post.meta.heroImage}`,
-        width: 1200,
-        height: 630,
       },
     }),
     mainEntityOfPage: {
