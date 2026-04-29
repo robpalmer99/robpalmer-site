@@ -98,7 +98,7 @@ const organizationJsonLd = {
   '@type': 'Organization',
   name: 'Rob Palmer Copywriting',
   url: SITE_URL,
-  logo: `${SITE_URL}/images/og-default.jpg`,
+  logo: `${SITE_URL}/images/logo-rob-palmer.png`,
   founder: {
     '@type': 'Person',
     name: 'Rob Palmer',

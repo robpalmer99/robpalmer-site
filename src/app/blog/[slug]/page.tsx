@@ -104,7 +104,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       url: SITE_URL,
       logo: {
         '@type': 'ImageObject',
-        url: `${SITE_URL}/images/og-default.jpg`,
+        url: `${SITE_URL}/images/logo-rob-palmer.png`,
       },
     },
     ...(post.meta.heroImage && {
