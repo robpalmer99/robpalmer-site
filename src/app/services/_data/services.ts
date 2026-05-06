@@ -253,89 +253,90 @@ export const services: Service[] = [
     title: 'Sales Page Copywriter',
     slug: 'sales-page-copywriter',
     shortDescription:
-      'Long-form sales pages and TSLs that convert browsers into buyers. Proven frameworks, rigorous testing, real results.',
+      'Long-form sales pages and TSLs anchored on a 9-year, $523M Belron campaign. Recent cold-traffic numbers: 8%, 340% ROAS, 5.7% opt-in-to-sale.',
     metaTitle: 'Sales Page Copywriter | High-Converting Sales Copy',
     metaDescription:
-      'Expert sales page copywriter with $523M+ in tracked results. Long-form sales pages and TSLs that convert for ClickBank, DTC, and info product brands.',
-    headline: 'The Sales Page Copywriter Behind $523M+ in Results',
+      'Senior sales page copywriter behind a 9-year, $523M Belron direct-response campaign. Recent cold-traffic numbers: 8%, 340% ROAS, 5.7% opt-in-to-sale. Fixed-price engagements.',
+    headline: 'Sales Page Copywriter Behind a $523M / 9-Year Campaign',
     subheadline:
-      'I write long-form sales pages and text sales letters that convert cold traffic into buyers \u2014 with results like 8% conversion rates, 340% ROAS, and offers that scale to eight figures.',
+      'Five award-winning copywriters failed at the Belron sales-letter campaign before me. I took the assignment in 1996 and ran it for 9 years \u2014 $523 million in tracked sales. They were writing copy. I was architecting a sales page that kept selling for nine years.',
     heroImage: '/images/services/sales-page-copywriter.jpg',
     heroImageAlt: 'Writing and crafting persuasive sales page copy',
     heroStats: {
-      primary: { value: '$523M+', label: 'Tracked Client Results' },
+      primary: { value: '$523M', label: '9-Year Belron Sales Page Campaign' },
       secondary: [
-        { value: '8%', label: 'Cold Traffic Conversion' },
-        { value: '340%', label: 'ROAS on Facebook' },
-        { value: '40+', label: 'Years Direct Response' },
+        { value: '8%', label: 'Recent Client Cold-Traffic CVR' },
+        { value: '340%', label: 'ROAS on Facebook (Abundant)' },
+        { value: '5.7%', label: 'Opt-in-to-Sale (Monetari TSL)' },
       ],
     },
     credentialBar: {
       heading: 'Trusted by',
       items: [
+        'Belron International (9-year campaign)',
         'ClickBank Platinum Vendors',
         'Copy Accelerator (as Copy Chief)',
-        'DTC Brands',
-        'Info Product Creators',
         'Financial Publishers',
+        'Info Product Creators',
+        'DTC and SaaS Brands',
       ],
     },
     sections: [
       {
-        heading: 'Why Most Sales Pages Bleed Money Instead of Making It',
+        heading: 'Why Most Sales Pages Read Well and Sell Poorly',
         content:
-          'You are sending traffic to a sales page. The clicks are coming in. But the conversion rate is sitting at 0.5% \u2014 maybe 1% on a good day. You have tried tweaking the headline, swapping the hero image, testing different button colors. Nothing moves the needle.\n\n' +
-          'Here is why: <strong>the problem is not cosmetic. It is structural.</strong> A sales page is not a brochure with a buy button. It is a long-form persuasion sequence \u2014 a text sales letter (TSL) \u2014 that must take a cold, skeptical stranger and walk them from "who is this?" to "take my money" in a single visit.\n\n' +
-          'That requires strategic architecture: the right hook for your audience\'s awareness level, pain agitation that makes them feel the cost of inaction, a mechanism that makes your solution feel genuinely different, proof that eliminates doubt, and a close that handles every objection standing between them and their credit card. Miss any one of those stages and conversions collapse.\n\n' +
-          'Most sales page copywriters get the words right but the architecture wrong. That is why their pages read well and sell poorly.',
+          'You\'re sending traffic to a sales page. The clicks are coming in. But conversion sits at 0.5% \u2014 maybe 1% on a good day. You\'ve tested headlines, swapped hero images, run twelve button variants. The needle won\'t move. Meanwhile, ad spend keeps draining \u2014 $500/day, $2,000/day, $5,000/day, lit on fire because the page can\'t carry a stranger from "who is this?" to "take my money" in a single visit.\n\n' +
+          'Here\'s the structural reason that keeps happening. A sales page isn\'t a brochure with a buy button. It\'s a long-form persuasion sequence \u2014 a text sales letter \u2014 that has to take a cold, skeptical stranger through a complete argument: the right hook for their awareness level, pain agitation that makes the cost of inaction feel real, a unique mechanism that reframes the solution, proof that eliminates doubt, and a close that handles every objection standing between them and their card.\n\n' +
+          'Miss any one of those stages and the conversion collapses. Most sales-page copywriters get the words right and the architecture wrong. That\'s why their pages read well and sell poorly.',
       },
       {
-        heading: 'What an 8% Cold Traffic Conversion Rate Looks Like',
+        heading: 'The Sales Page That Ran for 9 Years and Did $523 Million',
         content:
-          'When a client told me their funnel was "doing great" at 8% on cold traffic, that was not luck. It was the result of a sales page built on the same direct-response architecture I have refined over 40+ years \u2014 deep audience research that found the exact emotional triggers driving purchase decisions, a unique mechanism that made the offer feel new, and a persuasion sequence mapped to Schwartz\'s awareness levels.\n\n' +
-          'The same approach drove <strong>340% ROAS on Facebook</strong> for an info product sales page (Abundant), <strong>5.7% opt-in-to-sale</strong> for a financial services TSL (Monetari Fund), and <strong>4.8% front-end conversion</strong> on a hybrid sales page for a business opportunity offer.\n\n' +
-          'These are not flukes. They are the predictable outcome of applying battle-tested frameworks \u2014 PASTOR, the Perry Belcher 21-step sequence, the Brain Audit objection model \u2014 to deep customer research. That is what separates a sales page that scales from one that sits there burning ad spend.',
+          'In 1996, Belron \u2014 the world\'s largest auto-glass replacement business \u2014 handed me their direct-response sales-letter campaign. Five award-winning copywriters had already failed at it. I took the assignment, architected the system, and ran it for 9 years. The campaign generated <strong>$523 million</strong> in tracked sales.\n\n' +
+          'The CEO, Gary Lubner, put it on record: <em>"You are our secret weapon. Keep your diary clear, please!"</em>\n\n' +
+          'The campaign didn\'t compound for nine years because of a clever turn of phrase. It compounded because the structure was right \u2014 the lead matched the buyer\'s awareness stage, every objection was answered before it could form, every paragraph earned its place in a chain that pulled toward the order rather than away from it. That\'s the difference between a sales page that scales for a decade and one that sits on the page bleeding ad spend.\n\n' +
+          'If you have a sales page running and the numbers aren\'t where you need them, I work as a control-beater. Send me your current page and the back-end numbers, and I\'ll tell you on the strategy call exactly where I think it\'s leaking \u2014 and whether I can write something that beats it.',
       },
       {
-        heading: 'The Copy Chief That Top Copywriters Hire',
+        heading: '8%, 340%, 5.7% \u2014 Recent Cold-Traffic Numbers',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park.\n\n' +
-          'These are people who have seen thousands of sales pages. They hired me and endorsed me because my work performs.\n\n' +
-          'When the best in the industry need a sales page copywriter they can trust with their own offers, they call me. That is the level of sales page copywriting you get access to when we work together.',
+          'Belron is the long campaign. Recent work converts cold traffic just as hard.\n\n' +
+          'A funnel I wrote for Conor Reynolds is currently doing <strong>8% on cold traffic</strong> at the sales page. An info-product TSL I wrote for Abundant clocked <strong>340% ROAS on Facebook cold traffic</strong>. A compliance-aware financial-services TSL I wrote for Monetari Fund delivered <strong>5.7% opt-in-to-sale</strong>. A hybrid biz-op page I architected runs at <strong>4.8% front-end conversion</strong>.\n\n' +
+          'These numbers come from applying the same battle-tested frameworks every time \u2014 PASTOR, the Perry Belcher 21-step sequence, the Brain Audit objection model \u2014 to deep customer research. Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as Copy Chief inside Copy Accelerator\'s CA Labs because that pattern recognition is what scales offers. Ben Palmer (a ClickBank Platinum vendor) clocked <strong>300% ROAS</strong> on a campaign I wrote for him. Justin Goff publicly credited me with stepping up and knocking it out of the park.\n\n' +
+          'These are operators with their own money on the line.',
       },
       {
-        heading: 'How I Write a Sales Page That Converts Cold Traffic',
+        heading: 'How I Architect a Sales Page That Keeps Converting',
         content:
-          'Every sales page and TSL I write follows a process refined over four decades of direct-response copywriting. Each phase is tied to a specific conversion outcome \u2014 not just an activity.',
+          'Every sales page and TSL I write moves through the same four phases. None are optional. This is the actual work \u2014 not a "process" page filling space.',
         bullets: [
-          'Phase 1: Deep audience research \u2014 I mine forums, reviews, competitor pages, and customer feedback to find the exact language your prospects use to describe their pain. The hook and headline come from here, not from a brainstorming session.',
-          'Phase 2: Objection mapping \u2014 I identify every objection that could kill the sale and build the persuasion sequence to address each one at exactly the right moment. This is where most sales pages fail \u2014 they answer objections too early, too late, or not at all.',
-          'Phase 3: Architecture and writing \u2014 I build the full sales page structure: headline, lead, story, mechanism, proof stack, offer build, close, and guarantee. Every sentence stress-tested against one question: does this move the reader closer to buying?',
-          'Phase 4: Revision and optimization \u2014 headline variations for split testing, tightened transitions, and a wireframe showing your design team exactly where every element goes.',
+          'Phase 1 \u2014 Deep audience research: I mine forums, reviews, competitor pages, and customer-support transcripts to find the exact words your prospects use to describe the pain. The hook and headline come out of this layer, not out of a brainstorm. My AI workflow processes dozens of competitor pages in the time a manual pass takes to read three.',
+          'Phase 2 \u2014 Objection mapping: I identify every objection that could kill the sale and build the persuasion sequence to address each one at exactly the right moment. This is where most sales pages fail \u2014 they answer objections too early, too late, or not at all.',
+          'Phase 3 \u2014 Architecture and writing: I build the full sales-page structure \u2014 headline, lead, story, mechanism, proof stack, offer build, close, and guarantee. Every sentence stress-tested against one question: does this move the reader closer to buying?',
+          'Phase 4 \u2014 Wireframe and revision: headline variations for split testing, tightened transitions, and a wireframe showing your design team exactly where every element goes. One comprehensive revision round is included.',
         ],
       },
       {
-        heading: 'AI-Powered Research. Human-Crafted Persuasion.',
+        heading: 'Sales Pages Across Health, Finance, Info Product, and DTC',
         content:
-          'While your competitors\' copywriters are doing manual research, my AI-enhanced process analyzes <strong>dozens of competitor sales pages</strong>, mines thousands of customer reviews, and tests headline angles \u2014 all before I write a single word. You get the strategic depth of a week-long research sprint compressed into 48 hours.\n\n' +
-          'But here is what AI cannot do: it cannot feel what your prospect feels. It cannot build the emotional escalation that makes someone scroll past the price and click the buy button instead of closing the tab. It cannot architect a guarantee and close sequence that overcomes the final objection your prospect did not even know they had.\n\n' +
-          'That comes from 40+ years of direct-response experience. AI gives me speed and data. Experience gives me judgment. You get both.',
-      },
-      {
-        heading: 'Sales Page Copywriting for Health, Finance, DTC, and Beyond',
-        content:
-          'A sales page for a $47 supplement uses completely different techniques than a TSL for a $2,000 coaching program or a $997 SaaS annual plan. Each industry has unique compliance requirements, buyer psychology, and proven persuasion patterns. I have written converting sales pages across all of them.',
+          'A sales page for a $47 supplement is built differently than a TSL for a $2,000 coaching program or a $997 SaaS annual plan. The compliance constraints differ, the buyer psychology differs, the regulators reading along differ. I\'ve shipped converting sales pages across every major DR vertical.',
         bullets: [
-          'Health and supplement brands \u2014 including sales pages supporting $40M+ in VSL funnel revenue',
-          'Financial publishers \u2014 compliant long-form TSLs for investment and newsletter offers',
-          'Info products and coaching \u2014 including a sales page that hit 340% ROAS on Facebook (Abundant)',
-          'E-commerce and DTC companies',
-          'ClickBank vendors and affiliates',
-          'Business opportunity offers \u2014 including a hybrid page converting at 4.8% on the front end',
+          '$523M / 9 years \u2014 Belron direct-response sales-letter campaign',
+          '340% ROAS on Facebook \u2014 Abundant info-product sales page',
+          '5.7% opt-in-to-sale \u2014 Monetari Fund financial-services TSL (compliance-aware)',
+          '4.8% front-end conversion \u2014 hybrid biz-op sales page',
+          '$40M+ funnel revenue \u2014 supporting health and supplement sales pages',
+          'E-commerce and DTC, ClickBank vendors, info products, SaaS annual-plan pages',
         ],
       },
     ],
     caseStudies: [
+      {
+        name: 'Belron / Safelite International',
+        category: 'Direct-Response Sales Letter Campaign',
+        metric: '$523M / 9 Years',
+        detail: 'Five award-winning copywriters had failed before me. I architected and ran the campaign for nine years.',
+      },
       {
         name: 'Abundant',
         category: 'Info Product Sales Page',
@@ -346,7 +347,7 @@ export const services: Service[] = [
         name: 'Monetari Fund',
         category: 'Financial TSL',
         metric: '5.7% Opt-in to Sale',
-        detail: 'Compliant financial services sales page.',
+        detail: 'Compliance-aware financial-services sales page.',
       },
       {
         name: 'Biz-Op Hybrid',
@@ -390,47 +391,57 @@ export const services: Service[] = [
     deliverablesHeading: 'What You Get When You Hire Me',
     deliverablesSubtext:
       'Every deliverable is engineered to maximize your conversion rate \u2014 not just fill a Google Doc.',
-    testimonialIds: ['5', '4', '2', '6'],
+    testimonialIds: ['1', '5', '4', '2', '3', '6'],
     portfolioItems: [
       { title: 'Long-Form Supplement Sales Page', category: 'Sales Page' },
       { title: 'Info Product Launch Page', category: 'Sales Page' },
       { title: 'SaaS Annual Plan Sales Page', category: 'Sales Page' },
     ],
     midCta: {
-      headline: 'Ready for a sales page that actually converts?',
+      headline: 'Ready for a sales page that beats your current control?',
       subtext:
-        'Book a free strategy call. I\u2019ll tell you honestly whether I can beat what you\u2019re running now.',
+        'Book a free strategy call. Send me what\'s running now and the back-end numbers \u2014 I\'ll tell you honestly whether I can beat it.',
     },
     faqs: [
       {
         question: 'What makes a great sales page copywriter?',
         answer:
-          'Pattern recognition from hundreds of tested sales pages and TSLs across different markets. A great sales page copywriter does not guess what works \u2014 they know, because they have seen the data from decades of split tests. They understand that every element on the page serves a strategic purpose, and they have the discipline to cut anything that does not advance the sale. That is what 40+ years of direct-response experience gives you.',
+          'Pattern recognition. A great sales-page copywriter doesn\'t guess what works \u2014 they know, because they\'ve seen the back-end data from hundreds of split tests across decades of campaigns. They understand that every element on the page serves a strategic purpose, and they have the discipline to cut anything that doesn\'t move the reader closer to the order. That\'s what 40+ years writing direct response gives you. The Belron campaign survived nine years and did $523M because of that pattern recognition \u2014 not because of a clever headline.',
       },
       {
-        question: 'What makes a sales page different from a landing page?',
+        question: 'Are you taking new sales-page clients?',
         answer:
-          'A sales page (also called a TSL or text sales letter) is a long-form persuasion sequence designed to take a reader from awareness to purchase in a single visit. A landing page is typically shorter and designed for a single action like an email opt-in or webinar registration. Both require direct-response skills, but sales pages demand deeper persuasion architecture, more comprehensive objection handling, and a complete offer build with guarantee and close.',
+          'I take a selective number of new sales-page engagements each quarter so the work stays at the level the proof requires. Most kickoffs happen within two weeks of the strategy call. If the project is a fit, I\'ll send a fixed-price proposal within 48 hours. If it isn\'t, I\'ll tell you on the call and point you toward someone in my network who\'s better suited.',
+      },
+      {
+        question: 'What\'s the difference between a sales page and a landing page?',
+        answer:
+          'A sales page (or TSL \u2014 text sales letter) is a long-form persuasion sequence that has to take a reader from awareness to purchase in a single visit. A landing page is short and single-action \u2014 usually an email opt-in or webinar registration. Both need direct-response craft, but sales pages demand deeper persuasion architecture, complete objection handling, and a fully-built offer with guarantee and close.',
+      },
+      {
+        question: 'How do you use AI to write sales pages?',
+        answer:
+          'I don\'t use generic ChatGPT prompting. I use Claude Code augmented by my own custom-built copywriting skills \u2014 proprietary skill files that encode 40 years of frameworks, headline formulas, and evaluation criteria into a working AI workflow, with my 1,239-file Obsidian copywriting brain as the reference layer. I make every strategic and structural call. The AI carries the volume.',
+      },
+      {
+        question: 'What does a sales page cost?',
+        answer:
+          'Sales-page engagements are fixed-price. The number depends on offer complexity, length, and research scope \u2014 most sales-page projects start at $10K. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a sales page converting at 4% instead of 1% on the same traffic doesn\'t pay for itself \u2014 it changes the economics of the funnel.',
       },
       {
         question: 'How long should a sales page be?',
         answer:
-          'It depends on your offer price, traffic temperature, and complexity. Cold traffic and higher prices require longer pages \u2014 you need more proof and more objection handling. I have written converting sales pages from 2,000 words to over 10,000 words. The right length is however long it takes to address every objection and build enough desire to close the sale. Not a word more, not a word less.',
+          'It depends on offer price, traffic temperature, and audience sophistication. Cold traffic and higher-ticket offers need more proof, more objection handling, more story \u2014 so longer pages. I\'ve shipped converting sales pages from 2,000 words to over 10,000. The right length is whatever it takes to address every objection and build enough desire to close. Not a word more, not a word less.',
       },
       {
-        question: 'How much does sales page copywriting cost?',
+        question: 'What industries do you write sales pages for?',
         answer:
-          'Sales page copywriting is project-based, and pricing depends on offer complexity, research scope, and length. We discuss specifics on a strategy call. But here is how I think about it: a sales page converting at 4% instead of 1% on the same traffic does not just pay for itself \u2014 it changes the economics of your entire funnel. The question is not what a sales page costs. It is what a bad sales page costs you every day it is running.',
+          'Direct mail and direct-response (the $523M Belron campaign), health and supplement (sales pages supporting $40M+ in funnel revenue), financial publishers (5.7% opt-in-to-sale on Monetari Fund), info products (340% ROAS on Abundant), e-commerce and DTC, ClickBank vendors, SaaS annual-plan pages, and coaching. Each vertical has its own compliance posture and buyer psychology. The frameworks adapt accordingly.',
       },
       {
-        question: 'Do you write sales pages for specific industries?',
+        question: 'What happens after the strategy call?',
         answer:
-          'I write sales pages and TSLs for health and supplements, financial services, e-commerce and DTC, ClickBank offers, info products, coaching programs, and SaaS. Each industry has specific compliance requirements and buyer psychology. My cross-industry experience means I bring proven frameworks to your niche \u2014 including results like 340% ROAS on an info product sales page and 5.7% opt-in-to-sale on a financial TSL.',
-      },
-      {
-        question: 'How long does it take to write a sales page?',
-        answer:
-          'A typical sales page project takes 2\u20134 weeks from briefing to final draft. That includes deep audience research, competitive analysis, objection mapping, strategic architecture, writing, and one comprehensive revision round. I never shortcut the research phase \u2014 that is where the conversion rate lives.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and strategic diagnostic, then objection mapping and architecture, then the page draft, then one comprehensive revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['vsl-copywriter', 'landing-page-copywriter'],
