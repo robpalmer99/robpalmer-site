@@ -42,6 +42,7 @@ next-env.d.ts
 
 # claude code
 .claude/settings.local.json
+.superpowers/
 
 # Sentry Config File
 .env.sentry-build-plugin
