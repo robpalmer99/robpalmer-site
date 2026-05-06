@@ -92,7 +92,7 @@ All routes return the following headers:
 - **X-Content-Type-Options:** nosniff
 - **Referrer-Policy:** strict-origin-when-cross-origin
 - **Permissions-Policy:** camera=(), microphone=(), geolocation=(), interest-cohort=()
-- **Content-Security-Policy:** Allowlists for self, Calendly, Vercel Analytics, Vercel Speed Insights, Google Analytics / GTM (no `unsafe-eval`)
+- **Content-Security-Policy:** Allowlists for self, Calendly, Vercel Analytics, Vercel Speed Insights, Google Analytics / GTM. Production has **no `unsafe-eval`**. **Dev mode (`npm run dev`) automatically gets `'unsafe-eval'` added** — Next.js's React Refresh hot-reload uses `eval()` to register modules, and without it hydration silently fails (server-rendered HTML appears, but client components like `FadeIn` stay at their initial state and the page looks blank). The conditional is gated on `process.env.NODE_ENV === 'development'` in `next.config.ts`, so production CSP stays strict.
 
 ---
 

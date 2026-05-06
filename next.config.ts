@@ -5,6 +5,13 @@ import remarkGfm from 'remark-gfm'
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 
+// Next.js's React Refresh hot-reload runtime uses eval() to register modules,
+// so `'unsafe-eval'` is required in dev mode or hydration silently fails (FadeIn
+// stays at opacity:0, page appears blank). Production builds don't use react-refresh
+// and keep the strict CSP.
+const isDev = process.env.NODE_ENV === 'development'
+const devEval = isDev ? " 'unsafe-eval'" : ''
+
 const securityHeaders = [
   {
     key: 'X-DNS-Prefetch-Control',
@@ -34,7 +41,7 @@ const securityHeaders = [
     key: 'Content-Security-Policy',
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' https://assets.calendly.com https://va.vercel-scripts.com https://vitals.vercel-insights.com https://www.googletagmanager.com https://browser.sentry-cdn.com",
+      `script-src 'self' 'unsafe-inline'${devEval} https://assets.calendly.com https://va.vercel-scripts.com https://vitals.vercel-insights.com https://www.googletagmanager.com https://browser.sentry-cdn.com`,
       "worker-src 'self' blob:",
       "style-src 'self' 'unsafe-inline' https://assets.calendly.com",
       "img-src 'self' data: https:",
