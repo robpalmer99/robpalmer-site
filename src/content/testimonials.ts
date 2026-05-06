@@ -294,6 +294,22 @@ export const testimonials: Testimonial[] = [
     company: 'Red Oak Capital',
     image: '/images/testimonials/francis-fanzilli.png',
   },
+  {
+    id: '37',
+    quote: 'OMG, Rob…you are the best-ever, ALL TIME! Thank you so much!!!!!!',
+    author: 'Christopher Gyorgy',
+    title: '',
+    company: '',
+    image: '',
+  },
+  {
+    id: '38',
+    quote: 'As usual, you demonstrate great professionalism. We know that experienced copywriters typically have significant skills, but we\'re truly impressed by your approach. We are really excited and fully satisfied with the work done: excellent result!',
+    author: 'Giacomo Fusari',
+    title: 'CEO',
+    company: 'Arte Riconquista',
+    image: '',
+  },
 ]
 
 export const featuredTestimonials = testimonials.filter((t) => t.featured)

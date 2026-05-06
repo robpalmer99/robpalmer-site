@@ -26,7 +26,7 @@
 - Verticals: `src/app/verticals/_data/verticals.ts` (6 items, Vertical interface)
 - Portfolio: `src/app/portfolio/_data/portfolio.ts` (12 items)
 - Case Studies: `src/app/case-studies/_data/case-studies.ts` (2 items)
-- Testimonials: `src/content/testimonials.ts` (36 items, IDs '1'-'36')
+- Testimonials: `src/content/testimonials.ts` (38 items, IDs '1'-'38')
 - Blog: 105 MDX posts in `src/content/blog/`
 - Constants: `src/lib/constants.ts` (SITE_URL, NAV_LINKS, STATS, etc.)
 
