@@ -233,6 +233,88 @@ export default async function ServicePage({ params }: ServicePageProps) {
         </Container>
       </Section>
 
+      {/* ───────────────────────────── Triple Brain Mechanism ───────────────────────────── */}
+      <Section variant="alt" divider>
+        <Container>
+          <div className="max-w-4xl mx-auto">
+            <FadeIn>
+              <div className="text-center">
+                <Badge variant="gold">Triple Brain Marketing</Badge>
+                <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950 mt-5">
+                  Three brains.{' '}
+                  <span className="text-gold-500">One engagement.</span>
+                </h2>
+                <p className="mt-4 text-base text-ink-700 font-body leading-relaxed max-w-2xl mx-auto">
+                  The mechanism behind every project I deliver &mdash; including yours.
+                </p>
+              </div>
+            </FadeIn>
+            <ul role="list" className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10">
+              <li>
+                <FadeIn delay={0} distance={20} className="h-full">
+                  <div className="h-full rounded-xl border border-paper-200 bg-white p-5 shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5">
+                    <div className="font-heading text-xs font-bold uppercase tracking-wide text-gold-600">
+                      Brain 1
+                    </div>
+                    <h3 className="mt-2 font-heading text-lg font-bold text-ink-950 leading-tight">
+                      My copywriting brain
+                    </h3>
+                    <p className="mt-2 text-sm text-ink-700 leading-relaxed font-body">
+                      40+ years of direct-response craft for Apple, IBM, Microsoft, Citibank, Morgan Stanley &mdash; and the campaign behind $523M for Belron.
+                    </p>
+                  </div>
+                </FadeIn>
+              </li>
+              <li>
+                <FadeIn delay={100} distance={20} className="h-full">
+                  <div className="h-full rounded-xl border border-paper-200 bg-white p-5 shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5">
+                    <div className="font-heading text-xs font-bold uppercase tracking-wide text-gold-600">
+                      Brain 2
+                    </div>
+                    <h3 className="mt-2 font-heading text-lg font-bold text-ink-950 leading-tight">
+                      Claude Code, with my custom copywriting skills
+                    </h3>
+                    <p className="mt-2 text-sm text-ink-700 leading-relaxed font-body">
+                      Anthropic&apos;s most capable model, augmented by my own skill files &mdash; proprietary frameworks and evaluation criteria from real campaigns.{' '}
+                      <Link href="/blog/claude-code-copywriting-skills" className="text-gold-600 underline-offset-4 hover:underline">
+                        Open-sourced
+                      </Link>{' '}
+                      as proof.
+                    </p>
+                  </div>
+                </FadeIn>
+              </li>
+              <li>
+                <FadeIn delay={200} distance={20} className="h-full">
+                  <div className="h-full rounded-xl border border-paper-200 bg-white p-5 shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5">
+                    <div className="font-heading text-xs font-bold uppercase tracking-wide text-gold-600">
+                      Brain 3
+                    </div>
+                    <h3 className="mt-2 font-heading text-lg font-bold text-ink-950 leading-tight">
+                      My Obsidian copywriting brain
+                    </h3>
+                    <p className="mt-2 text-sm text-ink-700 leading-relaxed font-body">
+                      A 1,239-file knowledge base spanning the old DR masters through cutting-edge AI marketing &mdash; indexed and instantly retrievable while I write yours.
+                    </p>
+                  </div>
+                </FadeIn>
+              </li>
+            </ul>
+            <FadeIn delay={400}>
+              <div className="mt-10 text-center">
+                <Link
+                  href="/blog/triple-brain-marketing"
+                  className="inline-flex items-center gap-2 font-heading text-sm font-semibold text-gold-600 hover:text-gold-500 transition-colors"
+                >
+                  Read the full Triple Brain story
+                  <span aria-hidden="true">&rarr;</span>
+                </Link>
+              </div>
+            </FadeIn>
+          </div>
+        </Container>
+      </Section>
+
       {/* ───────────────────────────── Case Studies ───────────────────────────── */}
       {service.caseStudies && service.caseStudies.length > 0 && (
         <Section variant="gold">
