@@ -136,7 +136,7 @@ export default function HomePage() {
                     Claude Code, with my custom copywriting skills
                   </h3>
                   <p className="mt-3 text-base text-ink-700 leading-relaxed font-body">
-                    Anthropic&apos;s most capable model, augmented by my own custom-built skill files. Not generic AI prompting — proprietary frameworks, formulas, and evaluation criteria from real campaigns, encoded for Claude to apply on every project. <Link href="/blog/claude-code-copywriting-skills" className="text-gold-600 underline-offset-4 hover:underline">Open-sourced</Link> as proof.
+                    Anthropic&apos;s most capable model, augmented by my own custom-built skill files. Not generic AI prompting — proprietary frameworks, formulas, and evaluation criteria from real campaigns, encoded for Claude to apply on every project. <a href="https://github.com/robpalmer99/claude-code-copywriting-skills" target="_blank" rel="noopener noreferrer" className="text-gold-600 underline-offset-4 hover:underline">Open-sourced on GitHub</a> (CC-BY-4.0) — <Link href="/blog/claude-code-copywriting-skills" className="text-gold-600 underline-offset-4 hover:underline">read the blog post</Link> for the full breakdown.
                   </p>
                 </div>
               </FadeIn>
@@ -391,7 +391,24 @@ export default function HomePage() {
                   doesn&apos;t offend anyone and doesn&apos;t convince anyone either. It can&apos;t architect a persuasion sequence. It can&apos;t read what a prospect isn&apos;t saying out loud. It doesn&apos;t know which lead type to use at which awareness level. Those decisions come from craft.
                 </p>
                 <p>
-                  My approach is different. I was the world&apos;s first blogger in 1993, writing copy before the internet had pictures. I built my own AI workflow because nothing off-the-shelf was good enough — Claude Code augmented by custom copywriting skills, fed by a 1,200+ file copywriting brain spanning the old masters through today&apos;s cutting-edge AI marketing strategies. The output is something neither a human alone nor an AI alone can produce.
+                  My approach is different. I was the world&apos;s first blogger in 1993, writing copy before the internet had pictures. I built my own AI workflow because nothing off-the-shelf was good enough — and what it actually does is concrete:
+                </p>
+                <ul role="list" className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gold-400" aria-hidden="true" />
+                    <span><strong className="text-ink-950">Skill files encode 190+ proven DR frameworks.</strong> Claude routes through a headline-formula matrix, lead-type evaluator, and awareness-stage routing on every draft. Not generic instruction-following; not single-prompt thinking. The frameworks come from forty years of campaigns I&apos;ve shipped.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gold-400" aria-hidden="true" />
+                    <span><strong className="text-ink-950">Compliance posture from line 1.</strong> FDA structure/function-claim discipline, FTC substantiation, SEC/FINRA disclosure standards baked into the writing layer through skill files. Not retrofitted by legal at the end. The discipline behind why $40M Gluco 6 cleared review every time.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gold-400" aria-hidden="true" />
+                    <span><strong className="text-ink-950">1,239-file Obsidian retrieval.</strong> Claude pulls from my personal swipe library (193 swipes), 512 pieces of my own tested copy, and 125 book/course notes. Not generic LLM training data — my actual proven reference material, indexed and instantly retrievable.</span>
+                  </li>
+                </ul>
+                <p>
+                  The output is something neither a human alone nor an AI alone can produce.
                 </p>
               </div>
             </FadeIn>
