@@ -55,7 +55,9 @@ export const verticals: Vertical[] = [
       {
         heading: 'The Health Supplement Copy Challenge',
         content:
-          'Health and supplement copywriting is a high-wire act. You need copy aggressive enough to convert cold traffic, yet compliant enough to stay on the right side of the FTC, FDA, and advertising platforms. Most copywriters either write copy that is too tame to convert or too aggressive to survive review. I write copy that does both — converts at scale while staying within regulatory guidelines. That balance is what separates profitable supplement brands from the ones that burn through ad spend with nothing to show for it.',
+          'Health and supplement copywriting is a high-wire act. You need copy aggressive enough to convert cold traffic, yet compliant enough to stay on the right side of the FTC, FDA, and advertising platforms.\n\n' +
+          'Most copywriters either write copy that is too tame to convert or too aggressive to survive review. I write copy that does both — converts at scale while staying within regulatory guidelines.\n\n' +
+          'That balance is what separates profitable supplement brands from the ones that burn through ad spend with nothing to show for it.',
       },
       {
         heading: 'Deep Experience Across Health Verticals',
@@ -74,17 +76,23 @@ export const verticals: Vertical[] = [
       {
         heading: 'Compliance-Aware Copy That Still Converts',
         content:
-          'The biggest challenge in supplement copywriting is not writing compliant copy — it is writing copy that is both compliant and persuasive. Anyone can write safe, bland copy that passes review. The skill is in crafting structure/function claims, lifestyle benefits, and social proof narratives that create genuine desire while staying within regulatory guidelines. I use hedging language strategically, cite studies where available, and build persuasion cases around outcomes that prospects can relate to — all without crossing the line into disease claims or unsubstantiated promises.',
+          'The biggest challenge in supplement copywriting is not writing compliant copy — it is writing copy that is both compliant and persuasive. Anyone can write safe, bland copy that passes review.\n\n' +
+          'The skill is in crafting structure/function claims, lifestyle benefits, and social proof narratives that create genuine desire while staying within regulatory guidelines.\n\n' +
+          'I use hedging language strategically, cite studies where available, and build persuasion cases around outcomes that prospects can relate to — all without crossing the line into disease claims or unsubstantiated promises.',
       },
       {
         heading: 'AI-Enhanced Supplement Research',
         content:
-          'I use AI tools to analyze thousands of competitor ads, identify the specific claims and angles generating the most engagement, and map the regulatory landscape before writing a single word. This means your copy is informed by data, not guesswork. I can identify which hooks are working in your niche right now, which claims are getting flagged by platforms, and which funnel structures are producing the highest EPCs — all before the research phase ends. The result: copy that launches faster and converts harder because it is built on real competitive intelligence.',
+          'I use AI tools to analyze thousands of competitor ads, identify the specific claims and angles generating the most engagement, and map the regulatory landscape before writing a single word. This means your copy is informed by data, not guesswork.\n\n' +
+          'I can identify which hooks are working in your niche right now, which claims are getting flagged by platforms, and which funnel structures are producing the highest EPCs — all before the research phase ends.\n\n' +
+          'The result: copy that launches faster and converts harder because it is built on real competitive intelligence.',
       },
       {
         heading: 'The Full Health Supplement Funnel',
         content:
-          'I do not just write a sales page and call it done. I build complete supplement funnels — from the front-end VSL or TSL through order bumps, OTO upsells, downsells, and post-purchase email sequences. Each step is engineered to maximize average order value while keeping refund rates manageable. The most profitable supplement brands understand that the real money is in the back-end, and that is where my direct-response expertise delivers the highest ROI.',
+          'I do not just write a sales page and call it done. I build complete supplement funnels — from the front-end VSL or TSL through order bumps, OTO upsells, downsells, and post-purchase email sequences.\n\n' +
+          'Each step is engineered to maximize average order value while keeping refund rates manageable.\n\n' +
+          'The most profitable supplement brands understand that the real money is in the back-end, and that is where my direct-response expertise delivers the highest ROI.',
       },
     ],
     deliverables: [
@@ -165,27 +173,34 @@ export const verticals: Vertical[] = [
       {
         heading: 'Financial Copy That Converts and Complies',
         content:
-          'Financial copywriting demands a unique combination of persuasion skill and regulatory awareness. Having written for Fortune 500 financial brands including Morgan Stanley and Citibank, I understand how to craft compelling financial offers that respect compliance boundaries. Whether you are selling a trading newsletter, an investment course, a financial advisory service, or an insurance product, the copy needs to be aggressive enough to convert while careful enough to stay within <a href="https://www.sec.gov" target="_blank" rel="noopener noreferrer">SEC</a>, <a href="https://www.finra.org" target="_blank" rel="noopener noreferrer">FINRA</a>, and <a href="https://www.ftc.gov" target="_blank" rel="noopener noreferrer">FTC</a> regulations.',
+          'Financial copywriting demands a unique combination of persuasion skill and regulatory awareness. Having written for Fortune 500 financial brands including Morgan Stanley and Citibank, I understand how to craft compelling financial offers that respect compliance boundaries.\n\n' +
+          'Whether you are selling a trading newsletter, an investment course, a financial advisory service, or an insurance product, the copy needs to be aggressive enough to convert while careful enough to stay within <a href="https://www.sec.gov" target="_blank" rel="noopener noreferrer">SEC</a>, <a href="https://www.finra.org" target="_blank" rel="noopener noreferrer">FINRA</a>, and <a href="https://www.ftc.gov" target="_blank" rel="noopener noreferrer">FTC</a> regulations.',
       },
       {
         heading: 'Fortune 500 Financial Foundations',
         content:
-          'My financial copywriting experience spans the full spectrum — from institutional marketing for major Wall Street banks to direct-response campaigns for independent financial publishers. Writing for Morgan Stanley taught me how to communicate with sophisticated, high-net-worth audiences. Writing for Citibank taught me how to drive response at scale within tight compliance frameworks. This range gives me a unique perspective: I can write with the credibility and authority of a Wall Street brand while employing the conversion techniques that drive direct-response results.',
+          'My financial copywriting experience spans the full spectrum — from institutional marketing for major Wall Street banks to direct-response campaigns for independent financial publishers.\n\n' +
+          'Writing for Morgan Stanley taught me how to communicate with sophisticated, high-net-worth audiences. Writing for Citibank taught me how to drive response at scale within tight compliance frameworks.\n\n' +
+          'This range gives me a unique perspective: I can write with the credibility and authority of a Wall Street brand while employing the conversion techniques that drive direct-response results.',
       },
       {
         heading: 'Understanding the Financial Buyer',
         content:
-          'Financial prospects are the most skeptical audience in direct response. They have heard every claim, seen every chart pattern, and been burned by enough bad advice to develop strong defenses against marketing. My copy cuts through that skepticism by leading with credibility, demonstrating genuine expertise, and making offers that feel like opportunities rather than pitches. The key is building trust first — then presenting the offer as the logical next step for someone who has already decided to take action.',
+          'Financial prospects are the most skeptical audience in direct response. They have heard every claim, seen every chart pattern, and been burned by enough bad advice to develop strong defenses against marketing.\n\n' +
+          'My copy cuts through that skepticism by leading with credibility, demonstrating genuine expertise, and making offers that feel like opportunities rather than pitches.\n\n' +
+          'The key is building trust first — then presenting the offer as the logical next step for someone who has already decided to take action.',
       },
       {
         heading: 'Long-Form Financial Promotions',
         content:
-          'Long-form financial promotions — the kind published by Agora, Stansberry, and similar publishers — are one of my specialties. These 5,000 to 10,000+ word pieces require deep research, sophisticated narrative construction, and an ability to maintain reader engagement across a lengthy persuasion sequence. I bring the same research-driven, AI-enhanced process to financial promotions that I use across all my work, resulting in promotions that are both deeply researched and strategically compelling.',
+          'Long-form financial promotions — the kind published by Agora, Stansberry, and similar publishers — are one of my specialties. These 5,000 to 10,000+ word pieces require deep research, sophisticated narrative construction, and an ability to maintain reader engagement across a lengthy persuasion sequence.\n\n' +
+          'I bring the same research-driven, AI-enhanced process to financial promotions that I use across all my work, resulting in promotions that are both deeply researched and strategically compelling.',
       },
       {
         heading: 'AI-Enhanced Financial Research',
         content:
-          'Financial copywriting requires more research than almost any other niche. I use AI tools to analyze market trends, track competitor positioning, identify the specific fears and desires driving financial buyers right now, and monitor the regulatory landscape before writing a single word. This compressed research process means your promotion launches faster — without sacrificing the depth of insight that makes financial copy convert.',
+          'Financial copywriting requires more research than almost any other niche. I use AI tools to analyze market trends, track competitor positioning, identify the specific fears and desires driving financial buyers right now, and monitor the regulatory landscape before writing a single word.\n\n' +
+          'This compressed research process means your promotion launches faster — without sacrificing the depth of insight that makes financial copy convert.',
       },
     ],
     deliverables: [
@@ -256,7 +271,9 @@ export const verticals: Vertical[] = [
       {
         heading: 'DTC Copy That Drives Revenue',
         content:
-          'E-commerce and DTC brands live and die by their copy. Your product page headline, your abandoned cart email, your post-purchase upsell sequence — each one is either making you money or leaving it on the table. I write end-to-end e-commerce copy that maximizes conversion at every touchpoint, from the first ad impression to the fifth repeat purchase. The difference between a 2% conversion rate and a 4% conversion rate is not clever wordplay — it is strategic persuasion engineering.',
+          'E-commerce and DTC brands live and die by their copy. Your product page headline, your abandoned cart email, your post-purchase upsell sequence — each one is either making you money or leaving it on the table.\n\n' +
+          'I write end-to-end e-commerce copy that maximizes conversion at every touchpoint, from the first ad impression to the fifth repeat purchase.\n\n' +
+          'The difference between a 2% conversion rate and a 4% conversion rate is not clever wordplay — it is strategic persuasion engineering.',
       },
       {
         heading: 'Beyond Product Descriptions',
@@ -272,7 +289,9 @@ export const verticals: Vertical[] = [
       {
         heading: 'Maximizing Customer Lifetime Value',
         content:
-          'The most profitable DTC brands do not just acquire customers — they keep them. I write post-purchase sequences, subscription upsells, loyalty program copy, and re-engagement campaigns designed to maximize customer lifetime value. This is where the real margin lives in e-commerce. Most brands focus all their budget on acquisition and ignore the back-end — which is like filling a bucket with a hole in it. My direct-response expertise plugs those holes and turns one-time buyers into repeat customers.',
+          'The most profitable DTC brands do not just acquire customers — they keep them. I write post-purchase sequences, subscription upsells, loyalty program copy, and re-engagement campaigns designed to maximize customer lifetime value.\n\n' +
+          'This is where the real margin lives in e-commerce. Most brands focus all their budget on acquisition and ignore the back-end — which is like filling a bucket with a hole in it.\n\n' +
+          'My direct-response expertise plugs those holes and turns one-time buyers into repeat customers.',
       },
       {
         heading: 'The Full E-Commerce Revenue Stack',
@@ -282,7 +301,8 @@ export const verticals: Vertical[] = [
       {
         heading: 'AI-Powered Competitive Intelligence',
         content:
-          'I use AI tools to analyze your competitors\' funnels, identify the ad angles getting the most engagement in your niche, and map the customer journey from first click to fifth purchase. This data-driven approach means your copy is not based on guesswork or generic best practices — it is built on real intelligence about what is actually working in your specific market right now.',
+          'I use AI tools to analyze your competitors\' funnels, identify the ad angles getting the most engagement in your niche, and map the customer journey from first click to fifth purchase.\n\n' +
+          'This data-driven approach means your copy is not based on guesswork or generic best practices — it is built on real intelligence about what is actually working in your specific market right now.',
       },
     ],
     deliverables: [
@@ -351,12 +371,16 @@ export const verticals: Vertical[] = [
       {
         heading: 'ClickBank Funnels That Win',
         content:
-          '<a href="https://www.clickbank.com" target="_blank" rel="noopener noreferrer">ClickBank</a> is a unique marketplace with its own ecosystem of affiliates, buyers, and success patterns. Writing copy that succeeds on ClickBank requires understanding what motivates affiliates to promote your offer, what converts ClickBank\'s buyer demographics, and how to structure funnels that maximize earnings per click (EPC) while maintaining sustainable refund rates. I have built ClickBank funnels that generate consistent, scalable revenue — the kind that attract top affiliates and keep them promoting month after month.',
+          '<a href="https://www.clickbank.com" target="_blank" rel="noopener noreferrer">ClickBank</a> is a unique marketplace with its own ecosystem of affiliates, buyers, and success patterns.\n\n' +
+          'Writing copy that succeeds on ClickBank requires understanding what motivates affiliates to promote your offer, what converts ClickBank\'s buyer demographics, and how to structure funnels that maximize earnings per click (EPC) while maintaining sustainable refund rates.\n\n' +
+          'I have built ClickBank funnels that generate consistent, scalable revenue — the kind that attract top affiliates and keep them promoting month after month.',
       },
       {
         heading: 'Engineered for Affiliate Appeal',
         content:
-          'The best ClickBank offer in the world will fail if affiliates do not promote it. Affiliates look at one thing above all else: EPC (earnings per click). They want proof that your funnel converts their traffic into commissions. I write copy that converts AND gives affiliates the metrics they need to see — high EPCs, competitive gravity scores, and strong AOVs. I also create affiliate tools pages, swipe copy, and promotional materials that make it easy for affiliates to drive traffic to your offer.',
+          'The best ClickBank offer in the world will fail if affiliates do not promote it. Affiliates look at one thing above all else: EPC (earnings per click). They want proof that your funnel converts their traffic into commissions.\n\n' +
+          'I write copy that converts AND gives affiliates the metrics they need to see — high EPCs, competitive gravity scores, and strong AOVs.\n\n' +
+          'I also create affiliate tools pages, swipe copy, and promotional materials that make it easy for affiliates to drive traffic to your offer.',
       },
       {
         heading: 'Complete ClickBank Funnels',
@@ -374,12 +398,14 @@ export const verticals: Vertical[] = [
       {
         heading: 'ClickBank Compliance Done Right',
         content:
-          'ClickBank has its own compliance review process that can trip up even experienced copywriters. I stay current with ClickBank\'s content guidelines and approval processes, writing copy designed to pass review while still being aggressive enough to convert. This includes understanding their stance on income claims, health claims, testimonial usage, and refund policy presentation. Getting your offer approved the first time saves weeks of back-and-forth revisions.',
+          'ClickBank has its own compliance review process that can trip up even experienced copywriters. I stay current with ClickBank\'s content guidelines and approval processes, writing copy designed to pass review while still being aggressive enough to convert.\n\n' +
+          'This includes understanding their stance on income claims, health claims, testimonial usage, and refund policy presentation. Getting your offer approved the first time saves weeks of back-and-forth revisions.',
       },
       {
         heading: 'Data-Driven Angle Selection',
         content:
-          'Before writing a word, I use AI tools to analyze what is currently working on ClickBank — which hooks are driving the highest gravity scores, which angles are resonating with buyers, and which funnel structures are producing the best EPCs. This competitive intelligence means your funnel is built on what is proven to work right now, not on guesswork or last year\'s tactics.',
+          'Before writing a word, I use AI tools to analyze what is currently working on ClickBank — which hooks are driving the highest gravity scores, which angles are resonating with buyers, and which funnel structures are producing the best EPCs.\n\n' +
+          'This competitive intelligence means your funnel is built on what is proven to work right now, not on guesswork or last year\'s tactics.',
       },
     ],
     deliverables: [
@@ -453,7 +479,9 @@ export const verticals: Vertical[] = [
       {
         heading: 'SaaS Copy With a Direct-Response Edge',
         content:
-          'Most SaaS copy is bland, feature-focused, and interchangeable. "Streamline your workflow. Boost productivity. Sign up free." Sound familiar? That is because most SaaS companies hire brand copywriters when what they actually need is a direct-response copywriter. I bring urgency, specificity, emotional triggers, and clear value propositions to SaaS marketing — the same principles that have generated $523M+ in tracked results across other industries. The result: landing pages that convert, trial sequences that activate, and upgrade campaigns that grow MRR.',
+          'Most SaaS copy is bland, feature-focused, and interchangeable. "Streamline your workflow. Boost productivity. Sign up free." Sound familiar?\n\n' +
+          'That is because most SaaS companies hire brand copywriters when what they actually need is a direct-response copywriter. I bring urgency, specificity, emotional triggers, and clear value propositions to SaaS marketing — the same principles that have generated $523M+ in tracked results across other industries.\n\n' +
+          'The result: landing pages that convert, trial sequences that activate, and upgrade campaigns that grow MRR.',
       },
       {
         heading: 'The Full SaaS Customer Journey',
@@ -469,17 +497,23 @@ export const verticals: Vertical[] = [
       {
         heading: 'Translating Features into Revenue',
         content:
-          'The biggest mistake in SaaS copy is leading with features. Your prospects do not care about your API or your dashboard — they care about the problems those features solve and the outcomes they enable. I translate technical capabilities into compelling benefits that resonate with decision-makers, using AI-powered competitive analysis to understand exactly what your market values most. The copy speaks the language of business outcomes, not technical specifications.',
+          'The biggest mistake in SaaS copy is leading with features. Your prospects do not care about your API or your dashboard — they care about the problems those features solve and the outcomes they enable.\n\n' +
+          'I translate technical capabilities into compelling benefits that resonate with decision-makers, using AI-powered competitive analysis to understand exactly what your market values most.\n\n' +
+          'The copy speaks the language of business outcomes, not technical specifications.',
       },
       {
         heading: 'Reducing Churn Through Copy',
         content:
-          'Most SaaS companies treat churn as a product problem. Often, it is a copy problem. Users churn because they never fully activated, because they forgot why they signed up, or because they do not understand the value they are getting. I write onboarding sequences that drive activation, engagement emails that demonstrate ongoing value, and re-engagement campaigns that save at-risk accounts. Reducing churn by even 1-2% can have a massive impact on annual recurring revenue.',
+          'Most SaaS companies treat churn as a product problem. Often, it is a copy problem.\n\n' +
+          'Users churn because they never fully activated, because they forgot why they signed up, or because they do not understand the value they are getting.\n\n' +
+          'I write onboarding sequences that drive activation, engagement emails that demonstrate ongoing value, and re-engagement campaigns that save at-risk accounts. Reducing churn by even 1-2% can have a massive impact on annual recurring revenue.',
       },
       {
         heading: 'I Speak Your Metrics',
         content:
-          'I understand MRR, ARR, churn rate, LTV, CAC, activation rate, and how copy impacts each one. This means I can write copy aligned with your specific growth objectives — whether that is improving trial-to-paid conversion, increasing expansion revenue, or reducing time-to-value during onboarding. Every piece of copy I write has a measurable business objective behind it.',
+          'I understand MRR, ARR, churn rate, LTV, CAC, activation rate, and how copy impacts each one.\n\n' +
+          'This means I can write copy aligned with your specific growth objectives — whether that is improving trial-to-paid conversion, increasing expansion revenue, or reducing time-to-value during onboarding.\n\n' +
+          'Every piece of copy I write has a measurable business objective behind it.',
       },
     ],
     deliverables: [
@@ -548,22 +582,30 @@ export const verticals: Vertical[] = [
       {
         heading: 'Info Products Live and Die by Their Copy',
         content:
-          'Unlike physical products, info products have no tangible form factor to sell. There is no packaging to hold, no ingredients list to scan, no weight to feel. The only thing standing between your prospect and their credit card is your copy. That is why info product copy demands the highest level of direct-response skill — it has to create desire for something the prospect cannot see, touch, or taste before buying. The copy IS the product experience until they purchase.',
+          'Unlike physical products, info products have no tangible form factor to sell. There is no packaging to hold, no ingredients list to scan, no weight to feel.\n\n' +
+          'The only thing standing between your prospect and their credit card is your copy.\n\n' +
+          'That is why info product copy demands the highest level of direct-response skill — it has to create desire for something the prospect cannot see, touch, or taste before buying. The copy IS the product experience until they purchase.',
       },
       {
         heading: 'Launch Sequences That Generate Momentum',
         content:
-          'Whether you are doing a live launch, an evergreen webinar, or a challenge funnel, the copy sequence is everything. I write launch sequences that build anticipation, establish authority, create urgency, and drive sales within a compressed window. Each email, each page, each touchpoint is carefully orchestrated to move the prospect closer to the buy button. My launch copy has generated millions in revenue for course creators, coaches, and digital product companies.',
+          'Whether you are doing a live launch, an evergreen webinar, or a challenge funnel, the copy sequence is everything.\n\n' +
+          'I write launch sequences that build anticipation, establish authority, create urgency, and drive sales within a compressed window. Each email, each page, each touchpoint is carefully orchestrated to move the prospect closer to the buy button.\n\n' +
+          'My launch copy has generated millions in revenue for course creators, coaches, and digital product companies.',
       },
       {
         heading: 'Evergreen Systems That Scale',
         content:
-          'Live launches are powerful but exhausting. The real money in info products is in evergreen sales systems that generate revenue 24/7 without constant launches. I build evergreen webinar funnels, automated email sequences, and sales pages designed to convert consistently over time — so you can scale without burning out. The best info product businesses run on systems, not sprints.',
+          'Live launches are powerful but exhausting. The real money in info products is in evergreen sales systems that generate revenue 24/7 without constant launches.\n\n' +
+          'I build evergreen webinar funnels, automated email sequences, and sales pages designed to convert consistently over time — so you can scale without burning out.\n\n' +
+          'The best info product businesses run on systems, not sprints.',
       },
       {
         heading: 'High-Ticket Coaching and Program Copy',
         content:
-          'High-ticket coaching programs and masterminds require a fundamentally different copywriting approach. The prospect is making a significant financial commitment, which means the copy needs to pre-qualify, build deep trust, demonstrate transformational value, and justify the investment — all before the sales call. The goal is to deliver prospects who are pre-sold before they ever speak to your sales team.',
+          'High-ticket coaching programs and masterminds require a fundamentally different copywriting approach.\n\n' +
+          'The prospect is making a significant financial commitment, which means the copy needs to pre-qualify, build deep trust, demonstrate transformational value, and justify the investment — all before the sales call.\n\n' +
+          'The goal is to deliver prospects who are pre-sold before they ever speak to your sales team.',
         bullets: [
           'Application funnels that pre-qualify high-intent prospects',
           'Long-form sales pages that justify premium pricing',
@@ -574,7 +616,9 @@ export const verticals: Vertical[] = [
       {
         heading: 'Webinar Scripts That Convert',
         content:
-          'A well-crafted webinar script is essentially a structured VSL with interaction points. I understand the timing, pacing, and persuasion architecture that makes webinars convert — from the hook that prevents early drop-off, through the teaching section that builds authority, to the transition and offer that drives action. Whether you are running live or evergreen, the script is the engine that powers the entire funnel.',
+          'A well-crafted webinar script is essentially a structured VSL with interaction points.\n\n' +
+          'I understand the timing, pacing, and persuasion architecture that makes webinars convert — from the hook that prevents early drop-off, through the teaching section that builds authority, to the transition and offer that drives action.\n\n' +
+          'Whether you are running live or evergreen, the script is the engine that powers the entire funnel.',
       },
     ],
     deliverables: [

@@ -89,17 +89,22 @@ export const services: Service[] = [
       {
         heading: 'Why Most VSLs Fail \u2014 And Burn Through Your Ad Budget',
         content:
-          'You launch a VSL. You send traffic. And then you watch the heatmap: <strong>68% of viewers gone before the 90-second mark.</strong> The ones who stay drift off somewhere in the middle. Almost nobody reaches the close. Meanwhile, the ad spend keeps draining. This is what happens when a VSL is written by someone who knows how to write \u2014 but does not know how to <em>sell on video</em>. A VSL is not a blog post read over slides. It is a 15-to-45-minute persuasion sequence that must hold a cold, skeptical stranger\'s attention and compel them to pull out their credit card. That requires a completely different skill set: strategic pacing, pattern interrupts, emotional escalation, and knowing exactly when to transition from story to offer. Most VSL copywriters get one or two of those right. The ones who get all of them right are the ones behind the offers that scale.',
+          'You launch a VSL. You send traffic. And then you watch the heatmap: <strong>68% of viewers gone before the 90-second mark.</strong> The ones who stay drift off somewhere in the middle. Almost nobody reaches the close. Meanwhile, the ad spend keeps draining.\n\n' +
+          'This is what happens when a VSL is written by someone who knows how to write \u2014 but does not know how to <em>sell on video</em>. A VSL is not a blog post read over slides. It is a 15-to-45-minute persuasion sequence that must hold a cold, skeptical stranger\'s attention and compel them to pull out their credit card.\n\n' +
+          'That requires a completely different skill set: strategic pacing, pattern interrupts, emotional escalation, and knowing exactly when to transition from story to offer. Most VSL copywriters get one or two of those right. The ones who get all of them right are the ones behind the offers that scale.',
       },
       {
         heading: 'What Separates a $30M VSL From One That Dies in Testing',
         content:
-          'When I wrote the VSL for <strong>Mobile Profits</strong>, it became the <strong>#1 offer on ClickBank</strong> and generated over <strong>$30 million</strong> \u2014 converting cold traffic at up to 4%. That did not happen because of a clever hook or a fancy script format. It happened because of what came <em>before</em> the writing: deep research into the audience\'s emotional landscape, a unique mechanism that felt new and intuitive, and a persuasion architecture mapped to exactly where those prospects sat on the awareness scale. That is the difference between a VSL that scales and one that bleeds money in testing. After 40+ years writing direct response and studying the frameworks behind the biggest winners \u2014 Schwartz\'s awareness levels, Georgi\'s RMBC method, Kell\'s VSL flow patterns \u2014 I can see the structural problems in a VSL the way a mechanic hears a bad engine. The pattern recognition alone is worth more than a clever turn of phrase.',
+          'When I wrote the VSL for <strong>Mobile Profits</strong>, it became the <strong>#1 offer on ClickBank</strong> and generated over <strong>$30 million</strong> \u2014 converting cold traffic at up to 4%.\n\n' +
+          'That did not happen because of a clever hook or a fancy script format. It happened because of what came <em>before</em> the writing: deep research into the audience\'s emotional landscape, a unique mechanism that felt new and intuitive, and a persuasion architecture mapped to exactly where those prospects sat on the awareness scale. That is the difference between a VSL that scales and one that bleeds money in testing.\n\n' +
+          'After 40+ years writing direct response and studying the frameworks behind the biggest winners \u2014 Schwartz\'s awareness levels, Georgi\'s RMBC method, Kell\'s VSL flow patterns \u2014 I can see the structural problems in a VSL the way a mechanic hears a bad engine. The pattern recognition alone is worth more than a clever turn of phrase.',
       },
       {
         heading: 'The VSL Copy Chief That Top Copywriters Hire',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park. These are not people who hand out compliments casually. They hired me and endorsed me because they have seen my work perform. When the best copywriters in the industry need someone to write or review VSLs, they call me. That is the level of VSL copywriting you get access to when we work together.',
+          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park. These are not people who hand out compliments casually.\n\n' +
+          'They hired me and endorsed me because they have seen my work perform. When the best copywriters in the industry need someone to write or review VSLs, they call me. That is the level of VSL copywriting you get access to when we work together.',
       },
       {
         heading: 'How I Write a VSL That Converts Cold Traffic',
@@ -115,7 +120,9 @@ export const services: Service[] = [
       {
         heading: 'AI-Powered Research. Human-Crafted Persuasion.',
         content:
-          'While your competitors\' copywriters are doing manual research, my AI-enhanced process analyzes <strong>50+ competitor VSLs</strong>, mines thousands of customer reviews, and tests hook variations \u2014 all before I write a single word. You get the strategic depth of a week-long research sprint compressed into 48 hours. But here is the thing AI cannot do: it cannot feel what your prospect feels. It cannot build the emotional escalation that makes someone lean forward at minute 12 instead of clicking away. It cannot architect a close that overcomes the final objection your prospect did not even know they had. That comes from 40+ years of direct-response experience and a pattern library built across hundreds of VSL projects. AI gives me speed and data. Experience gives me judgment. You get both.',
+          'While your competitors\' copywriters are doing manual research, my AI-enhanced process analyzes <strong>50+ competitor VSLs</strong>, mines thousands of customer reviews, and tests hook variations \u2014 all before I write a single word. You get the strategic depth of a week-long research sprint compressed into 48 hours.\n\n' +
+          'But here is the thing AI cannot do: it cannot feel what your prospect feels. It cannot build the emotional escalation that makes someone lean forward at minute 12 instead of clicking away. It cannot architect a close that overcomes the final objection your prospect did not even know they had.\n\n' +
+          'That comes from 40+ years of direct-response experience and a pattern library built across hundreds of VSL projects. AI gives me speed and data. Experience gives me judgment. You get both.',
       },
       {
         heading: 'VSL Copywriting for Health, Finance, DTC, and Beyond',
@@ -267,17 +274,24 @@ export const services: Service[] = [
       {
         heading: 'Why Most Sales Pages Bleed Money Instead of Making It',
         content:
-          'You are sending traffic to a sales page. The clicks are coming in. But the conversion rate is sitting at 0.5% \u2014 maybe 1% on a good day. You have tried tweaking the headline, swapping the hero image, testing different button colors. Nothing moves the needle. Here is why: <strong>the problem is not cosmetic. It is structural.</strong> A sales page is not a brochure with a buy button. It is a long-form persuasion sequence \u2014 a text sales letter (TSL) \u2014 that must take a cold, skeptical stranger and walk them from "who is this?" to "take my money" in a single visit. That requires strategic architecture: the right hook for your audience\'s awareness level, pain agitation that makes them feel the cost of inaction, a mechanism that makes your solution feel genuinely different, proof that eliminates doubt, and a close that handles every objection standing between them and their credit card. Miss any one of those stages and conversions collapse. Most sales page copywriters get the words right but the architecture wrong. That is why their pages read well and sell poorly.',
+          'You are sending traffic to a sales page. The clicks are coming in. But the conversion rate is sitting at 0.5% \u2014 maybe 1% on a good day. You have tried tweaking the headline, swapping the hero image, testing different button colors. Nothing moves the needle.\n\n' +
+          'Here is why: <strong>the problem is not cosmetic. It is structural.</strong> A sales page is not a brochure with a buy button. It is a long-form persuasion sequence \u2014 a text sales letter (TSL) \u2014 that must take a cold, skeptical stranger and walk them from "who is this?" to "take my money" in a single visit.\n\n' +
+          'That requires strategic architecture: the right hook for your audience\'s awareness level, pain agitation that makes them feel the cost of inaction, a mechanism that makes your solution feel genuinely different, proof that eliminates doubt, and a close that handles every objection standing between them and their credit card. Miss any one of those stages and conversions collapse.\n\n' +
+          'Most sales page copywriters get the words right but the architecture wrong. That is why their pages read well and sell poorly.',
       },
       {
         heading: 'What an 8% Cold Traffic Conversion Rate Looks Like',
         content:
-          'When a client told me their funnel was "doing great" at 8% on cold traffic, that was not luck. It was the result of a sales page built on the same direct-response architecture I have refined over 40+ years \u2014 deep audience research that found the exact emotional triggers driving purchase decisions, a unique mechanism that made the offer feel new, and a persuasion sequence mapped to Schwartz\'s awareness levels. The same approach drove <strong>340% ROAS on Facebook</strong> for an info product sales page (Abundant), <strong>5.7% opt-in-to-sale</strong> for a financial services TSL (Monetari Fund), and <strong>4.8% front-end conversion</strong> on a hybrid sales page for a business opportunity offer. These are not flukes. They are the predictable outcome of applying battle-tested frameworks \u2014 PASTOR, the Perry Belcher 21-step sequence, the Brain Audit objection model \u2014 to deep customer research. That is what separates a sales page that scales from one that sits there burning ad spend.',
+          'When a client told me their funnel was "doing great" at 8% on cold traffic, that was not luck. It was the result of a sales page built on the same direct-response architecture I have refined over 40+ years \u2014 deep audience research that found the exact emotional triggers driving purchase decisions, a unique mechanism that made the offer feel new, and a persuasion sequence mapped to Schwartz\'s awareness levels.\n\n' +
+          'The same approach drove <strong>340% ROAS on Facebook</strong> for an info product sales page (Abundant), <strong>5.7% opt-in-to-sale</strong> for a financial services TSL (Monetari Fund), and <strong>4.8% front-end conversion</strong> on a hybrid sales page for a business opportunity offer.\n\n' +
+          'These are not flukes. They are the predictable outcome of applying battle-tested frameworks \u2014 PASTOR, the Perry Belcher 21-step sequence, the Brain Audit objection model \u2014 to deep customer research. That is what separates a sales page that scales from one that sits there burning ad spend.',
       },
       {
         heading: 'The Copy Chief That Top Copywriters Hire',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park. These are people who have seen thousands of sales pages. They hired me and endorsed me because my work performs. When the best in the industry need a sales page copywriter they can trust with their own offers, they call me. That is the level of sales page copywriting you get access to when we work together.',
+          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park.\n\n' +
+          'These are people who have seen thousands of sales pages. They hired me and endorsed me because my work performs.\n\n' +
+          'When the best in the industry need a sales page copywriter they can trust with their own offers, they call me. That is the level of sales page copywriting you get access to when we work together.',
       },
       {
         heading: 'How I Write a Sales Page That Converts Cold Traffic',
@@ -293,7 +307,9 @@ export const services: Service[] = [
       {
         heading: 'AI-Powered Research. Human-Crafted Persuasion.',
         content:
-          'While your competitors\' copywriters are doing manual research, my AI-enhanced process analyzes <strong>dozens of competitor sales pages</strong>, mines thousands of customer reviews, and tests headline angles \u2014 all before I write a single word. You get the strategic depth of a week-long research sprint compressed into 48 hours. But here is what AI cannot do: it cannot feel what your prospect feels. It cannot build the emotional escalation that makes someone scroll past the price and click the buy button instead of closing the tab. It cannot architect a guarantee and close sequence that overcomes the final objection your prospect did not even know they had. That comes from 40+ years of direct-response experience. AI gives me speed and data. Experience gives me judgment. You get both.',
+          'While your competitors\' copywriters are doing manual research, my AI-enhanced process analyzes <strong>dozens of competitor sales pages</strong>, mines thousands of customer reviews, and tests headline angles \u2014 all before I write a single word. You get the strategic depth of a week-long research sprint compressed into 48 hours.\n\n' +
+          'But here is what AI cannot do: it cannot feel what your prospect feels. It cannot build the emotional escalation that makes someone scroll past the price and click the buy button instead of closing the tab. It cannot architect a guarantee and close sequence that overcomes the final objection your prospect did not even know they had.\n\n' +
+          'That comes from 40+ years of direct-response experience. AI gives me speed and data. Experience gives me judgment. You get both.',
       },
       {
         heading: 'Sales Page Copywriting for Health, Finance, DTC, and Beyond',
@@ -446,22 +462,30 @@ export const services: Service[] = [
       {
         heading: 'Why Most Sales Letters Get Thrown Away \u2014 Physically and Digitally',
         content:
-          'A sales letter has about three seconds to earn the next thirty. Whether it lands in a physical mailbox or loads on a screen, the reader is making a snap judgment: <strong>is this worth my time, or is it going in the trash?</strong> Most sales letters lose that battle because the copywriter does not understand what a sales letter actually is. It is not a brochure. It is not a product description. It is a personal, one-to-one persuasion sequence \u2014 written as if from one human being to another \u2014 that must earn every single sentence. The format tolerates no filler. No corporate jargon. No "we at Company X are proud to announce." Every word either pulls the reader forward or loses them forever. That discipline is what separates a sales letter copywriter who has written direct mail from one who has only written for screens.',
+          'A sales letter has about three seconds to earn the next thirty. Whether it lands in a physical mailbox or loads on a screen, the reader is making a snap judgment: <strong>is this worth my time, or is it going in the trash?</strong>\n\n' +
+          'Most sales letters lose that battle because the copywriter does not understand what a sales letter actually is. It is not a brochure. It is not a product description. It is a personal, one-to-one persuasion sequence \u2014 written as if from one human being to another \u2014 that must earn every single sentence.\n\n' +
+          'The format tolerates no filler. No corporate jargon. No "we at Company X are proud to announce." Every word either pulls the reader forward or loses them forever. That discipline is what separates a sales letter copywriter who has written direct mail from one who has only written for screens.',
       },
       {
         heading: 'From a $523M Direct Mail Campaign to Digital Sales Letters',
         content:
-          'The campaign that defined my career was a direct-response sales letter for <strong>Belron / Safelite</strong>. It ran for <strong>9 years across 35+ countries</strong>, generated <strong>$523 million in tracked sales</strong> \u2014 and it succeeded after five previous copywriters had failed. The CEO called me his "secret weapon." That was not a digital funnel or a VSL. It was a sales letter, built on the same fundamentals that Gary Halbert, John Carlton, and Clayton Makepeace used to generate fortunes from a single piece of paper and a stamp. Those fundamentals \u2014 a hook that stops the reader cold, a story that makes the problem feel urgent, a mechanism that makes the solution feel inevitable, and a close that removes every reason not to act \u2014 are exactly what I bring to every digital sales letter and TSL I write today.',
+          'The campaign that defined my career was a direct-response sales letter for <strong>Belron / Safelite</strong>. It ran for <strong>9 years across 35+ countries</strong>, generated <strong>$523 million in tracked sales</strong> \u2014 and it succeeded after five previous copywriters had failed. The CEO called me his "secret weapon."\n\n' +
+          'That was not a digital funnel or a VSL. It was a sales letter, built on the same fundamentals that Gary Halbert, John Carlton, and Clayton Makepeace used to generate fortunes from a single piece of paper and a stamp.\n\n' +
+          'Those fundamentals \u2014 a hook that stops the reader cold, a story that makes the problem feel urgent, a mechanism that makes the solution feel inevitable, and a close that removes every reason not to act \u2014 are exactly what I bring to every digital sales letter and TSL I write today.',
       },
       {
         heading: 'The Copy Chief That Top Copywriters Hire',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park. These are people who have read more sales letters than anyone alive. They hired me and endorsed me because they have seen my work perform. When the best sales letter copywriters in the industry need someone they trust, they call me.',
+          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park.\n\n' +
+          'These are people who have read more sales letters than anyone alive. They hired me and endorsed me because they have seen my work perform.\n\n' +
+          'When the best sales letter copywriters in the industry need someone they trust, they call me.',
       },
       {
         heading: 'TSL Copywriting: The Digital Sales Letter',
         content:
-          'The TSL (Text Sales Letter) is the digital evolution of the classic direct mail sales letter. Instead of arriving in the mailbox, it appears on a web page \u2014 but the persuasion principles are identical. TSLs are particularly powerful in health, finance, and info product markets where prospects respond to personal, story-driven selling. I bring the same disciplined approach to TSL copywriting that built the fortunes of the original direct mail industry: <strong>deep research into your prospect\'s emotional landscape</strong>, a unique mechanism that makes your offer feel different, a narrative arc that keeps them reading, and a close that converts. The result: TSLs that have driven <strong>340% ROAS on Facebook</strong> for info products, <strong>300% ROAS</strong> for supplement offers, and consistent front-end conversions across ClickBank and DTC funnels.',
+          'The TSL (Text Sales Letter) is the digital evolution of the classic direct mail sales letter. Instead of arriving in the mailbox, it appears on a web page \u2014 but the persuasion principles are identical. TSLs are particularly powerful in health, finance, and info product markets where prospects respond to personal, story-driven selling.\n\n' +
+          'I bring the same disciplined approach to TSL copywriting that built the fortunes of the original direct mail industry: <strong>deep research into your prospect\'s emotional landscape</strong>, a unique mechanism that makes your offer feel different, a narrative arc that keeps them reading, and a close that converts.\n\n' +
+          'The result: TSLs that have driven <strong>340% ROAS on Facebook</strong> for info products, <strong>300% ROAS</strong> for supplement offers, and consistent front-end conversions across ClickBank and DTC funnels.',
       },
       {
         heading: 'How I Write a Sales Letter That Converts',
@@ -624,22 +648,30 @@ export const services: Service[] = [
       {
         heading: 'Why Most Email Sequences Lose Money Instead of Making It',
         content:
-          'You have a list. You are sending emails. But the open rates are sliding, the click-throughs are flat, and your revenue-per-subscriber number makes you wince. <strong>The problem is not your list. It is what you are sending them.</strong> Most businesses treat email like a megaphone \u2014 blast the list, hope for clicks, repeat. That is not email marketing. That is noise. And your subscribers know the difference. A real email sequence is a <em>multi-step persuasion system</em> where every message has a specific strategic job: the subject line earns the open, the first sentence earns the scroll, and every paragraph earns the next. Miss any of those and the email dies in the inbox. Applied across a full sequence \u2014 launch, nurture, abandon cart, or daily broadcast \u2014 that discipline is what turns a dormant list into a revenue engine.',
+          'You have a list. You are sending emails. But the open rates are sliding, the click-throughs are flat, and your revenue-per-subscriber number makes you wince. <strong>The problem is not your list. It is what you are sending them.</strong>\n\n' +
+          'Most businesses treat email like a megaphone \u2014 blast the list, hope for clicks, repeat. That is not email marketing. That is noise. And your subscribers know the difference.\n\n' +
+          'A real email sequence is a <em>multi-step persuasion system</em> where every message has a specific strategic job: the subject line earns the open, the first sentence earns the scroll, and every paragraph earns the next. Miss any of those and the email dies in the inbox.\n\n' +
+          'Applied across a full sequence \u2014 launch, nurture, abandon cart, or daily broadcast \u2014 that discipline is what turns a dormant list into a revenue engine.',
       },
       {
         heading: 'What a 22% Trial-to-Paid Lift Looks Like',
         content:
-          'When <strong>Chatterkick</strong> (a SaaS platform) needed an onboarding email sequence that actually converted free trials into paying customers, the result was a <strong>22% trial-to-paid lift</strong>. That did not happen because of a clever subject line. It happened because the sequence was architectured as a persuasion system \u2014 behavior-triggered messages that met each user where they were in the product, addressed the specific objection holding them back at that moment, and moved them toward the upgrade at exactly the right time. The same strategic approach has driven email sequences supporting <strong>$30M+ VSL funnels</strong>, <strong>300% ROAS</strong> on email-driven supplement offers, and launch sequences that have generated millions across health, finance, and info product markets. Email is still the highest-ROI marketing channel available. But only when the copy is engineered to convert \u2014 not just to fill inboxes.',
+          'When <strong>Chatterkick</strong> (a SaaS platform) needed an onboarding email sequence that actually converted free trials into paying customers, the result was a <strong>22% trial-to-paid lift</strong>.\n\n' +
+          'That did not happen because of a clever subject line. It happened because the sequence was architectured as a persuasion system \u2014 behavior-triggered messages that met each user where they were in the product, addressed the specific objection holding them back at that moment, and moved them toward the upgrade at exactly the right time.\n\n' +
+          'The same strategic approach has driven email sequences supporting <strong>$30M+ VSL funnels</strong>, <strong>300% ROAS</strong> on email-driven supplement offers, and launch sequences that have generated millions across health, finance, and info product markets.\n\n' +
+          'Email is still the highest-ROI marketing channel available. But only when the copy is engineered to convert \u2014 not just to fill inboxes.',
       },
       {
         heading: 'The Copy Chief That Top Copywriters Hire',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park. These are people who understand that email sequences are the backbone of every profitable funnel. They hired me because my copy performs across every channel \u2014 including the emails that drive traffic to the offers.',
+          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park.\n\n' +
+          'These are people who understand that email sequences are the backbone of every profitable funnel. They hired me because my copy performs across every channel \u2014 including the emails that drive traffic to the offers.',
       },
       {
         heading: 'Launch Sequences That Maximize Revenue Windows',
         content:
-          'A product launch lives or dies on its email sequence. The pre-launch emails must build anticipation without giving away the close. The launch emails must create urgency and overcome every objection in real time. The post-launch emails must capture fence-sitters before the window shuts. Every email in the sequence has a specific strategic job \u2014 and if one email underperforms, the whole launch suffers.',
+          'A product launch lives or dies on its email sequence. The pre-launch emails must build anticipation without giving away the close. The launch emails must create urgency and overcome every objection in real time. The post-launch emails must capture fence-sitters before the window shuts.\n\n' +
+          'Every email in the sequence has a specific strategic job \u2014 and if one email underperforms, the whole launch suffers.',
         bullets: [
           'Pre-launch: seed the problem, tease the mechanism, build desire over 3\u20135 emails before the cart opens',
           'Launch: urgency, proof stacking, objection handling, and multiple angle emails that hit different segments of your list',
@@ -662,7 +694,9 @@ export const services: Service[] = [
       {
         heading: 'AI-Powered Research. Human-Crafted Emails.',
         content:
-          'My AI-enhanced process analyzes your existing email metrics, mines competitor sequences, and tests subject line angles \u2014 all before I write the first email. You get deeper audience insight and faster iteration. But here is what AI cannot do: it cannot write an email that feels like it was written by a real person to a real person. It cannot build the kind of voice and personality that makes someone look forward to your emails instead of ignoring them. That comes from 40+ years of writing direct-response copy that people actually read. AI gives me speed and data. Experience gives me voice. You get both.',
+          'My AI-enhanced process analyzes your existing email metrics, mines competitor sequences, and tests subject line angles \u2014 all before I write the first email. You get deeper audience insight and faster iteration.\n\n' +
+          'But here is what AI cannot do: it cannot write an email that feels like it was written by a real person to a real person. It cannot build the kind of voice and personality that makes someone look forward to your emails instead of ignoring them.\n\n' +
+          'That comes from 40+ years of writing direct-response copy that people actually read. AI gives me speed and data. Experience gives me voice. You get both.',
       },
     ],
     caseStudies: [
@@ -802,17 +836,22 @@ export const services: Service[] = [
       {
         heading: 'Why Most Ads Waste Money Instead of Making It',
         content:
-          'You are spending $500, $5,000, maybe $50,000 a day on ads. And for every dollar you put in, you need more than a dollar back \u2014 fast. <strong>Your ad copy is the most expensive writing in your business, measured per word.</strong> Every word either makes money or burns it. Most ad copy fails because the copywriter treats it like creative writing in a small format. It is not. It is the strategic intersection of audience psychology, platform algorithms, compliance rules, and direct-response persuasion \u2014 all compressed into a hook that has less than two seconds to earn attention. The hook must stop the scroll. The body must build enough desire to earn the click. And the entire ad must pre-qualify the traffic so you are not paying for clicks that will never convert downstream. Get any of those wrong and your ad spend is subsidizing Meta\'s revenue, not yours.',
+          'You are spending $500, $5,000, maybe $50,000 a day on ads. And for every dollar you put in, you need more than a dollar back \u2014 fast. <strong>Your ad copy is the most expensive writing in your business, measured per word.</strong> Every word either makes money or burns it.\n\n' +
+          'Most ad copy fails because the copywriter treats it like creative writing in a small format. It is not. It is the strategic intersection of audience psychology, platform algorithms, compliance rules, and direct-response persuasion \u2014 all compressed into a hook that has less than two seconds to earn attention.\n\n' +
+          'The hook must stop the scroll. The body must build enough desire to earn the click. And the entire ad must pre-qualify the traffic so you are not paying for clicks that will never convert downstream. Get any of those wrong and your ad spend is subsidizing Meta\'s revenue, not yours.',
       },
       {
         heading: 'The Ads Behind 300% ROAS and Eight-Figure Funnels',
         content:
-          'The ads I write are not standalone pieces of creative. They are the <em>front door</em> to funnels that have generated tens of millions. The ads that drove cold traffic to the <strong>Mobile Profits VSL ($30M, #1 on ClickBank)</strong> had to do one specific job: stop a stranger mid-scroll, create enough curiosity to earn the click, and deliver that click to a VSL where they would watch for 30+ minutes. That requires a completely different approach than brand advertising or boosted posts. My ad copy for supplement offers has driven <strong>300% ROAS</strong> on Facebook. For financial publishers, I have written compliant ads that survived platform review while still out-converting generic "safe" copy by multiples. The pattern across all of them: <strong>deep audience research that finds the angle competitors missed</strong>, hooks built on emotional triggers rather than clever wordplay, and systematic testing that finds winners faster.',
+          'The ads I write are not standalone pieces of creative. They are the <em>front door</em> to funnels that have generated tens of millions. The ads that drove cold traffic to the <strong>Mobile Profits VSL ($30M, #1 on ClickBank)</strong> had to do one specific job: stop a stranger mid-scroll, create enough curiosity to earn the click, and deliver that click to a VSL where they would watch for 30+ minutes.\n\n' +
+          'That requires a completely different approach than brand advertising or boosted posts. My ad copy for supplement offers has driven <strong>300% ROAS</strong> on Facebook. For financial publishers, I have written compliant ads that survived platform review while still out-converting generic "safe" copy by multiples.\n\n' +
+          'The pattern across all of them: <strong>deep audience research that finds the angle competitors missed</strong>, hooks built on emotional triggers rather than clever wordplay, and systematic testing that finds winners faster.',
       },
       {
         heading: 'The Copy Chief That Top Copywriters Hire',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park. Marc Lindsay, a direct-response media buyer, told me "one of your ads has just taken the lead" on a competitive campaign. These are people who test hundreds of ads and know exactly what converts. They work with me because my ad copy performs.',
+          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park. Marc Lindsay, a direct-response media buyer, told me "one of your ads has just taken the lead" on a competitive campaign.\n\n' +
+          'These are people who test hundreds of ads and know exactly what converts. They work with me because my ad copy performs.',
       },
       {
         heading: 'Platform-Specific Ad Copywriting',
@@ -828,7 +867,9 @@ export const services: Service[] = [
       {
         heading: 'Compliance-Aware Ad Copy That Still Converts',
         content:
-          'If you are running ads in health, supplements, or finance, you know the nightmare: <strong>write compliant copy and conversions tank. Write converting copy and your ad account gets flagged.</strong> Most ad copywriters pick one side. I have spent decades finding the angles that do both \u2014 proven language patterns that satisfy <a href="https://www.ftc.gov/business-guidance/advertising-and-marketing" target="_blank" rel="noopener noreferrer">FTC guidelines</a> and platform reviewers while still driving strong click-through and ROAS. This is not about being timid. It is about being strategic. Compliant copy that nobody clicks is just as useless as aggressive copy that gets your account banned.',
+          'If you are running ads in health, supplements, or finance, you know the nightmare: <strong>write compliant copy and conversions tank. Write converting copy and your ad account gets flagged.</strong>\n\n' +
+          'Most ad copywriters pick one side. I have spent decades finding the angles that do both \u2014 proven language patterns that satisfy <a href="https://www.ftc.gov/business-guidance/advertising-and-marketing" target="_blank" rel="noopener noreferrer">FTC guidelines</a> and platform reviewers while still driving strong click-through and ROAS.\n\n' +
+          'This is not about being timid. It is about being strategic. Compliant copy that nobody clicks is just as useless as aggressive copy that gets your account banned.',
       },
       {
         heading: 'Systematic Testing, Not Guesswork',
@@ -973,22 +1014,29 @@ export const services: Service[] = [
       {
         heading: 'Why Most Landing Pages Leak Money',
         content:
-          'You are paying for every click that hits your landing page. Every single one. And right now, most of those clicks are bouncing \u2014 <strong>landing, scanning the headline, and leaving without taking action.</strong> The standard landing page conversion rate across industries is 2\u20135%. That means 95\u201398% of the traffic you paid for is walking away. Most of the time it is not because the offer is bad. It is because the landing page copy does not do its job. A landing page has exactly one job: convert the visitor into a lead or a buyer. That requires every element \u2014 headline, subhead, body copy, social proof, form fields, and CTA button \u2014 working together as a single conversion system with zero wasted space. One weak headline, one moment of friction, one unanswered objection \u2014 and the click you paid for is gone.',
+          'You are paying for every click that hits your landing page. Every single one. And right now, most of those clicks are bouncing \u2014 <strong>landing, scanning the headline, and leaving without taking action.</strong>\n\n' +
+          'The standard landing page conversion rate across industries is 2\u20135%. That means 95\u201398% of the traffic you paid for is walking away. Most of the time it is not because the offer is bad. It is because the landing page copy does not do its job.\n\n' +
+          'A landing page has exactly one job: convert the visitor into a lead or a buyer. That requires every element \u2014 headline, subhead, body copy, social proof, form fields, and CTA button \u2014 working together as a single conversion system with zero wasted space. One weak headline, one moment of friction, one unanswered objection \u2014 and the click you paid for is gone.',
       },
       {
         heading: 'What a Landing Page That "Crushes the Old One" Looks Like',
         content:
-          'When a lead-gen specialist told me my squeeze page copy was <strong>"crushing the old one,"</strong> that was not a lucky rewrite. It was the result of the same process I use on every landing page: <strong>deep research into what the prospect actually needs to hear</strong> to take the next step, then building the page around those triggers with zero filler. The same approach drove an <strong>8% conversion rate on cold traffic</strong> for a DTC funnel, <strong>4.8% front-end conversion</strong> on a biz-op landing page, and a <strong>22% trial-to-paid lift</strong> on a SaaS onboarding page. The pattern is always the same: the headline matches the promise that earned the click, the copy addresses the one objection standing between the visitor and the action, and the CTA makes saying yes feel like the easiest decision they will make all day.',
+          'When a lead-gen specialist told me my squeeze page copy was <strong>"crushing the old one,"</strong> that was not a lucky rewrite. It was the result of the same process I use on every landing page: <strong>deep research into what the prospect actually needs to hear</strong> to take the next step, then building the page around those triggers with zero filler.\n\n' +
+          'The same approach drove an <strong>8% conversion rate on cold traffic</strong> for a DTC funnel, <strong>4.8% front-end conversion</strong> on a biz-op landing page, and a <strong>22% trial-to-paid lift</strong> on a SaaS onboarding page.\n\n' +
+          'The pattern is always the same: the headline matches the promise that earned the click, the copy addresses the one objection standing between the visitor and the action, and the CTA makes saying yes feel like the easiest decision they will make all day.',
       },
       {
         heading: 'The Copy Chief That Top Copywriters Hire',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park. These are people who test landing pages obsessively and know exactly what converts. They work with me because my copy performs \u2014 on landing pages, squeeze pages, and every other page that sits between ad spend and revenue.',
+          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park.\n\n' +
+          'These are people who test landing pages obsessively and know exactly what converts. They work with me because my copy performs \u2014 on landing pages, squeeze pages, and every other page that sits between ad spend and revenue.',
       },
       {
         heading: 'Message Match: The Conversion Killer Nobody Talks About',
         content:
-          'Here is why your landing page might be underperforming even with good copy: <strong>the message does not match the traffic source.</strong> Your prospect clicked an ad about a specific problem. They land on a page about something slightly different. The disconnect is subtle \u2014 maybe just a different angle or tone \u2014 but the conversion rate drops off a cliff. I write landing pages that maintain perfect message continuity from traffic source to conversion. That means the headline echoes the promise that earned the click, the language matches what the prospect expects to see, and the entire page feels like the natural next step \u2014 not a new conversation. This is one of the highest-leverage optimizations in landing page copywriting, and most copywriters ignore it completely.',
+          'Here is why your landing page might be underperforming even with good copy: <strong>the message does not match the traffic source.</strong> Your prospect clicked an ad about a specific problem. They land on a page about something slightly different. The disconnect is subtle \u2014 maybe just a different angle or tone \u2014 but the conversion rate drops off a cliff.\n\n' +
+          'I write landing pages that maintain perfect message continuity from traffic source to conversion. That means the headline echoes the promise that earned the click, the language matches what the prospect expects to see, and the entire page feels like the natural next step \u2014 not a new conversation.\n\n' +
+          'This is one of the highest-leverage optimizations in landing page copywriting, and most copywriters ignore it completely.',
       },
       {
         heading: 'How I Write a Landing Page That Converts',
@@ -1004,7 +1052,8 @@ export const services: Service[] = [
       {
         heading: 'Landing Pages for Every Conversion Goal',
         content:
-          'Different landing page types require different persuasion strategies. A lead-gen squeeze page needs enough desire to overcome form friction while pre-qualifying the lead. A webinar registration page must sell the event, not the product. A free trial page must reduce perceived risk to near zero. I have written high-converting landing pages across all of them.',
+          'Different landing page types require different persuasion strategies. A lead-gen squeeze page needs enough desire to overcome form friction while pre-qualifying the lead. A webinar registration page must sell the event, not the product. A free trial page must reduce perceived risk to near zero.\n\n' +
+          'I have written high-converting landing pages across all of them.',
         bullets: [
           'Lead generation squeeze pages \u2014 including pages that crushed previous controls',
           'Webinar and event registration pages',
@@ -1152,17 +1201,22 @@ export const services: Service[] = [
       {
         heading: 'Why Most Funnels Leak Revenue at Every Step',
         content:
-          'Here is how most funnels get built: one copywriter writes the ads. Another writes the landing page. A third writes the sales page. Nobody writes the upsells with any strategic thought at all. And the email follow-up? That is whoever had time. <strong>The result is a funnel full of disconnects that leak revenue at every transition.</strong> The ad promises one thing, the landing page says something slightly different, the sales page shifts tone again, and the upsells feel like they were bolted on as an afterthought. Each disconnect is a conversion drop. Multiply that across 5\u20138 pages and you are leaving 30\u201350% of your potential revenue on the table. A sales funnel is a system. The copy at every step must work together as a single persuasion narrative. That requires one strategic mind writing every page \u2014 not a committee of freelancers who have never spoken to each other.',
+          'Here is how most funnels get built: one copywriter writes the ads. Another writes the landing page. A third writes the sales page. Nobody writes the upsells with any strategic thought at all. And the email follow-up? That is whoever had time.\n\n' +
+          '<strong>The result is a funnel full of disconnects that leak revenue at every transition.</strong> The ad promises one thing, the landing page says something slightly different, the sales page shifts tone again, and the upsells feel like they were bolted on as an afterthought. Each disconnect is a conversion drop. Multiply that across 5\u20138 pages and you are leaving 30\u201350% of your potential revenue on the table.\n\n' +
+          'A sales funnel is a system. The copy at every step must work together as a single persuasion narrative. That requires one strategic mind writing every page \u2014 not a committee of freelancers who have never spoken to each other.',
       },
       {
         heading: 'What a $30M Funnel Looks Like From the Inside',
         content:
-          'The <strong>Mobile Profits</strong> funnel did not generate <strong>$30 million</strong> because any single page was brilliant. It generated $30 million because every page in the funnel was engineered as part of one system. The ads pre-qualified traffic with the right hook. The VSL converted cold prospects at up to <strong>4%</strong>. The upsell sequence increased AOV without eroding trust. And the email follow-up captured the prospects who were not ready to buy on the first visit. That is what end-to-end sales funnel copywriting looks like: <strong>every page building on the emotional momentum of the previous one</strong>, every transition seamless, every upsell feeling like the natural next step. The same systems approach drove a <strong>$40M supplement funnel</strong> (Gluco 6), a <strong>$27M financial funnel</strong>, and a biz-op funnel converting at <strong>4.8% on the front end</strong>.',
+          'The <strong>Mobile Profits</strong> funnel did not generate <strong>$30 million</strong> because any single page was brilliant. It generated $30 million because every page in the funnel was engineered as part of one system. The ads pre-qualified traffic with the right hook. The VSL converted cold prospects at up to <strong>4%</strong>. The upsell sequence increased AOV without eroding trust. And the email follow-up captured the prospects who were not ready to buy on the first visit.\n\n' +
+          'That is what end-to-end sales funnel copywriting looks like: <strong>every page building on the emotional momentum of the previous one</strong>, every transition seamless, every upsell feeling like the natural next step.\n\n' +
+          'The same systems approach drove a <strong>$40M supplement funnel</strong> (Gluco 6), a <strong>$27M financial funnel</strong>, and a biz-op funnel converting at <strong>4.8% on the front end</strong>.',
       },
       {
         heading: 'The Copy Chief That Top Copywriters Hire',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park. These are people who build funnels for a living and know exactly what separates a funnel that scales from one that stalls. They work with me because I think in systems \u2014 not just pages.',
+          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park.\n\n' +
+          'These are people who build funnels for a living and know exactly what separates a funnel that scales from one that stalls. They work with me because I think in systems \u2014 not just pages.',
       },
       {
         heading: 'How I Architect a Funnel That Maximizes Every Click',
@@ -1178,7 +1232,9 @@ export const services: Service[] = [
       {
         heading: 'The AOV Multiplier Most Funnels Miss',
         content:
-          'The front-end sale gets all the attention. But <strong>the real money in any funnel is behind the buy button</strong> \u2014 the upsells, downsells, and order bumps that turn a $47 customer into a $150 customer. Most businesses treat post-purchase pages as an afterthought. I treat them as the most profitable copy in the entire funnel. The psychology is specific: the buyer has already committed, their wallet is open, and their brain is primed to say yes again \u2014 <em>if</em> the next offer feels like a logical extension of what they just bought. I engineer every post-purchase step to leverage that psychology, referencing the product they just bought, reinforcing their decision, and presenting the upgrade as the obvious next move.',
+          'The front-end sale gets all the attention. But <strong>the real money in any funnel is behind the buy button</strong> \u2014 the upsells, downsells, and order bumps that turn a $47 customer into a $150 customer.\n\n' +
+          'Most businesses treat post-purchase pages as an afterthought. I treat them as the most profitable copy in the entire funnel.\n\n' +
+          'The psychology is specific: the buyer has already committed, their wallet is open, and their brain is primed to say yes again \u2014 <em>if</em> the next offer feels like a logical extension of what they just bought. I engineer every post-purchase step to leverage that psychology, referencing the product they just bought, reinforcing their decision, and presenting the upgrade as the obvious next move.',
       },
       {
         heading: 'Sales Funnel Copywriting for Every Vertical',
@@ -1331,12 +1387,17 @@ export const services: Service[] = [
       {
         heading: 'You Have a Converting Front End. Now You Are Leaving Money on the Table.',
         content:
-          'Your funnel is working. Traffic is converting. But when you look at your average order value, you know there is more there. <strong>The moment after a customer says yes is the most profitable moment in your entire funnel</strong> \u2014 and it is the moment most businesses handle the worst. Generic upsell pages with disconnected offers and weak copy. Downsells that feel like a guilt trip. Order bumps that nobody clicks. Every one of those is revenue you already earned the right to collect \u2014 because the hardest part is already done. The customer has their wallet open. Their brain is primed to say yes again. All you need is copy that makes the next offer feel like the natural, logical, obvious next step. That is a specific skill \u2014 and it is fundamentally different from front-end sales copywriting.',
+          'Your funnel is working. Traffic is converting. But when you look at your average order value, you know there is more there.\n\n' +
+          '<strong>The moment after a customer says yes is the most profitable moment in your entire funnel</strong> \u2014 and it is the moment most businesses handle the worst. Generic upsell pages with disconnected offers and weak copy. Downsells that feel like a guilt trip. Order bumps that nobody clicks.\n\n' +
+          'Every one of those is revenue you already earned the right to collect \u2014 because the hardest part is already done. The customer has their wallet open. Their brain is primed to say yes again. All you need is copy that makes the next offer feel like the natural, logical, obvious next step.\n\n' +
+          'That is a specific skill \u2014 and it is fundamentally different from front-end sales copywriting.',
       },
       {
         heading: 'What 30\u2013100% More Revenue Looks Like on the Same Traffic',
         content:
-          'Think about what a 50% AOV increase means for your business. You are paying the <em>exact same acquisition cost</em> but extracting 50% more revenue from each customer. Your front-end breakeven point drops. Your media buyer can bid more aggressively. Your entire funnel economics shift. The upsell sequences I wrote for funnels like <strong>Mobile Profits ($30M, #1 on ClickBank)</strong> and <strong>Gluco 6 ($40M)</strong> were not afterthoughts \u2014 they were engineered as part of the conversion system from day one. Each upsell referenced the product the customer just bought, reinforced their decision, and presented the upgrade as the obvious next move. The result: AOV increases that made the difference between a profitable funnel and an eight-figure funnel.',
+          'Think about what a 50% AOV increase means for your business. You are paying the <em>exact same acquisition cost</em> but extracting 50% more revenue from each customer. Your front-end breakeven point drops. Your media buyer can bid more aggressively. Your entire funnel economics shift.\n\n' +
+          'The upsell sequences I wrote for funnels like <strong>Mobile Profits ($30M, #1 on ClickBank)</strong> and <strong>Gluco 6 ($40M)</strong> were not afterthoughts \u2014 they were engineered as part of the conversion system from day one. Each upsell referenced the product the customer just bought, reinforced their decision, and presented the upgrade as the obvious next move.\n\n' +
+          'The result: AOV increases that made the difference between a profitable funnel and an eight-figure funnel.',
       },
       {
         heading: 'The Post-Purchase Psychology Most Copywriters Miss',
@@ -1364,7 +1425,8 @@ export const services: Service[] = [
       {
         heading: 'The Copy Chief That Top Copywriters Hire',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff gave me a public shoutout for knocking it out of the park. These are people who understand that the upsell sequence is where funnel profitability is won or lost. They work with me because I treat post-purchase copy with the same strategic rigor as the front end \u2014 not as an afterthought.',
+          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff gave me a public shoutout for knocking it out of the park.\n\n' +
+          'These are people who understand that the upsell sequence is where funnel profitability is won or lost. They work with me because I treat post-purchase copy with the same strategic rigor as the front end \u2014 not as an afterthought.',
       },
       {
         heading: 'Upsell Copywriting Across Industries',
@@ -1516,12 +1578,17 @@ export const services: Service[] = [
       {
         heading: 'Your Team Has AI. They Still Can\u2019t Write Copy That Converts.',
         content:
-          'Everyone has access to <a href="https://openai.com/chatgpt" target="_blank" rel="noopener noreferrer">ChatGPT</a>, <a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Claude</a>, and a growing army of AI writing tools. Almost no one is using them to produce copy that actually converts. Here is what I see: teams prompt AI with vague instructions, accept the first output, make surface-level edits, and publish. <strong>The result is copy that reads smoothly but sells poorly.</strong> Conversion rates drop. The team blames AI. But the problem is not the technology. AI is a force multiplier \u2014 but if you multiply zero direct-response skill by ten, you still get zero. What your team needs is not a better AI tool. It is <strong>someone who knows what great converting copy looks like</strong> designing the workflows, writing the prompts, and building the quality control systems that turn AI from a content generator into a conversion machine.',
+          'Everyone has access to <a href="https://openai.com/chatgpt" target="_blank" rel="noopener noreferrer">ChatGPT</a>, <a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Claude</a>, and a growing army of AI writing tools. Almost no one is using them to produce copy that actually converts.\n\n' +
+          'Here is what I see: teams prompt AI with vague instructions, accept the first output, make surface-level edits, and publish. <strong>The result is copy that reads smoothly but sells poorly.</strong> Conversion rates drop. The team blames AI.\n\n' +
+          'But the problem is not the technology. AI is a force multiplier \u2014 but if you multiply zero direct-response skill by ten, you still get zero.\n\n' +
+          'What your team needs is not a better AI tool. It is <strong>someone who knows what great converting copy looks like</strong> designing the workflows, writing the prompts, and building the quality control systems that turn AI from a content generator into a conversion machine.',
       },
       {
         heading: 'Why I Am Uniquely Positioned to Solve This',
         content:
-          'Most AI copywriting consultants are either <em>AI experts who do not understand direct response</em> or <em>copywriters who dabble in AI on the side</em>. I am neither. I have spent <strong>40+ years writing direct-response copy that has generated $523M+ in tracked results</strong> \u2014 VSLs, sales pages, email sequences, funnels, and ads across every major vertical. And I have spent the last several years building a <strong>vault of 200+ proven copywriting frameworks</strong> \u2014 Schwartz, Georgi, Kell, Makepeace, Carlton, Halbert \u2014 that I use as the strategic foundation for AI-assisted workflows. When I build an AI copywriting system for your team, the AI is not guessing what good copy looks like. It is guided by the same frameworks behind eight-figure offers. That is the difference between AI-generated content and AI-assisted direct-response copy.',
+          'Most AI copywriting consultants are either <em>AI experts who do not understand direct response</em> or <em>copywriters who dabble in AI on the side</em>. I am neither.\n\n' +
+          'I have spent <strong>40+ years writing direct-response copy that has generated $523M+ in tracked results</strong> \u2014 VSLs, sales pages, email sequences, funnels, and ads across every major vertical. And I have spent the last several years building a <strong>vault of 200+ proven copywriting frameworks</strong> \u2014 Schwartz, Georgi, Kell, Makepeace, Carlton, Halbert \u2014 that I use as the strategic foundation for AI-assisted workflows.\n\n' +
+          'When I build an AI copywriting system for your team, the AI is not guessing what good copy looks like. It is guided by the same frameworks behind eight-figure offers. That is the difference between AI-generated content and AI-assisted direct-response copy.',
       },
       {
         heading: 'The Copy Chief That Top Copywriters Hire',
@@ -1543,7 +1610,9 @@ export const services: Service[] = [
       {
         heading: 'The Competitive Advantage Window Is Closing',
         content:
-          'The teams that figure out AI-assisted copywriting first will have an insurmountable advantage. They will research markets in hours instead of weeks. They will test ten headline variations where competitors test two. They will analyze competitor funnels at scale and find winning angles before anyone else. <strong>Right now, most teams are wasting this advantage on generic AI output.</strong> I can compress your team\u2019s learning curve from years to weeks \u2014 and give you a process that keeps improving as AI tools evolve. After 40+ years of direct response and several years of deep AI integration, I know exactly where AI adds leverage and where it creates liability. Your team gets the benefit of both.',
+          'The teams that figure out AI-assisted copywriting first will have an insurmountable advantage. They will research markets in hours instead of weeks. They will test ten headline variations where competitors test two. They will analyze competitor funnels at scale and find winning angles before anyone else.\n\n' +
+          '<strong>Right now, most teams are wasting this advantage on generic AI output.</strong> I can compress your team\u2019s learning curve from years to weeks \u2014 and give you a process that keeps improving as AI tools evolve.\n\n' +
+          'After 40+ years of direct response and several years of deep AI integration, I know exactly where AI adds leverage and where it creates liability. Your team gets the benefit of both.',
       },
       {
         heading: 'AI Copywriting for Direct-Response Brands',
@@ -1693,17 +1762,22 @@ export const services: Service[] = [
       {
         heading: 'Every Brand Has AI Tools. Almost None Are Getting Results.',
         content:
-          'Your competitors have the same AI tools you do. <a href="https://openai.com/chatgpt" target="_blank" rel="noopener noreferrer">ChatGPT</a>, <a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Claude</a>, Gemini, and a hundred specialized platforms. <strong>The tools are not the bottleneck. The strategy is.</strong> Most brands are using AI to produce more content faster \u2014 more blog posts, more social media, more ad variations \u2014 without any increase in conversions or revenue. They are confusing output with outcomes. AI without direct-response strategy is just a faster way to produce mediocre marketing. What separates brands that are actually scaling with AI from brands that are just generating noise? <strong>The human expertise directing the AI.</strong> Someone who knows what a $30M funnel looks like from the inside, who has studied 200+ proven marketing frameworks, and who understands which AI capabilities create real leverage and which create the illusion of progress.',
+          'Your competitors have the same AI tools you do. <a href="https://openai.com/chatgpt" target="_blank" rel="noopener noreferrer">ChatGPT</a>, <a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Claude</a>, Gemini, and a hundred specialized platforms. <strong>The tools are not the bottleneck. The strategy is.</strong>\n\n' +
+          'Most brands are using AI to produce more content faster \u2014 more blog posts, more social media, more ad variations \u2014 without any increase in conversions or revenue. They are confusing output with outcomes. AI without direct-response strategy is just a faster way to produce mediocre marketing.\n\n' +
+          'What separates brands that are actually scaling with AI from brands that are just generating noise? <strong>The human expertise directing the AI.</strong> Someone who knows what a $30M funnel looks like from the inside, who has studied 200+ proven marketing frameworks, and who understands which AI capabilities create real leverage and which create the illusion of progress.',
       },
       {
         heading: 'What $523M in Results Teaches You About AI Marketing',
         content:
-          'I have spent 40+ years in direct-response marketing \u2014 writing the VSLs, sales pages, email sequences, and funnels behind <strong>$523M+ in tracked results</strong>. Offers like <strong>Mobile Profits ($30M, #1 on ClickBank)</strong>, <strong>Gluco 6 ($40M)</strong>, and a <strong>$27M stock investing funnel</strong>. Plus campaigns for Apple, IBM, Citibank, and a 9-year, 35-country campaign for Belron/Safelite. That depth of experience is what makes AI marketing consulting actually work. I am not guessing what good marketing looks like and hoping AI figures it out. I know exactly what converts \u2014 across verticals, across formats, across traffic temperatures \u2014 and I use AI to get there faster. When I build an AI marketing system for your brand, every prompt, workflow, and quality gate is informed by the same frameworks behind eight-figure results.',
+          'I have spent 40+ years in direct-response marketing \u2014 writing the VSLs, sales pages, email sequences, and funnels behind <strong>$523M+ in tracked results</strong>. Offers like <strong>Mobile Profits ($30M, #1 on ClickBank)</strong>, <strong>Gluco 6 ($40M)</strong>, and a <strong>$27M stock investing funnel</strong>. Plus campaigns for Apple, IBM, Citibank, and a 9-year, 35-country campaign for Belron/Safelite.\n\n' +
+          'That depth of experience is what makes AI marketing consulting actually work. I am not guessing what good marketing looks like and hoping AI figures it out. I know exactly what converts \u2014 across verticals, across formats, across traffic temperatures \u2014 and I use AI to get there faster.\n\n' +
+          'When I build an AI marketing system for your brand, every prompt, workflow, and quality gate is informed by the same frameworks behind eight-figure results.',
       },
       {
         heading: 'The Copy Chief That Top Marketers Hire',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park. These are people who run marketing operations at the highest level. They brought me in because I combine strategic depth with the ability to systematize quality at scale \u2014 exactly what AI marketing requires.',
+          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park.\n\n' +
+          'These are people who run marketing operations at the highest level. They brought me in because I combine strategic depth with the ability to systematize quality at scale \u2014 exactly what AI marketing requires.',
       },
       {
         heading: 'How I Help Your Brand Use AI to Scale',
@@ -1732,7 +1806,9 @@ export const services: Service[] = [
       {
         heading: 'The Competitive Window Is Closing',
         content:
-          'Right now, most brands are wasting AI on generic content production. The ones that figure out how to use AI for <em>strategic marketing</em> \u2014 research, optimization, and decision-making, not just writing \u2014 will have an advantage that compounds every month. I can compress your team\u2019s learning curve from years to weeks and give you systems that keep improving as AI capabilities evolve. The question is not whether to use AI in your marketing. It is whether you will figure it out before your competitors do.',
+          'Right now, most brands are wasting AI on generic content production. The ones that figure out how to use AI for <em>strategic marketing</em> \u2014 research, optimization, and decision-making, not just writing \u2014 will have an advantage that compounds every month.\n\n' +
+          'I can compress your team\u2019s learning curve from years to weeks and give you systems that keep improving as AI capabilities evolve.\n\n' +
+          'The question is not whether to use AI in your marketing. It is whether you will figure it out before your competitors do.',
       },
     ],
     caseStudies: [
@@ -1871,17 +1947,23 @@ export const services: Service[] = [
       {
         heading: 'Your Facebook Ads Are Burning Money. Here Is Why.',
         content:
-          'You are spending $500, $5,000, maybe $50,000 a day on Facebook ads. And for every dollar you put in, you need more than a dollar back \u2014 fast. But your CTR is flat, your CPA is climbing, and your media buyer keeps asking for "more creative." <strong>The problem is not your targeting. It is not your budget. It is your ad copy.</strong> Facebook ad copy has less than two seconds to earn attention in a feed where your prospect scrolls past hundreds of posts a day. The hook must stop the scroll. The body must build enough desire to earn the click. And the entire ad must pre-qualify the traffic so you are not paying for clicks that bounce off your landing page. Most Facebook ads copywriters write clever copy that gets likes but not conversions. There is a fundamental difference between copy that is interesting and copy that is persuasive. After 40+ years writing direct response, I know exactly where that line is.',
+          'You are spending $500, $5,000, maybe $50,000 a day on Facebook ads. And for every dollar you put in, you need more than a dollar back \u2014 fast. But your CTR is flat, your CPA is climbing, and your media buyer keeps asking for "more creative."\n\n' +
+          '<strong>The problem is not your targeting. It is not your budget. It is your ad copy.</strong> Facebook ad copy has less than two seconds to earn attention in a feed where your prospect scrolls past hundreds of posts a day.\n\n' +
+          'The hook must stop the scroll. The body must build enough desire to earn the click. And the entire ad must pre-qualify the traffic so you are not paying for clicks that bounce off your landing page.\n\n' +
+          'Most Facebook ads copywriters write clever copy that gets likes but not conversions. There is a fundamental difference between copy that is interesting and copy that is persuasive. After 40+ years writing direct response, I know exactly where that line is.',
       },
       {
         heading: 'What 300% ROAS on Facebook Looks Like',
         content:
-          'The Facebook ads I wrote for a supplement offer delivered <strong>300% ROAS on cold traffic</strong>. The ads that fed the <strong>Mobile Profits funnel ($30M, #1 on ClickBank)</strong> had to do one specific job: stop a stranger mid-scroll, create enough curiosity to earn the click, and deliver that click to a VSL where they would watch for 30+ minutes. That is a fundamentally different skill than writing brand awareness ads or boosted posts. My Facebook ad copy works because it is built on the same direct-response principles that have driven $523M+ in tracked results \u2014 deep audience research, emotional triggers rooted in real pain and desire, and hooks engineered from the exact language your prospects use to describe their problem. The same approach applies to Instagram ads and every other Meta placement.',
+          'The Facebook ads I wrote for a supplement offer delivered <strong>300% ROAS on cold traffic</strong>. The ads that fed the <strong>Mobile Profits funnel ($30M, #1 on ClickBank)</strong> had to do one specific job: stop a stranger mid-scroll, create enough curiosity to earn the click, and deliver that click to a VSL where they would watch for 30+ minutes.\n\n' +
+          'That is a fundamentally different skill than writing brand awareness ads or boosted posts. My Facebook ad copy works because it is built on the same direct-response principles that have driven $523M+ in tracked results \u2014 deep audience research, emotional triggers rooted in real pain and desire, and hooks engineered from the exact language your prospects use to describe their problem.\n\n' +
+          'The same approach applies to Instagram ads and every other Meta placement.',
       },
       {
         heading: 'The Copy Chief That Top Marketers Hire',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park. Marc Lindsay, a direct-response media buyer, told me "one of your ads has just taken the lead" on a competitive campaign. These are people who test hundreds of Facebook ads and know exactly what converts. They work with me because my ad copy performs.',
+          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park. Marc Lindsay, a direct-response media buyer, told me "one of your ads has just taken the lead" on a competitive campaign.\n\n' +
+          'These are people who test hundreds of Facebook ads and know exactly what converts. They work with me because my ad copy performs.',
       },
       {
         heading: 'Facebook Ads, Instagram Ads, and Every Meta Placement',
@@ -1897,7 +1979,9 @@ export const services: Service[] = [
       {
         heading: 'Compliant Facebook Ad Copy That Still Converts',
         content:
-          'If you run Facebook ads in health, supplements, or finance, you know the nightmare: <strong>write compliant copy and conversions tank. Write converting copy and your ad account gets flagged or shut down.</strong> I have spent years finding the angles that do both \u2014 proven language patterns that satisfy <a href="https://www.facebook.com/policies/ads/" target="_blank" rel="noopener noreferrer">Meta\u2019s advertising policies</a> and <a href="https://www.ftc.gov/business-guidance/advertising-and-marketing" target="_blank" rel="noopener noreferrer">FTC guidelines</a> while still driving strong ROAS. This is not about being timid. It is about being strategic. Compliant Facebook ad copy that nobody clicks is just as useless as aggressive copy that gets your ad account banned. I find the angles that thread the needle.',
+          'If you run Facebook ads in health, supplements, or finance, you know the nightmare: <strong>write compliant copy and conversions tank. Write converting copy and your ad account gets flagged or shut down.</strong>\n\n' +
+          'I have spent years finding the angles that do both \u2014 proven language patterns that satisfy <a href="https://www.facebook.com/policies/ads/" target="_blank" rel="noopener noreferrer">Meta\u2019s advertising policies</a> and <a href="https://www.ftc.gov/business-guidance/advertising-and-marketing" target="_blank" rel="noopener noreferrer">FTC guidelines</a> while still driving strong ROAS.\n\n' +
+          'This is not about being timid. It is about being strategic. Compliant Facebook ad copy that nobody clicks is just as useless as aggressive copy that gets your ad account banned. I find the angles that thread the needle.',
       },
       {
         heading: 'Systematic Testing, Not One-Off Creatives',
@@ -2048,17 +2132,25 @@ export const services: Service[] = [
       {
         heading: 'You Are Paying for Traffic That Is Not Converting. The Fix Is Not What You Think.',
         content:
-          'Your funnel is getting traffic. But the conversion rate is stuck. You have tried changing the button color, moving the CTA above the fold, adding a countdown timer, swapping the hero image. <strong>Nothing moved the needle.</strong> Here is why: those are cosmetic changes to a structural problem. The #1 driver of conversion rate on any page is the <em>copy</em> \u2014 the headline, the hook, the mechanism, the proof, the objection handling, and the close. A headline that speaks to the wrong awareness level will kill conversions no matter how beautiful the page design is. A close that fails to handle the final objection will lose the sale regardless of what color the button is. Copy-driven CRO is the highest-leverage optimization you can make because it addresses the thing your prospect actually reads, believes, and responds to.',
+          'Your funnel is getting traffic. But the conversion rate is stuck. You have tried changing the button color, moving the CTA above the fold, adding a countdown timer, swapping the hero image. <strong>Nothing moved the needle.</strong>\n\n' +
+          'Here is why: those are cosmetic changes to a structural problem. The #1 driver of conversion rate on any page is the <em>copy</em> \u2014 the headline, the hook, the mechanism, the proof, the objection handling, and the close.\n\n' +
+          'A headline that speaks to the wrong awareness level will kill conversions no matter how beautiful the page design is. A close that fails to handle the final objection will lose the sale regardless of what color the button is.\n\n' +
+          'Copy-driven CRO is the highest-leverage optimization you can make because it addresses the thing your prospect actually reads, believes, and responds to.',
       },
       {
         heading: 'What Copy-Driven CRO Looks Like in Practice',
         content:
-          'When a client came to me with a funnel "doing great" at 8% cold traffic conversion, the copy architecture was already solid \u2014 because it was built on deep audience research and proven persuasion frameworks from the start. But most funnels I audit are not starting from that baseline. They have headlines written from guesswork instead of research, mechanism sections that confuse instead of convince, proof sections with generic testimonials instead of specific results, and closes that create doubt instead of resolving it. <strong>Fixing those structural copy problems is where the conversion rate lives.</strong> I have seen headline changes alone lift conversion rates by 30\u201350%. Rewriting a close sequence has doubled take rates on upsell pages. And restructuring a VSL\u2019s first 90 seconds has cut drop-off rates in half. These are not theoretical improvements \u2014 they are the predictable result of applying 40+ years of pattern recognition to copy that was written without it.',
+          'When a client came to me with a funnel "doing great" at 8% cold traffic conversion, the copy architecture was already solid \u2014 because it was built on deep audience research and proven persuasion frameworks from the start.\n\n' +
+          'But most funnels I audit are not starting from that baseline. They have headlines written from guesswork instead of research, mechanism sections that confuse instead of convince, proof sections with generic testimonials instead of specific results, and closes that create doubt instead of resolving it.\n\n' +
+          '<strong>Fixing those structural copy problems is where the conversion rate lives.</strong> I have seen headline changes alone lift conversion rates by 30\u201350%. Rewriting a close sequence has doubled take rates on upsell pages. And restructuring a VSL\u2019s first 90 seconds has cut drop-off rates in half.\n\n' +
+          'These are not theoretical improvements \u2014 they are the predictable result of applying 40+ years of pattern recognition to copy that was written without it.',
       },
       {
         heading: 'The Copy Chief That Top Copywriters Hire to Optimize',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. That role was pure CRO: reviewing existing copy, identifying what was underperforming and why, and providing the specific rewrites that moved the metrics. Justin Goff gave me a public shoutout for knocking it out of the park. Caleb O\u2019Dowd celebrated getting "that bump in conversions." These are people who live and die by conversion rates. They brought me in because I can look at a piece of copy \u2014 a VSL, a sales page, an email sequence, an ad \u2014 and see exactly where it is losing the prospect and exactly how to fix it.',
+          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. That role was pure CRO: reviewing existing copy, identifying what was underperforming and why, and providing the specific rewrites that moved the metrics.\n\n' +
+          'Justin Goff gave me a public shoutout for knocking it out of the park. Caleb O\u2019Dowd celebrated getting "that bump in conversions."\n\n' +
+          'These are people who live and die by conversion rates. They brought me in because I can look at a piece of copy \u2014 a VSL, a sales page, an email sequence, an ad \u2014 and see exactly where it is losing the prospect and exactly how to fix it.',
       },
       {
         heading: 'My CRO Process: Diagnose, Prioritize, Test',
@@ -2088,7 +2180,9 @@ export const services: Service[] = [
       {
         heading: 'AI-Powered CRO Analysis',
         content:
-          'I use AI to accelerate every phase of conversion rate optimization \u2014 analyzing competitor pages at scale, mining customer language from thousands of reviews, testing headline variations before spending a dollar on traffic, and identifying patterns across your analytics that manual review would miss. But the strategic judgment that turns analysis into conversion lifts \u2014 knowing <em>which</em> headline to test, <em>why</em> the close is failing, <em>what</em> objection the proof section needs to address \u2014 comes from 40+ years of direct-response experience. AI gives me speed. Experience gives me accuracy. You get both.',
+          'I use AI to accelerate every phase of conversion rate optimization \u2014 analyzing competitor pages at scale, mining customer language from thousands of reviews, testing headline variations before spending a dollar on traffic, and identifying patterns across your analytics that manual review would miss.\n\n' +
+          'But the strategic judgment that turns analysis into conversion lifts \u2014 knowing <em>which</em> headline to test, <em>why</em> the close is failing, <em>what</em> objection the proof section needs to address \u2014 comes from 40+ years of direct-response experience.\n\n' +
+          'AI gives me speed. Experience gives me accuracy. You get both.',
       },
     ],
     caseStudies: [
