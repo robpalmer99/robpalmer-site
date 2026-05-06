@@ -1958,104 +1958,104 @@ export const services: Service[] = [
     title: 'Facebook Ads Copywriter',
     slug: 'facebook-ads-copywriter',
     shortDescription:
-      'High-converting Facebook ad copy, Instagram ad copy, and Meta ad creative that stops the scroll and drives profitable ROAS. From a 40-year DR veteran.',
+      'Facebook + Instagram ad copy at 300% ROAS on cold traffic, calibrated to clear Meta review. A decade of compliance-aware FB suites for supplement, financial, and ClickBank operators.',
     metaTitle: 'Facebook Ads Copywriter | Meta & Instagram Ad Copy',
     metaDescription:
-      'Hire a Facebook ads copywriter with $523M+ in tracked results. High-converting Facebook, Instagram, and Meta ad copy with scroll-stopping hooks, compliant angles, and proven 300% ROAS.',
-    headline: 'The Facebook Ads Copywriter Behind $523M+ in Results',
+      'Senior Facebook ads copywriter for direct-response operators. 300% ROAS on FB cold traffic (Ben Palmer), $30M+ Mobile Profits funnel fed by FB ads. Compliance-aware Meta + Instagram suites.',
+    headline: 'Facebook Ads Copywriter \u2014 300% ROAS on Cold Traffic Without Triggering Meta Review',
     subheadline:
-      'I write Facebook ads, Instagram ads, and Meta ad copy that has driven 300% ROAS, fed $30M+ funnels, and scaled offers across health, finance, and DTC \u2014 all while staying compliant.',
+      '"Rob is a killer copywriter. We\'re getting a 300% Return on Ad Spend." That\'s Ben Palmer, a ClickBank Platinum vendor, on the Facebook ad copy I wrote for his cold-traffic offer. I\'ve shipped Facebook + Instagram ad suites for over a decade \u2014 every angle calibrated to clear Meta review without flattening the conversion. If your FB ads are getting paused in the queue, flagged for review, or scaling without ROAS, this is the kind of work I do.',
     heroImage: '/images/services/facebook-ads-copywriter.jpg',
     heroImageAlt: 'Social media apps including Facebook and Instagram for ad copywriting',
     heroStats: {
-      primary: { value: '300%', label: 'ROAS on Facebook Ads' },
+      primary: { value: '300%', label: 'ROAS on FB Cold Traffic (Ben Palmer)' },
       secondary: [
-        { value: '$30M+', label: 'Single Funnel Fed by FB Ads' },
+        { value: '$30M+', label: 'Mobile Profits VSL Funnel (Fed by FB Ads)' },
+        { value: '340%', label: 'ROAS on Abundant Info-Product FB+IG' },
         { value: '40+', label: 'Years Direct Response' },
-        { value: '$523M+', label: 'Tracked Client Results' },
       ],
     },
     credentialBar: {
       heading: 'Facebook & Meta ads written for',
       items: [
-        'ClickBank #1 Offers',
-        'DTC Brands',
-        'Supplement Marketers',
-        'Info Product Launches',
+        'Ben Palmer / ClickBank Platinum Vendors (300% ROAS)',
+        'Mobile Profits VSL #1 ClickBank ($30M Funnel)',
+        'Copy Accelerator (as Copy Chief)',
+        'Supplement Marketers (Compliance-Aware)',
         'Financial Publishers',
-        'SaaS Companies',
+        'DTC and Info Product Brands',
       ],
     },
     sections: [
       {
-        heading: 'Your Facebook Ads Are Burning Money. Here Is Why.',
+        heading: 'Why Most Facebook Ads Die in the Approval Queue or Break Even',
         content:
-          'You are spending $500, $5,000, maybe $50,000 a day on Facebook ads. And for every dollar you put in, you need more than a dollar back \u2014 fast. But your CTR is flat, your CPA is climbing, and your media buyer keeps asking for "more creative."\n\n' +
-          '<strong>The problem is not your targeting. It is not your budget. It is your ad copy.</strong> Facebook ad copy has less than two seconds to earn attention in a feed where your prospect scrolls past hundreds of posts a day.\n\n' +
-          'The hook must stop the scroll. The body must build enough desire to earn the click. And the entire ad must pre-qualify the traffic so you are not paying for clicks that bounce off your landing page.\n\n' +
-          'Most Facebook ads copywriters write clever copy that gets likes but not conversions. There is a fundamental difference between copy that is interesting and copy that is persuasive. After 40+ years writing direct response, I know exactly where that line is.',
+          'You\'re spending $500, $5,000, maybe $50,000 a day on Facebook. The math is unforgiving: at a 1% click-to-purchase, 99% of that spend pays Meta for impressions that never convert. Worse \u2014 if you\'re running supplement, health, or financial offers, half your best-performing creative gets paused in the approval queue every other week. Your media buyer is asking for "more creative" to keep CPMs down. So you sign off on another batch and pray Meta doesn\'t pause the next one.\n\n' +
+          'Here\'s the structural reason that keeps happening. Facebook ads aren\'t creative writing in a small format. They\'re the strategic intersection of audience psychology, the Meta algorithm, and a compliance regime that auto-rejects half your best angles before a human reviewer ever sees them. The hook has to stop the scroll in under two seconds. The copy has to clear Meta\'s automated review. The whole ad has to pre-qualify the click so you\'re not paying for traffic that bounces off your landing page.\n\n' +
+          'Get any of those wrong and your ad spend is subsidizing Meta\'s revenue, not yours.',
       },
       {
-        heading: 'What 300% ROAS on Facebook Looks Like',
+        heading: '300% ROAS on Cold Traffic Without Triggering Meta Review',
         content:
-          'The Facebook ads I wrote for a supplement offer delivered <strong>300% ROAS on cold traffic</strong>. The ads that fed the <strong>Mobile Profits funnel ($30M, #1 on ClickBank)</strong> had to do one specific job: stop a stranger mid-scroll, create enough curiosity to earn the click, and deliver that click to a VSL where they would watch for 30+ minutes.\n\n' +
-          'That is a fundamentally different skill than writing brand awareness ads or boosted posts. My Facebook ad copy works because it is built on the same direct-response principles that have driven $523M+ in tracked results \u2014 deep audience research, emotional triggers rooted in real pain and desire, and hooks engineered from the exact language your prospects use to describe their problem.\n\n' +
-          'The same approach applies to Instagram ads and every other Meta placement.',
+          'Ben Palmer, a ClickBank Platinum vendor, put it on record: <em>"Rob is a killer copywriter. We\'re getting a 300% Return on Ad Spend."</em> That\'s on the Facebook ad copy I wrote for his cold-traffic offer.\n\n' +
+          'The Facebook ads I wrote for Mobile Profits \u2014 <strong>#1 on ClickBank</strong>, over <strong>$30 million</strong> \u2014 fed cold traffic to a 30+ minute video and held them through the buy. The Facebook + Instagram ads I wrote for Abundant clocked <strong>340% ROAS</strong>. And I\'ve been writing compliance-aware FB ad copy for supplement, health, and financial publishers for over a decade \u2014 every angle calibrated to clear Meta\'s review without flattening the conversion.\n\n' +
+          'If you have Facebook ads running and the numbers aren\'t where you need them \u2014 or if half your best creative is getting paused in the queue \u2014 I work as a control-beater. Send me your last five ads, the back-end CTR/CPA/ROAS, and the ones Meta paused. I\'ll tell you on the strategy call where the conversion is leaking and where the compliance trip-wire is firing \u2014 and whether I can write something that beats it.',
       },
       {
-        heading: 'The Copy Chief That Top Marketers Hire',
+        heading: 'The Facebook Ads Copywriter Top Operators and Media Buyers Hire',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park. Marc Lindsay, a direct-response media buyer, told me "one of your ads has just taken the lead" on a competitive campaign.\n\n' +
-          'These are people who test hundreds of Facebook ads and know exactly what converts. They work with me because my ad copy performs.',
+          'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as Copy Chief inside Copy Accelerator\'s CA Labs. Justin Goff publicly credited me with stepping up and knocking it out of the park. Marc David Lindsay, a direct-response media buyer testing my work head-to-head against existing controls, reported back: <em>"One of your ads has just taken the lead. High-converting campaign!"</em>\n\n' +
+          'A Meta media buyer running cold-traffic budgets ships and kills more ads in a week than most copywriters see in a year. When one of them reports "your ad has just taken the lead," that\'s the back-end Meta data talking \u2014 not a polite review.',
       },
       {
-        heading: 'Facebook Ads, Instagram Ads, and Every Meta Placement',
+        heading: 'How I Architect a Facebook Ad Suite That Beats Existing Controls',
         content:
-          'Facebook and Instagram are different platforms with different user behavior \u2014 but they share the same ad system. I write ad copy optimized for every Meta placement, understanding how copy performs differently across each one.',
+          'Every Facebook ad campaign I write moves through the same four phases. None are optional. This is the actual work \u2014 not a "process" page filling space.',
         bullets: [
-          'Facebook Feed ads \u2014 primary text, headlines, and descriptions optimized as a system. Hooks engineered for the fast-scrolling feed where you have under 2 seconds.',
-          'Instagram Feed and Stories ads \u2014 shorter, punchier copy calibrated for a visual-first platform where the image does 70% of the work and the copy must seal the deal.',
-          'Facebook and Instagram Reels ads \u2014 script hooks for video creative that earn the first 3 seconds before the swipe.',
-          'Audience Network and Messenger placements \u2014 compliant copy that works across Meta\'s extended network.',
+          'Phase 1 \u2014 Audience and angle research: I mine the Meta Ad Library, Facebook page reviews, customer-support transcripts, and competitor creatives to find the exact language your prospects use about the pain. The hook and the angle come out of this layer, not a brainstorming session. My AI workflow processes 50+ competitor Facebook ads in the time a manual pass takes to read three.',
+          'Phase 2 \u2014 Hook library: I build 5\u201310 hooks per campaign \u2014 each on a different angle, emotional trigger, or awareness-stage entry point. The hooks aren\'t variations of one idea; they\'re different bets you can run head-to-head and find a winner faster.',
+          'Phase 3 \u2014 Placement system + Meta compliance: Facebook is one ad system with multiple placements (Feed, Reels, Stories, IG Feed, IG Reels) \u2014 and the primary text + headline + description work as one persuasion system. Each ad is calibrated to its placement AND to <a href="https://www.facebook.com/policies/ads/" target="_blank" rel="noopener noreferrer">Meta\'s restricted-language rules</a> for your vertical. Compliance notes flag anything your legal team should review.',
+          'Phase 4 \u2014 Testing roadmap: a prioritized testing plan showing which variables to test first, what to expect, and how to iterate \u2014 so you find winners faster, kill losers earlier, and recover faster from approval-queue surprises.',
         ],
       },
       {
-        heading: 'Compliant Facebook Ad Copy That Still Converts',
+        heading: 'Facebook Ad Copy Across Every Placement and Every DR Vertical',
         content:
-          'If you run Facebook ads in health, supplements, or finance, you know the nightmare: <strong>write compliant copy and conversions tank. Write converting copy and your ad account gets flagged or shut down.</strong>\n\n' +
-          'I have spent years finding the angles that do both \u2014 proven language patterns that satisfy <a href="https://www.facebook.com/policies/ads/" target="_blank" rel="noopener noreferrer">Meta\u2019s advertising policies</a> and <a href="https://www.ftc.gov/business-guidance/advertising-and-marketing" target="_blank" rel="noopener noreferrer">FTC guidelines</a> while still driving strong ROAS.\n\n' +
-          'This is not about being timid. It is about being strategic. Compliant Facebook ad copy that nobody clicks is just as useless as aggressive copy that gets your ad account banned. I find the angles that thread the needle.',
-      },
-      {
-        heading: 'Systematic Testing, Not One-Off Creatives',
-        content:
-          'I do not write a single Facebook ad and hope it works. I deliver <strong>testing suites</strong> \u2014 sets of 5\u201310 ad variations per campaign with different hooks, emotional angles, and CTAs. Each variation is designed to test a specific hypothesis so you learn something whether it wins or loses.',
+          'A Facebook Feed ad reads differently than an Instagram Reels script, a Stories ad, or a carousel. The compliance posture differs by vertical, the placement mechanics differ by surface. I\'ve shipped winning Facebook ad copy across every Meta placement and every major DR vertical.',
         bullets: [
-          'Hook testing \u2014 3\u20135 different opening angles targeting different emotional triggers (fear, curiosity, desire, frustration, aspiration)',
-          'Angle testing \u2014 the same offer positioned through different lenses (problem-solution, story, social proof, contrarian, direct offer)',
-          'Format testing \u2014 variations optimized for static image, video, carousel, and UGC-style creative',
-          'Audience-specific copy \u2014 different ad copy for different audience segments, so cold traffic and retargeting get the right message',
+          '300% ROAS \u2014 Ben Palmer\'s ClickBank cold-traffic Facebook funnel',
+          '340% ROAS \u2014 Abundant info-product Facebook + Instagram cold traffic',
+          '$30M+ funnel revenue \u2014 Mobile Profits VSL fed by Facebook ad copy (#1 ClickBank)',
+          'Compliance-aware Facebook + Instagram for supplement, health, and financial publishers',
+          'Reels and Stories scripts that hold attention through the 3-second swipe window',
+          'Meta carousel and UGC-style ad scripts for DTC and info-product verticals',
         ],
       },
     ],
     caseStudies: [
       {
-        name: 'Supplement Campaign',
-        category: 'Facebook Ads',
+        name: 'Ben Palmer / ClickBank Platinum Vendor',
+        category: 'Facebook Cold-Traffic Funnel',
         metric: '300% ROAS',
-        detail: 'Cold traffic to VSL funnel. Compliance-approved.',
+        detail: '"Rob is a killer copywriter. We\'re getting a 300% Return on Ad Spend."',
       },
       {
-        name: 'Mobile Profits',
-        category: 'Facebook + Multi-Platform',
-        metric: '$30M Funnel Revenue',
-        detail: 'Facebook ad copy feeding #1 ClickBank offer.',
+        name: 'Mobile Profits Facebook Ad Suite',
+        category: 'Multi-Placement Cold Traffic',
+        metric: '$30M+ Funnel Revenue',
+        detail: 'Facebook ad copy feeding the #1 ClickBank biz-op VSL. Hooks engineered for cold-traffic-to-VSL conversion.',
       },
       {
-        name: 'Info Product Launch',
-        category: 'Facebook & Instagram Ads',
+        name: 'Abundant Info-Product FB + IG',
+        category: 'Facebook + Instagram Cold Traffic',
         metric: '340% ROAS',
-        detail: 'Cold traffic Facebook and Instagram ads to sales page.',
+        detail: 'Cold-traffic Facebook and Instagram ads feeding info-product sales page.',
+      },
+      {
+        name: 'Compliance-Aware Supplement Suite',
+        category: 'Facebook + Instagram (Regulated Vertical)',
+        metric: 'Decade of Approved Cold Traffic',
+        detail: 'Ten-plus years of Facebook and Instagram ad copy for supplement and health offers, calibrated to clear Meta review while still converting.',
       },
     ],
     deliverables: [
@@ -2093,47 +2093,57 @@ export const services: Service[] = [
     deliverablesHeading: 'What You Get When You Hire Me',
     deliverablesSubtext:
       'Every deliverable is engineered to find winning Facebook and Instagram ads faster \u2014 not just fill your Ads Manager.',
-    testimonialIds: ['15', '4', '2', '6'],
+    testimonialIds: ['4', '15', '2', '3', '6'],
     portfolioItems: [
       { title: 'Facebook Ad Suite \u2014 Health Niche', category: 'Ads' },
       { title: 'Instagram Ad Campaign \u2014 DTC', category: 'Ads' },
       { title: 'Meta Ad Suite \u2014 Info Product', category: 'Ads' },
     ],
     midCta: {
-      headline: 'Ready for Facebook ads that actually convert?',
+      headline: 'Ready for Facebook ads that beat your control AND clear Meta review?',
       subtext:
-        'Book a free strategy call. I\u2019ll look at what you\u2019re running now and tell you where the ROAS is hiding.',
+        'Book a free strategy call. I\'ll review your last five ads (and the ones Meta paused) against the CTR/CPA/ROAS data, then tell you honestly where the conversion is leaking and whether I can write something that beats your control.',
     },
     faqs: [
       {
-        question: 'What is the difference between a Facebook ads copywriter and a general ad copywriter?',
+        question: 'What\'s the difference between a Facebook ads copywriter and a general ad copywriter?',
         answer:
-          'A Facebook ads copywriter specializes in the specific mechanics of Meta\u2019s ad platform \u2014 the interplay between primary text, headline, and description, how copy performs differently across Facebook Feed, Instagram, Stories, and Reels, and the compliance rules that can get your ad account flagged or shut down. A general ad copywriter may write for Google, YouTube, native, and other platforms. I do both, but this service is specifically focused on Facebook, Instagram, and Meta ad copy.',
+          'A Facebook ads copywriter specializes in the mechanics of Meta\'s ad system \u2014 the interplay between primary text, headline, and description as one persuasion system; how copy performs differently across Facebook Feed, Instagram Feed, Stories, and Reels; and Meta\'s review and restricted-language rules that auto-reject half your best angles before a human reviewer ever sees them. A general ad copywriter writes across Facebook, Google, YouTube, and native. I do both \u2014 but this service is specifically focused on the Meta ad system.',
       },
       {
-        question: 'Do you write Instagram ad copy too?',
+        question: 'Are you taking new Facebook ads clients?',
         answer:
-          'Yes. Facebook and Instagram share the same Meta ad platform, but the user behavior is different. Instagram is more visual-first, Stories and Reels demand shorter and punchier copy, and the audience skews differently. I write ad copy optimized for every Meta placement \u2014 Facebook Feed, Instagram Feed, Stories, Reels, and Audience Network \u2014 because what works on Facebook often needs adjustment for Instagram and vice versa.',
+          'I take a selective number of new Facebook ad engagements each quarter so the work stays at the level the proof requires. Most kickoffs happen within two weeks of the strategy call. If the project is a fit, I\'ll send a fixed-price proposal within 48 hours. If it isn\'t, I\'ll tell you on the call and point you toward someone in my network who\'s better suited.',
       },
       {
-        question: 'How many Facebook ad variations do you write?',
+        question: 'How do you use AI to write Facebook ad copy?',
         answer:
-          'I typically deliver 5\u201310 ad variations per campaign, designed as a testing suite with different hooks, angles, and CTAs. Each variation tests a specific hypothesis \u2014 not random creative. This gives you enough variation to run meaningful split tests and find winners faster than testing one ad at a time.',
+          'I don\'t use generic ChatGPT prompting. I use Claude Code augmented by my own custom-built copywriting skills \u2014 proprietary skill files that encode 40 years of frameworks, hook formulas, FB-specific patterns, and evaluation criteria into a working AI workflow, with my 1,239-file Obsidian copywriting brain as the reference layer. The AI mines the Meta Ad Library at scale and generates variation suites against four decades of campaigns that have already converted. I make every strategic and structural call.',
+      },
+      {
+        question: 'What does Facebook ads copywriting cost?',
+        answer:
+          'Facebook ads engagements are fixed-price. Most full FB ad suites start at $10K \u2014 research, hook library, 8\u201315 finished ads with placement-specific tuning, compliance notes, and a testing roadmap. Smaller single-campaign suites are priced lower. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: at $5K/day in Facebook spend, an ad converting at 1.5% instead of 1% on the same traffic pays for the writer in the first week.',
+      },
+      {
+        question: 'How long does it take to write a Facebook ad campaign?',
+        answer:
+          'A multi-placement Facebook ad suite (research + hook library + 8\u201315 finished ads with placement-specific tuning + compliance review + testing roadmap) typically takes 2\u20133 weeks. A single-placement suite is 1\u20132 weeks. The audience and angle research always comes first \u2014 that\'s where the click-through rate lives.',
       },
       {
         question: 'How do you handle Facebook ad compliance for health and finance?',
         answer:
-          'This is one of my specialities. I have written compliant Facebook and Instagram ad copy for supplement offers, financial publishers, and ClickBank vendors for years \u2014 including ads that drove 300% ROAS while passing Meta\u2019s review. The key is knowing the specific language patterns that satisfy Meta\u2019s ad policies while preserving persuasive power. I also provide compliance notes flagging any language your legal team should review.',
+          'This is one of my specialities. I\'ve written compliance-aware Facebook and Instagram ad copy for supplement offers, financial publishers, and ClickBank vendors for over a decade \u2014 including ads that drove 300% ROAS while clearing Meta\'s review. I know which language patterns to swap, which claims to back with mechanism, and where Meta\'s automated review actually trips. I provide compliance notes with each ad flagging anything your legal team should review.',
       },
       {
-        question: 'Do you write Facebook video ad scripts?',
+        question: 'What industries do you write Facebook ads for?',
         answer:
-          'Yes. I write scripts for Facebook and Instagram video ads, Reels ads, and UGC-style video creative. Video ads on Meta require different pacing and hook mechanics than static ads \u2014 you have about 3 seconds before the user scrolls or swipes. I write hook options specifically engineered to earn those first seconds.',
+          'Health and supplement (compliance-aware FB ad copy for over a decade), ClickBank (Ben Palmer\'s 300% ROAS funnel; Mobile Profits VSL #1 offer at $30M+), info products and coaching (Abundant 340% ROAS), financial publishers (regulated FB+IG copy), e-commerce and DTC (Reels + carousel + UGC scripts), SaaS. Each vertical has its own Meta-policy posture and buyer psychology. The frameworks adapt accordingly.',
       },
       {
-        question: 'How much does Facebook ads copywriting cost?',
+        question: 'What happens after the strategy call?',
         answer:
-          'Facebook ads copywriting is priced per ad suite (a set of variations for a specific campaign) or on a retainer for ongoing needs. But here is how I think about it: if your current Facebook ads are converting at 1% and new copy gets you to 1.5%, that is a 50% improvement on the same ad spend. At serious daily budgets, that difference pays for the copywriter in the first week.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is audience and angle research (including Meta Ad Library mining), then hook library and architecture, then the finished ads with placement-specific tuning and compliance review, then a testing roadmap. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['ad-copywriter', 'landing-page-copywriter'],
