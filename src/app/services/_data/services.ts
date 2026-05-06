@@ -1422,110 +1422,106 @@ export const services: Service[] = [
     title: 'Upsell & Downsell Copywriter',
     slug: 'upsell-downsell-copywriter',
     shortDescription:
-      'Post-purchase upsell and downsell copy that maximizes AOV without eroding trust. Turn one sale into three.',
-    metaTitle: 'Upsell & Downsell Copywriter | Maximize AOV',
+      'Post-purchase upsell, downsell, and order-bump copy engineered to lift AOV by 30\u2013100% on traffic you\'ve already paid for. Sequences inside $30M+ and $40M+ ClickBank funnels.',
+    metaTitle: 'Upsell & Downsell Copywriter | Post-Purchase AOV Engineering',
     metaDescription:
-      'Expert upsell and downsell copywriter with $523M+ in tracked results. Post-purchase copy that maximizes average order value without eroding customer trust.',
-    headline: 'The Upsell & Downsell Copywriter Behind $523M+ in Results',
+      'Senior upsell and downsell copywriter behind the back-end sequences inside $30M+ Mobile Profits and $40M+ Gluco 6 ClickBank funnels. Order-bump and upsell copy engineered to lift AOV by 30\u2013100% on existing traffic. Fixed-price engagements.',
+    headline: 'Upsell & Downsell Copywriter Behind $30M+ and $40M+ ClickBank Funnel Back-Ends',
     subheadline:
-      'The most profitable copy in your funnel is behind the buy button. I write upsell and downsell sequences that increase AOV by 30\u2013100% \u2014 without a single additional ad dollar.',
+      'The most profitable copy in your funnel sits behind the buy button. I architect the upsell, downsell, and order-bump sequences that lift AOV by 30\u2013100% on traffic you\'ve already paid for \u2014 the back-end stacks inside funnels like $30M Mobile Profits (#1 on ClickBank) and the $40M Gluco 6 supplement subscription funnel. If your front end converts but your AOV is sitting where it shouldn\'t be, your back-end sequence is the leak.',
     heroImage: '/images/services/upsell-downsell-copywriter.jpg',
     heroImageAlt: 'E-commerce checkout and purchase optimization for upsell copywriting',
     heroStats: {
-      primary: { value: '30\u2013100%', label: 'Typical AOV Increase' },
+      primary: { value: '30\u2013100%', label: 'AOV Lift on Recent Upsell Stacks' },
       secondary: [
-        { value: '$0', label: 'Additional Ad Spend Required' },
-        { value: '40+', label: 'Years Direct Response' },
-        { value: '$523M+', label: 'Tracked Client Results' },
+        { value: '$30M+', label: 'Mobile Profits #1 ClickBank Upsell Stack' },
+        { value: '$40M+', label: 'Gluco 6 Subscription Upsell Funnel' },
+        { value: '20\u201340%', label: 'Order-Bump Take-Rate Range' },
       ],
     },
     credentialBar: {
-      heading: 'Upsell sequences written for',
+      heading: 'Upsell sequences architected for',
       items: [
         'ClickBank #1 Offers',
-        'Supplement Funnels',
-        'DTC Brands',
+        'Supplement Subscription Funnels',
+        'Copy Accelerator (as Copy Chief)',
         'Info Product Launches',
-        'SaaS Platforms',
+        'DTC Brands',
         'Financial Publishers',
       ],
     },
     sections: [
       {
-        heading: 'You Have a Converting Front End. Now You Are Leaving Money on the Table.',
+        heading: 'Why Most Upsell Sequences Leave 30\u2013100% on the Table',
         content:
-          'Your funnel is working. Traffic is converting. But when you look at your average order value, you know there is more there.\n\n' +
-          '<strong>The moment after a customer says yes is the most profitable moment in your entire funnel</strong> \u2014 and it is the moment most businesses handle the worst. Generic upsell pages with disconnected offers and weak copy. Downsells that feel like a guilt trip. Order bumps that nobody clicks.\n\n' +
-          'Every one of those is revenue you already earned the right to collect \u2014 because the hardest part is already done. The customer has their wallet open. Their brain is primed to say yes again. All you need is copy that makes the next offer feel like the natural, logical, obvious next step.\n\n' +
-          'That is a specific skill \u2014 and it is fundamentally different from front-end sales copywriting.',
+          'Your front end converts. Traffic comes in, the offer closes, the order completes. Then \u2014 in the most profitable 90-second window in your entire funnel \u2014 the customer hits a generic upsell page that has nothing to do with what they just bought, an order bump nobody clicks, and a downsell that reads like a guilt trip.\n\n' +
+          '<strong>That 90-second post-purchase window is where the difference between a profitable funnel and an eight-figure funnel lives.</strong> A buyer with their wallet open, their card on file, and their brain primed to say yes again \u2014 walked through a sequence written by someone who treated upsells as an afterthought.\n\n' +
+          'Do the math on a $47 front-end with a 30% upsell take-rate at $97. That\'s $29 in incremental AOV per buyer. On 1,000 daily buyers, that\'s $29,000/day in revenue you\'re collecting on $0 in extra ad spend. Take it to a 50% take-rate and a $147 upsell, and you\'re at $73.50 incremental AOV per buyer \u2014 $73,500/day on the same 1,000 buyers, $26.8M/year on $0 in extra ad spend. <strong>That\'s not "optimization." That\'s the back-end carrying the entire funnel\'s profitability \u2014 and it\'s why the difference between a $5M and a $30M ClickBank funnel is almost always the back-end stack, not the front-end VSL.</strong>',
       },
       {
-        heading: 'What 30\u2013100% More Revenue Looks Like on the Same Traffic',
+        heading: 'The Back-End Sequences Inside $30M+ and $40M+ ClickBank Funnels',
         content:
-          'Think about what a 50% AOV increase means for your business. You are paying the <em>exact same acquisition cost</em> but extracting 50% more revenue from each customer. Your front-end breakeven point drops. Your media buyer can bid more aggressively. Your entire funnel economics shift.\n\n' +
-          'The upsell sequences I wrote for funnels like <strong>Mobile Profits ($30M, #1 on ClickBank)</strong> and <strong>Gluco 6 ($40M)</strong> were not afterthoughts \u2014 they were engineered as part of the conversion system from day one. Each upsell referenced the product the customer just bought, reinforced their decision, and presented the upgrade as the obvious next move.\n\n' +
-          'The result: AOV increases that made the difference between a profitable funnel and an eight-figure funnel.',
+          'The upsell and downsell sequences I architected for <strong>Mobile Profits</strong> (the #1 ClickBank offer in its window) and the <strong>Gluco 6 supplement funnel</strong> weren\'t bolted on at the end of the project. They were engineered into the persuasion architecture from day one \u2014 every page referencing the front-end purchase, every offer feeling like a logical extension, every transition tight enough that the buying momentum carried through.\n\n' +
+          'Mobile Profits did <strong>$30 million</strong>. Gluco 6 did <strong>$40 million</strong>. In both cases, the back-end was where the funnel went from "profitable" to "category-defining."\n\n' +
+          'The same systems thinking carries into the anonymized ClickBank order-bump work I\'ve done for vendors who don\'t put their numbers in case studies. Order-bump take-rates in the 30\u201340%+ range. Subscription upsell sequences that quietly funded entire 7-figure businesses. The proof is in the back-end revenue \u2014 most of which the front-end copywriter never sees.\n\n' +
+          'If you have a back-end stack running and your AOV is sitting flat, I work as a control-beater on the post-purchase sequence. Send me your current upsell, downsell, and order-bump copy plus your take-rates step-by-step \u2014 I\'ll tell you on the call exactly where the leak is (it\'s almost always Upsell 1\'s lead, the order-bump\'s positioning, or the downsell\'s pricing) and whether I can rewrite a stack that beats it.',
       },
       {
-        heading: 'The Post-Purchase Psychology Most Copywriters Miss',
+        heading: 'Goff OLOF, Sultanic Softeners, Belcher Value Cascade \u2014 Why the Frameworks Matter',
         content:
-          'Upsell copy is not just "more selling." It leverages psychological forces that only exist in the post-purchase moment \u2014 and they are decaying with every second. A specialist upsell copywriter knows how to harness all of them before the window closes.',
+          'Upsell copywriting is its own discipline. The buyer who just hit "submit" isn\'t the same buyer your front-end VSL was selling to 90 seconds ago \u2014 their commitment-and-consistency is firing, their endowment effect is kicking in, and their buying momentum is decaying every second. Front-end copywriters who try to write upsells without studying these post-purchase psychology forces consistently underperform.\n\n' +
+          'The frameworks I deploy on every back-end build come from operators who lived the data: Justin Goff\'s One-Last-Offer-Funnel structure for downsell recovery; Alen Sultanic\'s softener language patterns for keeping refund rates flat while AOV climbs; Perry Belcher\'s value-cascade architecture for stacking upsell take-rates without buyer fatigue. These aren\'t templates pulled off a swipe site \u2014 they\'re the load-bearing structures behind the back-end sequences inside $30M+ and $40M+ ClickBank funnels.\n\n' +
+          'Stefan Georgi (the copywriter behind over $1 billion in tracked sales) hired me as Copy Chief inside Copy Accelerator\'s CA Labs because that pattern recognition is what separates an upsell that lifts AOV from an upsell that lifts refund rates. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer (a ClickBank Platinum vendor) clocked <strong>300% ROAS</strong> on a campaign I wrote \u2014 with the back-end carrying the math.\n\n' +
+          'These are operators with their own money on the line.',
+      },
+      {
+        heading: 'How I Architect an Upsell Sequence That Lifts AOV Without Lifting Refunds',
+        content:
+          'Every upsell stack I write moves through the same four phases. None are optional. The discipline is what separates an upsell that earns an extra $29/buyer from an upsell that earns an extra $129/buyer.',
         bullets: [
-          'Commitment and consistency \u2014 the buyer just said yes and their brain wants to stay consistent with that decision. The upsell must feel like a continuation, not a new pitch.',
-          'The endowment effect \u2014 they already feel ownership of the initial product. The upsell is positioned as protecting and enhancing that investment.',
-          'Buying momentum \u2014 the energy is at its peak the moment after the first purchase and declining every second. The copy must be concise, confident, and friction-free.',
-          'Trust transfer \u2014 you just delivered on the front-end promise. That trust carries forward, but only if the upsell feels genuine and not like a bait-and-switch.',
+          'Phase 1 \u2014 Back-end diagnostic and buyer-psychology mapping: I audit your current take-rates by step, refund rates by SKU, and the language of post-purchase complaints \u2014 the dataset most front-end copywriters never see. My AI workflow reads hundreds of post-purchase support tickets, refund-request emails, and review threads in the time a manual pass takes to read three \u2014 surfacing the exact friction points killing your back-end.',
+          'Phase 2 \u2014 Sequence architecture: I design the optimal stack for your offer \u2014 how many upsells, where to position the order bump, where the downsell catches the price-sensitive buyer, how the subscription option (if any) folds in. Every step\'s job spelled out before a word gets written.',
+          'Phase 3 \u2014 Page-by-page writing: I write every upsell, downsell, order bump, and thank-you page myself \u2014 deploying the Goff OLOF structure where it fits, Sultanic softeners where the AOV-vs-refund tension is real, and the Belcher value cascade where the stack needs to compound. Every page tested against one question: does this feel like the natural next yes?',
+          'Phase 4 \u2014 Take-rate optimization roadmap: split-test variations for each upsell, A/B copy for the order bump, and a step-by-step roadmap that tells you what to test first, why, and what to expect.',
         ],
       },
       {
-        heading: 'How I Architect an Upsell Sequence That Maximizes AOV',
+        heading: 'Upsell & Downsell Sequences Across ClickBank, Health, Info, DTC and SaaS',
         content:
-          'The best upsell sequences are not random product offers \u2014 they are a strategic escalation designed to extract maximum revenue while keeping refund rates low and customer satisfaction high.',
+          'Different verticals run on different upsell economics. A supplement subscription stack runs nothing like an info-product premium-tier upsell or a SaaS annual-plan upgrade. The frameworks adapt; the architecture changes. I\'ve shipped converting back-end stacks across every major DR vertical.',
         bullets: [
-          'Upsell 1 \u2014 the most closely related to the initial purchase, commanding the highest take rate. This is where 60\u201370% of your upsell revenue comes from.',
-          'Downsell 1 \u2014 if they decline, a lower-priced alternative or different angle on the same value. This recovers revenue from price-sensitive buyers.',
-          'Upsell 2 \u2014 a complementary product, subscription, or premium upgrade. Take rates are lower but still profitable because the traffic is free.',
-          'Order bump \u2014 a small add-on on the checkout page with 20\u201340% take rates. Low friction, high incremental revenue.',
-          'Thank-you page \u2014 reinforces the buying decision, reduces refund anxiety, and seeds future engagement.',
-        ],
-      },
-      {
-        heading: 'The Copy Chief That Top Copywriters Hire',
-        content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff gave me a public shoutout for knocking it out of the park.\n\n' +
-          'These are people who understand that the upsell sequence is where funnel profitability is won or lost. They work with me because I treat post-purchase copy with the same strategic rigor as the front end \u2014 not as an afterthought.',
-      },
-      {
-        heading: 'Upsell Copywriting Across Industries',
-        content:
-          'Every industry has different optimal upsell strategies. The wrong upsell structure for your market will leave money on the table or, worse, increase refund rates. I have written converting upsell sequences across all of them.',
-        bullets: [
-          'Supplement funnels \u2014 subscription upsells, multi-bottle bundles, and complementary formula offers',
-          'ClickBank and affiliate offers \u2014 high-EPC upsell sequences that keep affiliates promoting your offer',
-          'Info products and coaching \u2014 premium tier upgrades, community access, and done-for-you add-ons',
-          'E-commerce and DTC \u2014 product bundles, warranty upsells, and VIP subscription tiers',
-          'SaaS platforms \u2014 annual plan upgrades, feature tier upsells, and onboarding add-ons',
+          '$30M+ \u2014 Mobile Profits #1 ClickBank funnel back-end (upsell + downsell + order-bump stack)',
+          '$40M+ \u2014 Gluco 6 supplement funnel with subscription upsells driving the back end',
+          '300% ROAS \u2014 Ben Palmer ClickBank campaign with the back-end carrying profitability',
+          'Anonymized ClickBank order-bump wins \u2014 take-rates in the 30\u201340%+ range across multiple vendors',
+          'Info-product premium-tier upsells, coaching-program downsell ladders, e-commerce bundle and warranty stacks, SaaS annual-plan upgrades and trial-to-paid sequences',
         ],
       },
     ],
     caseStudies: [
       {
         name: 'Mobile Profits',
-        category: 'Biz-Op Upsell Sequence',
+        category: 'Complete ClickBank Back-End Stack',
         metric: '$30M Total Funnel',
-        detail: 'Upsell sequence engineered as part of #1 ClickBank offer.',
+        detail: '#1 ClickBank offer. Upsell, downsell, and order-bump sequence engineered into the persuasion architecture from day one.',
       },
       {
         name: 'Gluco 6',
-        category: 'Supplement Upsells',
+        category: 'Supplement Subscription Upsell Funnel',
         metric: '$40M Total Funnel',
-        detail: 'Subscription and bundle upsells for cold traffic funnel.',
+        detail: 'Subscription and bundle upsells driving the back end on a cold-traffic supplement funnel.',
       },
       {
-        name: 'Supplement Funnel',
-        category: 'Post-Purchase Sequence',
+        name: 'Anonymized ClickBank Order-Bump Stack',
+        category: 'Order-Bump Take-Rate Lift',
+        metric: '30\u201340%+ Take Rates',
+        detail: 'Post-purchase order-bump and upsell sequences for ClickBank vendors who don\'t surface specific numbers in case studies.',
+      },
+      {
+        name: 'Ben Palmer ClickBank Campaign',
+        category: 'Back-End-Driven ROAS',
         metric: '300% ROAS',
-        detail: 'Upsell sequence that shifted funnel from breakeven to profitable.',
+        detail: 'Front-end and back-end working as one persuasion system.',
       },
     ],
     deliverables: [
@@ -1542,12 +1538,12 @@ export const services: Service[] = [
       {
         title: 'Order Bump Copy',
         description:
-          'Compelling order bump copy for the checkout page \u2014 typically 20\u201340% take rates with the right positioning.',
+          'Compelling order bump copy for the checkout page \u2014 typically 20\u201340% take-rates with the right positioning.',
       },
       {
         title: 'Upsell Sequence Strategy',
         description:
-          'Strategic document outlining optimal upsell flow, offer sequencing, pricing, and expected take rates for your market.',
+          'Strategic document outlining optimal upsell flow, offer sequencing, pricing, and expected take-rates for your market.',
       },
       {
         title: 'Thank-You Page Copy',
@@ -1562,48 +1558,58 @@ export const services: Service[] = [
     ],
     deliverablesHeading: 'What You Get When You Hire Me',
     deliverablesSubtext:
-      'Every deliverable is engineered to maximize the revenue you extract from traffic you have already paid for.',
-    testimonialIds: ['4', '5', '2', '18'],
+      'Every page engineered to extract the maximum AOV from traffic you\'ve already paid for \u2014 without lifting your refund rate.',
+    testimonialIds: ['4', '2', '3', '6', '18', '5'],
     portfolioItems: [
       { title: 'Supplement Funnel Upsell Sequence', category: 'Upsell' },
       { title: 'Info Product Upsell Chain', category: 'Upsell' },
       { title: 'E-Commerce Order Bump + Upsell', category: 'Upsell' },
     ],
     midCta: {
-      headline: 'Ready to stop leaving money behind the buy button?',
+      headline: 'Ready for an upsell stack that lifts AOV without lifting refunds?',
       subtext:
-        'Book a free strategy call. I\u2019ll audit your current upsell sequence and tell you exactly how much AOV you\u2019re leaving on the table.',
+        'Send me your current back-end stack and your take-rates step-by-step \u2014 I\'ll tell you on the call where the AOV is leaking and whether I can rewrite a sequence that beats it.',
     },
     faqs: [
       {
-        question: 'How much can upsells increase AOV?',
+        question: 'What does an upsell and downsell copywriter do?',
         answer:
-          'Well-crafted upsell sequences typically increase average order value by 30\u2013100%. In some niches, I have seen upsell sequences triple the initial purchase value. The key is making each upsell feel like a logical next step \u2014 not a hard sell \u2014 and pricing relative to the initial purchase in a way that feels proportional and fair.',
+          'I write the post-purchase copy that sits behind the buy button \u2014 the upsells, downsells, order bumps, and thank-you pages that determine your funnel\'s actual profitability. This is its own discipline, distinct from front-end sales copy. The buyer\'s psychology in the 90 seconds after they hit "submit" is fundamentally different from the cold-traffic close, and it runs on different frameworks: Justin Goff\'s One-Last-Offer structure, Alen Sultanic\'s softener patterns, Perry Belcher\'s value cascade. Specialist back-end copy is what takes a funnel from "profitable" to "category-defining."',
       },
       {
-        question: 'What is the difference between an upsell and a downsell?',
+        question: 'Are you taking new upsell-and-downsell clients?',
         answer:
-          'An upsell is a higher-value offer presented after the initial purchase \u2014 a premium version, bundle, or complementary product. A downsell is a lower-priced alternative offered when the customer declines the upsell. Downsells recover revenue from buyers who wanted more value but were not ready for the upsell price point. Both should feel like natural extensions of the original purchase.',
+          'I take a selective number of new back-end engagements each quarter so the work stays at the level the proof requires. Most kickoffs happen within two weeks of the strategy call. If the project is a fit, I\'ll send a fixed-price proposal within 48 hours. If it isn\'t, I\'ll tell you on the call and point you toward someone in my network who\'s better suited.',
       },
       {
-        question: 'What is an order bump?',
+        question: 'How do you use AI to write upsell sequences?',
         answer:
-          'An order bump is a small add-on offer on the checkout page, typically with a checkbox. Because the customer is already entering payment information, order bumps see 20\u201340% take rates and can significantly increase AOV with almost zero friction. I write order bump copy that positions the add-on as the obvious complement to the main purchase.',
+          'I don\'t use generic ChatGPT prompting. I use Claude Code augmented by my own custom-built copywriting skills \u2014 proprietary skill files that encode 40 years of frameworks, post-purchase persuasion patterns, and evaluation criteria into a working AI workflow, with my 1,239-file Obsidian copywriting brain as the reference layer (190 frameworks, 193 swipe pieces, 125 book/course notes, 76 templates, 512 pieces of my own copy). I make every strategic and structural call. The AI carries the volume \u2014 which is exactly what an upsell stack across 5\u20136 post-purchase pages needs.',
       },
       {
-        question: 'How many upsells should a funnel have?',
+        question: 'How much does upsell and downsell copywriting cost?',
         answer:
-          'Most funnels perform best with 1\u20133 upsells plus 1\u20132 downsells. Too few and you leave money on the table. Too many and you risk refund spikes and customer fatigue. The optimal number depends on your market, price points, and offer complexity. I recommend the structure based on what I have seen work in your specific vertical.',
+          'Upsell-and-downsell engagements are fixed-price. Most full-stack projects (1\u20133 upsells, 1\u20132 downsells, order bump, thank-you page) start at $10K \u2014 the math depends on the number of pages and offer complexity. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: upsell copy lifts revenue from traffic you\'ve already paid for. There\'s no additional ad spend, no additional acquisition cost. It\'s the highest-margin copywriting investment you can make \u2014 and the ROI is usually measurable inside a week.',
       },
       {
-        question: 'Do upsells increase refund rates?',
+        question: 'How long does it take to write an upsell sequence?',
         answer:
-          'Bad upsells do. Good upsells do not. The difference is whether the upsell genuinely enhances the value of the original purchase or feels like a cash grab. My approach is to make every upsell something the customer is genuinely glad they bought \u2014 because that protects your refund rate, your affiliate relationships, and your long-term customer value.',
+          'A full upsell stack typically takes 2\u20134 weeks from briefing to final deliverables. That includes back-end diagnostic, sequence architecture, page-by-page writing, and one comprehensive revision round. The timeline depends on the number of pages and the complexity of your offer. I never rush the diagnostic phase \u2014 reading your current take-rates by step is what tells me where the leak is.',
       },
       {
-        question: 'How much does upsell copywriting cost?',
+        question: 'How many upsells and downsells should my funnel have?',
         answer:
-          'Upsell copywriting is priced per sequence, depending on the number of pages and offer complexity. But here is how I think about it: upsell copy increases revenue from traffic you have already paid for. There is no additional ad spend, no additional acquisition cost. It is the highest-margin copywriting investment in your business \u2014 and the ROI is usually measurable within the first week.',
+          'Most funnels perform best with 1\u20133 upsells, 1\u20132 downsells, and 1 order bump. Too few and you\'re leaving 30\u2013100% of your potential AOV on the table. Too many and you risk refund spikes and buyer fatigue. The optimal number depends on your price points, traffic source, and offer complexity. I\'ll recommend the structure during the strategy call based on what I\'ve seen work in your specific vertical.',
+      },
+      {
+        question: 'What industries do you write upsell sequences for?',
+        answer:
+          '$30M+ Mobile Profits ClickBank back-end. $40M Gluco 6 supplement subscription funnel. 300% ROAS on Ben Palmer\'s ClickBank campaign with the back-end carrying the math. Plus health and supplement (subscription stacks), info products and coaching (premium-tier ladders), e-commerce and DTC (bundle + warranty stacks), SaaS (annual-plan upgrades, trial-to-paid sequences). Each vertical has its own AOV math, refund-rate sensitivities, and post-purchase psychology. The frameworks adapt accordingly.',
+      },
+      {
+        question: 'What happens after the strategy call?',
+        answer:
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is back-end diagnostic and buyer-psychology mapping, then sequence architecture, then page-by-page writing, then one comprehensive revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['sales-funnel-copywriter', 'email-copywriter'],
