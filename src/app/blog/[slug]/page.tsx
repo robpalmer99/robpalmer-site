@@ -229,7 +229,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                     Rob Palmer
                   </h3>
                   <p className="text-sm text-ink-700 font-body mt-1">
-                    Rob Palmer is a veteran direct-response copywriter with 30+ years of experience and $523M+ in tracked results. His clients include Apple, IBM, Microsoft, and Citibank. He specializes in VSLs, sales funnels, and email sequences for ClickBank and DTC brands, leveraging AI to amplify battle-tested direct-response principles.
+                    I am a veteran direct-response copywriter with 40+ years of experience and $523M+ in tracked results. My clients include Apple, IBM, Microsoft, and Citibank. I specialize in VSLs, sales funnels, and email sequences for ClickBank and DTC brands &mdash; leveraging Claude Code with my custom copywriting skills and a 1,239-file Obsidian copywriting brain to amplify battle-tested direct-response principles.
                   </p>
                 </div>
               </div>

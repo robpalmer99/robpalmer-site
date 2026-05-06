@@ -28,7 +28,7 @@ export const caseStudies: CaseStudy[] = [
     metrics: [
       { value: '$523M', label: 'Tracked Sales' },
       { value: '9 Years', label: 'Campaign Lifespan' },
-      { value: '5', label: 'Failed Before Rob' },
+      { value: '5', label: 'Failed Before Me' },
       { value: '35+', label: 'Countries Reached' },
     ],
     testimonial: {
@@ -51,7 +51,7 @@ export const caseStudies: CaseStudy[] = [
       { value: '3', label: 'Offers A/B Tested' },
       { value: '#1', label: 'Response Rate' },
       { value: '3', label: 'Market Segments' },
-      { value: '1', label: 'Copywriter (Rob)' },
+      { value: '1', label: 'Copywriter (Me)' },
     ],
     testimonial: undefined,
   },

@@ -517,7 +517,7 @@ export const services: Service[] = [
         name: 'Belron / Safelite',
         category: 'Direct Mail Campaign',
         metric: '$523M in Sales',
-        detail: '9-year control. 35+ countries. 5 copywriters failed before Rob.',
+        detail: '9-year control. 35+ countries. 5 copywriters failed before me.',
       },
       {
         name: 'Apple Computer UK',

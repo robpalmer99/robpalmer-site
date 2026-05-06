@@ -80,7 +80,7 @@ const faqData = [
   {
     question: 'How is this different from other headline analyzers?',
     answer:
-      'Most headline analyzers use generic scoring based on basic word counts. This tool is built by a direct-response copywriter with 30+ years of experience and $523M+ in tracked results. The scoring weights emotional triggers, power words, and word balance the way working copywriters evaluate headlines — not just readability metrics. It is also instant, free, and private — no server processing, no data collection.',
+      'Most headline analyzers use generic scoring based on basic word counts. This tool is built by a direct-response copywriter with 40+ years of experience and $523M+ in tracked results. The scoring weights emotional triggers, power words, and word balance the way working copywriters evaluate headlines — not just readability metrics. It is also instant, free, and private — no server processing, no data collection.',
   },
 ]
 
@@ -211,7 +211,7 @@ export default function HeadlineAnalyzerPage() {
           <div className="max-w-3xl mx-auto prose-container">
             <FadeIn>
               <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-900">
-                How to Write Headlines That Convert: Tips From 30+ Years of Direct-Response Copywriting
+                How to Write Headlines That Convert: Tips From 40+ Years of Direct-Response Copywriting
               </h2>
             </FadeIn>
 

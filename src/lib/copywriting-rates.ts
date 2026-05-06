@@ -2,7 +2,7 @@
  * Copywriting rates calculator engine.
  *
  * Rate data based on industry surveys, freelancer communities,
- * and 30+ years of direct-response copywriting market experience.
+ * and 40+ years of direct-response copywriting market experience.
  */
 
 // ─── Types ───────────────────────────────────────────────────────────────────

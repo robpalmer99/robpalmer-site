@@ -107,9 +107,9 @@ export default function AppleCaseStudyPage() {
                 and consumers to buy directly.
               </p>
               <p>
-                Rob Palmer was brought in as the sole copywriter. Originally expected
-                to supervise junior writers, he ultimately wrote the entire project
-                himself &mdash; from the Managing Director&apos;s welcome letter
+                I was brought in as the sole copywriter. Originally expected
+                to supervise junior writers, I ultimately wrote the entire project
+                myself &mdash; from the Managing Director&apos;s welcome letter
                 to the customer support materials and three separate market-targeted
                 packages for business, education, and consumer segments.
               </p>
@@ -118,7 +118,7 @@ export default function AppleCaseStudyPage() {
                 The Approach
               </h2>
               <p>
-                Palmer insisted on rigorous A/B testing before the main launch.
+                I insisted on rigorous A/B testing before the main launch.
                 Three different offers were tested through initial mailings sent to
                 carefully segmented groups just before Christmas, with the main
                 campaign launch planned for January.
@@ -136,8 +136,8 @@ export default function AppleCaseStudyPage() {
                   possible.
                 </li>
                 <li>
-                  <strong>Offer #3:</strong> The response rate was, in Rob&apos;s
-                  words, &ldquo;just off the charts.&rdquo;
+                  <strong>Offer #3:</strong> The response rate, in my own words,
+                  was &ldquo;just off the charts.&rdquo;
                 </li>
               </ul>
               <p>

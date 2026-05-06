@@ -125,9 +125,9 @@ export default function BelronCaseStudyPage() {
                 The Approach
               </h2>
               <p>
-                Rob Palmer took a completely different direction from his predecessors.
-                Instead of leading with features and convenience, he dug into the emotional
-                core of the decision: safety. Through deep audience research, he discovered
+                I took a completely different direction from my predecessors.
+                Instead of leading with features and convenience, I dug into the emotional
+                core of the decision: safety. Through deep audience research, I discovered
                 that the most powerful motivator was not the inconvenience of a cracked
                 windshield &mdash; it was the devastating consequences if a windshield
                 failed during an accident.

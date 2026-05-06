@@ -8,6 +8,9 @@ if (!Sentry.getClient()) {
   Sentry.init({
     dsn: "https://0b510f2d0ab66699aa23696dfecd40ed@o4511144096038912.ingest.us.sentry.io/4511144172060672",
 
+    environment: process.env.NODE_ENV,
+    enabled: process.env.NODE_ENV === "production",
+
     // Ignore common errors caused by browser extensions, not our code
     ignoreErrors: [
       // Browser extension script injection failures

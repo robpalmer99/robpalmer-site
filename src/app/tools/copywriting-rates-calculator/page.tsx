@@ -80,7 +80,7 @@ const faqData = [
   {
     question: 'Is this rate calculator accurate?',
     answer:
-      'This calculator provides market-based estimates informed by industry surveys, freelancer communities, and 30+ years of direct-response copywriting experience. Actual rates vary based on factors the calculator cannot measure — your specific results portfolio, client relationships, market positioning, and negotiation skills. Use these estimates as a starting point, not a ceiling. If your copy consistently generates strong ROI, you should charge at the high end or above.',
+      'This calculator provides market-based estimates informed by industry surveys, freelancer communities, and 40+ years of direct-response copywriting experience. Actual rates vary based on factors the calculator cannot measure — your specific results portfolio, client relationships, market positioning, and negotiation skills. Use these estimates as a starting point, not a ceiling. If your copy consistently generates strong ROI, you should charge at the high end or above.',
   },
 ]
 
@@ -144,7 +144,7 @@ export default function CopywritingRatesCalculatorPage() {
             <p className="mt-4 max-w-2xl mx-auto text-base sm:text-lg font-body text-paper-300 leading-relaxed">
               Find out what to charge for your next project. Rates based on experience level,
               project type, industry niche, and pricing model — informed by{' '}
-              <span className="text-gold-400 font-semibold">30+ years</span> of direct-response copywriting.
+              <span className="text-gold-400 font-semibold">40+ years</span> of direct-response copywriting.
             </p>
           </FadeIn>
         </Container>
@@ -211,7 +211,7 @@ export default function CopywritingRatesCalculatorPage() {
           <div className="max-w-3xl mx-auto">
             <FadeIn>
               <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-900">
-                How to Set Your Copywriting Rates: Advice From 30+ Years in Direct Response
+                How to Set Your Copywriting Rates: Advice From 40+ Years in Direct Response
               </h2>
             </FadeIn>
 
