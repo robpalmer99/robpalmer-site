@@ -810,108 +810,179 @@ export const verticals: Vertical[] = [
     title: 'Info Product Copywriter',
     slug: 'info-product-copywriter',
     shortDescription:
-      'High-converting copy for courses, coaching programs, and digital products. Launch sequences, webinar funnels, and evergreen sales systems that scale.',
-    metaTitle: 'Info Product Copywriter | Copy for Courses, Coaching & Digital Products',
+      'Info-product copy anchored on the 340% ROAS Abundant TSL + Stefan Georgi\'s Copy Accelerator (where he hired me as Copy Chief). Webinar funnels, launch sequences, and evergreen systems for courses, coaching programs, and high-ticket masterminds.',
+    metaTitle: 'Info Product Copywriter | 340% ROAS Abundant + CA Labs',
     metaDescription:
-      'Expert info product copywriter. Launch sequences, webinar funnels, and evergreen sales systems for courses, coaching programs, and digital products.',
-    headline: 'Info Product Copywriter',
+      'Senior info-product copywriter behind the 340% ROAS Abundant TSL on Facebook cold traffic + Stefan Georgi hired me as Copy Chief inside Copy Accelerator\'s CA Labs. Webinar funnels, launch sequences, evergreen systems. Fixed-price engagements.',
+    headline: 'Info Product Copywriter Behind the 340% ROAS Abundant TSL + CA Labs',
     subheadline:
-      'Launch sequences and sales systems that turn expertise into scalable revenue.',
+      '"Everything is on point and on brief! You knocked it out of the park with those!" That\'s Devon Brown, founder of Just Throw Some Sexy On It, on copy I shipped him. The Abundant TSL I wrote drove <strong>340% ROAS</strong> on Facebook cold traffic. And Stefan Georgi \u2014 the copywriter behind over $1B in tracked sales \u2014 hired me as Copy Chief inside Copy Accelerator\'s CA Labs. If your course launches at $50K when the offer should do $500K, or your evergreen webinar funnel converts at 1% when it should clear 4%, this is the kind of work I do.',
     heroImage: '/images/industries/info-products.jpg',
     heroImageAlt: 'Online learning and digital education',
+    heroStats: {
+      primary: { value: '340%', label: 'Abundant Info-Product TSL ROAS (Facebook Cold)' },
+      secondary: [
+        { value: 'CA Labs', label: 'Stefan Georgi Hired Me as Copy Chief' },
+        { value: 'Millions', label: 'Per-Launch Revenue on Multi-Week Sequences' },
+        { value: '40+', label: 'Years Direct Response' },
+      ],
+    },
+    credentialBar: {
+      heading: 'Info-product copy written for',
+      items: [
+        'Abundant (340% ROAS Info-Product TSL)',
+        'Copy Accelerator / CA Labs (Stefan Georgi as Copy Chief)',
+        'Just Throw Some Sexy On It (Devon Brown)',
+        'Zero to One (John Immel)',
+        'Course Creators + Coaching Programs',
+        'Live + Evergreen Webinar Funnels',
+      ],
+    },
     definition: {
-      term: 'info product copywriting',
-      text: 'Info product copywriting is direct-response copy for digital knowledge products — online courses, coaching programs, membership sites, and digital downloads. Because info products have no physical form, the copy must create desire for an intangible transformation, making it one of the most demanding specialties in direct response.',
+      term: 'info-product copywriting',
+      text: 'Info-product copywriting is direct-response copy for digital knowledge products \u2014 online courses, coaching programs, membership sites, masterminds, and digital downloads. Because info products have no physical form, the copy IS the product experience until purchase. The skill is creating viscerally specific desire for an intangible transformation, in the format the buyer expects (long-form sales page, webinar, launch sequence) and at the price point your offer requires.',
     },
     sections: [
       {
-        heading: 'Info Products Live and Die by Their Copy',
+        heading: 'Why Most Info-Product Launches Stall at $50K When the Offer Should Do $500K',
         content:
-          'Unlike physical products, info products have no tangible form factor to sell. There is no packaging to hold, no ingredients list to scan, no weight to feel.\n\n' +
-          'The only thing standing between your prospect and their credit card is your copy.\n\n' +
-          'That is why info product copy demands the highest level of direct-response skill — it has to create desire for something the prospect cannot see, touch, or taste before buying. The copy IS the product experience until they purchase.',
+          'You\'re a course creator, coach, or info-product founder. You have an offer, an email list, an audience that knows who you are. You launch. The number lands at $50K when you and your team had been forecasting $500K.\n\n' +
+          'Here\'s why. Info products have no physical form, no ingredient list, no return policy that reassures the prospect. The copy is the product experience until the credit card hits. Most info-product copywriters can write for one of those constraints \u2014 they can describe the transformation OR they can architect the launch sequence \u2014 but not both.\n\n' +
+          'Door one: the copy describes a beautiful transformation, but the launch sequence sags. Email open rates fall 60% across the launch week. Cart-open day converts at 0.4% when it should clear 2%. Cart close hits a wall because the urgency mechanism wasn\'t set up in pre-launch. You did $50K on a launch that the same offer would do $500K with a properly architected sequence.\n\n' +
+          'Door two: the launch sequence is sharp, but the sales page can\'t do the heavy lifting. Trust signals are thin. The mechanism feels generic. The price feels expensive instead of inevitable. Your launch traffic clicks through to a page that doesn\'t convert at the rate the funnel math needs.\n\n' +
+          'The structural problem isn\'t willpower or word choice. It\'s that most info-product copywriters write the sales page OR the launch sequence \u2014 not the connected system. The skill the info-product back-end actually rewards: writing the sales page, the launch sequence, the webinar script, AND the follow-up emails as one persuasion architecture where every step compounds the trust the next step needs.',
       },
       {
-        heading: 'Launch Sequences That Generate Momentum',
+        heading: '340% Abundant, $1B-Operator Stefan Georgi, Multi-Million-Per-Launch Sequences \u2014 Recent Info-Product Wins',
         content:
-          'Whether you are doing a live launch, an evergreen webinar, or a challenge funnel, the copy sequence is everything.\n\n' +
-          'I write launch sequences that build anticipation, establish authority, create urgency, and drive sales within a compressed window. Each email, each page, each touchpoint is carefully orchestrated to move the prospect closer to the buy button.\n\n' +
-          'My launch copy has generated millions in revenue for course creators, coaches, and digital product companies.',
+          'The <strong>Abundant TSL</strong> I wrote drove <strong>340% ROAS</strong> on Facebook cold traffic. Long-form info-product TSL on cold paid traffic is one of the harder asset types in info-product copywriting; 340% ROAS clears the funnel math most operators forecast and miss.\n\n' +
+          'Stefan Georgi \u2014 the copywriter behind over <strong>$1 billion</strong> in tracked sales \u2014 hired me as <strong>Copy Chief inside Copy Accelerator\'s CA Labs</strong>. Copy Accelerator runs the highest-tier info-product mastermind in DR; the Copy Chief role is the role that reviews the copy operators inside the room are about to ship.\n\n' +
+          'Devon Brown at Just Throw Some Sexy On It came back: <em>"Everything is on point and on brief! You knocked it out of the park with those!"</em> Multi-week launch sequences I\'ve shipped have generated millions in revenue per launch for course creators and coaches.\n\n' +
+          'If you have a launch coming or an evergreen funnel running and the numbers aren\'t where they need to be, I work as a control-beater. Send me your current sales page or launch sequence, your back-end metrics (cart-open CVR, email open/click rates, refund rate), and the offer brief. I\'ll tell you on the strategy call exactly where the persuasion architecture is leaking and whether I can write something that beats your control.',
       },
       {
-        heading: 'Evergreen Systems That Scale',
+        heading: 'The Info-Product Copywriter Top DR Operators Hire',
         content:
-          'Live launches are powerful but exhausting. The real money in info products is in evergreen sales systems that generate revenue 24/7 without constant launches.\n\n' +
-          'I build evergreen webinar funnels, automated email sequences, and sales pages designed to convert consistently over time — so you can scale without burning out.\n\n' +
-          'The best info product businesses run on systems, not sprints.',
+          'Stefan Georgi (CA Labs / $1B in tracked sales) hired me as Copy Chief. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor running info-product-adjacent offers, clocked <strong>300% ROAS</strong> on a funnel I wrote.\n\n' +
+          'Zane Myers, an entrepreneur shipping info-product offers, came back with: <em>"All I can say is absolutely brilliant, Rob! I can\'t improve on it."</em>\n\n' +
+          'Mark Shay, who has seen more launch copy than most, put it on record: <em>"Rob is probably the most methodical copywriter I\'ve seen. This impresses me."</em>\n\n' +
+          'These are operators with their own money on the line. Info-product launches don\'t reward writers who can\'t architect the persuasion sequence \u2014 the launch math clears them out inside one bad cycle. DR operators at this level keep handing me info-product work \u2014 and that\'s the proof that matters more than any individual stat.',
       },
       {
-        heading: 'High-Ticket Coaching and Program Copy',
+        heading: 'How I Architect an Info-Product Launch That Beats Your Current Control',
         content:
-          'High-ticket coaching programs and masterminds require a fundamentally different copywriting approach.\n\n' +
-          'The prospect is making a significant financial commitment, which means the copy needs to pre-qualify, build deep trust, demonstrate transformational value, and justify the investment — all before the sales call.\n\n' +
-          'The goal is to deliver prospects who are pre-sold before they ever speak to your sales team.',
+          'Every info-product engagement moves through the same four phases. None are optional. This is the actual work \u2014 not a "process" page filling space.',
         bullets: [
-          'Application funnels that pre-qualify high-intent prospects',
-          'Long-form sales pages that justify premium pricing',
-          'Webinar scripts that build authority and drive applications',
-          'Email sequences designed for high-ticket conversion',
+          'Phase 1 \u2014 Audience + offer research: I mine your customer interviews, sales-call recordings, course-completion-rate data, refund reasons, and competitor info-product offers for the exact language your buyer uses about the transformation. The angle and the mechanism come out of this layer, not a brainstorming session. My AI workflow processes 50+ competitor info-product TSLs and thousands of customer reviews while a manual pass reads three.',
+          'Phase 2 \u2014 Launch architecture: I map every step of the launch \u2014 pre-launch hooks, launch-day open, cart-open emails, mid-cart objection handling, cart-close urgency, post-cart follow-up \u2014 against the persuasion arc the buyer needs to walk. Most launches die because the cart-close emails are doing work the pre-launch should have done. The architecture phase prevents that.',
+          'Phase 3 \u2014 Drafting + persuasion-arc compounding: I draft the long-form sales page, the launch email sequence, the webinar script (live or evergreen), and the follow-up emails as a connected system. Every step compounds the trust the next step needs. Two-to-three subject-line and headline variations per piece for split testing.',
+          'Phase 4 \u2014 Evergreen handoff or relaunch roadmap: a sequenced plan for converting the launch into an evergreen funnel (if applicable) plus a relaunch roadmap for the next cycle. One comprehensive revision round across the full launch system is included.',
         ],
       },
       {
-        heading: 'Webinar Scripts That Convert',
+        heading: 'Asset Types I Write for Course Creators, Coaches, and Mastermind Operators',
         content:
-          'A well-crafted webinar script is essentially a structured VSL with interaction points.\n\n' +
-          'I understand the timing, pacing, and persuasion architecture that makes webinars convert — from the hook that prevents early drop-off, through the teaching section that builds authority, to the transition and offer that drives action.\n\n' +
-          'Whether you are running live or evergreen, the script is the engine that powers the entire funnel.',
+          'Info-product businesses don\'t buy copy by category \u2014 they buy connected launch systems. Each asset has different mechanics, but they\'re engineered to work as one. The asset types below are the ones I ship most often for course creators, coaching programs, and mastermind operators.',
+        bullets: [
+          '<a href="/services/vsl-copywriter">VSL Copywriter</a> \u2014 long-form video sales letters for info-product offers. The asset that converts cold traffic and warmed list traffic at the same level.',
+          '<a href="/services/sales-page-copywriter">Sales Page Copywriter</a> \u2014 long-form info-product sales pages. Abundant 340% ROAS anchors the info-product cold-traffic TSL track.',
+          '<a href="/services/sales-funnel-copywriter">Sales Funnel Copywriter</a> \u2014 end-to-end info-product launch funnel architecture, including webinar funnel + email sequence + sales page + post-cart follow-up.',
+          '<a href="/services/email-copywriter">Email Copywriter</a> \u2014 multi-week launch sequences that have generated millions per launch + evergreen nurture and promotional sequences.',
+          '<a href="/services/landing-page-copywriter">Landing Page Copywriter</a> \u2014 application funnels for high-ticket coaching, lead-magnet pages, and webinar registration bridges.',
+          '<a href="/services/ad-copywriter">Ad Copywriter</a> \u2014 cold-traffic ad copy feeding info-product TSLs and webinar funnels. Abundant 340% ROAS ran through this exact ad-suite workflow.',
+        ],
+      },
+    ],
+    caseStudies: [
+      {
+        name: 'Abundant Info-Product TSL',
+        category: 'Cold-Traffic Facebook TSL',
+        metric: '340% ROAS',
+        detail: 'Long-form info-product TSL converting Facebook cold traffic at 340% Return on Ad Spend.',
+      },
+      {
+        name: 'Copy Accelerator / CA Labs',
+        category: 'Copy Chief Engagement',
+        metric: 'Hired by Stefan Georgi',
+        detail: '"We hired Rob as our Copy Chief for CA Labs!" \u2014 Stefan Georgi, the copywriter behind over $1B in tracked sales.',
+      },
+      {
+        name: 'Multi-Week Info-Product Launches',
+        category: 'Launch Sequences',
+        metric: 'Millions Per Launch',
+        detail: 'Pre-launch through cart-close email sequences for course creators, coaches, and digital-product founders.',
+      },
+      {
+        name: 'JTSSOI / Devon Brown',
+        category: 'Info-Product Sales Page',
+        metric: '"On point and on brief"',
+        detail: '"Everything is on point and on brief! You knocked it out of the park with those!"',
       },
     ],
     deliverables: [
-      { title: 'Sales Pages', description: 'Long-form sales pages for courses, programs, and digital products.' },
-      { title: 'Launch Sequences', description: 'Multi-email sequences that build anticipation and drive launch revenue.' },
-      { title: 'Webinar Scripts', description: 'Live and evergreen webinar scripts built on proven conversion frameworks.' },
-      { title: 'Email Sequences', description: 'Nurture, promotional, and automated sequences for your list.' },
-      { title: 'Application Funnels', description: 'High-ticket application pages and follow-up sequences.' },
-      { title: 'Ad Copy', description: 'Lead-gen and direct-sale ad creative for paid traffic.' },
+      { title: 'Info-Product VSL/TSL Scripts', description: 'Long-form video and text sales letters for info-product offers. Abundant 340% ROAS anchors the cold-traffic track.' },
+      { title: 'Long-Form Sales Pages', description: 'Sales pages for courses, coaching programs, masterminds, and digital products with the persuasion architecture launches require.' },
+      { title: 'Launch Email Sequences', description: 'Pre-launch through cart-close sequences engineered as one connected persuasion arc \u2014 not separate emails handed to different writers.' },
+      { title: 'Webinar Scripts', description: 'Live and evergreen webinar scripts \u2014 hook, teaching, transition, offer, close \u2014 with the timing and pacing that prevents early drop-off.' },
+      { title: 'Application Funnels', description: 'High-ticket coaching application pages and follow-up sequences that pre-qualify before the sales call.' },
+      { title: 'Evergreen Funnel Handoff', description: 'Conversion of launch assets into an evergreen funnel that runs without ongoing manual launches.' },
     ],
-    testimonialIds: ['2', '3', '9', '8'],
+    deliverablesHeading: 'What You Get When You Hire Me',
+    deliverablesSubtext:
+      'Every deliverable is engineered for the course creator, coach, or mastermind operator who needs the launch math to clear what the offer should actually do \u2014 not what last cycle settled for.',
+    testimonialIds: ['2', '3', '9', '8', '21', '6'],
     portfolioItems: [
       { title: 'Abundant', category: 'Sales Page' },
       { title: 'Just Throw Some Sexy On It!', category: 'Sales Page' },
     ],
+    midCta: {
+      headline: 'Ready for an info-product launch that beats your current control?',
+      subtext:
+        'Book a free strategy call. Send me your current sales page or launch sequence, your back-end metrics (cart-open CVR, email open/click rates, refund rate), and the offer brief \u2014 I\'ll tell you honestly where the persuasion architecture is leaking and whether I can write something that beats your control.',
+    },
     faqs: [
       {
-        question: 'What types of info products do you write for?',
+        question: 'What does an info-product copywriter actually do?',
         answer:
-          'I write for online courses, coaching programs, membership sites, digital downloads, software tools, and training programs. Each format requires slightly different persuasion approaches, but the core direct-response principles remain the same.',
+          'A senior info-product copywriter writes the connected launch system that converts your warmed list and cold paid traffic into course buyers, coaching applicants, or mastermind members \u2014 long-form sales page, webinar script, multi-week launch email sequence, application funnel, and post-cart follow-up \u2014 all engineered as one persuasion architecture where every step compounds the trust the next step needs. The Abundant TSL I wrote drove 340% ROAS on Facebook cold traffic. Multi-week launch sequences I\'ve shipped have generated millions per launch for course creators and coaches.',
       },
       {
-        question: 'Do you write webinar scripts?',
+        question: 'Are you taking new info-product clients?',
         answer:
-          'Yes. I write both live webinar scripts and evergreen webinar scripts. A well-crafted webinar script is essentially a structured VSL with interaction points. I understand the timing, pacing, and persuasion architecture that makes webinars convert.',
+          'I take a selective number of new info-product engagements each quarter so the work stays at the level the proof requires. Most kickoffs happen within two weeks of the strategy call. If the project is a fit, I\'ll send a fixed-price proposal within 48 hours. If it isn\'t, I\'ll tell you on the call and point you toward someone in my network who\'s better suited.',
       },
       {
-        question: 'Can you write for high-ticket coaching programs?',
+        question: 'How do you use AI to write info-product copy?',
         answer:
-          'Absolutely. High-ticket coaching requires a different approach than low-ticket info products — the copy needs to pre-qualify prospects, build deep trust, and justify a significant investment. I write application funnels, long-form sales pages, and email sequences designed for high-ticket conversion.',
+          'I don\'t use generic ChatGPT prompting. I use Claude Code augmented by my own custom-built copywriting skills \u2014 proprietary skill files that encode 40 years of frameworks, info-product hook patterns, launch-sequence pacing, and evaluation criteria into a working AI workflow, with my 1,239-file Obsidian copywriting brain as the reference layer. The AI processes 50+ competitor info-product TSLs and thousands of customer reviews while a manual pass reads three. I make every strategic and structural call. The AI carries the volume.',
       },
       {
-        question: 'Do you write launch sequences or just sales pages?',
+        question: 'What does info-product copywriting cost?',
         answer:
-          'I write complete launch systems — the entire email sequence from pre-launch through open cart to close, plus the sales page, order form, and any supporting pages. A great sales page means nothing without a great launch sequence to drive qualified traffic to it.',
+          'Info-product engagements are fixed-price. A standalone sales page or VSL/TSL starts at $10K. A full launch system (sales page + multi-week email sequence + webinar script + post-cart follow-up) typically starts at $25K. High-ticket coaching application funnels (application page + nurture + sales-call prep) start at $15K. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a launch that does $500K instead of $50K on the same audience pays for the writer 10x in the first cycle.',
       },
       {
-        question: 'Can you build an evergreen funnel for my course?',
+        question: 'How long does it take to write an info-product launch?',
         answer:
-          'Yes. Evergreen funnels are one of the most valuable assets an info product business can have. I write the evergreen webinar script, automated email sequence, sales page, and follow-up sequences designed to convert consistently over time without manual launches.',
+          'A standalone info-product VSL or sales page takes 3\u20134 weeks from kickoff to final draft. A full launch system (sales page + multi-week email sequence + webinar script + post-cart follow-up) runs 6\u20139 weeks. Audience and offer research always come first \u2014 that\'s where the persuasion-arc compounding lift lives. Rush timelines are possible, but I never shortcut the research.',
       },
       {
-        question: 'How do you approach copy for a course that does not exist yet?',
+        question: 'Can you write for high-ticket coaching and mastermind programs?',
         answer:
-          'I work with you to define the transformation your course delivers, identify the ideal buyer, and craft the positioning before writing a word of copy. In fact, writing the sales copy first is a proven strategy — it forces clarity on the offer and validates demand before you invest in creating the content.',
+          'Yes. High-ticket coaching and masterminds require a different persuasion architecture than low-ticket info products \u2014 the prospect is making a significant financial commitment, which means the copy needs to pre-qualify, build deep trust, demonstrate transformational value, and justify the investment all before the sales call. I write application funnels, long-form sales pages that justify premium pricing, webinar scripts that build authority and drive applications, and email sequences designed for high-ticket conversion.',
+      },
+      {
+        question: 'What asset types do you write for course creators, coaches, and mastermind operators?',
+        answer:
+          'Front-end: long-form sales pages (Abundant 340% ROAS anchors the track), VSLs, TSLs, webinar funnels (live and evergreen), application funnels for high-ticket. Launch: multi-week email sequences from pre-launch through cart-close. Evergreen: nurture sequences, automated funnels, evergreen webinar systems. Ad copy: cold-traffic Meta, YouTube, and native suites feeding the funnels. Every asset is written to function as part of the connected launch system.',
+      },
+      {
+        question: 'What happens after the strategy call?',
+        answer:
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is audience and offer research, then launch architecture, then drafting + persuasion-arc compounding, then evergreen handoff or relaunch roadmap and one comprehensive revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
-    relatedServices: ['vsl-copywriter', 'sales-funnel-copywriter', 'email-copywriter'],
+    relatedServices: ['vsl-copywriter', 'sales-page-copywriter', 'sales-funnel-copywriter', 'email-copywriter'],
     relatedVerticals: ['clickbank-copywriter', 'health-supplement-copywriter'],
   },
 ]
