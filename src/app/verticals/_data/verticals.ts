@@ -439,108 +439,184 @@ export const verticals: Vertical[] = [
     title: 'ClickBank Copywriter',
     slug: 'clickbank-copywriter',
     shortDescription:
-      'Proven ClickBank funnels that generate affiliate-friendly conversions. VSLs, TSLs, and upsell sequences built for the ClickBank marketplace.',
-    metaTitle: 'ClickBank Copywriter | High-Converting ClickBank Funnels',
+      'ClickBank funnels anchored on Mobile Profits \u2014 the #1 ClickBank offer that did $30M. VSLs, hybrid sales pages, and back-end stacks engineered for both buyer conversion and top-affiliate EPC.',
+    metaTitle: 'ClickBank Copywriter | $30M Mobile Profits + 300% ROAS',
     metaDescription:
-      'Hire a ClickBank copywriter with proven results. VSLs, sales pages, and complete funnels engineered for ClickBank marketplace success.',
-    headline: 'ClickBank Copywriter',
+      'Senior ClickBank copywriter behind Mobile Profits \u2014 the #1 ClickBank biz-op VSL that did $30M+ \u2014 and the email-driven funnel that drove 300% ROAS for Ben Palmer (ClickBank Platinum Vendor). Fixed-price engagements, two-week kickoffs.',
+    headline: 'ClickBank Copywriter Behind the $30M Mobile Profits #1 Offer',
     subheadline:
-      'High-converting ClickBank funnels that attract affiliates and maximize EPC.',
+      '"Rob is a killer copywriter. We\'re getting a 300% Return on Ad Spend." That\'s Ben Palmer, a ClickBank Platinum vendor, on an email-driven funnel I wrote for him. The Mobile Profits VSL I wrote became the <strong>#1 offer on ClickBank</strong> and did over <strong>$30 million</strong>. If your ClickBank funnel converts but EPC sits below the $1.20 threshold top affiliates need \u2014 or your gravity climbed and stalled \u2014 this is the kind of work I do.',
     heroImage: '/images/industries/clickbank.jpg',
     heroImageAlt: 'Digital marketing analytics and performance metrics',
+    heroStats: {
+      primary: { value: '$30M+', label: 'Mobile Profits VSL (#1 ClickBank)' },
+      secondary: [
+        { value: '300%', label: 'ROAS on a ClickBank Email Funnel (Ben Palmer)' },
+        { value: '$40M', label: 'Gluco 6 ClickBank-Adjacent Supplement Funnel' },
+        { value: '40+', label: 'Years Direct Response' },
+      ],
+    },
+    credentialBar: {
+      heading: 'ClickBank funnels written for',
+      items: [
+        'Mobile Profits VSL (#1 ClickBank, $30M)',
+        'Ben Palmer / ClickBank Platinum Vendor',
+        'Christian Green / ClickBank',
+        'Gluco 6 Supplement Funnel ($40M)',
+        'Konscious Keto (Ryan Kowalski)',
+        'Copy Accelerator / CA Labs (Stefan Georgi as Copy Chief)',
+      ],
+    },
     definition: {
       term: 'ClickBank copywriting',
-      text: 'ClickBank copywriting is direct-response copy built specifically for the <a href="https://www.clickbank.com" target="_blank" rel="noopener noreferrer">ClickBank</a> affiliate marketplace. It requires understanding ClickBank\'s unique ecosystem — affiliate incentives, EPC (earnings per click) economics, gravity scoring, and compliance review processes — to create funnels that convert buyers AND attract top affiliates to promote your offer.',
+      text: 'ClickBank copywriting is direct-response copy built specifically for the <a href="https://www.clickbank.com" target="_blank" rel="noopener noreferrer">ClickBank</a> affiliate marketplace. It demands writing to both sides at once \u2014 the cold-traffic buyer who has to convert, and the top affiliate who reads EPC, gravity, refund rate, and AOV before they\'ll push your offer to the top of their queue. Get only one side right and the offer never makes top-100. Get both right and the marketplace scales it for you.',
     },
     sections: [
       {
-        heading: 'ClickBank Funnels That Win',
+        heading: 'Why Most ClickBank Offers Never Make the Affiliate Queue',
         content:
-          '<a href="https://www.clickbank.com" target="_blank" rel="noopener noreferrer">ClickBank</a> is a unique marketplace with its own ecosystem of affiliates, buyers, and success patterns.\n\n' +
-          'Writing copy that succeeds on ClickBank requires understanding what motivates affiliates to promote your offer, what converts ClickBank\'s buyer demographics, and how to structure funnels that maximize earnings per click (EPC) while maintaining sustainable refund rates.\n\n' +
-          'I have built ClickBank funnels that generate consistent, scalable revenue — the kind that attract top affiliates and keep them promoting month after month.',
+          'You launched a ClickBank offer. Maybe two. Maybe a dozen. Some did okay. None became the offer affiliates fight to promote.\n\n' +
+          'Here\'s why. ClickBank is a two-sided marketplace and most copywriters only write to one side of it.\n\n' +
+          'Side one is the buyer. Cold traffic, attention deficit, shopping for a transformation. Your sales page has to convert them at a rate that pays back ad spend with margin to spare.\n\n' +
+          'Side two is the affiliate. They aren\'t reading your copy \u2014 they\'re reading your stats. Gravity, EPC, refund rate, AOV, take rate on the order bump. They run the numbers. If your EPC clears their threshold, they push your offer to the top of their queue. If it doesn\'t, they ignore you and promote the next one. Most offers never make the queue.\n\n' +
+          'The result: you launch with hope. You scale with your own ad spend. You hit a ceiling. The affiliate engine that scales ClickBank winners never cranks for your offer \u2014 because the back-end math doesn\'t work. AOV stalls at $97. Refund rate drifts toward 12%. Net EPC sits at $0.84 when affiliates need $1.20 to back you. At $5K/day in your own spend, every week is $35K burning while the brand that figured the math out two months earlier compounds without you.\n\n' +
+          'The structural problem isn\'t willpower or word choice. It\'s that most ClickBank copywriters write the front-end VSL and call the funnel done. The skill ClickBank actually rewards: writing copy that converts the buyer AND lifts EPC enough that affiliates do the scaling for you.',
       },
       {
-        heading: 'Engineered for Affiliate Appeal',
+        heading: '$30M Mobile Profits, $40M Gluco 6, 300% Ben Palmer \u2014 Recent ClickBank Wins',
         content:
-          'The best ClickBank offer in the world will fail if affiliates do not promote it. Affiliates look at one thing above all else: EPC (earnings per click). They want proof that your funnel converts their traffic into commissions.\n\n' +
-          'I write copy that converts AND gives affiliates the metrics they need to see — high EPCs, competitive gravity scores, and strong AOVs.\n\n' +
-          'I also create affiliate tools pages, swipe copy, and promotional materials that make it easy for affiliates to drive traffic to your offer.',
+          'The <strong>Mobile Profits VSL</strong> I wrote became the <strong>#1 offer on ClickBank</strong> and did over <strong>$30 million</strong>. Up to 4% conversion on cold traffic. The hybrid sales-page-and-VSL format I architected for it cleared Meta\'s automated review every time the ads ran.\n\n' +
+          'The <strong>Gluco 6 supplement funnel</strong> \u2014 same affiliate-marketplace dynamics, blood-sugar mechanism \u2014 did <strong>$40 million</strong> end-to-end. Compliance posture tight from the first draft.\n\n' +
+          'For Ben Palmer, a ClickBank Platinum vendor, the email-driven funnel I wrote drove <strong>300% Return on Ad Spend</strong>. He put it on record: <em>"Rob is a killer copywriter."</em>\n\n' +
+          'Christian Green at ClickBank itself looked at my copy and said: <em>"Overall, I really like your writing, and your copy really stands out."</em>\n\n' +
+          'Across multiple anonymized ClickBank order-bump and upsell stacks, take rates have landed in the 30\u201340%+ range. (Vendor names stay private; the math is in the back-end.)\n\n' +
+          'If you have a ClickBank offer running and EPC isn\'t where affiliates need it to be, I work as a control-beater. Send me your current VSL or sales page, your back-end stats (AOV, refund rate, EPC, gravity), and the affiliate-tools page. I\'ll tell you on the strategy call exactly where the math is leaking and whether I can write something that beats your control. Compliance and ClickBank-review notes on the call come free.',
       },
       {
-        heading: 'Complete ClickBank Funnels',
+        heading: 'The ClickBank Copywriter Top DR Operators Hire',
         content:
-          'Each step is optimized to maximize average order value while keeping refund rates manageable. The most successful ClickBank offers are not built on a single great sales page — they are built on a complete system where every step lifts the overall economics of the funnel.',
+          'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as <strong>Copy Chief inside Copy Accelerator\'s CA Labs</strong>. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor, clocked <strong>300% ROAS</strong> on a funnel I wrote.\n\n' +
+          'Caleb O\'Dowd \u2014 a direct-response marketer \u2014 came back with: <em>"Rob, high five!! You da Man! Great to get that bump in conversions!"</em>\n\n' +
+          'Mark Shay, who has seen more supplement-and-biz-op copy than most, put it on record: <em>"Rob is probably the most methodical copywriter I\'ve seen. This impresses me."</em>\n\n' +
+          'These are operators with their own money on the line. ClickBank doesn\'t reward writers who can\'t do the back-end math \u2014 the marketplace clears them out inside two launch windows. DR operators at this level keep handing me ClickBank work \u2014 and that\'s the proof that matters more than any individual stat.',
+      },
+      {
+        heading: 'How I Architect a ClickBank Funnel Affiliates Fight to Promote',
+        content:
+          'Every ClickBank engagement moves through the same four phases. None are optional. This is the actual work \u2014 not a "process" page filling space.',
         bullets: [
-          'VSL or TSL sales page — the front-end conversion engine',
-          'Order bump — an immediate add-on at checkout',
-          'OTO1 upsell — the primary post-purchase offer',
-          'OTO2 upsell — a complementary or premium upgrade',
-          'Downsell — a lower-priced alternative for declined upsells',
-          'Thank-you page — confirmation plus next-step engagement',
+          'Phase 1 \u2014 Marketplace + audience research: I audit ClickBank Top 50 in your category for what\'s currently driving the highest gravity scores and EPCs, mine reviews and forums for the language your buyers actually use, and benchmark your offer\'s back-end math (AOV, refund rate, take rates) against the threshold top affiliates require. My AI workflow processes 50+ competitor VSLs and thousands of reviews while a manual pass reads three.',
+          'Phase 2 \u2014 Two-sided funnel architecture: I map the funnel against both the buyer journey AND the affiliate-EPC math at every step. Front-end VSL converts cold traffic; order bump lifts AOV; OTO1, OTO2, downsell stack the back-end so EPC clears the affiliate threshold. The math isn\'t bolted on at the end \u2014 it\'s designed in from step one.',
+          'Phase 3 \u2014 ClickBank-review-aware drafting: every claim sits inside ClickBank\'s content guidelines from the first draft \u2014 income-claim posture, health-claim posture, testimonial-hedging, refund-policy framing. I draft VSL, sales page, order bump, OTO1, OTO2, downsell, thank-you, and email sequence as a connected system. Plus the affiliate-tools page, swipe copy, and promotional angles affiliates can run.',
+          'Phase 4 \u2014 Launch-and-scale roadmap: a sequenced plan for getting first affiliates on, hitting the gravity inflection point that pulls top-50 affiliates in, and the back-end iterations that keep EPC compounding after launch. One comprehensive revision round across the full funnel is included.',
         ],
       },
       {
-        heading: 'ClickBank Compliance Done Right',
+        heading: 'Asset Types I Write for ClickBank Vendors',
         content:
-          'ClickBank has its own compliance review process that can trip up even experienced copywriters. I stay current with ClickBank\'s content guidelines and approval processes, writing copy designed to pass review while still being aggressive enough to convert.\n\n' +
-          'This includes understanding their stance on income claims, health claims, testimonial usage, and refund policy presentation. Getting your offer approved the first time saves weeks of back-and-forth revisions.',
+          'ClickBank vendors don\'t buy copy by category \u2014 they buy connected funnel systems. Each asset has different mechanics, but they\'re engineered to work as one. The asset types below are the ones I ship most often for ClickBank operators.',
+        bullets: [
+          '<a href="/services/vsl-copywriter">VSL Copywriter</a> \u2014 the front-end VSL is where the ClickBank funnel converts cold traffic. Mobile Profits anchors the ClickBank VSL track at $30M.',
+          '<a href="/services/sales-funnel-copywriter">Sales Funnel Copywriter</a> \u2014 end-to-end ClickBank funnel architecture with EPC math designed in from step one.',
+          '<a href="/services/upsell-downsell-copywriter">Upsell & Downsell Copywriter</a> \u2014 ClickBank back-end stacks. 30\u201340%+ take rates on order-bump and upsell anonymized vendor wins.',
+          '<a href="/services/email-copywriter">Email Copywriter</a> \u2014 buyer follow-up sequences (300% Ben Palmer ROAS proof) plus affiliate-recruitment and promotional-launch sequences.',
+          '<a href="/services/ad-copywriter">Ad Copywriter</a> \u2014 cold-traffic ad copy feeding ClickBank funnels. Mobile Profits ad suite cleared Meta review every time.',
+          '<a href="/services/facebook-ads-copywriter">Facebook Ads Copywriter</a> \u2014 Meta-review-aware ad suites for ClickBank cold traffic. 300% ROAS without triggering policy review.',
+        ],
+      },
+    ],
+    caseStudies: [
+      {
+        name: 'Mobile Profits VSL',
+        category: 'ClickBank #1 Hybrid Sales-Page/VSL',
+        metric: '$30M+',
+        detail: 'Up to 4% conversion on cold traffic. Hybrid sales-page-and-VSL format cleared Meta\'s automated review every time the ads ran.',
       },
       {
-        heading: 'Data-Driven Angle Selection',
-        content:
-          'Before writing a word, I use AI tools to analyze what is currently working on ClickBank — which hooks are driving the highest gravity scores, which angles are resonating with buyers, and which funnel structures are producing the best EPCs.\n\n' +
-          'This competitive intelligence means your funnel is built on what is proven to work right now, not on guesswork or last year\'s tactics.',
+        name: 'Ben Palmer / ClickBank Platinum Vendor',
+        category: 'Email-Driven ClickBank Funnel',
+        metric: '300% ROAS',
+        detail: '"Rob is a killer copywriter. We\'re getting a 300% Return on Ad Spend."',
+      },
+      {
+        name: 'Gluco 6 Supplement Funnel',
+        category: 'ClickBank-Adjacent Supplement',
+        metric: '$40M',
+        detail: 'Blood-sugar supplement funnel with subscription-priced front end. Same affiliate-marketplace dynamics as ClickBank biz-op.',
+      },
+      {
+        name: 'Anonymized Order-Bump + Upsell Stacks',
+        category: 'ClickBank Back-End',
+        metric: '30\u201340%+ Take Rates',
+        detail: 'Order-bump and upsell take rates on multiple anonymized vendor wins. Vendor names stay private; the math is in the back-end.',
       },
     ],
     deliverables: [
-      { title: 'VSL & TSL Scripts', description: 'Front-end sales scripts optimized for ClickBank buyer demographics.' },
-      { title: 'Order Bump Copy', description: 'Impulse-purchase offers that add revenue at checkout.' },
-      { title: 'Upsell & Downsell Pages', description: 'OTO sequences that maximize AOV post-purchase.' },
-      { title: 'Affiliate Tools Page', description: 'Swipe copy, email templates, and banners for affiliate partners.' },
-      { title: 'Email Sequences', description: 'Buyer follow-up and promotional sequences for your list.' },
-      { title: 'Ad Copy', description: 'Paid traffic creative designed to drive cold traffic to your funnel.' },
+      { title: 'ClickBank VSL Scripts', description: 'Front-end VSLs and hybrid sales-page/VSL formats engineered for ClickBank cold traffic. Mobile Profits-style hooks.' },
+      { title: 'Order Bump + OTO Stack', description: 'Order bump + OTO1 + OTO2 + downsell + thank-you page sequence engineered to lift EPC above the affiliate threshold.' },
+      { title: 'Affiliate Tools Page', description: 'Swipe copy, email templates, banner copy, and promotional angles affiliates can run \u2014 the assets that earn you placement in their queue.' },
+      { title: 'Email Sequences', description: 'Buyer follow-up sequences (300% Ben Palmer ROAS) plus affiliate-recruitment and launch-promotional sequences.' },
+      { title: 'ClickBank-Review-Aware Ad Copy', description: 'Cold-traffic Meta, YouTube, and native ad copy designed to pass platform review while feeding the funnel.' },
+      { title: 'Launch-and-Scale Roadmap', description: 'Sequenced plan for first-affiliate recruitment, hitting the gravity inflection point, and post-launch back-end iteration.' },
     ],
-    testimonialIds: ['4', '20', '18', '16'],
+    deliverablesHeading: 'What You Get When You Hire Me',
+    deliverablesSubtext:
+      'Every deliverable is engineered for the ClickBank vendor who needs both buyer conversion AND affiliate-grade EPC \u2014 not one or the other.',
+    testimonialIds: ['4', '20', '18', '6', '2', '3'],
     portfolioItems: [
       { title: 'Weight-Loss VSL', category: 'VSL' },
       { title: 'Coffee Slimmer Pro', category: 'VSL' },
       { title: 'Puradrop', category: 'VSL' },
       { title: 'Biz-Op Hybrid Sales Page & VSL', category: 'Hybrid' },
     ],
+    midCta: {
+      headline: 'Ready for a ClickBank funnel that affiliates fight to promote?',
+      subtext:
+        'Book a free strategy call. Send me your current VSL or sales page, your back-end stats (AOV, refund rate, EPC, gravity), and the affiliate-tools page \u2014 I\'ll tell you honestly where EPC is leaking, where gravity stalled, and whether I can write something that beats your control. ClickBank-review notes come free.',
+    },
     faqs: [
       {
-        question: 'What ClickBank categories do you specialize in?',
+        question: 'What does a ClickBank copywriter actually do?',
         answer:
-          'I have the most experience in health/supplements, self-help, and business opportunity offers on ClickBank. These are the highest-volume categories and the ones where direct-response copy makes the biggest difference in conversion rates.',
+          'A senior ClickBank copywriter writes the connected funnel system that wins both sides of the marketplace \u2014 the cold-traffic VSL or hybrid sales page that converts the buyer, plus the order bump, OTO1, OTO2, downsell, thank-you page, and email sequence that lift EPC above the threshold top affiliates require before they\'ll promote your offer. Mobile Profits, the #1 ClickBank offer in its window, did $30M end-to-end. Same disciplined approach across health, supplement, and biz-op verticals.',
       },
       {
-        question: 'Do you understand ClickBank compliance?',
+        question: 'Are you taking new ClickBank clients?',
         answer:
-          'Yes. I stay current with ClickBank\'s content guidelines and approval processes. I write copy designed to pass review while still being aggressive enough to convert. This includes understanding their stance on income claims, health claims, and testimonial usage.',
+          'I take a selective number of new ClickBank engagements each quarter so the work stays at the level the proof requires. Most kickoffs happen within two weeks of the strategy call. If the project is a fit, I\'ll send a fixed-price proposal within 48 hours. If it isn\'t, I\'ll tell you on the call and point you toward someone in my network who\'s better suited.',
       },
       {
-        question: 'Can you help launch a new ClickBank offer?',
+        question: 'How do you use AI to write ClickBank copy?',
         answer:
-          'Absolutely. I can write your complete funnel — from the core VSL/TSL through all upsells and downsells — as well as affiliate tools and promotional materials. I understand the launch dynamics that drive ClickBank success, including affiliate recruitment and promotional sequencing.',
+          'I don\'t use generic ChatGPT prompting. I use Claude Code augmented by my own custom-built copywiting skills \u2014 proprietary skill files that encode 40 years of frameworks, ClickBank-vertical hook patterns, EPC-math evaluation criteria, and ClickBank-review-aware drafting into a working AI workflow, with my 1,239-file Obsidian copywriting brain as the reference layer. The AI processes 50+ competitor ClickBank VSLs and thousands of reviews while a manual pass reads three. I make every strategic and structural call. The AI carries the volume.',
       },
       {
-        question: 'What EPC can I expect from your funnels?',
+        question: 'What does ClickBank copywriting cost?',
         answer:
-          'EPC varies significantly by niche, traffic source, and price point. However, my ClickBank funnels consistently produce competitive EPCs that attract quality affiliates. One client reported 300% Return on Ad Spend from a funnel I wrote. The goal is always to build a funnel where the economics work for both you and your affiliates.',
+          'ClickBank engagements are fixed-price. A standalone ClickBank VSL or hybrid sales page starts at $10K. A full ClickBank funnel (VSL + back-end stack + affiliate-tools page + email sequences) typically starts at $25K. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a back-end stack that lifts EPC from $0.84 to $1.20 doesn\'t just pay for the writer \u2014 it unlocks the top-50 affiliate engine that scales ClickBank winners.',
       },
       {
-        question: 'Do you create affiliate promotional materials?',
+        question: 'How long does it take to launch a ClickBank funnel?',
         answer:
-          'Yes. I create complete affiliate tools packages including email swipe copy, banner ad copy, social media templates, and promotional angles. Making it easy for affiliates to promote your offer is critical to ClickBank success — the easier you make it, the more affiliates will run with your offer.',
+          'A standalone ClickBank VSL or hybrid sales page takes 3\u20134 weeks from kickoff to final draft. A full ClickBank funnel (VSL + back-end stack + affiliate-tools page + email sequences) runs 6\u20139 weeks. Marketplace research and EPC-math benchmarking always come first \u2014 that\'s where the affiliate-threshold lift lives. Rush timelines are possible, but I never shortcut the research.',
       },
       {
-        question: 'How do you keep refund rates low?',
+        question: 'How do you attract top affiliates to a new ClickBank offer?',
         answer:
-          'Low refund rates start with honest, specific copy that sets accurate expectations. I avoid over-promising and focus on building genuine desire for the actual product being delivered. I also optimize the post-purchase experience — thank-you pages, onboarding emails, and consumption sequences — to ensure buyers feel good about their purchase.',
+          'Top affiliates promote offers where the math works. The single biggest lever is back-end EPC \u2014 the order bump and upsell stack that lift earnings-per-click above the threshold they require. Beyond that: gravity inflection (getting the first 5\u201310 affiliates running so the gravity score becomes self-marketing), an affiliate-tools page that makes promoting effortless (swipe copy, email templates, ad angles, banners), and launch-sequence promotional materials for partner-list activation. I write all of it as part of the engagement, sequenced into a launch-and-scale roadmap.',
+      },
+      {
+        question: 'What asset types do you write for ClickBank vendors?',
+        answer:
+          'Front-end: VSLs (Mobile Profits anchors the track), TSLs, hybrid sales-page/VSL formats, advertorial bridges. Back-end: order bump, OTO1, OTO2, downsell, thank-you page. Affiliate: tools page, swipe copy, email templates, banner ad copy, promotional angles. Email: buyer follow-up, abandon-cart, post-purchase upsell, re-engagement, plus affiliate-recruitment and launch-promotional sequences. Ad copy: ClickBank-review-aware Meta, YouTube, and native suites. Every asset is written to function as part of the connected funnel system.',
+      },
+      {
+        question: 'What happens after the strategy call?',
+        answer:
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is marketplace and EPC-math research, then two-sided funnel architecture, then ClickBank-review-aware drafting, then a launch-and-scale roadmap and one comprehensive revision round across the full funnel. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
-    relatedServices: ['vsl-copywriter', 'sales-funnel-copywriter', 'upsell-downsell-copywriter'],
+    relatedServices: ['vsl-copywriter', 'sales-funnel-copywriter', 'upsell-downsell-copywriter', 'ad-copywriter'],
     relatedVerticals: ['health-supplement-copywriter', 'info-product-copywriter'],
   },
   {
