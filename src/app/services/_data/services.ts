@@ -451,94 +451,89 @@ export const services: Service[] = [
     title: 'Sales Letter Copywriter',
     slug: 'sales-letter-copywriter',
     shortDescription:
-      'Classic direct mail and digital sales letters built on proven DR fundamentals. From Fortune 500 to ClickBank.',
-    metaTitle: 'Sales Letter Copywriter | Direct Mail & Digital Sales Letters',
+      'Long-form sales letters and TSLs in the Halbert/Carlton/Makepeace tradition. Anchored on a 9-year Belron direct-mail control that did $523M across 35+ countries.',
+    metaTitle: 'Sales Letter Copywriter | Direct Mail + Digital TSL',
     metaDescription:
-      'Hire a sales letter copywriter with Fortune 500 direct mail roots and $523M+ in tracked results. Expert in both print and digital sales letters that convert.',
-    headline: 'The Sales Letter Copywriter Behind $523M+ in Results',
+      'Senior sales letter copywriter behind a 9-year Belron direct-mail control that did $523M across 35+ countries. Long-form sales letters and TSLs in the Halbert/Carlton/Makepeace tradition. Fixed-price engagements.',
+    headline: 'Sales Letter Copywriter Behind the Belron Direct-Mail Control: 9 Years, $523M, 35+ Countries',
     subheadline:
-      'I learned sales letter craft writing direct mail for Apple, IBM, and Citibank. Then I took those fundamentals digital and generated $523M+ in tracked results. If you need a sales letter that converts, you are in the right place.',
+      'Five award-winning copywriters had already failed at the Belron direct-mail sales letter when I took it over in 1996. I architected the full package \u2014 letter, lift note, envelope teaser, order form \u2014 and ran it as a control for 9 years across 35+ countries. $523 million in tracked sales, mailed not e-mailed. The same Halbert/Carlton/Makepeace fundamentals carry into every digital TSL I write today \u2014 340% ROAS on Facebook cold traffic for Abundant, 300% for Ben Palmer\'s ClickBank offer.',
     heroImage: '/images/services/sales-letter-copywriter.jpg',
     heroImageAlt: 'Direct mail letter and envelope for sales letter copywriting',
     heroStats: {
-      primary: { value: '$523M+', label: 'Tracked Client Results' },
+      primary: { value: '9 Years', label: 'Belron Direct-Mail Sales-Letter Control' },
       secondary: [
-        { value: '40+', label: 'Years Writing Sales Letters' },
-        { value: '35+', label: 'Countries Reached' },
-        { value: '9 Years', label: 'Longest-Running Control' },
+        { value: '$523M', label: '35+ Countries Mailed' },
+        { value: '340%', label: 'Recent TSL ROAS (Abundant, Facebook)' },
+        { value: '300%', label: 'Ben Palmer ClickBank ROAS' },
       ],
     },
     credentialBar: {
       heading: 'Sales letters written for',
       items: [
-        'Apple Computer',
-        'Belron / Safelite',
+        'Belron International (9-year direct-mail control)',
+        'Apple Computer UK',
         'IBM',
         'Citibank',
         'National Geographic',
-        'ClickBank Vendors',
+        'ClickBank Platinum Vendors',
       ],
     },
     sections: [
       {
-        heading: 'Why Most Sales Letters Get Thrown Away \u2014 Physically and Digitally',
+        heading: 'Why Most Sales Letters Get Thrown Away \u2014 Physical or Digital',
         content:
           'A sales letter has about three seconds to earn the next thirty. Whether it lands in a physical mailbox or loads on a screen, the reader is making a snap judgment: <strong>is this worth my time, or is it going in the trash?</strong>\n\n' +
-          'Most sales letters lose that battle because the copywriter does not understand what a sales letter actually is. It is not a brochure. It is not a product description. It is a personal, one-to-one persuasion sequence \u2014 written as if from one human being to another \u2014 that must earn every single sentence.\n\n' +
-          'The format tolerates no filler. No corporate jargon. No "we at Company X are proud to announce." Every word either pulls the reader forward or loses them forever. That discipline is what separates a sales letter copywriter who has written direct mail from one who has only written for screens.',
+          'Most sales letters lose that battle in the first paragraph because the writer doesn\'t understand what a sales letter actually is. It\'s not a brochure. It\'s not a product description. It\'s a personal, one-to-one persuasion sequence \u2014 written as if from one human being to another \u2014 that has to earn every single sentence.\n\n' +
+          'The format tolerates no filler. No corporate jargon. No "we at Company X are proud to announce." Every word either pulls the reader forward or loses them forever. On a digital TSL bleeding 0.5% conversion against $5K/day in ad spend, every weak paragraph in the lead is roughly $250\u2013$500 in wasted spend before the reader even reaches the offer. <strong>That earned-sentence discipline is what direct mail teaches and what web-only copywriters never learn.</strong>',
       },
       {
-        heading: 'From a $523M Direct Mail Campaign to Digital Sales Letters',
+        heading: 'The 9-Year Belron Direct-Mail Control That Did $523 Million',
         content:
-          'The campaign that defined my career was a direct-response sales letter for <strong>Belron / Safelite</strong>. It ran for <strong>9 years across 35+ countries</strong>, generated <strong>$523 million in tracked sales</strong> \u2014 and it succeeded after five previous copywriters had failed. The CEO called me his "secret weapon."\n\n' +
-          'That was not a digital funnel or a VSL. It was a sales letter, built on the same fundamentals that Gary Halbert, John Carlton, and Clayton Makepeace used to generate fortunes from a single piece of paper and a stamp.\n\n' +
-          'Those fundamentals \u2014 a hook that stops the reader cold, a story that makes the problem feel urgent, a mechanism that makes the solution feel inevitable, and a close that removes every reason not to act \u2014 are exactly what I bring to every digital sales letter and TSL I write today.',
+          'In 1996, Belron \u2014 the world\'s largest auto-glass-replacement business \u2014 handed me their direct-response sales letter. Five award-winning copywriters had already failed at it. I was the sixth. I took the assignment, architected the full package \u2014 the letter itself, the lift note, the envelope teaser, the order form \u2014 and ran it as a control for 9 years across 35+ countries. The campaign generated <strong>$523 million</strong> in tracked direct-mail sales.\n\n' +
+          'The CEO, Gary Lubner, put it on record: <em>"You are our secret weapon. Keep your diary clear, please!"</em>\n\n' +
+          'That control survived 9 years not because of one clever line but because the structure was right at every level \u2014 the envelope earned the open, the lift note bought the letter the dollar bill of attention it needed, the letter itself ran the full Halbert/Carlton/Makepeace persuasion sequence, and the order form closed without friction. That\'s the discipline 9-year controls demand. It\'s the same discipline that carries into every digital TSL I write today.\n\n' +
+          'If you have a sales letter or TSL running and the response numbers aren\'t where you need them, I work as a control-beater. Send me your current letter and the back-end numbers \u2014 open rate, response rate, sale rate, AOV \u2014 and I\'ll tell you on the strategy call exactly where the response is leaking and whether I can write something that beats it.',
       },
       {
-        heading: 'The Copy Chief That Top Copywriters Hire',
+        heading: '340%, 300%, 5.7%, 8% \u2014 Recent TSLs and Digital Sales Letters',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park.\n\n' +
-          'These are people who have read more sales letters than anyone alive. They hired me and endorsed me because they have seen my work perform.\n\n' +
-          'When the best sales letter copywriters in the industry need someone they trust, they call me.',
+          'Belron is the long direct-mail campaign. Recent digital sales letters prove the same discipline scales online.\n\n' +
+          '<strong>340% ROAS</strong> on Abundant \u2014 a long-form TSL I wrote that converted Facebook cold traffic at scale. <strong>300% ROAS</strong> on a campaign I wrote for Ben Palmer, a ClickBank Platinum vendor. <strong>5.7% opt-in-to-sale</strong> on Monetari Fund \u2014 a compliance-aware financial-services TSL. <strong>8% on cold traffic</strong> at the sales-letter step of a recent Conor Reynolds funnel.\n\n' +
+          'These numbers come from applying the same fundamentals every time \u2014 Halbert\'s grease-slide construction, Carlton\'s first-paragraph hook discipline, Makepeace\'s seven characteristics, the PASTOR sequence \u2014 to deep customer research. Stefan Georgi (the copywriter behind over $1 billion in tracked sales) hired me as Copy Chief inside Copy Accelerator\'s CA Labs because that pattern recognition is what scales offers across his portfolio. Justin Goff publicly credited me with stepping up and knocking it out of the park.\n\n' +
+          'These are operators with their own money on the line.',
       },
       {
-        heading: 'TSL Copywriting: The Digital Sales Letter',
+        heading: 'How I Architect a Sales Letter That Earns Every Sentence',
         content:
-          'The TSL (Text Sales Letter) is the digital evolution of the classic direct mail sales letter. Instead of arriving in the mailbox, it appears on a web page \u2014 but the persuasion principles are identical. TSLs are particularly powerful in health, finance, and info product markets where prospects respond to personal, story-driven selling.\n\n' +
-          'I bring the same disciplined approach to TSL copywriting that built the fortunes of the original direct mail industry: <strong>deep research into your prospect\'s emotional landscape</strong>, a unique mechanism that makes your offer feel different, a narrative arc that keeps them reading, and a close that converts.\n\n' +
-          'The result: TSLs that have driven <strong>340% ROAS on Facebook</strong> for info products, <strong>300% ROAS</strong> for supplement offers, and consistent front-end conversions across ClickBank and DTC funnels.',
-      },
-      {
-        heading: 'How I Write a Sales Letter That Converts',
-        content:
-          'Every sales letter I write follows a process forged in Fortune 500 direct mail and refined over four decades. Each phase is tied to a specific conversion outcome.',
+          'Every sales letter and TSL I write moves through the same four phases. None are optional. This is the actual work \u2014 not a "process" page filling space.',
         bullets: [
-          'Phase 1: Deep audience research \u2014 I find the exact language your prospects use to describe their problem, their failed attempts, and what they wish existed. The hook comes from here.',
-          'Phase 2: Voice and angle \u2014 a sales letter lives or dies on voice. I determine the right persona, tone, and narrative angle to build trust with your specific audience.',
-          'Phase 3: Architecture and writing \u2014 the full persuasion sequence: lead, story, mechanism, proof stack, offer build, guarantee, and close. Every sentence stress-tested.',
-          'Phase 4: Revision and testing \u2014 opening variations for split testing, envelope/subject line teasers, and order form copy to maximize conversion at every touchpoint.',
+          'Phase 1 \u2014 Deep audience research: I mine forums, reviews, competitor letters, and customer-support transcripts to find the exact words your prospects use to describe the pain. The hook and the lead come out of this layer, not out of a brainstorm. My AI workflow processes dozens of competitor sales letters and customer-research transcripts in the time a manual pass takes to read three.',
+          'Phase 2 \u2014 Voice and angle: a sales letter lives or dies on voice. I determine the right persona, narrative angle, and emotional throughline to build trust with your specific audience \u2014 and the right format (classic letter, magalog, lift-note package, or digital TSL) for the medium and offer.',
+          'Phase 3 \u2014 Architecture and writing: I build the full persuasion sequence \u2014 envelope teaser or subject line, lead, story, mechanism, proof stack, offer build, guarantee, close, and order-form copy. Every sentence stress-tested against one question: does this earn the next sentence?',
+          'Phase 4 \u2014 Variations and testing roadmap: opening variations for split testing, envelope or subject-line teasers, headline alternatives, and an order-form pass. One comprehensive revision round is included.',
         ],
       },
       {
-        heading: 'Sales Letter Copywriting Across Formats and Industries',
+        heading: 'Sales Letters Across Direct Mail, TSL, Health, Finance, Info and DTC',
         content:
-          'The sales letter format adapts to virtually any medium and market. Whether it is a physical direct mail package or a digital TSL, the fundamentals are the same \u2014 but the execution must match the context.',
+          'The sales-letter format adapts to virtually any medium and market \u2014 physical direct mail, digital TSL, magalog, lift-note package, advertorial. The fundamentals stay the same. The execution has to match the medium and the buyer.',
         bullets: [
-          'Classic direct mail packages \u2014 including the $523M Belron/Safelite campaign',
-          'Digital TSLs for ClickBank, affiliate, and DTC offers',
-          'Financial newsletter promotions \u2014 compliant long-form sales letters for investment offers',
-          'Health and supplement sales letters \u2014 story-driven copy for cold traffic',
-          'Magalog-style sales letters',
-          'Letter-format email series and launch sequences',
+          '$523M / 9 years across 35+ countries \u2014 Belron direct-mail sales-letter package',
+          '340% ROAS on Facebook \u2014 Abundant info-product TSL',
+          '5.7% opt-in-to-sale \u2014 Monetari Fund financial-services TSL (compliance-aware)',
+          '8% cold-traffic CVR \u2014 Conor Reynolds sales-letter funnel step',
+          'Apple Computer UK direct-mail package \u2014 response so strong it overwhelmed dealer demand',
+          'Health and supplement, ClickBank vendors, info products, financial newsletter promotions, magalog-style sales letters, letter-format email series',
         ],
       },
     ],
     caseStudies: [
       {
-        name: 'Belron / Safelite',
-        category: 'Direct Mail Campaign',
-        metric: '$523M in Sales',
-        detail: '9-year control. 35+ countries. 5 copywriters failed before me.',
+        name: 'Belron / Safelite International',
+        category: 'Direct-Mail Sales-Letter Campaign',
+        metric: '$523M / 9 Years',
+        detail: 'Five award-winning copywriters had already failed. I architected the full package \u2014 letter, lift note, envelope teaser, order form \u2014 and ran it as a control across 35+ countries for nine years.',
       },
       {
         name: 'Apple Computer UK',
@@ -550,7 +545,13 @@ export const services: Service[] = [
         name: 'Abundant',
         category: 'Info Product TSL',
         metric: '340% ROAS',
-        detail: 'Facebook cold traffic. Story-driven long-form sales letter.',
+        detail: 'Facebook cold traffic. Story-driven long-form digital sales letter.',
+      },
+      {
+        name: 'Monetari Fund',
+        category: 'Financial TSL',
+        metric: '5.7% Opt-in to Sale',
+        detail: 'Compliance-aware financial-services digital sales letter.',
       },
     ],
     deliverables: [
@@ -587,48 +588,58 @@ export const services: Service[] = [
     ],
     deliverablesHeading: 'What You Get When You Hire Me',
     deliverablesSubtext:
-      'Every deliverable reflects 40+ years of sales letter craft \u2014 from Fortune 500 direct mail to digital TSLs.',
-    testimonialIds: ['1', '4', '2', '18'],
+      'Every deliverable shaped by 40+ years of sales-letter craft \u2014 from Fortune 500 direct mail to digital TSLs that converted on Facebook cold traffic.',
+    testimonialIds: ['1', '5', '4', '2', '3', '6', '18'],
     portfolioItems: [
       { title: 'Health Supplement TSL', category: 'Sales Letter' },
       { title: 'Financial Newsletter Promo', category: 'Sales Letter' },
       { title: 'Info Product Launch Letter', category: 'Sales Letter' },
     ],
     midCta: {
-      headline: 'Need a sales letter that actually converts?',
+      headline: 'Ready for a sales letter that earns every sentence \u2014 and beats your current control?',
       subtext:
-        'Book a free strategy call. Whether you need a direct mail package or a digital TSL, I\u2019ll tell you honestly what I can do for your offer.',
+        'Send me your current letter or TSL and the response numbers \u2014 I\'ll tell you on the call where it\'s leaking and whether I can beat it.',
     },
     faqs: [
       {
-        question: 'What is a sales letter vs. a sales page?',
+        question: 'What does a sales letter copywriter do?',
         answer:
-          'A sales letter uses a personal, letter-style format \u2014 written as if from one person directly to another. It relies on voice, storytelling, and personal connection to build trust and drive action. A sales page can use any layout including design-heavy formats with multiple columns and graphics. In practice, the best sales pages borrow heavily from sales letter principles. The format you need depends on your market, offer, and how your audience prefers to be sold to.',
+          'I write long-form, personal, one-to-one persuasion copy \u2014 sales letters and TSLs (text sales letters) \u2014 in the tradition of Gary Halbert, John Carlton, and Clayton Makepeace. The form started in classic direct mail and migrated online as the TSL: a long-form text page that reads like a letter from one person directly to the prospect, using voice, story, mechanism, proof, and a hard close. The fundamentals are identical across the two media. The execution differs. (A sales page, by contrast, can use any layout \u2014 design-led, multi-column, graphic-heavy. The highest-converting sales pages borrow heavily from sales-letter discipline.)',
       },
       {
-        question: 'What is a TSL (Text Sales Letter)?',
+        question: 'Are you taking new sales-letter clients?',
         answer:
-          'A TSL is the digital evolution of the classic direct mail sales letter. It is a long-form text-based page that reads like a personal letter from the seller to the prospect, using storytelling, social proof, and direct-response persuasion to drive conversions. TSLs are particularly effective in health, finance, and info product markets. I have written TSLs that delivered 340% ROAS on Facebook cold traffic.',
+          'I take a selective number of new sales-letter engagements each quarter so the work stays at the level the proof requires. Most kickoffs happen within two weeks of the strategy call. If the project is a fit, I\'ll send a fixed-price proposal within 48 hours. If it isn\'t, I\'ll tell you on the call and point you toward someone in my network who\'s better suited.',
       },
       {
-        question: 'Do you still write physical direct mail sales letters?',
+        question: 'How do you use AI to write sales letters?',
         answer:
-          'Yes. My career started in Fortune 500 direct mail \u2014 Apple, IBM, Citibank, National Geographic \u2014 and I still write direct mail packages when the strategy calls for it. The Belron/Safelite campaign that generated $523M ran as direct response across 35+ countries. Direct mail has experienced a resurgence as digital ad costs increase and physical mailboxes become less cluttered.',
+          'I don\'t use generic ChatGPT prompting. I use Claude Code augmented by my own custom-built copywriting skills \u2014 proprietary skill files that encode 40 years of frameworks, headline formulas, and evaluation criteria into a working AI workflow, with my 1,239-file Obsidian copywriting brain as the reference layer (190 frameworks, 193 swipe pieces, 125 book/course notes, 76 templates, 512 pieces of my own copy). I make every strategic and structural call. The AI carries the volume.',
       },
       {
-        question: 'How long should a sales letter be?',
+        question: 'What does a sales letter cost?',
         answer:
-          'As long as it takes to make the complete persuasion case \u2014 and not a word longer. For simple offers to warm audiences, that might be 1,500 words. For complex offers to cold traffic, 6,000 to 8,000 words or more. I learned length discipline writing direct mail where every extra sentence increased the postage bill. That same discipline applies to every digital sales letter I write.',
+          'Sales-letter engagements are fixed-price. Most sales-letter and TSL projects start at $10K \u2014 pricing depends on length, complexity, format (direct mail vs. digital TSL), and research scope. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a sales letter that converts at 4% instead of 1% on the same traffic doesn\'t pay for itself \u2014 it changes the economics of the offer.',
       },
       {
-        question: 'What industries work best for sales letters and TSLs?',
+        question: 'How long does it take to write a sales letter?',
         answer:
-          'Sales letters and TSLs perform exceptionally well in health and supplements, financial services, info products, and any market where the buyer responds to personal, story-driven selling. They also work for higher-priced offers where trust and personal connection are critical. My $523M Belron campaign proves the format scales to enterprise too.',
+          'A sales letter or TSL typically takes 4\u20136 weeks from briefing to final deliverables. That includes deep audience research, voice and angle work, full persuasion-sequence writing, order-form and envelope copy (or subject-line and pre-header for digital), and one comprehensive revision round. The timeline depends on length and offer complexity. I never rush research \u2014 that\'s where sales-letter response is won or lost.',
       },
       {
-        question: 'How much does a sales letter cost?',
+        question: 'Direct mail vs. digital TSL \u2014 which one do I need?',
         answer:
-          'Sales letter copywriting is project-based, and pricing depends on length, complexity, format (direct mail vs. digital TSL), and research scope. We discuss specifics on a strategy call. The right question is not what a sales letter costs \u2014 it is what happens when the sales letter you are running now is underperforming by even 1%. On serious traffic, that gap compounds every day.',
+          'It depends on price point, audience intent, and where your buyer\'s attention lives. Higher-priced offers (think $500+ AOV, financial newsletters, premium info products) and high-intent buyer lists often justify direct mail \u2014 physical mail still cuts through where digital ad costs are crushing margins. Lower-priced offers, cold-traffic acquisition, ClickBank, and most consumer offers run as digital TSLs. The fundamentals \u2014 voice, story, mechanism, proof, close \u2014 are identical across both. I write both, and I\'ll tell you on the strategy call which format your offer warrants.',
+      },
+      {
+        question: 'What industries do you write sales letters for?',
+        answer:
+          '$523M / 9 years across 35+ countries on the Belron direct-mail campaign. 340% ROAS on the Abundant info-product TSL. 5.7% opt-in-to-sale on the Monetari Fund financial TSL. 8% cold-traffic CVR at the sales-letter step of the Conor Reynolds funnel. Plus health and supplement (TSLs supporting $40M+ in funnel revenue), info products, financial newsletter promotions, ClickBank vendors, e-commerce and DTC. Each vertical has its own compliance posture and buyer psychology. The frameworks adapt accordingly.',
+      },
+      {
+        question: 'What happens after the strategy call?',
+        answer:
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and voice work, then architecture, then the letter draft, then one comprehensive revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['sales-page-copywriter', 'email-copywriter'],
