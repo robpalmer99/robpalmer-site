@@ -377,6 +377,9 @@ export default function HomePage() {
                   Why the AI-only{' '}
                   <span className="text-gold-500">experiment failed.</span>
                 </h2>
+                <p className="mt-5 text-lg text-ink-700 font-body leading-relaxed lg:max-w-xs">
+                  Companies that fired their copywriters for AI in 2024 are quietly rehiring in 2026. There&apos;s a reason.
+                </p>
                 {/* Decorative gold accent bar */}
                 <div className="mt-6 w-16 h-1 bg-gradient-to-r from-gold-400 to-gold-200 rounded-full" />
               </div>
