@@ -423,100 +423,177 @@ export const verticals: Vertical[] = [
     title: 'E-Commerce & DTC Copywriter',
     slug: 'ecommerce-dtc-copywriter',
     shortDescription:
-      'Conversion-focused copy for DTC brands and e-commerce businesses. Product pages, email sequences, and ad funnels that drive revenue and maximize customer lifetime value.',
-    metaTitle: 'E-Commerce & DTC Copywriter | Conversion Copy for Online Brands',
+      'E-commerce and DTC copy anchored on the $40M Gluco 6 supplement subscription funnel + 300% ROAS Ben Palmer ClickBank-health funnel + 30\u2013100% AOV lifts on anonymized back-end stacks. Product page through post-purchase email written as one connected revenue stack.',
+    metaTitle: 'E-Commerce & DTC Copywriter | $40M Subscription + 30\u2013100% AOV',
     metaDescription:
-      'Expert e-commerce and DTC copywriter. Product pages, email sequences, and ad funnels that drive revenue and maximize customer lifetime value. $523M+ in results.',
-    headline: 'E-Commerce & DTC Copywriter',
+      'Senior e-commerce and DTC copywriter behind the $40M Gluco 6 subscription funnel + 300% ROAS Ben Palmer ClickBank-health funnel + 30\u2013100% AOV lifts on anonymized back-end stacks. Product page, email, ad, upsell stack as one connected revenue system.',
+    headline: 'E-Commerce & DTC Copywriter Behind $40M Subscription + 30\u2013100% AOV Lifts',
     subheadline:
-      'Conversion copy that turns browsers into buyers and buyers into repeat customers.',
+      'I write the connected revenue stack for DTC operators \u2014 product page, abandoned cart, post-purchase upsell, subscription retention. The Gluco 6 supplement subscription funnel I worked on did <strong>$40 million</strong> end-to-end with the same DTC subscription dynamics. For Ben Palmer, a ClickBank Platinum vendor running an e-commerce-style health funnel, the email-driven funnel I wrote drove <strong>300% ROAS</strong>. Across multiple anonymized e-commerce back-end stacks, AOV lifts have landed in the <strong>30\u2013100%</strong> range. If your DTC brand has a 2% product-page CVR that should clear 4%, or your post-purchase email sequence is leaving back-end revenue on the table, this is the kind of work I do.',
     heroImage: '/images/industries/ecommerce-dtc.jpg',
     heroImageAlt: 'E-commerce shopping and online retail',
+    heroStats: {
+      primary: { value: '30\u2013100%', label: 'AOV Lift on E-Commerce Back-End Stacks' },
+      secondary: [
+        { value: '$40M', label: 'Gluco 6 Subscription DTC Funnel' },
+        { value: '300%', label: 'Ben Palmer ClickBank-Health Email Funnel ROAS' },
+        { value: '40+', label: 'Years Direct Response' },
+      ],
+    },
+    credentialBar: {
+      heading: 'E-commerce + DTC copy written for',
+      items: [
+        'Gluco 6 Supplement Subscription Funnel ($40M)',
+        'Ben Palmer / ClickBank Platinum Vendor (300% ROAS)',
+        'Survival Frog (Byron Walker)',
+        'Ecom Authority (Doug Beney)',
+        'CJAM Marketing (Behdad Jamshidi)',
+        'Subscription DTC + Single-Purchase E-Commerce',
+      ],
+    },
     definition: {
-      term: 'e-commerce & DTC copywriting',
-      text: 'E-commerce and DTC (direct-to-consumer) copywriting is conversion-focused copy for online brands that sell directly to customers. It spans every revenue touchpoint — product pages, ad creative, email sequences, upsells, and retention campaigns — engineered as a connected system to maximize conversion rate, average order value, and customer lifetime value.',
+      term: 'e-commerce + DTC copywriting',
+      text: 'E-commerce and DTC (direct-to-consumer) copywriting is direct-response copy for online brands that sell directly to customers. It spans every revenue touchpoint \u2014 product page, ad creative, email sequences, post-purchase upsells, subscription retention, win-back campaigns \u2014 engineered as one connected revenue stack to maximize CVR, AOV, and CLTV. The DTC operators who scale aren\'t the ones with the best single asset; they\'re the ones whose entire stack compounds together.',
     },
     sections: [
       {
-        heading: 'DTC Copy That Drives Revenue',
+        heading: 'Why Most DTC Brands Burn the Front End and Starve the Back End',
         content:
-          'E-commerce and DTC brands live and die by their copy. Your product page headline, your abandoned cart email, your post-purchase upsell sequence — each one is either making you money or leaving it on the table.\n\n' +
-          'I write end-to-end e-commerce copy that maximizes conversion at every touchpoint, from the first ad impression to the fifth repeat purchase.\n\n' +
-          'The difference between a 2% conversion rate and a 4% conversion rate is not clever wordplay — it is strategic persuasion engineering.',
+          'You\'re a DTC operator. Maybe you have one product, maybe a category. CAC has been creeping. ROAS has been compressing. iOS 14.5 hit your attribution two years ago and Meta hasn\'t given you the same signal since. You\'re running ads, you\'re shipping product, the bank account looks fine \u2014 but the math is getting tighter every quarter.\n\n' +
+          'Here\'s why. Most DTC brands burn 80% of their copy budget on acquisition (ad creative + product page + landing page) and 20% on the back end (email sequences + post-purchase upsell + subscription retention). The front end is where the cost lives, so it gets the attention. The back end is where the margin lives, so it gets ignored.\n\n' +
+          'Door one: your front-end CVR is okay (2% on a product page, 1% on a sales page) but post-purchase emails are a welcome series and three "did you forget us?" win-backs. Subscription retention has no copy at all. AOV stalls at $42 when it should clear $80. CLTV sits at $58 when it should be $180. The brand stays profitable on margin, but never breaks out.\n\n' +
+          'Door two: the back end is decent but the front end is leaking. Product page CVR sits at 1.4% when category benchmarks clear 3.5%. Abandoned cart recovers at 8% when sequences in the same category clear 18%. The first email after purchase \u2014 the highest-engagement email a DTC brand sends \u2014 is generic instead of an upsell trigger.\n\n' +
+          'Either way, every dormant week costs the brand. A DTC brand at $1M ARR running 1.4% product-page CVR loses $1.5M\u2013$2.5M annually to a CVR that should clear 3.5%. AOV stalled $40 below where the back-end stack would lift it leaves another $200K\u2013$500K on the table per year on existing traffic. The brands that scale past $5M aren\'t the ones with the best ad. They\'re the ones whose product page, email sequence, post-purchase upsell, and subscription-retention copy compound together as one revenue stack.\n\n' +
+          'The structural problem isn\'t willpower or word choice. It\'s that most e-commerce copywriters write product descriptions OR email sequences OR ad copy \u2014 not the connected revenue stack. The skill the DTC back-end actually rewards: writing every touchpoint as part of one persuasion architecture where every step compounds the AOV and CLTV the next step depends on.',
       },
       {
-        heading: 'Beyond Product Descriptions',
+        heading: '$40M Gluco 6 Subscription, 300% Ben Palmer, 30\u2013100% AOV Lifts \u2014 Recent E-Commerce Wins',
         content:
-          'Most e-commerce copywriters write product descriptions. I write persuasion systems. Every piece of copy I write for your brand is engineered to move a specific metric.',
+          'The <strong>Gluco 6 supplement subscription funnel</strong> I worked on did <strong>$40 million</strong> end-to-end \u2014 same DTC subscription dynamics most operators face: cold traffic to product page to subscription offer to back-end upsell to retention sequence. The back-end stack I architected ran the AOV math from the first draft.\n\n' +
+          'For <strong>Ben Palmer</strong>, a ClickBank Platinum vendor running an e-commerce-style health offer, the email-driven funnel I wrote drove <strong>300% Return on Ad Spend</strong>. He put it on record: <em>"Rob is a killer copywriter."</em>\n\n' +
+          'Across multiple anonymized e-commerce back-end stacks \u2014 order bump, OTO1, OTO2, downsell, post-purchase email \u2014 AOV lifts have landed in the <strong>30\u2013100%</strong> range on existing traffic. (Brand names stay private; the math is in the back-end.)\n\n' +
+          'Byron Walker at Survival Frog (an outdoor-and-emergency DTC brand) reviewed work I shipped: <em>"Once again, this looks great, Rob. We will circle back soon."</em> Doug Beney at Ecom Authority came back with: <em>"Really good copy. More projects coming your way soon!"</em>\n\n' +
+          'If you have a DTC brand running and the revenue stack isn\'t compounding the way it should, I work as a control-beater. Send me your current product page, your post-purchase email sequence, and your back-end metrics (CVR, AOV, CLTV, refund rate). I\'ll tell you on the strategy call exactly where the stack is leaking and whether I can write something that beats your current control.',
+      },
+      {
+        heading: 'The DTC Copywriter Top DR Operators Hire',
+        content:
+          'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as <strong>Copy Chief inside Copy Accelerator\'s CA Labs</strong>. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor, clocked <strong>300% ROAS</strong> on a funnel I wrote.\n\n' +
+          'Mark Shay, who has seen more DTC and supplement copy than most, put it on record: <em>"Rob is probably the most methodical copywriter I\'ve seen. This impresses me."</em>\n\n' +
+          'These are operators with their own money on the line. DTC doesn\'t reward writers who can\'t make the AOV math compound \u2014 the CAC ceiling clears them out inside two quarters. DR operators at this level keep handing me e-commerce work \u2014 and that\'s the proof that matters more than any individual stat.',
+      },
+      {
+        heading: 'How I Architect a DTC Revenue Stack That Compounds AOV and CLTV',
+        content:
+          'Every DTC engagement moves through the same four phases. None are optional. This is the actual work \u2014 not a "process" page filling space.',
         bullets: [
-          'Product pages built as sales pages in miniature — not just descriptions',
-          'Email sequences designed as strategic revenue engines — not just "touching base"',
-          'Ad creative that pre-qualifies buyers so your funnel works harder',
-          'Every touchpoint targeted at conversion rate, average order value, or customer lifetime value',
+          'Phase 1 \u2014 Audience + revenue-stack research: I mine your customer reviews, support tickets, returns/refund reasons, and competitor brands\' funnels for the exact language your buyers use about the transformation \u2014 plus the AOV and CLTV benchmarks your category clears. The angle and the back-end stack come out of the same layer. My AI workflow processes 50+ competitor DTC funnels and thousands of customer reviews while a manual pass reads three.',
+          'Phase 2 \u2014 Connected-stack architecture: I map every touchpoint \u2014 ad copy, product page, abandoned cart, post-purchase email, OTO upsell, subscription retention, win-back \u2014 against the AOV and CLTV math the brand needs. Most DTC stacks die because the post-purchase email is doing nothing while the abandoned-cart sequence does the same job twice. The architecture phase prevents that.',
+          'Phase 3 \u2014 Drafting the connected stack: I draft product page, abandoned-cart sequence, post-purchase email sequence, OTO upsell pages, subscription-retention sequence, and ad copy as one connected system. Every step compounds the AOV and CLTV the next step depends on. Two-to-three subject-line and headline variations per piece for split testing.',
+          'Phase 4 \u2014 Iteration roadmap + handoff: a sequenced roadmap for which stack elements to test first, how to read the back-end data, and which iterations compound fastest. One comprehensive revision round across the full stack is included.',
         ],
       },
       {
-        heading: 'Maximizing Customer Lifetime Value',
+        heading: 'Asset Types I Write for DTC and E-Commerce Operators',
         content:
-          'The most profitable DTC brands do not just acquire customers — they keep them. I write post-purchase sequences, subscription upsells, loyalty program copy, and re-engagement campaigns designed to maximize customer lifetime value.\n\n' +
-          'This is where the real margin lives in e-commerce. Most brands focus all their budget on acquisition and ignore the back-end — which is like filling a bucket with a hole in it.\n\n' +
-          'My direct-response expertise plugs those holes and turns one-time buyers into repeat customers.',
+          'DTC operators don\'t buy copy by category \u2014 they buy connected revenue stacks. Each asset has different mechanics, but they\'re engineered to work as one. The asset types below are the ones I ship most often for DTC brands and e-commerce operators.',
+        bullets: [
+          '<a href="/services/email-copywriter">Email Copywriter</a> \u2014 abandoned cart, post-purchase upsell, subscription retention, win-back, and broadcast sequences. The highest-ROI channel for DTC.',
+          '<a href="/services/upsell-downsell-copywriter">Upsell & Downsell Copywriter</a> \u2014 post-purchase OTO stacks lifting AOV by 30\u2013100% on existing traffic. The back-end where DTC margin actually lives.',
+          '<a href="/services/landing-page-copywriter">Landing Page Copywriter</a> \u2014 product pages built as sales pages in miniature, plus pre-sell pages and lead-magnet bridges feeding email lists.',
+          '<a href="/services/ad-copywriter">Ad Copywriter</a> \u2014 cold-traffic ad copy for Meta, Google, TikTok, and native that pre-qualifies buyers so the product page works harder.',
+          '<a href="/services/facebook-ads-copywriter">Facebook Ads Copywriter</a> \u2014 Meta-and-Instagram-specific ad suites with platform-policy fluency and Reels/carousel/UGC scripts.',
+          '<a href="/services/sales-funnel-copywriter">Sales Funnel Copywriter</a> \u2014 end-to-end DTC revenue-stack architecture with AOV and CLTV math designed in from step one.',
+        ],
+      },
+    ],
+    caseStudies: [
+      {
+        name: 'Gluco 6 Subscription Funnel',
+        category: 'DTC Supplement Subscription',
+        metric: '$40M',
+        detail: 'End-to-end subscription DTC funnel with cold-traffic VSL, subscription-priced front end, and back-end stack that ran the AOV math from the first draft.',
       },
       {
-        heading: 'The Full E-Commerce Revenue Stack',
-        content:
-          'I write every piece of copy in the e-commerce revenue stack: ad creative that drives qualified traffic, landing pages that capture leads, product pages that convert browsers, email sequences that recover abandoned carts and drive repeat purchases, and upsell/cross-sell sequences that grow AOV. Each piece is connected to the next in a cohesive system — not a collection of disconnected tactics.',
+        name: 'Ben Palmer / ClickBank Platinum Vendor',
+        category: 'E-Commerce-Style Health Funnel',
+        metric: '300% ROAS',
+        detail: '"Rob is a killer copywriter. We\'re getting a 300% Return on Ad Spend."',
       },
       {
-        heading: 'AI-Powered Competitive Intelligence',
-        content:
-          'I use AI tools to analyze your competitors\' funnels, identify the ad angles getting the most engagement in your niche, and map the customer journey from first click to fifth purchase.\n\n' +
-          'This data-driven approach means your copy is not based on guesswork or generic best practices — it is built on real intelligence about what is actually working in your specific market right now.',
+        name: 'Anonymized E-Commerce Back-End Stacks',
+        category: 'OTO + Order Bump + Post-Purchase Email',
+        metric: '30\u2013100% AOV Lift',
+        detail: 'AOV lifts on existing traffic across multiple anonymized brands. Brand names stay private; the math is in the back-end.',
+      },
+      {
+        name: 'Survival Frog / Byron Walker',
+        category: 'DTC Outdoor Brand',
+        metric: '"This looks great"',
+        detail: '"Once again, this looks great, Rob. We will circle back soon."',
       },
     ],
     deliverables: [
-      { title: 'Product Page Copy', description: 'Conversion-optimized product pages that sell, not just describe.' },
-      { title: 'Email Sequences', description: 'Welcome, abandoned cart, post-purchase, and win-back sequences.' },
-      { title: 'Ad Copy', description: 'Scroll-stopping creative for Facebook, Google, TikTok, and native.' },
-      { title: 'Landing Pages', description: 'Lead capture and direct-sale pages optimized for your funnel.' },
-      { title: 'Upsell & Cross-Sell Copy', description: 'Post-purchase offers that grow AOV without eroding trust.' },
-      { title: 'Subscription Copy', description: 'Subscribe-and-save copy that builds recurring revenue.' },
+      { title: 'Product Page Copy', description: 'Conversion-optimized product pages built as sales pages in miniature \u2014 not just descriptions.' },
+      { title: 'Email Stack', description: 'Welcome, abandoned cart, post-purchase upsell, subscription retention, win-back, and broadcast sequences as one connected revenue engine.' },
+      { title: 'Back-End OTO Stack', description: 'Order bump + OTO1 + OTO2 + downsell + thank-you page sequence engineered for 30\u2013100% AOV lifts on existing traffic.' },
+      { title: 'Ad Copy', description: 'Scroll-stopping cold-traffic creative for Meta, Google, TikTok, and native \u2014 pre-qualified for the product page that follows.' },
+      { title: 'Landing + Bridge Pages', description: 'Pre-sell pages, lead-magnet bridges, and direct-sale pages feeding the email list and the product page.' },
+      { title: 'Subscription Retention Copy', description: 'Subscribe-and-save copy, retention sequences, and re-engagement campaigns built for recurring revenue.' },
     ],
-    testimonialIds: ['5', '34', '32', '22'],
+    deliverablesHeading: 'What You Get When You Hire Me',
+    deliverablesSubtext:
+      'Every deliverable is engineered for the DTC operator who needs both front-end CVR AND back-end AOV math \u2014 not one or the other.',
+    testimonialIds: ['34', '32', '22', '6', '2', '3'],
     portfolioItems: [],
+    midCta: {
+      headline: 'Ready for a DTC revenue stack that lifts AOV without lifting ad spend?',
+      subtext:
+        'Book a free strategy call. Send me your current product page, your post-purchase email sequence, and your back-end metrics (CVR, AOV, CLTV, refund rate) \u2014 I\'ll tell you honestly where the stack is leaking and whether I can write something that beats your current control.',
+    },
     faqs: [
       {
-        question: 'What e-commerce platforms do you write for?',
+        question: 'What does an e-commerce and DTC copywriter actually do?',
         answer:
-          'I write copy that works across all major platforms — Shopify, WooCommerce, BigCommerce, and custom builds. The platform does not change the persuasion principles; it only changes the technical implementation, which your development team handles.',
+          'A senior DTC copywriter writes the connected revenue stack for an e-commerce brand \u2014 ad copy, product page, abandoned cart, post-purchase email upsell, OTO stack, subscription retention, win-back \u2014 every touchpoint engineered to compound the AOV and CLTV the next step depends on. The Gluco 6 supplement subscription funnel I worked on did $40M end-to-end with the same DTC subscription dynamics. Across anonymized e-commerce back-end stacks, AOV lifts have landed in the 30\u2013100% range on existing traffic.',
       },
       {
-        question: 'Do you write email sequences for DTC brands?',
+        question: 'Are you taking new DTC clients?',
         answer:
-          'Yes. Email is often the highest-ROI channel for DTC brands. I write welcome sequences, abandoned cart recovery, post-purchase upsells, win-back campaigns, and promotional broadcasts. Each sequence is designed to drive revenue while building the brand relationship.',
+          'I take a selective number of new DTC engagements each quarter so the work stays at the level the proof requires. Most kickoffs happen within two weeks of the strategy call. If the project is a fit, I\'ll send a fixed-price proposal within 48 hours. If it isn\'t, I\'ll tell you on the call and point you toward someone in my network who\'s better suited.',
       },
       {
-        question: 'Can you help with our ad creative?',
+        question: 'How do you use AI to write DTC copy?',
         answer:
-          'Absolutely. I write ad copy for Facebook/Meta, Google, TikTok, and native platforms. For DTC brands, I focus on scroll-stopping hooks, product-specific angles, and creative frameworks that drive qualified traffic to your funnel.',
+          'I don\'t use generic ChatGPT prompting. I use Claude Code augmented by my own custom-built copywriting skills \u2014 proprietary skill files that encode 40 years of frameworks, DTC-vertical hook patterns, AOV-and-CLTV math evaluation criteria, and platform-policy fluency into a working AI workflow, with my 1,239-file Obsidian copywriting brain as the reference layer. The AI processes 50+ competitor DTC funnels and thousands of customer reviews while a manual pass reads three. I make every strategic and structural call. The AI carries the volume.',
       },
       {
-        question: 'How do you approach product page optimization?',
+        question: 'What does DTC copywriting cost?',
         answer:
-          'I treat every product page as a mini sales page. That means leading with benefits over features, using social proof strategically, addressing objections before they become barriers, and structuring the page to guide the visitor toward the buy button. The goal is not just to describe the product — it is to make it irresistible.',
+          'DTC engagements are fixed-price. A standalone product page or post-purchase email sequence starts at $5\u201310K. A full DTC revenue stack (product page + email sequences + OTO stack + ad copy + iteration roadmap) typically starts at $25K. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a back-end stack that lifts AOV by $40 on existing traffic at $1M ARR is $400K\u2013$1M of pure-margin revenue compounding monthly. The writer pays for himself in the first 60 days.',
       },
       {
-        question: 'Do you work with subscription-based DTC brands?',
+        question: 'How long does it take to write a DTC revenue stack?',
         answer:
-          'Yes. Subscription models have specific copywriting challenges — you need to sell the convenience and value of recurring delivery while overcoming the commitment objection. I write subscribe-and-save offers, retention sequences, and re-engagement campaigns specifically designed for subscription DTC brands.',
+          'A standalone product page or email sequence takes 2\u20133 weeks. A full DTC revenue stack (product page + email sequences + OTO stack + ad copy + iteration roadmap) runs 6\u20139 weeks. Audience and revenue-stack research always come first \u2014 that\'s where the AOV-and-CLTV-compounding lift lives. Rush timelines are possible, but I never shortcut the research.',
       },
       {
-        question: 'What metrics should I expect to improve?',
+        question: 'How do you handle product pages, email, and ad copy as one system?',
         answer:
-          'My DTC copy is designed to move three core metrics: conversion rate (turning more browsers into buyers), average order value (through upsells and cross-sells), and customer lifetime value (through retention and re-engagement sequences). The specific improvements depend on your current baseline, but the goal is always measurable revenue growth.',
+          'Most e-commerce copywriters write product descriptions OR email sequences OR ad copy. I write the connected revenue stack: every touchpoint engineered to compound the AOV and CLTV the next step depends on. Ad copy pre-qualifies the buyer who lands on the product page. Product page closes the buyer who triggers the post-purchase email. Post-purchase email sets up the OTO upsell that lifts AOV. OTO upsell sets up the subscription-retention sequence that lifts CLTV. The architecture is what compounds; isolated assets don\'t.',
+      },
+      {
+        question: 'What asset types do you write for DTC and e-commerce operators?',
+        answer:
+          'Front-end: product pages, pre-sell pages, lead-magnet bridges, ad copy (Meta, Google, TikTok, native). Back-end: abandoned-cart sequence, post-purchase email, OTO stack (order bump + OTO1 + OTO2 + downsell), subscription-retention sequence, win-back. Plus broadcast email and promotional sequences for the full list. Every asset is written to function as part of the connected revenue stack \u2014 not as a standalone deliverable.',
+      },
+      {
+        question: 'What happens after the strategy call?',
+        answer:
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is audience and revenue-stack research, then connected-stack architecture, then drafting, then iteration roadmap and one comprehensive revision round across the full stack. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
-    relatedServices: ['email-copywriter', 'ad-copywriter', 'landing-page-copywriter'],
+    relatedServices: ['email-copywriter', 'upsell-downsell-copywriter', 'landing-page-copywriter', 'ad-copywriter'],
     relatedVerticals: ['health-supplement-copywriter', 'saas-copywriter'],
   },
   {
