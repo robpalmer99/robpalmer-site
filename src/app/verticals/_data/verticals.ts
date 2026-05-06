@@ -241,98 +241,182 @@ export const verticals: Vertical[] = [
     title: 'Financial Copywriter',
     slug: 'financial-copywriter',
     shortDescription:
-      'Direct-response copy for financial services, investing, and trading. From Wall Street brands to indie financial publishers — copy that converts while meeting compliance standards.',
-    metaTitle: 'Financial Copywriter | DR Copy for Financial Services & Investing',
+      'Financial copy anchored on the 5.7% Monetari Fund opt-in-to-sale + Morgan Stanley and Citibank Fortune 500 lineage. VSLs, long-form promotions, and email sequences that convert the most skeptical audience in DR while clearing SEC, FINRA, and FTC review.',
+    metaTitle: 'Financial Copywriter | 5.7% Monetari + Morgan Stanley + Citibank',
     metaDescription:
-      'Expert financial copywriter with Fortune 500 experience (Morgan Stanley, Citibank). Direct-response copy for financial services, investing, and trading brands.',
-    headline: 'Financial Copywriter',
+      'Senior financial copywriter behind the 5.7% opt-in-to-sale Monetari Fund bridge + Fortune 500 lineage at Morgan Stanley and Citibank. SEC/FINRA-posture-aware VSLs, long-form promotions, and email sequences. Fixed-price engagements, two-week kickoffs.',
+    headline: 'Financial Copywriter Behind 5.7% Monetari + Morgan Stanley + Citibank',
     subheadline:
-      'Direct-response copy for financial services, investing, and trading brands.',
+      '"Rob is amazing. He got right to the crux of my copy problem." That\'s Andrew Stotz, CEO of Stotz Financial Research, on copy I shipped him. The Monetari Fund financial bridge I wrote delivered <strong>5.7% opt-in-to-sale</strong> on a regulated financial offer. Earlier in my career Morgan Stanley and Citibank handed me direct-response work. If your trading newsletter, fund LP, or financial advisory bleeds CTR because copy can\'t be aggressive enough \u2014 or it scales and lands in front of an SEC reviewer who doesn\'t love it \u2014 this is the kind of work I do.',
     heroImage: '/images/industries/financial-services.jpg',
     heroImageAlt: 'Financial markets and trading data',
+    heroStats: {
+      primary: { value: '5.7%', label: 'Monetari Fund Opt-in-to-Sale (Compliance-Aware Financial Bridge)' },
+      secondary: [
+        { value: '$27M', label: 'Stock-Investing VSL (Financial Publisher Long-Form)' },
+        { value: 'Fortune 500', label: 'Morgan Stanley + Citibank DR Lineage' },
+        { value: '40+', label: 'Years Direct Response' },
+      ],
+    },
+    credentialBar: {
+      heading: 'Financial copy written for',
+      items: [
+        'Monetari Fund (5.7% Opt-in-to-Sale)',
+        'Morgan Stanley / Fortune 500',
+        'Citibank / Fortune 500',
+        'Stotz Financial Research (Andrew Stotz)',
+        'Red Oak Capital (Francis Fanzilli)',
+        'Overages Blueprint (Bob Diamond)',
+      ],
+    },
     definition: {
       term: 'financial copywriting',
-      text: 'Financial copywriting is direct-response copy for financial services, investment products, trading platforms, and financial publishers. It demands deep market literacy, regulatory awareness (SEC, FINRA, FTC), and the ability to build trust with the most skeptical audience in direct response — people who have been burned by financial promises before.',
+      text: 'Financial copywriting is direct-response copy for financial publishers, fund operators, trading platforms, advisory services, and insurance products. It demands writing to the most skeptical audience in DR \u2014 prospects who have been burned by every financial promise \u2014 while every claim sits inside the disclosure standards your asset class actually has to meet. <a href="https://www.sec.gov" target="_blank" rel="noopener noreferrer">SEC</a>, <a href="https://www.finra.org" target="_blank" rel="noopener noreferrer">FINRA</a>, and <a href="https://www.ftc.gov" target="_blank" rel="noopener noreferrer">FTC</a> aren\'t suggestions; they\'re the gauntlet your copy clears before the prospect ever reads it.',
     },
     sections: [
       {
-        heading: 'Financial Copy That Converts and Complies',
+        heading: 'Why Most Financial Copy Either Reads Like a 10-K or Triggers a Reviewer',
         content:
-          'Financial copywriting demands a unique combination of persuasion skill and regulatory awareness. Having written for Fortune 500 financial brands including Morgan Stanley and Citibank, I understand how to craft compelling financial offers that respect compliance boundaries.\n\n' +
-          'Whether you are selling a trading newsletter, an investment course, a financial advisory service, or an insurance product, the copy needs to be aggressive enough to convert while careful enough to stay within <a href="https://www.sec.gov" target="_blank" rel="noopener noreferrer">SEC</a>, <a href="https://www.finra.org" target="_blank" rel="noopener noreferrer">FINRA</a>, and <a href="https://www.ftc.gov" target="_blank" rel="noopener noreferrer">FTC</a> regulations.',
+          'You\'re a financial publisher, fund operator, or trading-platform marketer. Your prospects are the most skeptical audience in direct response \u2014 they\'ve heard every claim, seen every chart pattern, and been burned by enough bad advice to develop strong defenses against marketing. And your copy has to clear three more gauntlets before it ever reaches them.\n\n' +
+          'SEC. FINRA. FTC. Plus your in-house compliance officer. Plus the platform reviewer at Meta or Google.\n\n' +
+          'Most financial copywriters can write to ONE of these constraints \u2014 the audience or the regulators. Not both. So one of two things happens.\n\n' +
+          'Door one: the copy is aggressive enough to convert \u2014 then a compliance officer rewrites half of it. Hedging language gets piled on. Performance claims get hedged into oblivion. The angle that beat your existing control just got softened into nothing. Six weeks of revisions. Now your launch window is gone, your CPM ticked up while the offer sat dormant, and the publisher you compete with shipped first.\n\n' +
+          'Door two: the copy clears compliance by going so safe it reads like a 10-K. CTR is half what your previous control did. Opt-in-to-sale falls below 1.5% on a list that should clear 4\u20135%. The renewal sequence converts at 3% when the publisher\'s category benchmark is 11%. You spent $80K on a long-form promotion that breaks even at best.\n\n' +
+          'Either way, every dormant week costs the publisher. A financial offer at $1,000 average ticket on a 10K\u201350K subscriber list leaves $200K\u2013$1M on the table per failed promotion. The compliance-and-conversion gap isn\'t a copy issue you can workshop. It\'s a discipline most copywriters never built because they never had to write inside SEC and FINRA constraints with a Fortune 500 reviewer holding the red pen.\n\n' +
+          'The structural problem isn\'t willpower or word choice. It\'s that most financial copywriters can write aggressively OR compliantly \u2014 not both at once. The skill the financial back-end actually rewards: writing copy that converts the most skeptical audience in DR. Every claim lives inside SEC, FINRA, and FTC territory by design \u2014 not bolted on by legal at the end.',
       },
       {
-        heading: 'Fortune 500 Financial Foundations',
+        heading: '5.7% Monetari, $27M Stock-Investing VSL, Fortune 500 Lineage \u2014 Recent Financial Wins',
         content:
-          'My financial copywriting experience spans the full spectrum — from institutional marketing for major Wall Street banks to direct-response campaigns for independent financial publishers.\n\n' +
-          'Writing for Morgan Stanley taught me how to communicate with sophisticated, high-net-worth audiences. Writing for Citibank taught me how to drive response at scale within tight compliance frameworks.\n\n' +
-          'This range gives me a unique perspective: I can write with the credibility and authority of a Wall Street brand while employing the conversion techniques that drive direct-response results.',
+          'For <strong>Monetari Fund</strong> \u2014 a regulated financial offer with full disclosure obligations \u2014 the financial bridge page I wrote delivered <strong>5.7% opt-in-to-sale</strong>. Compliance-aware copy on a regulated offer. The numbers landed inside what the offer\'s economics needed and the compliance review let through.\n\n' +
+          'Earlier in my career, <strong>Morgan Stanley</strong> and <strong>Citibank</strong> handed me direct-response work. Wall Street institutional marketing trained me on the discipline of writing inside tight compliance frameworks while still driving measurable response. The tactics adapt; the discipline doesn\'t.\n\n' +
+          'A long-form stock-investing VSL I architected for a financial publisher did <strong>$27 million</strong>. Long-form financial promotion \u2014 the Agora and Stansberry tradition \u2014 is the asset type where compliance discipline and persuasion craft compound the hardest.\n\n' +
+          'Andrew Stotz, CEO of Stotz Financial Research, put it on record: <em>"Rob is amazing. He got right to the crux of my copy problem."</em> Stotz runs research and copy in regulated financial verticals. The "crux" diagnosis is what financial-vertical copywriting actually requires \u2014 not surface fixes.\n\n' +
+          'Francis Fanzilli at Red Oak Capital reviewed a VSL script I shipped: <em>"The VSL script looks great overall and I like it. I think we\'re good."</em> Red Oak is a regulated investment partner \u2014 "I think we\'re good" from a partner-level reviewer at a regulated fund clears the bar that compliance officers never want to be the bottleneck on.\n\n' +
+          'If you have a financial offer running and the conversion isn\'t where the publisher economics need it to be, I work as a control-beater. Send me your current promotion, the back-end metrics (CTR, opt-in-to-sale, renewal rate), and your compliance-review notes. I\'ll tell you on the strategy call exactly where the conversion is leaking, where compliance is over-hedging, and whether I can write something that beats your control. SEC/FINRA-posture review on the call comes free.',
       },
       {
-        heading: 'Understanding the Financial Buyer',
+        heading: 'The Financial Copywriter Top DR Operators Hire',
         content:
-          'Financial prospects are the most skeptical audience in direct response. They have heard every claim, seen every chart pattern, and been burned by enough bad advice to develop strong defenses against marketing.\n\n' +
-          'My copy cuts through that skepticism by leading with credibility, demonstrating genuine expertise, and making offers that feel like opportunities rather than pitches.\n\n' +
-          'The key is building trust first — then presenting the offer as the logical next step for someone who has already decided to take action.',
+          'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as <strong>Copy Chief inside Copy Accelerator\'s CA Labs</strong>. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor, clocked <strong>300% ROAS</strong> on a funnel I wrote.\n\n' +
+          'Bob Diamond at Overages Blueprint \u2014 a financial-overages education business \u2014 reviewed my work and came back with: <em>"I really like the copy. Looks very good."</em>\n\n' +
+          'Mark Shay, who has seen more compliance-sensitive copy than most, put it on record: <em>"Rob is probably the most methodical copywriter I\'ve seen. This impresses me."</em>\n\n' +
+          'These are operators with their own money on the line \u2014 and in regulated financial verticals, that money also has the SEC, FINRA, and FTC watching. Financial publishers don\'t reward writers who can\'t draft inside compliance frameworks; the regulators clear them out faster than the marketplace does. DR operators at this level keep handing me financial work \u2014 and that\'s the proof that matters more than any individual stat.',
       },
       {
-        heading: 'Long-Form Financial Promotions',
+        heading: 'How I Architect Financial Copy That Beats Your Current Control',
         content:
-          'Long-form financial promotions — the kind published by Agora, Stansberry, and similar publishers — are one of my specialties. These 5,000 to 10,000+ word pieces require deep research, sophisticated narrative construction, and an ability to maintain reader engagement across a lengthy persuasion sequence.\n\n' +
-          'I bring the same research-driven, AI-enhanced process to financial promotions that I use across all my work, resulting in promotions that are both deeply researched and strategically compelling.',
+          'Every financial engagement moves through the same four phases. None are optional. This is the actual work \u2014 not a "process" page filling space.',
+        bullets: [
+          'Phase 1 \u2014 Compliance + audience research: I audit your current promotion against SEC and FINRA performance-claim limits, FTC substantiation requirements, and the disclosure standards your asset class actually has to meet. Then I mine investor forums, financial newsletters, and competitor promotions for the exact language your most-skeptical-buyer-in-DR uses about the pain. The compliant angle and the persuasive angle come out of the same layer \u2014 not separate ones. My AI workflow processes 50+ competitor financial promotions and thousands of investor-forum threads while a manual pass reads three.',
+          'Phase 2 \u2014 Trust architecture: financial buyers don\'t buy from confident pitches; they buy from credible authorities. I map every step of the promotion against the trust signals it needs to hit before the offer reveal \u2014 track record, mechanism credibility, regulatory framing, peer endorsement. Every piece is engineered to compound trust before the offer earns the click.',
+          'Phase 3 \u2014 SEC/FINRA-aware drafting: every performance claim sits inside SEC and FINRA territory by design. Every testimonial carries hedged framing built into the writing, not retrofitted by legal at the end. Every income illustration is presented inside the disclosure framework regulators actually expect. I draft VSL or long-form promotion, sales page, email sequence, and ad copy as a connected system \u2014 not as separate pieces handed to different writers (and different reviewers).',
+          'Phase 4 \u2014 Compliance-review map + revisions: a compliance-review map flagging anything your in-house reviewer or outside counsel should review, including alternative phrasings for any line that might generate friction. One comprehensive revision round across the full promotion is included.',
+        ],
       },
       {
-        heading: 'AI-Enhanced Financial Research',
+        heading: 'Asset Types I Write for Financial Publishers and Fund Operators',
         content:
-          'Financial copywriting requires more research than almost any other niche. I use AI tools to analyze market trends, track competitor positioning, identify the specific fears and desires driving financial buyers right now, and monitor the regulatory landscape before writing a single word.\n\n' +
-          'This compressed research process means your promotion launches faster — without sacrificing the depth of insight that makes financial copy convert.',
+          'Financial publishers and fund operators don\'t buy copy by category \u2014 they buy regulated promotion systems. Each asset has different mechanics, but they\'re engineered to work as one. The asset types below are the ones I ship most often for financial publishers, fund operators, and trading-platform marketers.',
+        bullets: [
+          '<a href="/services/vsl-copywriter">VSL Copywriter</a> \u2014 long-form video sales letters for financial publishers. The $27M stock-investing VSL anchors the financial VSL track.',
+          '<a href="/services/sales-letter-copywriter">Sales Letter Copywriter</a> \u2014 long-form Agora/Stansberry-tradition financial promotions. The asset where compliance discipline and persuasion craft compound the hardest.',
+          '<a href="/services/sales-page-copywriter">Sales Page Copywriter</a> \u2014 long-form sales pages for financial offers. Compliance-aware structure with SEC/FINRA-posture from the first draft.',
+          '<a href="/services/landing-page-copywriter">Landing Page Copywriter</a> \u2014 financial bridge pages and lead-magnet pages. Monetari Fund anchors the financial-bridge track at 5.7% opt-in-to-sale.',
+          '<a href="/services/email-copywriter">Email Copywriter</a> \u2014 financial-list launch sequences, renewal sequences, and educational nurture streams. Compliance posture extends across every touchpoint.',
+          '<a href="/services/conversion-rate-optimization">Conversion Rate Optimization</a> \u2014 financial-promotion audits + control-beater pitch. Compliance and conversion both go up; nothing burns down.',
+        ],
+      },
+    ],
+    caseStudies: [
+      {
+        name: 'Monetari Fund',
+        category: 'Compliance-Aware Financial Bridge',
+        metric: '5.7% Opt-in-to-Sale',
+        detail: 'Regulated financial offer. Compliance-aware bridge page that landed inside what the offer\'s economics needed and the compliance review let through.',
+      },
+      {
+        name: 'Stock-Investing VSL',
+        category: 'Financial Publisher Long-Form',
+        metric: '$27M',
+        detail: 'Long-form video sales letter for a financial publisher in the Agora/Stansberry tradition. Compliance discipline + persuasion craft compounded across the full promotion.',
+      },
+      {
+        name: 'Morgan Stanley + Citibank',
+        category: 'Fortune 500 Institutional DR',
+        metric: 'Wall Street Lineage',
+        detail: 'Direct-response work for two Fortune 500 financial institutions. Trained in writing inside tight compliance frameworks while still driving measurable response.',
+      },
+      {
+        name: 'Stotz Financial Research / Andrew Stotz',
+        category: 'Senior Copy Diagnosis',
+        metric: '"Got right to the crux"',
+        detail: '"Rob is amazing. He got right to the crux of my copy problem." \u2014 Andrew Stotz, CEO, Stotz Financial Research.',
       },
     ],
     deliverables: [
-      { title: 'Long-Form Promotions', description: 'Agora-style financial promotions that convert sophisticated buyers.' },
-      { title: 'VSL & TSL Scripts', description: 'Video and text sales letters for financial products and newsletters.' },
-      { title: 'Email Sequences', description: 'Launch and nurture sequences for financial subscriber lists.' },
-      { title: 'Landing Pages', description: 'High-converting pages for newsletter sign-ups and lead generation.' },
-      { title: 'Ad Copy', description: 'Compliant ad copy for Facebook, Google, and native platforms.' },
-      { title: 'Webinar Scripts', description: 'Presentation scripts for financial education and offer delivery.' },
+      { title: 'Long-Form Financial Promotions', description: 'Agora/Stansberry-tradition long-form promotions \u2014 5,000\u201310,000+ words with compliance posture from the first draft.' },
+      { title: 'Financial VSL & TSL Scripts', description: 'Long-form video and text sales letters for financial publishers, fund LPs, and trading-platform marketers. $27M stock-investing VSL anchors the track.' },
+      { title: 'Sales Pages + Bridges', description: 'Long-form financial sales pages and bridge pages. Monetari Fund anchors the bridge track at 5.7% opt-in-to-sale.' },
+      { title: 'Email Sequences', description: 'Launch, renewal, and educational nurture sequences for financial subscriber lists. Compliance posture across every touchpoint.' },
+      { title: 'Compliant Ad Copy', description: 'Cold-traffic Meta, Google, and native ad copy designed to clear platform review on regulated financial offers.' },
+      { title: 'Compliance-Review Map', description: 'Reviewer-flag annotations + alternative phrasings for any line that might generate friction with in-house reviewers or outside counsel.' },
     ],
-    testimonialIds: ['1', '11', '26', '14'],
+    deliverablesHeading: 'What You Get When You Hire Me',
+    deliverablesSubtext:
+      'Every deliverable is engineered for the financial publisher or fund operator who needs aggressive conversion AND clean compliance posture across SEC, FINRA, and FTC \u2014 not one or the other.',
+    testimonialIds: ['11', '36', '31', '6', '2', '3'],
     portfolioItems: [
       { title: 'Monetari Fund', category: 'Sales Page' },
     ],
+    midCta: {
+      headline: 'Ready for a financial promotion that beats your current control?',
+      subtext:
+        'Book a free strategy call. Send me your current VSL, sales page, or long-form promotion, the back-end metrics (CTR, opt-in-to-sale, renewal rate), and your compliance-review notes \u2014 I\'ll tell you honestly where conversion is leaking, where compliance is over-hedging, and whether I can write something that beats your control. SEC/FINRA-posture review on the call comes free.',
+    },
     faqs: [
       {
-        question: 'What types of financial products have you written for?',
+        question: 'What does a financial copywriter actually do?',
         answer:
-          'I have written for investment newsletters, trading education courses, financial advisory services, insurance products, credit services, and institutional financial brands including Morgan Stanley and Citibank. Each vertical requires different compliance awareness and persuasion angles.',
+          'A senior financial copywriter writes the regulated promotion system that converts the most skeptical audience in DR \u2014 long-form VSL or sales letter on the front end, sales page or bridge, email-list launch and renewal sequences, ad copy \u2014 every line drafted inside SEC, FINRA, and FTC territory by design, not retrofitted by legal at the end. The Monetari Fund financial bridge I wrote delivered 5.7% opt-in-to-sale. The stock-investing VSL did $27M. Same disciplined approach across publishers, fund LPs, advisory services, and trading platforms.',
       },
       {
-        question: 'Do you understand financial advertising compliance?',
+        question: 'Are you taking new financial clients?',
         answer:
-          'Yes. While I always recommend legal review, I have extensive experience writing financial copy that meets SEC, FINRA, and FTC guidelines. I understand required disclaimers, the boundaries of performance claims, and how to write persuasively within regulatory constraints.',
+          'I take a selective number of new financial engagements each quarter so the work stays at the level the proof and the compliance posture require. Most kickoffs happen within two weeks of the strategy call. If the project is a fit, I\'ll send a fixed-price proposal within 48 hours. If it isn\'t, I\'ll tell you on the call and point you toward someone in my network who\'s better suited.',
       },
       {
-        question: 'Can you write long-form financial promotions?',
+        question: 'How do you use AI to write financial copy?',
         answer:
-          'Absolutely. Long-form financial promotions — the kind published by Agora, Stansberry, and similar publishers — are one of my specialties. These require deep research, sophisticated narrative construction, and an ability to maintain reader engagement across 5,000-10,000+ words.',
+          'I don\'t use generic ChatGPT prompting. I use Claude Code augmented by my own custom-built copywriting skills \u2014 proprietary skill files that encode 40 years of frameworks, financial-publisher hook patterns, SEC/FINRA disclosure language, and evaluation criteria into a working AI workflow, with my 1,239-file Obsidian copywriting brain as the reference layer. The AI processes 50+ competitor financial promotions and thousands of investor-forum threads while a manual pass reads three. I make every strategic and structural call. The AI carries the volume.',
       },
       {
-        question: 'How do you handle income and performance claims in financial copy?',
+        question: 'What does financial copywriting cost?',
         answer:
-          'I use required disclaimers, avoid guaranteed returns, and focus on the educational value and strategic insights of the product rather than specific income promises. I build the case through logic, track record, and social proof rather than unsubstantiated performance claims.',
+          'Financial engagements are fixed-price. A standalone financial VSL or sales page starts at $10K. A full long-form Agora-style promotion starts at $25K. A complete financial promotion system (VSL or sales letter + bridge + email sequences + ad copy + compliance-review map) typically runs higher. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a financial offer at $1,000 average ticket on a 10K\u201350K list leaves $200K\u2013$1M on the table per failed promotion. A control-beater that lifts opt-in-to-sale from 1.5% to 4% pays for the writer in the first launch.',
       },
       {
-        question: 'What is your experience with Fortune 500 financial brands?',
+        question: 'How long does it take to write a financial promotion?',
         answer:
-          'I have written direct-response campaigns for Morgan Stanley and Citibank, among other major financial institutions. These engagements taught me how to write with institutional credibility while still driving measurable response — a combination that few copywriters can deliver.',
+          'A financial VSL or sales page takes 3\u20134 weeks from kickoff to final draft \u2014 longer than a generic VSL because compliance research is a phase, not a sentence. A full long-form Agora-style promotion runs 6\u20139 weeks. A complete financial promotion system (VSL + bridge + email sequences + ad copy + compliance-review map) runs 8\u201312 weeks. The compliance-and-audience-research phase always comes first. That\'s where the conversion-and-regulator-clearance lift lives. Rush timelines are possible, but I never shortcut the research.',
       },
       {
-        question: 'Do you write for cryptocurrency and trading platforms?',
+        question: 'How do you handle SEC, FINRA, and FTC compliance in financial copy?',
         answer:
-          'Yes, I write for crypto, forex, and trading platforms. These niches have especially strict compliance requirements and skeptical audiences, which makes strong direct-response fundamentals even more critical. I focus on education-led angles that build trust before presenting the offer.',
+          'I\'m not a lawyer and I always recommend legal review before publishing. But I\'ve been writing inside SEC and FINRA performance-claim limits, FTC substantiation requirements, and the disclosure standards major asset classes actually have to meet \u2014 plus the in-house compliance posture Fortune 500 financial brands like Morgan Stanley and Citibank operate under \u2014 long enough that the discipline is in the writing layer, not the review layer. Every performance claim lives inside SEC and FINRA territory by design. Every testimonial carries hedged framing built into the writing. Income illustrations sit inside the disclosure framework regulators actually expect. I provide a compliance-review map flagging anything your in-house reviewer or outside counsel should review.',
+      },
+      {
+        question: 'What asset types do you write for financial publishers and fund operators?',
+        answer:
+          'Front-end: long-form Agora/Stansberry-tradition promotions, financial VSLs ($27M stock-investing VSL anchors the track), TSLs, long-form sales pages, financial bridge and lead-magnet pages (Monetari Fund anchors at 5.7% opt-in-to-sale). Email: launch sequences, renewal sequences, educational nurture streams. Ad copy: SEC/FINRA-posture-aware Meta, Google, and native suites. Plus a compliance-review map that goes with every promotion. Every asset is written to function as part of the connected promotion system \u2014 not as a standalone deliverable.',
+      },
+      {
+        question: 'What happens after the strategy call?',
+        answer:
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is compliance and audience research, then trust architecture, then SEC/FINRA-aware drafting, then a compliance-review map and one comprehensive revision round across the full promotion. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
-    relatedServices: ['sales-letter-copywriter', 'email-copywriter', 'landing-page-copywriter'],
+    relatedServices: ['vsl-copywriter', 'sales-letter-copywriter', 'sales-page-copywriter', 'email-copywriter'],
     relatedVerticals: ['saas-copywriter', 'info-product-copywriter'],
   },
   {
