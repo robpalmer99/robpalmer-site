@@ -58,21 +58,21 @@ export const services: Service[] = [
     title: 'VSL Copywriter',
     slug: 'vsl-copywriter',
     shortDescription:
-      'High-converting video sales letters that turn cold traffic into customers. AI-enhanced research, battle-tested persuasion frameworks.',
+      'Video sales letters that hold cold traffic through the close. Recent client funnel: 8% on cold. Past VSLs at $30M, $40M, and $27M.',
     metaTitle: 'VSL Copywriter | Video Sales Letter Expert',
     metaDescription:
-      'Hire a veteran VSL copywriter with $523M+ in tracked results. Rob Palmer writes high-converting video sales letters for ClickBank, DTC, and info product brands.',
-    headline: 'The VSL Copywriter Behind $523M+ in Results',
+      'Senior VSL copywriter for cold-traffic offers. Recent client funnel converting at 8% on cold; past VSLs at $30M, $40M, and $27M. Fixed-price engagements, two-week kickoffs.',
+    headline: 'VSL Copywriter — Cold Traffic Converting at 8%',
     subheadline:
-      'I write video sales letters that have generated $30M, $40M, and $27M for single offers. If your VSL needs to convert cold traffic into buyers, let\u2019s talk.',
+      '"The funnel you wrote is doing great. Sales page converting at 8% on cold traffic." That\'s a recent client report. Three earlier VSLs of mine did $30M, $40M, and $27M on single offers. If your VSL bleeds attention before the close, this is the kind of work I do.',
     heroImage: '/images/services/vsl-copywriter.jpg',
     heroImageAlt: 'Video production and storytelling for VSL copywriting',
     heroStats: {
-      primary: { value: '$523M+', label: 'Tracked Client Results' },
+      primary: { value: '8%', label: 'Cold-Traffic Conversion (Recent Client VSL)' },
       secondary: [
-        { value: '40+', label: 'Years Direct Response' },
-        { value: '#1', label: 'ClickBank Offers Written' },
-        { value: '4%', label: 'Peak VSL Conversion Rate' },
+        { value: '$30M', label: 'Mobile Profits VSL (#1 ClickBank)' },
+        { value: '$40M', label: 'Gluco 6 Supplement VSL' },
+        { value: '$27M', label: 'Stock Investing VSL' },
       ],
     },
     credentialBar: {
@@ -87,54 +87,54 @@ export const services: Service[] = [
     },
     sections: [
       {
-        heading: 'Why Most VSLs Fail \u2014 And Burn Through Your Ad Budget',
+        heading: 'Why Most VSLs Bleed Ad Spend Long Before the Close',
         content:
-          'You launch a VSL. You send traffic. And then you watch the heatmap: <strong>68% of viewers gone before the 90-second mark.</strong> The ones who stay drift off somewhere in the middle. Almost nobody reaches the close. Meanwhile, the ad spend keeps draining.\n\n' +
-          'This is what happens when a VSL is written by someone who knows how to write \u2014 but does not know how to <em>sell on video</em>. A VSL is not a blog post read over slides. It is a 15-to-45-minute persuasion sequence that must hold a cold, skeptical stranger\'s attention and compel them to pull out their credit card.\n\n' +
-          'That requires a completely different skill set: strategic pacing, pattern interrupts, emotional escalation, and knowing exactly when to transition from story to offer. Most VSL copywriters get one or two of those right. The ones who get all of them right are the ones behind the offers that scale.',
+          'You launch a VSL. You send traffic. Then you watch the heatmap: most viewers gone before the 90-second mark, the rest drifting off somewhere in the middle, almost nobody reaching the order button. Meanwhile, the spend keeps draining. $500/day, $2,000/day, $5,000/day in spend \u2014 lit on fire because the script can\'t hold the viewer to minute 3.\n\n' +
+          'Here\'s the structural reason that keeps happening. A VSL isn\'t a blog post read over slides. It\'s a 15-to-45-minute persuasion sequence that has to hold a cold, skeptical stranger through every minute and walk them to a credit card. That demands strategic pacing, pattern interrupts, emotional escalation, and knowing exactly when to pivot from story to offer.\n\n' +
+          'Most VSL copywriters carry one or two of those instincts. The ones whose VSLs keep scaling after the novelty wears off have all four \u2014 plus the AI leverage to generate and test hook variations at speed, plus a working swipe library that already knows what\'s converting in your vertical right now.',
       },
       {
-        heading: 'What Separates a $30M VSL From One That Dies in Testing',
+        heading: 'What 8% on Cold Traffic Actually Looks Like',
         content:
-          'When I wrote the VSL for <strong>Mobile Profits</strong>, it became the <strong>#1 offer on ClickBank</strong> and generated over <strong>$30 million</strong> \u2014 converting cold traffic at up to 4%.\n\n' +
-          'That did not happen because of a clever hook or a fancy script format. It happened because of what came <em>before</em> the writing: deep research into the audience\'s emotional landscape, a unique mechanism that felt new and intuitive, and a persuasion architecture mapped to exactly where those prospects sat on the awareness scale. That is the difference between a VSL that scales and one that bleeds money in testing.\n\n' +
-          'After 40+ years writing direct response and studying the frameworks behind the biggest winners \u2014 Schwartz\'s awareness levels, Georgi\'s RMBC method, Kell\'s VSL flow patterns \u2014 I can see the structural problems in a VSL the way a mechanic hears a bad engine. The pattern recognition alone is worth more than a clever turn of phrase.',
+          'Recent client report, verbatim: <em>"The funnel you wrote is doing great. Sales page converting at 8% on cold traffic."</em> That\'s Conor Reynolds, an online marketer running paid traffic to a VSL-plus-sales-page funnel I wrote for him.\n\n' +
+          '8% on cold isn\'t a lucky split test. It\'s the predictable outcome of doing the strategic work upfront \u2014 finding the audience\'s actual buying language (not the language they think they use), building a unique mechanism that reframes what the offer is solving, and mapping the sequence to where the prospect sits on Schwartz\'s awareness scale.\n\n' +
+          'When a VSL is architected that way, ROAS follows. Ben Palmer (a ClickBank Platinum vendor) clocked <strong>300% ROAS</strong> on a campaign I wrote for him. Stefan Georgi \u2014 the copywriter behind over $1B in tracked sales \u2014 hired me as Copy Chief inside Copy Accelerator\'s CA Labs. Justin Goff publicly credited me with stepping up and knocking it out of the park. These are operators with their own money on the line.',
       },
       {
-        heading: 'The VSL Copy Chief That Top Copywriters Hire',
+        heading: 'The VSLs Behind $30M, $40M, and $27M Offers',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park. These are not people who hand out compliments casually.\n\n' +
-          'They hired me and endorsed me because they have seen my work perform. When the best copywriters in the industry need someone to write or review VSLs, they call me. That is the level of VSL copywriting you get access to when we work together.',
+          'Mobile Profits \u2014 the biz-op VSL I wrote that became the <strong>#1 offer on ClickBank</strong> \u2014 generated over <strong>$30 million</strong> and converted up to 4% on cold traffic. The Gluco 6 blood-sugar VSL did <strong>$40 million</strong>. A stock-investing VSL I architected did <strong>$27 million</strong>.\n\n' +
+          'Those numbers don\'t come from a clever turn of phrase. They come from reading a market, finding the angle nobody else has spotted, and building a script that earns every minute of attention it asks for. After 40+ years writing direct response \u2014 internalising the lineage from Schwartz, Halbert, and Hopkins through Georgi\'s RMBC method and Kell\'s VSL flow patterns \u2014 the structural problems in a script are visible to me the way a bad engine is audible to a mechanic. The diagnostic alone is worth more than another draft.',
       },
       {
-        heading: 'How I Write a VSL That Converts Cold Traffic',
+        heading: 'Already Have a VSL? I Work as a Control Beater',
         content:
-          'Every VSL I write follows a process refined over four decades of direct-response copywriting. But unlike generic process descriptions you have seen on every other copywriter\'s site, each phase here is tied to a specific conversion outcome \u2014 not just an activity.',
+          'If you have a VSL running and the numbers aren\'t where you need them, the answer usually isn\'t "write another version." It\'s to diagnose what\'s killing the retention curve, then engineer the rewrite to fix that specifically.\n\n' +
+          'Most operators arrive here after trying the wrong fixes \u2014 a junior writer who delivered a draft that read well and sold worse, an AI tool that produced something polished and generic, an agency that staffed it to whoever was free. None of those approaches is wrong because the people are bad. They\'re wrong because the structure was missing one of the three brains a VSL needs to convert in 2026.\n\n' +
+          'Send me your current script and the back-end numbers. I\'ll tell you on the strategy call exactly where it\'s losing the prospect \u2014 and whether I think I can beat it.',
+      },
+      {
+        heading: 'How I Architect a VSL That Holds Attention Through the Close',
+        content:
+          'Every VSL I write moves through the same four phases. None are optional. This is the actual work \u2014 not a "process" page filling space.',
         bullets: [
-          'Phase 1: Deep audience research \u2014 I mine forums, reviews, competitor funnels, and customer feedback to find the exact language your prospects use to describe their pain. This is where the hook comes from, not from brainstorming sessions.',
-          'Phase 2: Mechanism and architecture \u2014 I build the unique mechanism that makes your offer feel genuinely different, then map the persuasion sequence that carries viewers from hook to close without losing momentum.',
-          'Phase 3: Writing \u2014 every sentence is stress-tested against one question: would this keep a cold, skeptical prospect watching? If not, it gets cut or rewritten.',
-          'Phase 4: Revision and optimization \u2014 I test hook variations, tighten the close, and ensure the script is production-ready with slide notation and timing cues.',
+          'Phase 1 \u2014 Research: I mine forums, reviews, competitor scripts, and customer-support transcripts to find the exact words your prospects use to describe the pain. The hook comes out of this layer, not out of a brainstorm. My AI workflow runs through 50+ competitor VSLs in the time a manual pass takes to read three.',
+          'Phase 2 \u2014 Architecture: I build the unique mechanism, lock the awareness-stage entry point, and map the sequence that carries viewers from hook to close without losing momentum at minute 6, minute 12, or the price reveal.',
+          'Phase 3 \u2014 Writing: every sentence stress-tested against one question \u2014 would this keep a cold, skeptical viewer watching? If not, it gets cut or rewritten. Three to four hook variations and two close variations are written from the start, not bolted on later.',
+          'Phase 4 \u2014 Production handoff: full slide-by-slide notation, timing cues, on-screen text callouts. Your editor doesn\'t have to interpret anything. The script ships ready to record.',
         ],
       },
       {
-        heading: 'AI-Powered Research. Human-Crafted Persuasion.',
+        heading: 'VSLs Across Health, Finance, Biz-Op, and DTC',
         content:
-          'While your competitors\' copywriters are doing manual research, my AI-enhanced process analyzes <strong>50+ competitor VSLs</strong>, mines thousands of customer reviews, and tests hook variations \u2014 all before I write a single word. You get the strategic depth of a week-long research sprint compressed into 48 hours.\n\n' +
-          'But here is the thing AI cannot do: it cannot feel what your prospect feels. It cannot build the emotional escalation that makes someone lean forward at minute 12 instead of clicking away. It cannot architect a close that overcomes the final objection your prospect did not even know they had.\n\n' +
-          'That comes from 40+ years of direct-response experience and a pattern library built across hundreds of VSL projects. AI gives me speed and data. Experience gives me judgment. You get both.',
-      },
-      {
-        heading: 'VSL Copywriting for Health, Finance, DTC, and Beyond',
-        content:
-          'A VSL for a joint supplement requires a completely different approach than a VSL for a stock trading newsletter or a DTC product launch. Each industry has unique compliance requirements, buyer psychology, and proven persuasion angles. I have written winning VSLs across all of them.',
+          'A VSL for a joint supplement is built differently than a VSL for a stock newsletter or a DTC launch. The compliance constraints differ, the buyer psychology differs, the regulators reading along differ. I\'ve shipped winning VSLs across every major DR vertical.',
         bullets: [
-          'Health and supplement brands \u2014 including a $40M blood sugar VSL (Gluco 6)',
-          'Financial publishers \u2014 including a $27M stock investing VSL',
-          'Business opportunity offers \u2014 including the $30M Mobile Profits VSL (#1 on ClickBank)',
-          'E-commerce and DTC companies',
+          '$40M generated \u2014 Gluco 6 blood-sugar supplement VSL',
+          '$30M generated \u2014 Mobile Profits biz-op VSL (#1 on ClickBank)',
+          '$27M generated \u2014 stock-investing newsletter VSL (compliance-aware long-form)',
+          'E-commerce and DTC product launches',
           'ClickBank vendors and affiliates',
-          'Info product and coaching businesses',
+          'Info products, coaching, and high-ticket offers',
         ],
       },
     ],
@@ -193,47 +193,57 @@ export const services: Service[] = [
     deliverablesHeading: 'What You Get When You Hire Me',
     deliverablesSubtext:
       'Every deliverable is engineered to maximize your front-end conversion rate \u2014 not just fill a Google Doc.',
-    testimonialIds: ['4', '5', '2', '6'],
+    testimonialIds: ['5', '4', '2', '3', '6'],
     portfolioItems: [
       { title: 'Supplement VSL \u2014 Cold Traffic', category: 'VSL' },
       { title: 'Financial Newsletter VSL', category: 'VSL' },
       { title: 'DTC Product Launch VSL', category: 'VSL' },
     ],
     midCta: {
-      headline: 'Ready to write a VSL that actually converts?',
+      headline: 'Ready to ship a VSL that converts cold traffic?',
       subtext:
-        'Book a free strategy call. I\u2019ll tell you honestly whether I can beat what you\u2019re running now.',
+        'Book a free strategy call. I\'ll tell you honestly whether I can beat what you\'re running now \u2014 and what it would cost to find out.',
     },
     faqs: [
       {
         question: 'What is a VSL and why do I need a specialist VSL copywriter?',
         answer:
-          'A VSL (Video Sales Letter) is a long-form video presentation \u2014 typically 15 to 45 minutes \u2014 designed to sell a product or service directly to cold traffic. It follows a structured direct-response format: hook, story, mechanism, proof, offer, close. You need a specialist VSL copywriter because the format demands skills in pacing, retention mechanics, and persuasion architecture that general copywriters simply do not have. A blog writer or brand copywriter will give you a script that sounds nice. A VSL specialist will give you a script that converts.',
+          'A VSL (Video Sales Letter) is a long-form video presentation \u2014 typically 15 to 45 minutes \u2014 designed to sell directly to cold traffic. It runs a structured direct-response sequence: hook, story, mechanism, proof stack, offer, close. You need a specialist because the format demands pacing, retention mechanics, and persuasion architecture that general copywriters don\'t carry in their heads. A brand writer gives you a script that sounds nice. A VSL specialist gives you one that earns the next 30 seconds of attention, every 30 seconds, until the order button.',
+      },
+      {
+        question: 'Are you taking new VSL clients?',
+        answer:
+          'I take a selective number of new VSL engagements each quarter so the work stays at the level the proof requires. Most kickoffs happen within two weeks of the strategy call. If the project is a fit, I\'ll send a fixed-price proposal within 48 hours. If it isn\'t, I\'ll tell you on the call and point you toward someone in my network who\'s better suited.',
+      },
+      {
+        question: 'How do you use AI to write VSLs?',
+        answer:
+          'I don\'t use generic ChatGPT prompting. I use Claude Code augmented by my own custom-built copywriting skills \u2014 proprietary skill files that encode 40 years of frameworks, hook formulas, and evaluation criteria into a working AI workflow, with my 1,239-file Obsidian copywriting brain as the reference layer. I make every strategic and structural call. The AI carries the volume.',
+      },
+      {
+        question: 'What does a VSL cost?',
+        answer:
+          'VSL engagements are fixed-price. The number depends on length, offer complexity, and research scope \u2014 most VSL projects start at $10K. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a VSL converting at 2% instead of 0.5% on the same traffic doesn\'t pay for itself \u2014 it changes the economics of the offer.',
       },
       {
         question: 'How long does it take to write a VSL?',
         answer:
-          'A typical VSL project takes 2\u20134 weeks from briefing to final draft. That includes deep audience research, competitive analysis, mechanism development, strategic architecture, scripting, and one comprehensive revision round. Rush projects can be accommodated, but I never shortcut the research phase \u2014 that is where the conversion rate lives. Skipping research to save a few days is how you end up with a VSL that wastes months of ad spend.',
-      },
-      {
-        question: 'What industries do you write VSLs for?',
-        answer:
-          'I have written winning VSLs for health supplements (including the $40M Gluco 6 VSL), financial publishers ($27M stock investing VSL), business opportunity offers ($30M Mobile Profits \u2014 #1 on ClickBank), e-commerce and DTC brands, ClickBank vendors, and info product businesses. Each niche has different compliance requirements and buyer psychology, and I bring proven frameworks to all of them.',
+          'A typical VSL takes 2\u20134 weeks from kickoff to final draft. That includes audience research, competitive teardown, mechanism development, strategic architecture, scripting, and one comprehensive revision round. Rush timelines are possible, but I never shortcut the research phase \u2014 that\'s where the conversion rate lives. Skipping research to save a few days is how a VSL ends up bleeding ad spend for months.',
       },
       {
         question: 'How long should a VSL be?',
         answer:
-          'It depends on your offer price and traffic temperature. Short-form VSLs (5\u201315 minutes) work for lower-priced impulse purchases and lead generation. Long-form VSLs (20\u201345 minutes) are typically needed for higher-ticket offers where the prospect needs more proof and persuasion. I recommend the right length based on your specific offer, audience, and funnel \u2014 then write every second to earn its place.',
+          'Length is dictated by price point and traffic temperature. Short-form VSLs (5\u201315 minutes) work for lower-priced impulse buys and lead generation. Long-form VSLs (20\u201345 minutes) are usually required for higher-ticket offers where the prospect needs more proof and more story before pulling out a card. I\'ll recommend the right length once I\'ve seen the offer \u2014 then write every second to earn its place.',
       },
       {
-        question: 'Do you use AI to write VSL scripts?',
+        question: 'What industries do you write VSLs for?',
         answer:
-          'I use AI to research faster and deeper \u2014 analyzing competitor scripts at scale, mining thousands of customer reviews, and testing hook angles before writing. But every VSL is strategically planned and written by me. AI gives me the data advantage. Four decades of direct-response experience give me the judgment to know what to do with it. That combination is why my VSLs outperform.',
+          'Health and supplement (including the $40M Gluco 6 VSL), financial publishers ($27M stock-investing VSL), business opportunity offers ($30M Mobile Profits \u2014 #1 on ClickBank), e-commerce and DTC, ClickBank vendors, info products, and coaching. Each vertical has its own compliance posture and buyer psychology. The frameworks adapt accordingly.',
       },
       {
-        question: 'What is your VSL copywriting pricing?',
+        question: 'What happens after the strategy call?',
         answer:
-          'VSL copywriting is project-based, and pricing depends on length, offer complexity, and research scope. We discuss specifics on a strategy call. But here is how I think about it: a VSL that converts at 2% instead of 0.5% on the same traffic does not just pay for itself \u2014 it changes the economics of your entire business. The question is not what a VSL costs. It is what a bad VSL costs you every day it is running.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and strategic diagnostic, then architecture, then the script, then one comprehensive revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['sales-page-copywriter', 'sales-funnel-copywriter'],
