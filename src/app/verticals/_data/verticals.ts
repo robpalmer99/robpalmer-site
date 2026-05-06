@@ -55,75 +55,130 @@ export interface Vertical {
 
 export const verticals: Vertical[] = [
   {
-    title: 'Health & Supplement Copywriter',
+    title: 'Health Supplement Copywriter',
     slug: 'health-supplement-copywriter',
     shortDescription:
-      'Compliance-aware direct-response copy for supplements, nutraceuticals, and health products. VSLs, TSLs, and funnels that convert while staying within regulatory guidelines.',
-    metaTitle: 'Health & Supplement Copywriter | Compliant DR Copy That Converts',
+      'Health supplement copy anchored on the $40M Gluco 6 funnel. FDA-fluent VSLs, sales pages, and back-end stacks that convert cold traffic and clear platform review on the first pass.',
+    metaTitle: 'Health Supplement Copywriter | $40M Gluco 6 + FDA Fluent',
     metaDescription:
-      'Hire a health supplement copywriter with $523M+ in tracked results. Compliance-aware VSLs, sales pages, and funnels for supplement and nutraceutical brands.',
-    headline: 'Health & Supplement Copywriter',
+      'Senior health supplement copywriter behind the $40M Gluco 6 supplement funnel. FDA structure/function-fluent VSLs, sales pages, and upsell stacks for supplement brands. Fixed-price engagements, two-week kickoffs.',
+    headline: 'Health Supplement Copywriter Behind the $40M Gluco 6 Funnel',
     subheadline:
-      'High-converting copy for supplements and health products — without crossing compliance lines.',
+      '"Rob is probably the most methodical copywriter I\'ve seen. This impresses me." That\'s Mark Shay on a piece of supplement copy I shipped him. The Gluco 6 supplement funnel I worked on did <strong>$40 million</strong> end-to-end. If your supplement offer converts in testing but the platform reviewer kills it before it scales — or it scales and your AOV stalls $50 below where it needs to be — this is the kind of work I do.',
     heroImage: '/images/industries/health-supplements.jpg',
     heroImageAlt: 'Health supplements and natural products',
+    heroStats: {
+      primary: { value: '$40M', label: 'Gluco 6 Supplement Funnel (End-to-End)' },
+      secondary: [
+        { value: '30–100%', label: 'AOV Lift on Supplement Upsell Stacks' },
+        { value: '300%', label: 'ROAS on a ClickBank Health Funnel (Ben Palmer)' },
+        { value: '40+', label: 'Years Direct Response' },
+      ],
+    },
+    credentialBar: {
+      heading: 'Supplement copy written for',
+      items: [
+        'Gluco 6 Supplement Funnel ($40M End-to-End)',
+        'Ben Palmer / ClickBank Platinum Vendors',
+        'Konscious Keto (Ryan Kowalski)',
+        'Copy Accelerator / CA Labs (Stefan Georgi as Copy Chief)',
+        'Mark Shay / Supplement Marketers',
+        'FDA / FTC Structure-Function Fluent',
+      ],
+    },
     definition: {
-      term: 'health & supplement copywriting',
-      text: 'Health and supplement copywriting is direct-response copy written specifically for nutritional supplements, nutraceuticals, and health products. It requires balancing aggressive conversion tactics with <a href="https://www.ftc.gov/business-guidance/advertising-and-marketing/health-claims" target="_blank" rel="noopener noreferrer">FTC</a> and <a href="https://www.fda.gov/food/dietary-supplements" target="_blank" rel="noopener noreferrer">FDA</a> compliance — writing claims that are persuasive enough to sell but careful enough to pass regulatory review and advertising platform policies.',
+      term: 'health supplement copywriting',
+      text: 'Health supplement copywriting is direct-response copy written specifically for nutritional supplements, nutraceuticals, and health products. It demands balancing aggressive cold-traffic conversion against <a href="https://www.fda.gov/food/dietary-supplements" target="_blank" rel="noopener noreferrer">FDA</a> structure/function-claim limits, <a href="https://www.ftc.gov/business-guidance/advertising-and-marketing/health-claims" target="_blank" rel="noopener noreferrer">FTC</a> substantiation rules, and ad-platform policy reviewers — writing copy persuasive enough to scale but careful enough to clear review on Meta, Google, YouTube, and ClickBank.',
     },
     sections: [
       {
-        heading: 'The Health Supplement Copy Challenge',
+        heading: 'Why Most Supplement Funnels Die Twice',
         content:
-          'Health and supplement copywriting is a high-wire act. You need copy aggressive enough to convert cold traffic, yet compliant enough to stay on the right side of the FTC, FDA, and advertising platforms.\n\n' +
-          'Most copywriters either write copy that is too tame to convert or too aggressive to survive review. I write copy that does both — converts at scale while staying within regulatory guidelines.\n\n' +
-          'That balance is what separates profitable supplement brands from the ones that burn through ad spend with nothing to show for it.',
+          'You\'re a supplement marketer. You have an offer, an ingredient stack, an angle. Your team writes the VSL. Then one of two things happens.\n\n' +
+          'Door one: the copy is aggressive enough to convert in private testing — then it doesn\'t survive review. Meta flags the hook. ClickBank kicks back the sales page. The FDA disclaimer language is wrong, the testimonials need stronger hedging, and the angle that beat your current control just got rejected. Two weeks of rewrites. Three. Now your launch window is gone.\n\n' +
+          'Door two: the copy clears review by going so safe it doesn\'t convert. CPM is fine. Click-through is fine. But cold-traffic CVR is 0.6% on a funnel that needs 1.5% to break even, and your AOV is sitting at $97 when it should be $147 because the back-end upsell stack was bolted on after the front-end shipped.\n\n' +
+          'Either way, every dormant day costs you. At $5K/day in ad spend on a funnel that\'s 0.5 points off where it needs to be, that\'s $25K/week burning while the revenue compounds for the brand that figured the math out two months earlier.\n\n' +
+          'The structural problem isn\'t willpower or word choice. It\'s that most supplement copywriters can write aggressively OR compliantly — not both at once. The skill the back-end actually rewards is writing copy where every claim lives inside structure/function-claim territory, every testimonial is hedged at the writing layer (not bolted on by legal at the end), and every step of the funnel — VSL, sales page, order bump, OTO1, OTO2, downsell, post-purchase email — is engineered to lift AOV from day one.',
       },
       {
-        heading: 'Deep Experience Across Health Verticals',
+        heading: '$40M Gluco 6, $30M+ Mobile Profits Health-Adjacent — Recent Supplement Wins',
         content:
-          'Each category has its own compliance boundaries, buyer psychology, and proven angles. I understand the specific language patterns that resonate with health-conscious buyers and the funnel architectures that maximize average order value in this space. My health supplement VSLs and sales pages have generated millions in revenue for both ClickBank vendors and independent DTC brands.',
+          'The <strong>Gluco 6 supplement funnel</strong> I worked on did <strong>$40 million</strong> end-to-end. Blood-sugar mechanism, cold-traffic VSL, subscription-priced front end, multi-step back-end stack with the upsell sequence I architected. The compliance posture was tight from the first draft \u2014 not retrofitted.\n\n' +
+          'The <strong>Mobile Profits VSL</strong> I wrote \u2014 the offer that became <strong>#1 on ClickBank</strong> and did over <strong>$30 million</strong> \u2014 ran in a biz-op-adjacent vertical with comparable platform-review pressure. Up to 4% conversion on cold traffic. The ad copy feeding it cleared Meta\'s automated review every time.\n\n' +
+          'For Ben Palmer, a ClickBank Platinum vendor, the email-driven funnel I wrote drove <strong>300% Return on Ad Spend</strong>. He put it on record: <em>"Rob is a killer copywriter."</em>\n\n' +
+          'And Mark Shay \u2014 a supplement marketer who has seen more copy than most \u2014 put it on record: <em>"Rob is probably the most methodical copywriter I\'ve seen. This impresses me."</em> Methodical is the operative word. In supplements, compliance isn\'t a feature you add at the end; it\'s a discipline embedded in every line of copy from the first sentence.\n\n' +
+          'If you have a supplement funnel running and the numbers aren\'t where they need to be, I work as a control-beater. Send me your current VSL or sales page, your ad accounts, and your back-end metrics. I\'ll tell you on the strategy call exactly where compliance is leaking conversion, where AOV is leaking margin, and whether I can write something that beats your control. Compliance review on the call comes free.',
+      },
+      {
+        heading: 'The Supplement Copywriter Top DR Operators Hire',
+        content:
+          'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as <strong>Copy Chief inside Copy Accelerator\'s CA Labs</strong>. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor, clocked <strong>300% ROAS</strong> on a funnel I wrote.\n\n' +
+          'Ryan Kowalski at Konscious Keto looked at my copy and said: <em>"That\'s solid copy. I have a feeling this is going to be a winner. Great job!"</em>\n\n' +
+          'These are operators with their own money on the line. In supplements, that money exits the business inside 60 days if compliance fails or AOV stalls. DR operators at this level keep handing me supplement work \u2014 and that\'s the proof that matters more than any individual stat.',
+      },
+      {
+        heading: 'How I Architect a Supplement Funnel That Beats Your Current Control',
+        content:
+          'Every supplement engagement moves through the same four phases. None are optional. This is the actual work \u2014 not a "process" page filling space.',
         bullets: [
-          'Weight loss supplements',
-          'Anti-aging and longevity',
-          'Nootropics and brain health',
-          'Joint health and mobility',
-          'Digestive health and gut supplements',
-          'Energy boosters and performance',
-          'Sleep aids and stress relief',
+          'Phase 1 \u2014 Compliance + audience research: I audit your current funnel against FDA structure/function-claim limits, FTC substantiation requirements, and the specific platform-review postures of Meta, Google, YouTube, and ClickBank. Then I mine reviews, forums, and competitor sequences for the exact language your supplement buyers use about the pain. The compliant angle and the persuasive angle come out of the same layer \u2014 not separate ones. My AI workflow processes 50+ competitor VSLs and thousands of reviews while a manual pass reads three.',
+          'Phase 2 \u2014 Funnel architecture + AOV math: Before writing a word, I map every step \u2014 VSL hook, lead magnet, sales page, order bump, OTO1, OTO2, downsell, thank-you page, post-purchase email \u2014 against the AOV target. Most supplement funnels die because the front-end was written for conversion and the back-end was bolted on afterward. The architecture phase prevents that.',
+          'Phase 3 \u2014 Compliant-by-design drafting: every claim lives inside structure/function-claim territory. Every testimonial carries hedged framing built into the writing, not retrofitted by legal at the end. Every CTA earns the click only after the persuasion is done. I draft VSL, sales page, ad copy, and back-end stack as a connected system \u2014 not as separate pieces handed to different writers.',
+          'Phase 4 \u2014 Platform-review map + revisions: a compliance-review map flagging anything your legal team should review, including alternative phrasings for any line a reviewer might challenge. One comprehensive revision round across the full funnel is included.',
         ],
       },
       {
-        heading: 'Compliance-Aware Copy That Still Converts',
+        heading: 'Asset Types I Write for Supplement Brands',
         content:
-          'The biggest challenge in supplement copywriting is not writing compliant copy — it is writing copy that is both compliant and persuasive. Anyone can write safe, bland copy that passes review.\n\n' +
-          'The skill is in crafting structure/function claims, lifestyle benefits, and social proof narratives that create genuine desire while staying within regulatory guidelines.\n\n' +
-          'I use hedging language strategically, cite studies where available, and build persuasion cases around outcomes that prospects can relate to — all without crossing the line into disease claims or unsubstantiated promises.',
+          'Supplement businesses don\'t buy copy by category \u2014 they buy connected funnel systems. Each asset has different mechanics, but they\'re engineered to work as one. The asset types below are the ones I ship most often for supplement and nutraceutical brands. Click through to any of them for the asset-specific page.',
+        bullets: [
+          '<a href="/services/vsl-copywriter">VSL Copywriter</a> \u2014 the front-end VSL is where the supplement funnel converts (or doesn\'t). Gluco 6 anchors the supplement VSL track.',
+          '<a href="/services/sales-funnel-copywriter">Sales Funnel Copywriter</a> \u2014 end-to-end supplement funnel architecture. The $40M Gluco 6 funnel is the canonical example.',
+          '<a href="/services/email-copywriter">Email Copywriter</a> \u2014 supplement launch sequences, post-purchase upsell streams, subscription-retention emails (300% Ben Palmer ROAS proof).',
+          '<a href="/services/upsell-downsell-copywriter">Upsell & Downsell Copywriter</a> \u2014 supplement back-end stacks. 30\u2013100% AOV lifts on existing traffic. Subscription-priced front ends compound this.',
+          '<a href="/services/sales-page-copywriter">Sales Page Copywriter</a> \u2014 long-form supplement sales pages with structure/function-claim discipline built in.',
+          '<a href="/services/facebook-ads-copywriter">Facebook Ads Copywriter</a> \u2014 compliance-aware Meta + Instagram ad suites for supplement cold traffic. Decade of FB-review-cleared work.',
+        ],
+      },
+    ],
+    caseStudies: [
+      {
+        name: 'Gluco 6 Supplement Funnel',
+        category: 'End-to-End Supplement Funnel',
+        metric: '$40M',
+        detail: 'Blood-sugar supplement, cold-traffic VSL, subscription front end, multi-step back-end stack. Compliance posture tight from the first draft.',
       },
       {
-        heading: 'AI-Enhanced Supplement Research',
-        content:
-          'I use AI tools to analyze thousands of competitor ads, identify the specific claims and angles generating the most engagement, and map the regulatory landscape before writing a single word. This means your copy is informed by data, not guesswork.\n\n' +
-          'I can identify which hooks are working in your niche right now, which claims are getting flagged by platforms, and which funnel structures are producing the highest EPCs — all before the research phase ends.\n\n' +
-          'The result: copy that launches faster and converts harder because it is built on real competitive intelligence.',
+        name: 'Mobile Profits Health-Adjacent VSL',
+        category: 'ClickBank #1 (Compliance-Adjacent Vertical)',
+        metric: '$30M+',
+        detail: 'Up to 4% conversion on cold traffic. Ad copy feeding the VSL cleared Meta\'s automated review every time.',
       },
       {
-        heading: 'The Full Health Supplement Funnel',
-        content:
-          'I do not just write a sales page and call it done. I build complete supplement funnels — from the front-end VSL or TSL through order bumps, OTO upsells, downsells, and post-purchase email sequences.\n\n' +
-          'Each step is engineered to maximize average order value while keeping refund rates manageable.\n\n' +
-          'The most profitable supplement brands understand that the real money is in the back-end, and that is where my direct-response expertise delivers the highest ROI.',
+        name: 'Ben Palmer / ClickBank Health Funnel',
+        category: 'Email-Driven Supplement Funnel',
+        metric: '300% ROAS',
+        detail: '"Rob is a killer copywriter. We\'re getting a 300% Return on Ad Spend."',
+      },
+      {
+        name: 'Konscious Keto / Ryan Kowalski',
+        category: 'Supplement Copy Approval',
+        metric: '"Going to be a winner"',
+        detail: '"That\'s solid copy. I have a feeling this is going to be a winner. Great job!"',
       },
     ],
     deliverables: [
-      { title: 'VSL & TSL Scripts', description: 'Long-form video and text sales letters optimized for cold traffic conversion.' },
-      { title: 'Sales Page Copy', description: 'Persuasive long-form sales pages built on proven supplement angles.' },
-      { title: 'Upsell & Downsell Sequences', description: 'Post-purchase copy that maximizes AOV without eroding trust.' },
-      { title: 'Email Sequences', description: 'Launch, nurture, and promotional sequences that drive repeat purchases.' },
-      { title: 'Ad Copy', description: 'Scroll-stopping Facebook, YouTube, and native ad copy with compliant hooks.' },
-      { title: 'Affiliate Tools', description: 'Swipe copy, email templates, and promotional materials for affiliate partners.' },
+      { title: 'Supplement VSL Scripts', description: 'Long-form video sales letters with structure/function-claim discipline built into every line. Cold-traffic-engineered hooks.' },
+      { title: 'Long-Form Sales Pages', description: 'Compliance-aware supplement sales pages \u2014 leads, body, proof stack, close \u2014 written as one connected persuasion system.' },
+      { title: 'Back-End Upsell Stack', description: 'Order bump + OTO1 + OTO2 + downsell + thank-you page sequence engineered to lift AOV by 30\u2013100% on existing traffic.' },
+      { title: 'Email Sequences', description: 'Launch, nurture, post-purchase upsell, and subscription-retention sequences for the supplement back-end.' },
+      { title: 'Compliance-Aware Ad Copy', description: 'Cold-traffic Meta, YouTube, and native ad copy designed to clear platform review while still earning the click.' },
+      { title: 'Affiliate Tools Package', description: 'Swipe copy, email templates, and promotional materials calibrated to recruit and retain affiliates on supplement offers.' },
     ],
-    testimonialIds: ['4', '5', '17', '6'],
+    deliverablesHeading: 'What You Get When You Hire Me',
+    deliverablesSubtext:
+      'Every deliverable is engineered for the supplement marketer who needs aggressive conversion AND clean platform compliance \u2014 not one or the other.',
+    testimonialIds: ['6', '17', '4', '2', '3'],
     portfolioItems: [
       { title: 'Weight-Loss VSL', category: 'VSL' },
       { title: 'Dynamic Brain', category: 'VSL' },
@@ -132,44 +187,54 @@ export const verticals: Vertical[] = [
       { title: 'BodyHacker', category: 'VSL' },
       { title: 'Coffee Slimmer Pro', category: 'VSL' },
     ],
+    midCta: {
+      headline: 'Ready for a supplement funnel that beats your current control?',
+      subtext:
+        'Book a free strategy call. Send me your current VSL or sales page and the back-end metrics \u2014 I\'ll tell you honestly where compliance is leaking conversion, where AOV is leaking margin, and whether I can write something that beats your control. Compliance review on the call comes free.',
+    },
     faqs: [
       {
-        question: 'Do you understand FTC and FDA compliance for supplement copy?',
+        question: 'What does a health supplement copywriter actually do?',
         answer:
-          'Yes. While I am not a lawyer and always recommend legal review before publishing, I have extensive experience writing supplement copy that satisfies both performance and compliance requirements. I understand structure/function claims, the boundaries of health claims, and how to write persuasive copy that works within regulatory guidelines.',
+          'A senior supplement copywriter writes the connected funnel system that converts cold traffic into a subscription-priced supplement buyer \u2014 VSL or TSL on the front end, sales page, order bump, OTO1, OTO2, downsell, thank-you page, post-purchase email sequence \u2014 every line written inside FDA structure/function-claim territory by design, not retrofitted by legal at the end. The Gluco 6 supplement funnel I worked on did $40M end-to-end. The Mobile Profits ClickBank VSL did $30M. Same disciplined approach in both.',
       },
       {
-        question: 'What types of health products have you written for?',
+        question: 'Are you taking new supplement clients?',
         answer:
-          'I have written for weight loss supplements, nootropics, joint health, anti-aging, digestive health, energy boosters, sleep aids, and more. Each category has its own compliance considerations and buyer psychology, and I tailor the approach accordingly.',
+          'I take a selective number of new supplement engagements each quarter so the work stays at the level the proof requires. Most kickoffs happen within two weeks of the strategy call. If the project is a fit, I\'ll send a fixed-price proposal within 48 hours. If it isn\'t, I\'ll tell you on the call and point you toward someone in my network who\'s better suited.',
       },
       {
-        question: 'Can you write VSLs for ClickBank health offers?',
+        question: 'How do you use AI to write supplement copy?',
         answer:
-          'Absolutely. I have written multiple VSLs for ClickBank health offers and understand the platform\'s specific compliance requirements, buyer demographics, and funnel best practices that drive ClickBank success.',
+          'I don\'t use generic ChatGPT prompting. I use Claude Code augmented by my own custom-built copywriting skills \u2014 proprietary skill files that encode 40 years of frameworks, supplement-vertical hook patterns, structure/function-claim hedging language, and evaluation criteria into a working AI workflow, with my 1,239-file Obsidian copywriting brain as the reference layer. The AI processes 50+ competitor supplement VSLs and thousands of reviews while a manual pass reads three. I make every strategic and structural call. The AI carries the volume.',
       },
       {
-        question: 'How do you handle supplement compliance in copy?',
+        question: 'What does supplement copywriting cost?',
         answer:
-          'I focus on structure/function claims, lifestyle benefits, and social proof rather than disease claims. I use hedging language appropriately, cite studies where available, and build the persuasion case around outcomes the prospect can relate to. Every piece should be reviewed by a compliance team before publishing.',
+          'Supplement engagements are fixed-price. A full supplement VSL or sales page starts at $10K. A full supplement funnel (VSL + sales page + back-end stack + email sequence) typically starts at $25K. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a supplement funnel that lifts cold-traffic CVR from 0.6% to 1.5% pays for the writer in the first week of scaled spend. A back-end stack that lifts AOV by 30% on existing traffic is pure margin.',
       },
       {
-        question: 'How long does it take to write a supplement VSL?',
+        question: 'How long does it take to write a supplement VSL or full funnel?',
         answer:
-          'A typical supplement VSL project takes 2-4 weeks from briefing to final draft. This includes competitive research, angle development, scripting, and one round of revisions. The AI-enhanced research process means I can compress the research phase without sacrificing depth.',
+          'A supplement VSL alone takes 3\u20134 weeks from kickoff to final draft \u2014 longer than a generic VSL because compliance research is a phase, not a sentence. A full supplement funnel (VSL + sales page + back-end stack + email sequence) runs 6\u20139 weeks. The compliance-and-audience-research phase always comes first. That\'s where the conversion-and-platform-clearance lift lives. Rush timelines are possible, but I never shortcut the research.',
       },
       {
-        question: 'Do you write complete supplement funnels or just the front-end?',
+        question: 'How do you handle FDA and FTC compliance in supplement copy?',
         answer:
-          'I write complete funnels — front-end VSL or TSL, order bump, OTO1 upsell, OTO2 upsell, downsell, thank-you page, and post-purchase email sequences. The back-end is where the real margin lives in supplements, and I optimize every step to maximize AOV.',
+          'I\'m not a lawyer and I always recommend legal review before publishing. But I\'ve been writing inside FDA structure/function-claim limits and FTC substantiation requirements long enough that the discipline is in the writing layer, not the review layer. Every claim lives inside structure/function-claim territory. Testimonials carry hedged framing built into the writing. Disease claims, unsubstantiated promises, and platform-trigger phrasings are absent because they were never drafted in. I provide a compliance-review map flagging anything your legal team should review, with alternative phrasings for any line a reviewer might challenge.',
       },
       {
-        question: 'What conversion rates can I expect?',
+        question: 'What asset types do you write for supplement brands?',
         answer:
-          'Conversion rates vary by offer, traffic source, and price point. However, my health supplement funnels consistently outperform industry averages. One client reported 8% conversion on cold traffic from a funnel I wrote. I focus on writing copy that moves specific metrics — not just vanity numbers.',
+          'Front-end: cold-traffic VSLs (Gluco 6 anchors the track), TSLs, long-form sales pages, advertorial bridges. Ad copy: compliance-aware Meta, YouTube, and native suites. Back-end: order bump, OTO1, OTO2, downsell, thank-you page, post-purchase email sequence, subscription-retention emails. Affiliate: swipe copy, email templates, promotional materials. Every asset is written to function as part of the connected funnel system \u2014 not as a standalone deliverable.',
+      },
+      {
+        question: 'What happens after the strategy call?',
+        answer:
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is compliance and audience research, then funnel architecture and AOV math, then the compliant-by-design drafting, then a compliance-review map and one comprehensive revision round across the full funnel. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
-    relatedServices: ['vsl-copywriter', 'sales-page-copywriter', 'sales-letter-copywriter'],
+    relatedServices: ['vsl-copywriter', 'sales-funnel-copywriter', 'email-copywriter', 'upsell-downsell-copywriter'],
     relatedVerticals: ['clickbank-copywriter', 'ecommerce-dtc-copywriter'],
   },
   {
