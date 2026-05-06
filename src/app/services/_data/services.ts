@@ -2223,109 +2223,108 @@ export const services: Service[] = [
     title: 'Conversion Rate Optimization',
     slug: 'conversion-rate-optimization',
     shortDescription:
-      'Copy-driven CRO that increases conversions on your existing traffic. Headline testing, funnel diagnostics, and persuasion audits from a 40-year DR veteran with $523M+ in results.',
-    metaTitle: 'Conversion Rate Optimization | Copy-Driven CRO Services',
+      'Copy-driven CRO from the operator who ran the 9-year, $523M Belron direct-response control. I audit your funnel and ship test-ready rewrites that beat your current control \u2014 not button-color tweaks.',
+    metaTitle: 'Conversion Rate Optimization | Beat Your Current Control with Copy',
     metaDescription:
-      'Conversion rate optimization from a direct-response copywriter with $523M+ in tracked results. Copy audits, headline testing, funnel diagnostics, and persuasion architecture that increases conversions on your existing traffic.',
-    headline: 'Conversion Rate Optimization From a $523M+ Copywriter',
+      'Senior conversion rate optimization from the operator behind the 9-year, $523M Belron direct-response control. Copy audits and test-ready rewrites that beat your current control \u2014 not button-color tweaks. Fixed-price engagements.',
+    headline: 'Conversion Rate Optimization Behind the Longest Continuously-Tested $523M Direct-Response Control',
     subheadline:
-      'Most CRO focuses on button colors and page layouts. I optimize the thing that actually drives conversions: the copy. Headlines, hooks, offers, proof, objection handling, and closes \u2014 tested and refined by a 40-year direct-response veteran.',
+      'The Belron campaign I architected and ran for 9 years did $523 million as a continuously-tested direct-response control \u2014 every headline, every lead, every close, refined against back-end response numbers for nearly a decade. That\'s CRO at the only level that matters: you ship copy that beats your current control. I audit your funnel, diagnose where the copy is leaking conversion, and write the test-ready rewrites that beat your current control. If your conversion rate is stuck and you\'ve already changed the button colors, the copy is the leak.',
     heroImage: '/images/services/conversion-rate-optimization.jpg',
     heroImageAlt: 'Analytics dashboard showing conversion rates and optimization metrics',
     heroStats: {
-      primary: { value: '$523M+', label: 'Tracked Client Results' },
+      primary: { value: '30\u201350%', label: 'Typical Headline-Test Lift on Audited Pages' },
       secondary: [
-        { value: '8%', label: 'Cold Traffic Conversion' },
-        { value: '300%', label: 'ROAS Improvement' },
-        { value: '40+', label: 'Years Optimizing Copy' },
+        { value: '$523M', label: '9-Year Belron Direct-Response Control' },
+        { value: '8%', label: 'Conor Reynolds Cold-Traffic CVR (Audited Funnel)' },
+        { value: '300%', label: 'Ben Palmer ClickBank ROAS (Optimized Campaign)' },
       ],
     },
     credentialBar: {
-      heading: 'CRO and copy optimization for',
+      heading: 'Copy-driven CRO and control-beater work for',
       items: [
-        'VSLs & Sales Pages',
-        'Landing Pages & Funnels',
-        'Facebook & Meta Ads',
-        'Email Sequences',
-        'ClickBank Vendors',
-        'DTC Brands',
+        'Belron International (9-year control)',
+        'ClickBank #1 Offers',
+        'Copy Accelerator (as Copy Chief)',
+        'VSLs, Sales Pages, Funnels',
+        'Facebook/Meta Ad Sets',
+        'DTC and SaaS Brands',
       ],
     },
     sections: [
       {
-        heading: 'You Are Paying for Traffic That Is Not Converting. The Fix Is Not What You Think.',
+        heading: 'Why Button-Color CRO Doesn\'t Move the Needle',
         content:
-          'Your funnel is getting traffic. But the conversion rate is stuck. You have tried changing the button color, moving the CTA above the fold, adding a countdown timer, swapping the hero image. <strong>Nothing moved the needle.</strong>\n\n' +
-          'Here is why: those are cosmetic changes to a structural problem. The #1 driver of conversion rate on any page is the <em>copy</em> \u2014 the headline, the hook, the mechanism, the proof, the objection handling, and the close.\n\n' +
-          'A headline that speaks to the wrong awareness level will kill conversions no matter how beautiful the page design is. A close that fails to handle the final objection will lose the sale regardless of what color the button is.\n\n' +
-          'Copy-driven CRO is the highest-leverage optimization you can make because it addresses the thing your prospect actually reads, believes, and responds to.',
+          'You\'re paying for traffic. Your conversion rate is stuck. You\'ve tried changing the button color. You\'ve moved the CTA above the fold. You\'ve added a countdown timer. You\'ve A/B-tested hero images. Maybe your CRO agency tested 47 variations of microcopy over six months and reported a "statistically inconclusive" 0.3% improvement \u2014 burning $40K in fees on tests that didn\'t move the metric anyone in your business actually cares about.\n\n' +
+          '<strong>None of it moved the needle because none of it touched the thing that actually drives conversion: the copy.</strong>\n\n' +
+          'The headline determines whether anyone reads the page. The lead determines whether they keep reading after the headline. The mechanism determines whether they believe your offer is different. The proof determines whether they believe it works for them. The close determines whether they hit the button. And the objection-handling determines whether their last hesitation gets answered before they bounce.\n\n' +
+          'Button color and hero images are cosmetic. The copy is structural. <strong>Industry data is consistent: headline changes alone routinely lift conversion 30\u201350% on the same traffic, with no design change required.</strong> Most CRO programs miss this because the people running them weren\'t trained as direct-response copywriters.',
       },
       {
-        heading: 'What Copy-Driven CRO Looks Like in Practice',
+        heading: 'What 9 Years of Continuously-Tested Belron Control Actually Means',
         content:
-          'When a client came to me with a funnel "doing great" at 8% cold traffic conversion, the copy architecture was already solid \u2014 because it was built on deep audience research and proven persuasion frameworks from the start.\n\n' +
-          'But most funnels I audit are not starting from that baseline. They have headlines written from guesswork instead of research, mechanism sections that confuse instead of convince, proof sections with generic testimonials instead of specific results, and closes that create doubt instead of resolving it.\n\n' +
-          '<strong>Fixing those structural copy problems is where the conversion rate lives.</strong> I have seen headline changes alone lift conversion rates by 30\u201350%. Rewriting a close sequence has doubled take rates on upsell pages. And restructuring a VSL\u2019s first 90 seconds has cut drop-off rates in half.\n\n' +
-          'These are not theoretical improvements \u2014 they are the predictable result of applying 40+ years of pattern recognition to copy that was written without it.',
+          'In 1996, Belron \u2014 the world\'s largest auto-glass-replacement business \u2014 handed me their direct-response campaign. Five award-winning copywriters had already failed at it. I was the sixth. I architected the full package and ran it as a control for 9 consecutive years across 35+ countries. The campaign generated <strong>$523 million</strong> in tracked sales.\n\n' +
+          '<strong>That\'s not a campaign. That\'s the longest continuously-tested CRO program in modern direct response.</strong> Nine years of headlines tested against the previous control. Nine years of leads measured against back-end response. Nine years of closes refined against the actual renewal-cycle numbers. The pattern-recognition dataset most copywriters don\'t accumulate across an entire career \u2014 accumulated across one campaign in one market over a decade.\n\n' +
+          'That pattern recognition is what carries into every CRO engagement I take today. When I audit your funnel, I\'m not guessing what might work \u2014 I\'m running it against the patterns that earned $523M, plus the recent ones that delivered <strong>8% cold-traffic CVR for Conor Reynolds</strong>, <strong>300% ROAS for Ben Palmer\'s ClickBank campaign</strong>, <strong>340% ROAS on the Abundant TSL</strong>, and <strong>22% trial-to-paid lift on Chatterkick\'s onboarding LP</strong>.\n\n' +
+          'If you have a funnel running and the conversion isn\'t where you need it, send me the page (or the full funnel), the actual ad creative driving traffic to it, and the back-end numbers \u2014 I\'ll tell you on the strategy call exactly where the copy is leaking conversion (it\'s almost always the headline, the close, or the proof section\'s specificity) and whether I can ship test-ready rewrites that beat your current control.',
       },
       {
-        heading: 'The Copy Chief That Top Copywriters Hire to Optimize',
+        heading: 'Why Stefan Georgi Hired Me as Copy Chief at CA Labs (Spoiler: It Was Pure CRO)',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. That role was pure CRO: reviewing existing copy, identifying what was underperforming and why, and providing the specific rewrites that moved the metrics.\n\n' +
-          'Justin Goff gave me a public shoutout for knocking it out of the park. Caleb O\u2019Dowd celebrated getting "that bump in conversions."\n\n' +
-          'These are people who live and die by conversion rates. They brought me in because I can look at a piece of copy \u2014 a VSL, a sales page, an email sequence, an ad \u2014 and see exactly where it is losing the prospect and exactly how to fix it.',
+          'Stefan Georgi (the copywriter behind over $1 billion in tracked sales) hired me as Copy Chief inside Copy Accelerator\'s CA Labs. The role description was "Copy Chief." The actual job was pure CRO: review existing copy across the portfolio, identify what was underperforming and why, write the specific rewrites that lifted the conversion metrics.\n\n' +
+          'That\'s the discipline. You can\'t audit a VSL by feel. You can\'t optimize a sales page by hunch. You can\'t beat a control by "making the copy stronger." You diagnose against frameworks: Schwartz awareness levels (is the headline matched to the buyer\'s stage?), the PASTOR sequence (is each section earning the next?), the Brain Audit objection model (which of the seven uncertainties is killing conversion?), the Alen Sultanic 3-step sales-page diagnostic, Makepeace\'s seven characteristics, the Four U\'s headline scoring, the Belcher 21-step.\n\n' +
+          'Justin Goff publicly credited me with stepping up and knocking it out of the park. Caleb O\'Dowd celebrated getting the bump in conversions. Ben Palmer (a ClickBank Platinum vendor) clocked <strong>300% ROAS</strong> on a campaign I optimized. Sam P. (a lead-gen specialist) sent me a note that the squeeze-page rewrite was "crushing the old one" \u2014 which is the only sentence that matters in CRO.\n\n' +
+          'These are operators with their own money on the line.',
       },
       {
-        heading: 'My CRO Process: Diagnose, Prioritize, Test',
+        heading: 'How I Audit, Diagnose, and Ship Test-Ready Rewrites That Beat Your Current Control',
         content:
-          'I do not guess at what is broken. I diagnose it systematically using the same frameworks behind $523M+ in tracked results, then prioritize fixes by expected impact on conversion rate.',
+          'Every CRO engagement I take moves through the same four phases. None are optional. The discipline is what separates a CRO program that lifts conversion 30\u201350% on a headline change from one that runs 47 inconclusive button-color tests.',
         bullets: [
-          'Copy audit \u2014 I analyze every element of your page or funnel against proven persuasion frameworks: Schwartz awareness levels, PASTOR, the Perry Belcher 21-step sequence, and the specific frameworks that match your offer type.',
-          'Conversion diagnostics \u2014 where are prospects dropping off? Is the headline failing to earn the next line? Is the mechanism confusing? Is the close missing an objection? I identify the specific copy elements that are killing conversions.',
-          'Prioritized fix list \u2014 not every fix has the same impact. I rank optimization opportunities by expected lift so you test the highest-leverage changes first.',
-          'Test-ready rewrites \u2014 I do not just tell you what is wrong. I write the specific copy alternatives you need to run split tests: headlines, hooks, closes, proof sections, and CTAs.',
-          'Testing roadmap \u2014 a clear plan for what to test, in what order, with specific hypotheses for each test so you learn something whether it wins or loses.',
+          'Phase 1 \u2014 Full-funnel audit and analytics ingestion: I audit every page in your funnel against the persuasion frameworks above (Schwartz, PASTOR, Brain Audit, Belcher, Sultanic, Makepeace) and pull your conversion data, drop-off points, and traffic sources. My AI workflow processes hundreds of competitor pages, customer-research transcripts, and ad-library entries in the time a manual pass takes to read three \u2014 surfacing the exact copy patterns that are scaling in your category.',
+          'Phase 2 \u2014 Copy-leak diagnosis and prioritization: I deliver a written audit naming the specific copy elements losing conversion, scored against the framework, ranked by expected lift. The headline, the lead, the mechanism, the proof, the objection handling, the close \u2014 each diagnosed with the specific reason it\'s leaking and the specific change that would lift it. You don\'t test everything; you test the highest-leverage changes first, and you walk into every test with a real hypothesis instead of a hunch.',
+          'Phase 3 \u2014 Test-ready rewrites: I don\'t just tell you what\'s wrong. I write the specific copy alternatives you ship as split tests \u2014 multiple headlines, lead variations, close rewrites, proof restructures, CTA copy. Every variation engineered with a specific hypothesis so you learn something whether the test wins or loses.',
+          'Phase 4 \u2014 Testing roadmap and read-the-results discipline: clear plan for what to test, in what order, with the statistical rigor required to make a real read. No "inconclusive 0.3% lift" calls dressed up as optimization.',
         ],
       },
       {
-        heading: 'CRO Across Every Funnel Asset',
+        heading: 'CRO Across VSLs, Sales Pages, Landing Pages, Ads, Emails, and Upsell Stacks',
         content:
-          'Conversion rate optimization is not a single-page exercise. Every step in your funnel is a conversion point \u2014 and a potential leak. I optimize copy across all of them.',
+          'Conversion rate optimization isn\'t a single-page exercise. Every step in your funnel is a conversion point \u2014 and a potential copy leak. I optimize copy across all of them, with the framework that fits each asset type.',
         bullets: [
-          'VSL and video optimization \u2014 hook testing, retention analysis, close sequence rewrites. Where are viewers dropping off and what copy changes will keep them watching?',
-          'Sales page and TSL optimization \u2014 headline testing, proof section restructuring, objection handling, and CTA refinement.',
-          'Landing page optimization \u2014 above-the-fold copy, message match with traffic sources, form friction reduction, and headline split testing.',
-          'Ad copy optimization \u2014 hook testing, angle rotation, and compliance-aware variation for Facebook, Instagram, and other platforms.',
-          'Email sequence optimization \u2014 subject line testing, open rate improvement, click-through optimization, and sequence architecture refinement.',
-          'Upsell and AOV optimization \u2014 post-purchase copy rewrites, offer positioning, and downsell sequence testing.',
+          'VSL CRO \u2014 hook testing, retention-curve analysis, close-sequence rewrites (Belron 9-year control + 8% Conor Reynolds cold-traffic CVR)',
+          'Sales-page and TSL CRO \u2014 headline testing, proof-section restructuring, objection handling, close refinement (340% Abundant ROAS + 5.7% Monetari opt-in-to-sale)',
+          'Landing-page CRO \u2014 above-the-fold copy, message-match audit, form-friction reduction (22% Chatterkick trial-to-paid lift)',
+          'Ad-copy CRO \u2014 hook testing, angle rotation, compliance-aware variation (300% Ben Palmer ClickBank ROAS + decade of Meta-review fluency)',
+          'Email-sequence CRO \u2014 subject-line testing, open-rate optimization, sequence architecture (300% Ben Palmer ROAS + 22% Chatterkick trial-to-paid)',
+          'Upsell and AOV CRO \u2014 post-purchase copy rewrites, take-rate optimization, downsell sequence testing ($30M+/$40M+ ClickBank back-end stacks + 30\u2013100% AOV lift range)',
         ],
-      },
-      {
-        heading: 'AI-Powered CRO Analysis',
-        content:
-          'I use AI to accelerate every phase of conversion rate optimization \u2014 analyzing competitor pages at scale, mining customer language from thousands of reviews, testing headline variations before spending a dollar on traffic, and identifying patterns across your analytics that manual review would miss.\n\n' +
-          'But the strategic judgment that turns analysis into conversion lifts \u2014 knowing <em>which</em> headline to test, <em>why</em> the close is failing, <em>what</em> objection the proof section needs to address \u2014 comes from 40+ years of direct-response experience.\n\n' +
-          'AI gives me speed. Experience gives me accuracy. You get both.',
       },
     ],
     caseStudies: [
       {
-        name: 'DTC Funnel CRO',
-        category: 'Full Funnel Optimization',
-        metric: '8% Cold Traffic Conversion',
-        detail: 'Copy-driven optimization across landing page and sales funnel.',
+        name: 'Belron / Safelite International',
+        category: '9-Year Continuously-Tested Control',
+        metric: '$523M / 35+ Countries',
+        detail: 'Direct-response control I architected and ran for 9 years \u2014 every headline, lead, close, and objection refined against back-end response numbers.',
       },
       {
-        name: 'Supplement Ad CRO',
-        category: 'Ad Copy Optimization',
+        name: 'Conor Reynolds Funnel',
+        category: 'Cold-Traffic Funnel CRO',
+        metric: '8% Cold-Traffic CVR',
+        detail: 'Funnel optimization across the bridge sequence, sales page, and back-end.',
+      },
+      {
+        name: 'Ben Palmer ClickBank Campaign',
+        category: 'Ad + Sales Copy CRO',
         metric: '300% ROAS',
-        detail: 'Hook testing and angle optimization on Facebook ads.',
+        detail: 'Hook, lead, mechanism, and close optimization on a ClickBank Platinum vendor\'s campaign.',
       },
       {
-        name: 'Biz-Op Funnel CRO',
-        category: 'Funnel Optimization',
-        metric: '4.8% Front-End Conversion',
-        detail: 'Hybrid sales page and VSL copy optimization.',
+        name: 'Chatterkick Onboarding LP',
+        category: 'SaaS Trial-to-Paid CRO',
+        metric: '22% Trial-to-Paid Lift',
+        detail: 'Above-the-fold copy and onboarding-flow optimization that lifted trial-to-paid by almost a quarter.',
       },
     ],
     deliverables: [
@@ -2362,48 +2361,58 @@ export const services: Service[] = [
     ],
     deliverablesHeading: 'What You Get When You Hire Me',
     deliverablesSubtext:
-      'Every deliverable is designed to increase conversions on your existing traffic \u2014 the highest-ROI improvement you can make.',
-    testimonialIds: ['18', '4', '2', '6'],
+      'Every deliverable engineered to ship test-ready copy that beats your current control on the metrics \u2014 not button-color tests dressed up as optimization.',
+    testimonialIds: ['1', '18', '16', '4', '2', '3', '6'],
     portfolioItems: [
       { title: 'Funnel CRO \u2014 Health Supplement', category: 'CRO' },
       { title: 'Landing Page Optimization \u2014 DTC', category: 'CRO' },
       { title: 'VSL Hook Testing \u2014 Biz-Op', category: 'CRO' },
     ],
     midCta: {
-      headline: 'Ready to increase conversions on your existing traffic?',
+      headline: 'Ready to ship copy that beats your current control \u2014 not button-color tests?',
       subtext:
-        'Book a free strategy call. I\u2019ll tell you exactly where your copy is losing prospects \u2014 and what to test first.',
+        'Send me your funnel (single page or full sequence), the ad creative driving traffic to it, and your back-end numbers. I\'ll tell you on the call exactly where the copy is leaking conversion and whether I can ship test-ready rewrites that beat your current control.',
     },
     faqs: [
       {
-        question: 'What is conversion rate optimization (CRO)?',
+        question: 'What does conversion rate optimization actually do?',
         answer:
-          'Conversion rate optimization is the process of increasing the percentage of visitors who take a desired action \u2014 buying a product, opting in, clicking through, or completing a form. My approach to CRO focuses on the #1 driver of conversion rate: the copy. Headlines, hooks, proof, objection handling, and closes have more impact on conversions than any design or UX change.',
+          'Real CRO is the discipline of identifying which copy elements on your page or funnel are losing conversion and writing the specific rewrites that beat your current control on the metrics. The #1 driver of conversion rate is the copy \u2014 the headline, the lead, the mechanism, the proof stack, the objection handling, and the close. Button colors, hero images, and microcopy tweaks are cosmetic; the copy is structural. Industry data is consistent: headline changes alone routinely lift conversion 30\u201350% on the same traffic. That\'s where the lift lives, and that\'s what I optimize.',
       },
       {
-        question: 'How is copy-driven CRO different from traditional CRO?',
+        question: 'Are you taking new CRO clients?',
         answer:
-          'Traditional CRO often focuses on UX, page layout, button placement, and design tweaks. Those matter, but they are secondary to the copy. A beautifully designed page with a weak headline will underperform an ugly page with a great headline every time. My CRO focuses on the persuasion architecture \u2014 the strategic sequencing of copy elements that moves a prospect from skepticism to action. That is where the biggest conversion lifts live.',
+          'I take a selective number of new CRO and control-beater engagements each quarter so the work stays at the level the proof requires. Most kickoffs happen within two weeks of the strategy call. If the project is a fit, I\'ll send a fixed-price proposal within 48 hours. If it isn\'t, I\'ll tell you on the call and point you toward someone in my network who\'s better suited.',
       },
       {
-        question: 'What types of pages can you optimize?',
+        question: 'How do you use AI in CRO?',
         answer:
-          'VSLs, sales pages, TSLs, landing pages, email sequences, Facebook and Instagram ads, upsell pages, order forms, and complete funnels. Every page that has a conversion goal has copy that can be optimized. I audit the full funnel and prioritize the changes that will have the biggest impact on your revenue.',
+          'I don\'t use generic ChatGPT prompting. I use Claude Code augmented by my own custom-built copywriting skills \u2014 proprietary skill files that encode 40 years of frameworks, headline formulas, and evaluation criteria into a working AI workflow, with my 1,239-file Obsidian copywriting brain as the reference layer (190 frameworks, 193 swipe pieces, 125 book/course notes, 76 templates, 512 pieces of my own copy). The AI accelerates auditing competitor pages at scale, mining customer language from thousands of reviews, and surfacing copy patterns that scale in your category. I make every strategic and structural call \u2014 which headline to test, why the close is failing, what objection the proof stack needs to address.',
       },
       {
-        question: 'How do you know what to test first?',
+        question: 'How much does CRO cost?',
         answer:
-          'Pattern recognition from 40+ years of direct response. After auditing thousands of pages and funnels, I know where the highest-leverage copy changes are for each page type. Headlines and hooks are almost always the first test because they determine whether anyone reads the rest. After that, closes and objection handling typically have the next biggest impact. I provide a prioritized testing roadmap so you are not wasting time on low-impact changes.',
+          'CRO engagements are fixed-price. Single-page audit + test-ready rewrites typically start at $5K. Full-funnel CRO (5\u20138 pages, multiple test rounds, prioritized roadmap) starts at $15K. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: improving your conversion rate by even 0.5% on serious traffic pays for the engagement in the first week. CRO is the only investment that makes every other marketing investment work harder.',
       },
       {
-        question: 'How much can CRO improve my conversion rate?',
+        question: 'How long does a CRO engagement take?',
         answer:
-          'It depends on where you are starting. Pages with untested copy and structural persuasion problems often see 30\u201350% lifts from headline changes alone. Full copy rewrites on underperforming pages can double or triple conversion rates. Even well-optimized pages typically have 10\u201320% upside from systematic testing. The key insight: a 1% conversion rate improvement on the same traffic is pure profit \u2014 no additional ad spend required.',
+          'A single-page audit and test-ready rewrite typically takes 2\u20134 weeks. Full-funnel CRO takes 4\u20136 weeks for the audit, diagnosis, and first round of test-ready rewrites \u2014 plus an optional ongoing optimization cadence after the initial round. I never rush the audit phase \u2014 reading your back-end numbers and matching them to the copy patterns is what tells me where the leak is.',
       },
       {
-        question: 'How much does conversion rate optimization cost?',
+        question: 'What do you mean by "beat the control"?',
         answer:
-          'CRO is priced on a project basis, depending on the scope of the audit (single page vs. full funnel), the number of test-ready rewrites needed, and whether ongoing optimization support is included. But here is how I think about it: improving your conversion rate by even half a percent on serious traffic pays for the engagement in the first week. CRO is the only marketing investment that makes every other marketing investment work harder.',
+          'In direct response, the "control" is whatever copy is currently running and beating the alternatives in your testing. To beat the control, the new copy has to deliver a measurable lift on the conversion metric you care about \u2014 sale rate, opt-in rate, click-through, AOV, or whatever the page\'s job is. That\'s the only standard that matters. The 9-year Belron campaign I architected ran as a continuously-tested direct-response control across 35+ countries \u2014 every variation tested against the back-end numbers, the strongest version always retained. That\'s what I bring to your funnel.',
+      },
+      {
+        question: 'What industries do you do CRO for?',
+        answer:
+          '$523M / 9 years on the Belron direct-response control. 8% cold-traffic CVR optimization on Conor Reynolds\'s funnel. 300% ROAS optimization on Ben Palmer\'s ClickBank campaign. 340% ROAS on Abundant\'s info-product TSL. 5.7% opt-in-to-sale on Monetari Fund\'s compliance-aware financial bridge. 22% trial-to-paid lift on Chatterkick\'s SaaS onboarding LP. Plus health and supplement, e-commerce and DTC, info products, ClickBank vendors, financial publishers, and B2B lead-gen funnels. Each vertical has its own conversion math; the persuasion frameworks adapt accordingly.',
+      },
+      {
+        question: 'What happens after the strategy call?',
+        answer:
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is full-funnel audit and analytics ingestion, then copy-leak diagnosis and prioritization, then test-ready rewrites, then the testing roadmap. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['sales-funnel-copywriter', 'landing-page-copywriter'],
