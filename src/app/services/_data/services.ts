@@ -436,7 +436,7 @@ export const services: Service[] = [
       {
         question: 'What industries do you write sales pages for?',
         answer:
-          'Direct mail and direct-response (the $523M Belron campaign), health and supplement (sales pages supporting $40M+ in funnel revenue), financial publishers (5.7% opt-in-to-sale on Monetari Fund), info products (340% ROAS on Abundant), e-commerce and DTC, ClickBank vendors, SaaS annual-plan pages, and coaching. Each vertical has its own compliance posture and buyer psychology. The frameworks adapt accordingly.',
+          'Direct mail and direct-response (the $523M Belron campaign), health and supplement (sales pages inside the $40M Gluco 6 funnel), financial publishers (5.7% opt-in-to-sale on Monetari Fund), info products (340% ROAS on Abundant), e-commerce and DTC, ClickBank vendors (Mobile Profits #1 ClickBank hybrid sales-page/VSL at $30M), SaaS annual-plan pages (Chatterkick onboarding adjacency), and coaching. Each vertical has its own compliance posture and buyer psychology. The frameworks adapt accordingly.',
       },
       {
         question: 'What happens after the strategy call?',
@@ -697,7 +697,7 @@ export const services: Service[] = [
         heading: 'The Email Copywriter Top DR Operators Hire',
         content:
           'Email is the channel where one bad message kills the sequence and one great message can pay for the entire funnel. That\'s why operators with their own money on the line don\'t hand it to juniors.\n\n' +
-          'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as Copy Chief inside Copy Accelerator\'s CA Labs. Justin Goff publicly credited me with stepping up and knocking it out of the park. Email sequences I\'ve written have powered <strong>$30M+ VSL funnels</strong>, multi-week launches that did millions in revenue, and the daily broadcast streams that feed those launches in the first place.\n\n' +
+          'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as Copy Chief inside Copy Accelerator\'s CA Labs. Justin Goff publicly credited me with stepping up and knocking it out of the park. Email sequences I\'ve written have powered the <strong>$30M Mobile Profits</strong> #1 ClickBank VSL funnel and the <strong>$40M Gluco 6</strong> supplement subscription funnel back-end, multi-week launches that did millions in revenue, and the daily broadcast streams that feed those launches in the first place.\n\n' +
           'Email is still the highest-ROI channel for DR operators \u2014 but only when the copy is engineered to convert, not just to fill the schedule.',
       },
       {
@@ -825,7 +825,7 @@ export const services: Service[] = [
       {
         question: 'What industries do you write email sequences for?',
         answer:
-          'Health and supplement (sequences supporting $30M+ in VSL funnel revenue), ClickBank (Ben Palmer\'s 300% ROAS funnel), SaaS (Chatterkick\'s 22% trial-to-paid lift), info products and coaching (multi-week launches generating millions per launch), financial publishers, e-commerce and DTC. Each vertical has its own deliverability posture and buyer psychology. The frameworks adapt accordingly.',
+          'Health and supplement (email streams behind the $40M Gluco 6 supplement funnel back-end), ClickBank (Ben Palmer\'s 300% ROAS funnel and the $30M Mobile Profits #1 ClickBank funnel email streams), SaaS (Chatterkick\'s 22% trial-to-paid lift), info products and coaching (multi-week launches generating millions per launch), financial publishers, e-commerce and DTC. Each vertical has its own deliverability posture and buyer psychology. The frameworks adapt accordingly.',
       },
       {
         question: 'What happens after the strategy call?',
@@ -1021,7 +1021,7 @@ export const services: Service[] = [
       {
         question: 'What industries do you write ad copy for?',
         answer:
-          'Direct mail and direct response (Apple UK demand-overwhelm, plus IBM, Microsoft, Citibank, Morgan Stanley, plus the Belron $523M campaign), supplement (300% ROAS Facebook), ClickBank (Mobile Profits VSL \u2014 #1 offer, $30M+), financial publishers (compliant native), info products and coaching, e-commerce and DTC. Each vertical has its own compliance posture and buyer psychology. The frameworks adapt accordingly.',
+          'Direct mail and direct response (Apple UK demand-overwhelm, plus IBM, Microsoft, Citibank, Morgan Stanley, plus the Belron $523M campaign), supplement (cold-traffic ad copy feeding the $40M Gluco 6 funnel; 300% ROAS Facebook), ClickBank (Mobile Profits VSL \u2014 #1 offer, $30M+), financial publishers (compliant native; 5.7% opt-in-to-sale on Monetari Fund bridge), info products and coaching, e-commerce and DTC. Each vertical has its own compliance posture and buyer psychology. The frameworks adapt accordingly.',
       },
       {
         question: 'What happens after the strategy call?',
@@ -1682,7 +1682,7 @@ export const services: Service[] = [
       {
         heading: 'The Copywriters and Operators Who Hire Me to Run AI in Their Workflow',
         content:
-          'Stefan Georgi (CA Labs / $1B in tracked sales) hired me as Copy Chief. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor, clocked <strong>300% ROAS</strong> on a funnel I wrote for him \u2014 copy produced through this exact workflow.\n\n' +
+          'Stefan Georgi (CA Labs / $1B in tracked sales) hired me as Copy Chief. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor, clocked <strong>300% ROAS</strong> on a funnel I wrote for him \u2014 copy produced through this exact workflow. The same workflow shipped the front-end VSL inside the <strong>$30M Mobile Profits</strong> #1 ClickBank funnel, the <strong>$40M Gluco 6</strong> supplement subscription back-end, the <strong>5.7% opt-in-to-sale</strong> Monetari Fund financial bridge, and the <strong>22% trial-to-paid</strong> Chatterkick SaaS onboarding sequence.\n\n' +
           'Belron\'s CEO went further. On the long-form direct-mail campaign that ran nine years and did $523M, he put it on record: <em>"You are our secret weapon. Keep your diary clear, please!"</em>\n\n' +
           'The proof of the workflow is the conversion data of the copy it produces.',
       },
@@ -1871,7 +1871,7 @@ export const services: Service[] = [
         heading: 'The Triple Brain Methodology Stefan Georgi\'s CA Labs Hired Me to Run',
         content:
           'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as <strong>Copy Chief inside Copy Accelerator\'s CA Labs</strong>. The methodology I install is <strong>Triple Brain Marketing</strong> \u2014 three brains fused into one workflow your team can run.\n\n' +
-          '<strong>Brain 1:</strong> 40 years of direct-response craft. Grounded in $523M+ of tracked client results across Apple UK direct mail, IBM, Microsoft, Citibank, Morgan Stanley, the Belron $523M / 9-year campaign, and ClickBank-Platinum offers like Mobile Profits ($30M, #1 on ClickBank).\n\n' +
+          '<strong>Brain 1:</strong> 40 years of direct-response craft. Grounded in $523M+ of tracked client results across Apple UK direct mail, IBM, Microsoft, Citibank, Morgan Stanley, the Belron $523M / 9-year campaign, ClickBank-Platinum offers like Mobile Profits ($30M, #1 on ClickBank), the $40M Gluco 6 supplement funnel, the 5.7% opt-in-to-sale Monetari Fund financial bridge, and the 22% trial-to-paid Chatterkick SaaS onboarding sequence.\n\n' +
           '<strong>Brain 2:</strong> Claude Code augmented by my custom-built copywriting skills. Not generic ChatGPT prompting \u2014 proprietary skill files that encode 40 years of frameworks, formulas, and evaluation criteria into a working AI workflow. Open-sourced selectively as verifiable proof of substance.\n\n' +
           '<strong>Brain 3:</strong> A 1,239-file Obsidian copywriting brain. 190 frameworks, 193 swipe pieces, 125 book/course notes, 76 templates, and 512 pieces of my own tested copy \u2014 indexed and instantly retrievable while your team writes.\n\n' +
           '<strong>When your team runs this, they\'re not running generic prompts.</strong> They\'re running proprietary skills calibrated to four decades of campaigns that have already converted, with the vault as the reference layer.\n\n' +
@@ -2013,7 +2013,7 @@ export const services: Service[] = [
       {
         question: 'What industries do you work with?',
         answer:
-          'DTC and e-commerce brands, ClickBank vendors (Ben Palmer\'s 300% ROAS funnel), supplement marketers (compliance-aware AI workflows for regulated verticals), financial publishers, SaaS companies, info-product businesses (Abundant 340% ROAS), and marketing agencies. The methodology adapts to each vertical\'s compliance posture and buyer psychology.',
+          'DTC and e-commerce brands, ClickBank vendors (Ben Palmer\'s 300% ROAS funnel; Mobile Profits #1 ClickBank at $30M), supplement marketers (compliance-aware AI workflows behind the $40M Gluco 6 funnel), financial publishers (5.7% opt-in-to-sale on Monetari Fund), SaaS companies (22% Chatterkick trial-to-paid lift), info-product businesses (Abundant 340% ROAS), and marketing agencies. The methodology adapts to each vertical\'s compliance posture and buyer psychology.',
       },
       {
         question: 'What happens after the strategy call?',
@@ -2208,7 +2208,7 @@ export const services: Service[] = [
       {
         question: 'What industries do you write Facebook ads for?',
         answer:
-          'Health and supplement (compliance-aware FB ad copy for over a decade), ClickBank (Ben Palmer\'s 300% ROAS funnel; Mobile Profits VSL #1 offer at $30M+), info products and coaching (Abundant 340% ROAS), financial publishers (regulated FB+IG copy), e-commerce and DTC (Reels + carousel + UGC scripts), SaaS. Each vertical has its own Meta-policy posture and buyer psychology. The frameworks adapt accordingly.',
+          'Health and supplement (compliance-aware FB ad copy for over a decade, including the cold-traffic ad copy feeding the $40M Gluco 6 supplement funnel), ClickBank (Ben Palmer\'s 300% ROAS funnel; Mobile Profits VSL #1 offer at $30M+), info products and coaching (Abundant 340% ROAS), financial publishers (regulated FB+IG copy; 5.7% opt-in-to-sale on Monetari Fund bridge), e-commerce and DTC (Reels + carousel + UGC scripts), SaaS (Chatterkick onboarding traffic). Each vertical has its own Meta-policy posture and buyer psychology. The frameworks adapt accordingly.',
       },
       {
         question: 'What happens after the strategy call?',
