@@ -20,8 +20,8 @@ import { caseStudies } from '@/app/case-studies/_data/case-studies'
 import { testimonials } from '@/content/testimonials'
 import { SITE_URL } from '@/lib/constants'
 
-// Homepage testimonial selection — Stefan (peer endorsement), Conor (8% CVR cold traffic), Ben Palmer (300% ROAS)
-const HOMEPAGE_TESTIMONIAL_IDS = ['2', '5', '4'] as const
+// Homepage testimonial selection — peer-endorsement triangle: Stefan (CA Labs Copy Chief), Justin Goff (industry recognition), Ben Palmer (300% ROAS measurable proof)
+const HOMEPAGE_TESTIMONIAL_IDS = ['2', '3', '4'] as const
 const homepageTestimonials = HOMEPAGE_TESTIMONIAL_IDS
   .map((id) => testimonials.find((t) => t.id === id))
   .filter((t): t is NonNullable<typeof t> => Boolean(t))
@@ -53,7 +53,7 @@ const homepageFaqs = [
   { question: 'How much does it cost to hire you?', answer: 'Fees depend on the project scope, complexity, and format. Engagements typically start at $10K for single assets and run higher for full funnel builds. I\'ll give you a clear, fixed-price quote after our strategy call — no hourly billing, no surprises. For a general guide, see my blog post on copywriting rates.' },
   { question: 'What industries do you work with?', answer: 'I\'ve written for health & supplement, financial, e-commerce/DTC, SaaS, info-product, and ClickBank markets. My direct-response principles apply across industries — I adapt the strategy and compliance approach to each vertical.' },
   { question: 'How do you use AI in your copywriting process?', answer: 'I don\'t use AI the way most people use AI. I use Claude Code — the most capable AI writing tool available — augmented by my own custom-built copywriting skills. These are proprietary skill files that encode specific direct-response frameworks, headline formulas, and evaluation criteria into a workflow Claude applies on every project. Combined with my 1,239-file Obsidian copywriting brain (190 frameworks, 193 swipes, 512 pieces of my own tested copy), the AI has access to four decades of proven reference material — not generic training data.' },
-  { question: 'What results can I expect?', answer: 'Results vary by market, offer, and traffic quality. My track record includes $523M+ in tracked revenue across campaigns, a 9-year campaign for Belron/Safelite, and recent client wins like 8% conversion on cold traffic and 300% ROAS in ClickBank funnels. I focus on measurable outcomes — conversion rates, AOV, and revenue.' },
+  { question: 'What results can I expect?', answer: 'Results vary by market, offer, and traffic quality. My track record includes $523M+ in tracked revenue across campaigns, a 9-year campaign for Belron/Safelite, the $40M Gluco 6 supplement subscription funnel, $30M Mobile Profits #1 on ClickBank, 5.7% Monetari Fund opt-in-to-sale, 22% Chatterkick SaaS trial-to-paid lift, 340% Abundant TSL on Facebook cold, 8% conversion on cold traffic (Conor Reynolds VSL), and 300% ROAS on a ClickBank email funnel (Ben Palmer). I focus on measurable outcomes — conversion rates, AOV, and revenue.' },
   { question: 'How long does a typical project take?', answer: 'Timeline depends on the deliverable. A single email or landing page might take 3-5 business days. A full VSL or sales funnel build typically takes 2-4 weeks including research, drafting, and revisions. The Triple Brain workflow compresses traditional research and drafting timelines without sacrificing depth.' },
   { question: 'Do you offer revisions?', answer: 'Yes. Every project includes a round of revisions to ensure the copy aligns with your voice, brand, and goals. My goal is copy you\'re confident putting in front of your audience.' },
   { question: 'How do I get started?', answer: 'Book a free strategy call through my contact page. We\'ll discuss your project, goals, and timeline. If we\'re a good fit, I\'ll send you a fixed-price proposal within 48 hours. No pressure, no obligation.' },
@@ -157,8 +157,13 @@ export default function HomePage() {
             </li>
           </ul>
           <FadeIn delay={400}>
-            <p className="mt-14 text-center text-lg text-ink-700 font-body leading-relaxed max-w-2xl mx-auto">
-              Each brain multiplies the others. The result is copy faster than traditional, deeper than AI alone, and more proven than any &ldquo;AI-powered&rdquo; generalist can produce.
+            <p className="mt-14 text-center text-lg text-ink-700 font-body leading-relaxed max-w-3xl mx-auto">
+              Each brain multiplies the others &mdash; and the math compounds:{' '}
+              <strong className="text-ink-950">$40M Gluco 6</strong> supplement subscription funnel.{' '}
+              <strong className="text-ink-950">$30M Mobile Profits</strong> #1 on ClickBank.{' '}
+              <strong className="text-ink-950">5.7% Monetari Fund</strong> opt-in-to-sale.{' '}
+              <strong className="text-ink-950">22% Chatterkick</strong> SaaS trial-to-paid lift.{' '}
+              <strong className="text-ink-950">340% Abundant</strong> TSL on Facebook cold. The same Triple Brain combination behind every campaign listed.
             </p>
             <div className="mt-8 text-center">
               <Button href="/blog/triple-brain-marketing" variant="ghost">

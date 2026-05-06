@@ -79,6 +79,14 @@ export default function AboutPage() {
                     strategies.
                   </p>
                   <p>
+                    Other campaigns I&apos;ve shipped under the same approach:{' '}
+                    <strong className="text-ink-950">$40M Gluco 6</strong> supplement subscription funnel,{' '}
+                    <strong className="text-ink-950">$30M Mobile Profits</strong> (#1 on ClickBank),{' '}
+                    <strong className="text-ink-950">5.7% Monetari Fund</strong> opt-in-to-sale,{' '}
+                    <strong className="text-ink-950">22% Chatterkick</strong> SaaS trial-to-paid lift, and{' '}
+                    <strong className="text-ink-950">340% Abundant</strong> TSL on Facebook cold.
+                  </p>
+                  <p>
                     Stefan Georgi, founder of Copy Accelerator, hired me as{' '}
                     <strong className="text-ink-950">Copy Chief for CA Labs.</strong>{' '}
                     The CEO of Belron International called me his{' '}

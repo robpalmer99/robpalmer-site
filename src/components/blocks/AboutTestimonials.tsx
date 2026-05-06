@@ -6,14 +6,15 @@ import { TestimonialCard } from '@/components/blocks/TestimonialCard'
 import { testimonials } from '@/content/testimonials'
 import { TESTIMONIAL_COUNT } from '@/lib/constants'
 
-// Hand-picked testimonials that showcase different credibility angles
+// Hand-picked testimonials that showcase different credibility angles —
+// peer-endorsement triangle (Stefan + Justin + Mark Shay) + Belron CEO + measurable proof
 const selectedIds = [
   '1', // Gary Lubner — CEO credibility, "Secret Weapon"
   '2', // Stefan Georgi — industry respect, hired as Copy Chief
+  '3', // Justin Goff — peer endorsement, "knocked it out of the park"
   '4', // Ben Palmer — measurable results, 300% ROAS
   '5', // Conor Reynolds — conversion rates, 8% on cold traffic
   '6', // Mark Shay — process praise, "most methodical"
-  '10', // Keith Mueller — quality praise, "Moses receiving the Ten Commandments"
 ]
 
 const selectedTestimonials = selectedIds
