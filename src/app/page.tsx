@@ -7,6 +7,7 @@ import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
 import { FadeIn } from '@/components/ui/FadeIn'
 import { ServiceCard } from '@/components/blocks/ServiceCard'
+import { TripleBrainVenn } from '@/components/blocks/TripleBrainVenn'
 import { CaseStudyCard } from '@/components/blocks/CaseStudyCard'
 import { TestimonialCard } from '@/components/blocks/TestimonialCard'
 import { CTABanner } from '@/components/blocks/CTABanner'
@@ -156,7 +157,8 @@ export default function HomePage() {
               </FadeIn>
             </li>
           </ul>
-          <FadeIn delay={400}>
+          <TripleBrainVenn />
+          <FadeIn delay={500}>
             <p className="mt-14 text-center text-lg text-ink-700 font-body leading-relaxed max-w-3xl mx-auto">
               Each brain multiplies the others &mdash; and the math compounds:{' '}
               <strong className="text-ink-950">$40M Gluco 6</strong> supplement subscription funnel.{' '}
