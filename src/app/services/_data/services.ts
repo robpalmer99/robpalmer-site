@@ -1036,106 +1036,110 @@ export const services: Service[] = [
     title: 'Landing Page Copywriter',
     slug: 'landing-page-copywriter',
     shortDescription:
-      'High-converting landing pages for lead gen, webinar registration, and direct sales. Every word optimized for action.',
-    metaTitle: 'Landing Page Copywriter | High-Converting Landing Pages',
+      'Short-form bridge pages that earn the click to your VSL, TSL, webinar, or order form. Recent lifts: 22% Chatterkick trial-to-paid, 8% Conor cold-traffic, 5.7% Monetari opt-in-to-sale.',
+    metaTitle: 'Landing Page Copywriter | Bridge Pages + Lead Capture',
     metaDescription:
-      'Expert landing page copywriter with $523M+ in tracked results. High-converting landing pages for lead generation, webinar registration, and direct sales.',
-    headline: 'The Landing Page Copywriter Behind $523M+ in Results',
+      'Senior landing page copywriter behind cold-traffic bridge pages with documented lifts: 22% trial-to-paid (Chatterkick), 8% Conor Reynolds bridge, 4.8% biz-op front end, 5.7% Monetari opt-in-to-sale. Fixed-price engagements.',
+    headline: 'Landing Page Copywriter Behind 22% Trial-to-Paid, 8% Cold-Traffic, and 5.7% Opt-In-to-Sale Bridges',
     subheadline:
-      'Your landing page is where ad spend becomes revenue or gets wasted. I write landing pages that convert \u2014 with results like 8% on cold traffic, 4.8% front-end conversion, and squeeze pages that crush previous controls.',
+      'Your landing page has 30 seconds and one job: earn the click to the next step of your funnel \u2014 your VSL, your TSL, your webinar, your checkout, or your inbox. The bridge pages I\'ve architected lifted Chatterkick\'s trial-to-paid by 22%, fed Conor Reynolds\'s funnel converting cold traffic at 8%, drove a biz-op hybrid running 4.8% front-end, and pulled 5.7% opt-in-to-sale on Monetari Fund\'s compliance-aware financial bridge. If your cold-traffic ad spend is landing on a page that doesn\'t earn the click, you\'re not buying traffic \u2014 you\'re renting attention and giving it back.',
     heroImage: '/images/services/landing-page-copywriter.jpg',
     heroImageAlt: 'Web design and landing page on laptop for landing page copywriting',
     heroStats: {
-      primary: { value: '$523M+', label: 'Tracked Client Results' },
+      primary: { value: '22%', label: 'Chatterkick Onboarding LP (Trial-to-Paid Lift)' },
       secondary: [
-        { value: '8%', label: 'Cold Traffic Conversion' },
-        { value: '4.8%', label: 'Front-End Conversion' },
-        { value: '40+', label: 'Years Direct Response' },
+        { value: '8%', label: 'Conor Reynolds Bridge \u2192 Sales Page' },
+        { value: '5.7%', label: 'Monetari Fund Bridge \u2192 TSL' },
+        { value: '4.8%', label: 'Biz-Op Hybrid Front-End Bridge' },
       ],
     },
     credentialBar: {
-      heading: 'Landing pages written for',
+      heading: 'Bridge pages and landing pages architected for',
       items: [
         'Lead Generation Funnels',
         'Webinar Registration',
         'ClickBank Vendors',
+        'SaaS Trial-to-Paid',
         'DTC Brands',
-        'SaaS Free Trials',
         'Info Product Launches',
       ],
     },
     sections: [
       {
-        heading: 'Why Most Landing Pages Leak Money',
+        heading: 'Why Most Landing Pages Bounce Cold Traffic at $4 a Click',
         content:
-          'You are paying for every click that hits your landing page. Every single one. And right now, most of those clicks are bouncing \u2014 <strong>landing, scanning the headline, and leaving without taking action.</strong>\n\n' +
-          'The standard landing page conversion rate across industries is 2\u20135%. That means 95\u201398% of the traffic you paid for is walking away. Most of the time it is not because the offer is bad. It is because the landing page copy does not do its job.\n\n' +
-          'A landing page has exactly one job: convert the visitor into a lead or a buyer. That requires every element \u2014 headline, subhead, body copy, social proof, form fields, and CTA button \u2014 working together as a single conversion system with zero wasted space. One weak headline, one moment of friction, one unanswered objection \u2014 and the click you paid for is gone.',
+          'You\'re paying $2, $4, $8 per click for cold traffic. That click hits your landing page. They scan the headline. They look at the form (or the button). And they leave.\n\n' +
+          '<strong>Industry-average landing page conversion is 2\u20135%. Which means 95\u201398% of every dollar you spend on cold traffic is gone the moment they land.</strong> On a $5K/day ad budget at $4/click, that\'s 1,250 clicks landing every day \u2014 and 1,200 of them bouncing before they take the action you paid them to take. That\'s $4,800 of ad spend per day evaporating between the click and the next step of your funnel \u2014 <strong>$1.75M a year, gone</strong>. That\'s not a "low-conversion landing page." That\'s the largest line item on your P&L and nobody on your team is reading the page.\n\n' +
+          'A landing page has exactly one job: <strong>earn the next click.</strong> Not the sale. Not the close. Just the click \u2014 to your VSL, your TSL, your webinar, your checkout, your inbox. Every element on the page either advances that single conversion or steals attention from it. Most landing pages fail because the writer optimized for "looking like a brand" instead of for the only metric that matters: did they click the button.',
       },
       {
-        heading: 'What a Landing Page That "Crushes the Old One" Looks Like',
+        heading: 'The Bridge Pages Inside Funnels Doing 8% Cold-Traffic, 22% Trial-to-Paid, and 5.7% Opt-In-to-Sale',
         content:
-          'When a lead-gen specialist told me my squeeze page copy was <strong>"crushing the old one,"</strong> that was not a lucky rewrite. It was the result of the same process I use on every landing page: <strong>deep research into what the prospect actually needs to hear</strong> to take the next step, then building the page around those triggers with zero filler.\n\n' +
-          'The same approach drove an <strong>8% conversion rate on cold traffic</strong> for a DTC funnel, <strong>4.8% front-end conversion</strong> on a biz-op landing page, and a <strong>22% trial-to-paid lift</strong> on a SaaS onboarding page.\n\n' +
-          'The pattern is always the same: the headline matches the promise that earned the click, the copy addresses the one objection standing between the visitor and the action, and the CTA makes saying yes feel like the easiest decision they will make all day.',
+          'A lead-gen specialist sent me a note about a squeeze page I\'d written: <em>"Woah, this script is awesome! The squeeze page copy is crushing the old one."</em>\n\n' +
+          'That\'s not a headline number, but it\'s the actual job of a landing page \u2014 beat the previous page, every time. Recent bridge-page wins inside the funnels I\'ve architected:\n\n' +
+          '<strong>22% trial-to-paid lift</strong> on Chatterkick\'s onboarding landing page \u2014 the page that turned free-trial sign-ups into paying customers at almost a quarter higher rate than the page it replaced. <strong>8% cold-traffic conversion</strong> at the funnel I wrote for Conor Reynolds, where the bridge sequence carried prospects from cold ad to sales-page conversion. <strong>4.8% front-end conversion</strong> on a biz-op hybrid landing page that fed a VSL with the upsell stack carrying the AOV. <strong>5.7% opt-in-to-sale</strong> on Monetari Fund\'s compliance-aware financial bridge page that fed a regulator-friendly TSL.\n\n' +
+          'The throughline: every one of those pages did its job because it was architected as a bridge \u2014 the headline matched the promise the ad made, the body answered the one objection standing between the click and the next step, and the CTA made saying yes feel like the easiest thing the visitor could do.\n\n' +
+          'If you have a landing page running and the conversion isn\'t where you need it, I work as a control-beater. Send me your current page, the actual ad creative driving traffic to it, and the back-end numbers \u2014 click-through rate from the ad, conversion rate on the page, the next-step take-rate \u2014 and I\'ll tell you on the call exactly where the leak is (it\'s almost always message-match between ad and page, the above-the-fold hierarchy, or form friction) and whether I can write a page that beats it.',
       },
       {
-        heading: 'The Copy Chief That Top Copywriters Hire',
+        heading: 'Message Match, Above-the-Fold Discipline, the One-Click Rule',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park.\n\n' +
-          'These are people who test landing pages obsessively and know exactly what converts. They work with me because my copy performs \u2014 on landing pages, squeeze pages, and every other page that sits between ad spend and revenue.',
+          'Bridge-page copywriting runs on a tight set of disciplines that most copywriters never internalize because they were trained on long-form sales pages. Three matter most.\n\n' +
+          '<strong>Message match.</strong> The headline on your landing page must echo the promise the ad made \u2014 verbatim if possible. If the prospect clicked an ad about "how to lose 17 pounds without giving up bread" and lands on a page about "boosting metabolism," that\'s a different promise. The disconnect costs you 30\u201360% of conversion before the visitor reads a single sentence below the headline. The visitor\'s brain registers it instantly, even if they couldn\'t articulate what changed. I write every bridge page against the actual ad creative driving traffic to it.\n\n' +
+          '<strong>Above-the-fold discipline.</strong> The visitor decides in under 3 seconds whether to scroll or bounce. The headline, subhead, and CTA above the fold do 80% of the conversion work. Most landing pages waste that real estate on hero images and brand statements. I waste none of it.\n\n' +
+          '<strong>The one-click rule.</strong> A bridge page asks the visitor to do exactly one thing \u2014 click, opt-in, register, or sign up. Every other element on the page either advances that single click or distracts from it. I cut everything else.\n\n' +
+          'Stefan Georgi (the copywriter behind over $1 billion in tracked sales) hired me as Copy Chief inside Copy Accelerator\'s CA Labs because that pattern recognition is what scales bridge pages alongside long-form. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer (a ClickBank Platinum vendor) clocked <strong>300% ROAS</strong> on a campaign I wrote.\n\n' +
+          'These are operators with their own money on the line.',
       },
       {
-        heading: 'Message Match: The Conversion Killer Nobody Talks About',
+        heading: 'How I Architect a Bridge Page That Earns the Next Click',
         content:
-          'Here is why your landing page might be underperforming even with good copy: <strong>the message does not match the traffic source.</strong> Your prospect clicked an ad about a specific problem. They land on a page about something slightly different. The disconnect is subtle \u2014 maybe just a different angle or tone \u2014 but the conversion rate drops off a cliff.\n\n' +
-          'I write landing pages that maintain perfect message continuity from traffic source to conversion. That means the headline echoes the promise that earned the click, the language matches what the prospect expects to see, and the entire page feels like the natural next step \u2014 not a new conversation.\n\n' +
-          'This is one of the highest-leverage optimizations in landing page copywriting, and most copywriters ignore it completely.',
-      },
-      {
-        heading: 'How I Write a Landing Page That Converts',
-        content:
-          'Every landing page I write follows a process refined over four decades. Each phase is tied to a specific conversion outcome.',
+          'Every bridge page I write moves through the same four phases. None are optional. The discipline is what separates a landing page that bounces 95% of cold traffic from one that converts at 8% on the same ad spend.',
         bullets: [
-          'Phase 1: Traffic source analysis \u2014 I study the ads, emails, or content driving traffic to understand exactly what promise earned the click. The landing page must fulfill that promise instantly.',
-          'Phase 2: Single-action architecture \u2014 I strip the page down to one goal, one offer, and one CTA. Every element either advances that conversion or gets cut.',
-          'Phase 3: Above-the-fold optimization \u2014 the headline, subhead, and CTA must make the value proposition clear in under 3 seconds. I deliver multiple variations for split testing.',
-          'Phase 4: Friction elimination \u2014 form field optimization, microcopy, trust signals, and social proof placement, all designed to remove every reason to hesitate.',
+          'Phase 1 \u2014 Traffic-source analysis and message-match audit: I study the actual ads, emails, or content driving traffic to your page \u2014 hooks, angles, promises, the visual feel. The bridge page has to fulfill that promise instantly. My AI workflow scans dozens of competitor ads, ad-library entries, and bridge pages in the time a manual pass takes to read three, surfacing the exact promise pattern that earns the click.',
+          'Phase 2 \u2014 Single-action architecture: I strip the page down to one goal, one offer, one CTA. Above-the-fold gets the headline, subhead, hero element, and CTA. Below-the-fold gets the proof stack and the objection-handling. Every element either advances the conversion or gets cut.',
+          'Phase 3 \u2014 Above-the-fold copy + variations: I deliver multiple headline, subhead, and CTA combinations engineered for split testing. The above-the-fold zone does 80% of the conversion work; getting it wrong is what most copywriters do.',
+          'Phase 4 \u2014 Friction elimination: form-field optimization, microcopy, trust signals, social-proof placement, mobile-first formatting, button-text variations \u2014 every reason to hesitate identified and removed.',
         ],
       },
       {
-        heading: 'Landing Pages for Every Conversion Goal',
+        heading: 'Bridge Pages Across Lead-Gen, Webinar, Trial-to-Paid, Cold-Traffic Funnels, and Opt-In',
         content:
-          'Different landing page types require different persuasion strategies. A lead-gen squeeze page needs enough desire to overcome form friction while pre-qualifying the lead. A webinar registration page must sell the event, not the product. A free trial page must reduce perceived risk to near zero.\n\n' +
-          'I have written high-converting landing pages across all of them.',
+          'Different bridge-page jobs run on different conversion structures. A SaaS trial-to-paid onboarding page runs nothing like a webinar registration page or a cold-traffic squeeze. The frameworks adapt; the discipline stays the same. I\'ve shipped converting bridge pages across every major DR job.',
         bullets: [
-          'Lead generation squeeze pages \u2014 including pages that crushed previous controls',
-          'Webinar and event registration pages',
-          'Free trial and SaaS signup pages \u2014 including a sequence that drove 22% trial-to-paid lift',
-          'Direct-sale landing pages for ClickBank, DTC, and info product offers',
-          'Bridge pages between ads and long-form sales funnels',
-          'Opt-in pages for email list building and lead magnets',
+          '22% trial-to-paid lift \u2014 Chatterkick SaaS onboarding landing page',
+          '8% cold-traffic conversion \u2014 Conor Reynolds bridge \u2192 sales-page funnel',
+          '5.7% opt-in-to-sale \u2014 Monetari Fund compliance-aware financial bridge',
+          '4.8% front-end conversion \u2014 biz-op hybrid landing page feeding a VSL with AOV-driving upsell stack',
+          'Lead-gen squeeze pages \u2014 "Woah, this script is awesome! The squeeze page copy is crushing the old one" (lead-gen specialist, on a recent rewrite)',
+          'Webinar registration pages, free-trial signup pages, opt-in pages for email-list building and lead magnets, advertorial-style bridge pages',
         ],
       },
     ],
     caseStudies: [
       {
-        name: 'DTC Funnel Landing Page',
-        category: 'Lead Gen',
-        metric: '8% Cold Traffic Conversion',
-        detail: 'Landing page feeding a direct-sale funnel.',
-      },
-      {
-        name: 'Biz-Op Landing Page',
-        category: 'Direct Sale',
-        metric: '4.8% Front-End Conversion',
-        detail: 'Hybrid landing page with embedded VSL.',
-      },
-      {
-        name: 'Chatterkick Onboarding',
-        category: 'SaaS Trial',
+        name: 'Chatterkick Onboarding LP',
+        category: 'SaaS Trial-to-Paid Bridge',
         metric: '22% Trial-to-Paid Lift',
-        detail: 'Landing page and onboarding flow for SaaS platform.',
+        detail: 'Onboarding landing page that turned free-trial sign-ups into paying customers at almost a quarter higher rate than the page it replaced.',
+      },
+      {
+        name: 'Conor Reynolds Funnel Bridge',
+        category: 'Cold-Traffic Bridge \u2192 Sales Page',
+        metric: '8% Cold-Traffic Conversion',
+        detail: 'Bridge sequence carrying prospects from cold ad to sales-page conversion.',
+      },
+      {
+        name: 'Monetari Fund',
+        category: 'Financial Bridge \u2192 TSL',
+        metric: '5.7% Opt-In to Sale',
+        detail: 'Compliance-aware bridge page feeding a regulator-friendly financial-services TSL.',
+      },
+      {
+        name: 'Biz-Op Hybrid LP',
+        category: 'Front-End Bridge \u2192 VSL',
+        metric: '4.8% Front-End Conversion',
+        detail: 'Hybrid landing page feeding a VSL with the upsell stack carrying the AOV.',
       },
     ],
     deliverables: [
@@ -1172,48 +1176,58 @@ export const services: Service[] = [
     ],
     deliverablesHeading: 'What You Get When You Hire Me',
     deliverablesSubtext:
-      'Every deliverable is engineered to maximize conversion rate \u2014 not just fill a page.',
-    testimonialIds: ['16', '4', '2', '6'],
+      'Every page engineered for one job: earn the next click on cold-traffic ad spend that costs you $2, $4, or $8 to land in the first place.',
+    testimonialIds: ['16', '5', '4', '2', '3', '6'],
     portfolioItems: [
       { title: 'Lead Gen Landing Page \u2014 SaaS', category: 'Landing Page' },
       { title: 'Webinar Registration Page', category: 'Landing Page' },
       { title: 'Free Trial Signup Page', category: 'Landing Page' },
     ],
     midCta: {
-      headline: 'Ready for a landing page that actually converts?',
+      headline: 'Ready for a bridge page that earns the click instead of bouncing your cold traffic?',
       subtext:
-        'Book a free strategy call. I\u2019ll tell you exactly where your current page is leaking conversions \u2014 and how to fix it.',
+        'Send me your current landing page, the ad driving traffic to it, and the conversion numbers \u2014 CTR from the ad, conversion on the page, next-step take-rate. I\'ll tell you on the call where it\'s leaking and whether I can write a page that beats it.',
     },
     faqs: [
       {
-        question: 'What is the difference between a landing page and a sales page?',
+        question: 'What does a landing page copywriter do?',
         answer:
-          'A landing page is typically shorter and focused on a single conversion action \u2014 lead capture, webinar registration, or free trial signup. A sales page is longer and designed to take someone through the entire buying decision in one visit. Both require direct-response skills, but landing pages demand tighter copy, faster value communication, and ruthless elimination of friction. I write both.',
+          'I write the short-form bridge pages that earn the click to the next step of your funnel \u2014 your VSL, your TSL, your webinar, your checkout, your inbox. A landing page has exactly one job (earn the click), and it has 30 seconds to do it. Bridge-page copywriting is structurally distinct from sales-page copywriting: tighter, message-matched to the traffic source, ruthlessly focused on a single conversion action. The landing pages I architect have lifted Chatterkick trial-to-paid by 22%, fed Conor Reynolds\'s funnel converting cold traffic at 8%, and pulled 5.7% opt-in-to-sale on Monetari Fund\'s financial bridge.',
       },
       {
-        question: 'What makes a landing page convert well?',
+        question: 'Are you taking new landing-page clients?',
         answer:
-          'Message match with the traffic source, a headline that communicates the value proposition in under 3 seconds, focused copy that addresses a single offer, strong social proof, and a CTA with minimal friction. But the biggest factor most people miss is what I call the "promise chain" \u2014 the landing page must instantly fulfill the promise that earned the click. Break that chain and conversions collapse.',
+          'I take a selective number of new landing-page engagements each quarter so the work stays at the level the proof requires. Most kickoffs happen within two weeks of the strategy call. If the project is a fit, I\'ll send a fixed-price proposal within 48 hours. If it isn\'t, I\'ll tell you on the call and point you toward someone in my network who\'s better suited.',
       },
       {
-        question: 'Do you design landing pages or just write the copy?',
+        question: 'How do you use AI to write landing pages?',
         answer:
-          'I focus on the copy, which is the primary driver of landing page conversion rates. But I deliver above-the-fold wireframes, layout recommendations, and design notes so your designer or developer builds the page in a way that supports the copy strategy. Copy and design must work together \u2014 my deliverables ensure they do.',
-      },
-      {
-        question: 'How important is the headline on a landing page?',
-        answer:
-          'The headline determines whether a visitor stays or bounces in the first 2\u20133 seconds. On paid traffic, every bounce is money lost. That is why I deliver multiple headline variations for testing \u2014 even a small headline improvement can dramatically increase your conversion rate and cut your effective cost per lead or sale.',
-      },
-      {
-        question: 'Can you write landing pages for paid traffic campaigns?',
-        answer:
-          'This is one of my specialities. Landing pages for paid traffic must convert efficiently because every non-converting visitor costs you money. I study your ad angles and audience targeting to ensure the landing page copy creates a seamless experience from click to conversion \u2014 not a disconnect that wastes ad spend.',
+          'I don\'t use generic ChatGPT prompting. I use Claude Code augmented by my own custom-built copywriting skills \u2014 proprietary skill files that encode 40 years of frameworks, headline formulas, and evaluation criteria into a working AI workflow, with my 1,239-file Obsidian copywriting brain as the reference layer (190 frameworks, 193 swipe pieces, 125 book/course notes, 76 templates, 512 pieces of my own copy). I make every strategic and structural call. The AI carries the volume \u2014 which is exactly what testing 5\u20138 above-the-fold variations across multiple traffic sources needs.',
       },
       {
         question: 'How much does landing page copywriting cost?',
         answer:
-          'Landing page copywriting is project-based, and pricing depends on complexity, research scope, and deliverables. But here is how I think about it: if your landing page converts at 3% instead of 2%, that is a 50% improvement on the same traffic. At serious daily ad budgets, that difference pays for the copywriter in the first week and keeps paying every day after.',
+          'Landing-page engagements are fixed-price. Most landing-page projects start at $5K \u2014 lower than long-form sales pages because the asset is shorter, but the diagnostic and traffic-source analysis time is similar. Bundled bridge sequences (multiple landing pages for one funnel) start at $10K. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a landing page that converts at 5% instead of 2% on the same traffic doesn\'t pay for itself \u2014 it transforms what your ad spend can buy.',
+      },
+      {
+        question: 'How long does it take to write a landing page?',
+        answer:
+          'A standalone landing page typically takes 2\u20133 weeks from briefing to final deliverables. Bundled bridge sequences (multiple LPs for the same funnel) take 3\u20134 weeks. That includes traffic-source analysis, message-match audit, single-action architecture, above-the-fold variations, and one comprehensive revision round. The timeline depends on the number of pages and the complexity of your traffic sources.',
+      },
+      {
+        question: 'Landing page vs. sales page \u2014 which one do I need?',
+        answer:
+          'A landing page is short-form, single-action, and built to earn one click \u2014 to your VSL, TSL, webinar, checkout, or inbox. A sales page is long-form, multi-section, and built to take a cold visitor through the entire buying decision in one visit. The fundamentals overlap (research, message match, persuasion architecture); the discipline differs (LP = ruthless cut everything but the click; sales page = exhaustively answer every objection). I write both, and on the strategy call I\'ll tell you which your offer warrants.',
+      },
+      {
+        question: 'What industries do you write landing pages for?',
+        answer:
+          '22% trial-to-paid lift on Chatterkick\'s SaaS onboarding LP. 8% cold-traffic conversion on Conor Reynolds\'s bridge sequence. 5.7% opt-in-to-sale on Monetari Fund\'s compliance-aware financial bridge. 4.8% front-end conversion on a biz-op hybrid landing page. Plus health and supplement, e-commerce and DTC product launches, info products and webinar registration, ClickBank vendors, and B2B lead-gen funnels. Each vertical has its own conversion math and traffic-source idiosyncrasies. The frameworks adapt accordingly.',
+      },
+      {
+        question: 'What happens after the strategy call?',
+        answer:
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is traffic-source analysis and message-match audit, then single-action architecture, then page writing with above-the-fold variations, then one comprehensive revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['ad-copywriter', 'sales-page-copywriter'],
