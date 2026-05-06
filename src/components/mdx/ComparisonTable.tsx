@@ -11,7 +11,7 @@ export function ComparisonTable({ headers, rows, caption }: ComparisonTableProps
   return (
     <div className="not-prose my-8 overflow-x-auto">
       {caption && (
-        <p className="font-heading text-sm font-semibold text-paper-500 mb-3">{caption}</p>
+        <p className="font-heading text-sm font-semibold text-paper-600 mb-3">{caption}</p>
       )}
       <table className="w-full border-collapse text-sm">
         <thead>
@@ -32,7 +32,7 @@ export function ComparisonTable({ headers, rows, caption }: ComparisonTableProps
               {row.map((cell, j) => (
                 <td
                   key={j}
-                  className="px-4 py-3 text-paper-700 font-body border-b border-paper-100 first:font-semibold first:text-ink-950"
+                  className="px-4 py-3 text-ink-700 font-body border-b border-paper-200 first:font-semibold first:text-ink-950"
                 >
                   {cell}
                 </td>

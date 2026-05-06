@@ -32,7 +32,7 @@ export function ClientLogoBar({ variant = 'dark', className }: ClientLogoBarProp
           <p
             className={cn(
               'text-center text-xs sm:text-sm font-heading uppercase tracking-[0.2em] mb-10 font-semibold',
-              variant === 'dark' ? 'text-gold-400' : 'text-paper-500'
+              variant === 'dark' ? 'text-gold-400' : 'text-paper-600'
             )}
           >
             Trusted by Fortune 500 brands and top direct-response marketers
@@ -48,7 +48,7 @@ export function ClientLogoBar({ variant = 'dark', className }: ClientLogoBarProp
                   'font-heading text-xl sm:text-2xl font-bold tracking-wide transition-colors duration-200',
                   variant === 'dark'
                     ? 'text-white/80 hover:text-white'
-                    : 'text-paper-500 hover:text-paper-700'
+                    : 'text-paper-600 hover:text-ink-950'
                 )}
               >
                 {client}

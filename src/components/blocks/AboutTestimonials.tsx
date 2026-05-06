@@ -53,7 +53,7 @@ export function AboutTestimonials() {
         <div className="text-center mt-10">
           <Link
             href="/testimonials"
-            className="inline-flex items-center gap-2 font-heading text-sm font-semibold text-gold-600 hover:text-gold-700 transition-colors"
+            className="inline-flex items-center gap-2 font-heading text-sm font-semibold text-gold-600 hover:text-gold-500 transition-colors"
           >
             Read all {TESTIMONIAL_COUNT} testimonials
             <span aria-hidden="true">&rarr;</span>

@@ -45,7 +45,7 @@ export function PortfolioGrid({ items }: PortfolioGridProps) {
                   'text-xs rounded-full px-1.5 py-0.5 min-w-[1.25rem] text-center',
                   activeCategory === category
                     ? 'bg-ink-700 text-paper-200'
-                    : 'bg-paper-200 text-paper-500'
+                    : 'bg-paper-200 text-paper-600'
                 )}
               >
                 {count}
@@ -74,7 +74,7 @@ export function PortfolioGrid({ items }: PortfolioGridProps) {
       {/* Empty state */}
       {filteredItems.length === 0 && (
         <div className="text-center py-12">
-          <p className="text-paper-500 font-body">
+          <p className="text-paper-600 font-body">
             No portfolio items in this category yet.
           </p>
         </div>

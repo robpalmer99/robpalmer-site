@@ -208,10 +208,11 @@ export default async function ServicePage({ params }: ServicePageProps) {
                   <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
                     {section.heading}
                   </h2>
-                  <p
-                    className="mt-4 text-lg text-ink-700 leading-relaxed font-body [&_a]:text-gold-600 [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-gold-700"
-                    dangerouslySetInnerHTML={{ __html: section.content }}
-                  />
+                  <div className="mt-4 space-y-5 text-lg text-ink-700 leading-relaxed font-body [&_a]:text-gold-600 [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-gold-500">
+                    {section.content.split('\n\n').map((para, i) => (
+                      <p key={i} dangerouslySetInnerHTML={{ __html: para }} />
+                    ))}
+                  </div>
                   {section.bullets && (
                     <ul role="list" className="mt-4 space-y-2">
                       {section.bullets.map((bullet, i) => (
@@ -339,7 +340,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                 <div className="text-center mt-8">
                   <Link
                     href="/testimonials"
-                    className="inline-flex items-center gap-2 font-heading text-sm font-semibold text-gold-600 hover:text-gold-700 transition-colors"
+                    className="inline-flex items-center gap-2 font-heading text-sm font-semibold text-gold-600 hover:text-gold-500 transition-colors"
                   >
                     Read all {TESTIMONIAL_COUNT} testimonials
                     <span aria-hidden="true">&rarr;</span>
@@ -381,7 +382,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                       </span>
                       <svg
                         aria-hidden="true"
-                        className="w-4 h-4 text-paper-500 group-hover:text-gold-400 transition-colors"
+                        className="w-4 h-4 text-paper-600 group-hover:text-gold-400 transition-colors"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -401,7 +402,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                 <div className="text-center mt-8">
                   <Link
                     href="/portfolio"
-                    className="inline-flex items-center gap-2 font-heading text-sm font-semibold text-gold-400 hover:text-gold-300 transition-colors"
+                    className="inline-flex items-center gap-2 font-heading text-sm font-semibold text-gold-400 hover:text-gold-200 transition-colors"
                   >
                     View full portfolio
                     <span aria-hidden="true">&rarr;</span>

@@ -46,7 +46,7 @@ export default function ContactPage() {
                   <h2 className="font-heading text-xl font-bold text-ink-950">
                     Rob Palmer
                   </h2>
-                  <p className="text-sm text-paper-400 font-heading">
+                  <p className="text-sm text-paper-600 font-heading">
                     Direct-Response Copywriter
                   </p>
                 </div>

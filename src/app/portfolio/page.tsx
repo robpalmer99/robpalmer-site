@@ -49,7 +49,7 @@ export default function PortfolioPage() {
                   href="https://drive.google.com/drive/folders/1ivFq-UhqthNnaGhlp6nJOc1G9s7H4iDI?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg bg-gold-400 px-6 py-3 font-heading text-sm font-bold text-ink-950 shadow-sm transition-all duration-200 hover:bg-gold-300 hover:shadow-md hover:scale-[1.03] active:scale-[0.98]"
+                  className="inline-flex items-center gap-2 rounded-lg bg-gold-400 px-6 py-3 font-heading text-sm font-bold text-ink-950 shadow-sm transition-all duration-200 hover:bg-gold-500 hover:shadow-md hover:scale-[1.03] active:scale-[0.98]"
                 >
                   Browse My Portfolio
                   <svg aria-hidden="true" className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -198,7 +198,7 @@ export default function PortfolioPage() {
                     <Link
                       key={vertical.slug}
                       href={`/verticals/${vertical.slug}`}
-                      className="inline-block rounded-full border border-paper-200 bg-paper-50 px-4 py-1.5 text-sm font-body font-medium text-ink-800 transition-colors hover:border-gold-300 hover:bg-gold-50 hover:text-gold-700"
+                      className="inline-block rounded-full border border-paper-200 bg-paper-50 px-4 py-1.5 text-sm font-body font-medium text-ink-800 transition-colors hover:border-gold-200 hover:bg-gold-50 hover:text-gold-600"
                     >
                       {vertical.title}
                     </Link>

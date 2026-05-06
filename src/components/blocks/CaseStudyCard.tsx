@@ -58,7 +58,7 @@ export function CaseStudyCard({
           <div className="font-heading text-2xl sm:text-3xl font-bold text-gold-400">
             {result}
           </div>
-          <div className="text-sm text-paper-400 font-heading">{client}</div>
+          <div className="text-sm text-paper-300 font-heading">{client}</div>
         </div>
       )}
 
@@ -66,7 +66,7 @@ export function CaseStudyCard({
         <h3 className="font-heading text-lg font-bold text-ink-950 group-hover:text-gold-600 transition-colors">
           {title}
         </h3>
-        <p className="mt-3 flex-1 text-sm text-ink-700 leading-relaxed font-body">{description}</p>
+        <p className="mt-3 flex-1 text-base lg:text-[1rem] text-ink-700 leading-relaxed font-body">{description}</p>
         <div className="mt-4 flex items-center gap-1 text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-500 transition-colors">
           Read the case study
           <svg

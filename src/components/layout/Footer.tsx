@@ -17,7 +17,7 @@ export function Footer() {
             <Link href="/" className="block">
               <Logo className="h-10 w-auto" variant="light" />
             </Link>
-            <p className="mt-4 text-sm leading-relaxed text-paper-400">
+            <p className="mt-4 text-base lg:text-[1rem] leading-relaxed text-paper-300">
               Veteran direct-response copywriter specializing in VSLs, TSLs,
               email sequences, and sales funnels. AI-powered. Battle-tested.
             </p>
@@ -68,7 +68,7 @@ export function Footer() {
             <h3 className="font-heading text-sm font-semibold uppercase tracking-wider text-paper-200 mb-4">
               Get in Touch
             </h3>
-            <p className="text-sm text-paper-400 mb-4">
+            <p className="text-base lg:text-[1rem] text-paper-300 mb-4">
               Ready to discuss your next campaign? Book a free strategy call or send me a message.
             </p>
             <Link

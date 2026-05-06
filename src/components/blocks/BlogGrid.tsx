@@ -186,7 +186,7 @@ export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], curren
                   'text-xs rounded-full px-1.5 py-0.5 min-w-[1.25rem] text-center',
                   activeCategory === category
                     ? 'bg-ink-700 text-paper-200'
-                    : 'bg-paper-200 text-paper-500'
+                    : 'bg-paper-200 text-paper-600'
                 )}
               >
                 {count}
@@ -198,7 +198,7 @@ export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], curren
 
       {/* Results count */}
       {isFiltered && totalResults > 0 && (
-        <p className="text-sm text-paper-500 font-body text-center mb-6">
+        <p className="text-sm text-paper-600 font-body text-center mb-6">
           Showing {totalResults} result{totalResults !== 1 ? 's' : ''}
           {debouncedQuery.trim() && (
             <>
@@ -236,7 +236,7 @@ export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], curren
                     <h3 className="font-heading text-base font-bold text-ink-950 group-hover:text-gold-600 transition-colors leading-snug">
                       {result.title}
                     </h3>
-                    <p className="mt-1.5 text-sm text-ink-700 leading-relaxed font-body line-clamp-2">
+                    <p className="mt-1.5 text-base lg:text-[1rem] text-ink-700 leading-relaxed font-body line-clamp-2">
                       {result.description}
                     </p>
                     <span className="mt-3 inline-block text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-500 transition-colors">
@@ -276,7 +276,7 @@ export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], curren
           </>
         ) : isFiltered && siteResults.length === 0 ? (
           <div className="text-center py-16">
-            <p className="text-lg text-paper-500 font-body mb-4">
+            <p className="text-lg text-paper-600 font-body mb-4">
               No results match your current filters.
             </p>
             <button
@@ -305,7 +305,7 @@ export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], curren
             </span>
           )}
 
-          <span className="text-sm font-heading font-medium text-paper-500">
+          <span className="text-sm font-heading font-medium text-paper-600">
             Page {currentPage} of {totalPages}
           </span>
 

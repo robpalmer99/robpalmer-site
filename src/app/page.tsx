@@ -28,6 +28,17 @@ export const metadata: Metadata = {
   },
 }
 
+// Tile-sized one-liners for the home Verticals section.
+// Each replaces the longer shortDescription used on /verticals/[slug] pages.
+const VERTICAL_TAGLINES: Record<string, string> = {
+  'health-supplement-copywriter': 'Compliance-aware DR copy that still converts.',
+  'financial-copywriter': 'Wall Street credibility with direct-response conversion.',
+  'ecommerce-dtc-copywriter': 'Lift conversion, AOV, and customer lifetime value.',
+  'clickbank-copywriter': 'Funnels top affiliates fight to promote.',
+  'saas-copywriter': 'Direct response on SaaS metrics — MRR, churn, LTV.',
+  'info-product-copywriter': 'Launches and evergreen systems that scale.',
+}
+
 const homepageFaqs = [
   { question: 'What types of copywriting do you specialize in?', answer: 'I specialize in direct-response copywriting — the kind that\'s designed to generate a measurable action. This includes video sales letters (VSLs), text sales letters (TSLs), email sequences, landing pages, sales funnels, upsell/downsell pages, and paid ad copy. Every piece I write is engineered to convert.' },
   { question: 'How much does it cost to hire you?', answer: 'Fees depend on the project scope, complexity, and format. A single email is different from a full VSL + funnel build. I\'ll give you a clear, fixed-price quote after our strategy call — no hourly billing, no surprises. For a general guide, see my blog post on copywriting rates.' },
@@ -60,7 +71,13 @@ export default function HomePage() {
         cta={{ label: 'Book a Strategy Call', href: '/contact' }}
         secondaryCta={{ label: 'See Case Studies', href: '/case-studies' }}
         image={{ src: '/images/headshots/rob-palmer-clean.png', alt: 'Rob Palmer - Direct-Response Copywriter' }}
-      />
+      >
+        <FadeIn delay={450} duration={800}>
+          <p className="mt-5 text-sm sm:text-base lg:text-[0.95rem] text-paper-300 font-body">
+            Custom-quoted by project scope. Fixed-price engagements, no hourly billing.
+          </p>
+        </FadeIn>
+      </Hero>
 
       {/* Client Logos */}
       <ClientLogoBar variant="dark" />
@@ -161,16 +178,19 @@ export default function HomePage() {
               </p>
             </div>
           </FadeIn>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
             {verticals.map((vertical, index) => (
-              <FadeIn key={vertical.slug} delay={index * 80}>
+              <FadeIn key={vertical.slug} delay={index * 80} className="h-full">
                 <Link
                   href={`/verticals/${vertical.slug}`}
-                  className="group block rounded-xl border border-paper-200 bg-white p-5 text-center shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-1"
+                  className="group flex h-full flex-col rounded-xl border border-paper-200 bg-white p-5 sm:p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-1"
                 >
-                  <span className="font-heading text-sm font-semibold text-ink-950 group-hover:text-gold-600 transition-colors">
-                    {vertical.title}
-                  </span>
+                  <h3 className="font-heading text-base sm:text-lg font-bold text-ink-950 group-hover:text-gold-600 transition-colors leading-tight">
+                    {vertical.title.replace(' Copywriter', '')}
+                  </h3>
+                  <p className="mt-2 text-base lg:text-[1rem] text-ink-700 leading-snug font-body">
+                    {VERTICAL_TAGLINES[vertical.slug] ?? vertical.shortDescription}
+                  </p>
                 </Link>
               </FadeIn>
             ))}

@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-05-06T00:00:00Z",
+  "title": "Design System: Rob Palmer — Direct-Response Copywriter",
+  "extensions": {
+    "colorMeta": {
+      "ink-950": {
+        "role": "neutral",
+        "displayName": "Deep Ink",
+        "canonical": "#0A0A0F",
+        "tonalRamp": ["#0A0A0F", "#141420", "#1E1E2E", "#2D2D40", "#3D3A35", "#6B6760", "#A8A49A", "#D4D1C7"]
+      },
+      "gold-400": {
+        "role": "primary",
+        "displayName": "Burnished Gold",
+        "canonical": "#F5B731",
+        "tonalRamp": ["#5C3D00", "#7A5400", "#B8840F", "#D99E1B", "#F5B731", "#FFE099", "#FFF0CC", "#FFF9EB"]
+      },
+      "paper-50": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#FAFAF8",
+        "tonalRamp": ["#3D3A35", "#6B6760", "#A8A49A", "#D4D1C7", "#ECEAE3", "#F5F4F0", "#FAFAF8", "#FFFFFF"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display (Fraunces)",
+        "purpose": "Hero headlines only. One per page. Fluid clamp(2.25rem, 5vw, 3.75rem)."
+      },
+      "headline": {
+        "displayName": "Headline (Fraunces)",
+        "purpose": "Section h2 openers. Fluid clamp(1.875rem, 3.5vw, 2.5rem)."
+      },
+      "title": {
+        "displayName": "Title (Fraunces)",
+        "purpose": "Card titles, accordion question rows. 18px / text-lg."
+      },
+      "body": {
+        "displayName": "Body (Lora)",
+        "purpose": "All paragraph copy. 18px / 1.125rem base, 1.65 line-height. Cap line-length at 65–75ch."
+      },
+      "label": {
+        "displayName": "Label (Fraunces)",
+        "purpose": "Badges, overlines, footer column headers. 12px UPPERCASE letter-spacing 0.05em."
+      }
+    },
+    "shadows": [
+      { "name": "card-rest", "value": "0 1px 2px 0 rgb(0 0 0 / 0.05)", "purpose": "Default card resting elevation. Hairline of separation only." },
+      { "name": "card-hover", "value": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)", "purpose": "Card hover state; primary CTA resting state." },
+      { "name": "service-card-hover", "value": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 0 24px -4px rgba(245,183,49,0.05)", "purpose": "ServiceCard hover — amplified shadow with gold tint." },
+      { "name": "header-scrolled", "value": "0 10px 15px -3px rgb(0 0 0 / 0.1)", "purpose": "Scrolled fixed header drop shadow over content." },
+      { "name": "primary-cta-rest", "value": "0 4px 6px -1px rgba(245,183,49,0.2)", "purpose": "Gold-tinted shadow under primary CTA buttons." }
+    ],
+    "motion": [
+      { "name": "ease-default", "value": "cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "Default easing for transitions (hover, focus, color shifts)." },
+      { "name": "duration-fast", "value": "200ms", "purpose": "Button hover/active state changes, card lifts, color transitions." },
+      { "name": "duration-medium", "value": "300ms", "purpose": "Card image zoom on hover (scale-105)." },
+      { "name": "fade-in-stagger", "value": "80–150ms per index", "purpose": "FadeIn reveal cascade across grid items." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Gold-on-ink trust CTA. Used for 'Book a Strategy Call', primary form submits, hero CTAs.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Book a Strategy Call</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; padding: 12px 24px; font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: 16px; color: #0A0A0F; background-color: #F5B731; border: none; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(245,183,49,0.2); text-decoration: none; cursor: pointer; transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-primary:hover { background-color: #D99E1B; transform: scale(1.02); } .ds-btn-primary:active { background-color: #B8840F; transform: scale(0.98); } .ds-btn-primary:focus-visible { outline: 2px solid #F5B731; outline-offset: 2px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary CTA on dark hero surfaces. Inverts on hover.",
+      "html": "<a class=\"ds-btn-outline\" href=\"#\">See Case Studies</a>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; padding: 12px 24px; font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: 16px; color: #F5B731; background-color: transparent; border: 2px solid #F5B731; border-radius: 8px; text-decoration: none; cursor: pointer; transition: background-color 200ms, color 200ms, transform 200ms; } .ds-btn-outline:hover { background-color: #F5B731; color: #0A0A0F; transform: scale(1.02); }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "The default content card. Hairline border on warm paper, lifts on hover.",
+      "html": "<article class=\"ds-card\"><h3 class=\"ds-card-title\">Card Title in Fraunces</h3><p class=\"ds-card-body\">Body copy in Lora at 18px with 1.65 line-height. Long-form is the product.</p><a class=\"ds-card-link\" href=\"#\">Read more →</a></article>",
+      "css": ".ds-card { display: block; padding: 24px; background-color: #FFFFFF; border: 1px solid #ECEAE3; border-radius: 12px; box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); transition: box-shadow 200ms, border-color 200ms, transform 200ms; } .ds-card:hover { box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); border-color: #FFE099; transform: translateY(-2px); } .ds-card-title { font-family: 'Fraunces', Georgia, serif; font-weight: 700; font-size: 18px; line-height: 1.3; color: #0A0A0F; margin: 0 0 12px 0; } .ds-card-body { font-family: 'Lora', Georgia, serif; font-size: 16px; line-height: 1.6; color: #2D2D40; margin: 0 0 16px 0; } .ds-card-link { display: inline-block; font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: 14px; color: #B8840F; text-decoration: none; transition: color 200ms; } .ds-card-link:hover { color: #D99E1B; }"
+    },
+    {
+      "name": "Gold Badge",
+      "kind": "chip",
+      "refersTo": "badge-gold",
+      "description": "Category tag for blog posts and editorial overlines. Pill-shape, uppercase Fraunces.",
+      "html": "<span class=\"ds-badge-gold\">Direct Response</span>",
+      "css": ".ds-badge-gold { display: inline-flex; align-items: center; padding: 4px 12px; font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: #B8840F; background-color: #FFF9EB; border: 1px solid #FFE099; border-radius: 9999px; }"
+    },
+    {
+      "name": "Section Divider",
+      "kind": "custom",
+      "refersTo": "section-divider",
+      "description": "60px gold gradient bar centered at the top of a section. The visual exhale.",
+      "html": "<div class=\"ds-section-divider\"></div>",
+      "css": ".ds-section-divider { display: block; width: 60px; height: 2px; margin: 0 auto; background: linear-gradient(90deg, transparent, #F5B731, transparent); }"
+    },
+    {
+      "name": "Stats Tile",
+      "kind": "custom",
+      "refersTo": "stats-bar-tile",
+      "description": "Single tile from the StatsBar. Big gold number + uppercase paper label.",
+      "html": "<dl class=\"ds-stat\"><dt class=\"ds-stat-value\">$523M+</dt><dd class=\"ds-stat-label\">In Tracked Revenue</dd></dl>",
+      "css": ".ds-stat { text-align: center; margin: 0; } .ds-stat-value { font-family: 'Fraunces', Georgia, serif; font-weight: 700; font-size: 48px; line-height: 1; letter-spacing: -0.02em; color: #F5B731; margin: 0; } .ds-stat-label { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 14px; letter-spacing: 0.075em; text-transform: uppercase; color: #6B6760; margin: 8px 0 0 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Working Editorial",
+    "overview": "A serious editorial publication that happens to convert. The reference is The Atlantic or Harper's, not a SaaS landing page. Fraunces serif headers carry editorial weight; Lora body type signals that long-form is the product (the site holds 105 blog posts and a deep portfolio); a warm paper background reads like printed stock under a reading lamp; deep ink-950 carries authority; and a single burnished gold accent is reserved for trust signals — ROI numbers, primary CTAs, link emphasis, the underline beneath a claim.",
+    "keyCharacteristics": [
+      "Editorial typography pairing (Fraunces display + Lora body) — book-weight, not deck-weight",
+      "Warm paper-50 page background (#FAFAF8) — never pure white; tinted toward bone",
+      "Restrained color strategy: tinted neutrals carry 90%+ of every screen, gold appears as the underline beneath proof",
+      "Body type set at 18px (1.125rem) base with 1.65 line-height — long-form is first-class",
+      "Generous vertical rhythm — sections breathe at py-16 sm:py-20 lg:py-24",
+      "Deep ink-950 reserved for authority surfaces with a fine fractal-noise overlay for printed-stock texture"
+    ],
+    "rules": [
+      { "name": "The Gold-As-Underline Rule", "body": "Gold is the punctuation under a claim, never the claim itself. ROI numbers, primary CTAs, focus rings, link hover, the section-divider gradient — that is where gold lives. Decorative gold backgrounds, gold borders for visual interest, gold drop shadows on text — all forbidden.", "section": "colors" },
+      { "name": "The No-Pure-Black, No-Pure-White Rule", "body": "#000 and #FFF are banned. Card backgrounds use #FFFFFF only because the warm paper page sits behind them and provides the warmth; everything else is tinted.", "section": "colors" },
+      { "name": "The One-Accent Rule", "body": "Restrained color strategy: tinted neutrals plus a single accent ≤10% of any given screen. If a screen has more than one color competing for attention, one must yield.", "section": "colors" },
+      { "name": "The Long-Form-Is-The-Product Rule", "body": "Body text is set at 18px (1.125rem) base, not just on prose. Components that override down to text-sm (14px) for body copy require explicit justification — meta rows, dense metadata, captions only.", "section": "typography" },
+      { "name": "The Serif-On-Serif Rule", "body": "Display and body are both serifs. Sans-serif is forbidden anywhere on this site except inside system-generated UI. The pairing IS the brand.", "section": "typography" },
+      { "name": "The Editorial-Measure Rule", "body": "Body paragraphs sit inside containers with max-w-2xl (~672px) or max-w-3xl (~768px) for long-form. Never full-bleed body text across a max-w-6xl container.", "section": "typography" },
+      { "name": "The Flat-Until-Hover Rule", "body": "Surfaces are flat at rest. Elevation responds to state — hover lifts a card 0.5–1px and bumps the shadow one tier. Static decorative shadows are forbidden.", "section": "elevation" },
+      { "name": "The Gold-Glow-Only-On-Dark Rule", "body": "Atmospheric gold radial glow appears only on ink-950 / ink-900 surfaces. On light surfaces, gold is type and stroke, never atmosphere.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep body text at 18px (1.125rem) base, with 1.65 line-height. Override DOWN only with cause.",
+      "Do use text-paper-600 (not paper-400) for any meta or secondary text on paper-50 — WCAG AA floor.",
+      "Do use text-gold-600 (not gold-500 or gold-400) for link text on light backgrounds — WCAG AA floor.",
+      "Do cap body line-length at max-w-2xl or max-w-3xl. Body inside max-w-6xl is forbidden.",
+      "Do treat gold as a punctuation mark — ROI numbers, primary CTAs, focus rings, the section divider, link emphasis.",
+      "Do anchor every claim to a number or a logo. Adjective-only claims betray the brand.",
+      "Do honor prefers-reduced-motion. New animations must respect it.",
+      "Do use Fraunces (display/heading/label) and Lora (body) only. Both serifs."
+    ],
+    "donts": [
+      "Don't use #000 or #FFF anywhere in this codebase.",
+      "Don't use bg-gold-300 or bg-gold-700 — they don't exist in the palette and never will.",
+      "Don't use text-paper-400 for body or meta copy. Fails WCAG AA.",
+      "Don't use sans-serif fonts anywhere on this site.",
+      "Don't use side-stripe colored borders. ServiceCard's border-t-2 border-t-gold-400/40 is the single sanctioned exception.",
+      "Don't use gradient text effects.",
+      "Don't use glassmorphism / backdrop-blur decoratively. Functional only.",
+      "Don't build the hero-metric template. The StatsBar IS the sanctioned hero-metric in this system.",
+      "Don't stack identical 3-column card grids endlessly. Maintain editorial rhythm with asymmetric sections.",
+      "Don't introduce dark mode. Dark surfaces interleave into the layout — that is the rhythm.",
+      "Don't add a fourth color family. Ink, Gold, Paper. If a fourth is needed, the brief is wrong.",
+      "Don't ship nested cards.",
+      "Don't use modals as a first-thought interaction."
+    ]
+  }
+}

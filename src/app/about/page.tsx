@@ -309,7 +309,7 @@ export default function AboutPage() {
                 <p className="mt-5">
                   <Link
                     href="/case-studies/belron-safelite-523m-campaign"
-                    className="inline-flex items-center gap-2 font-heading text-sm font-semibold text-gold-600 hover:text-gold-700 transition-colors"
+                    className="inline-flex items-center gap-2 font-heading text-sm font-semibold text-gold-600 hover:text-gold-500 transition-colors"
                   >
                     Read the full case study
                     <span aria-hidden="true">&rarr;</span>

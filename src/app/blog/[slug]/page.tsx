@@ -273,7 +273,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                         <Link
                           key={svc.slug}
                           href={`/services/${svc.slug}`}
-                          className="inline-block rounded-full border border-paper-200 bg-paper-50 px-4 py-1.5 text-sm font-body font-medium text-ink-800 transition-colors hover:border-gold-300 hover:bg-gold-50 hover:text-gold-700"
+                          className="inline-block rounded-full border border-paper-200 bg-paper-50 px-4 py-1.5 text-sm font-body font-medium text-ink-800 transition-colors hover:border-gold-200 hover:bg-gold-50 hover:text-gold-600"
                         >
                           {svc.title}
                         </Link>
@@ -291,7 +291,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                         <Link
                           key={vert.slug}
                           href={`/verticals/${vert.slug}`}
-                          className="inline-block rounded-full border border-paper-200 bg-paper-50 px-4 py-1.5 text-sm font-body font-medium text-ink-800 transition-colors hover:border-gold-300 hover:bg-gold-50 hover:text-gold-700"
+                          className="inline-block rounded-full border border-paper-200 bg-paper-50 px-4 py-1.5 text-sm font-body font-medium text-ink-800 transition-colors hover:border-gold-200 hover:bg-gold-50 hover:text-gold-600"
                         >
                           {vert.title}
                         </Link>

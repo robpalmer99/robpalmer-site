@@ -149,7 +149,7 @@ export default function BelronCaseStudyPage() {
               </p>
 
               {/* Client Testimonial */}
-              <blockquote className="my-10 border-l-4 border-gold-400 pl-6 py-4 bg-paper-50 rounded-r-lg">
+              <blockquote className="my-10 rounded-xl bg-gold-50 px-6 py-5 sm:px-8 sm:py-6">
                 <p className="text-xl font-body italic text-ink-950 leading-relaxed">
                   &ldquo;You are our secret weapon. Keep your diary clear, please!&rdquo;
                 </p>

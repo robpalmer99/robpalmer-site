@@ -40,19 +40,19 @@ export function PortfolioCard({ item }: PortfolioCardProps) {
 
         {/* Client */}
         {item.client && (
-          <p className="mt-1 text-xs font-heading font-medium text-paper-500 uppercase tracking-wide">
+          <p className="mt-1 text-xs font-heading font-medium text-paper-600 uppercase tracking-wide">
             {item.client}
           </p>
         )}
 
         {/* Description */}
-        <p className="mt-2 text-sm text-ink-700 leading-relaxed font-body line-clamp-2">
+        <p className="mt-2 text-base lg:text-[1rem] text-ink-700 leading-relaxed font-body line-clamp-2">
           {item.description}
         </p>
 
         {/* Result highlight */}
         {item.result && (
-          <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-gold-50 px-3 py-1 text-xs font-heading font-bold text-gold-700 border border-gold-200">
+          <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-gold-50 px-3 py-1 text-xs font-heading font-bold text-gold-600 border border-gold-200">
             <svg
               aria-hidden="true"
               className="w-3.5 h-3.5 text-gold-500"
