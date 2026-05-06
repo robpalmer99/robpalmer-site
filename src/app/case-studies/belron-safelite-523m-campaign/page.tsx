@@ -49,7 +49,7 @@ export default function BelronCaseStudyPage() {
       <Hero
         variant="page"
         headline="The $523M Secret Weapon"
-        subheadline='How a single direct-response campaign generated $523 million in sales, ran for 9 years, and earned the title "Secret Weapon" from the CEO of Belron International.'
+        subheadline='The bulk of my career <strong>$523M+ tracked-revenue figure</strong> comes from this one 9-year Belron/Safelite campaign. Here is exactly what was written, why it worked, and how it beat five award-winning copywriters who failed before me.'
       />
       <Breadcrumbs
         items={[
