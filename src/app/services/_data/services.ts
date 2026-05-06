@@ -829,97 +829,105 @@ export const services: Service[] = [
     title: 'Ad Copywriter',
     slug: 'ad-copywriter',
     shortDescription:
-      'High-converting ad copy for Facebook, Google, YouTube, and native. Scroll-stopping hooks, compliant angles, tested frameworks.',
+      'Ad copy from Apple UK direct mail to 300% ROAS Facebook ads on ClickBank. Hooks, platform-tuned suites, compliance-aware copy for health and finance.',
     metaTitle: 'Ad Copywriter | Facebook, Google & YouTube Ad Copy',
     metaDescription:
-      'Expert ad copywriter for direct-response brands. High-converting Facebook, Google, YouTube, and native ad copy with scroll-stopping hooks and proven frameworks.',
-    headline: 'The Ad Copywriter Behind $523M+ in Results',
+      'Senior ad copywriter for direct-response operators. From the Apple UK direct-mail piece that overwhelmed fulfillment to 300% ROAS Facebook ads for ClickBank. Fixed-price suites.',
+    headline: 'Ad Copywriter \u2014 From Apple UK Direct Mail to 300% ROAS for ClickBank Operators',
     subheadline:
-      'I write the ads that feed the funnels \u2014 Facebook, Google, YouTube, and native ad copy that has driven 300% ROAS, 4% VSL conversion rates, and eight-figure offers across health, finance, and DTC.',
+      'In the early \'90s, I wrote the Apple UK direct-mail piece that overwhelmed their fulfillment capacity \u2014 they had to scale the campaign back to keep up with demand. The same instincts now drive the Facebook, Google, YouTube, and native ad copy I write for ClickBank operators today: 300% ROAS, $30M+ VSL funnels, eight-figure offers. If your ad spend is feeding Meta\'s revenue instead of yours, this is the kind of work I do.',
     heroImage: '/images/services/ad-copywriter.jpg',
     heroImageAlt: 'Social media advertising and marketing for ad copywriting',
     heroStats: {
-      primary: { value: '$523M+', label: 'Tracked Client Results' },
+      primary: { value: '300%', label: 'ROAS on Facebook (Supplement Cold Traffic)' },
       secondary: [
-        { value: '300%', label: 'ROAS on Paid Traffic' },
+        { value: '$30M+', label: 'Mobile Profits VSL #1 ClickBank (Fed by My Ads)' },
+        { value: '5', label: 'Fortune 500 Clients (Apple / IBM / Microsoft / Citibank / Morgan Stanley)' },
         { value: '40+', label: 'Years Direct Response' },
-        { value: '4%', label: 'Peak Cold Traffic Conversion' },
       ],
     },
     credentialBar: {
       heading: 'Ad copy written for',
       items: [
-        'Facebook & Meta',
-        'Google Search',
-        'YouTube Pre-Roll',
-        'Native (Taboola/Outbrain)',
-        'ClickBank Vendors',
-        'DTC Brands',
+        'Apple UK / Fortune 500 (IBM, Microsoft, Citibank, Morgan Stanley)',
+        'ClickBank Platinum Vendors',
+        'Copy Accelerator (as Copy Chief)',
+        'Supplement Marketers',
+        'Financial Publishers',
+        'DTC and Info Product Brands',
       ],
     },
     sections: [
       {
-        heading: 'Why Most Ads Waste Money Instead of Making It',
+        heading: 'Why Most Ad Copy Burns Money in Public',
         content:
-          'You are spending $500, $5,000, maybe $50,000 a day on ads. And for every dollar you put in, you need more than a dollar back \u2014 fast. <strong>Your ad copy is the most expensive writing in your business, measured per word.</strong> Every word either makes money or burns it.\n\n' +
-          'Most ad copy fails because the copywriter treats it like creative writing in a small format. It is not. It is the strategic intersection of audience psychology, platform algorithms, compliance rules, and direct-response persuasion \u2014 all compressed into a hook that has less than two seconds to earn attention.\n\n' +
-          'The hook must stop the scroll. The body must build enough desire to earn the click. And the entire ad must pre-qualify the traffic so you are not paying for clicks that will never convert downstream. Get any of those wrong and your ad spend is subsidizing Meta\'s revenue, not yours.',
+          'You\'re spending $500, $5,000, maybe $50,000 a day on paid traffic. At a 1% click-to-purchase, 99% of that spend pays Meta for impressions that never convert. Your ad copy is the most expensive writing in your business, measured per word. Scale it 10x and everything wrong about it scales 10x too.\n\n' +
+          'Most ad copy fails because the writer treats it like creative writing in a small format. It isn\'t. It\'s the strategic intersection of audience psychology, platform algorithms, compliance posture, and direct-response persuasion \u2014 compressed into a hook that has under two seconds to earn attention before the thumb keeps scrolling.\n\n' +
+          'The hook has to stop the scroll. The body has to build enough desire to earn the click. The whole ad has to pre-qualify traffic so you\'re not paying for clicks that never convert downstream. Get any of those wrong and your ad spend is subsidizing Meta\'s revenue, not yours.',
       },
       {
-        heading: 'The Ads Behind 300% ROAS and Eight-Figure Funnels',
+        heading: 'From Apple UK Direct Mail to 300% ROAS on ClickBank',
         content:
-          'The ads I write are not standalone pieces of creative. They are the <em>front door</em> to funnels that have generated tens of millions. The ads that drove cold traffic to the <strong>Mobile Profits VSL ($30M, #1 on ClickBank)</strong> had to do one specific job: stop a stranger mid-scroll, create enough curiosity to earn the click, and deliver that click to a VSL where they would watch for 30+ minutes.\n\n' +
-          'That requires a completely different approach than brand advertising or boosted posts. My ad copy for supplement offers has driven <strong>300% ROAS</strong> on Facebook. For financial publishers, I have written compliant ads that survived platform review while still out-converting generic "safe" copy by multiples.\n\n' +
-          'The pattern across all of them: <strong>deep audience research that finds the angle competitors missed</strong>, hooks built on emotional triggers rather than clever wordplay, and systematic testing that finds winners faster.',
+          'In the early \'90s, Apple UK handed me a direct-mail piece. The campaign overwhelmed their fulfillment capacity \u2014 they had to scale it back to keep up with demand. The kind of result that doesn\'t show up as a number on a marketing report. It shows up as a supply-side problem.\n\n' +
+          'The same instincts now drive the Facebook, Google, YouTube, and native ad copy I write for direct-response operators today.\n\n' +
+          'The ads I wrote for the Mobile Profits VSL \u2014 the offer that became <strong>#1 on ClickBank</strong> and did over <strong>$30 million</strong> \u2014 had one specific job: stop a stranger mid-scroll, create enough curiosity to earn the click, and deliver that click to a VSL ready to hold the viewer for 30+ minutes. The supplement ads I wrote drove <strong>300% ROAS</strong> on Facebook cold traffic. The compliant ads I\'ve written for financial publishers passed platform review while out-converting "safe" copy by multiples.\n\n' +
+          'If you have ad campaigns running and the numbers aren\'t where you need them, I work as a control-beater. Send me your top-performing ads and the back-end data \u2014 I\'ll tell you on the strategy call where the conversion is leaking, and whether I can write something that beats your control.',
       },
       {
-        heading: 'The Copy Chief That Top Copywriters Hire',
+        heading: 'The Ad Copywriter Top Operators and Media Buyers Hire',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park. Marc Lindsay, a direct-response media buyer, told me "one of your ads has just taken the lead" on a competitive campaign.\n\n' +
-          'These are people who test hundreds of ads and know exactly what converts. They work with me because my ad copy performs.',
+          'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as Copy Chief inside Copy Accelerator\'s CA Labs. Justin Goff publicly credited me with stepping up and knocking it out of the park. Marc David Lindsay, a direct-response media buyer testing my work head-to-head against existing controls, reported back: <em>"One of your ads has just taken the lead. High-converting campaign!"</em>\n\n' +
+          'Media buyers test more ads in a quarter than most people see in a year. When one tells you "your ad has taken the lead," that\'s the back-end data talking \u2014 not a polite review.',
       },
       {
-        heading: 'Platform-Specific Ad Copywriting',
+        heading: 'How I Architect Ads That Beat Existing Controls',
         content:
-          'Every platform has its own algorithm, audience behavior, and compliance rules. An ad that crushes on Facebook will die on YouTube. A Google Search ad that wins clicks needs completely different copy mechanics than a native ad on Taboola. I write for all of them \u2014 and I know the difference.',
+          'Every ad campaign I write moves through the same four phases. None are optional. This is the actual work \u2014 not a "process" page filling space.',
         bullets: [
-          'Facebook and Meta ads \u2014 hooks engineered for a fast-scrolling feed where you have under 2 seconds to earn attention. Primary text, headlines, and descriptions optimized as a system.',
-          'Google Search ads \u2014 precision intent-matching that competes for click-through rate against every other ad bidding on the same keyword.',
-          'YouTube pre-roll ads \u2014 scripts that earn the first 5 seconds before the skip button appears, then hold attention long enough to drive the click.',
-          'Native ads (Taboola, Outbrain) \u2014 copy that blends with editorial content while still qualifying the click and driving downstream conversion.',
+          'Phase 1 \u2014 Audience and angle research: I mine reviews, forums, competitor ad libraries (Meta Ad Library, VidTao), and customer-support transcripts to find the exact language your prospects use about the pain. The hook and the angle come out of this layer, not a brainstorming session. My AI workflow processes 50+ competitor ads in the time a manual pass takes to read three.',
+          'Phase 2 \u2014 Hook and ad architecture: I build 5\u201310 hooks per campaign \u2014 each on a different angle, emotional trigger, or awareness-stage entry point. The hooks aren\'t variations of one idea; they\'re different bets. The system maps which hook leads which body, and which body lands which CTA.',
+          'Phase 3 \u2014 Platform-specific tuning + compliance: every ad written to the mechanics of the platform it runs on \u2014 Facebook feed dynamics, Google Search intent matching, YouTube pre-roll\'s 5-second window, native\'s editorial-blend posture. For health, supplement, and financial verticals, every piece of copy is calibrated to satisfy platform reviewers and FTC guidelines while preserving conversion power.',
+          'Phase 4 \u2014 Testing roadmap: a prioritized testing plan showing which variables to test first, what to expect, and how to iterate \u2014 so you find winners faster and kill losers earlier.',
         ],
       },
       {
-        heading: 'Compliance-Aware Ad Copy That Still Converts',
+        heading: 'Ads Across Facebook, Google, YouTube, Native, and Every DR Vertical',
         content:
-          'If you are running ads in health, supplements, or finance, you know the nightmare: <strong>write compliant copy and conversions tank. Write converting copy and your ad account gets flagged.</strong>\n\n' +
-          'Most ad copywriters pick one side. I have spent decades finding the angles that do both \u2014 proven language patterns that satisfy <a href="https://www.ftc.gov/business-guidance/advertising-and-marketing" target="_blank" rel="noopener noreferrer">FTC guidelines</a> and platform reviewers while still driving strong click-through and ROAS.\n\n' +
-          'This is not about being timid. It is about being strategic. Compliant copy that nobody clicks is just as useless as aggressive copy that gets your account banned.',
-      },
-      {
-        heading: 'Systematic Testing, Not Guesswork',
-        content:
-          'I do not write a single ad and hope it works. I deliver <strong>testing suites</strong> \u2014 sets of 5\u201310 variations per campaign with different hooks, angles, emotional triggers, and CTAs, each designed to test a specific hypothesis. This systematic approach means you find winning ads faster, kill losers earlier, and scale campaigns more efficiently. After 40+ years of direct response, I know which variables move the needle and in what order to test them.',
+          'A Facebook ad for a cold-traffic supplement is built differently than a Google Search ad for a financial newsletter, a YouTube pre-roll for a coaching offer, or a Taboola native for an advertorial. The compliance posture differs, the algorithm differs, the buyer\'s mindset at the click moment differs. I\'ve shipped winning ads across all of them.',
+        bullets: [
+          '300% ROAS \u2014 Facebook supplement ads (cold traffic, compliance-aware)',
+          '$30M+ funnel revenue \u2014 ad copy feeding the Mobile Profits VSL (#1 ClickBank)',
+          'Apple UK direct mail \u2014 the demand-overwhelm piece, plus campaigns for IBM, Microsoft, Citibank, and Morgan Stanley',
+          'Compliant Facebook + native ads for health, supplement, and financial publishers',
+          'YouTube pre-roll scripts that hold attention through the 5-second skip window',
+          'Google Search precision-intent ad copy and ClickBank affiliate ad creatives',
+        ],
       },
     ],
     caseStudies: [
       {
-        name: 'Supplement Ad Campaign',
-        category: 'Facebook Ads',
+        name: 'Apple UK Direct-Mail Piece',
+        category: 'Direct-Response Direct Mail',
+        metric: 'Demand Overwhelm',
+        detail: 'The campaign overwhelmed Apple UK\'s fulfillment capacity. They had to scale it back to keep up with demand.',
+      },
+      {
+        name: 'Mobile Profits Ad Suite',
+        category: 'Multi-Platform Cold Traffic',
+        metric: '$30M+ Funnel Revenue',
+        detail: 'Ad copy feeding the #1 ClickBank biz-op VSL. Hooks engineered for cold-traffic-to-VSL conversion.',
+      },
+      {
+        name: 'Supplement Cold-Traffic Ads',
+        category: 'Facebook (Compliance-Approved)',
         metric: '300% ROAS',
-        detail: 'Cold traffic to VSL funnel. Compliance-approved.',
+        detail: 'Compliance-aware Facebook ad copy for cold-traffic supplement funnel.',
       },
       {
-        name: 'Mobile Profits Ads',
-        category: 'Multi-Platform',
-        metric: '$30M Funnel Revenue',
-        detail: 'Ad copy feeding the #1 ClickBank offer.',
-      },
-      {
-        name: 'Financial Publisher Ads',
-        category: 'Native + Facebook',
+        name: 'Financial Publisher Compliant Native',
+        category: 'Native + Facebook (Regulated Vertical)',
         metric: 'Multi-Platform Winner',
-        detail: 'Compliant ads for regulated financial vertical.',
+        detail: 'Compliant ads for regulated financial vertical \u2014 passed platform review and out-converted "safe" copy.',
       },
     ],
     deliverables: [
@@ -957,47 +965,57 @@ export const services: Service[] = [
     deliverablesHeading: 'What You Get When You Hire Me',
     deliverablesSubtext:
       'Every deliverable is engineered to find winning ads faster \u2014 not just fill your creative library.',
-    testimonialIds: ['15', '4', '2', '6'],
+    testimonialIds: ['15', '4', '2', '3', '6'],
     portfolioItems: [
       { title: 'Facebook Ad Suite \u2014 Health Niche', category: 'Ads' },
       { title: 'YouTube Pre-Roll Ads', category: 'Ads' },
       { title: 'Native Ad Campaign', category: 'Ads' },
     ],
     midCta: {
-      headline: 'Ready for ads that actually convert?',
+      headline: 'Ready for ads that beat your existing control?',
       subtext:
-        'Book a free strategy call. I\u2019ll look at what you\u2019re running now and tell you where the ROAS is hiding.',
+        'Book a free strategy call. Send me your top-performing ads and the back-end data \u2014 I\'ll tell you honestly where the conversion is leaking and whether I can write something that beats your control.',
     },
     faqs: [
       {
         question: 'What platforms do you write ads for?',
         answer:
-          'Facebook and Meta, Google Search, YouTube pre-roll, TikTok, and native platforms like Taboola and Outbrain. Each platform has different algorithm dynamics, compliance requirements, and audience behavior. I tailor the copy mechanics to each one \u2014 because an ad that crushes on Facebook will often die on native, and vice versa.',
+          'Facebook and Meta, Google Search, YouTube pre-roll, TikTok, and native (Taboola, Outbrain). Each platform has its own algorithm dynamics, compliance posture, and buyer mindset at the click moment. I tailor the copy mechanics to each \u2014 an ad that crushes on Facebook will often die on native, and the YouTube pre-roll that earns the 5-second skip is a fundamentally different write than a Google Search ad.',
       },
       {
-        question: 'How many ad variations do you write per campaign?',
+        question: 'Are you taking new ad copy clients?',
         answer:
-          'I typically deliver 5\u201310 variations per campaign, designed as a testing suite with different hooks, angles, and CTAs. This gives you enough variation to run meaningful split tests and find winning combinations faster than testing one ad at a time. Each variation has a clear hypothesis behind it \u2014 not random creative.',
+          'I take a selective number of new ad-copy engagements each quarter so the work stays at the level the proof requires. Most kickoffs happen within two weeks of the strategy call. If the project is a fit, I\'ll send a fixed-price proposal within 48 hours. If it isn\'t, I\'ll tell you on the call and point you toward someone in my network who\'s better suited.',
       },
       {
-        question: 'Do you write video ad scripts?',
+        question: 'How do you use AI to write ad copy?',
         answer:
-          'Yes. I write scripts for YouTube pre-roll, Facebook and Instagram video ads, TikTok ads, and UGC-style video scripts. Video ads require different pacing and hook mechanics than static copy \u2014 you have to earn the first 5 seconds before the skip button appears. That is a fundamentally different skill than writing text ads.',
+          'I don\'t use generic ChatGPT prompting. I use Claude Code augmented by my own custom-built copywriting skills \u2014 proprietary skill files that encode 40 years of frameworks, hook formulas, ad-platform patterns, and evaluation criteria into a working AI workflow, with my 1,239-file Obsidian copywriting brain as the reference layer. I make every strategic and structural call. The AI carries the volume \u2014 mining competitor ad libraries, generating variation suites, and drafting against four decades of campaigns that have already converted.',
+      },
+      {
+        question: 'What does ad copywriting cost?',
+        answer:
+          'Ad-copy engagements are fixed-price. Most full ad-copy projects start at $10K \u2014 a multi-platform suite with research, hook library, finished ads, platform-specific tuning, and a testing roadmap. Smaller single-platform suites are priced lower. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: at serious daily budgets, an ad that converts at 1.5% instead of 1% on the same traffic pays for the writer in the first week.',
+      },
+      {
+        question: 'How long does it take to write an ad campaign?',
+        answer:
+          'A multi-platform ad campaign suite (research + hook library + 8\u201315 finished ads + testing roadmap) typically takes 2\u20133 weeks. A single-platform suite is 1\u20132 weeks. The audience and angle phase always comes first \u2014 that\'s where the click-through rate lives. Rush timelines are possible, but I never shortcut the research.',
       },
       {
         question: 'How do you handle ad compliance for health and finance?',
         answer:
-          'This is one of my specialities. I have written compliant ad copy for supplement offers, financial publishers, and ClickBank vendors for years \u2014 including ads that drove 300% ROAS while passing platform review. The key is knowing the specific language patterns that satisfy reviewers while preserving persuasive power. I also provide compliance notes flagging any language your legal team should review.',
+          'This is one of my specialities. I\'ve written compliant ad copy for supplement offers, financial publishers, and ClickBank vendors for years \u2014 including ads that drove 300% ROAS while passing platform review. I know which specific language patterns to swap, which claims to back with mechanism, and where platform reviewers actually look. I provide compliance notes with each ad flagging anything your legal team should review.',
       },
       {
-        question: 'Can you write ad copy that matches my existing funnel?',
+        question: 'What industries do you write ad copy for?',
         answer:
-          'This is the ideal approach. Ad copy should be strategically aligned with your landing page, VSL, or sales page to create a seamless experience from click to conversion. I review your existing funnel assets to ensure the ads pre-qualify traffic and set up the downstream conversion \u2014 not just drive clicks.',
+          'Direct mail and direct response (Apple UK demand-overwhelm, plus IBM, Microsoft, Citibank, Morgan Stanley, plus the Belron $523M campaign), supplement (300% ROAS Facebook), ClickBank (Mobile Profits VSL \u2014 #1 offer, $30M+), financial publishers (compliant native), info products and coaching, e-commerce and DTC. Each vertical has its own compliance posture and buyer psychology. The frameworks adapt accordingly.',
       },
       {
-        question: 'How much does ad copywriting cost?',
+        question: 'What happens after the strategy call?',
         answer:
-          'Ad copywriting is priced per suite (a set of variations for a specific campaign) or on a retainer for ongoing needs. But here is how I think about it: if your current ads are converting at 1% and new copy gets you to 1.5%, that is a 50% improvement on the same ad spend. At serious daily budgets, that difference pays for the copywriter in the first week.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is audience and angle research, then hook library and architecture, then the finished ads with platform-specific tuning, then a testing roadmap. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['facebook-ads-copywriter', 'landing-page-copywriter'],
