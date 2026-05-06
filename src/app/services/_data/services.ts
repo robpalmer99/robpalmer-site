@@ -1212,29 +1212,29 @@ export const services: Service[] = [
     title: 'Sales Funnel Copywriter',
     slug: 'sales-funnel-copywriter',
     shortDescription:
-      'End-to-end funnel copy — from ad to landing page to sales page to upsell. Every step optimized for maximum AOV.',
-    metaTitle: 'Sales Funnel Copywriter | End-to-End Funnel Copy',
+      'End-to-end funnels architected as one persuasion system. Behind the $523M / 9-year Belron campaign and $30M, $40M, $27M individual funnels.',
+    metaTitle: 'Sales Funnel Copywriter | End-to-End Funnel Architecture',
     metaDescription:
-      'Expert sales funnel copywriter with $523M+ in tracked results. End-to-end funnel copy from ad to upsell, optimized for maximum AOV and customer lifetime value.',
-    headline: 'The Sales Funnel Copywriter Behind $523M+ in Results',
+      'Senior sales funnel copywriter behind the $523M / 9-year Belron end-to-end campaign and $30M, $40M, $27M recent funnels. Full-system architecture, not bolted-together pages. Fixed-price engagements.',
+    headline: 'Sales Funnel Copywriter Behind a $523M / 9-Year End-to-End Campaign',
     subheadline:
-      'I write every page in your funnel \u2014 ads, landing pages, VSLs, sales pages, upsells, downsells, and email sequences \u2014 as a single persuasion system. The result: funnels that have generated $30M, $40M, and $27M for individual offers.',
+      'The Belron campaign I architected and ran for 9 years did $523 million as a complete direct-response funnel \u2014 ad to letter to follow-up to renewal. Recent end-to-end funnels I\'ve shipped have done $30M (Mobile Profits, #1 ClickBank), $40M (Gluco 6 supplement), and $27M (financial publisher). If your front end converts but the back end bleeds \u2014 that\'s a system problem, not a page problem.',
     heroImage: '/images/services/sales-funnel-copywriter.jpg',
     heroImageAlt: 'Marketing funnel and conversion strategy for sales funnel copywriting',
     heroStats: {
-      primary: { value: '$523M+', label: 'Tracked Client Results' },
+      primary: { value: '$30M+', label: 'Single Funnel Revenue (Mobile Profits, #1 ClickBank)' },
       secondary: [
-        { value: '$30M+', label: 'Single Funnel Revenue' },
-        { value: '4%', label: 'Peak Funnel Conversion' },
-        { value: '40+', label: 'Years Direct Response' },
+        { value: '$523M', label: '9-Year Belron End-to-End Campaign' },
+        { value: '$40M+', label: 'Gluco 6 Supplement Funnel' },
+        { value: '4.8%', label: 'Biz-Op Hybrid Front-End CVR' },
       ],
     },
     credentialBar: {
-      heading: 'Complete funnels written for',
+      heading: 'Complete funnels architected for',
       items: [
+        'Belron International (9-year campaign)',
         'ClickBank #1 Offers',
         'Copy Accelerator (as Copy Chief)',
-        'DTC Brands',
         'Supplement Marketers',
         'Financial Publishers',
         'Info Product Launches',
@@ -1242,75 +1242,78 @@ export const services: Service[] = [
     },
     sections: [
       {
-        heading: 'Why Most Funnels Leak Revenue at Every Step',
+        heading: 'Why Most Funnels Bleed Revenue Between Pages',
         content:
-          'Here is how most funnels get built: one copywriter writes the ads. Another writes the landing page. A third writes the sales page. Nobody writes the upsells with any strategic thought at all. And the email follow-up? That is whoever had time.\n\n' +
-          '<strong>The result is a funnel full of disconnects that leak revenue at every transition.</strong> The ad promises one thing, the landing page says something slightly different, the sales page shifts tone again, and the upsells feel like they were bolted on as an afterthought. Each disconnect is a conversion drop. Multiply that across 5\u20138 pages and you are leaving 30\u201350% of your potential revenue on the table.\n\n' +
-          'A sales funnel is a system. The copy at every step must work together as a single persuasion narrative. That requires one strategic mind writing every page \u2014 not a committee of freelancers who have never spoken to each other.',
+          'Here\'s how most funnels actually get assembled. One copywriter writes the ads. A different freelancer writes the landing page. Someone else gets the sales page. The upsells are bolted on by whoever was free that week. The post-purchase emails are a separate scope, usually rushed at the end. None of these writers ever spoke to each other.\n\n' +
+          '<strong>The result is a funnel full of disconnects that bleed revenue at every transition.</strong> The ad promises one thing, the landing page says something slightly different, the sales page shifts tone again, and the upsells feel like random add-ons. Each disconnect is a 5\u201315% conversion drop. Multiply that across 5\u20138 pages and you\'re leaving 30\u201350% of your potential revenue on the table \u2014 on the same ad spend, on the same traffic, every day. On $10K/day in spend, that\'s $3,000\u2013$5,000 quietly bleeding out before lunch.\n\n' +
+          'A funnel is a single persuasion system, not a stack of pages. The ad pre-qualifies. The landing page warms. The sales page closes. The order bump expands. The upsell extends. The downsell rescues. The email follow-up recovers the rest. Each step has to compound the emotional momentum of the previous one \u2014 and that requires <strong>one strategic mind writing every page</strong>, not a committee of freelancers writing past each other.',
       },
       {
-        heading: 'What a $30M Funnel Looks Like From the Inside',
+        heading: 'The $523M Funnel That Ran 9 Years Was an End-to-End System',
         content:
-          'The <strong>Mobile Profits</strong> funnel did not generate <strong>$30 million</strong> because any single page was brilliant. It generated $30 million because every page in the funnel was engineered as part of one system. The ads pre-qualified traffic with the right hook. The VSL converted cold prospects at up to <strong>4%</strong>. The upsell sequence increased AOV without eroding trust. And the email follow-up captured the prospects who were not ready to buy on the first visit.\n\n' +
-          'That is what end-to-end sales funnel copywriting looks like: <strong>every page building on the emotional momentum of the previous one</strong>, every transition seamless, every upsell feeling like the natural next step.\n\n' +
-          'The same systems approach drove a <strong>$40M supplement funnel</strong> (Gluco 6), a <strong>$27M financial funnel</strong>, and a biz-op funnel converting at <strong>4.8% on the front end</strong>.',
+          'In 1996, Belron \u2014 the world\'s largest auto-glass-replacement business \u2014 handed me their direct-response campaign. Five award-winning copywriters had already failed at it. I took the assignment, architected the entire system end-to-end, and ran it for 9 years. The campaign generated <strong>$523 million</strong> in tracked sales.\n\n' +
+          'That number didn\'t come from one brilliant sales letter. It came from a complete direct-response funnel \u2014 the lead-generation piece, the long-form sales letter, the order pack, the follow-up sequence, the renewal cycle, the cross-sell. Every piece architected together. Every piece tested against back-end numbers. Every piece refined for nine consecutive years.\n\n' +
+          'The CEO, Gary Lubner, put it on record: <em>"You are our secret weapon. Keep your diary clear, please!"</em>\n\n' +
+          'That campaign compounded for nearly a decade because the structure was right end-to-end \u2014 not because of a clever turn of phrase on any one page. That same systems mindset is what every funnel I\'ve shipped since has been built on.\n\n' +
+          'If you have a funnel running and the back-end numbers aren\'t where you need them, I work as a control-beater on the whole system. Send me every page in your current funnel and the back-end numbers \u2014 front-end CVR, AOV, post-purchase take rates, email open and click rates \u2014 and I\'ll tell you on the strategy call exactly where the revenue is leaking and whether I can architect a system that beats it.',
       },
       {
-        heading: 'The Copy Chief That Top Copywriters Hire',
+        heading: '$30M, $40M, $27M, 4.8% \u2014 Recent End-to-End Funnels',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park.\n\n' +
-          'These are people who build funnels for a living and know exactly what separates a funnel that scales from one that stalls. They work with me because I think in systems \u2014 not just pages.',
+          'Belron is the long campaign. Recent funnels prove the same systems approach scales in 2026.\n\n' +
+          '<strong>$30 million</strong> on Mobile Profits \u2014 the #1 ClickBank funnel I wrote, ad to VSL to upsell stack to email follow-up, every page architected together. <strong>$40 million</strong> on Gluco 6 \u2014 an end-to-end supplement funnel with subscription upsells driving the back end. <strong>$27 million</strong> on a financial-publisher funnel \u2014 regulatory-aware long-form persuasion across every step. <strong>4.8% front-end conversion</strong> on a hybrid biz-op funnel \u2014 with the upsell sequence carrying the AOV math.\n\n' +
+          'A recent funnel I wrote for Conor Reynolds is doing <strong>8% on cold traffic</strong> at the sales-page step. Ben Palmer (a ClickBank Platinum vendor) clocked <strong>300% ROAS</strong> on a campaign I wrote for him. Stefan Georgi (the copywriter behind over $1 billion in tracked sales) hired me as Copy Chief inside Copy Accelerator\'s CA Labs because that systems pattern recognition is what scales offers across his portfolio. Justin Goff publicly credited me with stepping up and knocking it out of the park.\n\n' +
+          'These are operators with their own money on the line \u2014 and the throughline is the same: full-system architecture, not bolted-together pages.',
       },
       {
-        heading: 'How I Architect a Funnel That Maximizes Every Click',
+        heading: 'How I Architect a Funnel That Compounds Page-to-Page',
         content:
-          'Before I write a single word, I map the complete customer journey from first touch to final purchase. Every decision in the funnel architecture is tied to a specific revenue outcome.',
+          'Every funnel I architect moves through the same four phases. None are optional. This is the actual work \u2014 not a "process" page filling space.',
         bullets: [
-          'Funnel strategy \u2014 I determine the optimal structure for your offer: how many upsells, where to place order bumps, whether you need a VSL or TSL on the front end, and how the email sequence integrates.',
-          'Persuasion arc \u2014 I plan the emotional narrative that unfolds across all pages. Each step builds on the momentum of the previous one so the prospect never feels a disconnect.',
-          'AOV engineering \u2014 I design upsells and downsells that feel like natural extensions of the original purchase, not random product pitches. This approach typically increases AOV by 30\u2013100% without increasing refund rates.',
-          'Conversion optimization \u2014 I deliver split test variations for every high-leverage page, with a testing roadmap that tells you what to test first and why.',
+          'Phase 1 \u2014 Funnel diagnostic and customer journey mapping: I map every step in your current funnel (or the funnel you need) against your customer\'s awareness stage, decision criteria, and post-purchase psychology. My AI workflow processes dozens of competitor funnels and customer-research transcripts in the time a manual pass takes to read three \u2014 surfacing the exact language and objections that drive your buyer.',
+          'Phase 2 \u2014 Persuasion arc and architecture: I plan the emotional narrative that unfolds across all 5\u20138 pages. Where the lead opens, where the mechanism lands, where each objection gets answered, where the offer crystalizes, where the upsells extend the buying decision. Every transition engineered so the prospect never feels a disconnect.',
+          'Phase 3 \u2014 Full-funnel writing: I write every page myself \u2014 ads, landing pages, sales page or VSL, order form, order bumps, upsells, downsells, thank-you pages, and the post-purchase email sequence. Same strategic mind across every step, so the language compounds rather than collides.',
+          'Phase 4 \u2014 AOV engineering and split-test variations: I deliver upsell and downsell sequences engineered to lift AOV by 30\u2013100% without inflating refunds, plus split-test variations for every high-leverage page and a testing roadmap that tells you what to test first and why.',
         ],
       },
       {
-        heading: 'The AOV Multiplier Most Funnels Miss',
+        heading: 'End-to-End Funnels Across Health, Finance, ClickBank, Info, DTC and SaaS',
         content:
-          'The front-end sale gets all the attention. But <strong>the real money in any funnel is behind the buy button</strong> \u2014 the upsells, downsells, and order bumps that turn a $47 customer into a $150 customer.\n\n' +
-          'Most businesses treat post-purchase pages as an afterthought. I treat them as the most profitable copy in the entire funnel.\n\n' +
-          'The psychology is specific: the buyer has already committed, their wallet is open, and their brain is primed to say yes again \u2014 <em>if</em> the next offer feels like a logical extension of what they just bought. I engineer every post-purchase step to leverage that psychology, referencing the product they just bought, reinforcing their decision, and presenting the upgrade as the obvious next move.',
-      },
-      {
-        heading: 'Sales Funnel Copywriting for Every Vertical',
-        content:
-          'Different industries need different funnel structures. A supplement funnel with subscription upsells runs completely differently from a high-ticket coaching funnel with an application step. I have built complete funnels across all of them.',
+          'Different industries need different funnel structures. A supplement funnel with subscription upsells runs nothing like a high-ticket coaching funnel with an application step or a SaaS trial-to-paid sequence. The compliance constraints differ, the AOV math differs, the regulators reading along differ. I\'ve architected complete funnels across every major DR vertical.',
         bullets: [
-          'ClickBank vendors \u2014 affiliate-optimized funnels with high EPC, including the $30M Mobile Profits funnel (#1 on ClickBank)',
-          'Health and supplement brands \u2014 compliance-aware copy with subscription-focused upsells, including the $40M Gluco 6 funnel',
-          'Financial publishers \u2014 long-form persuasion funnels with regulatory guardrails',
-          'E-commerce and DTC brands \u2014 product launch funnels with AOV maximization',
-          'Info product businesses \u2014 high-ticket funnels with webinar and application paths',
-          'SaaS companies \u2014 trial-to-paid funnels with onboarding sequences',
+          '$523M / 9 years \u2014 Belron end-to-end direct-response funnel',
+          '$40M+ \u2014 Gluco 6 supplement funnel with subscription upsell sequence',
+          '$30M+ \u2014 Mobile Profits ClickBank #1 funnel (ad to VSL to upsell stack to email)',
+          '$27M+ \u2014 financial-publisher funnel with regulatory-aware persuasion',
+          '4.8% front-end CVR \u2014 biz-op hybrid funnel with AOV-driving upsell sequence',
+          'E-commerce and DTC product launches, info-product webinar funnels, SaaS trial-to-paid sequences, and high-ticket coaching application funnels',
         ],
       },
     ],
     caseStudies: [
       {
+        name: 'Belron / Safelite International',
+        category: 'End-to-End Direct-Response Funnel',
+        metric: '$523M / 9 Years',
+        detail: 'Lead-gen, sales letter, order pack, follow-up, renewal \u2014 architected and run as one system for nine consecutive years.',
+      },
+      {
         name: 'Mobile Profits',
-        category: 'Complete Biz-Op Funnel',
+        category: 'Complete ClickBank Funnel',
         metric: '$30M Generated',
-        detail: 'Up to 4% conversion. #1 ClickBank offer. Full funnel copy.',
+        detail: 'Up to 4% conversion. #1 ClickBank offer. End-to-end funnel: ad, VSL, upsell stack, email follow-up.',
       },
       {
         name: 'Gluco 6',
-        category: 'Supplement Funnel',
+        category: 'Complete Supplement Funnel',
         metric: '$40M Generated',
-        detail: 'Complete funnel: VSL, upsells, email sequence.',
+        detail: 'Full funnel: VSL, subscription upsells, post-purchase email sequence.',
       },
       {
-        name: 'Biz-Op Hybrid Funnel',
-        category: 'Sales Page + VSL',
+        name: 'Biz-Op Hybrid',
+        category: 'Sales Page + VSL + Upsell System',
         metric: '4.8% Front-End',
-        detail: 'Full-funnel copy including upsell sequence.',
+        detail: 'Full-funnel copy including AOV-driving upsell sequence.',
       },
     ],
     deliverables: [
@@ -1347,48 +1350,58 @@ export const services: Service[] = [
     ],
     deliverablesHeading: 'What You Get When You Hire Me',
     deliverablesSubtext:
-      'Every deliverable is engineered to maximize revenue across the entire funnel \u2014 not just one page.',
-    testimonialIds: ['5', '4', '2', '18'],
+      'Every page engineered to compound the next, not compete with it \u2014 across the entire funnel.',
+    testimonialIds: ['1', '5', '4', '2', '3', '6', '18'],
     portfolioItems: [
       { title: 'Complete Health Supplement Funnel', category: 'Funnel' },
       { title: 'Info Product Launch Funnel', category: 'Funnel' },
       { title: 'E-Commerce DTC Funnel', category: 'Funnel' },
     ],
     midCta: {
-      headline: 'Ready for a funnel that maximizes every click?',
+      headline: 'Ready for a funnel where every page compounds the next?',
       subtext:
-        'Book a free strategy call. I\u2019ll audit your current funnel and show you exactly where the revenue is leaking.',
+        'Send me your current funnel and the back-end numbers \u2014 I\'ll tell you on the call exactly where the revenue is leaking and whether I can architect a system that beats it.',
     },
     faqs: [
       {
         question: 'What does a sales funnel copywriter do?',
         answer:
-          'I write all the copy that moves a prospect through the buying journey \u2014 from the initial ad to the landing page, sales page or VSL, order form, upsells, downsells, and email follow-up sequences. The key difference from hiring separate copywriters for each page: I design the entire funnel as one persuasion system, so every transition is seamless and every page builds on the momentum of the previous one.',
+          'I write all the copy that moves a prospect through the buying journey \u2014 from the initial ad to the landing page, sales page or VSL, order form, order bumps, upsells, downsells, and post-purchase email follow-up. The key difference from hiring a separate freelancer for each page: I architect the whole funnel as one persuasion system. Every transition is engineered, every page builds on the emotional momentum of the previous one, and the same strategic mind makes every word-level call. That\'s how a funnel goes from leaking 30\u201350% to compounding.',
       },
       {
-        question: 'How many pages are in a typical sales funnel?',
+        question: 'Are you taking new sales-funnel clients?',
         answer:
-          'A typical direct-response funnel includes 5\u20138 pages: landing or opt-in page, sales page or VSL, order form, 1\u20133 upsell pages, a downsell page, and a thank-you page. More complex funnels add webinar registration, replay pages, or application pages. I recommend the optimal structure based on your offer, price point, and traffic source.',
+          'I take a selective number of new sales-funnel engagements each quarter so the work stays at the level the proof requires \u2014 full-funnel projects are the largest engagements I run. Most kickoffs happen within two weeks of the strategy call. If the project is a fit, I\'ll send a fixed-price proposal within 48 hours. If it isn\'t, I\'ll tell you on the call and point you toward someone in my network who\'s better suited.',
       },
       {
-        question: 'How long does it take to write a complete funnel?',
+        question: 'How do you use AI to write sales funnels?',
         answer:
-          'A complete funnel typically takes 4\u20136 weeks from briefing to final deliverables. That includes deep research, funnel architecture planning, writing every page, email sequences, and one revision round. The timeline depends on the number of pages and offer complexity. I never rush the research or architecture phases \u2014 that is where funnel revenue is won or lost.',
-      },
-      {
-        question: 'Can you write funnel copy for ClickFunnels or other platforms?',
-        answer:
-          'Yes. I write funnel copy that works across ClickFunnels, Kartra, Kajabi, Shopify, and custom-built funnels. The copy is platform-agnostic \u2014 the Mobile Profits funnel that generated $30M would convert regardless of what software rendered it. Great funnel copy is about persuasion architecture, not platform features.',
-      },
-      {
-        question: 'What is the most important page in a sales funnel?',
-        answer:
-          'The sales page or VSL typically has the biggest impact on front-end conversion. But I have seen funnels where optimizing the upsell sequence had a bigger impact on total revenue than improving the sales page \u2014 because the upsells increased AOV by 50\u2013100%. That is why a funnel copywriter needs to treat every page as a revenue lever, not just the front end.',
+          'I don\'t use generic ChatGPT prompting. I use Claude Code augmented by my own custom-built copywriting skills \u2014 proprietary skill files that encode 40 years of frameworks, persuasion sequences, and evaluation criteria into a working AI workflow, with my 1,239-file Obsidian copywriting brain as the reference layer (190 frameworks, 193 swipe pieces, 125 book/course notes, 76 templates, 512 pieces of my own copy). I make every strategic and structural call. The AI carries the volume \u2014 which is exactly what a 5\u20138-page funnel needs.',
       },
       {
         question: 'How much does sales funnel copywriting cost?',
         answer:
-          'Funnel copywriting is priced as a complete project, depending on the number of pages, offer complexity, and whether email sequences are included. It is the highest-ROI copywriting investment you can make \u2014 because it touches every revenue lever in your business simultaneously. A funnel that increases front-end conversion by 1% and AOV by 30% on the same traffic changes your entire unit economics.',
+          'Sales-funnel engagements are fixed-price. Most full-funnel projects start at $25K \u2014 funnels are 5\u20138 pages of senior DR work plus the email follow-up sequence, so they\'re the largest single engagements I run. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a funnel that lifts front-end CVR by 1% AND lifts AOV by 30% on the same traffic doesn\'t pay for itself \u2014 it changes your unit economics.',
+      },
+      {
+        question: 'How long does it take to write a complete funnel?',
+        answer:
+          'A complete funnel typically takes 4\u20136 weeks from briefing to final deliverables. That includes deep audience research, funnel-architecture planning, writing every page, the email follow-up sequence, and one comprehensive revision round. The timeline depends on the number of pages and offer complexity. I never rush the research or architecture phases \u2014 that\'s where funnel revenue is won or lost.',
+      },
+      {
+        question: 'What is the most important page in a sales funnel?',
+        answer:
+          'The sales page or VSL typically has the biggest single-page impact on front-end conversion. But I\'ve shipped funnels where optimizing the upsell sequence had a bigger total-revenue impact than improving the sales page itself \u2014 because the upsells lifted AOV by 50\u2013100% on the same traffic. That\'s why a sales-funnel copywriter has to treat every page as a revenue lever and write the whole system, not just the front end.',
+      },
+      {
+        question: 'What industries do you write sales funnels for?',
+        answer:
+          '$523M / 9 years on the Belron end-to-end campaign. $40M Gluco 6 supplement funnel. $30M Mobile Profits ClickBank funnel. $27M financial-publisher funnel. Plus health and supplement, e-commerce and DTC product launches, info-product and webinar funnels, SaaS trial-to-paid sequences, and high-ticket coaching application funnels. Each vertical has its own compliance posture, AOV math, and buyer psychology. The frameworks adapt accordingly.',
+      },
+      {
+        question: 'What happens after the strategy call?',
+        answer:
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is funnel diagnostic and audience research, then persuasion-arc architecture, then page-by-page writing, then one comprehensive revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['vsl-copywriter', 'email-copywriter', 'upsell-downsell-copywriter'],
