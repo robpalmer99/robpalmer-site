@@ -13,16 +13,23 @@ import { CTABanner } from '@/components/blocks/CTABanner'
 import { FAQAccordion } from '@/components/blocks/FAQAccordion'
 import { JsonLd } from '@/components/seo/JsonLd'
 import Link from 'next/link'
+import { Badge } from '@/components/ui/Badge'
 import { services } from '@/app/services/_data/services'
 import { verticals } from '@/app/verticals/_data/verticals'
 import { caseStudies } from '@/app/case-studies/_data/case-studies'
-import { featuredTestimonials } from '@/content/testimonials'
+import { testimonials } from '@/content/testimonials'
 import { SITE_URL } from '@/lib/constants'
 
+// Homepage testimonial selection — Stefan (peer endorsement), Conor (8% CVR cold traffic), Ben Palmer (300% ROAS)
+const HOMEPAGE_TESTIMONIAL_IDS = ['2', '5', '4'] as const
+const homepageTestimonials = HOMEPAGE_TESTIMONIAL_IDS
+  .map((id) => testimonials.find((t) => t.id === id))
+  .filter((t): t is NonNullable<typeof t> => Boolean(t))
+
 export const metadata: Metadata = {
-  title: 'Rob Palmer | Direct-Response Copywriter | VSLs, Funnels & AI-Powered Copy',
+  title: 'Rob Palmer | Direct-Response Copywriter | Triple Brain Marketing',
   description:
-    'Rob Palmer is a veteran direct-response copywriter with $523M+ in tracked results. Specializing in VSLs, TSLs, email sequences, and sales funnels for ClickBank & DTC brands. AI-powered. Battle-tested.',
+    'Three brains. One engagement. 40+ years of direct-response copywriting + Claude Code with custom copywriting skills + a 1,200-file Obsidian copywriting brain. Behind $523M+ in tracked results. The DR system Stefan Georgi\u2019s team chose for CA Labs.',
   alternates: {
     canonical: SITE_URL,
   },
@@ -40,14 +47,16 @@ const VERTICAL_TAGLINES: Record<string, string> = {
 }
 
 const homepageFaqs = [
+  { question: 'What is Triple Brain Marketing?', answer: 'Triple Brain Marketing is the integration of three brains into one engagement: my copywriting brain (40+ years of direct-response craft for the world\'s top brands, with $523M+ in tracked results), Claude Code\'s brain augmented by my custom-built copywriting skills (proprietary skill files that encode 40 years of frameworks into a working AI workflow), and my Obsidian copywriting brain (a 1,239-file knowledge base spanning the old direct-response masters through cutting-edge AI marketing strategies). No copywriter and no AI tool can replicate the combination.' },
   { question: 'What types of copywriting do you specialize in?', answer: 'I specialize in direct-response copywriting — the kind that\'s designed to generate a measurable action. This includes video sales letters (VSLs), text sales letters (TSLs), email sequences, landing pages, sales funnels, upsell/downsell pages, and paid ad copy. Every piece I write is engineered to convert.' },
-  { question: 'How much does it cost to hire you?', answer: 'Fees depend on the project scope, complexity, and format. A single email is different from a full VSL + funnel build. I\'ll give you a clear, fixed-price quote after our strategy call — no hourly billing, no surprises. For a general guide, see my blog post on copywriting rates.' },
+  { question: 'Are you taking new clients?', answer: 'I take a selective number of new engagements each quarter to maintain quality. Most kickoffs happen within two weeks of the strategy call. If we\'re a fit, I\'ll send you a fixed-price proposal within 48 hours. If we\'re not, I\'ll tell you on the call and refer you to someone in my network.' },
+  { question: 'How much does it cost to hire you?', answer: 'Fees depend on the project scope, complexity, and format. Engagements typically start at $10K for single assets and run higher for full funnel builds. I\'ll give you a clear, fixed-price quote after our strategy call — no hourly billing, no surprises. For a general guide, see my blog post on copywriting rates.' },
   { question: 'What industries do you work with?', answer: 'I\'ve written for health & supplement, financial, e-commerce/DTC, SaaS, info-product, and ClickBank markets. My direct-response principles apply across industries — I adapt the strategy and compliance approach to each vertical.' },
-  { question: 'How do you use AI in your copywriting process?', answer: 'AI is a force multiplier, not a replacement. I use AI tools for research, headline variation generation, competitive analysis, and first-draft acceleration. But the strategic thinking, emotional intelligence, and persuasion architecture come from 30+ years of direct-response experience. You get AI speed with human craft.' },
-  { question: 'What results can I expect?', answer: 'Results vary by market, offer, and traffic quality. That said, my track record includes $523M+ in tracked revenue across campaigns, a 9-year campaign for Belron/Safelite, and consistent wins across ClickBank, DTC, and SaaS markets. I focus on measurable outcomes — conversion rates, AOV, and revenue.' },
-  { question: 'How long does a typical project take?', answer: 'Timeline depends on the deliverable. A single email or landing page might take 3-5 business days. A full VSL or sales funnel build typically takes 2-4 weeks including research, drafting, and revisions. I\'ll confirm the timeline during our strategy call.' },
+  { question: 'How do you use AI in your copywriting process?', answer: 'I don\'t use AI the way most people use AI. I use Claude Code — the most capable AI writing tool available — augmented by my own custom-built copywriting skills. These are proprietary skill files that encode specific direct-response frameworks, headline formulas, and evaluation criteria into a workflow Claude applies on every project. Combined with my 1,239-file Obsidian copywriting brain (190 frameworks, 193 swipes, 512 pieces of my own tested copy), the AI has access to four decades of proven reference material — not generic training data.' },
+  { question: 'What results can I expect?', answer: 'Results vary by market, offer, and traffic quality. My track record includes $523M+ in tracked revenue across campaigns, a 9-year campaign for Belron/Safelite, and recent client wins like 8% conversion on cold traffic and 300% ROAS in ClickBank funnels. I focus on measurable outcomes — conversion rates, AOV, and revenue.' },
+  { question: 'How long does a typical project take?', answer: 'Timeline depends on the deliverable. A single email or landing page might take 3-5 business days. A full VSL or sales funnel build typically takes 2-4 weeks including research, drafting, and revisions. The Triple Brain workflow compresses traditional research and drafting timelines without sacrificing depth.' },
   { question: 'Do you offer revisions?', answer: 'Yes. Every project includes a round of revisions to ensure the copy aligns with your voice, brand, and goals. My goal is copy you\'re confident putting in front of your audience.' },
-  { question: 'How do I get started?', answer: 'Book a free strategy call through my contact page. We\'ll discuss your project, goals, and timeline. If we\'re a good fit, I\'ll send you a proposal with a clear scope and fixed price. No pressure, no obligation.' },
+  { question: 'How do I get started?', answer: 'Book a free strategy call through my contact page. We\'ll discuss your project, goals, and timeline. If we\'re a good fit, I\'ll send you a fixed-price proposal within 48 hours. No pressure, no obligation.' },
 ]
 
 const homepageFaqJsonLd = {
@@ -66,15 +75,15 @@ export default function HomePage() {
       {/* Hero */}
       <Hero
         variant="home"
-        headline="The Direct-Response Copywriter Behind $523M+ in Results"
-        subheadline="AI-powered. Battle-tested. From Apple and Fortune 500 boardrooms to today's highest-converting VSLs, TSLs, and funnels. I write the copy that moves the needle."
+        headline="Three Brains. One Engagement. Behind $523M in Tracked Results."
+        subheadline="40+ years of direct-response copywriting + Claude Code with my custom copywriting skills + a 1,200-file Obsidian copywriting brain. The DR system Stefan Georgi's team chose for CA Labs."
         cta={{ label: 'Book a Strategy Call', href: '/contact' }}
         secondaryCta={{ label: 'See Case Studies', href: '/case-studies' }}
         image={{ src: '/images/headshots/rob-palmer-clean.png', alt: 'Rob Palmer - Direct-Response Copywriter' }}
       >
         <FadeIn delay={450} duration={800}>
           <p className="mt-5 text-sm sm:text-base lg:text-[0.95rem] text-paper-300 font-body">
-            Custom-quoted by project scope. Fixed-price engagements, no hourly billing.
+            Selective engagements. Fixed-price, custom-quoted. No hourly billing.
           </p>
         </FadeIn>
       </Hero>
@@ -85,6 +94,81 @@ export default function HomePage() {
       {/* Stats */}
       <StatsBar variant="dark" />
 
+      {/* Triple Brain Marketing — the named mechanism */}
+      <Section divider>
+        <Container>
+          <FadeIn>
+            <div className="text-center max-w-3xl mx-auto">
+              <Badge variant="gold">Triple Brain Marketing</Badge>
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mt-6">
+                Three brains.{' '}
+                <span className="text-gold-500">One engagement.</span>
+              </h2>
+              <p className="mt-5 text-lg text-ink-700 font-body leading-relaxed">
+                You don&apos;t need a copywriter. You need a persuasion architect with three brains working as one. The combination behind every winning DR campaign in 2026 — and one almost nobody else has fused.
+              </p>
+            </div>
+          </FadeIn>
+          <ul role="list" className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-14">
+            <li>
+              <FadeIn delay={0} distance={20} className="h-full">
+                <div className="h-full rounded-xl border border-paper-200 bg-white p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5">
+                  <div className="font-heading text-xs font-bold uppercase tracking-wide text-gold-600">
+                    Brain 1
+                  </div>
+                  <h3 className="mt-3 font-heading text-xl font-bold text-ink-950 leading-tight">
+                    My copywriting brain
+                  </h3>
+                  <p className="mt-3 text-base text-ink-700 leading-relaxed font-body">
+                    40+ years of direct-response copywriting for the world&apos;s top brands — Apple, IBM, Microsoft, Citibank, Morgan Stanley, plus the campaign behind $523M for Belron. Pattern recognition you can&apos;t fake or buy.
+                  </p>
+                </div>
+              </FadeIn>
+            </li>
+            <li>
+              <FadeIn delay={100} distance={20} className="h-full">
+                <div className="h-full rounded-xl border border-paper-200 bg-white p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5">
+                  <div className="font-heading text-xs font-bold uppercase tracking-wide text-gold-600">
+                    Brain 2
+                  </div>
+                  <h3 className="mt-3 font-heading text-xl font-bold text-ink-950 leading-tight">
+                    Claude Code, with my custom copywriting skills
+                  </h3>
+                  <p className="mt-3 text-base text-ink-700 leading-relaxed font-body">
+                    Anthropic&apos;s most capable model, augmented by my own custom-built skill files. Not generic AI prompting — proprietary frameworks, formulas, and evaluation criteria from real campaigns, encoded for Claude to apply on every project. <Link href="/blog/claude-code-copywriting-skills" className="text-gold-600 underline-offset-4 hover:underline">Open-sourced</Link> as proof.
+                  </p>
+                </div>
+              </FadeIn>
+            </li>
+            <li>
+              <FadeIn delay={200} distance={20} className="h-full">
+                <div className="h-full rounded-xl border border-paper-200 bg-white p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5">
+                  <div className="font-heading text-xs font-bold uppercase tracking-wide text-gold-600">
+                    Brain 3
+                  </div>
+                  <h3 className="mt-3 font-heading text-xl font-bold text-ink-950 leading-tight">
+                    My Obsidian copywriting brain
+                  </h3>
+                  <p className="mt-3 text-base text-ink-700 leading-relaxed font-body">
+                    A 1,239-file knowledge base spanning the old direct-response masters through today&apos;s cutting-edge AI marketing strategies. 190 frameworks, 193 swipes, 512 pieces of my own tested copy — all indexed and instantly retrievable.
+                  </p>
+                </div>
+              </FadeIn>
+            </li>
+          </ul>
+          <FadeIn delay={400}>
+            <p className="mt-14 text-center text-lg text-ink-700 font-body leading-relaxed max-w-2xl mx-auto">
+              Each brain multiplies the others. The result is copy faster than traditional, deeper than AI alone, and more proven than any &ldquo;AI-powered&rdquo; generalist can produce.
+            </p>
+            <div className="mt-8 text-center">
+              <Button href="/blog/triple-brain-marketing" variant="ghost">
+                How Triple Brain Marketing works →
+              </Button>
+            </div>
+          </FadeIn>
+        </Container>
+      </Section>
+
       {/* Problem/Solution — asymmetric layout for rhythm break */}
       <Section divider>
         <Container>
@@ -92,27 +176,29 @@ export default function HomePage() {
             <FadeIn className="lg:flex-shrink-0 lg:sticky lg:top-28">
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 lg:max-w-sm">
                 Most Copywriters Write Content.{' '}
-                <span className="text-gold-500">I Write Conversions.</span>
+                <span className="text-gold-500">I Architect Conversions.</span>
               </h2>
             </FadeIn>
             <FadeIn delay={150} className="mt-8 lg:mt-0">
               <div className="space-y-6 text-lg text-ink-700 leading-relaxed font-body">
                 <p>
                   There is a difference between a copywriter who can string words
-                  together and one who can engineer a persuasion sequence that turns
-                  cold traffic into customers. That difference shows up in your
-                  conversion rate, your AOV, and your bottom line.
+                  together and one who can engineer a persuasion sequence that
+                  turns cold traffic into customers. That difference shows up in
+                  your conversion rate, your AOV, and your bottom line.
                 </p>
                 <p>
-                  I combine 30+ years of direct-response craft — honed writing for
-                  Apple, IBM, Microsoft, and Citibank — with cutting-edge AI tools
-                  to deliver copy faster, test more variations, and scale what
-                  works. The result: campaigns that have generated over $523 million
-                  in tracked revenue for my clients.
+                  In 2026, that difference also shows up in tooling. The senior
+                  copywriters with the craft mostly haven&apos;t built the AI
+                  workflow. The AI tools don&apos;t have the craft. The Triple
+                  Brain combination is rare on purpose — three assets that took
+                  decades to assemble, working as one.
                 </p>
                 <p>
-                  If you need a copywriter who treats your project like their
-                  business depends on it — because mine does — then let&apos;s talk.
+                  Campaigns powered by it have generated over $523 million in
+                  tracked revenue for my clients. If you need a writer who treats
+                  your project like their business depends on it — because mine
+                  does — let&apos;s talk.
                 </p>
               </div>
               <div className="mt-10">
@@ -237,8 +323,8 @@ export default function HomePage() {
 
       {/* CTA Banner */}
       <CTABanner
-        headline="Ready to put a $523M copywriter to work for your brand?"
-        subtext="Let's discuss how I can help you increase conversions and AOV."
+        headline="Ready to put all three brains to work on your funnel?"
+        subtext="Let's discuss how Triple Brain Marketing can lift your conversion rate, your AOV, and your back-end revenue."
         variant="gold"
       />
 
@@ -253,7 +339,7 @@ export default function HomePage() {
             </div>
           </FadeIn>
           <ul role="list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featuredTestimonials.slice(0, 3).map((testimonial, index) => (
+            {homepageTestimonials.map((testimonial, index) => (
               <li key={testimonial.id}>
                 <FadeIn delay={index * 120} distance={20} className="h-full">
                   <TestimonialCard
@@ -274,15 +360,15 @@ export default function HomePage() {
         </Container>
       </Section>
 
-      {/* AI Advantage — visual break with left-aligned accent */}
+      {/* AI Advantage — Brain 2 deep dive: the AI-replaced-then-rehired narrative */}
       <Section divider>
         <Container>
           <div className="max-w-4xl mx-auto lg:flex lg:gap-16 lg:items-start">
             <FadeIn className="lg:flex-shrink-0">
               <div className="mb-8 lg:mb-0 lg:sticky lg:top-28">
                 <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 lg:max-w-xs">
-                  AI-Powered.{' '}
-                  <span className="text-gold-500">Human-Crafted.</span>
+                  Why the AI-only{' '}
+                  <span className="text-gold-500">experiment failed.</span>
                 </h2>
                 {/* Decorative gold accent bar */}
                 <div className="mt-6 w-16 h-1 bg-gradient-to-r from-gold-400 to-gold-200 rounded-full" />
@@ -291,22 +377,14 @@ export default function HomePage() {
             <FadeIn delay={150}>
               <div className="space-y-6 text-lg text-ink-700 leading-relaxed font-body">
                 <p>
-                  I was writing copy before the internet existed. I was the
-                  world&apos;s first blogger in 1993. And today, I am at the
-                  cutting edge of AI-assisted copywriting — because the best
-                  copywriters don&apos;t fear new tools, they weaponize them.
+                  Between 2023 and 2025, a wave of companies fired their copywriting teams and replaced them with ChatGPT, Jasper, and Copy.ai. Conversion rates dropped. Brand voice flattened. Cold traffic stopped converting. By 2026, most of those companies are quietly rehiring senior copywriters at higher rates than before.
                 </p>
                 <p>
-                  AI helps me research markets faster, generate more headline
-                  variations, and analyze competitor funnels at scale. But the
-                  strategic thinking, the emotional intelligence, the persuasion
-                  architecture that turns words into revenue — that only comes from
-                  decades of experience and thousands of tested campaigns.
+                  AI alone produces fluent, generic, bland copy — the kind that
+                  doesn&apos;t offend anyone and doesn&apos;t convince anyone either. It can&apos;t architect a persuasion sequence. It can&apos;t read what a prospect isn&apos;t saying out loud. It doesn&apos;t know which lead type to use at which awareness level. Those decisions come from craft.
                 </p>
                 <p>
-                  When you hire me, you get the best of both worlds: the speed and
-                  analytical power of AI, combined with the craft and intuition of
-                  a 30-year direct-response veteran.
+                  My approach is different. I was the world&apos;s first blogger in 1993, writing copy before the internet had pictures. I built my own AI workflow because nothing off-the-shelf was good enough — Claude Code augmented by custom copywriting skills, fed by a 1,200+ file copywriting brain spanning the old masters through today&apos;s cutting-edge AI marketing strategies. The output is something neither a human alone nor an AI alone can produce.
                 </p>
               </div>
             </FadeIn>
@@ -335,8 +413,8 @@ export default function HomePage() {
 
       {/* Final CTA */}
       <CTABanner
-        headline="Let's talk about your next campaign."
-        subtext="Book a free strategy call. No pressure, no obligation — just a conversation about how to move the needle."
+        headline="Three brains. Your next campaign. One conversation."
+        subtext="Book a free strategy call. No pressure, no obligation — just an honest conversation about whether Triple Brain Marketing is the right fit for your offer."
         buttonText="Book a Call"
         variant="default"
       />
