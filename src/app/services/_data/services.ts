@@ -263,7 +263,7 @@ export const services: Service[] = [
     heroImage: '/images/services/sales-page-copywriter.jpg',
     heroImageAlt: 'Writing and crafting persuasive sales page copy',
     heroStats: {
-      primary: { value: '$523M', label: '9-Year Belron Sales Page Campaign' },
+      primary: { value: '$523M', label: '9-Year Belron Direct-Response Campaign' },
       secondary: [
         { value: '8%', label: 'Recent Client Cold-Traffic CVR' },
         { value: '340%', label: 'ROAS on Facebook (Abundant)' },
