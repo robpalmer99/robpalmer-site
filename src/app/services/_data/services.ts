@@ -1773,105 +1773,107 @@ export const services: Service[] = [
     title: 'AI Marketing Consultant',
     slug: 'ai-marketing-consultant',
     shortDescription:
-      'Strategic AI marketing consulting for brands and teams. Funnel strategy, copy production, audience research, and campaign optimization \u2014 powered by AI, guided by 40+ years of direct-response results.',
-    metaTitle: 'AI Marketing Consultant | AI-Powered Marketing Strategy',
+      'Triple Brain Marketing as a productized consultancy. The methodology Stefan Georgi\'s Copy Accelerator hired me as Copy Chief to run \u2014 installed in your marketing operation.',
+    metaTitle: 'AI Marketing Consultant | Triple Brain Marketing Methodology',
     metaDescription:
-      'Hire an AI marketing consultant with $523M+ in tracked results. Rob Palmer helps brands use AI to research markets, write converting copy, optimize funnels, and scale campaigns faster.',
-    headline: 'The AI Marketing Consultant With $523M+ in Results',
+      'Senior AI marketing consultant. Install the Triple Brain Marketing methodology Stefan Georgi\'s CA Labs hired me as Copy Chief to run. 40+ years of DR craft + Claude Code custom skills + 1,239-file Obsidian copywriting brain.',
+    headline: 'AI Marketing Consultant \u2014 Install the Triple Brain Methodology Stefan Georgi\'s CA Labs Hired',
     subheadline:
-      'AI tools are everywhere. Results are not. I help brands use AI to research markets, write converting copy, optimize funnels, and scale campaigns \u2014 guided by 40+ years of direct-response expertise that tells AI what actually works.',
+      'Stefan Georgi \u2014 the copywriter behind over $1B in tracked sales \u2014 hired me as Copy Chief inside Copy Accelerator\'s CA Labs. The methodology I install is Triple Brain Marketing: 40 years of direct-response craft, Claude Code with my custom-built copywriting skills, and a 1,239-file Obsidian copywriting brain \u2014 fused into one workflow your team can run. If your AI marketing is producing more output but not more revenue, this is the kind of work I do.',
     heroImage: '/images/services/ai-marketing-consultant.jpg',
     heroImageAlt: 'AI-powered marketing strategy and campaign optimization',
     heroStats: {
-      primary: { value: '$523M+', label: 'Tracked Client Results' },
+      primary: { value: '1,239', label: 'File Obsidian Copywriting Brain (Brain 3 of the Methodology)' },
       secondary: [
+        { value: 'CA Labs', label: 'Stefan Georgi Hired Me as Copy Chief' },
+        { value: '$523M+', label: 'Tracked DR Results Behind the Methodology' },
         { value: '40+', label: 'Years Direct Response' },
-        { value: '200+', label: 'Marketing Frameworks' },
-        { value: 'Daily', label: 'AI Integration Since 2023' },
       ],
     },
     credentialBar: {
       heading: 'AI marketing consulting for',
       items: [
-        'DTC Brands',
-        'ClickBank Vendors',
-        'SaaS Companies',
+        'Copy Accelerator / CA Labs (Stefan Georgi as Copy Chief)',
+        'ClickBank Platinum Vendors',
         'Supplement Marketers',
         'Financial Publishers',
-        'Marketing Agencies',
+        'DTC and SaaS Brands',
+        'Marketing Agencies and In-House Teams',
       ],
     },
     sections: [
       {
-        heading: 'Every Brand Has AI Tools. Almost None Are Getting Results.',
+        heading: 'Why Most AI Marketing Produces More Output and Less Revenue',
         content:
-          'Your competitors have the same AI tools you do. <a href="https://openai.com/chatgpt" target="_blank" rel="noopener noreferrer">ChatGPT</a>, <a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Claude</a>, Gemini, and a hundred specialized platforms. <strong>The tools are not the bottleneck. The strategy is.</strong>\n\n' +
-          'Most brands are using AI to produce more content faster \u2014 more blog posts, more social media, more ad variations \u2014 without any increase in conversions or revenue. They are confusing output with outcomes. AI without direct-response strategy is just a faster way to produce mediocre marketing.\n\n' +
-          'What separates brands that are actually scaling with AI from brands that are just generating noise? <strong>The human expertise directing the AI.</strong> Someone who knows what a $30M funnel looks like from the inside, who has studied 200+ proven marketing frameworks, and who understands which AI capabilities create real leverage and which create the illusion of progress.',
+          'You\'re paying for <a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Claude</a>, <a href="https://openai.com/chatgpt" target="_blank" rel="noopener noreferrer">ChatGPT</a>, Gemini, Jasper, and half a dozen specialized platforms. Your team is shipping more copy, more ads, more content than ever. But conversion rates are flat. CPA is creeping up. Revenue per email is the same it was 12 months ago. Your CFO is asking where the AI ROI is. You don\'t have a satisfying answer.\n\n' +
+          'Here\'s the structural reason that keeps happening. AI tools aren\'t the bottleneck \u2014 every brand has the same tools you do. The bottleneck is the strategic direction those tools are pointed at. AI without direct-response architecture is just a faster way to produce mediocre marketing. More output, less revenue per impression, and the dawning realization that your competitors are running the same prompts you are.\n\n' +
+          'What separates brands actually scaling with AI from brands generating noise: a marketing operator who knows what a $30M funnel looks like from the inside, has internalised 190+ proven DR frameworks, and can tell you which AI capabilities create real leverage versus which create the illusion of progress. Most of the operators who could do that don\'t consult \u2014 they\'re running their own offers and wouldn\'t return your call.',
       },
       {
-        heading: 'What $523M in Results Teaches You About AI Marketing',
+        heading: 'The Triple Brain Methodology Stefan Georgi\'s CA Labs Hired Me to Run',
         content:
-          'I have spent 40+ years in direct-response marketing \u2014 writing the VSLs, sales pages, email sequences, and funnels behind <strong>$523M+ in tracked results</strong>. Offers like <strong>Mobile Profits ($30M, #1 on ClickBank)</strong>, <strong>Gluco 6 ($40M)</strong>, and a <strong>$27M stock investing funnel</strong>. Plus campaigns for Apple, IBM, Citibank, and a 9-year, 35-country campaign for Belron/Safelite.\n\n' +
-          'That depth of experience is what makes AI marketing consulting actually work. I am not guessing what good marketing looks like and hoping AI figures it out. I know exactly what converts \u2014 across verticals, across formats, across traffic temperatures \u2014 and I use AI to get there faster.\n\n' +
-          'When I build an AI marketing system for your brand, every prompt, workflow, and quality gate is informed by the same frameworks behind eight-figure results.',
+          'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as <strong>Copy Chief inside Copy Accelerator\'s CA Labs</strong>. The methodology I install is <strong>Triple Brain Marketing</strong> \u2014 three brains fused into one workflow your team can run.\n\n' +
+          '<strong>Brain 1:</strong> 40 years of direct-response craft. Grounded in $523M+ of tracked client results across Apple UK direct mail, IBM, Microsoft, Citibank, Morgan Stanley, the Belron $523M / 9-year campaign, and ClickBank-Platinum offers like Mobile Profits ($30M, #1 on ClickBank).\n\n' +
+          '<strong>Brain 2:</strong> Claude Code augmented by my custom-built copywriting skills. Not generic ChatGPT prompting \u2014 proprietary skill files that encode 40 years of frameworks, formulas, and evaluation criteria into a working AI workflow. Open-sourced selectively as verifiable proof of substance.\n\n' +
+          '<strong>Brain 3:</strong> A 1,239-file Obsidian copywriting brain. 190 frameworks, 193 swipe pieces, 125 book/course notes, 76 templates, and 512 pieces of my own tested copy \u2014 indexed and instantly retrievable while your team writes.\n\n' +
+          '<strong>When your team runs this, they\'re not running generic prompts.</strong> They\'re running proprietary skills calibrated to four decades of campaigns that have already converted, with the vault as the reference layer.\n\n' +
+          'If your team is generating AI content at scale but not seeing conversion lift, send me your current setup before the strategy call: tools, prompts, workflows, output review process. I\'ll audit it on the call and tell you exactly where the leverage is hiding \u2014 and whether installing the methodology will change your numbers.',
       },
       {
-        heading: 'The Copy Chief That Top Marketers Hire',
+        heading: 'The Marketing Operators Who Hire Me to Run AI in Their Stack',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. Justin Goff, one of the sharpest direct marketers in the business, gave me a public shoutout for stepping up and knocking it out of the park.\n\n' +
-          'These are people who run marketing operations at the highest level. They brought me in because I combine strategic depth with the ability to systematize quality at scale \u2014 exactly what AI marketing requires.',
+          'Stefan Georgi (CA Labs / $1B in tracked sales) hired me as Copy Chief. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor, clocked <strong>300% ROAS</strong> on the email-driven funnel I wrote for him. The Belron CEO put it on record: <em>"You are our secret weapon. Keep your diary clear, please!"</em>\n\n' +
+          'These are operators who run marketing at the highest level. With their own money on the line.',
       },
       {
-        heading: 'How I Help Your Brand Use AI to Scale',
+        heading: 'How I Install the Methodology in Your Marketing Operation',
         content:
-          'I work with your marketing team across every channel where AI creates genuine leverage \u2014 not just copy, but the full marketing operation.',
+          'Every consultancy engagement moves through the same four phases. None are optional. This is the actual work \u2014 not a deck of slides.',
         bullets: [
-          'AI-powered market research \u2014 competitor analysis, audience pain mapping, and opportunity identification at a depth and speed that manual research cannot match',
-          'Copy production systems \u2014 AI-assisted workflows for VSLs, sales pages, emails, ads, and funnels, guided by proven direct-response frameworks',
-          'Campaign optimization \u2014 AI-driven split test planning, conversion diagnostics, and performance analysis across your entire funnel',
-          'Audience intelligence \u2014 mining customer reviews, forum posts, and competitor data to find the language, hooks, and angles your market actually responds to',
-          'Offer development \u2014 AI-assisted mechanism research, pricing analysis, and competitive positioning',
+          'Phase 1 \u2014 Audit and diagnostic: I review your current AI usage end-to-end. What tools, what prompts, what workflows, what output review process. I map where AI is creating real leverage in your marketing and where it\'s producing noise. The audit identifies the highest-conversion-impact systems to install first.',
+          'Phase 2 \u2014 System design: I build the AI workflows specific to your channels and verticals \u2014 research, copy production, audience intelligence, campaign optimisation. Each workflow is calibrated to your offer, your buyer psychology, and your compliance posture.',
+          'Phase 3 \u2014 Skill installation + team training: I ship the custom Claude Code skill files into your team\'s environment and structure the Obsidian vault layer for ongoing reference. Then I train your team on how to drive the workflow \u2014 not just the prompts, but the strategic thinking that produces conversions.',
+          'Phase 4 \u2014 Ongoing optimisation: I review results at the 30-, 60-, and 90-day marks, refine prompts and skills based on the back-end data, and adapt the system as new AI capabilities ship. The methodology is meant to keep compounding, not sit static.',
         ],
       },
       {
-        heading: 'AI Marketing Strategy for Every Channel',
+        heading: 'Methodology Installations Across DTC, Health, Finance, ClickBank, and Agency',
         content:
-          'AI creates leverage differently depending on the channel. A one-size-fits-all approach wastes the technology. I build channel-specific AI strategies calibrated to where AI adds the most value in each context.',
+          'Marketing operations have different shapes. A DTC brand with a 5-person team needs a different installation than a 15-person agency or a financial publisher with regulated output. The methodology adapts.',
         bullets: [
-          'Paid advertising \u2014 systematic hook generation, angle testing at scale, and compliance-aware ad variation for Facebook, Google, YouTube, and native',
-          'Email marketing \u2014 AI-powered segmentation, subject line optimization, sequence architecture, and send-time analysis',
-          'Sales funnels \u2014 AI-assisted funnel mapping, conversion bottleneck diagnosis, and upsell sequence optimization',
-          'Content marketing \u2014 AI-accelerated research and ideation with human editorial quality control',
-          'Landing pages and sales pages \u2014 AI-driven headline testing, message-match analysis, and conversion rate optimization',
+          'DTC and e-commerce brands \u2014 research + copy production + ad iteration workflows',
+          'Health and supplement marketers \u2014 compliance-aware workflows for regulated verticals',
+          'Financial publishers \u2014 compliant long-form research and TSL drafting',
+          'ClickBank vendors \u2014 full-funnel AI workflows from VSL through email upsell (e.g. Ben Palmer\'s 300% ROAS funnel)',
+          'Info products and coaching businesses \u2014 launch sequences plus the daily broadcast streams that feed them',
+          'Marketing agencies \u2014 team training plus system templates the agency can run for multiple clients',
         ],
-      },
-      {
-        heading: 'The Competitive Window Is Closing',
-        content:
-          'Right now, most brands are wasting AI on generic content production. The ones that figure out how to use AI for <em>strategic marketing</em> \u2014 research, optimization, and decision-making, not just writing \u2014 will have an advantage that compounds every month.\n\n' +
-          'I can compress your team\u2019s learning curve from years to weeks and give you systems that keep improving as AI capabilities evolve.\n\n' +
-          'The question is not whether to use AI in your marketing. It is whether you will figure it out before your competitors do.',
       },
     ],
     caseStudies: [
       {
+        name: 'Copy Accelerator / CA Labs',
+        category: 'Copy Chief Engagement',
+        metric: 'Hired by Stefan Georgi',
+        detail: '"We hired Rob as our Copy Chief for CA Labs!" \u2014 Stefan Georgi, the copywriter behind over $1B in tracked sales.',
+      },
+      {
+        name: 'Triple Brain Methodology',
+        category: 'Open-Sourced as Proof of Substance',
+        metric: 'Skills on GitHub',
+        detail: 'Custom Claude Code copywriting skills published openly so prospective clients can verify the AI-substance side of the methodology.',
+      },
+      {
+        name: 'Belron / Safelite International',
+        category: '9-Year, 35-Country Campaign',
+        metric: '$523M in Tracked Sales',
+        detail: 'The DR fundamentals the methodology now systematises and accelerates with AI.',
+      },
+      {
         name: 'Mobile Profits',
-        category: 'AI-Enhanced Funnel',
-        metric: '$30M Generated',
-        detail: 'AI research powering #1 ClickBank offer. Full funnel.',
-      },
-      {
-        name: 'Gluco 6',
-        category: 'Supplement Marketing',
-        metric: '$40M Generated',
-        detail: 'AI-assisted audience research and funnel optimization.',
-      },
-      {
-        name: 'Belron / Safelite',
-        category: 'Enterprise Campaign',
-        metric: '$523M in Sales',
-        detail: '9-year, 35-country campaign. DR fundamentals that AI now accelerates.',
+        category: 'Methodology Applied End-to-End',
+        metric: '$30M / #1 on ClickBank',
+        detail: 'Up to 4% conversion on cold traffic. Example of the Triple Brain methodology applied across the full funnel.',
       },
     ],
     deliverables: [
@@ -1909,46 +1911,56 @@ export const services: Service[] = [
     deliverablesHeading: 'What You Get When You Hire Me',
     deliverablesSubtext:
       'Every deliverable is designed to make AI a genuine competitive advantage for your marketing \u2014 not just a faster way to produce more.',
-    testimonialIds: ['2', '4', '1', '6'],
+    testimonialIds: ['2', '3', '4', '1', '6'],
     portfolioItems: [
       { title: 'AI Marketing Strategy \u2014 DTC Brand', category: 'Consulting' },
       { title: 'AI Funnel Optimization \u2014 Supplement', category: 'Consulting' },
     ],
     midCta: {
-      headline: 'Ready to make AI actually work for your marketing?',
+      headline: 'Ready for AI marketing that produces revenue, not just more output?',
       subtext:
-        'Book a free strategy call. I\u2019ll audit your current AI usage and show you where the real leverage is \u2014 and where you\u2019re wasting time.',
+        'Book a free strategy call. Send me your current AI marketing setup \u2014 tools, prompts, workflows \u2014 and I\'ll tell you on the call where the leverage is real, where it\'s noise, and whether installing the Triple Brain methodology can change your numbers.',
     },
     faqs: [
       {
-        question: 'What does an AI marketing consultant do?',
+        question: 'What does an AI marketing consultant actually do?',
         answer:
-          'I help brands use AI strategically across their entire marketing operation \u2014 not just for writing copy, but for market research, competitor analysis, campaign optimization, audience intelligence, and funnel strategy. The goal is to make AI a genuine competitive advantage, not just a content production tool. Every system I build is grounded in the direct-response fundamentals behind $523M+ in tracked results.',
+          'I install the Triple Brain Marketing methodology in your marketing operation \u2014 the same workflow Stefan Georgi\'s Copy Accelerator hired me as Copy Chief to run. That covers AI workflows for market research, audience intelligence, copy production, campaign optimisation, and offer development. Every system is grounded in the direct-response fundamentals behind $523M+ in tracked client results, not in generic prompt-engineering tutorials.',
       },
       {
         question: 'How is AI marketing consulting different from AI copywriting consulting?',
         answer:
-          'AI copywriting consulting focuses specifically on copy production workflows \u2014 prompts, drafting, editing, and quality control for written assets. AI marketing consulting is broader: it covers the full marketing operation including research, strategy, campaign optimization, audience analysis, and offer development, in addition to copy production. If you need help across your entire marketing stack, this is the service.',
+          'AI copywriting consulting is the focused service: prompts, skill files, drafting, and quality-control workflows for written assets specifically. AI marketing consulting is broader \u2014 it covers the full marketing operation, including research, audience intelligence, campaign optimisation, and offer development, in addition to copy production. If you need AI installed across your entire marketing stack, this is the service. If you only need copy workflows installed for a writing team, the AI copywriting consultant page is the more focused option.',
       },
       {
-        question: 'Is this for big teams or can solo founders benefit?',
+        question: 'Are you taking new AI marketing clients?',
         answer:
-          'Both. I work with marketing teams at established companies who need AI integrated into their workflows, and with founders who want to leverage AI to compete with larger teams. A solo founder running a DTC brand gets a different system than a 15-person marketing department \u2014 but both get the same depth of strategic thinking.',
+          'I take a selective number of new AI marketing engagements each quarter so the work stays at the level the proof requires. Most kickoffs happen within two weeks of the strategy call. If the project is a fit, I\'ll send a fixed-price proposal within 48 hours. If it isn\'t, I\'ll tell you on the call and point you toward someone in my network who\'s better suited.',
+      },
+      {
+        question: 'What does an AI marketing engagement cost?',
+        answer:
+          'AI marketing engagements are fixed-price. Most engagements start at $10K (focused single-channel audit and playbook). Full multi-channel installations run higher \u2014 audit + system design + skill installation + team training + first round of optimisation. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a marketing operation paying for AI tools without strategic direction is paying for noise. The same operation with the methodology installed is paying for compounding leverage.',
+      },
+      {
+        question: 'How long does an AI marketing engagement take?',
+        answer:
+          'Depends on scope. A focused audit plus playbook is 2\u20133 weeks. A full system design + skill installation + team training is typically 6\u201310 weeks depending on team size and channel breadth. The audit phase always comes first \u2014 that\'s where we identify which systems to install for the highest conversion impact.',
       },
       {
         question: 'What AI tools do you work with?',
         answer:
-          'ChatGPT, Claude, Gemini, and specialized marketing AI platforms. But the tool matters far less than the strategy around it. The systems I build are tool-agnostic and adapt as capabilities evolve. I have been integrating AI into my own marketing practice daily since 2023 and stay current with every major release.',
+          'Claude Code (primary), ChatGPT, Gemini, and specialised marketing AI platforms. But the tool matters far less than the strategy around it. The systems I install are tool-agnostic and adapt as capabilities evolve. I\'ve been integrating AI into my own marketing practice daily since 2023 and stay current with every major release. I selectively open-source my Claude Code copywriting skills on GitHub as proof of substance.',
       },
       {
         question: 'What industries do you work with?',
         answer:
-          'DTC and e-commerce brands, ClickBank vendors, supplement marketers, financial publishers, SaaS companies, info product businesses, and marketing agencies. My cross-industry experience means I bring proven AI marketing frameworks to your vertical \u2014 including the same approaches behind $30M, $40M, and $27M individual offers.',
+          'DTC and e-commerce brands, ClickBank vendors (Ben Palmer\'s 300% ROAS funnel), supplement marketers (compliance-aware AI workflows for regulated verticals), financial publishers, SaaS companies, info-product businesses (Abundant 340% ROAS), and marketing agencies. The methodology adapts to each vertical\'s compliance posture and buyer psychology.',
       },
       {
-        question: 'How much does AI marketing consulting cost?',
+        question: 'What happens after the strategy call?',
         answer:
-          'Pricing is project-based, depending on scope, team size, and how many channels we cover. Options range from a focused marketing audit to a comprehensive multi-month engagement. But here is how I think about it: a brand that uses AI to research faster, test more, and optimize better is not adding an expense \u2014 it is gaining a compounding advantage over every competitor still doing things manually.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is the audit \u2014 I review your current AI usage, prompts, workflows, and output review process. Then system design, skill installation, team training, and the first round of ongoing optimisation. You\'ll see the methodology installed step by step \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['ai-copywriting-consultant', 'sales-funnel-copywriter'],
