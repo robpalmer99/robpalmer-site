@@ -221,10 +221,10 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
                       {section.bullets.map((bullet, i) => (
                         <li
                           key={i}
-                          className="flex items-start gap-3 text-lg text-ink-700 font-body leading-relaxed"
+                          className="flex items-start gap-3 text-lg text-ink-700 font-body leading-relaxed [&_a]:text-gold-600 [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-gold-500"
                         >
                           <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gold-400" aria-hidden="true" />
-                          {bullet}
+                          <span dangerouslySetInnerHTML={{ __html: bullet }} />
                         </li>
                       ))}
                     </ul>

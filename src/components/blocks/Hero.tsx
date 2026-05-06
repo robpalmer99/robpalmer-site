@@ -42,9 +42,10 @@ export function Hero({
               </FadeIn>
               {subheadline && (
                 <FadeIn delay={150} duration={800}>
-                  <p className="mt-6 text-lg sm:text-xl text-paper-300 leading-relaxed font-body">
-                    {subheadline}
-                  </p>
+                  <p
+                    className="mt-6 text-lg sm:text-xl text-paper-300 leading-relaxed font-body [&_a]:text-gold-400 [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-gold-300"
+                    dangerouslySetInnerHTML={{ __html: subheadline }}
+                  />
                 </FadeIn>
               )}
               {(cta || secondaryCta) && (
@@ -99,7 +100,10 @@ export function Hero({
               {headline}
             </h1>
             {subheadline && (
-              <p className="mt-3 text-lg text-paper-300 font-body">{subheadline}</p>
+              <p
+                className="mt-3 text-lg text-paper-300 font-body [&_a]:text-gold-400 [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-gold-300"
+                dangerouslySetInnerHTML={{ __html: subheadline }}
+              />
             )}
           </FadeIn>
         </Container>
@@ -119,9 +123,10 @@ export function Hero({
           </FadeIn>
           {subheadline && (
             <FadeIn delay={100} duration={700}>
-              <p className="mt-4 text-lg sm:text-xl text-paper-300 leading-relaxed font-body">
-                {subheadline}
-              </p>
+              <p
+                className="mt-4 text-lg sm:text-xl text-paper-300 leading-relaxed font-body [&_a]:text-gold-400 [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-gold-300"
+                dangerouslySetInnerHTML={{ __html: subheadline }}
+              />
             </FadeIn>
           )}
           {cta && (
