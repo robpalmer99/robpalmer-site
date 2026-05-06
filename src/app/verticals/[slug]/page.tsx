@@ -103,6 +103,7 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
         variant="page"
         headline={vertical.headline}
         subheadline={vertical.subheadline}
+        cta={{ label: 'Book a Call', href: '/contact' }}
       />
       <Breadcrumbs
         items={[
@@ -110,6 +111,38 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
           { label: vertical.title },
         ]}
       />
+
+      {/* ───────────────────────────── Hero Stats Bar ───────────────────────────── */}
+      {vertical.heroStats && (
+        <section className="bg-ink-950 text-white noise-overlay py-10 sm:py-12">
+          <Container>
+            <FadeIn duration={800}>
+              <div className="max-w-4xl mx-auto text-center">
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-gold-400">
+                  {vertical.heroStats.primary.value}
+                </div>
+                <div className="mt-1 text-sm sm:text-base text-paper-400 font-body uppercase tracking-wide">
+                  {vertical.heroStats.primary.label}
+                </div>
+                {vertical.heroStats.secondary && vertical.heroStats.secondary.length > 0 && (
+                  <div className="mt-6 flex flex-wrap items-center justify-center gap-6 sm:gap-10">
+                    {vertical.heroStats.secondary.map((stat, index) => (
+                      <div key={index} className="text-center">
+                        <div className="text-2xl sm:text-3xl font-heading font-bold text-white">
+                          {stat.value}
+                        </div>
+                        <div className="mt-0.5 text-xs sm:text-sm text-paper-400 font-body uppercase tracking-wide">
+                          {stat.label}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </FadeIn>
+          </Container>
+        </section>
+      )}
 
       {/* ───────────────────────────── Hero Image ───────────────────────────── */}
       <section className="bg-paper-50">
@@ -131,8 +164,29 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
         </Container>
       </section>
 
-      {/* ───────────────────────────── Definition Box ───────────────────────────── */}
-      {vertical.definition && (
+      {/* ───────────────────────────── Credential Bar or Definition Box ───────────────────────────── */}
+      {vertical.credentialBar ? (
+        <Section>
+          <Container>
+            <FadeIn>
+              <div className="max-w-4xl mx-auto text-center">
+                {vertical.credentialBar.heading && (
+                  <p className="text-sm text-paper-600 font-body uppercase tracking-wider mb-4">
+                    {vertical.credentialBar.heading}
+                  </p>
+                )}
+                <div className="flex flex-wrap items-center justify-center gap-3">
+                  {vertical.credentialBar.items.map((item, index) => (
+                    <Badge key={index} variant="gold">
+                      {item}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+            </FadeIn>
+          </Container>
+        </Section>
+      ) : vertical.definition ? (
         <Section>
           <Container>
             <FadeIn>
@@ -145,7 +199,7 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
             </FadeIn>
           </Container>
         </Section>
-      )}
+      ) : null}
 
       {/* ───────────────────────────── Main Content Sections ───────────────────────────── */}
       <Section>
@@ -182,6 +236,128 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
         </Container>
       </Section>
 
+      {/* ───────────────────────────── Triple Brain Mechanism ───────────────────────────── */}
+      <Section variant="alt" divider>
+        <Container>
+          <div className="max-w-4xl mx-auto">
+            <FadeIn>
+              <div className="text-center">
+                <Badge variant="gold">Triple Brain Marketing</Badge>
+                <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950 mt-5">
+                  Three brains.{' '}
+                  <span className="text-gold-500">One engagement.</span>
+                </h2>
+                <p className="mt-4 text-base text-ink-700 font-body leading-relaxed max-w-2xl mx-auto">
+                  The mechanism behind every project I deliver &mdash; including yours.
+                </p>
+              </div>
+            </FadeIn>
+            <ul role="list" className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10">
+              <li>
+                <FadeIn delay={0} distance={20} className="h-full">
+                  <div className="h-full rounded-xl border border-paper-200 bg-white p-5 shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5">
+                    <div className="font-heading text-xs font-bold uppercase tracking-wide text-gold-600">
+                      Brain 1
+                    </div>
+                    <h3 className="mt-2 font-heading text-lg font-bold text-ink-950 leading-tight">
+                      My copywriting brain
+                    </h3>
+                    <p className="mt-2 text-sm text-ink-700 leading-relaxed font-body">
+                      40+ years of direct-response craft for Apple, IBM, Microsoft, Citibank, Morgan Stanley &mdash; and the campaign behind $523M for Belron.
+                    </p>
+                  </div>
+                </FadeIn>
+              </li>
+              <li>
+                <FadeIn delay={100} distance={20} className="h-full">
+                  <div className="h-full rounded-xl border border-paper-200 bg-white p-5 shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5">
+                    <div className="font-heading text-xs font-bold uppercase tracking-wide text-gold-600">
+                      Brain 2
+                    </div>
+                    <h3 className="mt-2 font-heading text-lg font-bold text-ink-950 leading-tight">
+                      Claude Code, with my custom copywriting skills
+                    </h3>
+                    <p className="mt-2 text-sm text-ink-700 leading-relaxed font-body">
+                      Anthropic&apos;s most capable model, augmented by my own skill files &mdash; proprietary frameworks and evaluation criteria from real campaigns.{' '}
+                      <Link href="/blog/claude-code-copywriting-skills" className="text-gold-600 underline-offset-4 hover:underline">
+                        Open-sourced
+                      </Link>{' '}
+                      as proof.
+                    </p>
+                  </div>
+                </FadeIn>
+              </li>
+              <li>
+                <FadeIn delay={200} distance={20} className="h-full">
+                  <div className="h-full rounded-xl border border-paper-200 bg-white p-5 shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5">
+                    <div className="font-heading text-xs font-bold uppercase tracking-wide text-gold-600">
+                      Brain 3
+                    </div>
+                    <h3 className="mt-2 font-heading text-lg font-bold text-ink-950 leading-tight">
+                      My Obsidian copywriting brain
+                    </h3>
+                    <p className="mt-2 text-sm text-ink-700 leading-relaxed font-body">
+                      A 1,239-file knowledge base spanning the old DR masters through cutting-edge AI marketing &mdash; indexed and instantly retrievable while I write yours.
+                    </p>
+                  </div>
+                </FadeIn>
+              </li>
+            </ul>
+            <FadeIn delay={400}>
+              <div className="mt-10 text-center">
+                <Link
+                  href="/blog/triple-brain-marketing"
+                  className="inline-flex items-center gap-2 font-heading text-sm font-semibold text-gold-600 hover:text-gold-500 transition-colors"
+                >
+                  Read the full Triple Brain story
+                  <span aria-hidden="true">&rarr;</span>
+                </Link>
+              </div>
+            </FadeIn>
+          </div>
+        </Container>
+      </Section>
+
+      {/* ───────────────────────────── Case Studies ───────────────────────────── */}
+      {vertical.caseStudies && vertical.caseStudies.length > 0 && (
+        <Section variant="gold">
+          <Container>
+            <div className="max-w-4xl mx-auto">
+              <FadeIn>
+                <div className="text-center mb-10">
+                  <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
+                    Proven Results
+                  </h2>
+                  <p className="mt-3 text-lg text-ink-700 font-body">
+                    Real numbers from real offers.
+                  </p>
+                </div>
+              </FadeIn>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                {vertical.caseStudies.map((study, index) => (
+                  <FadeIn key={index} delay={index * 80} className="h-full">
+                    <div className="rounded-xl border border-paper-200 bg-white p-6 shadow-sm h-full text-center">
+                      <Badge variant="gold">{study.category}</Badge>
+                      <h3 className="mt-3 font-heading text-lg font-bold text-ink-950">
+                        {study.name}
+                      </h3>
+                      <div className="mt-2 text-3xl sm:text-4xl font-heading font-bold text-gold-600">
+                        {study.metric}
+                      </div>
+                      {study.detail && (
+                        <p className="mt-2 text-sm text-ink-700 font-body">
+                          {study.detail}
+                        </p>
+                      )}
+                    </div>
+                  </FadeIn>
+                ))}
+              </div>
+            </div>
+          </Container>
+        </Section>
+      )}
+
       {/* ───────────────────────────── Key Deliverables ───────────────────────────── */}
       <Section variant="alt" divider>
         <Container>
@@ -189,11 +365,10 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
             <FadeIn>
               <div className="text-center mb-10">
                 <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
-                  What You Get
+                  {vertical.deliverablesHeading || 'What You Get'}
                 </h2>
                 <p className="mt-3 text-lg text-ink-700 font-body">
-                  Every deliverable is built on proven direct-response frameworks
-                  — not templates.
+                  {vertical.deliverablesSubtext || 'Every deliverable is built on proven direct-response frameworks — not templates.'}
                 </p>
               </div>
             </FadeIn>
@@ -217,8 +392,8 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
 
       {/* ───────────────────────────── Mid-page CTA ───────────────────────────── */}
       <CTABanner
-        headline={`Ready to scale your ${vertical.title.toLowerCase().replace(' copywriter', '')} campaigns?`}
-        subtext="Book a free strategy call to discuss your project."
+        headline={vertical.midCta?.headline || `Ready to scale your ${vertical.title.toLowerCase().replace(' copywriter', '')} campaigns?`}
+        subtext={vertical.midCta?.subtext || 'Book a free strategy call to discuss your project.'}
         variant="gold"
       />
 

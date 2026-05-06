@@ -31,6 +31,26 @@ export interface Vertical {
   faqs: FAQItem[]
   relatedServices?: string[]
   relatedVerticals?: string[]
+  heroStats?: {
+    primary: { value: string; label: string }
+    secondary?: { value: string; label: string }[]
+  }
+  credentialBar?: {
+    heading?: string
+    items: string[]
+  }
+  caseStudies?: {
+    name: string
+    category: string
+    metric: string
+    detail?: string
+  }[]
+  deliverablesHeading?: string
+  deliverablesSubtext?: string
+  midCta?: {
+    headline: string
+    subtext: string
+  }
 }
 
 export const verticals: Vertical[] = [
