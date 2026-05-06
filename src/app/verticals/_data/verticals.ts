@@ -51,6 +51,10 @@ export interface Vertical {
     headline: string
     subtext: string
   }
+  heroCta?: {
+    label: string
+    href: string
+  }
 }
 
 export const verticals: Vertical[] = [
@@ -187,6 +191,7 @@ export const verticals: Vertical[] = [
       { title: 'BodyHacker', category: 'VSL' },
       { title: 'Coffee Slimmer Pro', category: 'VSL' },
     ],
+    heroCta: { label: 'Audit my supplement funnel', href: '/contact' },
     midCta: {
       headline: 'Ready for a supplement funnel that beats your current control?',
       subtext:
@@ -369,6 +374,7 @@ export const verticals: Vertical[] = [
     portfolioItems: [
       { title: 'Monetari Fund', category: 'Sales Page' },
     ],
+    heroCta: { label: 'Audit my financial promotion', href: '/contact' },
     midCta: {
       headline: 'Ready for a financial promotion that beats your current control?',
       subtext:
@@ -546,6 +552,7 @@ export const verticals: Vertical[] = [
       'Every deliverable is engineered for the DTC operator who needs both front-end CVR AND back-end AOV math \u2014 not one or the other.',
     testimonialIds: ['34', '32', '22', '6', '2', '3'],
     portfolioItems: [],
+    heroCta: { label: 'Audit my DTC stack', href: '/contact' },
     midCta: {
       headline: 'Ready for a DTC revenue stack that lifts AOV without lifting ad spend?',
       subtext:
@@ -730,6 +737,7 @@ export const verticals: Vertical[] = [
       { title: 'Puradrop', category: 'VSL' },
       { title: 'Biz-Op Hybrid Sales Page & VSL', category: 'Hybrid' },
     ],
+    heroCta: { label: 'Audit my ClickBank funnel', href: '/contact' },
     midCta: {
       headline: 'Ready for a ClickBank funnel that affiliates fight to promote?',
       subtext:
@@ -908,6 +916,7 @@ export const verticals: Vertical[] = [
       'Every deliverable is engineered for the SaaS founder or growth operator who needs the lifecycle math to compound \u2014 not just the trial sign-up to convert.',
     testimonialIds: ['22', '23', '24', '7', '6', '2', '3'],
     portfolioItems: [],
+    heroCta: { label: 'Audit my SaaS lifecycle', href: '/contact' },
     midCta: {
       headline: 'Ready for a SaaS lifecycle sequence that compounds MRR \u2014 not just acquires trials?',
       subtext:
@@ -1087,6 +1096,7 @@ export const verticals: Vertical[] = [
       { title: 'Abundant', category: 'Sales Page' },
       { title: 'Just Throw Some Sexy On It!', category: 'Sales Page' },
     ],
+    heroCta: { label: 'Audit my info-product launch', href: '/contact' },
     midCta: {
       headline: 'Ready for an info-product launch that beats your current control?',
       subtext:

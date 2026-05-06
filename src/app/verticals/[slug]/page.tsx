@@ -103,7 +103,7 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
         variant="page"
         headline={vertical.headline}
         subheadline={vertical.subheadline}
-        cta={{ label: 'Book a Call', href: '/contact' }}
+        cta={vertical.heroCta ?? { label: 'Book a Call', href: '/contact' }}
       />
       <Breadcrumbs
         items={[
