@@ -1589,104 +1589,108 @@ export const services: Service[] = [
     title: 'AI Copywriting Consultant',
     slug: 'ai-copywriting-consultant',
     shortDescription:
-      'Strategic AI copywriting consulting for teams and businesses. Workflow design, prompt engineering, and quality control — so your team gets AI speed without losing human craft.',
-    metaTitle: 'AI Copywriting Consultant | AI-Powered Copy Strategy',
+      'Custom Claude Code copywriting skills and a 1,239-file Obsidian vault, installed in your copy team\'s workflow. Stefan Georgi\'s Copy Accelerator hired me as Copy Chief to run this.',
+    metaTitle: 'AI Copywriting Consultant | Custom Claude Code Skills + Vault',
     metaDescription:
-      'Hire an AI copywriting consultant with 40+ years of direct-response experience. Rob Palmer helps teams integrate AI into their copywriting workflow without sacrificing quality or conversions.',
-    headline: 'The AI Copywriting Consultant With $523M+ in DR Results',
+      'Senior AI copywriting consultant. Install custom Claude Code copywriting skills and a 1,239-file Obsidian vault in your copy team. Stefan Georgi\'s CA Labs hired me as Copy Chief. Open-sourced skills as proof.',
+    headline: 'AI Copywriting Consultant \u2014 Custom Claude Code Skills + a 1,239-File Vault for Your Copy Team',
     subheadline:
-      'Your team has AI tools. What they don\u2019t have is 40 years of direct-response pattern recognition to tell those tools what to write. I bridge that gap \u2014 so you get AI speed without losing human craft.',
+      'Stefan Georgi \u2014 the copywriter behind over $1B in tracked sales \u2014 hired me as Copy Chief inside Copy Accelerator\'s CA Labs. I install the Claude Code copywriting skills my own team runs (open-sourced on GitHub as proof) plus the 1,239-file Obsidian copywriting brain that powers them. If your copy team is shipping AI drafts faster but converting at the same rate as last year, this is the kind of work I do.',
     heroImage: '/images/services/ai-copywriting-consultant.jpg',
     heroImageAlt: 'Artificial intelligence and technology for AI copywriting consulting',
     heroStats: {
-      primary: { value: '40+ Years', label: 'Direct-Response Expertise Powering AI Workflows' },
+      primary: { value: '190', label: 'DR Copywriting Frameworks (Indexed in My Working Vault)' },
       secondary: [
-        { value: '$523M+', label: 'Tracked Client Results' },
-        { value: '200+', label: 'Frameworks in Vault' },
-        { value: 'Daily', label: 'AI Tool Usage Since 2023' },
+        { value: 'CA Labs', label: 'Stefan Georgi Hired Me as Copy Chief' },
+        { value: 'GitHub', label: 'Open-Sourced Claude Code Copywriting Skills' },
+        { value: '40+', label: 'Years Direct Response' },
       ],
     },
     credentialBar: {
       heading: 'AI copywriting consulting for',
       items: [
-        'Copy Accelerator (as Copy Chief)',
-        'Direct-Response Teams',
-        'ClickBank Vendors',
-        'DTC Brands',
-        'Marketing Agencies',
-        'Solo Entrepreneurs',
+        'Copy Accelerator / CA Labs (Stefan Georgi as Copy Chief)',
+        'ClickBank Platinum Vendors',
+        'Supplement Marketers',
+        'Financial Publishers',
+        'DTC and SaaS Brands',
+        'Marketing Agencies and In-House Copy Teams',
       ],
     },
     sections: [
       {
-        heading: 'Your Team Has AI. They Still Can\u2019t Write Copy That Converts.',
+        heading: 'Why AI Copy Ships Faster but Converts at the Same Rate as Last Year',
         content:
-          'Everyone has access to <a href="https://openai.com/chatgpt" target="_blank" rel="noopener noreferrer">ChatGPT</a>, <a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Claude</a>, and a growing army of AI writing tools. Almost no one is using them to produce copy that actually converts.\n\n' +
-          'Here is what I see: teams prompt AI with vague instructions, accept the first output, make surface-level edits, and publish. <strong>The result is copy that reads smoothly but sells poorly.</strong> Conversion rates drop. The team blames AI.\n\n' +
-          'But the problem is not the technology. AI is a force multiplier \u2014 but if you multiply zero direct-response skill by ten, you still get zero.\n\n' +
-          'What your team needs is not a better AI tool. It is <strong>someone who knows what great converting copy looks like</strong> designing the workflows, writing the prompts, and building the quality control systems that turn AI from a content generator into a conversion machine.',
+          'You\'ve installed <a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Claude</a> or <a href="https://openai.com/chatgpt" target="_blank" rel="noopener noreferrer">ChatGPT</a> in your copy workflow. Your team ships drafts in half the time. But CTR on ads is flat. CVR on sales pages is flat. Click-through on emails is flat. Same numbers as last year, just produced faster.\n\n' +
+          'Here\'s the structural reason. AI without direct-response architecture is fast mediocrity. Your team is using LLMs to generate what they would have brainstormed manually \u2014 same patterns, same headlines, same emotional triggers, produced 5x faster. The AI isn\'t pulling from $1B of converting copy. It\'s pulling from training-data averages \u2014 blog posts, LinkedIn updates, B2B SaaS landing pages, and the same Mailchimp templates everyone else trains on. Generic copy at scale.\n\n' +
+          'What separates teams that scale output AND conversion: a working layer between the prompt and the LLM. A library of frameworks, formulas, evaluation criteria, and copy archives the AI is required to apply on every draft. Generic prompts produce generic copy. Skill-augmented prompts produce copy that converts.',
       },
       {
-        heading: 'Why I Am Uniquely Positioned to Solve This',
+        heading: 'The Custom Claude Code Skills + 1,239-File Vault Stefan Georgi\'s CA Labs Hired Me to Run',
         content:
-          'Most AI copywriting consultants are either <em>AI experts who do not understand direct response</em> or <em>copywriters who dabble in AI on the side</em>. I am neither.\n\n' +
-          'I have spent <strong>40+ years writing direct-response copy that has generated $523M+ in tracked results</strong> \u2014 VSLs, sales pages, email sequences, funnels, and ads across every major vertical. And I have spent the last several years building a <strong>vault of 200+ proven copywriting frameworks</strong> \u2014 Schwartz, Georgi, Kell, Makepeace, Carlton, Halbert \u2014 that I use as the strategic foundation for AI-assisted workflows.\n\n' +
-          'When I build an AI copywriting system for your team, the AI is not guessing what good copy looks like. It is guided by the same frameworks behind eight-figure offers. That is the difference between AI-generated content and AI-assisted direct-response copy.',
+          'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as <strong>Copy Chief inside Copy Accelerator\'s CA Labs</strong>. The AI copywriting workflow I install is built on three substantive layers:\n\n' +
+          '<strong>Layer 1:</strong> My custom Claude Code copywriting skills. Proprietary skill files that encode 40 years of frameworks, headline formulas, hook patterns, fascination structures, and evaluation criteria. Open-sourced on GitHub as verifiable proof. Your team can read the public skills, run them in their own Claude environment, and judge the quality before hiring me to install the proprietary set.\n\n' +
+          '<strong>Layer 2:</strong> A 1,239-file Obsidian copywriting brain. 190 frameworks (Schwartz, Halbert, Hopkins, Carlton, Makepeace, Georgi, Kell), 193 swipe pieces, 125 book/course notes, 76 templates, and 512 pieces of my own tested copy. Indexed and instantly retrievable while your team writes \u2014 the reference layer the skills draw from.\n\n' +
+          '<strong>Layer 3:</strong> A draft-review workflow your copy chief or senior writer runs. Built-in evaluation gates that catch the specific failures generic AI copy exhibits: clich\u00e9s, vague claims, missing mechanism, weak proof, weak close.\n\n' +
+          '<strong>When your team runs this, every draft passes through 40 years of converting copy as a quality filter</strong> \u2014 not training-data averages.\n\n' +
+          'If your team is shipping AI drafts but the conversion numbers haven\'t moved, send me your current copy workflow before the strategy call: prompts, skill files (if any), draft-review process. I\'ll audit it on the call and tell you exactly where the conversion lift is hiding \u2014 and whether installing the skills + vault will change your numbers.',
       },
       {
-        heading: 'The Copy Chief That Top Copywriters Hire',
+        heading: 'The Copywriters and Operators Who Hire Me to Run AI in Their Workflow',
         content:
-          'Stefan Georgi \u2014 the copywriter behind over $1 billion in tracked sales \u2014 <strong>hired me as Copy Chief for Copy Accelerator</strong>. That role required evaluating, improving, and systematizing copywriting processes across dozens of high-performing copywriters and brands. It is the same skill set that makes AI copywriting consulting work: knowing what good looks like, building systems that produce it consistently, and training teams to maintain quality at scale.',
+          'Stefan Georgi (CA Labs / $1B in tracked sales) hired me as Copy Chief. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor, clocked <strong>300% ROAS</strong> on a funnel I wrote for him \u2014 copy produced through this exact workflow.\n\n' +
+          'Belron\'s CEO went further. On the long-form direct-mail campaign that ran nine years and did $523M, he put it on record: <em>"You are our secret weapon. Keep your diary clear, please!"</em>\n\n' +
+          'The proof of the workflow is the conversion data of the copy it produces.',
       },
       {
-        heading: 'How I Help Your Team',
+        heading: 'How I Install the Skills + Vault in Your Copy Team\'s Workflow',
         content:
-          'I work with your copywriting team to build AI-assisted workflows that actually improve output quality \u2014 not just quantity. Every engagement is customized to your specific copy types, markets, and team capabilities.',
+          'Every copywriting consultancy engagement moves through the same four phases. None are optional. This is the actual work \u2014 not a deck of slides.',
         bullets: [
-          'Copy process audit \u2014 I identify where AI can add genuine value and where it is currently degrading your output quality',
-          'Custom AI workflow design \u2014 research, ideation, drafting, editing, and quality control phases, all tailored to your specific copy types (VSLs, sales pages, emails, ads)',
-          'Prompt engineering frameworks \u2014 not generic prompts, but systems built on proven direct-response frameworks that produce conversion-focused output',
-          'Hands-on team training \u2014 practical sessions where your team learns to use AI tools with the strategic thinking that drives conversions',
-          'Quality control playbooks \u2014 checklists and review processes that catch the subtle ways AI degrades persuasion, specificity, and emotional resonance',
+          'Phase 1 \u2014 Audit: I review your current copy workflow end-to-end. What prompts your team uses, which AI tools, how drafts get reviewed, where conversion is leaking. The audit identifies the highest-impact systems to install first.',
+          'Phase 2 \u2014 Skill installation: I ship the custom Claude Code copywriting skill files into your team\'s environment. Frameworks, headline formulas, hook patterns, fascination structures, and evaluation criteria \u2014 encoded as skill files Claude executes on every project.',
+          'Phase 3 \u2014 Vault structuring + reference layer: I structure the Obsidian-equivalent reference layer your team can call into their workflow. Frameworks, swipes, templates, and copy archives indexed for instant retrieval during drafting.',
+          'Phase 4 \u2014 Draft-review workflow + team training: I install the draft-review process your copy chief or senior writer runs to catch the specific failures generic AI copy exhibits, then train your team on the strategic thinking that drives conversions through the workflow.',
         ],
       },
       {
-        heading: 'The Competitive Advantage Window Is Closing',
+        heading: 'Skills + Vault Installations Across Every DR Copy Type',
         content:
-          'The teams that figure out AI-assisted copywriting first will have an insurmountable advantage. They will research markets in hours instead of weeks. They will test ten headline variations where competitors test two. They will analyze competitor funnels at scale and find winning angles before anyone else.\n\n' +
-          '<strong>Right now, most teams are wasting this advantage on generic AI output.</strong> I can compress your team\u2019s learning curve from years to weeks \u2014 and give you a process that keeps improving as AI tools evolve.\n\n' +
-          'After 40+ years of direct response and several years of deep AI integration, I know exactly where AI adds leverage and where it creates liability. Your team gets the benefit of both.',
-      },
-      {
-        heading: 'AI Copywriting for Direct-Response Brands',
-        content:
-          'My AI copywriting consulting is specifically designed for direct-response brands and teams \u2014 not content marketers or brand copywriters. The frameworks I build are optimized for copy that drives measurable actions: clicks, opt-ins, purchases, and revenue.',
+          'Every copy type has different mechanics. A VSL needs different frameworks than an email sequence, a Facebook ad, a sales page, or an upsell. The skills I install are calibrated to your specific copy types and verticals \u2014 each calling into the indexed library of proven DR frameworks. The names below will mean something to your senior writer; what matters to you is that the skills enforce them automatically on every draft.',
         bullets: [
-          'VSL and sales page workflows \u2014 AI-assisted research, mechanism development, and hook generation guided by proven persuasion frameworks',
-          'Email sequence systems \u2014 AI-powered audience segmentation, subject line testing, and sequence architecture',
-          'Ad copy production \u2014 systematic hook generation, angle testing, and compliance-aware variation at scale',
-          'Funnel optimization \u2014 AI-assisted competitor analysis, conversion diagnostics, and split test planning',
+          'VSL frameworks \u2014 Schwartz Awareness Levels, Halbert hooks, Georgi RMBC, Kell flow patterns, PIG method',
+          'Sales page frameworks \u2014 PASTOR, Brain Audit, Perry Belcher 21-step, Makepeace 7 Characteristics',
+          'Email frameworks \u2014 Soap Opera, Seinfeld method, Justin Goff 13 hooks, Ben Settle 7 types',
+          'Ad frameworks \u2014 Caples 35 formulas, Makepeace fascinations, Four U\'s headlines, Halbert hooks',
+          'Upsell frameworks \u2014 Goff OLOF, Sultanic softeners, Belcher value cascade',
+          'Vertical calibration \u2014 ClickBank, supplement, financial, DTC, SaaS, info-product, coaching',
         ],
       },
     ],
     caseStudies: [
       {
-        name: 'Framework Vault',
-        category: 'AI Knowledge Base',
-        metric: '200+ Frameworks',
-        detail: 'Schwartz, Georgi, Kell, Makepeace, Carlton, Halbert \u2014 systematized for AI workflows.',
-      },
-      {
-        name: 'Copy Accelerator',
-        category: 'Copy Chief Role',
+        name: 'Copy Accelerator / CA Labs',
+        category: 'Copy Chief Engagement',
         metric: 'Hired by Stefan Georgi',
-        detail: 'Systematizing copywriting quality across dozens of brands.',
+        detail: '"We hired Rob as our Copy Chief for CA Labs!" \u2014 Stefan Georgi, the copywriter behind over $1B in tracked sales.',
       },
       {
-        name: 'AI-Enhanced Funnels',
-        category: 'Client Results',
-        metric: '$523M+ Tracked',
-        detail: 'AI research powering the same frameworks behind eight-figure results.',
+        name: 'Open-Sourced Claude Code Skills',
+        category: 'Verifiable AI Substance',
+        metric: 'Skills on GitHub',
+        detail: 'Custom copywriting skill files published openly. Prospective clients can read them before hiring me to install the full set.',
+      },
+      {
+        name: 'Ben Palmer / ClickBank Email Funnel',
+        category: 'Copy Through the Workflow',
+        metric: '300% ROAS',
+        detail: '"Rob is a killer copywriter. We\'re getting a 300% Return on Ad Spend." Email-driven funnel produced through this exact AI copy workflow.',
+      },
+      {
+        name: 'Mobile Profits Full-Funnel Copy',
+        category: 'Workflow Applied End-to-End',
+        metric: '$30M / #1 ClickBank',
+        detail: 'Up to 4% conversion on cold traffic. Full-funnel copy produced through the methodology.',
       },
     ],
     deliverables: [
@@ -1724,46 +1728,56 @@ export const services: Service[] = [
     deliverablesHeading: 'What You Get When You Hire Me',
     deliverablesSubtext:
       'Every deliverable is designed to give your team AI speed with direct-response quality \u2014 a system they can run independently.',
-    testimonialIds: ['2', '4', '6', '7'],
+    testimonialIds: ['2', '3', '4', '1', '6'],
     portfolioItems: [
       { title: 'AI Workflow Design \u2014 Marketing Team', category: 'Consulting' },
       { title: 'Prompt Framework \u2014 Health Niche', category: 'Consulting' },
     ],
     midCta: {
-      headline: 'Ready to make AI actually work for your copy team?',
+      headline: 'Ready for AI copy that actually beats your existing controls?',
       subtext:
-        'Book a free strategy call. I\u2019ll tell you exactly where AI is helping your output and where it\u2019s quietly making it worse.',
+        'Book a free strategy call. Send me your current copy workflow \u2014 prompts, skill files, draft-review process \u2014 and I\'ll tell you on the call where the conversion is leaking, where AI is producing fast mediocrity, and whether installing the skills + vault will change your numbers.',
     },
     faqs: [
       {
-        question: 'What does an AI copywriting consultation involve?',
+        question: 'What does an AI copywriting consultant actually do?',
         answer:
-          'It starts with an audit of your current copywriting process and output quality. Then I design a customized AI-assisted workflow, develop prompt frameworks for your specific use cases, train your team on execution, and establish quality control checkpoints. The goal is a repeatable system your team runs independently after the engagement concludes \u2014 not a dependency on me.',
+          'I install custom Claude Code copywriting skills + a structured copywriting reference vault + a draft-review workflow into your copy team\'s environment. The skills encode 40 years of frameworks, headline formulas, hook patterns, fascination structures, and evaluation criteria into files Claude executes on every project. The vault is the reference layer the skills draw from. The draft-review workflow catches the specific failures generic AI copy exhibits. Your team ends up with a system they run independently after the engagement \u2014 not a dependency on me.',
       },
       {
-        question: 'Is AI copywriting consulting for teams or individuals?',
+        question: 'How is AI copywriting consulting different from AI marketing consulting?',
         answer:
-          'Both. I work with marketing teams at established companies who want to integrate AI into their workflow, and with individual entrepreneurs who want to leverage AI without hiring a full-time copywriter. The approach is customized to your situation. A solo founder gets a different system than a 10-person copy team.',
+          'AI copywriting consulting is the focused service: skill files, vault structure, and draft-review workflows for written-asset production specifically. AI marketing consulting is broader \u2014 it covers the full marketing operation, including research, audience intelligence, campaign optimisation, and offer development, in addition to copy production. If you need AI installed in a copy team specifically, this is the service. If you need AI installed across the entire marketing stack, the AI marketing consultant page is the broader option.',
       },
       {
-        question: 'Do you train our team on AI copywriting tools?',
+        question: 'Are you taking new AI copywriting clients?',
         answer:
-          'Yes \u2014 and this is not a generic AI workshop. I teach your team to use AI tools for research, ideation, drafting, and editing while maintaining the direct-response principles that drive conversions. Training is hands-on, built around your specific products and markets, and includes the prompt frameworks and quality control systems we design together.',
+          'I take a selective number of new AI copywriting engagements each quarter so the work stays at the level the proof requires. Most kickoffs happen within two weeks of the strategy call. If the project is a fit, I\'ll send a fixed-price proposal within 48 hours. If it isn\'t, I\'ll tell you on the call and point you toward someone in my network who\'s better suited.',
       },
       {
-        question: 'How is AI copywriting consulting different from just using ChatGPT?',
+        question: 'What does an AI copywriting engagement cost?',
         answer:
-          'ChatGPT is a general-purpose tool. Without direct-response expertise guiding it, it produces copy that reads well but does not convert. My consulting gives your team the strategic frameworks (built on 200+ proven DR frameworks from my vault), prompt engineering techniques, and quality control processes to get conversion-focused output \u2014 the kind that moves metrics, not just fills pages.',
+          'AI copywriting engagements are fixed-price. Most engagements start at $10K \u2014 a focused single-copy-type installation (e.g., VSL skills + vault subset + draft-review workflow). Full multi-copy-type installations run higher. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a copy team producing better-converting copy 3x faster isn\'t an expense \u2014 it\'s the highest-leverage investment in your marketing operation.',
+      },
+      {
+        question: 'How long does an AI copywriting engagement take?',
+        answer:
+          'Depends on scope. A focused single-copy-type installation (audit + skills for one copy type + vault subset + draft-review workflow + team training) is 3\u20135 weeks. A full multi-copy-type installation across VSLs, sales pages, emails, and ads runs 6\u201310 weeks depending on team size. The audit phase always comes first \u2014 that\'s where we identify which copy types to install for the highest conversion impact.',
+      },
+      {
+        question: 'How is this different from just using ChatGPT?',
+        answer:
+          'ChatGPT (or Claude, or Gemini) is a general-purpose tool. Without DR-specific skill files structuring its output, it produces copy that reads smoothly but converts at training-data averages. My installation gives your team proprietary skill files calibrated to four decades of converting copy, plus a 1,239-file reference vault the skills draw from, plus a draft-review workflow that catches AI-specific failures. The output is copy that moves back-end metrics, not just fills pages.',
       },
       {
         question: 'What AI tools do you work with?',
         answer:
-          'ChatGPT, Claude, Gemini, and specialized platforms. But the tool matters less than the system around it. The workflows and prompt frameworks I build are tool-agnostic \u2014 they work regardless of which AI you prefer, and they adapt as tools evolve. I have been using AI daily in my own copywriting practice since 2023 and stay current as capabilities advance.',
+          'Claude Code (primary \u2014 because it executes structured skill files natively), ChatGPT, Gemini, and specialised copywriting platforms. The skills and workflow I install are tool-agnostic at the strategy level and adapt as capabilities evolve. I\'ve been integrating AI into my own copywriting practice daily since 2023, ship custom skill files for every major copy type, and stay current with every release.',
       },
       {
-        question: 'How much does AI copywriting consulting cost?',
+        question: 'What happens after the strategy call?',
         answer:
-          'Pricing is project-based, depending on team size, copy complexity, and training depth. Options range from a focused workflow audit to a comprehensive multi-week engagement. But here is how I think about it: a team that produces better-converting copy 3x faster is not an expense \u2014 it is the highest-leverage investment in your marketing operation.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is the audit \u2014 I review your current copy workflow, prompts, AI tools, and draft-review process. Then skill installation, vault structuring, draft-review workflow, and team training. You\'ll see the system installed step by step \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['ai-marketing-consultant', 'vsl-copywriter'],
