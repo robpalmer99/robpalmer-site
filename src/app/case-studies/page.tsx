@@ -137,7 +137,7 @@ export default function CaseStudiesPage() {
 
       <CTABanner
         headline="Ready to become the next case study?"
-        subtext="Let's discuss how direct-response copywriting can transform your results."
+        subtext="Let's discuss how direct-response copywriting can lift your conversion rate."
       />
     </>
   )

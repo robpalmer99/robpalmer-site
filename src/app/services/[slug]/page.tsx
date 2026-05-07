@@ -294,7 +294,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                       My Obsidian copywriting brain
                     </h3>
                     <p className="mt-2 text-sm text-ink-700 leading-relaxed font-body">
-                      A 1,239-file knowledge base spanning the old DR masters through cutting-edge AI marketing &mdash; indexed and instantly retrievable while I write yours.
+                      A 1,239-file knowledge base spanning the old DR masters through current AI marketing &mdash; indexed and instantly retrievable while I write yours.
                     </p>
                   </div>
                 </FadeIn>

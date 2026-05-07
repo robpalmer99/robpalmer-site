@@ -75,8 +75,7 @@ export default function AboutPage() {
                     forty years of direct-response craft, Claude Code augmented
                     by my own custom-built copywriting skills, and a 1,239-file
                     Obsidian copywriting brain spanning the old direct-response
-                    masters through today&apos;s cutting-edge AI marketing
-                    strategies.
+                    masters through today&apos;s AI marketing strategies.
                   </p>
                   <p>
                     Other campaigns I&apos;ve shipped under the same approach:{' '}
@@ -241,7 +240,7 @@ export default function AboutPage() {
                     label: 'Brain 3',
                     title: 'My Obsidian copywriting brain',
                     detail:
-                      'A 1,239-file knowledge base spanning the old masters through cutting-edge AI marketing strategies. 190 frameworks, 193 swipe pieces, 125 book and course notes, 76 templates, and 512 pieces of my own tested and measured copy — indexed and instantly retrievable.',
+                      'A 1,239-file knowledge base spanning the old masters through current AI marketing strategies. 190 frameworks, 193 swipe pieces, 125 book and course notes, 76 templates, and 512 pieces of my own tested and measured copy — indexed and instantly retrievable.',
                   },
                 ].map((item, index) => (
                   <FadeIn key={item.label} delay={500 + index * 100} className="h-full">
@@ -398,11 +397,11 @@ export default function AboutPage() {
                 <p>
                   For my clients, it means one thing:{' '}
                   <strong className="text-ink-950">
-                    world-class strategy and copy delivered on time, every time
+                    senior DR craft delivered on time, every time
                   </strong>{' '}
                   — no matter what time zone you are in. Video calls, shared
-                  documents, fast turnarounds. The work is seamless. The results
-                  speak for themselves.
+                  documents, fast turnarounds. The handoffs are clean, and the
+                  numbers travel.
                 </p>
               </div>
             </FadeIn>

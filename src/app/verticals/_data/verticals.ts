@@ -128,7 +128,7 @@ export const verticals: Vertical[] = [
           'Phase 1 \u2014 Compliance + audience research: I audit your current funnel against FDA structure/function-claim limits, FTC substantiation requirements, and the specific platform-review postures of Meta, Google, YouTube, and ClickBank. Then I mine reviews, forums, and competitor sequences for the exact language your supplement buyers use about the pain. The compliant angle and the persuasive angle come out of the same layer \u2014 not separate ones. My AI workflow processes 50+ competitor VSLs and thousands of reviews while a manual pass reads three.',
           'Phase 2 \u2014 Funnel architecture + AOV math: Before writing a word, I map every step \u2014 VSL hook, lead magnet, sales page, order bump, OTO1, OTO2, downsell, thank-you page, post-purchase email \u2014 against the AOV target. Most supplement funnels die because the front-end was written for conversion and the back-end was bolted on afterward. The architecture phase prevents that.',
           'Phase 3 \u2014 Compliant-by-design drafting: every claim lives inside structure/function-claim territory. Every testimonial carries hedged framing built into the writing, not retrofitted by legal at the end. Every CTA earns the click only after the persuasion is done. I draft VSL, sales page, ad copy, and back-end stack as a connected system \u2014 not as separate pieces handed to different writers.',
-          'Phase 4 \u2014 Platform-review map + revisions: a compliance-review map flagging anything your legal team should review, including alternative phrasings for any line a reviewer might challenge. One comprehensive revision round across the full funnel is included.',
+          'Phase 4 \u2014 Platform-review map + revisions: a compliance-review map flagging anything your legal team should review, including alternative phrasings for any line a reviewer might challenge. One revision round across the full funnel is included.',
         ],
       },
       {
@@ -236,7 +236,7 @@ export const verticals: Vertical[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is compliance and audience research, then funnel architecture and AOV math, then the compliant-by-design drafting, then a compliance-review map and one comprehensive revision round across the full funnel. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is compliance and audience research, then funnel architecture and AOV math, then the compliant-by-design drafting, then a compliance-review map and one revision round across the full funnel. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['vsl-copywriter', 'sales-funnel-copywriter', 'email-copywriter', 'upsell-downsell-copywriter'],
@@ -316,7 +316,7 @@ export const verticals: Vertical[] = [
           'Phase 1 \u2014 Compliance + audience research: I audit your current promotion against SEC and FINRA performance-claim limits, FTC substantiation requirements, and the disclosure standards your asset class actually has to meet. Then I mine investor forums, financial newsletters, and competitor promotions for the exact language your most-skeptical-buyer-in-DR uses about the pain. The compliant angle and the persuasive angle come out of the same layer \u2014 not separate ones. My AI workflow processes 50+ competitor financial promotions and thousands of investor-forum threads while a manual pass reads three.',
           'Phase 2 \u2014 Trust architecture: financial buyers don\'t buy from confident pitches; they buy from credible authorities. I map every step of the promotion against the trust signals it needs to hit before the offer reveal \u2014 track record, mechanism credibility, regulatory framing, peer endorsement. Every piece is engineered to compound trust before the offer earns the click.',
           'Phase 3 \u2014 SEC/FINRA-aware drafting: every performance claim sits inside SEC and FINRA territory by design. Every testimonial carries hedged framing built into the writing, not retrofitted by legal at the end. Every income illustration is presented inside the disclosure framework regulators actually expect. I draft VSL or long-form promotion, sales page, email sequence, and ad copy as a connected system \u2014 not as separate pieces handed to different writers (and different reviewers).',
-          'Phase 4 \u2014 Compliance-review map + revisions: a compliance-review map flagging anything your in-house reviewer or outside counsel should review, including alternative phrasings for any line that might generate friction. One comprehensive revision round across the full promotion is included.',
+          'Phase 4 \u2014 Compliance-review map + revisions: a compliance-review map flagging anything your in-house reviewer or outside counsel should review, including alternative phrasings for any line that might generate friction. One revision round across the full promotion is included.',
         ],
       },
       {
@@ -419,7 +419,7 @@ export const verticals: Vertical[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is compliance and audience research, then trust architecture, then SEC/FINRA-aware drafting, then a compliance-review map and one comprehensive revision round across the full promotion. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is compliance and audience research, then trust architecture, then SEC/FINRA-aware drafting, then a compliance-review map and one revision round across the full promotion. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['vsl-copywriter', 'sales-letter-copywriter', 'sales-page-copywriter', 'email-copywriter'],
@@ -496,7 +496,7 @@ export const verticals: Vertical[] = [
           'Phase 1 \u2014 Audience + revenue-stack research: I mine your customer reviews, support tickets, returns/refund reasons, and competitor brands\' funnels for the exact language your buyers use about the transformation \u2014 plus the AOV and CLTV benchmarks your category clears. The angle and the back-end stack come out of the same layer. My AI workflow processes 50+ competitor DTC funnels and thousands of customer reviews while a manual pass reads three.',
           'Phase 2 \u2014 Connected-stack architecture: I map every touchpoint \u2014 ad copy, product page, abandoned cart, post-purchase email, OTO upsell, subscription retention, win-back \u2014 against the AOV and CLTV math the brand needs. Most DTC stacks die because the post-purchase email is doing nothing while the abandoned-cart sequence does the same job twice. The architecture phase prevents that.',
           'Phase 3 \u2014 Drafting the connected stack: I draft product page, abandoned-cart sequence, post-purchase email sequence, OTO upsell pages, subscription-retention sequence, and ad copy as one connected system. Every step compounds the AOV and CLTV the next step depends on. Two-to-three subject-line and headline variations per piece for split testing.',
-          'Phase 4 \u2014 Iteration roadmap + handoff: a sequenced roadmap for which stack elements to test first, how to read the back-end data, and which iterations compound fastest. One comprehensive revision round across the full stack is included.',
+          'Phase 4 \u2014 Iteration roadmap + handoff: a sequenced roadmap for which stack elements to test first, how to read the back-end data, and which iterations compound fastest. One revision round across the full stack is included.',
         ],
       },
       {
@@ -597,7 +597,7 @@ export const verticals: Vertical[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is audience and revenue-stack research, then connected-stack architecture, then drafting, then iteration roadmap and one comprehensive revision round across the full stack. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is audience and revenue-stack research, then connected-stack architecture, then drafting, then iteration roadmap and one revision round across the full stack. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['email-copywriter', 'upsell-downsell-copywriter', 'landing-page-copywriter', 'ad-copywriter'],
@@ -676,7 +676,7 @@ export const verticals: Vertical[] = [
           'Phase 1 \u2014 Marketplace + audience research: I audit ClickBank Top 50 in your category for what\'s currently driving the highest gravity scores and EPCs, mine reviews and forums for the language your buyers actually use, and benchmark your offer\'s back-end math (AOV, refund rate, take rates) against the threshold top affiliates require. My AI workflow processes 50+ competitor VSLs and thousands of reviews while a manual pass reads three.',
           'Phase 2 \u2014 Two-sided funnel architecture: I map the funnel against both the buyer journey AND the affiliate-EPC math at every step. Front-end VSL converts cold traffic; order bump lifts AOV; OTO1, OTO2, downsell stack the back-end so EPC clears the affiliate threshold. The math isn\'t bolted on at the end \u2014 it\'s designed in from step one.',
           'Phase 3 \u2014 ClickBank-review-aware drafting: every claim sits inside ClickBank\'s content guidelines from the first draft \u2014 income-claim posture, health-claim posture, testimonial-hedging, refund-policy framing. I draft VSL, sales page, order bump, OTO1, OTO2, downsell, thank-you, and email sequence as a connected system. Plus the affiliate-tools page, swipe copy, and promotional angles affiliates can run.',
-          'Phase 4 \u2014 Launch-and-scale roadmap: a sequenced plan for getting first affiliates on, hitting the gravity inflection point that pulls top-50 affiliates in, and the back-end iterations that keep EPC compounding after launch. One comprehensive revision round across the full funnel is included.',
+          'Phase 4 \u2014 Launch-and-scale roadmap: a sequenced plan for getting first affiliates on, hitting the gravity inflection point that pulls top-50 affiliates in, and the back-end iterations that keep EPC compounding after launch. One revision round across the full funnel is included.',
         ],
       },
       {
@@ -782,7 +782,7 @@ export const verticals: Vertical[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is marketplace and EPC-math research, then two-sided funnel architecture, then ClickBank-review-aware drafting, then a launch-and-scale roadmap and one comprehensive revision round across the full funnel. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is marketplace and EPC-math research, then two-sided funnel architecture, then ClickBank-review-aware drafting, then a launch-and-scale roadmap and one revision round across the full funnel. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['vsl-copywriter', 'sales-funnel-copywriter', 'upsell-downsell-copywriter', 'ad-copywriter'],
@@ -860,7 +860,7 @@ export const verticals: Vertical[] = [
           'Phase 1 \u2014 Audience + lifecycle research: I mine your trial-cancellation reasons, support tickets, NPS responses, and competitor SaaS sequences for the exact language your trial users use about the moment they didn\'t activate. Plus I benchmark your trial-to-paid CVR, activation rate, monthly churn, and expansion revenue against your category\'s actual numbers (not aspirational ones). My AI workflow processes 50+ competitor SaaS onboarding sequences and thousands of cancellation reasons while a manual pass reads three.',
           'Phase 2 \u2014 Lifecycle architecture: I map every behavior-triggered touchpoint \u2014 trial sign-up, day-1 activation, day-3 first-value, day-7 trial-end approach, day-14 paid-conversion, month-2 first-billing, month-3 expansion-trigger, month-6 churn-risk, post-cancel win-back \u2014 against the lifecycle metric each one moves. Most SaaS lifecycle sequences die because the day-7 email is the same as the day-3 email, and neither one was tied to a behavior. The architecture phase prevents that.',
           'Phase 3 \u2014 Drafting the connected lifecycle: I draft landing page, behavior-triggered onboarding sequence, upgrade campaign, expansion sequence, churn-prevention sequence, and win-back as one connected system. Every touchpoint is engineered to compound the activation or paid-conversion or retention the next touchpoint depends on. Two-to-three subject-line variations per email for split testing.',
-          'Phase 4 \u2014 Iteration roadmap + handoff: a sequenced roadmap for which lifecycle elements to test first, how to read cohort data, and which iterations compound MRR fastest. One comprehensive revision round across the full lifecycle is included.',
+          'Phase 4 \u2014 Iteration roadmap + handoff: a sequenced roadmap for which lifecycle elements to test first, how to read cohort data, and which iterations compound MRR fastest. One revision round across the full lifecycle is included.',
         ],
       },
       {
@@ -961,7 +961,7 @@ export const verticals: Vertical[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is audience and lifecycle research, then lifecycle architecture, then drafting the connected lifecycle, then iteration roadmap and one comprehensive revision round across the full sequence. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is audience and lifecycle research, then lifecycle architecture, then drafting the connected lifecycle, then iteration roadmap and one revision round across the full sequence. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['landing-page-copywriter', 'email-copywriter', 'sales-funnel-copywriter', 'ai-copywriting-consultant'],
@@ -1037,7 +1037,7 @@ export const verticals: Vertical[] = [
           'Phase 1 \u2014 Audience + offer research: I mine your customer interviews, sales-call recordings, course-completion-rate data, refund reasons, and competitor info-product offers for the exact language your buyer uses about the transformation. The angle and the mechanism come out of this layer, not a brainstorming session. My AI workflow processes 50+ competitor info-product TSLs and thousands of customer reviews while a manual pass reads three.',
           'Phase 2 \u2014 Launch architecture: I map every step of the launch \u2014 pre-launch hooks, launch-day open, cart-open emails, mid-cart objection handling, cart-close urgency, post-cart follow-up \u2014 against the persuasion arc the buyer needs to walk. Most launches die because the cart-close emails are doing work the pre-launch should have done. The architecture phase prevents that.',
           'Phase 3 \u2014 Drafting + persuasion-arc compounding: I draft the long-form sales page, the launch email sequence, the webinar script (live or evergreen), and the follow-up emails as a connected system. Every step compounds the trust the next step needs. Two-to-three subject-line and headline variations per piece for split testing.',
-          'Phase 4 \u2014 Evergreen handoff or relaunch roadmap: a sequenced plan for converting the launch into an evergreen funnel (if applicable) plus a relaunch roadmap for the next cycle. One comprehensive revision round across the full launch system is included.',
+          'Phase 4 \u2014 Evergreen handoff or relaunch roadmap: a sequenced plan for converting the launch into an evergreen funnel (if applicable) plus a relaunch roadmap for the next cycle. One revision round across the full launch system is included.',
         ],
       },
       {
@@ -1141,7 +1141,7 @@ export const verticals: Vertical[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is audience and offer research, then launch architecture, then drafting + persuasion-arc compounding, then evergreen handoff or relaunch roadmap and one comprehensive revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is audience and offer research, then launch architecture, then drafting + persuasion-arc compounding, then evergreen handoff or relaunch roadmap and one revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['vsl-copywriter', 'sales-page-copywriter', 'sales-funnel-copywriter', 'email-copywriter'],

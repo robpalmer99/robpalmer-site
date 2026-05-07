@@ -187,7 +187,7 @@ export const services: Service[] = [
       {
         title: 'Revision Round',
         description:
-          'One comprehensive revision round based on your feedback, plus consultation on production optimization.',
+          'One revision round based on your feedback, plus consultation on production optimization.',
       },
     ],
     deliverablesHeading: 'What You Get When You Hire Me',
@@ -228,7 +228,7 @@ export const services: Service[] = [
       {
         question: 'How long does it take to write a VSL?',
         answer:
-          'A typical VSL takes 2\u20134 weeks from kickoff to final draft. That includes audience research, competitive teardown, mechanism development, strategic architecture, scripting, and one comprehensive revision round. Rush timelines are possible, but I never shortcut the research phase \u2014 that\'s where the conversion rate lives. Skipping research to save a few days is how a VSL ends up bleeding ad spend for months.',
+          'A typical VSL takes 2\u20134 weeks from kickoff to final draft. That includes audience research, competitive teardown, mechanism development, strategic architecture, scripting, and one revision round. Rush timelines are possible, but I never shortcut the research phase \u2014 that\'s where the conversion rate lives. Skipping research to save a few days is how a VSL ends up bleeding ad spend for months.',
       },
       {
         question: 'How long should a VSL be?',
@@ -243,7 +243,7 @@ export const services: Service[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and strategic diagnostic, then architecture, then the script, then one comprehensive revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and strategic diagnostic, then architecture, then the script, then one revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['sales-page-copywriter', 'sales-funnel-copywriter'],
@@ -313,7 +313,7 @@ export const services: Service[] = [
           'Phase 1 \u2014 Deep audience research: I mine forums, reviews, competitor pages, and customer-support transcripts to find the exact words your prospects use to describe the pain. The hook and headline come out of this layer, not out of a brainstorm. My AI workflow processes dozens of competitor pages in the time a manual pass takes to read three.',
           'Phase 2 \u2014 Objection mapping: I identify every objection that could kill the sale and build the persuasion sequence to address each one at exactly the right moment. This is where most sales pages fail \u2014 they answer objections too early, too late, or not at all.',
           'Phase 3 \u2014 Architecture and writing: I build the full sales-page structure \u2014 headline, lead, story, mechanism, proof stack, offer build, close, and guarantee. Every sentence stress-tested against one question: does this move the reader closer to buying?',
-          'Phase 4 \u2014 Wireframe and revision: headline variations for split testing, tightened transitions, and a wireframe showing your design team exactly where every element goes. One comprehensive revision round is included.',
+          'Phase 4 \u2014 Wireframe and revision: headline variations for split testing, tightened transitions, and a wireframe showing your design team exactly where every element goes. One revision round is included.',
         ],
       },
       {
@@ -385,7 +385,7 @@ export const services: Service[] = [
       {
         title: 'Revision Round',
         description:
-          'One comprehensive revision round based on your feedback, plus recommendations for A/B testing priorities.',
+          'One revision round based on your feedback, plus recommendations for A/B testing priorities.',
       },
     ],
     deliverablesHeading: 'What You Get When You Hire Me',
@@ -441,7 +441,7 @@ export const services: Service[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and strategic diagnostic, then objection mapping and architecture, then the page draft, then one comprehensive revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and strategic diagnostic, then objection mapping and architecture, then the page draft, then one revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['vsl-copywriter', 'landing-page-copywriter'],
@@ -511,7 +511,7 @@ export const services: Service[] = [
           'Phase 1 \u2014 Deep audience research: I mine forums, reviews, competitor letters, and customer-support transcripts to find the exact words your prospects use to describe the pain. The hook and the lead come out of this layer, not out of a brainstorm. My AI workflow processes dozens of competitor sales letters and customer-research transcripts in the time a manual pass takes to read three.',
           'Phase 2 \u2014 Voice and angle: a sales letter lives or dies on voice. I determine the right persona, narrative angle, and emotional throughline to build trust with your specific audience \u2014 and the right format (classic letter, magalog, lift-note package, or digital TSL) for the medium and offer.',
           'Phase 3 \u2014 Architecture and writing: I build the full persuasion sequence \u2014 envelope teaser or subject line, lead, story, mechanism, proof stack, offer build, guarantee, close, and order-form copy. Every sentence stress-tested against one question: does this earn the next sentence?',
-          'Phase 4 \u2014 Variations and testing roadmap: opening variations for split testing, envelope or subject-line teasers, headline alternatives, and an order-form pass. One comprehensive revision round is included.',
+          'Phase 4 \u2014 Variations and testing roadmap: opening variations for split testing, envelope or subject-line teasers, headline alternatives, and an order-form pass. One revision round is included.',
         ],
       },
       {
@@ -578,12 +578,12 @@ export const services: Service[] = [
       {
         title: 'Audience Research Brief',
         description:
-          'Comprehensive research document mapping prospect psychology, competitive landscape, and persuasion opportunities.',
+          'Research document mapping prospect psychology, competitive landscape, and persuasion opportunities.',
       },
       {
         title: 'Revision Round',
         description:
-          'One comprehensive revision round with strategic notes on testing and optimization priorities.',
+          'One revision round with strategic notes on testing and optimization priorities.',
       },
     ],
     deliverablesHeading: 'What You Get When You Hire Me',
@@ -624,7 +624,7 @@ export const services: Service[] = [
       {
         question: 'How long does it take to write a sales letter?',
         answer:
-          'A sales letter or TSL typically takes 4\u20136 weeks from briefing to final deliverables. That includes deep audience research, voice and angle work, full persuasion-sequence writing, order-form and envelope copy (or subject-line and pre-header for digital), and one comprehensive revision round. The timeline depends on length and offer complexity. I never rush research \u2014 that\'s where sales-letter response is won or lost.',
+          'A sales letter or TSL typically takes 4\u20136 weeks from briefing to final deliverables. That includes deep audience research, voice and angle work, full persuasion-sequence writing, order-form and envelope copy (or subject-line and pre-header for digital), and one revision round. The timeline depends on length and offer complexity. I never rush research \u2014 that\'s where sales-letter response is won or lost.',
       },
       {
         question: 'Direct mail vs. digital TSL \u2014 which one do I need?',
@@ -639,7 +639,7 @@ export const services: Service[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and voice work, then architecture, then the letter draft, then one comprehensive revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and voice work, then architecture, then the letter draft, then one revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['sales-page-copywriter', 'email-copywriter'],
@@ -708,7 +708,7 @@ export const services: Service[] = [
           'Phase 1 \u2014 Audit, deliverability, research: I look at your existing email metrics, audit sender reputation and deliverability posture so the work doesn\'t ship into spam folders, mine your customer reviews, and study competitor sequences in your vertical to find the exact language your buyers use about the problem. The angle and the voice come out of this layer, not out of brainstorming. My AI workflow processes 50+ competitor sequences and thousands of reviews in the time a manual pass takes to read three.',
           'Phase 2 \u2014 Sequence architecture: I map every email\'s job before writing a word. Where each message sits in the buyer\'s journey, what objection it handles, what micro-commitment it asks for, how it sets up the next message. Most sequences die because emails 2 and 6 are both trying to do the same job; the architecture phase prevents that.',
           'Phase 3 \u2014 Subject lines, body, and CTA: every email written tight \u2014 subject line that earns the open, first line that earns the scroll, body that builds the case, CTA that lands only after the persuasion is done. Two-to-three subject line variations per email built in for split testing from the start.',
-          'Phase 4 \u2014 Sequence map and handoff: full strategy diagram with timing, segmentation triggers, and conversion goals so your ESP-side team can ship without guessing. One comprehensive revision round across the full sequence is included.',
+          'Phase 4 \u2014 Sequence map and handoff: full strategy diagram with timing, segmentation triggers, and conversion goals so your ESP-side team can ship without guessing. One revision round across the full sequence is included.',
         ],
       },
       {
@@ -774,7 +774,7 @@ export const services: Service[] = [
       {
         title: 'Revision Round',
         description:
-          'One comprehensive revision round across the full sequence, plus recommendations for ongoing optimization.',
+          'One revision round across the full sequence, plus recommendations for ongoing optimization.',
       },
     ],
     deliverablesHeading: 'What You Get When You Hire Me',
@@ -830,7 +830,7 @@ export const services: Service[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and audit, then sequence architecture, then the email drafts, then one comprehensive revision round across the full sequence. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and audit, then sequence architecture, then the email drafts, then one revision round across the full sequence. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['sales-funnel-copywriter', 'upsell-downsell-copywriter'],
@@ -1171,7 +1171,7 @@ export const services: Service[] = [
       {
         title: 'Revision Round',
         description:
-          'One comprehensive revision round plus testing prioritization guide for ongoing optimization.',
+          'One revision round plus testing prioritization guide for ongoing optimization.',
       },
     ],
     deliverablesHeading: 'What You Get When You Hire Me',
@@ -1212,7 +1212,7 @@ export const services: Service[] = [
       {
         question: 'How long does it take to write a landing page?',
         answer:
-          'A standalone landing page typically takes 2\u20133 weeks from briefing to final deliverables. Bundled bridge sequences (multiple LPs for the same funnel) take 3\u20134 weeks. That includes traffic-source analysis, message-match audit, single-action architecture, above-the-fold variations, and one comprehensive revision round. The timeline depends on the number of pages and the complexity of your traffic sources.',
+          'A standalone landing page typically takes 2\u20133 weeks from briefing to final deliverables. Bundled bridge sequences (multiple LPs for the same funnel) take 3\u20134 weeks. That includes traffic-source analysis, message-match audit, single-action architecture, above-the-fold variations, and one revision round. The timeline depends on the number of pages and the complexity of your traffic sources.',
       },
       {
         question: 'Landing page vs. sales page \u2014 which one do I need?',
@@ -1227,7 +1227,7 @@ export const services: Service[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is traffic-source analysis and message-match audit, then single-action architecture, then page writing with above-the-fold variations, then one comprehensive revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is traffic-source analysis and message-match audit, then single-action architecture, then page writing with above-the-fold variations, then one revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['ad-copywriter', 'sales-page-copywriter'],
@@ -1411,7 +1411,7 @@ export const services: Service[] = [
       {
         question: 'How long does it take to write a complete funnel?',
         answer:
-          'A complete funnel typically takes 4\u20136 weeks from briefing to final deliverables. That includes deep audience research, funnel-architecture planning, writing every page, the email follow-up sequence, and one comprehensive revision round. The timeline depends on the number of pages and offer complexity. I never rush the research or architecture phases \u2014 that\'s where funnel revenue is won or lost.',
+          'A complete funnel typically takes 4\u20136 weeks from briefing to final deliverables. That includes deep audience research, funnel-architecture planning, writing every page, the email follow-up sequence, and one revision round. The timeline depends on the number of pages and offer complexity. I never rush the research or architecture phases \u2014 that\'s where funnel revenue is won or lost.',
       },
       {
         question: 'What is the most important page in a sales funnel?',
@@ -1426,7 +1426,7 @@ export const services: Service[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is funnel diagnostic and audience research, then persuasion-arc architecture, then page-by-page writing, then one comprehensive revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is funnel diagnostic and audience research, then persuasion-arc architecture, then page-by-page writing, then one revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['vsl-copywriter', 'email-copywriter', 'upsell-downsell-copywriter'],
@@ -1567,7 +1567,7 @@ export const services: Service[] = [
       {
         title: 'Revision Round',
         description:
-          'One comprehensive revision round across the full sequence, plus optimization recommendations.',
+          'One revision round across the full sequence, plus optimization recommendations.',
       },
     ],
     deliverablesHeading: 'What You Get When You Hire Me',
@@ -1608,7 +1608,7 @@ export const services: Service[] = [
       {
         question: 'How long does it take to write an upsell sequence?',
         answer:
-          'A full upsell stack typically takes 2\u20134 weeks from briefing to final deliverables. That includes back-end diagnostic, sequence architecture, page-by-page writing, and one comprehensive revision round. The timeline depends on the number of pages and the complexity of your offer. I never rush the diagnostic phase \u2014 reading your current take-rates by step is what tells me where the leak is.',
+          'A full upsell stack typically takes 2\u20134 weeks from briefing to final deliverables. That includes back-end diagnostic, sequence architecture, page-by-page writing, and one revision round. The timeline depends on the number of pages and the complexity of your offer. I never rush the diagnostic phase \u2014 reading your current take-rates by step is what tells me where the leak is.',
       },
       {
         question: 'How many upsells and downsells should my funnel have?',
@@ -1623,7 +1623,7 @@ export const services: Service[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is back-end diagnostic and buyer-psychology mapping, then sequence architecture, then page-by-page writing, then one comprehensive revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is back-end diagnostic and buyer-psychology mapping, then sequence architecture, then page-by-page writing, then one revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
     relatedServices: ['sales-funnel-copywriter', 'email-copywriter'],
@@ -1741,7 +1741,7 @@ export const services: Service[] = [
       {
         title: 'Copy Process Audit',
         description:
-          'Comprehensive review of your current copywriting workflow, identifying where AI adds value and where it is degrading output.',
+          'Full review of your current copywriting workflow, identifying where AI adds value and where it is degrading output.',
       },
       {
         title: 'Custom AI Workflow Design',
@@ -1938,7 +1938,7 @@ export const services: Service[] = [
       {
         title: 'Marketing Strategy Audit',
         description:
-          'Comprehensive review of your current marketing operation \u2014 copy, funnels, ads, emails \u2014 identifying where AI creates genuine leverage and where it is wasting resources.',
+          'Full review of your current marketing operation \u2014 copy, funnels, ads, emails \u2014 identifying where AI creates genuine leverage and where it is wasting resources.',
       },
       {
         title: 'AI Marketing Playbook',
@@ -2331,7 +2331,7 @@ export const services: Service[] = [
       {
         title: 'Copy Audit Report',
         description:
-          'Comprehensive analysis of your existing copy against proven persuasion frameworks, with specific diagnostics on where conversions are being lost.',
+          'Full analysis of your existing copy against proven persuasion frameworks, with specific diagnostics on where conversions are being lost.',
       },
       {
         title: 'Prioritized Optimization Plan',

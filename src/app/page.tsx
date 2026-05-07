@@ -49,7 +49,7 @@ const VERTICAL_TAGLINES: Record<string, string> = {
 }
 
 const homepageFaqs = [
-  { question: 'What is Triple Brain Marketing?', answer: 'Triple Brain Marketing is the integration of three brains into one engagement: my copywriting brain (40+ years of direct-response craft for the world\'s top brands, with $523M+ in tracked results), Claude Code\'s brain augmented by my custom-built copywriting skills (proprietary skill files that encode 40 years of frameworks into a working AI workflow), and my Obsidian copywriting brain (a 1,239-file knowledge base spanning the old direct-response masters through cutting-edge AI marketing strategies). No copywriter and no AI tool can replicate the combination.' },
+  { question: 'What is Triple Brain Marketing?', answer: 'Triple Brain Marketing is the integration of three brains into one engagement: my copywriting brain (40+ years of direct-response craft for the world\'s top brands, with $523M+ in tracked results), Claude Code\'s brain augmented by my custom-built copywriting skills (proprietary skill files that encode 40 years of frameworks into a working AI workflow), and my Obsidian copywriting brain (a 1,239-file knowledge base spanning the old direct-response masters through current AI marketing strategies). No copywriter and no AI tool can replicate the combination.' },
   { question: 'What types of copywriting do you specialize in?', answer: 'I specialize in direct-response copywriting — the kind that\'s designed to generate a measurable action. This includes video sales letters (VSLs), text sales letters (TSLs), email sequences, landing pages, sales funnels, upsell/downsell pages, and paid ad copy. Every piece I write is engineered to convert.' },
   { question: 'Are you taking new clients?', answer: 'I take a selective number of new engagements each quarter to maintain quality. Most kickoffs happen within two weeks of the strategy call. If we\'re a fit, I\'ll send you a fixed-price proposal within 48 hours. If we\'re not, I\'ll tell you on the call and refer you to someone in my network.' },
   { question: 'How much does it cost to hire you?', answer: 'Fees depend on the project scope, complexity, and format. Engagements typically start at $10K for single assets and run higher for full funnel builds. I\'ll give you a clear, fixed-price quote after our strategy call — no hourly billing, no surprises. For a general guide, see my blog post on copywriting rates.' },
@@ -222,7 +222,7 @@ export default function HomePage() {
                     My Obsidian copywriting brain
                   </h3>
                   <p className="mt-3 text-base text-ink-700 leading-relaxed font-body">
-                    A 1,239-file knowledge base spanning the old direct-response masters through today&apos;s cutting-edge AI marketing strategies. 190 frameworks, 193 swipes, 512 pieces of my own tested copy — all indexed and instantly retrievable.
+                    A 1,239-file knowledge base spanning the old direct-response masters through today&apos;s AI marketing strategies. 190 frameworks, 193 swipes, 512 pieces of my own tested copy — all indexed and instantly retrievable.
                   </p>
                 </div>
               </FadeIn>

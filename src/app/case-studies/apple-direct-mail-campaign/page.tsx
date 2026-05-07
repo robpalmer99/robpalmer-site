@@ -237,7 +237,7 @@ export default function AppleCaseStudyPage() {
 
       <CTABanner
         headline="Want a campaign this effective for your brand?"
-        subtext="Let's discuss how research-driven direct-response copy can transform your results."
+        subtext="Let's discuss how research-driven direct-response copy can move your numbers."
       />
     </>
   )
