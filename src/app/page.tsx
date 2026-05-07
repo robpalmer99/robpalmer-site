@@ -218,6 +218,43 @@ export default function HomePage() {
         </Container>
       </Section>
 
+      {/* Capacity / Fit / Timeline — answers Marcus's "is he taking clients?" before he shops services */}
+      <Section divider>
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <FadeIn>
+              <div className="text-center mb-10">
+                <Badge variant="gold">Working together</Badge>
+                <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mt-6">
+                  Before you book.
+                </h2>
+              </div>
+            </FadeIn>
+            <FadeIn delay={150}>
+              <ul role="list" className="space-y-5 text-lg text-ink-700 leading-relaxed font-body">
+                <li className="flex items-start gap-4">
+                  <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gold-400" aria-hidden="true" />
+                  <span><strong className="text-ink-950">Capacity.</strong> I take a small number of new engagements each quarter. It&apos;s how the work stays good.</span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gold-400" aria-hidden="true" />
+                  <span><strong className="text-ink-950">Timeline.</strong> Most kickoffs happen within two weeks of a strategy call.</span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gold-400" aria-hidden="true" />
+                  <span><strong className="text-ink-950">Fit.</strong> Engagements typically start at $10K. If yours is below, I&apos;ll refer you to a writer in my network &mdash; no finder&apos;s fee, just an honest match.</span>
+                </li>
+              </ul>
+            </FadeIn>
+            <FadeIn delay={300}>
+              <p className="mt-10 text-lg text-ink-700 font-body leading-relaxed text-center italic">
+                I&apos;d rather refer a project than ship copy that won&apos;t beat your control.
+              </p>
+            </FadeIn>
+          </div>
+        </Container>
+      </Section>
+
       {/* Services */}
       <Section variant="alt" id="services" divider>
         <Container>
