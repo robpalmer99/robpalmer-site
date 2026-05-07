@@ -49,7 +49,7 @@ export default function AppleCaseStudyPage() {
       <Hero
         variant="page"
         headline="The Apple UK Direct Mail Campaign"
-        subheadline="How a research-driven direct mail campaign for Apple Computer UK was so successful it overwhelmed demand, sparked a dealer revolt, and had to be shut down."
+        subheadline='Apple UK hired me as their sole copywriter to bypass the dealer network and sell direct. <strong>Three offers tested before launch &mdash; one tepid, one marginal, one off the charts.</strong> The winning offer ran so hard it cannibalised dealer revenue and was eventually shut down by Apple&apos;s own dealer-network pressure. Here is exactly what was tested, why the winner worked, and what this campaign proves about A/B testing in direct response.'
       />
       <Breadcrumbs
         items={[
@@ -113,6 +113,23 @@ export default function AppleCaseStudyPage() {
                 to the customer support materials and three separate market-targeted
                 packages for business, education, and consumer segments.
               </p>
+
+              {/* What this campaign proves — positioning anchor (no client testimonial in data) */}
+              <div className="my-10 p-6 rounded-xl bg-gold-50 border border-gold-200">
+                <h3 className="font-heading text-lg font-bold text-ink-950 mb-3">
+                  What this campaign proves
+                </h3>
+                <p className="text-base text-ink-700 font-body leading-relaxed">
+                  Apple UK is the campaign in my portfolio that proves three
+                  things at once: direct response works for global tech brands,
+                  not just niche offers; A/B testing is non-negotiable (the
+                  launch-ready offer would have lost money); and DR copy can
+                  succeed so completely it overwhelms its own delivery
+                  infrastructure. The Belron/Safelite case study proves the
+                  same lessons at $523M scale. Apple UK proves them earlier,
+                  in a Fortune 500 context.
+                </p>
+              </div>
 
               <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950 pt-4">
                 The Approach
@@ -185,20 +202,27 @@ export default function AppleCaseStudyPage() {
               </h2>
               <ul className="list-disc list-inside space-y-3">
                 <li>
-                  <strong>Testing is everything.</strong> Without A/B testing, the
-                  weak offers would have produced lukewarm sales and the campaign
-                  would have been written off as a failure. The tested offer enabled
-                  exponential revenue growth.
+                  <strong>A/B testing is the price of entry.</strong> Without it,
+                  the launch-ready offer would have produced lukewarm sales and
+                  Apple would have written the campaign off as a failure. The
+                  tested offer enabled everything that followed. Forty years
+                  later, this is still the cheapest insurance in direct response.
                 </li>
                 <li>
-                  <strong>Stories sell better than specs.</strong> In a market where
-                  prospects did not yet understand the value of computers, a case
-                  study narrative outperformed feature-led copy by orders of magnitude.
+                  <strong>Story beats spec at every awareness level.</strong> In
+                  a market where prospects did not yet understand the product,
+                  narrative outperformed feature-led copy by orders of magnitude.
+                  The same pattern holds in 2026 &mdash; whether you are selling
+                  computers, supplements, or SaaS, the story angle still beats
+                  the spec sheet.
                 </li>
                 <li>
-                  <strong>Direct response can be too effective.</strong> A rare
-                  problem in marketing &mdash; but a powerful demonstration of what
-                  research-driven, properly tested direct-response copy can achieve.
+                  <strong>Sometimes DR works too well.</strong> A rare problem in
+                  marketing, but a useful proof point. Research-driven, properly
+                  tested direct-response copy can succeed at a scale that breaks
+                  the rest of the business. Belron proves the same pattern at
+                  $523M. Apple UK proves it earlier, against the steepest
+                  expectations of any Fortune 500 brief.
                 </li>
               </ul>
             </div>
@@ -209,6 +233,20 @@ export default function AppleCaseStudyPage() {
                 Related
               </h3>
               <div className="flex flex-wrap gap-3">
+                <Link
+                  href="/case-studies/belron-safelite-523m-campaign"
+                  className="text-sm font-heading font-semibold text-gold-600 hover:text-gold-500 transition-colors"
+                >
+                  The $523M Belron Campaign →
+                </Link>
+                <span className="text-paper-300">|</span>
+                <Link
+                  href="/blog/triple-brain-marketing"
+                  className="text-sm font-heading font-semibold text-gold-600 hover:text-gold-500 transition-colors"
+                >
+                  Triple Brain Marketing →
+                </Link>
+                <span className="text-paper-300">|</span>
                 <Link
                   href="/services/sales-letter-copywriter"
                   className="text-sm font-heading font-semibold text-gold-600 hover:text-gold-500 transition-colors"
@@ -221,13 +259,6 @@ export default function AppleCaseStudyPage() {
                   className="text-sm font-heading font-semibold text-gold-600 hover:text-gold-500 transition-colors"
                 >
                   Direct Mail Copywriting Guide →
-                </Link>
-                <span className="text-paper-300">|</span>
-                <Link
-                  href="/services/ad-copywriter"
-                  className="text-sm font-heading font-semibold text-gold-600 hover:text-gold-500 transition-colors"
-                >
-                  Ad Copywriting Services →
                 </Link>
               </div>
             </div>
