@@ -257,7 +257,7 @@ export const services: Service[] = [
     metaTitle: 'Sales Page Copywriter | High-Converting Sales Copy',
     metaDescription:
       'Senior sales page copywriter behind a 9-year, $523M Belron direct-response campaign. Recent cold-traffic numbers: 8%, 340% ROAS, 5.7% opt-in-to-sale. Fixed-price engagements.',
-    headline: 'Sales Page Copywriter Behind a $523M / 9-Year Campaign',
+    headline: 'The Sales Page Copywriter Behind a $523M / 9-Year Campaign',
     subheadline:
       'Five award-winning copywriters failed at the Belron sales-letter campaign before me. I took the assignment in 1996 and ran it for 9 years \u2014 $523 million in tracked sales. They were writing copy. I was architecting a sales page that kept selling for nine years.',
     heroImage: '/images/services/sales-page-copywriter.jpg',
@@ -455,7 +455,7 @@ export const services: Service[] = [
     metaTitle: 'Sales Letter Copywriter | Direct Mail + Digital TSL',
     metaDescription:
       'Senior sales letter copywriter behind a 9-year Belron direct-mail control that did $523M across 35+ countries. Long-form sales letters and TSLs in the Halbert/Carlton/Makepeace tradition. Fixed-price engagements.',
-    headline: 'Sales Letter Copywriter Behind the Belron Direct-Mail Control: 9 Years, $523M, 35+ Countries',
+    headline: 'The Sales Letter Copywriter Behind the Belron Direct-Mail Control: 9 Years, $523M, 35+ Countries',
     subheadline:
       'Five award-winning copywriters had already failed at the Belron direct-mail sales letter when I took it over in 1996. I architected the full package \u2014 letter, lift note, envelope teaser, order form \u2014 and ran it as a control for 9 years across 35+ countries. $523 million in tracked sales, mailed not e-mailed. The same Halbert/Carlton/Makepeace fundamentals carry into every digital TSL I write today \u2014 340% ROAS on Facebook cold traffic for Abundant, 300% for Ben Palmer\'s ClickBank offer.',
     heroImage: '/images/services/sales-letter-copywriter.jpg',
@@ -653,7 +653,7 @@ export const services: Service[] = [
     metaTitle: 'Email Copywriter | Revenue-Driving Email Sequences',
     metaDescription:
       'Senior email copywriter for direct-response operators. Recent: 300% ROAS on a ClickBank email-driven funnel; 22% trial-to-paid lift on a SaaS onboarding sequence. Fixed-price engagements.',
-    headline: 'Email Copywriter Behind 300% ROAS and a 22% Trial-to-Paid Lift',
+    headline: 'The Email Copywriter Behind 300% ROAS and a 22% Trial-to-Paid Lift',
     subheadline:
       '"Rob is a killer copywriter. We\'re getting a 300% Return on Ad Spend." That\'s Ben Palmer, a ClickBank Platinum vendor, on an email-driven funnel I wrote for him. A SaaS onboarding sequence I wrote for Chatterkick lifted trial-to-paid by 22%. If your list is hitting send and getting silence, this is the kind of work I do.',
     heroImage: '/images/services/email-copywriter.jpg',
@@ -844,7 +844,7 @@ export const services: Service[] = [
     metaTitle: 'Ad Copywriter | Facebook, Google & YouTube Ad Copy',
     metaDescription:
       'Senior ad copywriter for direct-response operators. From the Apple UK direct-mail piece that overwhelmed fulfillment to 300% ROAS Facebook ads for ClickBank. Fixed-price suites.',
-    headline: 'Ad Copywriter \u2014 From Apple UK Direct Mail to 300% ROAS for ClickBank Operators',
+    headline: 'The Ad Copywriter \u2014 From Apple UK Direct Mail to 300% ROAS for ClickBank Operators',
     subheadline:
       'In the early \'90s, I wrote the Apple UK direct-mail piece that overwhelmed their fulfillment capacity \u2014 they had to scale the campaign back to keep up with demand. The same instincts now drive the Facebook, Google, YouTube, and native ad copy I write for ClickBank operators today: 300% ROAS, $30M+ VSL funnels, eight-figure offers. If your ad spend is feeding Meta\'s revenue instead of yours, this is the kind of work I do.',
     heroImage: '/images/services/ad-copywriter.jpg',
@@ -1040,7 +1040,7 @@ export const services: Service[] = [
     metaTitle: 'Landing Page Copywriter | Bridge Pages + Lead Capture',
     metaDescription:
       'Senior landing page copywriter behind cold-traffic bridge pages with documented lifts: 22% trial-to-paid (Chatterkick), 8% Conor Reynolds bridge, 4.8% biz-op front end, 5.7% Monetari opt-in-to-sale. Fixed-price engagements.',
-    headline: 'Landing Page Copywriter Behind 22% Trial-to-Paid, 8% Cold-Traffic, and 5.7% Opt-In-to-Sale Bridges',
+    headline: 'The Landing Page Copywriter Behind 22% Trial-to-Paid, 8% Cold-Traffic, and 5.7% Opt-In-to-Sale Bridges',
     subheadline:
       'Your landing page has 30 seconds and one job: earn the click to the next step of your funnel \u2014 your VSL, your TSL, your webinar, your checkout, or your inbox. The bridge pages I\'ve architected lifted Chatterkick\'s trial-to-paid by 22%, fed Conor Reynolds\'s funnel converting cold traffic at 8%, drove a biz-op hybrid running 4.8% front-end, and pulled 5.7% opt-in-to-sale on Monetari Fund\'s compliance-aware financial bridge. If your cold-traffic ad spend is landing on a page that doesn\'t earn the click, you\'re not buying traffic \u2014 you\'re renting attention and giving it back.',
     heroImage: '/images/services/landing-page-copywriter.jpg',
@@ -1241,7 +1241,7 @@ export const services: Service[] = [
     metaTitle: 'Sales Funnel Copywriter | End-to-End Funnel Architecture',
     metaDescription:
       'Senior sales funnel copywriter behind the $523M / 9-year Belron end-to-end campaign and $30M, $40M, $27M recent funnels. Full-system architecture, not bolted-together pages. Fixed-price engagements.',
-    headline: 'Sales Funnel Copywriter Behind a $523M / 9-Year End-to-End Campaign',
+    headline: 'The Sales Funnel Copywriter Behind a $523M / 9-Year End-to-End Campaign',
     subheadline:
       'The Belron campaign I architected and ran for 9 years did $523 million as a complete direct-response funnel \u2014 ad to letter to follow-up to renewal. Recent end-to-end funnels I\'ve shipped have done $30M (Mobile Profits, #1 ClickBank), $40M (Gluco 6 supplement), and $27M (financial publisher). If your front end converts but the back end bleeds \u2014 that\'s a system problem, not a page problem.',
     heroImage: '/images/services/sales-funnel-copywriter.jpg',
@@ -1440,7 +1440,7 @@ export const services: Service[] = [
     metaTitle: 'Upsell & Downsell Copywriter | Post-Purchase AOV Engineering',
     metaDescription:
       'Senior upsell and downsell copywriter behind the back-end sequences inside $30M+ Mobile Profits and $40M+ Gluco 6 ClickBank funnels. Order-bump and upsell copy engineered to lift AOV by 30\u2013100% on existing traffic. Fixed-price engagements.',
-    headline: 'Upsell & Downsell Copywriter Behind $30M+ and $40M+ ClickBank Funnel Back-Ends',
+    headline: 'The Upsell & Downsell Copywriter Behind $30M+ and $40M+ ClickBank Funnel Back-Ends',
     subheadline:
       'The most profitable copy in your funnel sits behind the buy button. I architect the upsell, downsell, and order-bump sequences that lift AOV by 30\u2013100% on traffic you\'ve already paid for \u2014 the back-end stacks inside funnels like $30M Mobile Profits (#1 on ClickBank) and the $40M Gluco 6 supplement subscription funnel. If your front end converts but your AOV is sitting where it shouldn\'t be, your back-end sequence is the leak.',
     heroImage: '/images/services/upsell-downsell-copywriter.jpg',
@@ -2227,7 +2227,7 @@ export const services: Service[] = [
     metaTitle: 'Conversion Rate Optimization | Beat Your Current Control with Copy',
     metaDescription:
       'Senior conversion rate optimization from the operator behind the 9-year, $523M Belron direct-response control. Copy audits and test-ready rewrites that beat your current control \u2014 not button-color tweaks. Fixed-price engagements.',
-    headline: 'Conversion Rate Optimization Behind the Longest Continuously-Tested $523M Direct-Response Control',
+    headline: 'Conversion Rate Optimization Expert Behind the Longest Continuously-Tested $523M Direct-Response Control',
     subheadline:
       'The Belron campaign I architected and ran for 9 years did $523 million as a continuously-tested direct-response control \u2014 every headline, every lead, every close, refined against back-end response numbers for nearly a decade. That\'s CRO at the only level that matters: you ship copy that beats your current control. I audit your funnel, diagnose where the copy is leaking conversion, and write the test-ready rewrites that beat your current control. If your conversion rate is stuck and you\'ve already changed the button colors, the copy is the leak.',
     heroImage: '/images/services/conversion-rate-optimization.jpg',
