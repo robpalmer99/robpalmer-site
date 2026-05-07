@@ -14,6 +14,7 @@ import { CTABanner } from '@/components/blocks/CTABanner'
 import { FAQAccordion } from '@/components/blocks/FAQAccordion'
 import { JsonLd } from '@/components/seo/JsonLd'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Badge } from '@/components/ui/Badge'
 import { services } from '@/app/services/_data/services'
 import { verticals } from '@/app/verticals/_data/verticals'
@@ -94,6 +95,76 @@ export default function HomePage() {
 
       {/* Stats */}
       <StatsBar variant="dark" />
+
+      {/* Peer endorsement strip — Stefan + Justin + Ben Palmer named above-fold per offer brief 18.A */}
+      <Section divider>
+        <Container>
+          <FadeIn>
+            <div className="text-center max-w-2xl mx-auto">
+              <Badge variant="gold">Peer endorsement</Badge>
+              <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950 mt-4">
+                Vouched for by the operators who set the bar.
+              </h2>
+            </div>
+          </FadeIn>
+          <ul role="list" className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-10 mt-10 max-w-4xl mx-auto">
+            <li>
+              <FadeIn delay={0} className="h-full">
+                <div className="flex flex-col items-center text-center">
+                  <div className="relative w-20 h-20 rounded-full overflow-hidden ring-2 ring-paper-200">
+                    <Image
+                      src="/images/testimonials/stefan-georgi.jpeg"
+                      alt="Stefan Georgi"
+                      fill
+                      className="object-cover"
+                      sizes="80px"
+                    />
+                  </div>
+                  <p className="mt-4 font-heading text-lg font-bold text-ink-950">Stefan Georgi</p>
+                  <p className="text-sm text-paper-600 font-body">Founder, Copy Accelerator</p>
+                  <p className="mt-3 text-sm text-ink-700 italic font-body leading-snug">&ldquo;Hired as our Copy Chief for CA Labs.&rdquo;</p>
+                </div>
+              </FadeIn>
+            </li>
+            <li>
+              <FadeIn delay={100} className="h-full">
+                <div className="flex flex-col items-center text-center">
+                  <div className="relative w-20 h-20 rounded-full overflow-hidden ring-2 ring-paper-200">
+                    <Image
+                      src="/images/testimonials/justin-goff.jpeg"
+                      alt="Justin Goff"
+                      fill
+                      className="object-cover"
+                      sizes="80px"
+                    />
+                  </div>
+                  <p className="mt-4 font-heading text-lg font-bold text-ink-950">Justin Goff</p>
+                  <p className="text-sm text-paper-600 font-body">Direct Marketer</p>
+                  <p className="mt-3 text-sm text-ink-700 italic font-body leading-snug">&ldquo;Stepped up and knocked it out of the park.&rdquo;</p>
+                </div>
+              </FadeIn>
+            </li>
+            <li>
+              <FadeIn delay={200} className="h-full">
+                <div className="flex flex-col items-center text-center">
+                  <div className="relative w-20 h-20 rounded-full overflow-hidden ring-2 ring-paper-200">
+                    <Image
+                      src="/images/testimonials/ben-palmer.png"
+                      alt="Ben Palmer"
+                      fill
+                      className="object-cover"
+                      sizes="80px"
+                    />
+                  </div>
+                  <p className="mt-4 font-heading text-lg font-bold text-ink-950">Ben Palmer</p>
+                  <p className="text-sm text-paper-600 font-body">ClickBank Platinum Vendor</p>
+                  <p className="mt-3 text-sm text-ink-700 italic font-body leading-snug">&ldquo;300% Return on Ad Spend.&rdquo;</p>
+                </div>
+              </FadeIn>
+            </li>
+          </ul>
+        </Container>
+      </Section>
 
       {/* Triple Brain Marketing — the named mechanism */}
       <Section divider>
