@@ -519,11 +519,104 @@ export default function HomePage() {
                   </li>
                 </ul>
                 <p>
-                  The output is something neither a human alone nor an AI alone can produce.
+                  The output is something neither a human alone nor an AI alone can produce. Same brief into both &mdash; here is what the difference looks like:
                 </p>
               </div>
             </FadeIn>
           </div>
+
+          {/* Output proof — same brief, vanilla AI vs Triple Brain (offer brief 18.D-c) */}
+          <FadeIn delay={300}>
+            <div className="mt-14 max-w-4xl mx-auto">
+              <div className="mb-6 text-center">
+                <div className="font-heading text-xs font-bold uppercase tracking-wider text-gold-600 mb-2">
+                  Output proof
+                </div>
+                <h3 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
+                  Same brief. Different output.
+                </h3>
+              </div>
+
+              <div className="rounded-xl border border-paper-200 bg-paper-50 p-6 sm:p-8">
+                <div className="mb-6">
+                  <div className="font-heading text-xs font-bold uppercase tracking-wider text-paper-600 mb-2">
+                    The brief
+                  </div>
+                  <p className="text-sm text-ink-700 italic font-body leading-relaxed">
+                    Write a headline for the sales page of a glucose-support supplement. Audience: adults 50+ concerned about glucose levels. Solution-aware &mdash; they have tried 1&ndash;2 supplements already. Compliance: FDA structure/function claims only.
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                  {/* Generic AI side */}
+                  <div className="rounded-lg border border-paper-300 bg-white p-5">
+                    <div className="flex items-center gap-2 mb-4 flex-wrap">
+                      <span className="text-xs font-heading font-bold uppercase tracking-wider text-paper-600">
+                        Generic AI
+                      </span>
+                      <span className="text-xs text-paper-500 font-body">
+                        vanilla ChatGPT / Claude
+                      </span>
+                    </div>
+                    <p className="font-heading text-base sm:text-lg font-bold text-ink-700 leading-snug">
+                      &ldquo;Discover the Natural Way to Support Healthy Blood Sugar &mdash; Doctors Are Stunned by This Breakthrough Glucose Formula&rdquo;
+                    </p>
+                    <ul role="list" className="mt-4 space-y-2 text-sm text-ink-700 font-body">
+                      <li className="flex items-start gap-2">
+                        <span className="text-paper-500 flex-shrink-0 mt-0.5" aria-hidden="true">✗</span>
+                        <span>Three AI-pattern tells in one line (&ldquo;Discover&rdquo;, &ldquo;Doctors are stunned&rdquo;, &ldquo;Breakthrough&rdquo;)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-paper-500 flex-shrink-0 mt-0.5" aria-hidden="true">✗</span>
+                        <span>Awareness mismatch &mdash; written for Stage 2 problem-aware; audience is Stage 3 solution-aware</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-paper-500 flex-shrink-0 mt-0.5" aria-hidden="true">✗</span>
+                        <span>&ldquo;Doctors are stunned&rdquo; verges on implied disease-treatment claim &mdash; compliance reviewer flags it</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-paper-500 flex-shrink-0 mt-0.5" aria-hidden="true">✗</span>
+                        <span>No mechanism, no specificity, no timeframe</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Triple Brain side */}
+                  <div className="rounded-lg border-2 border-gold-300 bg-white p-5">
+                    <div className="flex items-center gap-2 mb-4 flex-wrap">
+                      <span className="text-xs font-heading font-bold uppercase tracking-wider text-gold-600">
+                        Triple Brain
+                      </span>
+                      <span className="text-xs text-paper-500 font-body">
+                        Claude Code + custom skills + vault
+                      </span>
+                    </div>
+                    <p className="font-heading text-base sm:text-lg font-bold text-ink-950 leading-snug">
+                      &ldquo;The 12-Second Berry Ritual That Helps Adults 50+ Maintain Healthy Glucose Levels &mdash; Even After &lsquo;Already Tried That&rsquo;&rdquo;
+                    </p>
+                    <ul role="list" className="mt-4 space-y-2 text-sm text-ink-700 font-body">
+                      <li className="flex items-start gap-2">
+                        <span className="text-gold-600 flex-shrink-0 mt-0.5" aria-hidden="true">✓</span>
+                        <span><strong className="text-ink-950">Sultanic mechanism formula</strong> &mdash; ritual + timeframe + specific ingredient</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-gold-600 flex-shrink-0 mt-0.5" aria-hidden="true">✓</span>
+                        <span><strong className="text-ink-950">Schwartz Stage 3 awareness</strong> &mdash; &ldquo;Even After &lsquo;Already Tried That&rsquo;&rdquo; acknowledges the audience has shopped the category</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-gold-600 flex-shrink-0 mt-0.5" aria-hidden="true">✓</span>
+                        <span><strong className="text-ink-950">FDA structure/function compliance</strong> &mdash; allowed language, no disease claim</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-gold-600 flex-shrink-0 mt-0.5" aria-hidden="true">✓</span>
+                        <span><strong className="text-ink-950">Vault retrieval</strong> &mdash; ritual-hook pattern from $40M Gluco 6 + supplement-vertical swipe library</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
         </Container>
       </Section>
 
