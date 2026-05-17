@@ -46,3 +46,9 @@ next-env.d.ts
 
 # Sentry Config File
 .env.sentry-build-plugin
+
+# local workflow artifacts (root-level only — keep src/ & public/ assets tracked)
+/*.png
+/.firecrawl/
+/.playwright-mcp/
+/RobPalmer/

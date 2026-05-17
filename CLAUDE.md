@@ -2,8 +2,13 @@
 
 ## Build & Deploy
 - Always run `npm run build` after making changes to verify no errors
-- Push to `main` deploys to Vercel automatically — only push when changes are verified
 - Clear `.next` cache if you get stale CSS or 500 errors: `rm -rf .next`
+
+## Git Workflow
+- **Work directly on `main`.** Commit and push freely — no need to ask. Pushing backs up to GitHub but does **not** deploy: `vercel.json` sets `git.deploymentEnabled.main: false`.
+- **Deploying is separate, deliberate, and costs money** (a Vercel build). `main` = latest code; production = whatever was *last deliberately deployed*, which may lag `main`. Only deploy when the user explicitly asks or clearly wants the latest live — never as a side effect of pushing.
+- **To deploy:** Vercel dashboard → robpalmer-site → "Create Deployment" from `main`, or the project's Deploy Hook URL. Claude may trigger it via the Vercel integration **only on explicit request**.
+- No `dev` branch; no worktrees by default (use one only for parallel agents or risky throwaway work).
 
 ## Code Conventions
 - Use design token colors (`ink-*`, `gold-*`, `paper-*`) — never raw hex or Tailwind defaults
