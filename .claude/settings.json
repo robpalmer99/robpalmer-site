@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add AGENTS.md next.config.ts src/app/api/contact/route.ts src/app/blog/[slug]/page.tsx src/app/industries/ src/app/page.tsx src/app/portfolio/page.tsx src/app/services/[slug]/page.tsx src/app/services/_data/services.ts src/app/testimonials/page.tsx src/app/verticals/[slug]/page.tsx src/app/verticals/_data/verticals.ts src/components/blocks/AboutTestimonials.tsx src/components/blocks/BlogPostCard.tsx src/components/blocks/ContactForm.tsx src/components/layout/Header.tsx src/components/ui/DefinitionBox.tsx src/components/ui/FadeIn.tsx src/lib/constants.ts src/lib/mdx.ts src/app/error.tsx src/lib/content-links.ts)",
+      "Bash(git push origin main)",
+      "Bash(gh issue list --repo robpalmer99/robpalmer-site --state open)",
+      "Bash(git add AGENTS.md)",
+      "Read(//Users/robpalmer/.claude/**)",
+      "Bash(git add CLAUDE.md)"
+    ],
+    "additionalDirectories": [
+      "/Users/robpalmer/.claude/projects/-Users-robpalmer-Documents-robpalmer-site"
+    ]
+  }
+}
