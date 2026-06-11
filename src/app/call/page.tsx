@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     description:
       'Book a free 30-minute strategy call. Walk away with a clear picture of what\'s working, what\'s not, and what to do next.',
     url: `${SITE_URL}/call`,
+    images: [{ url: `${SITE_URL}/images/og-default.jpg`, width: 1200, height: 630 }],
   },
 }
 

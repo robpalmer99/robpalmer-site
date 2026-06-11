@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     description:
       'Free copywriting tools: headline analyzer and copywriting rates calculator.',
     url: `${SITE_URL}/tools`,
+    images: [{ url: `${SITE_URL}/images/og-default.jpg`, width: 1200, height: 630 }],
   },
 }
 

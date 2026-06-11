@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     description:
       'Read detailed case studies showing how Rob Palmer has generated $523M+ in tracked results through direct-response copywriting for Fortune 500 brands and beyond.',
     url: `${SITE_URL}/case-studies`,
+    images: [{ url: `${SITE_URL}/images/og-default.jpg`, width: 1200, height: 630 }],
   },
 }
 

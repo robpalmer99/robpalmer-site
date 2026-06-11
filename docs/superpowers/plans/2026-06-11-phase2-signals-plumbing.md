@@ -952,3 +952,11 @@ Post-deploy verification (runs ONLY after Rob explicitly deploys): `curl -sI htt
 ## Out of scope (do not drift)
 
 FadeIn/Calendly performance (Phase 3), content refresh/cannibalization (Phase 4), case-study Article schema shape (F35), template dedup + dead MDX pipeline + code hygiene (Phase 5), robots.txt AI-crawler policy changes (F40 — leave robots.ts untouched).
+
+## Correction (2026-06-11, found in review)
+
+Task 13's "three pages inheriting homepage OG defaults" assumed Next.js
+deep-merges parent/child `openGraph` objects. It does not — a child
+`openGraph` replaces the parent's entirely, so page-level openGraph blocks
+must restate `images` (done in the fix commit). Future metadata work: any
+page-level `openGraph` needs its own `images` array.

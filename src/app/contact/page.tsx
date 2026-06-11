@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     description:
       'Contact Rob Palmer for general inquiries — or book a free strategy call to discuss your direct-response copywriting project.',
     url: `${SITE_URL}/contact`,
+    images: [{ url: `${SITE_URL}/images/og-default.jpg`, width: 1200, height: 630 }],
   },
 }
 
