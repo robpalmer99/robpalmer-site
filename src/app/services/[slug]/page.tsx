@@ -607,7 +607,12 @@ export default async function ServicePage({ params }: ServicePageProps) {
         </Section>
       )}
 
-      <CTABanner />
+      <CTABanner
+        headline="Ready to beat your control?"
+        subtext="Book a free strategy call — 30 minutes, straight answers, and a clear next step."
+        buttonText="Book a Strategy Call"
+        buttonHref="/call"
+      />
     </>
   )
 }
