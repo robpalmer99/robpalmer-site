@@ -17,6 +17,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_URL}/case-studies`,
   },
+  openGraph: {
+    title: 'Case Studies | Direct-Response Campaigns That Delivered',
+    description:
+      'Read detailed case studies showing how Rob Palmer has generated $523M+ in tracked results through direct-response copywriting for Fortune 500 brands and beyond.',
+    url: `${SITE_URL}/case-studies`,
+  },
 }
 
 export default function CaseStudiesPage() {

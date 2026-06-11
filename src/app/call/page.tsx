@@ -15,6 +15,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_URL}/call`,
   },
+  openGraph: {
+    title: 'Book a Free Strategy Call with Rob Palmer',
+    description:
+      'Book a free 30-minute strategy call. Walk away with a clear picture of what\'s working, what\'s not, and what to do next.',
+    url: `${SITE_URL}/call`,
+  },
 }
 
 export default function CallPage() {

@@ -16,6 +16,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_URL}/contact`,
   },
+  openGraph: {
+    title: 'Contact Rob Palmer — General Inquiries',
+    description:
+      'Contact Rob Palmer for general inquiries — or book a free strategy call to discuss your direct-response copywriting project.',
+    url: `${SITE_URL}/contact`,
+  },
 }
 
 export default function ContactPage() {

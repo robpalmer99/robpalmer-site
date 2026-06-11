@@ -43,6 +43,7 @@ export async function generateMetadata({
     openGraph: {
       title: service.metaTitle,
       description: service.metaDescription,
+      url: `${SITE_URL}/services/${slug}`,
       images: [{ url: `${SITE_URL}${service.heroImage}`, width: 1200, height: 630 }],
     },
     twitter: {

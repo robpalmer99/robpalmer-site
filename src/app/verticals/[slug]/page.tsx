@@ -41,6 +41,7 @@ export async function generateMetadata({ params }: VerticalPageProps): Promise<M
     openGraph: {
       title: vertical.metaTitle,
       description: vertical.metaDescription,
+      url: `${SITE_URL}/verticals/${slug}`,
       images: [{ url: `${SITE_URL}${vertical.heroImage}`, width: 1200, height: 630 }],
     },
     twitter: {

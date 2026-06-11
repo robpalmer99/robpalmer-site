@@ -57,6 +57,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       title: post.meta.title,
       description: post.meta.description,
       type: 'article',
+      url: `${SITE_URL}/blog/${slug}`,
       publishedTime: post.meta.date,
       ...(post.meta.updated && { modifiedTime: post.meta.updated }),
       authors: ['Rob Palmer'],
