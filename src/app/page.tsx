@@ -58,7 +58,7 @@ const homepageFaqs = [
   { question: 'What results can I expect?', answer: 'Results vary by market, offer, and traffic quality. My track record includes $523M+ in tracked revenue across campaigns, a 9-year campaign for Belron/Safelite, the $40M Gluco 6 supplement subscription funnel, $30M Mobile Profits #1 on ClickBank, 5.7% Monetari Fund opt-in-to-sale, 22% Chatterkick SaaS trial-to-paid lift, 340% Abundant TSL on Facebook cold, 8% conversion on cold traffic (Conor Reynolds VSL), and 300% ROAS on a ClickBank email funnel (Ben Palmer). I focus on measurable outcomes — conversion rates, AOV, and revenue.' },
   { question: 'How long does a typical project take?', answer: 'Timeline depends on the deliverable. A single email or landing page might take 3-5 business days. A full VSL or sales funnel build typically takes 2-4 weeks including research, drafting, and revisions. The Triple Brain workflow compresses traditional research and drafting timelines without sacrificing depth.' },
   { question: 'Do you offer revisions?', answer: 'Yes. Every project includes a round of revisions to ensure the copy aligns with your voice, brand, and goals. My goal is copy you\'re confident putting in front of your audience.' },
-  { question: 'How do I get started?', answer: 'Book a free strategy call through my contact page. We\'ll discuss your project, goals, and timeline. If we\'re a good fit, I\'ll send you a fixed-price proposal within 48 hours. No pressure, no obligation.' },
+  { question: 'How do I get started?', answer: 'Book a free strategy call — the calendar is at robpalmer.com/call. We\'ll discuss your project, goals, and timeline. If we\'re a good fit, I\'ll send you a fixed-price proposal within 48 hours. No pressure, no obligation.' },
 ]
 
 const homepageFaqJsonLd = {
@@ -79,7 +79,7 @@ export default function HomePage() {
         variant="home"
         headline="Three Brains. One Engagement. Behind $523M in Tracked Results."
         subheadline="40+ years of direct-response copywriting + Claude Code with my custom copywriting skills + a 1,200-file Obsidian copywriting brain. The DR system Stefan Georgi's team chose for CA Labs."
-        cta={{ label: 'Book a Strategy Call', href: '/contact' }}
+        cta={{ label: 'Book a Strategy Call', href: '/call' }}
         secondaryCta={{ label: 'See Case Studies', href: '/case-studies' }}
         image={{ src: '/images/headshots/rob-palmer-clean.png', alt: 'Rob Palmer - Direct-Response Copywriter' }}
       >
