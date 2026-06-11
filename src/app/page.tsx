@@ -83,7 +83,7 @@ export default function HomePage() {
         secondaryCta={{ label: 'See Case Studies', href: '/case-studies' }}
         image={{ src: '/images/headshots/rob-palmer-clean.png', alt: 'Rob Palmer - Direct-Response Copywriter' }}
       >
-        <FadeIn delay={450} duration={800}>
+        <FadeIn immediate delay={450} duration={800}>
           <p className="mt-5 text-sm sm:text-base lg:text-[0.95rem] text-paper-300 font-body">
             Selective engagements. Fixed-price, custom-quoted. No hourly billing.
           </p>
