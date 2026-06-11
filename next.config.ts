@@ -136,12 +136,6 @@ const nextConfig: NextConfig = {
         destination: '/blog',
         permanent: true,
       },
-      // Old blog post URLs that were under /blog/ path
-      {
-        source: '/blog/ai-sales-page-generator',
-        destination: '/blog',
-        permanent: true,
-      },
       // Old WordPress pages with traffic — redirect to best equivalent
       {
         source: '/17-proven-bullet-point-tactics-that-skyrocket-engagement-sales',
@@ -209,6 +203,27 @@ const nextConfig: NextConfig = {
       {
         source: '/how-i-became-the-worlds-first-blogger-digital-nomad-pioneer',
         destination: '/blog/worlds-first-blogger-digital-nomad-pioneer',
+        permanent: true,
+      },
+      // Wrong service slugs that circulated in old blog copy — keep external links alive
+      {
+        source: '/services/email-copywriting',
+        destination: '/services/email-copywriter',
+        permanent: true,
+      },
+      {
+        source: '/services/email-sequence-copywriter',
+        destination: '/services/email-copywriter',
+        permanent: true,
+      },
+      {
+        source: '/services/direct-response-copywriter',
+        destination: '/services',
+        permanent: true,
+      },
+      {
+        source: '/services/direct-response-copywriting',
+        destination: '/services',
         permanent: true,
       },
       // Old blog posts and pages
