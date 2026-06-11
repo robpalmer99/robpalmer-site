@@ -5,9 +5,9 @@ export const SITE_DESCRIPTION =
   'Direct-response copywriter and conversion strategist with $523M+ in tracked results. AI-powered funnels, VSLs, email sequences, and campaigns for ClickBank & DTC brands.'
 
 export const CALENDLY_URL =
-  process.env.NEXT_PUBLIC_CALENDLY_URL || 'https://calendly.com/rob-palmer-call'
+  process.env.NEXT_PUBLIC_CALENDLY_URL ||
+  'https://calendly.com/rob-palmer-call/30min'
 export const CONTACT_EMAIL = 'rob@robpalmer.com'
-export const CONTACT_PHONE = '(415) 854-9589'
 
 type NavLink = { readonly label: string; readonly href: string }
 type NavDropdown = { readonly label: string; readonly children: readonly NavLink[] }
