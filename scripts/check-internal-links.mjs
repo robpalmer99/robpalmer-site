@@ -42,7 +42,7 @@ for (const f of readdirSync(blogDir).filter((f) => f.endsWith('.mdx'))) {
   // Scan markdown links: ](/path...)
   for (const m of body.matchAll(/\]\((\/[^)\s#?]*)/g)) {
     const path = m[1].replace(/\/$/, '') || '/'
-    const line = lineOf(src, m.index)
+    const line = lineOf(body, m.index)
     if (path.startsWith('/downloads/') || path.startsWith('/images/')) {
       if (!existsSync(join(root, 'public', path))) errors.push(`${f}:${line}: missing asset ${path}`)
       continue
@@ -53,7 +53,7 @@ for (const f of readdirSync(blogDir).filter((f) => f.endsWith('.mdx'))) {
   // Scan raw HTML links: href="/path..."
   for (const m of body.matchAll(/href="(\/[^"#?]*)"/g)) {
     const path = m[1].replace(/\/$/, '') || '/'
-    const line = lineOf(src, m.index)
+    const line = lineOf(body, m.index)
     if (path.startsWith('/downloads/') || path.startsWith('/images/')) {
       if (!existsSync(join(root, 'public', path))) errors.push(`${f}:${line}: missing asset ${path}`)
       continue
