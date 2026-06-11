@@ -14,7 +14,8 @@ interface FadeInProps {
   threshold?: number
   as?: React.ElementType
   /** Pure-CSS entrance that runs from first paint, before hydration.
-   *  Use for above-the-fold content (heroes). No JS involvement at all. */
+   *  Use for above-the-fold content (heroes). No JS involvement at all.
+   *  Ignores `distance`/`once`/`threshold`; keyframe offset is fixed at 24px. */
   immediate?: boolean
 }
 
@@ -56,7 +57,10 @@ export function FadeIn({
     // Never re-hide painted content: anything in or above the viewport at
     // mount (above-fold content, anchor-jump targets) stays visible. Only
     // genuinely below-fold elements get the scroll-reveal treatment.
-    if (el.getBoundingClientRect().top < window.innerHeight) return
+    if (el.getBoundingClientRect().top < window.innerHeight) {
+      setState('visible')
+      return
+    }
 
     setState('hidden')
     const observer = new IntersectionObserver(
