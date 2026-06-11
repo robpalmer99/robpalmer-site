@@ -129,7 +129,7 @@ export function Header() {
         <nav aria-label="Main navigation" className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <Link href="/" className="block">
-            <Logo className="h-10 sm:h-11 w-auto" variant="light" />
+            <Logo className="h-8 sm:h-11 w-auto" variant="light" />
           </Link>
 
           {/* Desktop Nav */}
@@ -173,8 +173,8 @@ export function Header() {
           </div>
 
           {/* Mobile: compact booking CTA + menu */}
-          <div className="flex items-center gap-3 lg:hidden">
-            <Button href="/call" size="sm">
+          <div className="flex items-center gap-2 lg:hidden">
+            <Button href="/call" size="sm" className="whitespace-nowrap px-3">
               Book a Call
             </Button>
             <MobileMenu />
