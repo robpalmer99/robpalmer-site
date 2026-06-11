@@ -58,6 +58,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       description: post.meta.description,
       type: 'article',
       publishedTime: post.meta.date,
+      ...(post.meta.updated && { modifiedTime: post.meta.updated }),
       authors: ['Rob Palmer'],
       tags: post.meta.tags,
       ...(post.meta.heroImage && {
@@ -92,7 +93,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     headline: post.meta.title,
     description: post.meta.description,
     datePublished: post.meta.date,
-    dateModified: post.meta.date,
+    dateModified: post.meta.updated || post.meta.date,
     author: {
       '@type': 'Person',
       name: 'Rob Palmer',

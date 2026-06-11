@@ -33,6 +33,7 @@ export interface BlogPostMeta {
   title: string
   description: string
   date: string
+  updated?: string
   category: string
   tags: string[]
   slug: string
@@ -81,6 +82,7 @@ export function getBlogPostMeta(slug: string): BlogPostMeta | null {
     title: data.title || '',
     description: data.description || '',
     date: data.date || '',
+    updated: data.updated || undefined,
     category: data.category || 'Copywriting',
     tags: data.tags || [],
     slug,
@@ -111,6 +113,7 @@ export function getBlogPostContent(slug: string): {
       title: data.title || '',
       description: data.description || '',
       date: data.date || '',
+      updated: data.updated || undefined,
       category: data.category || 'Copywriting',
       tags: data.tags || [],
       slug,
