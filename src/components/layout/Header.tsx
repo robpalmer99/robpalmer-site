@@ -167,13 +167,18 @@ export function Header() {
                 />
               </svg>
             </Link>
-            <Button href="/contact" size="sm">
-              Book a Call
+            <Button href="/call" size="sm">
+              Book a Strategy Call
             </Button>
           </div>
 
-          {/* Mobile menu (button + sliding nav panel) */}
-          <MobileMenu />
+          {/* Mobile: compact booking CTA + menu */}
+          <div className="flex items-center gap-3 lg:hidden">
+            <Button href="/call" size="sm">
+              Book a Call
+            </Button>
+            <MobileMenu />
+          </div>
         </nav>
       </Container>
     </header>

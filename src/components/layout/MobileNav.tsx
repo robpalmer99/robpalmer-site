@@ -113,8 +113,8 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
           Search
         </Link>
         <div className="pt-3 px-4">
-          <Button href="/contact" className="w-full" onClick={onClose}>
-            Book a Call
+          <Button href="/call" className="w-full" onClick={onClose}>
+            Book a Strategy Call
           </Button>
         </div>
       </nav>
