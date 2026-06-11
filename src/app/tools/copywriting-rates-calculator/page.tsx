@@ -22,6 +22,7 @@ export const metadata: Metadata = {
       'Calculate what to charge for copywriting projects based on experience, project type, niche, and pricing model.',
     url: `${SITE_URL}/tools/copywriting-rates-calculator`,
     type: 'website',
+    images: [{ url: `${SITE_URL}/images/og-default.jpg`, width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',

@@ -22,6 +22,7 @@ export const metadata: Metadata = {
       'Analyze your headlines instantly. Get a score based on word balance, emotional triggers, power words, reading ease, and SEO length.',
     url: `${SITE_URL}/tools/headline-analyzer`,
     type: 'website',
+    images: [{ url: `${SITE_URL}/images/og-default.jpg`, width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
