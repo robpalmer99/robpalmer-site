@@ -32,6 +32,8 @@ export interface BlogFAQ {
 export interface BlogPostMeta {
   title: string
   description: string
+  metaTitle?: string
+  metaDescription?: string
   date: string
   updated?: string
   category: string
@@ -81,6 +83,8 @@ export function getBlogPostMeta(slug: string): BlogPostMeta | null {
   return {
     title: data.title || '',
     description: data.description || '',
+    metaTitle: data.metaTitle || undefined,
+    metaDescription: data.metaDescription || undefined,
     date: data.date || '',
     updated: data.updated || undefined,
     category: data.category || 'Copywriting',
@@ -112,6 +116,8 @@ export function getBlogPostContent(slug: string): {
     meta: {
       title: data.title || '',
       description: data.description || '',
+      metaTitle: data.metaTitle || undefined,
+      metaDescription: data.metaDescription || undefined,
       date: data.date || '',
       updated: data.updated || undefined,
       category: data.category || 'Copywriting',

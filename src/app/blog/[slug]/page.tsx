@@ -48,14 +48,14 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   if (!post) return {}
 
   return {
-    title: post.meta.title,
-    description: post.meta.description,
+    title: post.meta.metaTitle || post.meta.title,
+    description: post.meta.metaDescription || post.meta.description,
     alternates: {
       canonical: `${SITE_URL}/blog/${slug}`,
     },
     openGraph: {
-      title: post.meta.title,
-      description: post.meta.description,
+      title: post.meta.metaTitle || post.meta.title,
+      description: post.meta.metaDescription || post.meta.description,
       type: 'article',
       url: `${SITE_URL}/blog/${slug}`,
       publishedTime: post.meta.date,
