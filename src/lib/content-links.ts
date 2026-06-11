@@ -19,6 +19,15 @@ const categoryToServices: Record<string, string[]> = {
   ],
   'AI & Technology': [
     'ai-copywriting-consultant',
+    'ai-marketing-consultant',
+  ],
+  'AI Copywriting': [
+    'ai-copywriting-consultant',
+    'sales-funnel-copywriter',
+  ],
+  'Tools & AI': [
+    'ai-copywriting-consultant',
+    'ai-marketing-consultant',
   ],
   'Industry Guides': [
     'vsl-copywriter',
@@ -89,7 +98,7 @@ const tagToService: Record<string, string> = {
   'email copywriting': 'email-copywriter',
   'ad copy': 'ad-copywriter',
   ads: 'ad-copywriter',
-  'facebook ads': 'ad-copywriter',
+  'facebook ads': 'facebook-ads-copywriter',
   'landing page': 'landing-page-copywriter',
   'landing page optimization': 'landing-page-copywriter',
   'sales funnel': 'sales-funnel-copywriter',
@@ -110,6 +119,8 @@ const tagToService: Record<string, string> = {
   advertorial: 'ad-copywriter',
   'advertorial copywriter': 'ad-copywriter',
   'native advertising': 'ad-copywriter',
+  'conversion rate optimization': 'conversion-rate-optimization',
+  'ai marketing': 'ai-marketing-consultant',
 
   // 18.I tag mappings — added for the high-intent commercial post sweep.
   // Strategy: route "best/top/pricing/services" buyer-intent tags toward
@@ -176,6 +187,9 @@ const serviceTitles: Record<string, string> = {
   'sales-funnel-copywriter': 'Sales Funnel Copywriter',
   'upsell-downsell-copywriter': 'Upsell & Downsell Copywriter',
   'ai-copywriting-consultant': 'AI Copywriting Consultant',
+  'ai-marketing-consultant': 'AI Marketing Consultant',
+  'facebook-ads-copywriter': 'Facebook Ads Copywriter',
+  'conversion-rate-optimization': 'Conversion Rate Optimization',
 }
 
 const verticalTitles: Record<string, string> = {
