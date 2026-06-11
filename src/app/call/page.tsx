@@ -9,7 +9,7 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { SITE_URL } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Book a Free Strategy Call | Rob Palmer',
+  title: 'Book a Free Strategy Call',
   description:
     'Book a free 30-minute strategy call with Rob Palmer. Walk away with a clear picture of what\'s working, what\'s not, and what to do next.',
   alternates: {
@@ -75,6 +75,28 @@ export default function CallPage() {
                 No pitch deck. No pressure. Just a straight conversation between
                 you and a copywriter with $523M+ in tracked results.
               </p>
+              <div className="mt-8 pt-6 border-t border-paper-200">
+                <h3 className="font-heading text-lg font-bold text-ink-950 mb-4">
+                  Before You Book
+                </h3>
+                <ul className="space-y-3 text-ink-700 font-body">
+                  <li>
+                    <strong className="text-ink-950">Capacity.</strong>{' '}
+                    I take a small number of new engagements each quarter.
+                    It&apos;s how the work stays good.
+                  </li>
+                  <li>
+                    <strong className="text-ink-950">Timeline.</strong>{' '}
+                    Most kickoffs happen within two weeks of a strategy call.
+                  </li>
+                  <li>
+                    <strong className="text-ink-950">Fit.</strong>{' '}
+                    Engagements typically start at $10K. If yours is below,
+                    I&apos;ll refer you to a writer in my network &mdash; no
+                    finder&apos;s fee, just an honest match.
+                  </li>
+                </ul>
+              </div>
             </FadeIn>
 
             {/* Right: Calendly */}

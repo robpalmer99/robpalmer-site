@@ -9,7 +9,7 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { SITE_URL } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Call Confirmed | Rob Palmer',
+  title: 'Call Confirmed',
   description:
     'Your strategy call with Rob Palmer is booked. Here\'s how to prepare.',
   alternates: {
