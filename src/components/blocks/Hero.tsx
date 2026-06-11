@@ -35,13 +35,13 @@ export function Hero({
           <div className="pt-32 pb-20 sm:pt-40 sm:pb-28 lg:pt-48 lg:pb-32 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             {/* Text content */}
             <div className="flex-1 max-w-2xl">
-              <FadeIn duration={800}>
+              <FadeIn immediate duration={800}>
                 <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-white">
                   {headline}
                 </h1>
               </FadeIn>
               {subheadline && (
-                <FadeIn delay={150} duration={800}>
+                <FadeIn immediate delay={150} duration={800}>
                   <p
                     className="mt-6 text-lg sm:text-xl text-paper-300 leading-relaxed font-body [&_a]:text-gold-400 [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-gold-300"
                     dangerouslySetInnerHTML={{ __html: subheadline }}
@@ -49,7 +49,7 @@ export function Hero({
                 </FadeIn>
               )}
               {(cta || secondaryCta) && (
-                <FadeIn delay={300} duration={800}>
+                <FadeIn immediate delay={300} duration={800}>
                   <div className="mt-10 flex flex-col sm:flex-row items-start gap-4">
                     {cta && (
                       <Button href={cta.href} size="lg">
@@ -69,7 +69,7 @@ export function Hero({
 
             {/* Hero image with gold ring glow */}
             {image && (
-              <FadeIn delay={400} duration={1000} direction="none">
+              <FadeIn immediate delay={400} duration={1000} direction="none">
                 <div className="shrink-0 relative">
                   {/* Glow ring behind image */}
                   <div className="absolute -inset-3 rounded-2xl bg-gold-400/10 blur-xl" />
@@ -95,7 +95,7 @@ export function Hero({
     return (
       <section className="bg-ink-950 text-white pt-28 pb-12 sm:pt-32 sm:pb-16 noise-overlay">
         <Container className="relative z-10">
-          <FadeIn duration={600}>
+          <FadeIn immediate duration={600}>
             <h1 className="font-heading text-3xl sm:text-4xl font-bold tracking-tight text-white">
               {headline}
             </h1>
@@ -116,13 +116,13 @@ export function Hero({
     <section className="bg-ink-950 text-white pt-28 pb-16 sm:pt-32 sm:pb-20 noise-overlay">
       <Container className="relative z-10">
         <div className="max-w-3xl">
-          <FadeIn duration={700}>
+          <FadeIn immediate duration={700}>
             <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white">
               {headline}
             </h1>
           </FadeIn>
           {subheadline && (
-            <FadeIn delay={100} duration={700}>
+            <FadeIn immediate delay={100} duration={700}>
               <p
                 className="mt-4 text-lg sm:text-xl text-paper-300 leading-relaxed font-body [&_a]:text-gold-400 [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-gold-300"
                 dangerouslySetInnerHTML={{ __html: subheadline }}
@@ -130,7 +130,7 @@ export function Hero({
             </FadeIn>
           )}
           {cta && (
-            <FadeIn delay={200} duration={700}>
+            <FadeIn immediate delay={200} duration={700}>
               <div className="mt-8">
                 <Button href={cta.href}>{cta.label}</Button>
               </div>
