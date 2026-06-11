@@ -62,6 +62,7 @@
   *::before,
   *::after {
     animation-duration: 0.01ms !important;
+    animation-delay: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
@@ -127,3 +128,46 @@
   --tw-prose-quotes: var(--color-ink-700);
   --tw-prose-quote-borders: var(--color-gold-400);
 }
+
+/* ───────────────────────────────────────────────────────────────
+   Entrance animations for above-the-fold FadeIn (`immediate` prop).
+   These run from first paint — before hydration, before any JS —
+   so LCP is never gated on the bundle. Duration/delay arrive as
+   CSS custom properties set inline by the FadeIn component.
+   ─────────────────────────────────────────────────────────────── */
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes fade-in-down {
+  from { opacity: 0; transform: translateY(-24px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes fade-in-left {
+  from { opacity: 0; transform: translateX(24px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes fade-in-right {
+  from { opacity: 0; transform: translateX(-24px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.fade-in-up,
+.fade-in-down,
+.fade-in-left,
+.fade-in-right,
+.fade-in {
+  animation-duration: var(--fi-duration, 800ms);
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-delay: var(--fi-delay, 0ms);
+  animation-fill-mode: both;
+}
+.fade-in-up    { animation-name: fade-in-up; }
+.fade-in-down  { animation-name: fade-in-down; }
+.fade-in-left  { animation-name: fade-in-left; }
+.fade-in-right { animation-name: fade-in-right; }
+.fade-in       { animation-name: fade-in; }
