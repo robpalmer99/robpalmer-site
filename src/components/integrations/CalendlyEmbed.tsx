@@ -33,6 +33,9 @@ export function CalendlyEmbed({ url }: CalendlyEmbedProps) {
 
   useEffect(() => {
     let armed = false
+    let idleId: number | undefined
+    let timeoutId: number | undefined
+    let safetyId: number | undefined = undefined
     const interactionEvents: (keyof WindowEventMap)[] = [
       'pointerdown',
       'keydown',
@@ -48,15 +51,20 @@ export function CalendlyEmbed({ url }: CalendlyEmbedProps) {
 
     const onLoad = () => {
       if ('requestIdleCallback' in window) {
-        window.requestIdleCallback(mount, { timeout: 2000 })
+        idleId = window.requestIdleCallback(mount, { timeout: 2000 })
       } else {
-        ;(window as Window).setTimeout(mount, 1500)
+        timeoutId = (window as Window).setTimeout(mount, 1500)
       }
     }
 
     function cleanup() {
       interactionEvents.forEach((e) => window.removeEventListener(e, mount))
       window.removeEventListener('load', onLoad)
+      if (idleId !== undefined && 'cancelIdleCallback' in window) {
+        window.cancelIdleCallback(idleId)
+      }
+      if (timeoutId !== undefined) window.clearTimeout(timeoutId)
+      if (safetyId !== undefined) window.clearTimeout(safetyId)
     }
 
     if (document.readyState === 'complete') {
@@ -67,6 +75,10 @@ export function CalendlyEmbed({ url }: CalendlyEmbedProps) {
     interactionEvents.forEach((e) =>
       window.addEventListener(e, mount, { once: true, passive: true })
     )
+    // Belt-and-braces: if the load event never fires (hung subresource) and
+    // the user never interacts, the calendar must still appear — this page's
+    // entire purpose is the calendar.
+    safetyId = window.setTimeout(mount, 4000)
     return cleanup
   }, [])
 
