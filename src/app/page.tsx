@@ -31,7 +31,7 @@ const homepageTestimonials = HOMEPAGE_TESTIMONIAL_IDS
 export const metadata: Metadata = {
   title: 'Rob Palmer | Direct-Response Copywriter | Triple Brain Marketing',
   description:
-    'Three brains. One engagement. 40+ years of direct-response copywriting + Claude Code with custom copywriting skills + a 1,200-file Obsidian copywriting brain. Behind $523M+ in tracked results. The DR system Stefan Georgi\u2019s team chose for CA Labs.',
+    'Three brains. One engagement. 40+ years of direct-response copywriting + Claude Code with custom copywriting skills + a 1,239-file Obsidian copywriting brain. Behind $523M+ in tracked results. The DR system Stefan Georgi\u2019s team chose for CA Labs.',
   alternates: {
     canonical: SITE_URL,
   },
@@ -78,7 +78,7 @@ export default function HomePage() {
       <Hero
         variant="home"
         headline="Three Brains. One Engagement. Behind $523M in Tracked Results."
-        subheadline="40+ years of direct-response copywriting + Claude Code with my custom copywriting skills + a 1,200-file Obsidian copywriting brain. The DR system Stefan Georgi's team chose for CA Labs."
+        subheadline="40+ years of direct-response copywriting + Claude Code with my custom copywriting skills + a 1,239-file Obsidian copywriting brain. The DR system Stefan Georgi's team chose for CA Labs."
         cta={{ label: 'Book a Strategy Call', href: '/call' }}
         secondaryCta={{ label: 'See Case Studies', href: '/case-studies' }}
         image={{ src: '/images/headshots/rob-palmer-clean.png', alt: 'Rob Palmer - Direct-Response Copywriter' }}
@@ -139,7 +139,7 @@ export default function HomePage() {
                     />
                   </div>
                   <p className="mt-4 font-heading text-lg font-bold text-ink-950">Justin Goff</p>
-                  <p className="text-sm text-paper-600 font-body">Direct Marketer</p>
+                  <p className="text-sm text-paper-600 font-body">Co-founder, Copy Accelerator</p>
                   <p className="mt-3 text-sm text-ink-700 italic font-body leading-snug">&ldquo;Stepped up and knocked it out of the park.&rdquo;</p>
                 </div>
               </FadeIn>
@@ -643,7 +643,6 @@ export default function HomePage() {
       <CTABanner
         headline="Three brains. Your next campaign. One conversation."
         subtext="Book a free strategy call. No pressure, no obligation — just an honest conversation about whether Triple Brain Marketing is the right fit for your offer."
-        buttonText="Book a Call"
         variant="default"
       />
     </>

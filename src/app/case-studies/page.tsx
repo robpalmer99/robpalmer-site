@@ -37,7 +37,7 @@ export default function CaseStudiesPage() {
               { stat: '$523M+', label: 'Total Tracked Revenue' },
               { stat: 'Fortune 500', label: 'Client Calibre', isText: true },
               { stat: '100s', label: 'Of Successful Projects', isText: true },
-              { stat: '30+', label: 'Years of Experience' },
+              { stat: '40+', label: 'Years of Experience' },
             ].map((item, index) => (
               <FadeIn key={item.label} delay={index * 100}>
                 <div>

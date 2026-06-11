@@ -23,7 +23,7 @@ export const testimonials: Testimonial[] = [
     id: '3',
     quote: 'A big shoutout to Rob Palmer who stepped up and knocked it out of the park.',
     author: 'Justin Goff',
-    title: 'Direct Marketer',
+    title: 'Co-founder, Copy Accelerator',
     company: '',
     image: '/images/testimonials/justin-goff.jpeg',
     featured: true,

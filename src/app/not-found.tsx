@@ -27,8 +27,8 @@ export default function NotFound() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button href="/">Go to Homepage</Button>
-              <Button href="/contact" variant="outline">
-                Book a Call
+              <Button href="/call" variant="outline">
+                Book a Strategy Call
               </Button>
             </div>
           </div>
