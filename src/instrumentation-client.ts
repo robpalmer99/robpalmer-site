@@ -67,11 +67,12 @@ if (process.env.NODE_ENV === "production" && !Sentry.getClient()) {
       /^blob:/,
     ],
 
-    // Add optional integrations for additional features
-    integrations: [Sentry.replayIntegration()],
+    // Session Replay is lazy-loaded after init (see below) so rrweb stays
+    // out of the render-critical bundle.
+    integrations: [],
 
-    // Define how likely traces are sampled. Adjust this value in production, or use tracesSampler for greater control.
-    tracesSampleRate: 1,
+    // Sample traces — full tracing on every pageview isn't worth the cost.
+    tracesSampleRate: 0.1,
     // Enable logs to be sent to Sentry
     enableLogs: true,
 
@@ -87,6 +88,16 @@ if (process.env.NODE_ENV === "production" && !Sentry.getClient()) {
     // https://docs.sentry.io/platforms/javascript/guides/nextjs/configuration/options/#sendDefaultPii
     sendDefaultPii: true,
   });
+
+  // Load Session Replay after startup — keeps ~55KB of rrweb out of the
+  // critical path. Replay sample rates above still apply.
+  Sentry.lazyLoadIntegration("replayIntegration")
+    .then((replayIntegration) => {
+      Sentry.addIntegration(replayIntegration())
+    })
+    .catch(() => {
+      // Replay is best-effort; never let telemetry loading break the page.
+    })
 }
 
 export const onRouterTransitionStart = Sentry.captureRouterTransitionStart;
