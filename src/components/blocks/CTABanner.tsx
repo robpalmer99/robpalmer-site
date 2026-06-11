@@ -18,8 +18,8 @@ interface CTABannerProps {
 export function CTABanner({
   headline = 'Ready to scale your conversions?',
   subtext,
-  buttonText = 'Book a Call',
-  buttonHref = '/contact',
+  buttonText = 'Book a Strategy Call',
+  buttonHref = '/call',
   variant = 'default',
   className,
 }: CTABannerProps) {
