@@ -205,6 +205,12 @@ const nextConfig: NextConfig = {
         destination: '/blog/worlds-first-blogger-digital-nomad-pioneer',
         permanent: true,
       },
+      // Consolidated best-DR listicle — merged into the to-hire post (Phase 4)
+      {
+        source: '/blog/best-direct-response-copywriters-2026',
+        destination: '/blog/best-direct-response-copywriter-to-hire',
+        permanent: true,
+      },
       // Wrong service slugs that circulated in old blog copy — keep external links alive
       {
         source: '/services/email-copywriting',
