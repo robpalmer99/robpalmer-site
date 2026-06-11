@@ -42,7 +42,7 @@ export function Button({
   }
 
   const baseClasses = cn(
-    'inline-flex items-center justify-center rounded-lg transition-all duration-200 cursor-pointer',
+    'inline-flex items-center justify-center rounded-lg transition-all duration-200 cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-600',
     variants[variant],
     sizes[size],
     className
