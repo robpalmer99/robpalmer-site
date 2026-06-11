@@ -41,6 +41,7 @@ export function CalendlyEmbed({ url }: CalendlyEmbedProps) {
       <InlineWidget
         url={url || CALENDLY_URL}
         styles={{ height: '660px' }}
+        pageSettings={{ hideGdprBanner: true }}
       />
     </div>
   )
