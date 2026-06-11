@@ -56,6 +56,14 @@ export function Footer() {
               )}
               <li>
                 <Link
+                  href="/tools"
+                  className="text-sm text-paper-400 hover:text-gold-400 transition-colors"
+                >
+                  Free Tools
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/contact"
                   className="text-sm text-paper-400 hover:text-gold-400 transition-colors"
                 >
