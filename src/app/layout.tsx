@@ -62,7 +62,7 @@ const personJsonLd = {
   name: 'Rob Palmer',
   jobTitle: 'Direct-Response Copywriter',
   description:
-    'Veteran direct-response copywriter specializing in VSLs, TSLs, email sequences, and sales funnels. Pioneer of blogging (1993) and AI-assisted copywriting.',
+    'Direct-response copywriter with 40+ years of experience and $523M+ in tracked client results, including campaigns for Apple, IBM, Microsoft, and Belron/Safelite. Specializes in VSLs, TSLs, email sequences, and sales funnels. Pioneer of blogging (1993) and AI-assisted copywriting.',
   url: SITE_URL,
   knowsAbout: [
     'Direct response copywriting',
@@ -84,12 +84,21 @@ const personJsonLd = {
       name: 'United States',
     },
   },
+  award: [
+    '$523M+ tracked revenue across direct-response campaigns',
+    '9-year continuously-tested direct-mail control for Belron/Safelite',
+  ],
+  worksFor: {
+    '@type': 'Organization',
+    name: 'Rob Palmer Copywriting',
+    url: SITE_URL,
+  },
   email: 'rob@robpalmer.com',
-  telephone: '+14158549589',
   image: `${SITE_URL}/images/headshots/rob-palmer-clean.png`,
   sameAs: [
-    'https://www.linkedin.com/in/robpalmer/',
-    'https://en.wikipedia.org/wiki/Justin_Hall#cite_note-2',
+    'https://www.linkedin.com/in/robpalmer3/',
+    'https://github.com/robpalmer99',
+    'https://x.com/RobPalmer99',
   ],
 }
 
@@ -105,7 +114,6 @@ const organizationJsonLd = {
   },
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+14158549589',
     email: 'rob@robpalmer.com',
     contactType: 'sales',
   },
