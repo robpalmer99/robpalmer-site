@@ -99,6 +99,7 @@ const tagToService: Record<string, string> = {
   'ad copy': 'ad-copywriter',
   ads: 'ad-copywriter',
   'facebook ads': 'facebook-ads-copywriter',
+  'meta ads': 'facebook-ads-copywriter',
   'landing page': 'landing-page-copywriter',
   'landing page optimization': 'landing-page-copywriter',
   'sales funnel': 'sales-funnel-copywriter',

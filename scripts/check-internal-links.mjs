@@ -14,6 +14,11 @@ const verticals = slugRe(readFileSync(join(root, 'src/app/verticals/_data/vertic
 const caseStudies = slugRe(readFileSync(join(root, 'src/app/case-studies/_data/case-studies.ts'), 'utf8'))
 const posts = readdirSync(blogDir).filter((f) => f.endsWith('.mdx')).map((f) => f.replace('.mdx', ''))
 
+if (!services.length || !verticals.length || !caseStudies.length) {
+  console.error('✗ slug extraction failed — data file moved or reformatted?')
+  process.exit(1)
+}
+
 const valid = new Set([
   '/', '/about', '/services', '/verticals', '/case-studies', '/testimonials',
   '/portfolio', '/blog', '/contact', '/call', '/privacy', '/terms', '/tools',
@@ -24,16 +29,36 @@ const valid = new Set([
   ...posts.map((s) => `/blog/${s}`),
 ])
 
+function lineOf(src, index) {
+  return src.slice(0, index).split('\n').length
+}
+
 const errors = []
 for (const f of readdirSync(blogDir).filter((f) => f.endsWith('.mdx'))) {
   const src = readFileSync(join(blogDir, f), 'utf8')
-  for (const m of src.matchAll(/\]\((\/[^)\s#?]*)/g)) {
+  // Strip fenced code blocks by replacing non-newline chars so offsets/line numbers stay true
+  const body = src.replace(/```[\s\S]*?```/g, (m) => m.replace(/[^\n]/g, ''))
+
+  // Scan markdown links: ](/path...)
+  for (const m of body.matchAll(/\]\((\/[^)\s#?]*)/g)) {
     const path = m[1].replace(/\/$/, '') || '/'
+    const line = lineOf(src, m.index)
     if (path.startsWith('/downloads/') || path.startsWith('/images/')) {
-      if (!existsSync(join(root, 'public', path))) errors.push(`${f}: missing asset ${path}`)
+      if (!existsSync(join(root, 'public', path))) errors.push(`${f}:${line}: missing asset ${path}`)
       continue
     }
-    if (!valid.has(path)) errors.push(`${f}: broken link ${path}`)
+    if (!valid.has(path)) errors.push(`${f}:${line}: broken link ${path}`)
+  }
+
+  // Scan raw HTML links: href="/path..."
+  for (const m of body.matchAll(/href="(\/[^"#?]*)"/g)) {
+    const path = m[1].replace(/\/$/, '') || '/'
+    const line = lineOf(src, m.index)
+    if (path.startsWith('/downloads/') || path.startsWith('/images/')) {
+      if (!existsSync(join(root, 'public', path))) errors.push(`${f}:${line}: missing asset ${path}`)
+      continue
+    }
+    if (!valid.has(path)) errors.push(`${f}:${line}: broken link (html) ${path}`)
   }
 }
 
