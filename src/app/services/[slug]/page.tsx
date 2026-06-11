@@ -100,7 +100,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
         variant="page"
         headline={service.headline}
         subheadline={service.subheadline}
-        cta={{ label: 'Book a Call', href: '/contact' }}
+        cta={{ label: 'Book a Strategy Call', href: '/call' }}
       />
       <Breadcrumbs
         items={[
