@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
 import { CALENDLY_URL } from '@/lib/constants'
 import { trackCalendlyClick } from '@/lib/analytics'
@@ -9,19 +9,67 @@ const InlineWidget = dynamic(
   () => import('react-calendly').then((mod) => mod.InlineWidget),
   {
     ssr: false,
-    loading: () => (
-      <div className="min-h-[660px] bg-paper-100 rounded-xl animate-pulse flex items-center justify-center">
-        <p className="text-paper-400 font-heading text-sm">Loading calendar...</p>
-      </div>
-    ),
+    loading: () => <CalendarPlaceholder />,
   }
 )
+
+function CalendarPlaceholder() {
+  return (
+    <div className="min-h-[660px] bg-paper-100 rounded-xl animate-pulse flex items-center justify-center">
+      <p className="text-paper-600 font-heading text-sm">Loading calendar...</p>
+    </div>
+  )
+}
 
 interface CalendlyEmbedProps {
   url?: string
 }
 
 export function CalendlyEmbed({ url }: CalendlyEmbedProps) {
+  // Calendly pulls ~2.6MB of assets. Mounting it eagerly starves hydration
+  // on mobile (12s LCP on /call before this change). Defer to the idle gap
+  // after window load, or the first user interaction — whichever first.
+  const [shouldMount, setShouldMount] = useState(false)
+
+  useEffect(() => {
+    let armed = false
+    const interactionEvents: (keyof WindowEventMap)[] = [
+      'pointerdown',
+      'keydown',
+      'scroll',
+    ]
+
+    const mount = () => {
+      if (armed) return
+      armed = true
+      cleanup()
+      setShouldMount(true)
+    }
+
+    const onLoad = () => {
+      if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(mount, { timeout: 2000 })
+      } else {
+        ;(window as Window).setTimeout(mount, 1500)
+      }
+    }
+
+    function cleanup() {
+      interactionEvents.forEach((e) => window.removeEventListener(e, mount))
+      window.removeEventListener('load', onLoad)
+    }
+
+    if (document.readyState === 'complete') {
+      onLoad()
+    } else {
+      window.addEventListener('load', onLoad)
+    }
+    interactionEvents.forEach((e) =>
+      window.addEventListener(e, mount, { once: true, passive: true })
+    )
+    return cleanup
+  }, [])
+
   useEffect(() => {
     function handleCalendlyEvent(e: MessageEvent) {
       if (e.data?.event === 'calendly.event_scheduled') {
@@ -38,11 +86,15 @@ export function CalendlyEmbed({ url }: CalendlyEmbedProps) {
 
   return (
     <div className="min-h-[660px]">
-      <InlineWidget
-        url={url || CALENDLY_URL}
-        styles={{ height: '660px' }}
-        pageSettings={{ hideGdprBanner: true }}
-      />
+      {shouldMount ? (
+        <InlineWidget
+          url={url || CALENDLY_URL}
+          styles={{ height: '660px' }}
+          pageSettings={{ hideGdprBanner: true }}
+        />
+      ) : (
+        <CalendarPlaceholder />
+      )}
     </div>
   )
 }
