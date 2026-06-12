@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PaginatedBlogPageProps): Prom
   return {
     title: `Blog — Page ${pageNum} | Direct-Response Copywriting Insights`,
     description:
-      'Expert insights on direct-response copywriting, VSLs, sales funnels, email marketing, and AI-assisted copywriting from a 30-year veteran.',
+      'Expert insights on direct-response copywriting, VSLs, sales funnels, email marketing, and AI-assisted copywriting from a 40-year veteran.',
     alternates: {
       canonical: `${SITE_URL}/blog/page/${pageNum}`,
     },

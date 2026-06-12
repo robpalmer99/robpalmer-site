@@ -22,7 +22,7 @@ export function BlogListingLayout({ posts, allPosts, siteSearchIndex, currentPag
       <Hero
         variant="page"
         headline="Direct-Response Copywriting Insights"
-        subheadline="Expert insights on VSLs, sales funnels, email marketing, and AI-assisted copywriting from a 30-year veteran."
+        subheadline="Expert insights on VSLs, sales funnels, email marketing, and AI-assisted copywriting from a 40-year veteran."
       />
       <Breadcrumbs items={[{ label: 'Blog' }]} />
 
