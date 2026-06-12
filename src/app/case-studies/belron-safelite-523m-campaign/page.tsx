@@ -17,12 +17,20 @@ const cs = caseStudies[0]
 const caseStudyJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'The $523M Secret Weapon Campaign | Belron/Safelite Case Study',
+  headline: 'The $523M Secret Weapon Campaign: Belron/Safelite Case Study',
   description: 'How Rob Palmer created a direct-response campaign for Belron/Safelite that generated $523 million in sales over 9 years.',
   image: `${SITE_URL}${cs.heroImage}`,
   datePublished: '2024-01-15',
+  dateModified: '2024-01-15',
   author: { '@type': 'Person', name: 'Rob Palmer', url: SITE_URL },
-  publisher: { '@type': 'Person', name: 'Rob Palmer', url: SITE_URL },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Rob Palmer Copywriting',
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_URL}/images/logo-rob-palmer.png`,
+    },
+  },
   mainEntityOfPage: `${SITE_URL}/case-studies/belron-safelite-523m-campaign`,
 }
 

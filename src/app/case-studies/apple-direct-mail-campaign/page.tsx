@@ -17,12 +17,20 @@ const cs = caseStudies[1]
 const caseStudyJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Apple UK Direct Mail Campaign | Case Study',
+  headline: 'Apple UK Direct Mail Campaign: Case Study',
   description: 'How Rob Palmer created a direct mail campaign for Apple Computer UK that was so successful it overwhelmed demand and had to be shut down.',
   image: `${SITE_URL}${cs.heroImage}`,
   datePublished: '2024-01-10',
+  dateModified: '2024-01-10',
   author: { '@type': 'Person', name: 'Rob Palmer', url: SITE_URL },
-  publisher: { '@type': 'Person', name: 'Rob Palmer', url: SITE_URL },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Rob Palmer Copywriting',
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_URL}/images/logo-rob-palmer.png`,
+    },
+  },
   mainEntityOfPage: `${SITE_URL}/case-studies/apple-direct-mail-campaign`,
 }
 

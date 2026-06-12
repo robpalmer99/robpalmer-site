@@ -88,11 +88,7 @@ const personJsonLd = {
     '$523M+ tracked revenue across direct-response campaigns',
     '9-year continuously-tested direct-mail control for Belron/Safelite',
   ],
-  worksFor: {
-    '@type': 'Organization',
-    name: 'Rob Palmer Copywriting',
-    url: SITE_URL,
-  },
+  worksFor: { '@id': `${SITE_URL}/#organization` },
   email: 'rob@robpalmer.com',
   image: `${SITE_URL}/images/headshots/rob-palmer-clean.png`,
   sameAs: [
@@ -105,6 +101,7 @@ const personJsonLd = {
 const organizationJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
+  '@id': `${SITE_URL}/#organization`,
   name: 'Rob Palmer Copywriting',
   url: SITE_URL,
   logo: `${SITE_URL}/images/logo-rob-palmer.png`,
