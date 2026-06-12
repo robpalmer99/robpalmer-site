@@ -69,6 +69,30 @@ export function getAllBlogPosts(): BlogPostMeta[] {
   return posts
 }
 
+function buildMeta(
+  slug: string,
+  data: Record<string, unknown>,
+  content: string
+): BlogPostMeta {
+  const stats = readingTime(content)
+  return {
+    title: (data.title as string) || '',
+    description: (data.description as string) || '',
+    metaTitle: (data.metaTitle as string) || undefined,
+    metaDescription: (data.metaDescription as string) || undefined,
+    date: (data.date as string) || '',
+    updated: (data.updated as string) || undefined,
+    category: (data.category as string) || 'Copywriting',
+    tags: (data.tags as string[]) || [],
+    slug,
+    readingTime: stats.text,
+    published: data.published !== false,
+    heroImage: (data.heroImage as string) || undefined,
+    heroAlt: (data.heroAlt as string) || undefined,
+    faqs: (data.faqs as BlogFAQ[]) || undefined,
+  }
+}
+
 export function getBlogPostMeta(slug: string): BlogPostMeta | null {
   const filePath = path.join(BLOG_DIR, `${slug}.mdx`)
 
@@ -78,24 +102,8 @@ export function getBlogPostMeta(slug: string): BlogPostMeta | null {
 
   const source = fs.readFileSync(filePath, 'utf-8')
   const { data, content } = matter(source)
-  const stats = readingTime(content)
 
-  return {
-    title: data.title || '',
-    description: data.description || '',
-    metaTitle: data.metaTitle || undefined,
-    metaDescription: data.metaDescription || undefined,
-    date: data.date || '',
-    updated: data.updated || undefined,
-    category: data.category || 'Copywriting',
-    tags: data.tags || [],
-    slug,
-    readingTime: stats.text,
-    published: data.published !== false,
-    heroImage: data.heroImage || undefined,
-    heroAlt: data.heroAlt || undefined,
-    faqs: data.faqs || undefined,
-  }
+  return buildMeta(slug, data, content)
 }
 
 export function getBlogPostContent(slug: string): {
@@ -110,25 +118,9 @@ export function getBlogPostContent(slug: string): {
 
   const source = fs.readFileSync(filePath, 'utf-8')
   const { data, content } = matter(source)
-  const stats = readingTime(content)
 
   return {
-    meta: {
-      title: data.title || '',
-      description: data.description || '',
-      metaTitle: data.metaTitle || undefined,
-      metaDescription: data.metaDescription || undefined,
-      date: data.date || '',
-      updated: data.updated || undefined,
-      category: data.category || 'Copywriting',
-      tags: data.tags || [],
-      slug,
-      readingTime: stats.text,
-      published: data.published !== false,
-      heroImage: data.heroImage || undefined,
-      heroAlt: data.heroAlt || undefined,
-      faqs: data.faqs || undefined,
-    },
+    meta: buildMeta(slug, data, content),
     content,
   }
 }
