@@ -52,6 +52,7 @@ const securityHeaders = [
 ]
 
 const nextConfig: NextConfig = {
+  outputFileTracingRoot: import.meta.dirname ?? process.cwd(),
   pageExtensions: ['ts', 'tsx'],
   images: {
     formats: ['image/avif', 'image/webp'],
