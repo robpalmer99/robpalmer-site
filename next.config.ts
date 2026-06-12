@@ -1,9 +1,5 @@
 import { withSentryConfig } from '@sentry/nextjs';
 import type { NextConfig } from 'next'
-import createMDX from '@next/mdx'
-import remarkGfm from 'remark-gfm'
-import rehypeSlug from 'rehype-slug'
-import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 
 // Next.js's React Refresh hot-reload runtime uses eval() to register modules,
 // so `'unsafe-eval'` is required in dev mode or hydration silently fails (FadeIn
@@ -56,7 +52,7 @@ const securityHeaders = [
 ]
 
 const nextConfig: NextConfig = {
-  pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
+  pageExtensions: ['ts', 'tsx'],
   images: {
     formats: ['image/avif', 'image/webp'],
   },
@@ -242,17 +238,7 @@ const nextConfig: NextConfig = {
   },
 }
 
-const withMDX = createMDX({
-  options: {
-    remarkPlugins: [remarkGfm],
-    rehypePlugins: [
-      rehypeSlug,
-      [rehypeAutolinkHeadings, { behavior: 'wrap' }],
-    ],
-  },
-})
-
-export default withSentryConfig(withMDX(nextConfig), {
+export default withSentryConfig(nextConfig, {
   // For all available options, see:
   // https://www.npmjs.com/package/@sentry/webpack-plugin#options
 
