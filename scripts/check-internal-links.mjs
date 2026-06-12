@@ -29,37 +29,50 @@ const valid = new Set([
   ...posts.map((s) => `/blog/${s}`),
 ])
 
-function lineOf(src, index) {
-  return src.slice(0, index).split('\n').length
+// Strip fenced code blocks line-based, tracking the opening fence's backtick
+// count (skill posts embed 4-backtick fences containing 3-backtick examples).
+// Stripped lines become empty lines so line numbers stay true.
+function stripFences(src) {
+  const out = []
+  let fence = null // backtick count of the open fence
+  for (const line of src.split('\n')) {
+    const m = line.match(/^\s*(`{3,})/)
+    if (m) {
+      if (fence === null) fence = m[1].length
+      else if (m[1].length >= fence) fence = null
+      out.push('')
+      continue
+    }
+    out.push(fence === null ? line : '')
+  }
+  return out.join('\n')
 }
+
+const SCANS = [
+  { re: /\]\((\/[^)\s#?]*)/g, label: 'broken link' },
+  { re: /href="(\/[^"#?]*)"/g, label: 'broken link (html)' },
+]
 
 const errors = []
 for (const f of readdirSync(blogDir).filter((f) => f.endsWith('.mdx'))) {
   const src = readFileSync(join(blogDir, f), 'utf8')
-  // Strip fenced code blocks by replacing non-newline chars so offsets/line numbers stay true
-  const body = src.replace(/```[\s\S]*?```/g, (m) => m.replace(/[^\n]/g, ''))
-
-  // Scan markdown links: ](/path...)
-  for (const m of body.matchAll(/\]\((\/[^)\s#?]*)/g)) {
-    const path = m[1].replace(/\/$/, '') || '/'
-    const line = lineOf(body, m.index)
-    if (path.startsWith('/downloads/') || path.startsWith('/images/')) {
-      if (!existsSync(join(root, 'public', path))) errors.push(`${f}:${line}: missing asset ${path}`)
-      continue
+  const body = stripFences(src)
+  for (const { re, label } of SCANS) {
+    for (const m of body.matchAll(re)) {
+      const path = m[1].replace(/\/$/, '') || '/'
+      const line = body.slice(0, m.index).split('\n').length
+      if (path.startsWith('/downloads/') || path.startsWith('/images/')) {
+        if (!existsSync(join(root, 'public', path)))
+          errors.push(`${f}:${line}: missing asset ${path}`)
+        continue
+      }
+      if (!valid.has(path)) errors.push(`${f}:${line}: ${label} ${path}`)
     }
-    if (!valid.has(path)) errors.push(`${f}:${line}: broken link ${path}`)
   }
-
-  // Scan raw HTML links: href="/path..."
-  for (const m of body.matchAll(/href="(\/[^"#?]*)"/g)) {
-    const path = m[1].replace(/\/$/, '') || '/'
-    const line = lineOf(body, m.index)
-    if (path.startsWith('/downloads/') || path.startsWith('/images/')) {
-      if (!existsSync(join(root, 'public', path))) errors.push(`${f}:${line}: missing asset ${path}`)
-      continue
-    }
-    if (!valid.has(path)) errors.push(`${f}:${line}: broken link (html) ${path}`)
-  }
+  // Frontmatter heroImage must exist (feeds og:image + Article schema)
+  const hero = src.match(/^heroImage:\s*["']?(\/[^"'\n]+)/m)
+  if (hero && !existsSync(join(root, 'public', hero[1])))
+    errors.push(`${f}: missing heroImage ${hero[1]}`)
 }
 
 if (errors.length) {
