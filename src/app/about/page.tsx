@@ -37,6 +37,18 @@ export default function AboutPage() {
       <Section>
         <Container>
           <div className="max-w-4xl mx-auto">
+            {/* Entity block — third-person by design: this is the AI-extraction
+                anchor for "who is Rob Palmer" queries (like meta descriptions
+                and schema). Everything else on this page stays first-person. */}
+            <FadeIn>
+              <p className="text-base text-paper-600 font-body leading-relaxed mb-10 max-w-3xl">
+                Rob Palmer is a direct-response copywriter with 40+ years of
+                experience and $523M+ in tracked client results, including
+                campaigns for Apple, IBM, Microsoft, and Belron/Safelite. He
+                works with health, finance, SaaS, e-commerce, and ClickBank
+                clients worldwide, and is taking new engagements in 2026.
+              </p>
+            </FadeIn>
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8 mb-10">
               <FadeIn direction="left" duration={700}>
                 <div className="shrink-0 relative">
