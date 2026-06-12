@@ -243,28 +243,28 @@ export default function AppleCaseStudyPage() {
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="/case-studies/belron-safelite-523m-campaign"
-                  className="text-sm font-heading font-semibold text-gold-600 hover:text-gold-500 transition-colors"
+                  className="text-sm font-heading font-semibold text-gold-600 hover:text-gold-700 transition-colors"
                 >
                   The $523M Belron Campaign →
                 </Link>
                 <span className="text-paper-300">|</span>
                 <Link
                   href="/blog/triple-brain-marketing"
-                  className="text-sm font-heading font-semibold text-gold-600 hover:text-gold-500 transition-colors"
+                  className="text-sm font-heading font-semibold text-gold-600 hover:text-gold-700 transition-colors"
                 >
                   Triple Brain Marketing →
                 </Link>
                 <span className="text-paper-300">|</span>
                 <Link
                   href="/services/sales-letter-copywriter"
-                  className="text-sm font-heading font-semibold text-gold-600 hover:text-gold-500 transition-colors"
+                  className="text-sm font-heading font-semibold text-gold-600 hover:text-gold-700 transition-colors"
                 >
                   Sales Letter Copywriting →
                 </Link>
                 <span className="text-paper-300">|</span>
                 <Link
                   href="/blog/direct-mail-copywriting"
-                  className="text-sm font-heading font-semibold text-gold-600 hover:text-gold-500 transition-colors"
+                  className="text-sm font-heading font-semibold text-gold-600 hover:text-gold-700 transition-colors"
                 >
                   Direct Mail Copywriting Guide →
                 </Link>

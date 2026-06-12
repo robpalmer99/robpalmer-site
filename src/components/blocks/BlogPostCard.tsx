@@ -61,7 +61,7 @@ export function BlogPostCard({
         </p>
         <div className="mt-4 flex items-center justify-between">
           <time dateTime={date} className="text-xs text-paper-600 font-heading">{formatDate(date)}</time>
-          <span className="text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-500 transition-colors">
+          <span className="text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-700 transition-colors">
             Read more →
           </span>
         </div>

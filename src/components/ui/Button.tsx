@@ -32,7 +32,7 @@ export function Button({
     outline:
       'border-2 border-gold-400 text-gold-400 hover:bg-gold-400 hover:text-ink-950 hover:scale-[1.02] active:scale-[0.98] font-heading font-semibold backdrop-blur-sm',
     ghost:
-      'text-gold-600 hover:text-gold-500 underline-offset-4 hover:underline font-heading font-medium',
+      'text-gold-600 hover:text-gold-700 underline-offset-4 hover:underline font-heading font-medium',
   }
 
   const sizes = {
@@ -42,7 +42,7 @@ export function Button({
   }
 
   const baseClasses = cn(
-    'inline-flex items-center justify-center rounded-lg transition-all duration-200 cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-600',
+    'inline-flex items-center justify-center rounded-lg transition-all duration-200 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-600',
     variants[variant],
     sizes[size],
     className

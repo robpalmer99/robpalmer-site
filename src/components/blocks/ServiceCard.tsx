@@ -48,7 +48,7 @@ export function ServiceCard({
         <p className="mt-3 flex-1 text-base lg:text-[1rem] text-ink-700 leading-relaxed font-body">
           {description}
         </p>
-        <div className="mt-4 flex items-center gap-1 text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-500 transition-colors">
+        <div className="mt-4 flex items-center gap-1 text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-700 transition-colors">
           Learn more
           <svg
             aria-hidden="true"

@@ -46,8 +46,8 @@ export function ContactForm() {
 
   if (status === 'sent') {
     return (
-      <div role="status" aria-live="polite" className="bg-green-50 border border-green-200 rounded-xl p-8 text-center">
-        <svg aria-hidden="true" className="w-12 h-12 text-green-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div role="status" aria-live="polite" className="bg-success-50 border border-success-600 rounded-xl p-8 text-center">
+        <svg aria-hidden="true" className="w-12 h-12 text-success-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
         <h3 className="font-heading text-lg font-bold text-ink-950 mb-2">Message Sent</h3>
@@ -63,7 +63,7 @@ export function ContactForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label htmlFor="name" className="block font-heading text-sm font-medium text-ink-950 mb-1.5">
-            Name <span aria-hidden="true" className="text-red-400">*</span>
+            Name <span aria-hidden="true" className="text-error-600">*</span>
           </label>
           <input
             type="text"
@@ -78,7 +78,7 @@ export function ContactForm() {
         </div>
         <div>
           <label htmlFor="email" className="block font-heading text-sm font-medium text-ink-950 mb-1.5">
-            Email <span aria-hidden="true" className="text-red-400">*</span>
+            Email <span aria-hidden="true" className="text-error-600">*</span>
           </label>
           <input
             type="email"
@@ -94,7 +94,7 @@ export function ContactForm() {
       </div>
       <div>
         <label htmlFor="subject" className="block font-heading text-sm font-medium text-ink-950 mb-1.5">
-          Subject <span aria-hidden="true" className="text-red-400">*</span>
+          Subject <span aria-hidden="true" className="text-error-600">*</span>
         </label>
         <input
           type="text"
@@ -109,7 +109,7 @@ export function ContactForm() {
       </div>
       <div>
         <label htmlFor="message" className="block font-heading text-sm font-medium text-ink-950 mb-1.5">
-          Message <span aria-hidden="true" className="text-red-400">*</span>
+          Message <span aria-hidden="true" className="text-error-600">*</span>
         </label>
         <textarea
           id="message"
@@ -133,7 +133,7 @@ export function ContactForm() {
         </Button>
         <div aria-live="assertive" role="alert">
           {status === 'error' && (
-            <p className="mt-3 text-sm text-red-500 font-body">
+            <p className="mt-3 text-sm text-error-600 font-body">
               {errorMessage}
             </p>
           )}

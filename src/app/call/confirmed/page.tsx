@@ -65,7 +65,7 @@ export default function CallConfirmedPage() {
                 you&apos;re working on — send it over ahead of time at{' '}
                 <a
                   href="mailto:rob@robpalmer.com"
-                  className="text-gold-600 underline underline-offset-2 hover:text-gold-500 transition-colors"
+                  className="text-gold-600 underline underline-offset-2 hover:text-gold-700 transition-colors"
                 >
                   rob@robpalmer.com
                 </a>
@@ -76,7 +76,7 @@ export default function CallConfirmedPage() {
 
             <Link
               href="/"
-              className="inline-flex items-center gap-2 text-gold-600 font-heading font-semibold hover:text-gold-500 transition-colors"
+              className="inline-flex items-center gap-2 text-gold-600 font-heading font-semibold hover:text-gold-700 transition-colors"
             >
               &larr; Back to Home
             </Link>

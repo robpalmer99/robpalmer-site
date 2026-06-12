@@ -235,13 +235,13 @@ export function HeadlineAnalyzer() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {result.strengths.length > 0 && (
               <div className="rounded-xl border border-paper-200 bg-white p-6 shadow-sm">
-                <h3 className="text-sm font-heading font-semibold text-green-700 uppercase tracking-wide mb-3">
+                <h3 className="text-sm font-heading font-semibold text-success-600 uppercase tracking-wide mb-3">
                   Strengths
                 </h3>
                 <ul className="space-y-2">
                   {result.strengths.map((s, i) => (
                     <li key={i} className="flex gap-2 text-sm font-body text-ink-900">
-                      <span className="text-green-600 shrink-0" aria-hidden="true">+</span>
+                      <span className="text-success-600 shrink-0" aria-hidden="true">+</span>
                       {s}
                     </li>
                   ))}
@@ -283,7 +283,7 @@ export function HeadlineAnalyzer() {
                 setResult(null)
                 setAnalyzedHeadline('')
               }}
-              className="text-sm font-heading font-medium text-gold-600 hover:text-gold-500 underline underline-offset-4 cursor-pointer"
+              className="text-sm font-heading font-medium text-gold-600 hover:text-gold-700 underline underline-offset-4 cursor-pointer"
             >
               Analyze another headline
             </button>

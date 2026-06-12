@@ -174,7 +174,7 @@ export function CopywritingRatesCalculator() {
                 <div className="pt-2">
                   <Link
                     href={`/services/${result.projectType.slug}`}
-                    className="text-gold-600 hover:text-gold-500 underline underline-offset-2 text-sm font-heading font-medium"
+                    className="text-gold-600 hover:text-gold-700 underline underline-offset-2 text-sm font-heading font-medium"
                   >
                     See how a professional handles this &rarr;
                   </Link>
@@ -203,22 +203,22 @@ export function CopywritingRatesCalculator() {
               <div className="space-y-3 text-sm font-body">
                 <p className="text-ink-900">{result.pricingModelInfo.description}</p>
                 <div>
-                  <p className="text-green-700 font-medium mb-1">Pros</p>
+                  <p className="text-success-600 font-medium mb-1">Pros</p>
                   <ul className="space-y-1">
                     {result.pricingModelInfo.pros.map((pro, i) => (
                       <li key={i} className="flex gap-2 text-ink-900">
-                        <span className="text-green-600 shrink-0">+</span>
+                        <span className="text-success-600 shrink-0">+</span>
                         {pro}
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div>
-                  <p className="text-red-600 font-medium mb-1">Cons</p>
+                  <p className="text-error-600 font-medium mb-1">Cons</p>
                   <ul className="space-y-1">
                     {result.pricingModelInfo.cons.map((con, i) => (
                       <li key={i} className="flex gap-2 text-ink-900">
-                        <span className="text-red-500 shrink-0">&ndash;</span>
+                        <span className="text-error-600 shrink-0">&ndash;</span>
                         {con}
                       </li>
                     ))}
@@ -264,7 +264,7 @@ export function CopywritingRatesCalculator() {
             <button
               type="button"
               onClick={() => setResult(null)}
-              className="text-sm font-heading font-medium text-gold-600 hover:text-gold-500 underline underline-offset-4 cursor-pointer"
+              className="text-sm font-heading font-medium text-gold-600 hover:text-gold-700 underline underline-offset-4 cursor-pointer"
             >
               Adjust inputs and recalculate
             </button>

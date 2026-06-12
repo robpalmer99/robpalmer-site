@@ -15,6 +15,14 @@
   --color-gold-400: #F5B731;
   --color-gold-500: #D99E1B;
   --color-gold-600: #B8840F;
+  --color-gold-700: #96690C;
+
+  /* Semantic status colors, tuned to the paper/ink palette */
+  --color-success-600: #3D7A47;
+  --color-success-50: #F0F5F0;
+  --color-error-600: #A8453C;
+  --color-error-50: #F8F0EF;
+  --color-warn-600: #B8730F;
 
   /* Paper: warm neutrals */
   --color-paper-50: #FAFAF8;

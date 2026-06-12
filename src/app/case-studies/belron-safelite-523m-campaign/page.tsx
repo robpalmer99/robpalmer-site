@@ -220,21 +220,21 @@ export default function BelronCaseStudyPage() {
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="/blog/523m-copywriting-campaign"
-                  className="text-sm font-heading font-semibold text-gold-600 hover:text-gold-500 transition-colors"
+                  className="text-sm font-heading font-semibold text-gold-600 hover:text-gold-700 transition-colors"
                 >
                   Read the full $523M blog post →
                 </Link>
                 <span className="text-paper-300">|</span>
                 <Link
                   href="/services/vsl-copywriter"
-                  className="text-sm font-heading font-semibold text-gold-600 hover:text-gold-500 transition-colors"
+                  className="text-sm font-heading font-semibold text-gold-600 hover:text-gold-700 transition-colors"
                 >
                   VSL Copywriting Services →
                 </Link>
                 <span className="text-paper-300">|</span>
                 <Link
                   href="/services/sales-funnel-copywriter"
-                  className="text-sm font-heading font-semibold text-gold-600 hover:text-gold-500 transition-colors"
+                  className="text-sm font-heading font-semibold text-gold-600 hover:text-gold-700 transition-colors"
                 >
                   Sales Funnel Copywriting →
                 </Link>

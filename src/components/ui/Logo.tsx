@@ -4,8 +4,8 @@ interface LogoProps {
 }
 
 export function Logo({ className = '', variant = 'light' }: LogoProps) {
-  const textColor = variant === 'light' ? '#FAFAF8' : '#0A0A0F'
-  const accentColor = '#F5B731'
+  const textColor = variant === 'light' ? 'var(--color-paper-50)' : 'var(--color-ink-950)'
+  const accentColor = 'var(--color-gold-400)'
 
   return (
     <svg

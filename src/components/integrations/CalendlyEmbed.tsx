@@ -33,8 +33,8 @@ export function CalendlyEmbed({ url }: CalendlyEmbedProps) {
 
   useEffect(() => {
     let armed = false
-    let idleId: number | undefined
-    let timeoutId: number | undefined
+    let idleId: number | undefined = undefined
+    let timeoutId: number | undefined = undefined
     let safetyId: number | undefined = undefined
     const interactionEvents: (keyof WindowEventMap)[] = [
       'pointerdown',

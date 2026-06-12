@@ -220,7 +220,7 @@ export default function HeadlineAnalyzerPage() {
               <div className="mt-8 space-y-6 font-body text-paper-800 leading-relaxed">
                 <p>
                   Your headline is the most important piece of copy you will ever write. Advertising legend{' '}
-                  <Link href="/blog/david-ogilvy-ai-copywriting" className="text-gold-600 hover:text-gold-500 underline underline-offset-2">
+                  <Link href="/blog/david-ogilvy-ai-copywriting" className="text-gold-600 hover:text-gold-700 underline underline-offset-2">
                     David Ogilvy
                   </Link>{' '}
                   estimated that five times as many people read the headline as read the body copy. In digital marketing,
@@ -229,7 +229,7 @@ export default function HeadlineAnalyzerPage() {
 
                 <h3 className="font-heading text-xl font-bold text-ink-900 pt-4">Start with your audience&apos;s awareness level</h3>
                 <p>
-                  <Link href="/blog/eugene-schwartz-breakthrough-advertising-lessons" className="text-gold-600 hover:text-gold-500 underline underline-offset-2">
+                  <Link href="/blog/eugene-schwartz-breakthrough-advertising-lessons" className="text-gold-600 hover:text-gold-700 underline underline-offset-2">
                     Eugene Schwartz
                   </Link>{' '}
                   taught that the effectiveness of a headline depends entirely on where your reader falls on the awareness
@@ -250,7 +250,7 @@ export default function HeadlineAnalyzerPage() {
                   Conversion Rate&rdquo; is stronger than &ldquo;How to Improve Your Marketing.&rdquo; The emotional
                   word (&ldquo;double&rdquo;) creates desire while the specific language (&ldquo;conversion rate&rdquo;)
                   qualifies the audience. For more on headline structure, see our guide to{' '}
-                  <Link href="/blog/headline-formulas" className="text-gold-600 hover:text-gold-500 underline underline-offset-2">
+                  <Link href="/blog/headline-formulas" className="text-gold-600 hover:text-gold-700 underline underline-offset-2">
                     proven headline formulas
                   </Link>.
                 </p>
@@ -259,7 +259,7 @@ export default function HeadlineAnalyzerPage() {
                 <p>
                   This analyzer gives you a strong starting point, but the only headline score that matters is the one your
                   audience gives you through clicks and conversions.{' '}
-                  <Link href="/blog/claude-hopkins-scientific-advertising-lessons" className="text-gold-600 hover:text-gold-500 underline underline-offset-2">
+                  <Link href="/blog/claude-hopkins-scientific-advertising-lessons" className="text-gold-600 hover:text-gold-700 underline underline-offset-2">
                     Claude Hopkins
                   </Link>{' '}
                   pioneered the concept of tested advertising over a century ago — and it remains the only reliable way to
@@ -269,11 +269,11 @@ export default function HeadlineAnalyzerPage() {
                 <p>
                   For a deeper dive into the tools professional copywriters use for headline testing and optimization, read our
                   complete guide to{' '}
-                  <Link href="/blog/headline-analyzer-tools" className="text-gold-600 hover:text-gold-500 underline underline-offset-2">
+                  <Link href="/blog/headline-analyzer-tools" className="text-gold-600 hover:text-gold-700 underline underline-offset-2">
                     headline analyzer tools
                   </Link>{' '}
                   and the full{' '}
-                  <Link href="/blog/copywriting-tools" className="text-gold-600 hover:text-gold-500 underline underline-offset-2">
+                  <Link href="/blog/copywriting-tools" className="text-gold-600 hover:text-gold-700 underline underline-offset-2">
                     copywriting tools
                   </Link>{' '}
                   breakdown.

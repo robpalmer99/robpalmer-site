@@ -351,17 +351,17 @@ export function getScoreLabel(score: number): string {
 }
 
 export function getScoreColor(score: number): string {
-  if (score >= 80) return 'text-green-600'
+  if (score >= 80) return 'text-success-600'
   if (score >= 65) return 'text-gold-600'
   if (score >= 50) return 'text-gold-500'
-  if (score >= 35) return 'text-orange-500'
-  return 'text-red-500'
+  if (score >= 35) return 'text-warn-600'
+  return 'text-error-600'
 }
 
 export function getScoreRingColor(score: number): string {
-  if (score >= 80) return 'stroke-green-500'
+  if (score >= 80) return 'stroke-success-600'
   if (score >= 65) return 'stroke-gold-500'
   if (score >= 50) return 'stroke-gold-400'
-  if (score >= 35) return 'stroke-orange-500'
-  return 'stroke-red-500'
+  if (score >= 35) return 'stroke-warn-600'
+  return 'stroke-error-600'
 }

@@ -239,7 +239,7 @@ export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], curren
                     <p className="mt-1.5 text-base lg:text-[1rem] text-ink-700 leading-relaxed font-body line-clamp-2">
                       {result.description}
                     </p>
-                    <span className="mt-3 inline-block text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-500 transition-colors">
+                    <span className="mt-3 inline-block text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-700 transition-colors">
                       View page →
                     </span>
                   </Link>

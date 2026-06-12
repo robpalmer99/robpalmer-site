@@ -1,5 +1,4 @@
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://robpalmer.com'
-export const SITE_NAME = 'Rob Palmer'
 export const SITE_TITLE = 'Rob Palmer | Direct-Response Copywriter'
 export const SITE_DESCRIPTION =
   'Direct-response copywriter and conversion strategist with $523M+ in tracked results. AI-powered funnels, VSLs, email sequences, and campaigns for ClickBank & DTC brands.'

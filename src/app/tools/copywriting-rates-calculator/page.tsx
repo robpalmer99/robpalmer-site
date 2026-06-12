@@ -221,7 +221,7 @@ export default function CopywritingRatesCalculatorPage() {
                 <p>
                   The single biggest mistake new copywriters make is pricing based on time rather than value.
                   A{' '}
-                  <Link href="/blog/how-to-write-a-sales-page" className="text-gold-600 hover:text-gold-500 underline underline-offset-2">
+                  <Link href="/blog/how-to-write-a-sales-page" className="text-gold-600 hover:text-gold-700 underline underline-offset-2">
                     sales page
                   </Link>{' '}
                   that takes an expert two days to write but generates $500,000 in revenue is worth far more
@@ -233,7 +233,7 @@ export default function CopywritingRatesCalculatorPage() {
                 <p>
                   From your first paying project, document results. Conversion rates, revenue generated, cost
                   per acquisition improvements, email open rates — every metric your clients share.{' '}
-                  <Link href="/blog/copywriter-salary" className="text-gold-600 hover:text-gold-500 underline underline-offset-2">
+                  <Link href="/blog/copywriter-salary" className="text-gold-600 hover:text-gold-700 underline underline-offset-2">
                     Copywriter earnings
                   </Link>{' '}
                   increase fastest for writers who can point to specific numbers. &ldquo;I wrote a VSL that
@@ -243,11 +243,11 @@ export default function CopywritingRatesCalculatorPage() {
                 <h3 className="font-heading text-xl font-bold text-ink-900 pt-4">Specialize early</h3>
                 <p>
                   A{' '}
-                  <Link href="/verticals/health-supplement-copywriter" className="text-gold-600 hover:text-gold-500 underline underline-offset-2">
+                  <Link href="/verticals/health-supplement-copywriter" className="text-gold-600 hover:text-gold-700 underline underline-offset-2">
                     health supplement copywriter
                   </Link>{' '}
                   who understands FTC compliance commands 30% more than a generalist. A{' '}
-                  <Link href="/verticals/financial-copywriter" className="text-gold-600 hover:text-gold-500 underline underline-offset-2">
+                  <Link href="/verticals/financial-copywriter" className="text-gold-600 hover:text-gold-700 underline underline-offset-2">
                     financial copywriter
                   </Link>{' '}
                   who can navigate SEC regulations commands 40% more. Specialization is the fastest path to
@@ -265,10 +265,10 @@ export default function CopywritingRatesCalculatorPage() {
                 <h3 className="font-heading text-xl font-bold text-ink-900 pt-4">Consider the full engagement</h3>
                 <p>
                   Instead of quoting for a single{' '}
-                  <Link href="/blog/landing-page-copywriting" className="text-gold-600 hover:text-gold-500 underline underline-offset-2">
+                  <Link href="/blog/landing-page-copywriting" className="text-gold-600 hover:text-gold-700 underline underline-offset-2">
                     landing page
                   </Link>, propose a complete{' '}
-                  <Link href="/services/sales-funnel-copywriter" className="text-gold-600 hover:text-gold-500 underline underline-offset-2">
+                  <Link href="/services/sales-funnel-copywriter" className="text-gold-600 hover:text-gold-700 underline underline-offset-2">
                     sales funnel
                   </Link>{' '}
                   — landing page plus email sequence plus sales page plus upsell. Larger projects mean higher
@@ -278,13 +278,13 @@ export default function CopywritingRatesCalculatorPage() {
 
                 <p>
                   For more on building a sustainable copywriting career, see our guides to{' '}
-                  <Link href="/blog/copywriting-rates" className="text-gold-600 hover:text-gold-500 underline underline-offset-2">
+                  <Link href="/blog/copywriting-rates" className="text-gold-600 hover:text-gold-700 underline underline-offset-2">
                     copywriting rates
                   </Link>,{' '}
-                  <Link href="/blog/freelance-copywriting-guide" className="text-gold-600 hover:text-gold-500 underline underline-offset-2">
+                  <Link href="/blog/freelance-copywriting-guide" className="text-gold-600 hover:text-gold-700 underline underline-offset-2">
                     freelance copywriting
                   </Link>, and{' '}
-                  <Link href="/blog/copywriting-niches" className="text-gold-600 hover:text-gold-500 underline underline-offset-2">
+                  <Link href="/blog/copywriting-niches" className="text-gold-600 hover:text-gold-700 underline underline-offset-2">
                     the most profitable copywriting niches
                   </Link>.
                 </p>

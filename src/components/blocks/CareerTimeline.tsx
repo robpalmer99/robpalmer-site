@@ -57,7 +57,7 @@ export function CareerTimeline() {
                     <div className="w-3 h-3 rounded-full bg-gold-500 ring-4 ring-ink-950" />
                   </div>
                   {/* Content */}
-                  <div className="pb-2">
+                  <div className="pb-2 min-w-0">
                     <span className="inline-block text-xs font-heading font-semibold uppercase tracking-widest text-gold-400 mb-1">
                       {milestone.era}
                     </span>
