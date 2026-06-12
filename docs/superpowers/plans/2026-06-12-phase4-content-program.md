@@ -396,3 +396,12 @@ Dev server up; Rob reviews: the merged to-hire post, both refreshed pricing/nich
 New posts; skill posts; component changes beyond Task 1/7; Phase 5 hygiene
 (mdx.ts constructor dedup is NOTED again here — Task 1 had to touch both
 constructors — but stays in Phase 5); robots/AI policy; off-page entity work.
+
+## Correction (2026-06-12, found in final review)
+
+Task 4's verification script used thresholds (title >65 / desc >165) stricter
+than the task's own fix criteria (>80 / >200). The implementation correctly
+followed the fix criteria — 31 posts fixed, 0 remain over 80/200. The ~86
+posts in the 66–80-char title band (which truncate mildly once the
+" | Rob Palmer" suffix renders) are a deliberate deferral: logged as a
+Phase 5 candidate sweep, not silently passed.
