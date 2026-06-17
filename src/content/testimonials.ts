@@ -56,6 +56,15 @@ export const testimonials: Testimonial[] = [
     featured: true,
   },
   {
+    id: '38',
+    quote: 'The latest ads are working great. Of the 20 texts you provided we only needed 6 — and 3 in particular achieved truly amazing results. They\'re performing so well we haven\'t even tested the rest yet. The leads are perfect: happy to answer the phone and very cooperative — a significantly better target audience than before. We particularly appreciate your writing style and your ability to interpret. Excellent results!',
+    author: 'Giacomo Fusari',
+    title: 'CEO',
+    company: 'Arte Riconquista',
+    image: '',
+    featured: true,
+  },
+  {
     id: '7',
     quote: 'Your quality of writing is off the charts better.',
     author: 'John Immel',
@@ -300,14 +309,6 @@ export const testimonials: Testimonial[] = [
     author: 'Christopher Gyorgy',
     title: '',
     company: '',
-    image: '',
-  },
-  {
-    id: '38',
-    quote: 'As usual, you demonstrate great professionalism. We know that experienced copywriters typically have significant skills, but we\'re truly impressed by your approach. We are really excited and fully satisfied with the work done: excellent result!',
-    author: 'Giacomo Fusari',
-    title: 'CEO',
-    company: 'Arte Riconquista',
     image: '',
   },
 ]
