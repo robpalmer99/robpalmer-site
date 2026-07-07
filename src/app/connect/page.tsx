@@ -44,7 +44,7 @@ export default function ConnectPage() {
           </h1>
 
           <p className="mt-4 text-lg leading-relaxed text-[#332C25]">
-            มาคุยกันทาง LINE นะครับ 😊 สแกน QR โค้ดตอนนี้เลย
+            มาคุยกันทาง LINE นะครับ 😊 กดปุ่มด้านล่างเพิ่มเพื่อนได้เลย
             แล้วเราจะได้นัดเจอกันเร็ว ๆ นี้
           </p>
 
@@ -58,19 +58,6 @@ export default function ConnectPage() {
           </a>
 
           <CopyLineId lineId={LINE_ID} />
-
-          <div className="mt-6 rounded-2xl bg-white p-5 shadow-inner">
-            <div className="relative mx-auto aspect-square w-full max-w-[240px]">
-              <Image
-                src="/images/line-qr.png"
-                alt="LINE QR code — scan to add Rob"
-                fill
-                className="object-contain"
-                sizes="240px"
-              />
-            </div>
-            <p className="mt-2 text-sm text-[#332C25]/70">สแกนด้วยแอป LINE</p>
-          </div>
         </div>
       </div>
     </div>
