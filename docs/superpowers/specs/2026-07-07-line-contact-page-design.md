@@ -1,16 +1,19 @@
-# /line — LINE Contact Card Page — Design
+# /connect — LINE Contact Card Page — Design
 
 **Date:** 2026-07-07
 **Status:** Approved (Rob, 2026-07-07)
 
 ## Purpose
 
-A personal, unlisted, mobile-first page at `robpalmer.com/line` that Rob pastes into
-Thai Friendly chats to share his LINE contact info. All viewers will be on phones.
+A personal, unlisted, mobile-first page at `robpalmer.com/connect` that Rob pastes
+into Thai Friendly chats to share his LINE contact info. All viewers will be on
+phones.
 
 ## Requirements
 
-- **URL:** `/line`
+- **URL:** `/connect` — originally `/line`, renamed because Thai Friendly restricts
+  messages containing "line". Page title is likewise the neutral "Rob · Connect" so
+  a link preview never shows the word LINE.
 - **Unlisted:** not in navigation, not in sitemap (sitemap is an explicit list — no
   change needed), `robots: noindex, nofollow` page metadata. Deliberately NOT added
   to robots.txt (a disallow rule would publicly advertise the URL).
