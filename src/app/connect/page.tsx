@@ -39,8 +39,9 @@ export default function ConnectPage() {
             />
           </div>
 
-          <h1 className="mt-4 text-4xl font-bold text-[#332C25]">Rob</h1>
-          <p className="text-2xl font-semibold text-[#332C25]">ร็อบ</p>
+          <h1 className="mt-4 text-4xl font-bold text-[#332C25]">
+            Rob <span className="font-semibold">(ร็อบ)</span>
+          </h1>
 
           <p className="mt-4 text-lg leading-relaxed text-[#332C25]">
             มาคุยกันทาง LINE นะครับ 😊 สแกน QR โค้ดตอนนี้เลย
