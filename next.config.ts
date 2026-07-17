@@ -220,13 +220,8 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/services/direct-response-copywriter',
-        destination: '/services',
-        permanent: true,
-      },
-      {
         source: '/services/direct-response-copywriting',
-        destination: '/services',
+        destination: '/services/direct-response-copywriter',
         permanent: true,
       },
       // Old blog posts and pages

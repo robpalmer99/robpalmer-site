@@ -6,8 +6,7 @@
 
 ## Git Workflow
 - **Work directly on `main`.** Commit and push freely — no need to ask. Pushing backs up to GitHub but does **not** deploy: `vercel.json` sets `git.deploymentEnabled.main: false`.
-- **Deploying is separate, deliberate, and costs money** (a Vercel build). `main` = latest code; production = whatever was *last deliberately deployed*, which may lag `main`. Only deploy when the user explicitly asks or clearly wants the latest live — never as a side effect of pushing.
-- **To deploy:** Vercel dashboard → robpalmer-site → "Create Deployment" from `main`, or the project's Deploy Hook URL. Claude may trigger it via the Vercel integration **only on explicit request**.
+- **Deploying:** Claude may deploy at its own discretion whenever completed work is ready for production (policy updated 2026-07-17; the old "only on explicit request" rule is retired). Deploy with `vercel deploy --prod --yes` (the Vercel MCP `deploy_to_vercel` tool does NOT actually deploy). Always run a clean `npm run build` first and verify the live URLs after aliasing.
 - No `dev` branch; no worktrees by default (use one only for parallel agents or risky throwaway work).
 
 ## Code Conventions
