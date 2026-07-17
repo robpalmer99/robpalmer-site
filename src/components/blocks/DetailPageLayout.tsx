@@ -166,8 +166,8 @@ export function DetailPageLayout({
         </Container>
       </section>
 
-      {/* ───────────────────────────── Credential Bar or Definition Box ───────────────────────────── */}
-      {credentialBar ? (
+      {/* ───────────────────────────── Credential Bar and/or Definition Box ───────────────────────────── */}
+      {credentialBar && (
         <Section>
           <Container>
             <FadeIn>
@@ -188,7 +188,8 @@ export function DetailPageLayout({
             </FadeIn>
           </Container>
         </Section>
-      ) : definition ? (
+      )}
+      {definition && (
         <Section>
           <Container>
             <FadeIn>
@@ -201,7 +202,7 @@ export function DetailPageLayout({
             </FadeIn>
           </Container>
         </Section>
-      ) : null}
+      )}
 
       {/* ───────────────────────────── Main Content Sections ───────────────────────────── */}
       <Section>

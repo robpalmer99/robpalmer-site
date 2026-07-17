@@ -55,6 +55,206 @@ export interface Service {
 
 export const services: Service[] = [
   {
+    title: 'Direct Response Copywriter',
+    slug: 'direct-response-copywriter',
+    shortDescription:
+      'Senior direct response copywriter with 40+ years and $523M in tracked results. VSLs, sales pages, emails, and full funnels — every word accountable to the numbers.',
+    metaTitle: 'Direct Response Copywriter | $523M in Tracked Results',
+    metaDescription:
+      'Hire a direct response copywriter with 40+ years of experience and $523M in tracked client results. VSLs, sales pages, emails, funnels. Fixed-price engagements from $10K.',
+    headline: 'The Direct Response Copywriter Behind $523M in Tracked Sales',
+    subheadline:
+      'I\'ve been writing direct response copy for over 40 years — first for Apple, IBM, and Microsoft, then through a 9-year Belron campaign that tracked $523 million in sales. Today I write VSLs, sales pages, emails, and full funnels for offer owners who measure copy the only way that counts: what it sells.',
+    heroImage: '/images/services/sales-letter-copywriter.jpg',
+    heroImageAlt: 'Direct response copywriter crafting long-form sales copy',
+    definition: {
+      term: 'Direct Response Copywriter',
+      text: 'A direct response copywriter writes copy designed to produce a measurable action — a sale, an opt-in, a booked call — rather than brand awareness. Rob Palmer is a direct response copywriter with 40+ years of experience and $523M+ in tracked client results across VSLs, sales pages, email sequences, and complete funnels. He is actively taking client engagements, which typically start at $10K.',
+    },
+    heroStats: {
+      primary: { value: '$523M', label: 'In Tracked Client Sales' },
+      secondary: [
+        { value: '40+', label: 'Years Writing Direct Response' },
+        { value: '8%', label: 'Recent Cold-Traffic Sales Page CVR' },
+        { value: '340%', label: 'ROAS on Facebook Cold Traffic' },
+      ],
+    },
+    credentialBar: {
+      heading: 'Trusted by',
+      items: [
+        'Apple, IBM, and Microsoft',
+        'Belron International ($523M campaign)',
+        'Copy Accelerator (as Copy Chief)',
+        'ClickBank Platinum Vendors',
+        'Financial Publishers',
+        'Health and Supplement Brands',
+      ],
+    },
+    sections: [
+      {
+        heading: 'Most Copywriters Can\'t Sell. Here\'s How You Tell.',
+        content:
+          'Search for a copywriter and you\'ll find thousands of writers who produce clean, professional, pleasant-to-read copy. Run traffic to that copy and you\'ll discover the expensive truth: almost none of it sells. The ad clicks come in, the page reads beautifully, and the conversion rate sits at a fraction of a percent while your ad spend burns.\n\n' +
+          'The reason is simple. Most copywriters were trained to write about a product. A direct response copywriter is trained to close a stranger — to take someone from "who is this?" to "take my money" in a single sitting, and to be judged entirely on how often that happens. Different training, different craft, different accountability.\n\n' +
+          'So when you\'re evaluating a <a href="/blog/direct-response-copywriter-for-hire">direct response copywriter for hire</a>, ignore the portfolio prose and ask one question: what did the copy sell, and can they show you the numbers? Writers who have them will tell you. Writers who don\'t will change the subject.',
+      },
+      {
+        heading: '40 Years of Numbers I Can Show You',
+        content:
+          'I started writing direct response in the early 1980s, with tech clients including Apple, IBM, and Microsoft. In 1996, Belron — the world\'s largest auto-glass company — handed me a direct-response campaign that five award-winning copywriters had already failed at. I ran it for 9 years and it tracked <strong>$523 million</strong> in sales. The CEO, Gary Lubner, called me their secret weapon and asked me to keep my diary clear.\n\n' +
+          'The recent numbers hold up the same way. A funnel I wrote for Conor Reynolds converts <strong>8% on cold traffic</strong> at the sales page. An info-product campaign for Abundant clocked <strong>340% ROAS</strong> on Facebook. A ClickBank Platinum vendor gets <strong>300% ROAS</strong> on campaigns I write. Stefan Georgi — the copywriter behind over $1B in tracked sales — hired me as Copy Chief inside Copy Accelerator\'s CA Labs, reviewing and fixing other professionals\' copy.\n\n' +
+          'Every one of those results is tracked, attributed, and quotable because that\'s the deal in direct response: the copy either pays for itself or it doesn\'t. Mine has been paying for itself for four decades.',
+      },
+      {
+        heading: 'One Copywriter, Every Direct Response Format',
+        content:
+          'Hiring separate specialists for each piece of a funnel is how offers end up with a VSL that contradicts the upsell page. I write every format in the direct response arsenal, so the argument stays coherent from first click to final order bump.',
+        bullets: [
+          '<a href="/services/vsl-copywriter">VSLs and video sales letters</a> — lead, mechanism, proof stack, and close, built for cold traffic',
+          '<a href="/services/sales-page-copywriter">Sales pages and TSLs</a> — long-form persuasion architecture that carries a stranger to the order button',
+          '<a href="/services/email-copywriter">Email sequences</a> — welcome flows, launch sequences, and revenue-recovering broadcasts',
+          '<a href="/services/sales-funnel-copywriter">Complete sales funnels</a> — every page from ad to <a href="/services/upsell-downsell-copywriter">upsell</a> written as one continuous argument',
+          '<a href="/services/ad-copywriter">Ad copy</a> and <a href="/services/landing-page-copywriter">landing pages</a> — the front end that feeds everything else',
+          '<a href="/services/conversion-rate-optimization">Conversion rate optimization</a> — diagnosing and rewriting pages that read well but sell poorly',
+        ],
+      },
+      {
+        heading: 'How I Work: Research First, Then Architecture',
+        content:
+          'Forty years in, the process is fixed because it works. Every engagement moves through four phases, and none of them are skippable.',
+        bullets: [
+          'Phase 1 — Deep research: I mine reviews, forums, competitor funnels, and support transcripts until I can write your prospect\'s internal monologue. The hook always comes out of this layer.',
+          'Phase 2 — Objection mapping: every reason your prospect won\'t buy, identified and sequenced, so the copy answers each one at exactly the right moment.',
+          'Phase 3 — Architecture and writing: headline, lead, story, mechanism, proof, offer, close. Every sentence stress-tested against one question: does this move the reader closer to the order?',
+          'Phase 4 — Handoff and revision: split-test-ready headline variations, a wireframe for your design team, and one revision round included.',
+        ],
+      },
+      {
+        heading: 'Why Offer Owners Hire Me Over an Agency or an AI Tool',
+        content:
+          'You can get copy three ways in 2026. An agency gives you a junior writer behind a senior pitch deck. An AI tool gives you fluent, generic output with no strategic judgment behind it. I give you both halves of the equation: 40 years of pattern recognition from campaigns with real money on the line, amplified by <a href="/blog/triple-brain-marketing">a Triple Brain workflow</a> — Claude Code running my custom copywriting skills against a 1,239-file swipe and framework vault I\'ve built across my career.\n\n' +
+          'That combination means senior-level strategy on every line of copy, produced at a speed no agency can match. It\'s worked across <a href="/verticals/health-supplement-copywriter">health and supplements</a>, <a href="/verticals/financial-copywriter">finance</a>, <a href="/verticals/info-product-copywriter">info products</a>, <a href="/verticals/ecommerce-dtc-copywriter">e-commerce</a>, <a href="/verticals/saas-copywriter">SaaS</a>, and <a href="/verticals/clickbank-copywriter">ClickBank offers</a> — each with its own compliance posture and buyer psychology.\n\n' +
+          'If your funnel is live and the numbers aren\'t where they should be, the fastest way to find out why is to show me. Bring your pages and your conversion data to a strategy call, and I\'ll tell you where I\'d bet the leak is before you\'ve spent a dollar.',
+      },
+    ],
+    caseStudies: [
+      {
+        name: 'Belron / Safelite International',
+        category: 'Direct Response Campaign',
+        metric: '$523M / 9 Years',
+        detail: 'Five award-winning copywriters failed at it before me. I architected the campaign and ran it for nine years.',
+      },
+      {
+        name: 'Gluco 6',
+        category: 'Supplement Funnel',
+        metric: '$40M+ Revenue',
+        detail: 'Supporting copy across a top-performing health funnel.',
+      },
+      {
+        name: 'Abundant',
+        category: 'Info Product Campaign',
+        metric: '340% ROAS',
+        detail: 'Facebook cold traffic. Long-form story-driven sales page.',
+      },
+      {
+        name: 'Mobile Profits',
+        category: 'ClickBank Offer',
+        metric: '#1 on ClickBank',
+        detail: 'Hybrid sales page and VSL for a $30M offer.',
+      },
+    ],
+    deliverables: [
+      {
+        title: 'Complete Copy Asset',
+        description:
+          'The full piece your funnel needs — VSL script, sales page, email sequence, or complete funnel copy — written to close, with headlines, subheads, proof placement, and CTAs.',
+      },
+      {
+        title: 'Audience Research Brief',
+        description:
+          'The research layer behind the copy: pain points, desires, objections, and the exact language your prospects use, documented so your whole team can use it.',
+      },
+      {
+        title: 'Headline Variations',
+        description:
+          'Multiple tested-format headline options targeting different emotional angles, ready for split testing.',
+      },
+      {
+        title: 'Objection Handling Matrix',
+        description:
+          'Every objection identified in research, mapped to the copy section that answers it. This is where conversion is won or lost.',
+      },
+      {
+        title: 'Wireframe & Copy Map',
+        description:
+          'A layout guide showing your designer exactly where every element goes — section flow, proof placement, CTA positioning.',
+      },
+      {
+        title: 'Revision Round',
+        description:
+          'One revision round based on your feedback, plus my recommendations for what to split test first.',
+      },
+    ],
+    deliverablesHeading: 'What You Get When You Hire Me',
+    deliverablesSubtext:
+      'Every deliverable exists to raise your conversion rate — nothing here fills space in a Google Doc.',
+    testimonialIds: ['1', '2', '3', '4', '5', '38'],
+    portfolioItems: [
+      { title: 'Long-Form Supplement Sales Page', category: 'Sales Page' },
+      { title: 'Biz-Op VSL Script', category: 'VSL' },
+      { title: 'Info Product Launch Page', category: 'Sales Page' },
+    ],
+    midCta: {
+      headline: 'Ready to hire a direct response copywriter who shows you the numbers?',
+      subtext:
+        'Book a free strategy call. Bring your funnel and your current conversion data — I\'ll tell you honestly where the money is leaking and whether I can fix it.',
+    },
+    faqs: [
+      {
+        question: 'What does a direct response copywriter do?',
+        answer:
+          'A direct response copywriter writes copy built to produce a measurable action right now — a sale, an opt-in, a booked call — rather than to build brand awareness over time. That means VSLs, sales pages, email sequences, ads, and funnels where every element is engineered to move a reader toward one response, and where the results are tracked. The discipline comes from direct mail, where every dollar of response was measured against every dollar of cost. I\'ve carried that accountability through 40+ years of campaigns, from Apple and IBM in the 1980s to the $523M Belron campaign to today\'s cold-traffic funnels.',
+      },
+      {
+        question: 'How much does a direct response copywriter cost?',
+        answer:
+          'Senior direct response copywriters price by the project, and my engagements are fixed-price — most start at $10K, depending on scope and research depth. You\'ll have a clear quote within 48 hours of the strategy call, with no hourly billing and no scope creep. The framing that matters: a sales page converting at 4% instead of 1% on the same traffic changes the economics of your whole funnel. Cheap copy that doesn\'t convert is the most expensive copy you can buy. I\'ve written <a href="/blog/how-much-does-a-direct-response-copywriter-cost">a full pricing guide</a> if you want the detailed breakdown.',
+      },
+      {
+        question: 'How do I hire a direct response copywriter — what should I look for?',
+        answer:
+          'Ask for tracked results, in numbers, from campaigns where real money was on the line. Conversion rates, ROAS, revenue attributed to specific pieces of copy. A portfolio shows you whether someone can write; only numbers show you whether their copy sells. Then check who vouches for them — endorsements from operators who spend their own money on traffic mean more than any writing sample. Finally, look at their process: if research and objection mapping don\'t come before writing, the copy will read well and sell poorly.',
+      },
+      {
+        question: 'What\'s the difference between a direct response copywriter and a regular copywriter?',
+        answer:
+          'Accountability. A brand or content copywriter is judged on tone, style, and engagement — things that are real but hard to measure. A direct response copywriter is judged on response: did the reader buy, opt in, or book the call? That single difference changes everything about the craft — the research goes deeper, the structure follows proven persuasion sequences, every claim gets backed with proof, and every page ends with a close. If your revenue depends on what the copy sells, you want the writer whose career depends on the same thing.',
+      },
+      {
+        question: 'Are you taking new clients?',
+        answer:
+          'I take a selective number of new engagements each quarter so the work stays at the level the proof requires. Most kickoffs happen within two weeks of the strategy call. If your project is a fit, you\'ll have a fixed-price proposal within 48 hours. If it isn\'t, I\'ll tell you on the call and point you toward a writer in my network who suits it better — no finder\'s fee.',
+      },
+      {
+        question: 'How do you use AI in your copywriting?',
+        answer:
+          'I use Claude Code running my own custom-built copywriting skills — proprietary skill files that encode 40 years of frameworks, formulas, and evaluation criteria — with my 1,239-file copywriting vault as the reference layer. I make every strategic call: the angle, the mechanism, the offer structure, the close. The AI carries research volume and drafting speed. The result is senior judgment on every line, delivered faster than an agency team can schedule its kickoff meeting.',
+      },
+      {
+        question: 'What formats and industries do you cover?',
+        answer:
+          'Formats: VSLs, sales pages and TSLs, email sequences, ad copy, landing pages, upsell flows, and complete funnels. Industries: health and supplements (inside the $40M+ Gluco 6 funnel), finance (compliance-aware copy at 5.7% opt-in-to-sale), info products (340% ROAS), ClickBank offers (the #1 hybrid at $30M), e-commerce and DTC, SaaS, and biz-op. Each vertical has its own buyer psychology and compliance rules — the frameworks adapt, the accountability doesn\'t.',
+      },
+      {
+        question: 'What happens after the strategy call?',
+        answer:
+          'Within 48 hours you\'ll have a fixed-price proposal with scope, deliverables, and timeline. Say yes and kickoff happens inside two weeks: research and diagnostic first, then objection mapping and architecture, then the draft, then one revision round. You see the work as it develops — never a single surprise drop at the end.',
+      },
+    ],
+    relatedServices: ['sales-page-copywriter', 'vsl-copywriter'],
+    relatedVerticals: ['info-product-copywriter', 'health-supplement-copywriter'],
+  },
+  {
     title: 'VSL Copywriter',
     slug: 'vsl-copywriter',
     shortDescription:
