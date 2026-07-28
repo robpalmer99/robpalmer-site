@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo, useEffect, useRef } from 'react'
+import { useState, useMemo, useEffect, useRef, Fragment } from 'react'
 import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { BlogPostCard } from './BlogPostCard'
@@ -8,7 +8,7 @@ import { useDebounce } from '@/hooks/useDebounce'
 import { cn } from '@/lib/utils'
 import { Badge } from '@/components/ui/Badge'
 import type { BlogPostMeta } from '@/lib/mdx'
-import type { SiteSearchResult } from '@/lib/search'
+import { parseQuery, scoreMatch, type SiteSearchResult } from '@/lib/search'
 
 interface BlogGridProps {
   posts: BlogPostMeta[]
@@ -42,8 +42,10 @@ export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], curren
   const isFiltered = activeCategory !== 'All' || debouncedQuery.trim() !== ''
   const isSearching = debouncedQuery.trim() !== ''
 
+  const parsedQuery = useMemo(() => parseQuery(debouncedQuery), [debouncedQuery])
+
   // Filter posts: when filtering, search across ALL posts; otherwise show paginated posts
-  const filteredPosts = useMemo(() => {
+  const scoredPosts = useMemo(() => {
     let results = isFiltered ? allPosts : posts
 
     // Category filter
@@ -51,36 +53,52 @@ export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], curren
       results = results.filter((post) => post.category === activeCategory)
     }
 
-    // Search filter — match all words (AND logic) so "claude skills" finds posts
-    // containing both "claude" and "skills" anywhere in the searchable text
-    const query = debouncedQuery.toLowerCase().trim()
-    if (query) {
-      const queryWords = query.split(/\s+/).filter(Boolean)
-      results = results.filter((post) => {
-        const searchableText = [
-          post.title,
-          post.description,
-          post.category,
-          ...post.tags,
-        ]
-          .join(' ')
-          .toLowerCase()
-        return queryWords.every((word) => searchableText.includes(word))
-      })
-    }
+    if (!parsedQuery) return results.map((post) => ({ post, score: 0 }))
 
+    // Rank by relevance: title matches beat description/tag matches, so a post
+    // *about* the query outranks one that merely mentions it
     return results
-  }, [posts, allPosts, activeCategory, debouncedQuery, isFiltered])
+      .map((post) => ({
+        post,
+        score: scoreMatch(
+          {
+            titleText: post.title.toLowerCase(),
+            summaryText: [post.description, post.category, ...post.tags]
+              .join(' ')
+              .toLowerCase(),
+            bodyText: '',
+          },
+          parsedQuery
+        ),
+      }))
+      .filter((r) => r.score > 0)
+      .sort(
+        (a, b) =>
+          b.score - a.score ||
+          new Date(b.post.date).getTime() - new Date(a.post.date).getTime()
+      )
+  }, [posts, allPosts, activeCategory, parsedQuery, isFiltered])
+
+  const filteredPosts = useMemo(() => scoredPosts.map((r) => r.post), [scoredPosts])
 
   // Site-wide search results (services, verticals, case studies, portfolio)
-  const siteResults = useMemo(() => {
-    const query = debouncedQuery.toLowerCase().trim()
-    if (!query) return []
-    const queryWords = query.split(/\s+/).filter(Boolean)
-    return siteSearchIndex.filter((item) =>
-      queryWords.every((word) => item.searchableText.includes(word))
-    )
-  }, [siteSearchIndex, debouncedQuery])
+  const scoredSiteResults = useMemo(() => {
+    if (!parsedQuery) return []
+    return siteSearchIndex
+      .map((item) => ({ item, score: scoreMatch(item, parsedQuery) }))
+      .filter((r) => r.score > 0)
+      .sort((a, b) => b.score - a.score)
+  }, [siteSearchIndex, parsedQuery])
+
+  const siteResults = useMemo(
+    () => scoredSiteResults.map((r) => r.item),
+    [scoredSiteResults]
+  )
+
+  // Best results first: whichever group holds the top-scoring match leads.
+  // Pages win ties so a direct service-page hit isn't buried under articles.
+  const pagesFirst =
+    (scoredSiteResults[0]?.score ?? -1) >= (scoredPosts[0]?.score ?? -1)
 
   const totalResults = isSearching
     ? filteredPosts.length + siteResults.length
@@ -95,6 +113,66 @@ export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], curren
   const hasPagination = totalPages > 1
   const prevHref = currentPage === 2 ? '/blog' : `/blog/page/${currentPage - 1}`
   const nextHref = `/blog/page/${currentPage + 1}`
+
+  // Show section headings only when both kinds of result are on screen
+  const showHeadings = isSearching && siteResults.length > 0 && filteredPosts.length > 0
+
+  const pagesSection =
+    isSearching && siteResults.length > 0 ? (
+      <div className="mb-10">
+        {showHeadings && (
+          <h2 className="text-lg font-heading font-bold text-ink-950 mb-4">Pages</h2>
+        )}
+        <ul role="list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {siteResults.map((result) => (
+            <li key={result.url + result.title}>
+              <Link
+                href={result.url}
+                className="group block rounded-xl border border-paper-200 bg-white shadow-sm overflow-hidden p-5 transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5"
+              >
+                <div className="flex items-center gap-2 mb-2">
+                  <Badge variant="default">{result.type}</Badge>
+                </div>
+                <h3 className="font-heading text-base font-bold text-ink-950 group-hover:text-gold-600 transition-colors leading-snug">
+                  {result.title}
+                </h3>
+                <p className="mt-1.5 text-base lg:text-[1rem] text-ink-700 leading-relaxed font-body line-clamp-2">
+                  {result.description}
+                </p>
+                <span className="mt-3 inline-block text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-700 transition-colors">
+                  View page →
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ) : null
+
+  const articlesSection =
+    filteredPosts.length > 0 ? (
+      <div className={cn(showHeadings && 'mb-10')}>
+        {showHeadings && (
+          <h2 className="text-lg font-heading font-bold text-ink-950 mb-4">Articles</h2>
+        )}
+        <ul role="list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredPosts.map((post) => (
+            <li key={post.slug}>
+              <BlogPostCard
+                title={post.title}
+                slug={post.slug}
+                excerpt={post.description}
+                date={post.date}
+                category={post.category}
+                readingTime={post.readingTime}
+                heroImage={post.heroImage}
+                heroAlt={post.heroAlt}
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
+    ) : null
 
   return (
     <>
@@ -217,64 +295,14 @@ export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], curren
             : `Showing ${totalResults} ${totalResults === 1 ? 'result' : 'results'}.`}
         </p>
 
-        {/* Site-wide results (shown when searching) */}
-        {isSearching && siteResults.length > 0 && (
-          <div className="mb-10">
-            <h2 className="text-lg font-heading font-bold text-ink-950 mb-4">
-              Pages
-            </h2>
-            <ul role="list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {siteResults.map((result) => (
-                <li key={result.url + result.title}>
-                  <Link
-                    href={result.url}
-                    className="group block rounded-xl border border-paper-200 bg-white shadow-sm overflow-hidden p-5 transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5"
-                  >
-                    <div className="flex items-center gap-2 mb-2">
-                      <Badge variant="default">{result.type}</Badge>
-                    </div>
-                    <h3 className="font-heading text-base font-bold text-ink-950 group-hover:text-gold-600 transition-colors leading-snug">
-                      {result.title}
-                    </h3>
-                    <p className="mt-1.5 text-base lg:text-[1rem] text-ink-700 leading-relaxed font-body line-clamp-2">
-                      {result.description}
-                    </p>
-                    <span className="mt-3 inline-block text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-700 transition-colors">
-                      View page →
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+        {/* Sections render in relevance order — whichever holds the best match leads */}
+        {(pagesFirst ? [pagesSection, articlesSection] : [articlesSection, pagesSection]).map(
+          (section, i) => (
+            <Fragment key={i}>{section}</Fragment>
+          )
         )}
 
-        {/* Blog post results */}
-        {filteredPosts.length > 0 ? (
-          <>
-            {isSearching && siteResults.length > 0 && (
-              <h2 className="text-lg font-heading font-bold text-ink-950 mb-4">
-                Articles
-              </h2>
-            )}
-            <ul role="list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredPosts.map((post) => (
-                <li key={post.slug}>
-                  <BlogPostCard
-                    title={post.title}
-                    slug={post.slug}
-                    excerpt={post.description}
-                    date={post.date}
-                    category={post.category}
-                    readingTime={post.readingTime}
-                    heroImage={post.heroImage}
-                    heroAlt={post.heroAlt}
-                  />
-                </li>
-              ))}
-            </ul>
-          </>
-        ) : isFiltered && siteResults.length === 0 ? (
+        {filteredPosts.length === 0 && isFiltered && siteResults.length === 0 && (
           <div className="text-center py-16">
             <p className="text-lg text-paper-600 font-body mb-4">
               No results match your current filters.
@@ -286,7 +314,7 @@ export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], curren
               Clear all filters
             </button>
           </div>
-        ) : null}
+        )}
       </div>
 
       {/* Pagination */}
