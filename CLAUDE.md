@@ -31,7 +31,7 @@
 - Portfolio: `src/app/portfolio/_data/portfolio.ts` (12 items)
 - Case Studies: `src/app/case-studies/_data/case-studies.ts` (2 items)
 - Testimonials: `src/content/testimonials.ts` (38 items, IDs '1'-'38')
-- Blog: 148 MDX posts in `src/content/blog/`
+- Blog: MDX posts in `src/content/blog/` (~150; count drifts — check the directory)
 - Constants: `src/lib/constants.ts` (SITE_URL, NAV_LINKS, STATS, etc.)
 
 ## Content Rendering
