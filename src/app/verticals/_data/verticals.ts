@@ -502,7 +502,7 @@ export const verticals: Vertical[] = [
       {
         heading: 'Asset Types I Write for DTC and E-Commerce Operators',
         content:
-          'DTC operators don\'t buy copy by category \u2014 they buy connected revenue stacks. Each asset has different mechanics, but they\'re engineered to work as one. The asset types below are the ones I ship most often for DTC brands and e-commerce operators.',
+          'DTC operators don\'t buy copy by category \u2014 they buy connected revenue stacks. Each asset has different mechanics, but they\'re engineered to work as one. The asset types below are the ones I ship most often for DTC brands and e-commerce operators. And if the real gap is the paid-social testing loop itself \u2014 hooks, concepts, and iteration volume rather than any single asset \u2014 that\'s a different engagement: <a href="/blog/hire-a-creative-strategist">hire a creative strategist</a>.',
         bullets: [
           '<a href="/services/email-copywriter">Email Copywriter</a> \u2014 abandoned cart, post-purchase upsell, subscription retention, win-back, and broadcast sequences. The highest-ROI channel for DTC.',
           '<a href="/services/upsell-downsell-copywriter">Upsell & Downsell Copywriter</a> \u2014 post-purchase OTO stacks lifting AOV by 30\u2013100% on existing traffic. The back-end where DTC margin actually lives.',
