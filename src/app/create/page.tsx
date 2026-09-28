@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Logo } from '@/components/ui/Logo'
 import { Button } from '@/components/ui/Button'
@@ -21,6 +22,24 @@ export const metadata: Metadata = {
     "Meta's Andromeda algorithm demands constant fresh creative. I feed it: 40 years of direct response plus a one-of-a-kind AI production system, for a small number of DTC brands.",
   robots: { index: false, follow: false },
   alternates: { canonical: 'https://robpalmer.com/create' },
+  openGraph: {
+    title: 'Creative Strategy for DTC Brands | Rob Palmer',
+    description:
+      "Meta's Andromeda algorithm demands constant fresh creative. I feed it: 40 years of direct response plus a one-of-a-kind AI production system.",
+    url: 'https://robpalmer.com/create',
+    images: [
+      {
+        url: 'https://robpalmer.com/images/create/monster-og.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'The Andromeda algorithm devouring a stream of ad creatives',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['https://robpalmer.com/images/create/monster-og.jpg'],
+  },
 }
 
 const PROOF_IDS = ['4', '38', '5', '15', '2', '6'] as const
@@ -47,7 +66,7 @@ export default function CreatePage() {
           </header>
         </Container>
         <Container>
-          <div className="py-16 md:py-24">
+          <div className="grid items-center gap-10 py-16 md:py-20 lg:grid-cols-[1fr_380px] lg:gap-16">
             <FadeIn immediate>
               <p className="font-heading text-sm font-semibold uppercase tracking-[0.2em] text-gold-400">
                 For DTC founders scaling paid social
@@ -60,6 +79,18 @@ export default function CreatePage() {
                 How to keep the Andromeda monster fed: fresh, hypothesis-driven ad concepts
                 every single week, at a pace no agency or in-house team can match.
               </p>
+            </FadeIn>
+            <FadeIn immediate className="hidden lg:block">
+              <div className="relative aspect-[2/3] overflow-hidden rounded-xl border border-ink-700">
+                <Image
+                  src="/images/create/andromeda-monster.jpg"
+                  alt="The Andromeda algorithm, drawn as a dark data-mesh monster devouring a stream of ad creatives"
+                  fill
+                  className="object-cover"
+                  sizes="380px"
+                  priority
+                />
+              </div>
             </FadeIn>
           </div>
         </Container>
@@ -143,11 +174,12 @@ export default function CreatePage() {
       <section className="bg-paper-50 py-16 md:py-20">
         <Container>
           <FadeIn>
-            <div className="max-w-3xl">
-              <h2 className="font-heading text-3xl font-semibold text-ink-950 md:text-4xl">
-                I&rsquo;m One of the Few
-              </h2>
-              <div className="mt-6 space-y-5 font-body text-lg leading-relaxed text-paper-800">
+            <div className="grid items-start gap-10 md:grid-cols-[1fr_280px] lg:gap-16">
+              <div className="max-w-3xl">
+                <h2 className="font-heading text-3xl font-semibold text-ink-950 md:text-4xl">
+                  I&rsquo;m One of the Few
+                </h2>
+                <div className="mt-6 space-y-5 font-body text-lg leading-relaxed text-paper-800">
                 <p>
                   My name is Rob Palmer. I&rsquo;ve been writing direct response for more
                   than forty years. The campaigns I&rsquo;ve worked on have tracked over $523
@@ -168,6 +200,16 @@ export default function CreatePage() {
                   outside, in a single evening. Now imagine it running inside your account
                   every week.
                 </p>
+                </div>
+              </div>
+              <div className="relative mx-auto aspect-[4/5] w-full max-w-[280px] overflow-hidden rounded-xl border border-paper-200 shadow-md md:mt-2">
+                <Image
+                  src="/images/headshots/rob-palmer-clean.png"
+                  alt="Rob Palmer"
+                  fill
+                  className="object-cover object-top"
+                  sizes="280px"
+                />
               </div>
             </div>
           </FadeIn>
@@ -230,24 +272,36 @@ export default function CreatePage() {
       <section className="bg-paper-50 py-16 md:py-20">
         <Container>
           <FadeIn>
-            <div className="max-w-3xl">
-              <h2 className="font-heading text-3xl font-semibold text-ink-950 md:text-4xl">
-                How We Will Work Together
-              </h2>
-              <div className="mt-6 space-y-5 font-body text-lg leading-relaxed text-paper-800">
-                <p>
-                  I read your ad account the way I read a funnel: winners, losers, and the
-                  belief your buyer is still missing. Each read becomes a hypothesis. Each
-                  hypothesis becomes finished creative: net-new ad concepts, pre-sell pages,
-                  advertorials, a rebuilt close where the data says the leak is. The monster
-                  gets fed every single week, and everything it eats is built on a reason.
-                </p>
-                <p>
-                  Your media buyer keeps the spend and the account. I own what gets tested
-                  and why. Every winner breeds the next test. Every loser teaches you
-                  something specific about your buyer, so the budget compounds into insight
-                  instead of evaporating.
-                </p>
+            <div className="grid items-center gap-10 md:grid-cols-[1fr_300px] lg:gap-16">
+              <div className="max-w-3xl">
+                <h2 className="font-heading text-3xl font-semibold text-ink-950 md:text-4xl">
+                  How We Will Work Together
+                </h2>
+                <div className="mt-6 space-y-5 font-body text-lg leading-relaxed text-paper-800">
+                  <p>
+                    I read your ad account the way I read a funnel: winners, losers, and the
+                    belief your buyer is still missing. Each read becomes a hypothesis. Each
+                    hypothesis becomes finished creative: net-new ad concepts, pre-sell
+                    pages, advertorials, a rebuilt close where the data says the leak is.
+                    The monster gets fed every single week, and everything it eats is built
+                    on a reason.
+                  </p>
+                  <p>
+                    Your media buyer keeps the spend and the account. I own what gets tested
+                    and why. Every winner breeds the next test. Every loser teaches you
+                    something specific about your buyer, so the budget compounds into
+                    insight instead of evaporating.
+                  </p>
+                </div>
+              </div>
+              <div className="relative mx-auto aspect-square w-full max-w-[300px] overflow-hidden rounded-xl border border-paper-200 shadow-md">
+                <Image
+                  src="/images/create/testing-loop.jpg"
+                  alt="The testing loop: ad concepts cycling through test after test, winners igniting gold, losers fading to ash"
+                  fill
+                  className="object-cover"
+                  sizes="300px"
+                />
               </div>
             </div>
           </FadeIn>
