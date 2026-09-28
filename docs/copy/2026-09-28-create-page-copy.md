@@ -15,21 +15,13 @@ Internal notes are marked **[NOTE]** and are not page copy. Everything else ship
 
 **[NOTE] Optional eyebrow line, small caps:** For DTC founders scaling paid social
 
-**Headline — option A (recommended):**
+**Headline (locked, Rob 2026-09-28):**
 
-# Meta Built a Hungry Monster. Your ROAS Belongs to Whoever Feeds It.
+# Your Winning Ads Die in Weeks Now. The Fix Is 40 Years Old — Plus an AI Meta Never Saw Coming.
 
-**Headline — option B:**
+**Sub-line:**
 
-# Winning Ads Used to Last for Months. Andromeda Eats Them in Weeks.
-
-**Headline — option C:**
-
-# The Algorithm Is Hungrier Than Your Creative Team. That Is the Whole Problem.
-
-**Sub-line (all options):**
-
-I'm Rob Palmer. I keep the monster fed: creative strategy and conversion copy for a small number of DTC brands at a time, built on forty years of direct response and an AI production system you won't find anywhere else.
+How to keep the Andromeda monster fed: fresh, hypothesis-driven ad concepts every single week, at a pace no agency or in-house team can match.
 
 **CTA button:** Book the Half Hour
 
@@ -61,7 +53,7 @@ The people with the craft mostly retired before the tooling arrived. The people 
 
 ## 4. The solution: I'm one of the few
 
-I've been writing direct response for more than forty years. The campaigns I've worked on have tracked over $523 million in sales — for Apple, IBM, Microsoft, Citibank and Morgan Stanley when the work was direct mail, and for the operators behind some of ClickBank's biggest offers now that it's Meta and YouTube. Stefan Georgi's team hired me as Copy Chief for CA Labs. Justin Goff says I "knocked it out of the park." The current workload includes beat-the-control advertorials for scaled supplement brands.
+My name is Rob Palmer. I've been writing direct response for more than forty years. The campaigns I've worked on have tracked over $523 million in sales — for Apple, IBM, Microsoft, Citibank and Morgan Stanley when the work was direct mail, and for the operators behind some of ClickBank's biggest offers now that it's Meta and YouTube. Stefan Georgi's team hired me as Copy Chief for CA Labs. Justin Goff says I "knocked it out of the park." The current workload includes beat-the-control advertorials for scaled supplement brands.
 
 And unlike almost everyone my age in this craft, I spent the last two years building the AI side myself instead of watching it happen.
 
