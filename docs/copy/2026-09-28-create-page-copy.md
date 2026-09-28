@@ -43,9 +43,9 @@ Feed it variations of last quarter's winner and delivery narrows, CPA drifts up,
 
 The fix has a job title: creative strategist. Someone who owns what gets made next and why, so the volume you ship is volume that teaches you something.
 
-Here's the catch. LinkedIn currently lists more than 11,000 open creative strategist roles in the US alone, and the supply side is flooded with the wrong people. One agency owner publicly documented interviewing 100 candidates in a single summer; most had never run a test on real budget. The title is five years old and fashionable, so it attracts people who learned it from LinkedIn posts rather than from a losing test at 2 a.m.
+Except almost nobody holding the title can actually do the job. LinkedIn currently lists more than 11,000 open creative strategist roles in the US alone, and the supply side is flooded with the wrong people. One agency owner publicly documented interviewing 100 candidates in a single summer; most had never run a test on real budget. The title is five years old and fashionable, so it attracts people who learned it from LinkedIn posts rather than from a losing test at 2 a.m.
 
-What the job actually demands is a combination that barely exists. Career-long direct response craft, so concepts come from persuasion principles instead of guesswork. The analytical rigour to read an ad account and pull the next hypothesis out of it. And advanced, hands-on AI tooling, so throughput reaches Andromeda numbers without turning to slop.
+What the job actually demands is a combination that barely exists. Career-long direct response craft, so concepts come from persuasion principles instead of guesswork. The analytical rigor to read an ad account and pull the next hypothesis out of it. And advanced, hands-on AI tooling, so throughput reaches Andromeda numbers without turning to slop.
 
 The people with the craft mostly retired before the tooling arrived. The people with the tooling mostly never wrote a control. That gap is why every brand at scale is hunting the same handful of operators.
 
@@ -53,7 +53,7 @@ The people with the craft mostly retired before the tooling arrived. The people 
 
 ## 4. The solution: I'm one of the few
 
-My name is Rob Palmer. I've been writing direct response for more than forty years. The campaigns I've worked on have tracked over $523 million in sales — for Apple, IBM, Microsoft, Citibank and Morgan Stanley when the work was direct mail, and for the operators behind some of ClickBank's biggest offers now that it's Meta and YouTube. Stefan Georgi's team hired me as Copy Chief for CA Labs. Justin Goff says I "knocked it out of the park." The current workload includes beat-the-control advertorials for scaled supplement brands.
+My name is Rob Palmer. I've been writing direct response for more than forty years. The campaigns I've worked on have tracked over $523 million in sales: for Apple, IBM, Microsoft, Citibank and Morgan Stanley when the work was direct mail, and for the operators behind some of ClickBank's biggest offers now that it's Meta and YouTube. Stefan Georgi's team hired me as Copy Chief for CA Labs. Justin Goff says I "knocked it out of the park." The current workload includes beat-the-control advertorials for scaled supplement brands.
 
 And unlike almost everyone my age in this craft, I spent the last two years building the AI side myself instead of watching it happen.
 
@@ -63,15 +63,25 @@ If a teardown of your funnel brought you here, you've already watched me work. T
 
 ## 5. Only available here: the three brains
 
-The system I run doesn't exist anywhere else, and it isn't a metaphor. It's three specific capabilities that have to live in one head to work:
+The system I run doesn't exist anywhere else. Three specific capabilities have to live in one head for it to work, and they almost never do:
 
-**Brain one: the craft.** Forty years of DR persuasion — Schwartz, Halbert, Hopkins, Caples — internalised across thousands of campaigns. This is where hooks that stop the scroll actually come from.
+**Brain one: the craft.** Forty years of DR persuasion (Schwartz, Halbert, Hopkins, Caples) internalized across thousands of campaigns. Hooks that stop the scroll come from this, and nowhere else.
 
-**Brain two: the machine.** My own Claude Code skill files, encoding the frameworks, evaluation criteria and pattern libraries from those campaigns into a working AI production system. This is how one operator ships agency volume without agency slop. Some of the skills are public, so you can inspect the substance instead of taking my word for it.
+**Brain two: the machine.** My own Claude Code skill files, encoding the frameworks, evaluation criteria and pattern libraries from those campaigns into a working AI production system. That machine is how one operator ships agency volume without agency slop. Some of the skills are public, so you can inspect the substance instead of taking my word for it.
 
-**Brain three: the numbers.** I read ad-account data the way a trader reads order flow. Every result becomes the next hypothesis, so your spend compounds into insight instead of evaporating.
+**Brain three: the numbers.** I read ad-account data the way a trader reads order flow. Every result becomes the next hypothesis, so the account gets smarter with every dollar it spends.
 
-Plenty of people have one brain. A few have two. I have never met another operator running all three — which is exactly the combination Andromeda made mandatory.
+Plenty of people have one brain. A few have two. I have never met another operator running all three. And all three is exactly the combination Andromeda made mandatory.
+
+---
+
+## 5a. What a week on the roster looks like
+
+I read your ad account the way I read a funnel: winners, losers, and the belief your buyer is still missing. Each read becomes a hypothesis. Each hypothesis becomes finished creative: net-new ad concepts, pre-sell pages, advertorials, a rebuilt close where the data says the leak is. The monster gets fed every single week, and everything it eats is built on a reason.
+
+Your media buyer keeps the spend and the account. I own what gets tested and why. Every winner breeds the next test. Every loser teaches you something specific about your buyer, so the budget compounds into insight instead of evaporating.
+
+**[NOTE]** This section restores the concrete deliverables + the media-buyer division of labour from draft 1 — the missing-elements audit flagged the retainer's "what's included" as absent in draft 2, and "will he replace my buyer?" as the top unhandled objection. "The budget compounds into insight instead of evaporating" moved here from Brain three; see the edit to section 5.
 
 ---
 
@@ -101,17 +111,25 @@ Plenty of people have one brain. A few have two. I have never met another operat
 
 **[NOTE] Bench (swap in if you prefer):** Caleb O'Dowd — "Rob, high five!! You da Man! Great to get that bump in conversions!" (big DR name, results); Ryan Kowalski, Konscious Keto — "That's solid copy. I have a feeling this is going to be a winner." (named DTC supplement brand). Byron Walker (Survival Frog) is a relevant brand name but the quote itself is weak. Blockquote formatting is for this doc only — cards on the page.
 
+**Mid-page CTA (directly under the testimonial cards):**
+
+**CTA button:** Book the Half Hour
+
+**Line above button:** If those are the kinds of numbers your account is missing, the conversation is free.
+
 ---
 
 ## 6. The scarcity: there is only one of me
 
-The AI scales the output. It doesn't scale me — and the strategy layer, the part that decides what gets tested and why, is me. Every brand on the roster gets my personal attention on their account every week, which puts a hard ceiling on how many brands there can be.
+The AI scales the output. It doesn't scale me. And the strategy layer, the part that decides what gets tested and why, is me. Every brand on the roster gets my personal attention on their account every week, which puts a hard ceiling on how many brands there can be.
 
 As I write this, the calendar has room for one more retainer. Possibly two. After that, new inquiries get a referral to people I trust, and a wait.
 
 ---
 
 ## 7. The call
+
+One qualifier first: this is for founder-run DTC brands spending real money on ads that perform, into a funnel that leaks. If that's you, book the call.
 
 Thirty minutes, free, no deck. I'll have read your funnel before we talk, and you'll leave with at least one thing worth testing whether or not we ever work together.
 
@@ -131,6 +149,6 @@ If the monster is already eating your ROAS, the worst move is waiting until it's
 
 ---
 
-**[NOTE] Word count (page copy only): ~940 — inside the 900–1,200 budget.**
+**[NOTE] Word count (page copy only): ~1,050 after the copychief pass — inside the 900–1,200 budget.**
 
-**[NOTE] Sweeps run on this draft:** no negate-then-correct antithesis ("The monster isn't punishing you. It's just hungry" is a plain statement pair, not the not-X-but-Y template; "It doesn't scale me" is followed by explanation, not a correction); one deliberate fragment burst (section 2, "Not resizes…"); em dashes four, each earning its place; no time-of-day or calendar anchors ("As I write this" is evergreen-safe but the spot count itself needs manual updating when the roster changes); US vocabulary; contractions in narrative, uncontracted forms on weight lines ("That gap is why…", "There is only one of me" in the heading).
+**[NOTE] Copychief pass applied 2026-09-28:** lint FAIL "Here's the catch" replaced with a working transition; negate-then-correct antithesis in the three-brains opener rewritten; page-copy em dashes cut to one (the headline's, deliberate); rigour→rigor, internalised→internalized for the US market; section 5a added (concrete weekly deliverables + media-buyer division of labour — the audit's two top absences); mid-page CTA added after testimonials; qualifier line added to the close. Remaining linter WARNs are internal notes, verbatim testimonial quotes, and two low-confidence triplet flags judged fine in context ("Free, thirty minutes, and…" microcopy; "winners, losers, and the belief…"). "As I write this" is evergreen-safe but the retainer-spot count needs manual updating when the roster changes.
