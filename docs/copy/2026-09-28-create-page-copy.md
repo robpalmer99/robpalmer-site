@@ -81,7 +81,33 @@ The system I run doesn't exist anywhere else, and it isn't a metaphor. It's thre
 
 Plenty of people have one brain. A few have two. I have never met another operator running all three — which is exactly the combination Andromeda made mandatory.
 
-**[NOTE] Testimonial cards follow this section — same four as draft 1, exactly as in `src/content/testimonials.ts`:** Stefan Georgi (Copy Chief for CA Labs), Ben Palmer (300% ROAS, ClickBank Platinum), Giacomo Fusari (full ads-test quote — the anchor), Mark Shay ("most methodical copywriter I've seen", Supplement Marketer).
+---
+
+## 5b. Proof: what the people who paid me say
+
+**[NOTE] Section heading on the page:** What the people who paid me say
+
+**[NOTE] Six testimonial cards, verbatim from `src/content/testimonials.ts`, chosen for relevance to a DTC founder buying ad performance (results and ads first, authority second):**
+
+> "Rob is a killer copywriter. We're getting a 300% Return on Ad Spend..."
+> — **Ben Palmer**, ClickBank Platinum Vendor
+
+> "The latest ads are working great. Of the 20 texts you provided we only needed 6 — and 3 in particular achieved truly amazing results. They're performing so well we haven't even tested the rest yet. The leads are perfect: happy to answer the phone and very cooperative — a significantly better target audience than before. We particularly appreciate your writing style and your ability to interpret. Excellent results!"
+> — **Giacomo Fusari**, CEO, Arte Riconquista
+
+> "The funnel you wrote is doing great. Sales page converting at 8% on cold traffic."
+> — **Conor Reynolds**, Online Marketer
+
+> "One of your ads has just taken the lead. High-converting campaign!"
+> — **Marc David Lindsay**, Direct Response Marketer
+
+> "We hired Rob as our Copy Chief for CA Labs!"
+> — **Stefan Georgi**, Founder, Copy Accelerator
+
+> "Rob is probably the most methodical copywriter I've seen. This impresses me."
+> — **Mark Shay**, Supplement Marketer
+
+**[NOTE] Bench (swap in if you prefer):** Caleb O'Dowd — "Rob, high five!! You da Man! Great to get that bump in conversions!" (big DR name, results); Ryan Kowalski, Konscious Keto — "That's solid copy. I have a feeling this is going to be a winner." (named DTC supplement brand). Byron Walker (Survival Frog) is a relevant brand name but the quote itself is weak. Blockquote formatting is for this doc only — cards on the page.
 
 ---
 
