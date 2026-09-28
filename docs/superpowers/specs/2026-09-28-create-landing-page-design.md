@@ -1,7 +1,7 @@
 # /create — Outreach Landing Page for the Creative-Strategist Offer
 
 **Date:** 2026-09-28
-**Status:** Approved approach (Option A: confirm-and-convert one-pager); copy pending DR workflow
+**Status:** SHIPPED 2026-09-28 — live at https://robpalmer.com/create (noindex, out of sitemap). Final structure diverged from this spec by Rob's direction during the copy phase: PAS frame (Andromeda monster problem → agitate → solution → three brains → scarcity → CTA) instead of the confirm-and-convert framing, single CTA in the final section only, logo subtitle CREATIVE STRATEGIST. Copy source of truth: `docs/copy/2026-09-28-create-page-copy.md`.
 
 ## Purpose
 
