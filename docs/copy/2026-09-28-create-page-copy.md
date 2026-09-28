@@ -23,9 +23,7 @@ Internal notes are marked **[NOTE]** and are not page copy. Everything else ship
 
 How to keep the Andromeda monster fed: fresh, hypothesis-driven ad concepts every single week, at a pace no agency or in-house team can match.
 
-**CTA button:** Book the Half Hour
-
-**Microcopy under button:** Free, thirty minutes, and I'll have read your funnel before we talk.
+**[NOTE] No CTA in the hero (Rob, 2026-09-28): the single CTA lives in section 7, after the pitch is complete — VSL hard-gate discipline applied to the page. The hero's job is to pull them into section 2, nothing else.**
 
 ---
 
@@ -111,11 +109,7 @@ Your media buyer keeps the spend and the account. I own what gets tested and why
 
 **[NOTE] Bench (swap in if you prefer):** Caleb O'Dowd — "Rob, high five!! You da Man! Great to get that bump in conversions!" (big DR name, results); Ryan Kowalski, Konscious Keto — "That's solid copy. I have a feeling this is going to be a winner." (named DTC supplement brand). Byron Walker (Survival Frog) is a relevant brand name but the quote itself is weak. Blockquote formatting is for this doc only — cards on the page.
 
-**Mid-page CTA (directly under the testimonial cards):**
-
-**CTA button:** Book the Half Hour
-
-**Line above button:** If those are the kinds of numbers your account is missing, the conversation is free.
+**[NOTE] No mid-page CTA (Rob, 2026-09-28) — the single CTA lives in section 7.**
 
 ---
 
@@ -151,4 +145,4 @@ If the monster is already eating your ROAS, the worst move is waiting until it's
 
 **[NOTE] Word count (page copy only): ~1,050 after the copychief pass — inside the 900–1,200 budget.**
 
-**[NOTE] Copychief pass applied 2026-09-28:** the canned-signpost lint FAIL in section 3 replaced with a working transition; negate-then-correct antithesis in the three-brains opener rewritten; page-copy em dashes cut to one (the headline's, deliberate); rigour→rigor, internalised→internalized for the US market; section 5a added (concrete weekly deliverables + media-buyer division of labour — the audit's two top absences); mid-page CTA added after testimonials; qualifier line added to the close. Remaining linter WARNs are internal notes, verbatim testimonial quotes, and two low-confidence triplet flags judged fine in context ("Free, thirty minutes, and…" microcopy; "winners, losers, and the belief…"). "As I write this" is evergreen-safe but the retainer-spot count needs manual updating when the roster changes.
+**[NOTE] Copychief pass applied 2026-09-28:** the canned-signpost lint FAIL in section 3 replaced with a working transition; negate-then-correct antithesis in the three-brains opener rewritten; page-copy em dashes cut to one (the headline's, deliberate); rigour→rigor, internalised→internalized for the US market; section 5a added (concrete weekly deliverables + media-buyer division of labour — the audit's two top absences); qualifier line added to the close. Rob's call (2026-09-28): a single CTA in section 7 only — no hero or mid-page buttons; the pitch completes before the ask. Remaining linter WARNs are internal notes, verbatim testimonial quotes, and one low-confidence triplet flag judged fine in context ("winners, losers, and the belief…"). "As I write this" is evergreen-safe but the retainer-spot count needs manual updating when the roster changes.
