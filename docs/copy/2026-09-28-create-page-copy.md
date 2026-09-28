@@ -15,9 +15,11 @@ Internal notes are marked **[NOTE]** and are not page copy. Everything else ship
 
 **[NOTE] Optional eyebrow line, small caps:** For DTC founders scaling paid social
 
-**Headline (locked, Rob 2026-09-28):**
+**Headline (Rob's final rewrite, 2026-09-28 — sharper problem/solution/curiosity trifecta):**
 
-# Your Winning Ads Die in Weeks Now. The Fix Is 40 Years Old — Plus an AI Meta Never Saw Coming.
+# Top Meta Ads Now Die in Days: Discover the '40-Year-Old AI Fix' For Creating Winners That Scale
+
+**[NOTE] Superseded earlier headline:** "Your Winning Ads Die in Weeks Now. The Fix Is 40 Years Old — Plus an AI Meta Never Saw Coming."
 
 **Sub-line:**
 

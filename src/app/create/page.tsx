@@ -53,8 +53,8 @@ export default function CreatePage() {
                 For DTC founders scaling paid social
               </p>
               <h1 className="mt-6 max-w-4xl font-heading text-4xl font-semibold leading-tight text-paper-50 md:text-5xl lg:text-6xl">
-                Your Winning Ads Die in Weeks Now. The Fix Is 40 Years Old &mdash; Plus an AI
-                Meta Never Saw Coming.
+                Top Meta Ads Now Die in Days: Discover the &lsquo;40-Year-Old AI Fix&rsquo;
+                For Creating Winners That Scale
               </h1>
               <p className="mt-8 max-w-2xl font-body text-xl leading-relaxed text-paper-300">
                 How to keep the Andromeda monster fed: fresh, hypothesis-driven ad concepts
