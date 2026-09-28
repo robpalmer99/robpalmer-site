@@ -52,7 +52,7 @@ export default function CreatePage() {
               <p className="font-heading text-sm font-semibold uppercase tracking-[0.2em] text-gold-400">
                 For DTC founders scaling paid social
               </p>
-              <h1 className="mt-6 max-w-4xl font-heading text-4xl font-semibold leading-tight md:text-5xl lg:text-6xl">
+              <h1 className="mt-6 max-w-4xl font-heading text-4xl font-semibold leading-tight text-paper-50 md:text-5xl lg:text-6xl">
                 Your Winning Ads Die in Weeks Now. The Fix Is 40 Years Old &mdash; Plus an AI
                 Meta Never Saw Coming.
               </h1>
@@ -179,7 +179,7 @@ export default function CreatePage() {
         <Container>
           <FadeIn>
             <div className="max-w-3xl">
-              <h2 className="font-heading text-3xl font-semibold md:text-4xl">
+              <h2 className="font-heading text-3xl font-semibold text-paper-50 md:text-4xl">
                 Only Available Here: The Three Brains
               </h2>
               <p className="mt-6 font-body text-lg leading-relaxed text-paper-300">
@@ -302,7 +302,7 @@ export default function CreatePage() {
         <Container>
           <FadeIn>
             <div className="max-w-3xl">
-              <h2 className="font-heading text-3xl font-semibold md:text-4xl">
+              <h2 className="font-heading text-3xl font-semibold text-paper-50 md:text-4xl">
                 The Half Hour
               </h2>
               <div className="mt-6 space-y-5 font-body text-lg leading-relaxed text-paper-300">
