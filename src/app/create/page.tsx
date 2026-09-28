@@ -42,7 +42,7 @@ export default function CreatePage() {
         <Container>
           <header className="py-6">
             <Link href="/" className="inline-block" aria-label="Rob Palmer home">
-              <Logo className="h-9 w-auto" variant="light" />
+              <Logo className="h-9 w-auto" variant="light" subtitle="CREATIVE STRATEGIST" />
             </Link>
           </header>
         </Container>
@@ -232,7 +232,7 @@ export default function CreatePage() {
           <FadeIn>
             <div className="max-w-3xl">
               <h2 className="font-heading text-3xl font-semibold text-ink-950 md:text-4xl">
-                What a Week on the Roster Looks Like
+                How We Will Work Together
               </h2>
               <div className="mt-6 space-y-5 font-body text-lg leading-relaxed text-paper-800">
                 <p>
@@ -278,7 +278,7 @@ export default function CreatePage() {
           <FadeIn>
             <div className="max-w-3xl">
               <h2 className="font-heading text-3xl font-semibold text-ink-950 md:text-4xl">
-                There Is Only One of Me
+                For a Few Select Clients Only
               </h2>
               <div className="mt-6 space-y-5 font-body text-lg leading-relaxed text-paper-800">
                 <p>
@@ -303,7 +303,7 @@ export default function CreatePage() {
           <FadeIn>
             <div className="max-w-3xl">
               <h2 className="font-heading text-3xl font-semibold text-paper-50 md:text-4xl">
-                The Half Hour
+                Book a Call
               </h2>
               <div className="mt-6 space-y-5 font-body text-lg leading-relaxed text-paper-300">
                 <p>
@@ -323,13 +323,9 @@ export default function CreatePage() {
               </div>
               <div className="mt-10">
                 <Button href="/call" size="lg">
-                  Book the Half Hour
+                  Book a Call
                 </Button>
               </div>
-              <p className="mt-6 font-body text-paper-300">
-                Or just reply to the email that brought you here. It comes to me, not an
-                assistant.
-              </p>
             </div>
           </FadeIn>
         </Container>

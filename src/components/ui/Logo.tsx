@@ -1,9 +1,14 @@
 interface LogoProps {
   className?: string
   variant?: 'light' | 'dark'
+  subtitle?: string
 }
 
-export function Logo({ className = '', variant = 'light' }: LogoProps) {
+export function Logo({
+  className = '',
+  variant = 'light',
+  subtitle = 'DIRECT-RESPONSE COPYWRITER',
+}: LogoProps) {
   const textColor = variant === 'light' ? 'var(--color-paper-50)' : 'var(--color-ink-950)'
   const accentColor = 'var(--color-gold-400)'
 
@@ -55,7 +60,7 @@ export function Logo({ className = '', variant = 'light' }: LogoProps) {
         letterSpacing="0.3em"
         fill={accentColor}
       >
-        DIRECT-RESPONSE COPYWRITER
+        {subtitle}
       </text>
     </svg>
   )

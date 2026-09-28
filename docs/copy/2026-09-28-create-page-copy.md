@@ -73,7 +73,9 @@ Plenty of people have one brain. A few have two. I have never met another operat
 
 ---
 
-## 5a. What a week on the roster looks like
+## 5a. How we will work together
+
+**[NOTE] Heading renamed from "What a Week on the Roster Looks Like" (Rob, 2026-09-28).**
 
 I read your ad account the way I read a funnel: winners, losers, and the belief your buyer is still missing. Each read becomes a hypothesis. Each hypothesis becomes finished creative: net-new ad concepts, pre-sell pages, advertorials, a rebuilt close where the data says the leak is. The monster gets fed every single week, and everything it eats is built on a reason.
 
@@ -113,7 +115,9 @@ Your media buyer keeps the spend and the account. I own what gets tested and why
 
 ---
 
-## 6. The scarcity: there is only one of me
+## 6. The scarcity: for a few select clients only
+
+**[NOTE] Heading on the page: "For a Few Select Clients Only" (Rob, 2026-09-28; was "There Is Only One of Me").**
 
 The AI scales the output. It doesn't scale me. And the strategy layer, the part that decides what gets tested and why, is me. Every brand on the roster gets my personal attention on their account every week, which puts a hard ceiling on how many brands there can be.
 
@@ -121,7 +125,9 @@ As I write this, the calendar has room for one more retainer. Possibly two. Afte
 
 ---
 
-## 7. The call
+## 7. Book a call
+
+**[NOTE] Section heading and button both read "Book a Call" (Rob, 2026-09-28; was "The Half Hour" / "Book the Half Hour"). Logo subtitle on this page reads CREATIVE STRATEGIST instead of DIRECT-RESPONSE COPYWRITER.**
 
 One qualifier first: this is for founder-run DTC brands spending real money on ads that perform, into a funnel that leaks. If that's you, book the call.
 
@@ -129,9 +135,9 @@ Thirty minutes, free, no deck. I'll have read your funnel before we talk, and yo
 
 If the monster is already eating your ROAS, the worst move is waiting until it's finished.
 
-**CTA button:** Book the Half Hour
+**CTA button:** Book a Call
 
-**Secondary line under button:** Or just reply to the email that brought you here. It comes to me, not an assistant.
+**[NOTE] No secondary reply-to-email line (Rob, 2026-09-28): one option only.**
 
 ---
 
