@@ -75,9 +75,9 @@ Plenty of people have one brain. A few have two. I have never met another operat
 
 ---
 
-## 5b. Proof: what the people who paid me say
+## 5b. Proof: what my clients say
 
-**[NOTE] Section heading on the page:** What the people who paid me say
+**[NOTE] Section heading on the page:** What My Clients Say
 
 **[NOTE] Six testimonial cards, verbatim from `src/content/testimonials.ts`, chosen for relevance to a DTC founder buying ad performance (results and ads first, authority second):**
 
