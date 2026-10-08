@@ -38,6 +38,14 @@ if (process.env.NODE_ENV === "production" && !Sentry.getClient()) {
     // DOM mismatch against the SSR HTML). Real React hydration errors still
     // flow through `ignoreErrors` patterns above if they slip past this.
     beforeSend(event) {
+      // Headless crawlers (e.g. SEBot) run scripts before <body> exists and
+      // throw from next/script's loader. Not real visitors — drop them.
+      if (
+        typeof navigator !== "undefined" &&
+        /bot\b|crawler|spider|headless/i.test(navigator.userAgent)
+      ) {
+        return null
+      }
       const message =
         event.message ||
         event.exception?.values?.[0]?.value ||
