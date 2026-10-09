@@ -53,3 +53,10 @@ Without Moz/Bing, use Google Search Console Links report (via existing scripts/g
 
 ## Not checked
 Anchor text, nofollow attributes, link velocity, geography, toxic ratio (no data source). Competitors not benchmarked.
+
+
+## Addendum 2026-10-10 — real data landed
+
+Bing Webmaster API wired up (key in ~/.config/claude-seo/backlinks-api.json): 13 inbound links known to Bing; 3 pointed at legacy 404s (/Rob-Palmer, /building-an-online-business), reclaimed via 301→/about same day.
+
+GSC Links report (export in this folder, robpalmer.com-Top target pages-2026-10-09.xlsx): ~121 incoming links across 24 target pages, no 404 targets. Top: homepage 26 links/21 domains; **worlds-first-blogger-digital-nomad-pioneer 23/12 — the site's biggest content link magnet** (its DR-copywriter anchor now retargeted to the money page); state-of-vsl-marketing-2026 8/3; eugene-schwartz post 7/3; claude-code-copywriting-skills 4/4. creative-strategist-salary: zero links — outreach remains the gap, not the content. Pattern for future linkable assets: personal story, state-of-the-industry data, and history posts earn links organically; service pages earn none.
