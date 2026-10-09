@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { BlogListingLayout } from './_components/BlogListingLayout'
 import { SITE_URL } from '@/lib/constants'
-import { getPaginatedBlogPosts, getAllBlogPosts } from '@/lib/mdx'
+import { getPaginatedBlogPosts, getAllBlogListings, toListing } from '@/lib/mdx'
 import { getSiteSearchIndex } from '@/lib/search'
 
 export const metadata: Metadata = {
@@ -15,12 +15,14 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   const { posts, totalPages } = getPaginatedBlogPosts(1)
-  const allPosts = getAllBlogPosts()
+  // Slim listing shape — full BlogPostMeta serialized into the client grid
+  // is ~850KB of HTML payload (mostly per-post FAQs the grid never shows)
+  const allPosts = getAllBlogListings()
   const siteSearchIndex = getSiteSearchIndex()
 
   return (
     <BlogListingLayout
-      posts={posts}
+      posts={posts.map(toListing)}
       allPosts={allPosts}
       siteSearchIndex={siteSearchIndex}
       currentPage={1}

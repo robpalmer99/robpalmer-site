@@ -4,7 +4,6 @@
 // https://docs.sentry.io/platforms/javascript/guides/nextjs/
 
 import * as Sentry from "@sentry/nextjs";
-import type { ErrorEvent } from "@sentry/core";
 
 // Same crawler policy as the client and server configs.
 const BOT_UA =

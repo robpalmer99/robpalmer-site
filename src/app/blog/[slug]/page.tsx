@@ -23,6 +23,7 @@ import { getBlogPostContent, getAllBlogSlugs, getRelatedPosts } from '@/lib/mdx'
 import { formatDate } from '@/lib/utils'
 import { SITE_URL } from '@/lib/constants'
 import { getRelatedPages } from '@/lib/content-links'
+import { getPublicImageSize } from '@/lib/image-dims'
 import { ShareButtons } from '@/components/ui/ShareButtons'
 
 const mdxComponents = {
@@ -87,6 +88,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   const relatedPosts = getRelatedPosts(slug)
   const relatedPages = getRelatedPages(post.meta.category, post.meta.tags)
+  // Real dimensions so the browser reserves the right box — heroes are a mix
+  // of 1200x675, 1200x800, and odd sizes, and a wrong ratio on a priority
+  // above-fold image is a guaranteed layout shift
+  const heroDims = post.meta.heroImage
+    ? await getPublicImageSize(post.meta.heroImage)
+    : null
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -157,8 +164,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 <Image
                   src={post.meta.heroImage}
                   alt={post.meta.heroAlt || post.meta.title}
-                  width={1200}
-                  height={630}
+                  width={heroDims?.width ?? 1200}
+                  height={heroDims?.height ?? 675}
                   sizes="(max-width: 768px) 100vw, 768px"
                   className="w-full h-auto rounded-xl object-cover"
                   priority

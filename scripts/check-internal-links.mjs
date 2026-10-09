@@ -51,6 +51,8 @@ function stripFences(src) {
 const SCANS = [
   { re: /\]\((\/[^)\s#?]*)/g, label: 'broken link' },
   { re: /href="(\/[^"#?]*)"/g, label: 'broken link (html)' },
+  // Frontmatter FAQ answers use single-quoted hrefs — scan those too
+  { re: /href='(\/[^'#?]*)'/g, label: 'broken link (html)' },
 ]
 
 const errors = []

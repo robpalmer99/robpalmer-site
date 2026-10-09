@@ -46,6 +46,40 @@ export interface BlogPostMeta {
   faqs?: BlogFAQ[]
 }
 
+// Slim shape for listing pages. BlogPostMeta serialized into the client
+// BlogGrid's props weighs ~850KB across 150 posts (the faqs field alone
+// carries ~10 long Q&As per post) — listings only need these fields.
+export type BlogPostListing = Pick<
+  BlogPostMeta,
+  | 'title'
+  | 'description'
+  | 'date'
+  | 'category'
+  | 'tags'
+  | 'slug'
+  | 'readingTime'
+  | 'heroImage'
+  | 'heroAlt'
+>
+
+export function toListing(post: BlogPostMeta): BlogPostListing {
+  return {
+    title: post.title,
+    description: post.description,
+    date: post.date,
+    category: post.category,
+    tags: post.tags,
+    slug: post.slug,
+    readingTime: post.readingTime,
+    heroImage: post.heroImage,
+    heroAlt: post.heroAlt,
+  }
+}
+
+export function getAllBlogListings(): BlogPostListing[] {
+  return getAllBlogPosts().map(toListing)
+}
+
 let _cachedPosts: BlogPostMeta[] | null = null
 
 export function getAllBlogPosts(): BlogPostMeta[] {
@@ -75,6 +109,15 @@ function buildMeta(
   content: string
 ): BlogPostMeta {
   const stats = readingTime(content)
+  // Fail the build loudly on a bad date — a malformed one otherwise reaches
+  // the sitemap as Invalid Date (build crash with a useless stack) and
+  // silently scrambles the NaN-compared sort order in getAllBlogPosts.
+  for (const field of ['date', 'updated'] as const) {
+    const value = data[field]
+    if (value !== undefined && isNaN(new Date(value as string).getTime())) {
+      throw new Error(`Blog post "${slug}" has an invalid ${field}: ${JSON.stringify(value)}`)
+    }
+  }
   return {
     title: (data.title as string) || '',
     description: (data.description as string) || '',
@@ -118,11 +161,14 @@ export function getBlogPostContent(slug: string): {
 
   const source = fs.readFileSync(filePath, 'utf-8')
   const { data, content } = matter(source)
+  const meta = buildMeta(slug, data, content)
 
-  return {
-    meta: buildMeta(slug, data, content),
-    content,
+  // Drafts (published: false) must 404, not quietly go live outside listings
+  if (!meta.published) {
+    return null
   }
+
+  return { meta, content }
 }
 
 export function getRelatedPosts(slug: string, limit: number = 3): BlogPostMeta[] {
@@ -152,8 +198,7 @@ export function getAllBlogSlugs(): string[] {
     return []
   }
 
-  return fs
-    .readdirSync(BLOG_DIR)
-    .filter((f) => f.endsWith('.mdx'))
-    .map((f) => f.replace('.mdx', ''))
+  // Published posts only — this feeds generateStaticParams, and drafts must
+  // not get pages built for them
+  return getAllBlogPosts().map((post) => post.slug)
 }

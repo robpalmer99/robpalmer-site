@@ -5,12 +5,12 @@ import { Container } from '@/components/ui/Container'
 import { CTABanner } from '@/components/blocks/CTABanner'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { BlogGrid } from '@/components/blocks/BlogGrid'
-import type { BlogPostMeta } from '@/lib/mdx'
+import type { BlogPostListing } from '@/lib/mdx'
 import type { SiteSearchResult } from '@/lib/search'
 
 interface BlogListingLayoutProps {
-  posts: BlogPostMeta[]
-  allPosts: BlogPostMeta[]
+  posts: BlogPostListing[]
+  allPosts: BlogPostListing[]
   siteSearchIndex: SiteSearchResult[]
   currentPage: number
   totalPages: number

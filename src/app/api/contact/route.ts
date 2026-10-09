@@ -81,10 +81,12 @@ export async function POST(request: Request) {
       )
     }
 
-    // Trim all inputs before validation
-    const trimmedName = name.trim()
+    // Trim all inputs before validation; strip CR/LF from fields that land
+    // in the outgoing email's header line (defense-in-depth against header
+    // injection — Resend's JSON API should neutralize it anyway)
+    const trimmedName = name.trim().replace(/[\r\n]+/g, ' ')
     const trimmedEmail = email.trim()
-    const trimmedSubject = subject.trim()
+    const trimmedSubject = subject.trim().replace(/[\r\n]+/g, ' ')
     const trimmedMessage = message.trim()
 
     // Length limits (checked against trimmed values)

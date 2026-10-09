@@ -16,9 +16,11 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const IMAGES_DIR = path.join(__dirname, "..", "public", "images", "blog");
 
-const ACCESS_KEY =
-  process.env.UNSPLASH_ACCESS_KEY ||
-  "kViRs57U0hCuiRW8zt6Er6YmvGPebMSU1gGbK7qit6g";
+const ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY;
+if (!ACCESS_KEY) {
+  console.error("Set UNSPLASH_ACCESS_KEY — the key is never hardcoded (this repo is public).");
+  process.exit(1);
+}
 
 const WIDTH = 1200;
 const HEIGHT = 675;

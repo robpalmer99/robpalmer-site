@@ -18,6 +18,10 @@ const eslintConfig = [
       "out/**",
       "build/**",
       "next-env.d.ts",
+      // Local agent workspace (gitignored) — not site code
+      ".claude/**",
+      ".playwright-mcp/**",
+      ".firecrawl/**",
     ],
   },
 ];

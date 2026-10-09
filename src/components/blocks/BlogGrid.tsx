@@ -7,12 +7,12 @@ import { BlogPostCard } from './BlogPostCard'
 import { useDebounce } from '@/hooks/useDebounce'
 import { cn } from '@/lib/utils'
 import { Badge } from '@/components/ui/Badge'
-import type { BlogPostMeta } from '@/lib/mdx'
+import type { BlogPostListing } from '@/lib/mdx'
 import { parseQuery, scoreMatch, type SiteSearchResult } from '@/lib/search'
 
 interface BlogGridProps {
-  posts: BlogPostMeta[]
-  allPosts?: BlogPostMeta[]
+  posts: BlogPostListing[]
+  allPosts?: BlogPostListing[]
   siteSearchIndex?: SiteSearchResult[]
   currentPage?: number
   totalPages?: number
