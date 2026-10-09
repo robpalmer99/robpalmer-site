@@ -58,6 +58,12 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   outputFileTracingRoot: import.meta.dirname ?? process.cwd(),
   pageExtensions: ['ts', 'tsx'],
+  // Inline the per-page stylesheet into the HTML: Lighthouse flags the 15KB
+  // CSS file as render-blocking (~110ms, part of the mobile LCP render delay).
+  // CSP already allows 'unsafe-inline' for styles.
+  experimental: {
+    inlineCss: true,
+  },
   images: {
     formats: ['image/avif', 'image/webp'],
   },

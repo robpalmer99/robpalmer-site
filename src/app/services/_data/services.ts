@@ -259,7 +259,7 @@ export const services: Service[] = [
     slug: 'vsl-copywriter',
     shortDescription:
       'Video sales letters that hold cold traffic through the close. Recent client funnel: 8% on cold. Past VSLs at $30M, $40M, and $27M.',
-    metaTitle: 'VSL Copywriter | Video Sales Letter Expert',
+    metaTitle: 'VSL Copywriter | 8% Cold-Traffic VSLs, $30M+ Campaigns',
     metaDescription:
       'Senior VSL copywriter for cold-traffic offers. Recent client funnel converting at 8% on cold; past VSLs at $30M, $40M, and $27M. Fixed-price engagements, two-week kickoffs.',
     headline: 'VSL Copywriter — Cold Traffic Converting at 8%',

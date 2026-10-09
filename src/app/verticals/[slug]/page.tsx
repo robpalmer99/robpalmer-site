@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/Button'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { DetailPageLayout } from '@/components/blocks/DetailPageLayout'
 import { SITE_URL } from '@/lib/constants'
+import { verticalUpdated } from '@/lib/page-dates'
 import { getVerticalBySlug, getAllVerticalSlugs, verticals as allVerticals } from '@/app/verticals/_data/verticals'
 import { services } from '@/app/services/_data/services'
 
@@ -69,6 +70,16 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
     serviceType: 'Direct-Response Copywriting',
   }
 
+  const webPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${SITE_URL}/verticals/${slug}`,
+    url: `${SITE_URL}/verticals/${slug}`,
+    name: vertical.metaTitle,
+    isPartOf: { '@id': `${SITE_URL}/#website` },
+    dateModified: verticalUpdated(slug),
+  }
+
   const faqSchema = vertical.faqs.length > 0
     ? {
         '@context': 'https://schema.org',
@@ -87,6 +98,7 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
   return (
     <>
       <JsonLd data={serviceSchema} />
+      <JsonLd data={webPageSchema} />
       {faqSchema && <JsonLd data={faqSchema} />}
       <DetailPageLayout
         headline={vertical.headline}

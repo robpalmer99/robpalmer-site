@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/Button'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { DetailPageLayout } from '@/components/blocks/DetailPageLayout'
 import { SITE_URL } from '@/lib/constants'
+import { serviceUpdated } from '@/lib/page-dates'
 import { getServiceBySlug, getAllServiceSlugs, services as allServices } from '../_data/services'
 import { verticals } from '@/app/verticals/_data/verticals'
 
@@ -66,6 +67,26 @@ export default async function ServicePage({ params }: ServicePageProps) {
     url: `${SITE_URL}/services/${slug}`,
     areaServed: 'Worldwide',
     serviceType: 'Direct-Response Copywriting',
+    offers: {
+      '@type': 'Offer',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        minPrice: 10000,
+        priceCurrency: 'USD',
+      },
+      description: 'Fixed-price engagements, typically starting at $10,000. Quote within 48 hours of a strategy call.',
+      url: `${SITE_URL}/call`,
+    },
+  }
+
+  const webPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${SITE_URL}/services/${slug}`,
+    url: `${SITE_URL}/services/${slug}`,
+    name: service.metaTitle,
+    isPartOf: { '@id': `${SITE_URL}/#website` },
+    dateModified: serviceUpdated(slug),
   }
 
   const faqSchema = {
@@ -84,6 +105,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
   return (
     <>
       <JsonLd data={serviceSchema} />
+      <JsonLd data={webPageSchema} />
       <JsonLd data={faqSchema} />
       <DetailPageLayout
         headline={service.headline}

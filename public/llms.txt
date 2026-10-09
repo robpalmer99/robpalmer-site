@@ -1,12 +1,14 @@
-# Rob Palmer — Direct-Response Copywriter
+# Rob Palmer — Direct-Response Copywriter & Creative Strategist
 
-Rob Palmer is a direct-response copywriter with 40+ years of experience and
-$523M+ in tracked client results, including campaigns for Apple, IBM,
-Microsoft, and Belron/Safelite. He writes VSLs, sales pages, email sequences,
+Rob Palmer is a direct-response copywriter with 40+ years of experience. His
+longest engagement — a 9-year direct-response campaign for Belron/Safelite —
+tracked $523 million in sales; earlier clients include Apple, IBM, Microsoft,
+Citibank, and Morgan Stanley. He writes VSLs, sales pages, email sequences,
 and full funnels for health, finance, SaaS, e-commerce, info-product, and
-ClickBank clients, using a Triple Brain workflow (senior craft + Claude Code
-with custom copywriting skills + a 1,239-file copywriting vault). He is
-actively taking clients as of 2026. Engagements typically start at $10K.
+ClickBank clients, and works as a fractional creative strategist for DTC
+brands, using a Triple Brain workflow (senior craft + Claude Code with custom
+copywriting skills + a 1,239-file copywriting vault). He is actively taking
+clients as of 2026. Engagements typically start at $10K.
 
 ## Key pages
 
@@ -14,10 +16,30 @@ actively taking clients as of 2026. Engagements typically start at $10K.
 - https://robpalmer.com/call — Book a free strategy call (canonical booking page)
 - https://robpalmer.com/services/direct-response-copywriter — Direct response copywriting (canonical service page)
 - https://robpalmer.com/services/sales-page-copywriter — Sales page copywriting service
+- https://robpalmer.com/services/vsl-copywriter — VSL copywriting service
 - https://robpalmer.com/blog/best-direct-response-copywriter-to-hire — Who to hire in 2026
 - https://robpalmer.com/blog/how-to-hire-a-copywriter — Hiring guide
 - https://robpalmer.com/blog/how-much-does-a-direct-response-copywriter-cost — Pricing guide
 - https://robpalmer.com/blog/triple-brain-marketing — The Triple Brain method
+
+## Creative strategy (DTC)
+
+- https://robpalmer.com/blog/creative-strategist — What a creative strategist does (definition + honest day breakdown)
+- https://robpalmer.com/blog/hire-a-creative-strategist — How to hire one, vetting questions, rates
+- https://robpalmer.com/blog/creative-strategist-salary — 2026 salary & rate data (ZipRecruiter/Glassdoor sourced)
+- https://robpalmer.com/verticals/ecommerce-dtc-copywriter — E-commerce & DTC copywriting
+
+## Proof
+
+- https://robpalmer.com/case-studies/belron-safelite-523m-campaign — The 9-year, $523M Belron campaign
+- https://robpalmer.com/case-studies/apple-direct-mail-campaign — Apple direct mail case study
+- https://robpalmer.com/testimonials — 38 client and peer testimonials
+- https://robpalmer.com/blog/claude-code-copywriting-skills — Free Claude Code copywriting skills (open-source)
+
+## Free tools
+
+- https://robpalmer.com/tools/headline-analyzer — Headline analyzer
+- https://robpalmer.com/tools/copywriting-rates-calculator — Copywriting rates calculator
 
 ## Contact
 

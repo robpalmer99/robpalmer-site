@@ -159,6 +159,7 @@ export function DetailPageLayout({
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 896px"
                   priority
+                  fetchPriority="high"
                 />
               </div>
             </div>

@@ -14,6 +14,14 @@ const isBotUA =
   /bot\b|crawler|spider|headless|facebookexternalhit|slurp|ia_archiver|whatsapp|skypeuripreview/i.test(ua) &&
   !/cubot/i.test(ua)
 
+// Decide the Replay session sample HERE, before loading anything: with the
+// rate inside Sentry.init alone, every visitor downloads ~48KB of rrweb that
+// 90% of sessions never use. Sampled sessions load Replay on idle and record;
+// the rest only fetch it if an error actually fires (capture from the error
+// onward — the pre-error buffer isn't worth 48KB on every pageview of a
+// marketing site).
+const replaySampled = Math.random() < 0.1
+
 if (process.env.NODE_ENV === "production" && !isBotUA && !Sentry.getClient()) {
   Sentry.init({
     dsn: "https://0b510f2d0ab66699aa23696dfecd40ed@o4511144096038912.ingest.us.sentry.io/4511144172060672",
@@ -86,10 +94,9 @@ if (process.env.NODE_ENV === "production" && !isBotUA && !Sentry.getClient()) {
     // Enable logs to be sent to Sentry
     enableLogs: true,
 
-    // Define how likely Replay events are sampled.
-    // This sets the sample rate to be 10%. You may want this to be 100% while
-    // in development and sample at a lower rate in production
-    replaysSessionSampleRate: 0.1,
+    // The 10% session sample is decided above (replaySampled) so unsampled
+    // sessions never download rrweb; a loaded Replay then always records.
+    replaysSessionSampleRate: replaySampled ? 1.0 : 0,
 
     // Define how likely Replay events are sampled when an error occurs.
     replaysOnErrorSampleRate: 1.0,
@@ -99,15 +106,32 @@ if (process.env.NODE_ENV === "production" && !isBotUA && !Sentry.getClient()) {
     sendDefaultPii: false,
   });
 
-  // Load Session Replay after startup — keeps ~55KB of rrweb out of the
-  // critical path. Replay sample rates above still apply.
-  Sentry.lazyLoadIntegration("replayIntegration")
-    .then((replayIntegration) => {
-      Sentry.addIntegration(replayIntegration())
+  let replayLoaded = false
+  const loadReplay = () => {
+    if (replayLoaded) return
+    replayLoaded = true
+    Sentry.lazyLoadIntegration("replayIntegration")
+      .then((replayIntegration) => {
+        Sentry.addIntegration(replayIntegration())
+      })
+      .catch(() => {
+        // Replay is best-effort; never let telemetry loading break the page.
+      })
+  }
+
+  if (replaySampled) {
+    // Idle-deferred so the download never competes with LCP.
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(loadReplay)
+    } else {
+      setTimeout(loadReplay, 3000)
+    }
+  } else {
+    // Unsampled sessions fetch Replay only when an error actually occurs.
+    Sentry.getClient()?.on("beforeSendEvent", (event) => {
+      if (event.exception) loadReplay()
     })
-    .catch(() => {
-      // Replay is best-effort; never let telemetry loading break the page.
-    })
+  }
 }
 
 export const onRouterTransitionStart = Sentry.captureRouterTransitionStart;
