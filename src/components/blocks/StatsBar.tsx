@@ -21,22 +21,24 @@ export function StatsBar({ variant = 'dark', className }: StatsBarProps) {
       <Container>
         <dl className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           {STATS.map((stat, index) => (
-            <div key={index}>
+            // Value-on-top is purely visual ordering; dt stays the label so
+            // screen readers announce "Tracked Revenue: $523M+", not reversed.
+            <div key={index} className="flex flex-col-reverse">
               <dt
-                className={cn(
-                  'font-heading text-4xl sm:text-5xl font-bold tracking-tight',
-                  variant === 'dark' ? 'text-gold-400' : 'text-ink-950'
-                )}
-              >
-                <CountUp value={stat.value} />
-              </dt>
-              <dd
                 className={cn(
                   'mt-2 text-sm font-heading uppercase tracking-wider',
                   variant === 'dark' ? 'text-paper-400' : 'text-paper-600'
                 )}
               >
                 {stat.label}
+              </dt>
+              <dd
+                className={cn(
+                  'font-heading text-4xl sm:text-5xl font-bold tracking-tight',
+                  variant === 'dark' ? 'text-gold-400' : 'text-ink-950'
+                )}
+              >
+                <CountUp value={stat.value} />
               </dd>
             </div>
           ))}

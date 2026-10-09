@@ -43,9 +43,9 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     images: [`${SITE_URL}/images/og-default.jpg`],
   },
-  alternates: {
-    canonical: SITE_URL,
-  },
+  // No root-level canonical: it would inherit into any page that forgets its
+  // own, silently canonicalizing that page to the homepage. Every page sets
+  // its own canonical explicitly (homepage included, in app/page.tsx).
   icons: {
     icon: '/favicon.ico',
     apple: '/apple-icon.png',

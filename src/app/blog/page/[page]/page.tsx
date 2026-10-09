@@ -42,8 +42,9 @@ export default async function PaginatedBlogPage({ params }: PaginatedBlogPagePro
     redirect('/blog')
   }
 
-  // Validate page number
-  if (isNaN(pageNum) || pageNum < 1) {
+  // Validate page number — String() round-trip rejects non-canonical forms
+  // like /blog/page/02 or /blog/page/2abc that parseInt would accept
+  if (isNaN(pageNum) || pageNum < 1 || String(pageNum) !== page) {
     notFound()
   }
 

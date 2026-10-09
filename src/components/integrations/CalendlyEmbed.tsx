@@ -84,6 +84,11 @@ export function CalendlyEmbed({ url }: CalendlyEmbedProps) {
 
   useEffect(() => {
     function handleCalendlyEvent(e: MessageEvent) {
+      // Only Calendly's iframe may drive conversion events — any page can
+      // postMessage to an open tab, which would pollute GA booking data.
+      if (!e.origin.endsWith('.calendly.com') && e.origin !== 'https://calendly.com') {
+        return
+      }
       if (e.data?.event === 'calendly.event_scheduled') {
         trackCalendlyClick('event_scheduled')
       } else if (e.data?.event === 'calendly.date_and_time_selected') {

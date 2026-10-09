@@ -59,10 +59,7 @@ export function FAQAccordion({ items, className }: FAQAccordionProps) {
               role="region"
               aria-labelledby={triggerId}
               hidden={!isOpen}
-              className={cn(
-                'overflow-hidden transition-all duration-200',
-                isOpen ? 'max-h-[2000px] opacity-100 mt-2' : 'max-h-0 opacity-0'
-              )}
+              className={cn('overflow-hidden', isOpen && 'mt-2')}
             >
               <p className="text-ink-700 text-base leading-relaxed font-body pb-2">
                 {item.answer}

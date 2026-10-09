@@ -191,6 +191,7 @@ const serviceTitles: Record<string, string> = {
   'ai-marketing-consultant': 'AI Marketing Consultant',
   'facebook-ads-copywriter': 'Facebook Ads Copywriter',
   'conversion-rate-optimization': 'Conversion Rate Optimization',
+  'direct-response-copywriter': 'Direct Response Copywriter',
 }
 
 const verticalTitles: Record<string, string> = {
@@ -212,17 +213,9 @@ export function getRelatedPages(
   const serviceSlugs = new Set<string>()
   const verticalSlugs = new Set<string>()
 
-  // Add from category mapping
-  const catServices = categoryToServices[category]
-  if (catServices) {
-    catServices.forEach((s) => serviceSlugs.add(s))
-  }
-  const catVerticals = categoryToVerticals[category]
-  if (catVerticals) {
-    catVerticals.forEach((v) => verticalSlugs.add(v))
-  }
-
-  // Add from tag mappings
+  // Tag mappings first — tags are more specific than the category defaults,
+  // and the 3-slot cap below must never squeeze out a tag-matched service
+  // (e.g. the `direct response` tag's link to the money page).
   for (const tag of tags) {
     const normalizedTag = tag.toLowerCase()
     if (tagToService[normalizedTag]) {
@@ -231,6 +224,16 @@ export function getRelatedPages(
     if (tagToVertical[normalizedTag]) {
       verticalSlugs.add(tagToVertical[normalizedTag])
     }
+  }
+
+  // Then fill remaining slots from the category mapping
+  const catServices = categoryToServices[category]
+  if (catServices) {
+    catServices.forEach((s) => serviceSlugs.add(s))
+  }
+  const catVerticals = categoryToVerticals[category]
+  if (catVerticals) {
+    catVerticals.forEach((v) => verticalSlugs.add(v))
   }
 
   // Limit to 3 of each

@@ -5,8 +5,17 @@ interface ComparisonTableProps {
 }
 
 export function ComparisonTable({ headers, rows, caption }: ComparisonTableProps) {
-  const parsedHeaders: string[] = JSON.parse(headers)
-  const parsedRows: string[][] = JSON.parse(rows)
+  // Malformed JSON in an MDX prop (e.g. an apostrophe inside rows) must not
+  // fail the whole page/build — drop the table and flag it instead.
+  let parsedHeaders: string[]
+  let parsedRows: string[][]
+  try {
+    parsedHeaders = JSON.parse(headers)
+    parsedRows = JSON.parse(rows)
+  } catch (err) {
+    console.warn('[ComparisonTable] invalid JSON props, table skipped:', err)
+    return null
+  }
 
   return (
     <div className="not-prose my-8 overflow-x-auto">

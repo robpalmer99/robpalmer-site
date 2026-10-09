@@ -165,7 +165,7 @@ export default function PortfolioPage() {
                     <p className="mt-2 text-sm text-ink-700 leading-relaxed font-body flex-1">
                       {card.description}
                     </p>
-                    <div className="mt-4 flex items-center gap-1 text-sm font-heading font-semibold text-gold-500 group-hover:text-gold-600 transition-colors">
+                    <div className="mt-4 flex items-center gap-1 text-sm font-heading font-semibold text-gold-600 group-hover:text-gold-700 transition-colors">
                       {card.cta}
                       <svg
                         aria-hidden="true"
