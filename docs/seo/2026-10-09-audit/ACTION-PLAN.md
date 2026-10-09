@@ -8,6 +8,8 @@ None. Nothing blocks indexing or risks a penalty.
 
 ## High — this week
 
+**STATUS 2026-10-10: items 1–5 all DONE** (shipped in commits faec48e/410a38a + 5459751, deployed; Rob did the GSC recrawl requests and the GitHub profile).
+
 1. **Wire the creative-strategist cluster to the money page.** Map the cluster tags ("creative strategist", "hire a creative strategist", "freelance creative strategist") in `src/lib/content-links.ts`; add `/services/direct-response-copywriter` to the three cluster posts' related-services; add one in-body link from `creative-strategist-salary` (zero links today). The priority cluster currently passes no authority to the money page.
 2. **Give Google a reason to recrawl the stale money pages.**
    - Add `lastModified` for static/service/vertical entries in `src/app/sitemap.ts` (real dates — add an `updated` field to the data files or derive from git; never build time). The money page currently emits no freshness signal anywhere.
@@ -18,6 +20,8 @@ None. Nothing blocks indexing or risks a penalty.
 5. **[Rob] Two-minute fix: GitHub profile.** The robpalmer99 profile has an empty website field and no bio. Set robpalmer.com + the entity string from docs/seo/off-page-entity-plan.md. This is Tier 1 of the entity plan, which has zero items done since July.
 
 ## Medium — this month
+
+**STATUS 2026-10-10:** 6 (meta/title side) DONE — content refreshes still open; 8 DONE except bundle-analyzer look; 9 DONE; 10 offers schema + WebPage dateModified DONE — visible date + question-H2 rework deferred (needs dev-server review + copy pass); 11 DONE; 7, 12, 13-remainder still open.
 
 6. **Striking-distance CTR/refresh pass** (biggest pure-traffic lever in the data): rewrite titles/metas and refresh content on `sales-letter-examples` (14.3k imp, pos 14.7), `copywriting-psychology` (12.5k, 12.0), `sales-page-examples` (4.2k, 12.3), `in-house-copywriter-vs-freelance` (2.2k, 11.4), `/services/vsl-copywriter` (929, 13.7). Separately rewrite metas on the high-impression/low-CTR four: `what-is-a-vsl` (47k imp, 0.2% CTR), `copywriter-salary`, `copywriting-rates`, `copywriting-hooks`.
 7. **[Rob] Start the salary-post link outreach** — the stated next step for the KD-9 cluster (~10 referring domains for top-10). Tactic list in `backlinks.md`: skills-repo PRs to awesome-lists, 3–5 AI-marketing newsletter pitches, expert-quote pipelines (Qwoted/Featured/SOS), podcast pitches per the entity plan. Consider adding first-party data (own client-rate survey) to the salary post to make it citable beyond recompiled ZipRecruiter figures.
