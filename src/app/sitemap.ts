@@ -47,7 +47,7 @@ const VERTICAL_UPDATED: Record<string, string> = {
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
 
-  const staticPages: MetadataRoute.Sitemap = [
+  const staticPageDefs: MetadataRoute.Sitemap = [
     { url: BASE_URL, changeFrequency: 'weekly', priority: 1.0 },
     { url: `${BASE_URL}/about`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/services`, changeFrequency: 'monthly', priority: 0.9 },
@@ -73,7 +73,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/tools/copywriting-rates-calculator`, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/privacy`, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${BASE_URL}/terms`, changeFrequency: 'yearly', priority: 0.3 },
-  ].map((page) => {
+  ]
+  const staticPages: MetadataRoute.Sitemap = staticPageDefs.map((page) => {
     const path = page.url.slice(BASE_URL.length)
     const updated = STATIC_UPDATED[path]
     return updated ? { ...page, lastModified: new Date(updated) } : page
