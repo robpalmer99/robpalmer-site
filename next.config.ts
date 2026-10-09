@@ -240,6 +240,18 @@ const nextConfig: NextConfig = {
         destination: '/',
         permanent: true as const,
       })),
+      // Legacy URLs with live external backlinks (per Bing Webmaster, 2026-10):
+      // 3 of the site's 13 known inbound links pointed at these 404s.
+      {
+        source: '/Rob-Palmer',
+        destination: '/about',
+        permanent: true,
+      },
+      {
+        source: '/building-an-online-business',
+        destination: '/about',
+        permanent: true,
+      },
     ]
   },
 }
