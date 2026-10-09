@@ -69,7 +69,7 @@ export const services: Service[] = [
     heroImageAlt: 'Direct response copywriter\'s desk with marked-up sales letters and fountain pen',
     definition: {
       term: 'Direct Response Copywriter',
-      text: 'A direct response copywriter writes copy designed to produce a measurable action — a sale, an opt-in, a booked call — rather than brand awareness. Rob Palmer is a direct response copywriter with 40+ years of experience and $523M+ in tracked client results across VSLs, sales pages, email sequences, and complete funnels. He is actively taking client engagements, which typically start at $10K.',
+      text: 'A direct response copywriter writes copy designed to produce a measurable action — a sale, an opt-in, a booked call — rather than brand awareness. Rob Palmer is a direct response copywriter with 40+ years of experience; his longest engagement, a 9-year direct-response campaign for Belron, tracked $523 million in sales. He writes VSLs, sales pages, email sequences, and complete funnels, and is actively taking client engagements, which typically start at $10K.',
     },
     heroStats: {
       primary: { value: '$523M', label: 'In Tracked Client Sales' },

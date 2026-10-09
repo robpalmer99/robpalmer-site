@@ -60,6 +60,7 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
     description: vertical.metaDescription,
     provider: {
       '@type': 'Person',
+      '@id': `${SITE_URL}/#person`,
       name: 'Rob Palmer',
       url: SITE_URL,
     },

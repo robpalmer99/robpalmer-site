@@ -101,14 +101,18 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     headline: post.meta.title,
     description: post.meta.description,
     datePublished: post.meta.date,
-    dateModified: post.meta.updated || post.meta.date,
+    // Only claim a modification date when the post has genuinely been updated —
+    // emitting datePublished as dateModified tells Google nothing ever changes.
+    ...(post.meta.updated && { dateModified: post.meta.updated }),
     author: {
       '@type': 'Person',
+      '@id': `${SITE_URL}/#person`,
       name: 'Rob Palmer',
       url: SITE_URL,
     },
     publisher: {
       '@type': 'Organization',
+      '@id': `${SITE_URL}/#organization`,
       name: 'Rob Palmer Copywriting',
       url: SITE_URL,
       logo: {

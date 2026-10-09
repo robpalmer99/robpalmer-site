@@ -59,6 +59,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
     description: service.metaDescription,
     provider: {
       '@type': 'Person',
+      '@id': `${SITE_URL}/#person`,
       name: 'Rob Palmer',
       url: SITE_URL,
     },

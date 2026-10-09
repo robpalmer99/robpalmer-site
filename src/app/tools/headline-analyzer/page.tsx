@@ -104,6 +104,7 @@ export default function HeadlineAnalyzerPage() {
           },
           author: {
             '@type': 'Person',
+            '@id': `${SITE_URL}/#person`,
             name: 'Rob Palmer',
             url: SITE_URL,
           },

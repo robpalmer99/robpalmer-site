@@ -59,10 +59,11 @@ export const metadata: Metadata = {
 const personJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
+  '@id': `${SITE_URL}/#person`,
   name: 'Rob Palmer',
   jobTitle: 'Direct-Response Copywriter',
   description:
-    'Direct-response copywriter with 40+ years of experience and $523M+ in tracked client results, including campaigns for Apple, IBM, Microsoft, and Belron/Safelite. Specializes in VSLs, TSLs, email sequences, and sales funnels. Pioneer of blogging (1993) and AI-assisted copywriting.',
+    'Direct-response copywriter with 40+ years of experience, whose 9-year Belron/Safelite direct-response campaign tracked $523 million in sales. Earlier clients include Apple, IBM, Microsoft, Citibank, and Morgan Stanley. Specializes in VSLs, TSLs, email sequences, and sales funnels. Pioneer of blogging (1993) and AI-assisted copywriting.',
   url: SITE_URL,
   knowsAbout: [
     'Direct response copywriting',
@@ -85,7 +86,7 @@ const personJsonLd = {
     },
   },
   award: [
-    '$523M+ tracked revenue across direct-response campaigns',
+    '$523M in tracked sales from the 9-year Belron/Safelite direct-response campaign',
     '9-year continuously-tested direct-mail control for Belron/Safelite',
   ],
   worksFor: { '@id': `${SITE_URL}/#organization` },
@@ -105,10 +106,12 @@ const organizationJsonLd = {
   name: 'Rob Palmer Copywriting',
   url: SITE_URL,
   logo: `${SITE_URL}/images/logo-rob-palmer.png`,
-  founder: {
-    '@type': 'Person',
-    name: 'Rob Palmer',
-  },
+  founder: { '@id': `${SITE_URL}/#person` },
+  sameAs: [
+    'https://www.linkedin.com/in/robpalmer3/',
+    'https://github.com/robpalmer99',
+    'https://x.com/RobPalmer99',
+  ],
   contactPoint: {
     '@type': 'ContactPoint',
     email: 'rob@robpalmer.com',
@@ -119,13 +122,11 @@ const organizationJsonLd = {
 const websiteJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
+  '@id': `${SITE_URL}/#website`,
   name: 'Rob Palmer - Direct-Response Copywriter',
   url: SITE_URL,
   description: SITE_DESCRIPTION,
-  author: {
-    '@type': 'Person',
-    name: 'Rob Palmer',
-  },
+  author: { '@id': `${SITE_URL}/#person` },
 }
 
 export default function RootLayout({

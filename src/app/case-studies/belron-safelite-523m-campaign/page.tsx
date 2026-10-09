@@ -22,7 +22,7 @@ const caseStudyJsonLd = {
   image: `${SITE_URL}${cs.heroImage}`,
   datePublished: '2024-01-15',
   dateModified: '2024-01-15',
-  author: { '@type': 'Person', name: 'Rob Palmer', url: SITE_URL },
+  author: { '@type': 'Person', '@id': `${SITE_URL}/#person`, name: 'Rob Palmer', url: SITE_URL },
   publisher: {
     '@type': 'Organization',
     name: 'Rob Palmer Copywriting',

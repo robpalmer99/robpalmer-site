@@ -153,9 +153,27 @@ const tagToService: Record<string, string> = {
   'direct response copywriting': 'direct-response-copywriter',
   'copywriter vs content writer': 'sales-page-copywriter',
   'copywriting roi': 'sales-page-copywriter',
+
+  // Creative-strategist cluster (2026-10 audit): route the priority cluster's
+  // authority to the DR money page — tags are processed before categories, so
+  // these always survive the 3-slot cap.
+  'creative strategist': 'direct-response-copywriter',
+  'what is a creative strategist': 'direct-response-copywriter',
+  'hire a creative strategist': 'direct-response-copywriter',
+  'creative strategist for hire': 'direct-response-copywriter',
+  'creative strategist services': 'direct-response-copywriter',
+  'how to hire a creative strategist': 'direct-response-copywriter',
+  'freelance creative strategist': 'direct-response-copywriter',
+  'creative strategist retainer': 'direct-response-copywriter',
+  'creative strategist salary': 'direct-response-copywriter',
+  'creative strategist rates': 'direct-response-copywriter',
+  'creative strategist cost': 'direct-response-copywriter',
+  'performance creative': 'facebook-ads-copywriter',
 }
 
 const tagToVertical: Record<string, string> = {
+  // Creative-strategist cluster targets DTC brands — surface that vertical.
+  'performance creative': 'ecommerce-dtc-copywriter',
   health: 'health-supplement-copywriter',
   supplement: 'health-supplement-copywriter',
   supplements: 'health-supplement-copywriter',
