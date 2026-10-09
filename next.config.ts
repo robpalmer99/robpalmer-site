@@ -18,8 +18,10 @@ const securityHeaders = [
     value: 'max-age=63072000; includeSubDomains; preload',
   },
   {
+    // Matches CSP frame-ancestors 'none' (which modern browsers prefer);
+    // this is the legacy-browser fallback.
     key: 'X-Frame-Options',
-    value: 'SAMEORIGIN',
+    value: 'DENY',
   },
   {
     key: 'X-Content-Type-Options',
@@ -45,8 +47,10 @@ const securityHeaders = [
       "connect-src 'self' https://calendly.com https://assets.calendly.com https://va.vercel-scripts.com https://vitals.vercel-insights.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.sentry.io https://*.ingest.us.sentry.io",
       "frame-src https://calendly.com",
       "frame-ancestors 'none'",
+      "object-src 'none'",
       "base-uri 'self'",
       "form-action 'self'",
+      'upgrade-insecure-requests',
     ].join('; '),
   },
 ]

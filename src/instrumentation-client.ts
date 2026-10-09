@@ -4,7 +4,17 @@
 
 import * as Sentry from "@sentry/nextjs";
 
-if (process.env.NODE_ENV === "production" && !Sentry.getClient()) {
+// Crawlers and link-preview fetchers (SEBot, Googlebot, facebookexternalhit,
+// WhatsApp…) execute scripts in half-built pages and throw from next/script's
+// loader. Gating init itself (not just beforeSend) means bots generate no
+// errors, traces, logs, or replays — and never lazy-load rrweb. The cubot
+// carve-out: Cubot is an Android phone brand whose UA would match /bot\b/.
+const ua = typeof navigator !== "undefined" ? navigator.userAgent : ""
+const isBotUA =
+  /bot\b|crawler|spider|headless|facebookexternalhit|slurp|ia_archiver|whatsapp|skypeuripreview/i.test(ua) &&
+  !/cubot/i.test(ua)
+
+if (process.env.NODE_ENV === "production" && !isBotUA && !Sentry.getClient()) {
   Sentry.init({
     dsn: "https://0b510f2d0ab66699aa23696dfecd40ed@o4511144096038912.ingest.us.sentry.io/4511144172060672",
 
@@ -38,14 +48,6 @@ if (process.env.NODE_ENV === "production" && !Sentry.getClient()) {
     // DOM mismatch against the SSR HTML). Real React hydration errors still
     // flow through `ignoreErrors` patterns above if they slip past this.
     beforeSend(event) {
-      // Headless crawlers (e.g. SEBot) run scripts before <body> exists and
-      // throw from next/script's loader. Not real visitors — drop them.
-      if (
-        typeof navigator !== "undefined" &&
-        /bot\b|crawler|spider|headless/i.test(navigator.userAgent)
-      ) {
-        return null
-      }
       const message =
         event.message ||
         event.exception?.values?.[0]?.value ||
@@ -92,9 +94,9 @@ if (process.env.NODE_ENV === "production" && !Sentry.getClient()) {
     // Define how likely Replay events are sampled when an error occurs.
     replaysOnErrorSampleRate: 1.0,
 
-    // Enable sending user PII (Personally Identifiable Information)
-    // https://docs.sentry.io/platforms/javascript/guides/nextjs/configuration/options/#sendDefaultPii
-    sendDefaultPii: true,
+    // No logged-in users on a marketing site — visitor IPs are pure GDPR
+    // exposure with nothing to correlate them against.
+    sendDefaultPii: false,
   });
 
   // Load Session Replay after startup — keeps ~55KB of rrweb out of the

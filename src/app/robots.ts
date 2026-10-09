@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next'
+import { SITE_URL } from '@/lib/constants'
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -13,9 +14,12 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/_next/'],
+        // Note: /_next/ must stay crawlable — all images serve through
+        // /_next/image and Google needs /_next/static JS to render the page
+        // (FadeIn content sits at opacity:0 until hydration).
+        disallow: ['/api/'],
       },
     ],
-    sitemap: 'https://robpalmer.com/sitemap.xml',
+    sitemap: `${SITE_URL}/sitemap.xml`,
   }
 }
