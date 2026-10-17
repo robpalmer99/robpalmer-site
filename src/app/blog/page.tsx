@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { BlogListingLayout } from './_components/BlogListingLayout'
 import { SITE_URL } from '@/lib/constants'
 import { getPaginatedBlogPosts, getAllBlogListings, toListing } from '@/lib/mdx'
-import { getSiteSearchIndex } from '@/lib/search'
 
 export const metadata: Metadata = {
   title: 'Blog | Direct-Response Copywriting Insights',
@@ -18,13 +17,11 @@ export default function BlogPage() {
   // Slim listing shape — full BlogPostMeta serialized into the client grid
   // is ~850KB of HTML payload (mostly per-post FAQs the grid never shows)
   const allPosts = getAllBlogListings()
-  const siteSearchIndex = getSiteSearchIndex()
 
   return (
     <BlogListingLayout
       posts={posts.map(toListing)}
       allPosts={allPosts}
-      siteSearchIndex={siteSearchIndex}
       currentPage={1}
       totalPages={totalPages}
     />

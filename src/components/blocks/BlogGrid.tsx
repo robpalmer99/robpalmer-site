@@ -13,13 +13,26 @@ import { parseQuery, scoreMatch, type SiteSearchResult } from '@/lib/search'
 interface BlogGridProps {
   posts: BlogPostListing[]
   allPosts?: BlogPostListing[]
-  siteSearchIndex?: SiteSearchResult[]
   currentPage?: number
   totalPages?: number
 }
 
-export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], currentPage = 1, totalPages = 1 }: BlogGridProps) {
+export function BlogGrid({ posts, allPosts = posts, currentPage = 1, totalPages = 1 }: BlogGridProps) {
   const [searchQuery, setSearchQuery] = useState('')
+  // Site-wide search index is fetched lazily on first focus/keystroke rather
+  // than serialised into the page HTML (~210KB).
+  const [siteSearchIndex, setSiteSearchIndex] = useState<SiteSearchResult[]>([])
+  const indexRequested = useRef(false)
+  const loadSiteIndex = () => {
+    if (indexRequested.current) return
+    indexRequested.current = true
+    fetch('/api/site-search')
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((data: SiteSearchResult[]) => setSiteSearchIndex(data))
+      .catch(() => {
+        indexRequested.current = false
+      })
+  }
   const [activeCategory, setActiveCategory] = useState('All')
   const debouncedQuery = useDebounce(searchQuery, 200)
   const searchInputRef = useRef<HTMLInputElement>(null)
@@ -204,7 +217,11 @@ export function BlogGrid({ posts, allPosts = posts, siteSearchIndex = [], curren
             type="search"
             placeholder="Search all content..."
             value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
+            onFocus={loadSiteIndex}
+            onChange={(e) => {
+              loadSiteIndex()
+              setSearchQuery(e.target.value)
+            }}
             className="w-full pl-11 pr-10 py-3 rounded-lg border border-paper-200 bg-white text-ink-950 font-body text-sm transition-shadow placeholder:text-paper-400 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-gold-400"
           />
           {/* Clear button */}

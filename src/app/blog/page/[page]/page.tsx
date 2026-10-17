@@ -3,7 +3,6 @@ import { notFound, redirect } from 'next/navigation'
 import { BlogListingLayout } from '../../_components/BlogListingLayout'
 import { SITE_URL } from '@/lib/constants'
 import { getPaginatedBlogPosts, getAllBlogPosts, getAllBlogListings, toListing, POSTS_PER_PAGE } from '@/lib/mdx'
-import { getSiteSearchIndex } from '@/lib/search'
 
 interface PaginatedBlogPageProps {
   params: Promise<{ page: string }>
@@ -51,7 +50,6 @@ export default async function PaginatedBlogPage({ params }: PaginatedBlogPagePro
   const { posts, totalPages, currentPage } = getPaginatedBlogPosts(pageNum)
   // Slim listing shape — see /blog/page.tsx
   const allPosts = getAllBlogListings()
-  const siteSearchIndex = getSiteSearchIndex()
 
   // Out of range
   if (pageNum > totalPages) {
@@ -62,7 +60,6 @@ export default async function PaginatedBlogPage({ params }: PaginatedBlogPagePro
     <BlogListingLayout
       posts={posts.map(toListing)}
       allPosts={allPosts}
-      siteSearchIndex={siteSearchIndex}
       currentPage={currentPage}
       totalPages={totalPages}
     />
