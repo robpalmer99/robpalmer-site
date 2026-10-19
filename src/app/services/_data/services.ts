@@ -227,7 +227,7 @@ export const services: Service[] = [
       'Senior direct response copywriter with 40+ years and $523M in tracked results. VSLs, sales pages, emails, and full funnels — every word accountable to the numbers.',
     metaTitle: 'Direct Response Copywriter | $523M in Tracked Results',
     metaDescription:
-      'Hire a direct response copywriter with 40+ years of experience and $523M in tracked client results. VSLs, sales pages, emails, funnels. Fixed-price engagements from $10K.',
+      'Hire a direct response copywriter with 40+ years of experience and $523M in tracked client results. VSLs, sales pages, emails, funnels. Fixed-price, retainer or project.',
     headline: 'The Direct Response Copywriter Behind $523M in Tracked Sales',
     subheadline:
       'I\'ve been writing direct response copy for over 40 years — first for Apple, IBM, and Microsoft, then through a 9-year Belron campaign that tracked $523 million in sales. Today I write VSLs, sales pages, emails, and full funnels for offer owners who measure copy the only way that counts: what it sells.',
@@ -235,7 +235,7 @@ export const services: Service[] = [
     heroImageAlt: 'Direct response copywriter\'s desk with marked-up sales letters and fountain pen',
     definition: {
       term: 'Direct Response Copywriter',
-      text: 'A direct response copywriter writes copy designed to produce a measurable action — a sale, an opt-in, a booked call — rather than brand awareness. Rob Palmer is a direct response copywriter with 40+ years of experience; his longest engagement, a 9-year direct-response campaign for Belron, tracked $523 million in sales. He writes VSLs, sales pages, email sequences, and complete funnels, and is actively taking client engagements, which typically start at $10K.',
+      text: 'A direct response copywriter writes copy designed to produce a measurable action — a sale, an opt-in, a booked call — rather than brand awareness. Rob Palmer is a direct response copywriter with 40+ years of experience; his longest engagement, a 9-year direct-response campaign for Belron, tracked $523 million in sales. He writes VSLs, sales pages, email sequences, and complete funnels, and is actively taking client engagements, on retainer or by project.',
     },
     heroStats: {
       primary: { value: '$523M', label: 'In Tracked Client Sales' },
@@ -384,7 +384,7 @@ export const services: Service[] = [
       {
         question: 'How much does a direct response copywriter cost?',
         answer:
-          'Senior direct response copywriters price by the project, and my engagements are fixed-price — most start at $10K, depending on scope and research depth. You\'ll have a clear quote within 48 hours of the strategy call, with no hourly billing and no scope creep. The framing that matters: a sales page converting at 4% instead of 1% on the same traffic changes the economics of your whole funnel. Cheap copy that doesn\'t convert is the most expensive copy you can buy. I\'ve written <a href="/blog/how-much-does-a-direct-response-copywriter-cost">a full pricing guide</a> if you want the detailed breakdown.',
+          'Senior direct response copywriters price by the project, and my engagements are fixed-price, scoped to the asset and the research depth it needs. You\'ll have a clear quote within 48 hours of the strategy call, with no hourly billing and no scope creep. The framing that matters: a sales page converting at 4% instead of 1% on the same traffic changes the economics of your whole funnel. Cheap copy that doesn\'t convert is the most expensive copy you can buy. I\'ve written <a href="/blog/how-much-does-a-direct-response-copywriter-cost">a full pricing guide</a> if you want the detailed breakdown.',
       },
       {
         question: 'How do I hire a direct response copywriter — what should I look for?',
@@ -590,7 +590,7 @@ export const services: Service[] = [
       {
         question: 'What does a VSL cost?',
         answer:
-          'VSL engagements are fixed-price. The number depends on length, offer complexity, and research scope \u2014 most VSL projects start at $10K. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a VSL converting at 2% instead of 0.5% on the same traffic doesn\'t pay for itself \u2014 it changes the economics of the offer.',
+          'VSL engagements are fixed-price. The number depends on length, offer complexity, and research scope. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a VSL converting at 2% instead of 0.5% on the same traffic doesn\'t pay for itself \u2014 it changes the economics of the offer.',
       },
       {
         question: 'How long does it take to write a VSL?',
@@ -794,7 +794,7 @@ export const services: Service[] = [
       {
         question: 'What does a sales page cost?',
         answer:
-          'Sales-page engagements are fixed-price. The number depends on offer complexity, length, and research scope \u2014 most sales-page projects start at $10K. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a sales page converting at 4% instead of 1% on the same traffic doesn\'t pay for itself \u2014 it changes the economics of the funnel.',
+          'Sales-page engagements are fixed-price. The number depends on offer complexity, length, and research scope. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a sales page converting at 4% instead of 1% on the same traffic doesn\'t pay for itself \u2014 it changes the economics of the funnel.',
       },
       {
         question: 'How long should a sales page be?',
@@ -988,7 +988,7 @@ export const services: Service[] = [
       {
         question: 'What does a sales letter cost?',
         answer:
-          'Sales-letter engagements are fixed-price. Most sales-letter and TSL projects start at $10K \u2014 pricing depends on length, complexity, format (direct mail vs. digital TSL), and research scope. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a sales letter that converts at 4% instead of 1% on the same traffic doesn\'t pay for itself \u2014 it changes the economics of the offer.',
+          'Sales-letter engagements are fixed-price. Pricing depends on length, complexity, format (direct mail vs. digital TSL), and research scope. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a sales letter that converts at 4% instead of 1% on the same traffic doesn\'t pay for itself \u2014 it changes the economics of the offer.',
       },
       {
         question: 'How long does it take to write a sales letter?',
@@ -1180,7 +1180,7 @@ export const services: Service[] = [
       {
         question: 'What does email copywriting cost?',
         answer:
-          'Email engagements are fixed-price. Full sequences typically start at $10K; shorter tactical sequences (5-email abandon cart, 3-email re-engagement) are priced lower. The exact number depends on sequence length, strategic complexity, and research scope. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a sequence that lifts revenue-per-subscriber by 30% on an existing list is pure margin \u2014 it costs nothing in additional ad spend.',
+          'Email engagements are fixed-price. Full sequences and shorter tactical sequences (5-email abandon cart, 3-email re-engagement) are scoped separately. The exact number depends on sequence length, strategic complexity, and research scope. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a sequence that lifts revenue-per-subscriber by 30% on an existing list is pure margin \u2014 it costs nothing in additional ad spend.',
       },
       {
         question: 'How long does it take to write an email sequence?',
@@ -1377,7 +1377,7 @@ export const services: Service[] = [
       {
         question: 'What does ad copywriting cost?',
         answer:
-          'Ad-copy engagements are fixed-price. Most full ad-copy projects start at $10K \u2014 a multi-platform suite with research, hook library, finished ads, platform-specific tuning, and a testing roadmap. Smaller single-platform suites are priced lower. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: at serious daily budgets, an ad that converts at 1.5% instead of 1% on the same traffic pays for the writer in the first week.',
+          'Ad-copy engagements are fixed-price. A full project is a multi-platform suite with research, hook library, finished ads, platform-specific tuning, and a testing roadmap. Smaller single-platform suites are priced lower. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: at serious daily budgets, an ad that converts at 1.5% instead of 1% on the same traffic pays for the writer in the first week.',
       },
       {
         question: 'How long does it take to write an ad campaign?',
@@ -1579,7 +1579,7 @@ export const services: Service[] = [
       {
         question: 'How much does landing page copywriting cost?',
         answer:
-          'Landing-page engagements are fixed-price. Most landing-page projects start at $5K \u2014 lower than long-form sales pages because the asset is shorter, but the diagnostic and traffic-source analysis time is similar. Bundled bridge sequences (multiple landing pages for one funnel) start at $10K. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a landing page that converts at 5% instead of 2% on the same traffic doesn\'t pay for itself \u2014 it transforms what your ad spend can buy.',
+          'Landing-page engagements are fixed-price. Landing pages are scoped lower than long-form sales pages because the asset is shorter, but the diagnostic and traffic-source analysis time is similar. Bundled bridge sequences (multiple landing pages for one funnel) are scoped as one project. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a landing page that converts at 5% instead of 2% on the same traffic doesn\'t pay for itself \u2014 it transforms what your ad spend can buy.',
       },
       {
         question: 'How long does it take to write a landing page?',
@@ -1977,7 +1977,7 @@ export const services: Service[] = [
       {
         question: 'How much does upsell and downsell copywriting cost?',
         answer:
-          'Upsell-and-downsell engagements are fixed-price. Most full-stack projects (1\u20133 upsells, 1\u20132 downsells, order bump, thank-you page) start at $10K \u2014 the math depends on the number of pages and offer complexity. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: upsell copy lifts revenue from traffic you\'ve already paid for. There\'s no additional ad spend, no additional acquisition cost. It\'s the highest-margin copywriting investment you can make \u2014 and the ROI is usually measurable inside a week.',
+          'Upsell-and-downsell engagements are fixed-price. Most full-stack projects (1\u20133 upsells, 1\u20132 downsells, order bump, thank-you page) are scoped on the number of pages and offer complexity. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: upsell copy lifts revenue from traffic you\'ve already paid for. There\'s no additional ad spend, no additional acquisition cost. It\'s the highest-margin copywriting investment you can make \u2014 and the ROI is usually measurable inside a week.',
       },
       {
         question: 'How long does it take to write an upsell sequence?',
@@ -2176,7 +2176,7 @@ export const services: Service[] = [
       {
         question: 'What does an AI copywriting engagement cost?',
         answer:
-          'AI copywriting engagements are fixed-price. Most engagements start at $10K \u2014 a focused single-copy-type installation (e.g., VSL skills + vault subset + draft-review workflow). Full multi-copy-type installations run higher. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a copy team producing better-converting copy 3x faster isn\'t an expense \u2014 it\'s the highest-leverage investment in your marketing operation.',
+          'AI copywriting engagements are fixed-price. A focused engagement is a single-copy-type installation (e.g., VSL skills + vault subset + draft-review workflow). Full multi-copy-type installations run higher. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a copy team producing better-converting copy 3x faster isn\'t an expense \u2014 it\'s the highest-leverage investment in your marketing operation.',
       },
       {
         question: 'How long does an AI copywriting engagement take?',
@@ -2570,7 +2570,7 @@ export const services: Service[] = [
       {
         question: 'What does Facebook ads copywriting cost?',
         answer:
-          'Facebook ads engagements are fixed-price. Most full FB ad suites start at $10K \u2014 research, hook library, 8\u201315 finished ads with placement-specific tuning, compliance notes, and a testing roadmap. Smaller single-campaign suites are priced lower. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: at $5K/day in Facebook spend, an ad converting at 1.5% instead of 1% on the same traffic pays for the writer in the first week.',
+          'Facebook ads engagements are fixed-price. A full FB ad suite covers research, hook library, 8\u201315 finished ads with placement-specific tuning, compliance notes, and a testing roadmap. Smaller single-campaign suites are priced lower. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: at $5K/day in Facebook spend, an ad converting at 1.5% instead of 1% on the same traffic pays for the writer in the first week.',
       },
       {
         question: 'How long does it take to write a Facebook ad campaign?',
