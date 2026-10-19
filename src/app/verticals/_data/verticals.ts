@@ -600,7 +600,7 @@ export const verticals: Vertical[] = [
           'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is audience and revenue-stack research, then connected-stack architecture, then drafting, then iteration roadmap and one revision round across the full stack. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
-    relatedServices: ['creative-strategist', 'email-copywriter', 'upsell-downsell-copywriter', 'landing-page-copywriter', 'ad-copywriter'],
+    relatedServices: ['creative-strategist', 'email-copywriter', 'upsell-downsell-copywriter', 'ad-copywriter'],
     relatedVerticals: ['health-supplement-copywriter', 'saas-copywriter'],
   },
   {

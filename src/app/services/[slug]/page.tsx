@@ -140,7 +140,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                           Related Services
                         </h2>
                         <p className="mt-3 text-lg text-ink-700 font-body">
-                          Other direct-response copywriting services that complement{' '}
+                          Other services that complement{' '}
                           {service.title.toLowerCase()}.
                         </p>
                       </div>

@@ -197,6 +197,7 @@ const tagToVertical: Record<string, string> = {
 }
 
 const serviceTitles: Record<string, string> = {
+  'creative-strategist': 'Creative Strategist',
   'vsl-copywriter': 'VSL Copywriter',
   'sales-page-copywriter': 'Sales Page Copywriter',
   'sales-letter-copywriter': 'Sales Letter Copywriter',
