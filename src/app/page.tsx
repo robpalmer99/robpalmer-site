@@ -385,7 +385,7 @@ export default function HomePage() {
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gold-400" aria-hidden="true" />
-                  <span><strong className="text-ink-950">Fit.</strong> Retainer or project, whichever fits the work. Fixed-price quote within 48 hours of the call &mdash; and if I&apos;m not the right person, I&apos;ll say so and point you to someone who is.</span>
+                  <span><strong className="text-ink-950">Fit.</strong> I work on retainer or by project and quote a fixed price within 48 hours of the call. If I&apos;m not the right person, I&apos;ll say so and point you to someone who is.</span>
                 </li>
               </ul>
             </FadeIn>

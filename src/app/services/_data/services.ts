@@ -227,7 +227,7 @@ export const services: Service[] = [
       'Senior direct response copywriter with 40+ years and $523M in tracked results. VSLs, sales pages, emails, and full funnels — every word accountable to the numbers.',
     metaTitle: 'Direct Response Copywriter | $523M in Tracked Results',
     metaDescription:
-      'Hire a direct response copywriter with 40+ years of experience and $523M in tracked client results. VSLs, sales pages, emails, funnels. Fixed-price, retainer or project.',
+      'Hire a direct response copywriter with 40+ years of experience and $523M in tracked client results. VSLs, sales pages, emails, funnels. Fixed-price, on retainer or by project.',
     headline: 'The Direct Response Copywriter Behind $523M in Tracked Sales',
     subheadline:
       'I\'ve been writing direct response copy for over 40 years — first for Apple, IBM, and Microsoft, then through a 9-year Belron campaign that tracked $523 million in sales. Today I write VSLs, sales pages, emails, and full funnels for offer owners who measure copy the only way that counts: what it sells.',
@@ -1579,7 +1579,7 @@ export const services: Service[] = [
       {
         question: 'How much does landing page copywriting cost?',
         answer:
-          'Landing-page engagements are fixed-price. Landing pages are scoped lower than long-form sales pages because the asset is shorter, but the diagnostic and traffic-source analysis time is similar. Bundled bridge sequences (multiple landing pages for one funnel) are scoped as one project. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a landing page that converts at 5% instead of 2% on the same traffic doesn\'t pay for itself \u2014 it transforms what your ad spend can buy.',
+          'Landing-page engagements are fixed-price. Landing pages are priced lower than long-form sales pages because the asset is shorter, but the diagnostic and traffic-source analysis time is similar. Bundled bridge sequences (multiple landing pages for one funnel) are scoped as one project. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a landing page that converts at 5% instead of 2% on the same traffic doesn\'t pay for itself \u2014 it transforms what your ad spend can buy.',
       },
       {
         question: 'How long does it take to write a landing page?',
@@ -1977,7 +1977,7 @@ export const services: Service[] = [
       {
         question: 'How much does upsell and downsell copywriting cost?',
         answer:
-          'Upsell-and-downsell engagements are fixed-price. Most full-stack projects (1\u20133 upsells, 1\u20132 downsells, order bump, thank-you page) are scoped on the number of pages and offer complexity. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: upsell copy lifts revenue from traffic you\'ve already paid for. There\'s no additional ad spend, no additional acquisition cost. It\'s the highest-margin copywriting investment you can make \u2014 and the ROI is usually measurable inside a week.',
+          'Upsell-and-downsell engagements are fixed-price. Most full-stack projects (1\u20133 upsells, 1\u20132 downsells, order bump, thank-you page) are scoped by the number of pages and offer complexity. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: upsell copy lifts revenue from traffic you\'ve already paid for. There\'s no additional ad spend, no additional acquisition cost. It\'s the highest-margin copywriting investment you can make \u2014 and the ROI is usually measurable inside a week.',
       },
       {
         question: 'How long does it take to write an upsell sequence?',
@@ -2176,7 +2176,7 @@ export const services: Service[] = [
       {
         question: 'What does an AI copywriting engagement cost?',
         answer:
-          'AI copywriting engagements are fixed-price. A focused engagement is a single-copy-type installation (e.g., VSL skills + vault subset + draft-review workflow). Full multi-copy-type installations run higher. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a copy team producing better-converting copy 3x faster isn\'t an expense \u2014 it\'s the highest-leverage investment in your marketing operation.',
+          'AI copywriting engagements are fixed-price. A focused engagement is a single-copy-type installation (e.g., VSL skills + vault subset + draft-review workflow). Full multi-copy-type installations are scoped as a larger project. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a copy team producing better-converting copy 3x faster isn\'t an expense \u2014 it\'s the highest-leverage investment in your marketing operation.',
       },
       {
         question: 'How long does an AI copywriting engagement take?',
@@ -2770,7 +2770,7 @@ export const services: Service[] = [
       {
         question: 'How much does CRO cost?',
         answer:
-          'CRO engagements are fixed-price. Scope ranges from a single-page audit with test-ready rewrites to full-funnel CRO across 5\u20138 pages, on retainer or by project. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: improving your conversion rate by even 0.5% on serious traffic pays for the engagement in the first week. CRO is the only investment that makes every other marketing investment work harder.',
+          'CRO engagements are fixed-price, on retainer or by project. Scope ranges from a single-page audit with test-ready rewrites to full-funnel CRO across 5\u20138 pages. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: improving your conversion rate by even 0.5% on serious traffic pays for the engagement in the first week. CRO is the only investment that makes every other marketing investment work harder.',
       },
       {
         question: 'How long does a CRO engagement take?',
