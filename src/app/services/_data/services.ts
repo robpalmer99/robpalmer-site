@@ -2213,7 +2213,7 @@ export const services: Service[] = [
       'Senior AI marketing consultant. I install the Triple Brain Marketing methodology (40+ years of DR craft, Claude Code custom skills and a 1,239-file copywriting brain) in your team\'s workflow so AI output turns into revenue.',
     headline: 'AI Marketing Consultant: Install the Methodology, Not Another Tool',
     subheadline:
-      'Triple Brain Marketing gives your team one workflow for AI copy that converts: 40 years of direct-response craft, Claude Code running my custom copywriting skills, and a 1,239-file copywriting brain. I audit your current setup, install the skills and train your people to use them, then review their drafts the way I did when Stefan Georgi hired me as Copy Chief at Copy Accelerator. If your AI marketing is producing more output but not more revenue, this is how you fix it.',
+      'Triple Brain Marketing gives your team a single system for AI copy that converts: 40 years of direct-response craft, Claude Code running my custom copywriting skills, and a 1,239-file copywriting brain. I audit your current setup, install the skills and train your people to use them, then review their drafts the way I did when Stefan Georgi hired me as Copy Chief at Copy Accelerator. If your AI marketing is producing more output but not more revenue, this is how you fix it.',
     heroImage: '/images/services/ai-marketing-consultant.jpg',
     heroImageAlt: 'AI-powered marketing strategy and campaign optimization',
     heroStats: {
@@ -2246,7 +2246,7 @@ export const services: Service[] = [
       {
         heading: 'The Triple Brain Methodology I Install',
         content:
-          'The methodology I install is <strong>Triple Brain Marketing</strong>: three brains joined into one workflow your team can run on every brief. It\'s the workflow I ran as <strong>Copy Chief at Copy Accelerator</strong> after Stefan Georgi hired me, rebuilt so a whole team can use it. Each brain covers a gap the other two leave open.\n\n' +
+          'The methodology I install is <strong>Triple Brain Marketing</strong>: three brains joined into one workflow your team can use on every brief. It\'s the workflow I use on my own client work, rebuilt so a whole team can run it without me in the room. Each brain does a job the other two can\'t.\n\n' +
           '<strong>Brain 1:</strong> 40 years of direct-response craft. Grounded in $523M+ of tracked client results across Apple UK direct mail, IBM, Microsoft, Citibank, Morgan Stanley, the Belron $523M / 9-year campaign, ClickBank-Platinum offers like Mobile Profits ($30M, #1 on ClickBank), the $40M Gluco 6 supplement funnel, the 5.7% opt-in-to-sale Monetari Fund financial bridge, and the 22% trial-to-paid Chatterkick SaaS onboarding sequence.\n\n' +
           '<strong>Brain 2:</strong> Claude Code augmented by my custom-built copywriting skills. Not generic ChatGPT prompting \u2014 proprietary skill files that encode 40 years of frameworks, formulas, and evaluation criteria into a working AI workflow. Open-sourced selectively as verifiable proof of substance.\n\n' +
           '<strong>Brain 3:</strong> A 1,239-file Obsidian copywriting brain. 190 frameworks, 193 swipe pieces, 125 book/course notes, 76 templates, and 512 pieces of my own tested copy \u2014 indexed and instantly retrievable while your team writes.\n\n' +
