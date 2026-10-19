@@ -614,12 +614,12 @@ export const verticals: Vertical[] = [
     slug: 'clickbank-copywriter',
     shortDescription:
       'ClickBank funnels anchored on Mobile Profits \u2014 the #1 ClickBank offer that did $30M. VSLs, hybrid sales pages, and back-end stacks engineered for both buyer conversion and top-affiliate EPC.',
-    metaTitle: 'ClickBank Copywriter | $30M Mobile Profits + 300% ROAS',
+    metaTitle: 'ClickBank Copywriter | Creative Strategy Affiliates Promote',
     metaDescription:
-      'Senior ClickBank copywriter behind Mobile Profits \u2014 the #1 ClickBank biz-op VSL that did $30M+ \u2014 and the email-driven funnel that drove 300% ROAS for Ben Palmer (ClickBank Platinum Vendor). Fixed-price engagements, two-week kickoffs.',
-    headline: 'ClickBank Copywriter Behind the $30M Mobile Profits #1 Offer',
+      'ClickBank copywriter and creative strategist behind Mobile Profits, the #1 ClickBank offer at $30M+. EPC-driven angles, VSLs and back ends affiliates push.',
+    headline: 'Creative Strategy and Funnels Affiliates Fight to Promote',
     subheadline:
-      '"Rob is a killer copywriter. We\'re getting a 300% Return on Ad Spend." That\'s Ben Palmer, a ClickBank Platinum vendor, on an email-driven funnel I wrote for him. The Mobile Profits VSL I wrote became the <strong>#1 offer on ClickBank</strong> and did over <strong>$30 million</strong>. If your ClickBank funnel converts but EPC sits below the $1.20 threshold top affiliates need \u2014 or your gravity climbed and stalled \u2014 this is the kind of work I do.',
+      'I find the angles that lift EPC, write the VSL and back-end stack around them, and give your affiliates swipes built from the same winners. The Mobile Profits VSL I wrote became the <strong>#1 offer on ClickBank</strong> and did over <strong>$30 million</strong>, and the email-driven funnel I wrote for Ben Palmer, a ClickBank Platinum vendor, drives <strong>300% ROAS</strong>. If your funnel converts but EPC sits below what top affiliates need, this is the work I do.',
     heroImage: '/images/industries/clickbank.jpg',
     heroImageAlt: 'Digital marketing analytics and performance metrics',
     heroStats: {
@@ -638,7 +638,7 @@ export const verticals: Vertical[] = [
         'Christian Green / ClickBank',
         'Gluco 6 Supplement Funnel ($40M)',
         'Konscious Keto (Ryan Kowalski)',
-        'Copy Accelerator / CA Labs (Stefan Georgi as Copy Chief)',
+        'Copy Accelerator (as Copy Chief)',
       ],
     },
     definition: {
@@ -649,11 +649,12 @@ export const verticals: Vertical[] = [
       {
         heading: 'Why Most ClickBank Offers Never Make the Affiliate Queue',
         content:
+          'On ClickBank, every angle has two jobs. It has to convert the buyer, and it has to earn enough per click that affiliates keep sending traffic. So I score each angle on EPC, which counts refunds and back-end take rates as well as the front-end sale. A hook that converts well but pulls in refund-prone buyers can drag EPC down, while a hook with slightly lower conversion and stronger upsell take rates can lift it. I keep whichever angle pays affiliates most and build their swipe file from it.\n\n' +
           'You launched a ClickBank offer. Maybe two. Maybe a dozen. Some did okay. None became the offer affiliates fight to promote.\n\n' +
           'Here\'s why. ClickBank is a two-sided marketplace and most copywriters only write to one side of it.\n\n' +
           'Side one is the buyer. Cold traffic, attention deficit, shopping for a transformation. Your sales page has to convert them at a rate that pays back ad spend with margin to spare.\n\n' +
           'Side two is the affiliate. They aren\'t reading your copy \u2014 they\'re reading your stats. Gravity, EPC, refund rate, AOV, take rate on the order bump. They run the numbers. If your EPC clears their threshold, they push your offer to the top of their queue. If it doesn\'t, they ignore you and promote the next one. Most offers never make the queue.\n\n' +
-          'The result: you launch with hope. You scale with your own ad spend. You hit a ceiling. The affiliate engine that scales ClickBank winners never cranks for your offer \u2014 because the back-end math doesn\'t work. AOV stalls at $97. Refund rate drifts toward 12%. Net EPC sits at $0.84 when affiliates need $1.20 to back you. At $5K/day in your own spend, every week is $35K burning while the brand that figured the math out two months earlier compounds without you.\n\n' +
+          'The result: you launch with hope. You scale with your own ad spend. You hit a ceiling. The affiliate engine that scales ClickBank winners never cranks for your offer \u2014 because the back-end math doesn\'t work. AOV stalls at $97. Refund rate drifts toward 12%. Net EPC sits at $0.84 when affiliates need $1.20 to back you. At $5,000 a day in your own spend, every week is $35,000 burning while the brand that figured the math out two months earlier compounds without you.\n\n' +
           'The structural problem isn\'t willpower or word choice. It\'s that most ClickBank copywriters write the front-end VSL and call the funnel done. The skill ClickBank actually rewards: writing copy that converts the buyer AND lifts EPC enough that affiliates do the scaling for you.',
       },
       {
@@ -669,7 +670,7 @@ export const verticals: Vertical[] = [
       {
         heading: 'The ClickBank Copywriter Top DR Operators Hire',
         content:
-          'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as <strong>Copy Chief inside Copy Accelerator\'s CA Labs</strong>. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor, clocked <strong>300% ROAS</strong> on a funnel I wrote.\n\n' +
+          'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as <strong>Copy Chief at Copy Accelerator</strong>. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor, clocked <strong>300% ROAS</strong> on a funnel I wrote.\n\n' +
           'Caleb O\'Dowd \u2014 a direct-response marketer \u2014 came back with: <em>"Rob, high five!! You da Man! Great to get that bump in conversions!"</em>\n\n' +
           'Mark Shay, who has seen more supplement-and-biz-op copy than most, put it on record: <em>"Rob is probably the most methodical copywriter I\'ve seen. This impresses me."</em>\n\n' +
           'These are operators with their own money on the line. ClickBank doesn\'t reward writers who can\'t do the back-end math \u2014 the marketplace clears them out inside two launch windows. DR operators at this level keep handing me ClickBank work \u2014 and that\'s the proof that matters more than any individual stat.',
@@ -726,6 +727,7 @@ export const verticals: Vertical[] = [
       },
     ],
     deliverables: [
+      { title: 'EPC-Driven Angle Map', description: 'Angles ranked by the metric affiliates watch, EPC, with hooks for the front end and the swipe file they will mail.' },
       { title: 'ClickBank VSL Scripts', description: 'Front-end VSLs and hybrid sales-page/VSL formats engineered for ClickBank cold traffic. Mobile Profits-style hooks.' },
       { title: 'Order Bump + OTO Stack', description: 'Order bump + OTO1 + OTO2 + downsell + thank-you page sequence engineered to lift EPC above the affiliate threshold.' },
       { title: 'Affiliate Tools Page', description: 'Swipe copy, email templates, banner copy, and promotional angles affiliates can run \u2014 the assets that earn you placement in their queue.' },
@@ -768,7 +770,7 @@ export const verticals: Vertical[] = [
       {
         question: 'What does ClickBank copywriting cost?',
         answer:
-          'ClickBank engagements are fixed-price. A standalone ClickBank VSL or hybrid sales page starts at $10K. A full ClickBank funnel (VSL + back-end stack + affiliate-tools page + email sequences) typically starts at $25K. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a back-end stack that lifts EPC from $0.84 to $1.20 doesn\'t just pay for the writer \u2014 it unlocks the top-50 affiliate engine that scales ClickBank winners.',
+          'ClickBank engagements are fixed-price. Scope ranges from a standalone VSL or hybrid sales page to a full funnel with back-end stack, affiliate-tools page and email sequences, on retainer or by project. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a back-end stack that lifts EPC from $0.84 to $1.20 doesn\'t just pay for the writer \u2014 it unlocks the top-50 affiliate engine that scales ClickBank winners.',
       },
       {
         question: 'How long does it take to launch a ClickBank funnel?',
