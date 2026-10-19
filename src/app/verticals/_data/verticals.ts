@@ -770,7 +770,7 @@ export const verticals: Vertical[] = [
       {
         question: 'What does ClickBank copywriting cost?',
         answer:
-          'ClickBank engagements are fixed-price. Scope ranges from a standalone VSL or hybrid sales page to a full funnel with back-end stack, affiliate-tools page and email sequences, on retainer or by project. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a back-end stack that lifts EPC from $0.84 to $1.20 doesn\'t just pay for the writer \u2014 it unlocks the top-50 affiliate engine that scales ClickBank winners.',
+          'ClickBank engagements are fixed-price. Scope ranges from a standalone VSL or hybrid sales page to a full funnel with back-end stack, affiliate-tools page and email sequences, on retainer or by project. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a back-end stack that lifts EPC from $0.84 to $1.20 pays for the writer and puts your offer in front of the top-50 affiliates who scale ClickBank winners.',
       },
       {
         question: 'How long does it take to launch a ClickBank funnel?',
@@ -985,7 +985,7 @@ export const verticals: Vertical[] = [
     metaTitle: 'Info Product Copywriter | 340% ROAS + Creative Strategy',
     metaDescription:
       'Info product copywriter and creative strategist behind the 340% ROAS Abundant TSL on Facebook cold traffic. Launch and evergreen angles, pages and emails.',
-    headline: 'Creative Strategy and Copy Behind the 340% ROAS Abundant Launch',
+    headline: 'Creative Strategy and Copy Behind the 340% ROAS Abundant TSL',
     subheadline:
       '"Everything is on point and on brief! You knocked it out of the park with those!" That\'s Devon Brown, founder of Just Throw Some Sexy On It, on copy I shipped him. I find the angles that sell your program, then write the sales page, launch emails and webinar around the winners. The Abundant TSL I wrote drove <strong>340% ROAS</strong> on Facebook cold traffic. If your course launches at $50K when the offer should do $500K, or your evergreen webinar converts at 1% when it should clear 4%, this is the work I do.',
     heroImage: '/images/industries/info-products.jpg',
