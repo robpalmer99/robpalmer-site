@@ -15,9 +15,9 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { SITE_URL } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'About | Triple Brain Marketing & 40+ Years of Direct-Response Copywriting',
+  title: 'About | Creative Strategist & Direct-Response Copywriter',
   description:
-    'Rob Palmer is a direct-response copywriter and persuasion architect with $523M+ in tracked results. Triple Brain Marketing fuses 40+ years of DR craft, Claude Code with custom copywriting skills, and a 1,239-file Obsidian copywriting brain — into one engagement.',
+    'Rob Palmer is a creative strategist and direct-response copywriter with $523M+ in tracked results. He plans and builds Meta ad creative with Triple Brain.',
   alternates: {
     canonical: `${SITE_URL}/about`,
   },
@@ -28,8 +28,8 @@ export default function AboutPage() {
     <>
       <Hero
         variant="page"
-        headline="Three brains. Forty years. One copywriter."
-        subheadline="Direct-response copywriter and persuasion architect. Behind $523M+ in tracked campaign results. The system Stefan Georgi&rsquo;s team chose for CA Labs."
+        headline="Forty years of direct response. Now pointed at your creative."
+        subheadline="Creative strategist and direct-response copywriter. Behind $523M+ in tracked campaign results."
       />
       <Breadcrumbs items={[{ label: 'About' }]} />
 
@@ -42,11 +42,15 @@ export default function AboutPage() {
                 and schema). Everything else on this page stays first-person. */}
             <FadeIn>
               <p className="text-base text-paper-600 font-body leading-relaxed mb-10 max-w-3xl">
-                Rob Palmer is a direct-response copywriter with 40+ years of
-                experience and $523M+ in tracked client results, including
-                campaigns for Apple, IBM, Microsoft, and Belron/Safelite. He
-                works with health, finance, SaaS, e-commerce, and ClickBank
-                clients worldwide, and is taking new engagements in 2026.
+                Rob Palmer is a creative strategist and direct-response
+                copywriter with 40+ years of experience and $523M+ in tracked
+                client results, including campaigns for Apple, IBM, Microsoft,
+                and Belron/Safelite. He plans and produces ad creative for DTC
+                brands scaling on Meta: the angles and the testing program,
+                plus the scripts, statics, AI video and landing pages built
+                from them. He also works with health, finance, SaaS,
+                e-commerce, and ClickBank clients worldwide, and is taking new
+                engagements in 2026.
               </p>
             </FadeIn>
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8 mb-10">
@@ -56,7 +60,7 @@ export default function AboutPage() {
                   <div className="relative w-44 h-44 sm:w-56 sm:h-56 rounded-xl overflow-hidden shadow-lg ring-2 ring-gold-400/20">
                     <Image
                       src="/images/headshots/rob-palmer-clean.png"
-                      alt="Rob Palmer - Direct-Response Copywriter"
+                      alt="Rob Palmer, creative strategist and direct-response copywriter"
                       fill
                       sizes="(max-width: 640px) 176px, 224px"
                       className="object-cover"
@@ -68,22 +72,25 @@ export default function AboutPage() {
               <FadeIn delay={150} duration={700}>
                 <div className="space-y-4 text-lg text-ink-700 leading-relaxed font-body">
                   <p>
-                    I am a direct-response copywriter and persuasion architect
-                    who has generated over{' '}
+                    I&apos;m a creative strategist and direct-response
+                    copywriter. I decide which angles your ads should test,
+                    then read your account&apos;s results to plan the next
+                    round. And I write and build the creative myself: the
+                    scripts, statics, AI video and landers. My campaigns have
+                    generated over{' '}
                     <strong className="text-ink-950">
                       $523 million in tracked revenue
                     </strong>{' '}
-                    for clients across the globe — from ClickBank vendors and DTC
-                    brands to Fortune 500 corporations like Apple, IBM,
-                    Microsoft, Citibank, and Morgan Stanley.
+                    for clients ranging from ClickBank vendors and DTC brands
+                    to Fortune 500 corporations like Apple, IBM, Microsoft,
+                    Citibank, and Morgan Stanley.
                   </p>
                   <p>
-                    But that number is the result, not the method. The method
-                    is{' '}
+                    The method behind that number is{' '}
                     <strong className="text-ink-950">
                       Triple Brain Marketing
-                    </strong>{' '}
-                    — three integrated brains working as one engagement: my
+                    </strong>
+                    , three integrated brains working as one engagement: my
                     forty years of direct-response craft, Claude Code augmented
                     by my own custom-built copywriting skills, and a 1,239-file
                     Obsidian copywriting brain spanning the old direct-response
@@ -98,14 +105,14 @@ export default function AboutPage() {
                     <strong className="text-ink-950">340% Abundant</strong> TSL on Facebook cold.
                   </p>
                   <p>
-                    Stefan Georgi, founder of Copy Accelerator, hired me as{' '}
-                    <strong className="text-ink-950">Copy Chief for CA Labs.</strong>{' '}
+                    Stefan Georgi hired me as{' '}
+                    <strong className="text-ink-950">Copy Chief at Copy Accelerator.</strong>{' '}
                     The CEO of Belron International called me his{' '}
                     <strong className="text-ink-950">
                       &ldquo;Secret Weapon.&rdquo;
                     </strong>{' '}
-                    And right now, I am taking selective new engagements —
-                    building campaigns for clients from{' '}
+                    And right now, I&apos;m taking on selective new
+                    engagements, building creative for clients from{' '}
                     <strong className="text-ink-950">
                       the United States to the United Arab Emirates.
                     </strong>
@@ -219,7 +226,7 @@ export default function AboutPage() {
               </FadeIn>
               <FadeIn delay={300}>
                 <p>
-                  I realised the problem wasn&apos;t AI versus human. It was that
+                  I realized the problem wasn&apos;t AI versus human. It was that
                   nobody had{' '}
                   <strong className="text-paper-50">fused</strong> the three
                   brains needed to produce great direct-response copy in 2026.
@@ -234,28 +241,40 @@ export default function AboutPage() {
                   So I built it myself.
                 </p>
               </FadeIn>
+              <FadeIn delay={500}>
+                <p>
+                  For most of my career, clients hired me to write one asset: a
+                  sales page, a VSL, an email series. Then Meta changed how it
+                  finds buyers. Its algorithm now rewards accounts that feed it
+                  genuinely different concepts every week, so the bottleneck
+                  became the supply of fresh angles. Clients stopped asking me
+                  for a single script. They wanted one person to plan the
+                  tests, make the creative and read the results. The three
+                  brains I&apos;d built turned out to fit that job exactly.
+                </p>
+              </FadeIn>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
                 {[
                   {
                     label: 'Brain 1',
-                    title: 'My copywriting brain',
+                    title: 'Strategy brain',
                     detail:
-                      '40+ years of direct-response craft for the world\u2019s top brands — Apple, IBM, Microsoft, Citibank, Morgan Stanley — plus the campaign behind $523M for Belron. Schwartz, Halbert, Hopkins, Caples, Sugarman, Collier — internalised, not memorised. Pattern recognition you can\u2019t fake or buy.',
+                      '40+ years of direct-response craft for the world\u2019s top brands (Apple, IBM, Microsoft, Citibank, Morgan Stanley), plus the campaign behind $523M for Belron. Schwartz, Halbert, Hopkins, Caples, Sugarman and Collier, studied for decades. It picks the angle to test, the hook to lead with, and what to change when the numbers come in.',
                   },
                   {
                     label: 'Brain 2',
-                    title: 'Claude Code, with my custom copywriting skills',
+                    title: 'Production brain',
                     detail:
-                      'Anthropic\u2019s most capable model, augmented by my own custom-built skill files. Not generic prompting — proprietary frameworks, headline formulas, evaluation criteria, and compliance rules from real campaigns, encoded for Claude to apply on every project. Open-sourced on GitHub as proof.',
+                      'Anthropic\u2019s Claude Code, running copywriting skill files I built myself. They encode proprietary frameworks, headline formulas, evaluation criteria and compliance rules from real campaigns, so an approved angle becomes finished scripts, statics, video and pages in days. Open-sourced on GitHub as proof.',
                   },
                   {
                     label: 'Brain 3',
-                    title: 'My Obsidian copywriting brain',
+                    title: 'Knowledge brain',
                     detail:
-                      'A 1,239-file knowledge base spanning the old masters through current AI marketing strategies. 190 frameworks, 193 swipe pieces, 125 book and course notes, 76 templates, and 512 pieces of my own tested and measured copy — indexed and instantly retrievable.',
+                      'A 1,239-file Obsidian vault spanning the old masters through current AI marketing strategies: 190 frameworks, 193 swipe pieces, 125 book and course notes, 76 templates, and 512 pieces of my own tested and measured copy. Every brief gets checked against it before anything ships.',
                   },
                 ].map((item, index) => (
-                  <FadeIn key={item.label} delay={500 + index * 100} className="h-full">
+                  <FadeIn key={item.label} delay={600 + index * 100} className="h-full">
                     <div className="rounded-lg border border-ink-700 bg-ink-900/50 p-5 border-t-2 border-t-gold-400/30 h-full">
                       <div className="font-heading text-xs font-bold uppercase tracking-wider text-gold-400">
                         {item.label}
@@ -272,17 +291,16 @@ export default function AboutPage() {
               </div>
               <FadeIn>
                 <p>
-                  Each brain multiplies the others. My copywriting brain tells
-                  Claude what to write. My custom skills tell Claude how to
-                  write it. My Obsidian copywriting brain gives Claude proven
-                  material to draw from. The output is{' '}
+                  Each brain multiplies the others. The strategy brain decides
+                  what to say. The production brain builds it. The knowledge
+                  brain gives Claude proven material to draw from. The output is{' '}
                   <strong className="text-paper-50">faster than traditional, deeper than AI, and more proven than anything an &ldquo;AI-powered&rdquo; generalist can produce.</strong>
                 </p>
               </FadeIn>
               <FadeIn>
                 <p>
-                  That&apos;s what hiring me means. Not a copywriter. Three
-                  brains, fused into one engagement.
+                  That&apos;s what hiring me means: three brains, fused into
+                  one engagement.
                 </p>
               </FadeIn>
             </div>
@@ -489,8 +507,8 @@ export default function AboutPage() {
 
       {/* ───────────────────────────── CTA ───────────────────────────── */}
       <CTABanner
-        headline="Ready to put all three brains to work on your funnel?"
-        subtext="Book a free strategy call. No pressure, no obligation — just an honest conversation about whether Triple Brain Marketing is the right fit for your offer."
+        headline="Ready to put all three brains to work on your creative?"
+        subtext="Book a free strategy call. No pressure and no obligation: an honest conversation about whether I'm the right fit for your creative."
       />
     </>
   )
