@@ -14,8 +14,8 @@ const FORBIDDEN = [/\$10K/i, /\$10,000/, /CA Labs/]
 const CHECKS = [
   { path: '/services/creative-strategist', minSlice: 1, h1: /creative strateg/i, title: /^Creative Strategist for DTC Brands \| Rob Palmer$/, faq: true },
   { path: '/', minSlice: 2, h1: /creative strateg/i, title: /^Creative Strategist & Direct-Response Copywriter \| Rob Palmer$/, faq: true },
-  { path: '/services', minSlice: 3, h1: /creative strateg/i, title: /^Creative Strategy & Direct-Response Copywriting Services \| Rob Palmer$/, faq: false },
-  { path: '/verticals/ecommerce-dtc-copywriter', minSlice: 4, h1: /creative strateg|DTC/i, title: /^E-Commerce & DTC Copywriter/, faq: true },
+  { path: '/services', minSlice: 3, h1: /creative strateg/i, title: /^Creative Strategy & Copywriting Services \| Rob Palmer$/, faq: false },
+  { path: '/verticals/ecommerce-dtc-copywriter', minSlice: 4, h1: /^Creative Strategy and Copy for DTC Brands Ready to Scale$/, title: /^E-Commerce & DTC Copywriter \| Creative Strategy for Meta \| Rob Palmer$/, faq: true },
   { path: '/about', minSlice: 5, h1: /creative/i, title: /^About \|/, faq: false },
 ]
 
