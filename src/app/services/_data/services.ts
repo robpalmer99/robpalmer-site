@@ -81,7 +81,7 @@ export const services: Service[] = [
       primary: { value: '$523M', label: 'In Tracked Client Results' },
       secondary: [
         { value: '40+', label: 'Years of Direct Response' },
-        { value: '300%', label: 'ROAS on a Campaign I Wrote (Ben Palmer)' },
+        { value: '300%', label: 'Ben Palmer Email Funnel ROAS' },
         { value: '190+', label: 'Proven Frameworks in the Testing Loop' },
       ],
     },
@@ -299,7 +299,7 @@ export const services: Service[] = [
         heading: 'Why Offer Owners Hire Me Over an Agency or an AI Tool',
         content:
           'You can get copy three ways in 2026. An agency gives you a junior writer behind a senior pitch deck. An AI tool gives you fluent, generic output with no strategic judgment behind it. I give you both halves of the equation: 40 years of pattern recognition from campaigns with real money on the line, amplified by <a href="/blog/triple-brain-marketing">a Triple Brain workflow</a> — Claude Code running my custom copywriting skills against a 1,239-file swipe and framework vault I\'ve built across my career.\n\n' +
-          'That combination means senior-level strategy on every line of copy, produced at a speed no agency can match. It\'s worked across <a href="/verticals/health-supplement-copywriter">health and supplements</a>, <a href="/verticals/financial-copywriter">finance</a>, <a href="/verticals/info-product-copywriter">info products</a>, <a href="/verticals/ecommerce-dtc-copywriter">e-commerce</a>, <a href="/verticals/saas-copywriter">SaaS</a>, and <a href="/verticals/clickbank-copywriter">ClickBank offers</a> — each with its own compliance posture and buyer psychology. It\'s also why brands running paid social at scale bring me in as a <a href="/blog/creative-strategist">creative strategist</a>: the same three brains, pointed at the whole testing loop instead of a single asset.\n\n' +
+          'That combination means senior-level strategy on every line of copy, produced at a speed no agency can match. It\'s worked across <a href="/verticals/health-supplement-copywriter">health and supplements</a>, <a href="/verticals/financial-copywriter">finance</a>, <a href="/verticals/info-product-copywriter">info products</a>, <a href="/verticals/ecommerce-dtc-copywriter">e-commerce</a>, <a href="/verticals/saas-copywriter">SaaS</a>, and <a href="/verticals/clickbank-copywriter">ClickBank offers</a> — each with its own compliance posture and buyer psychology. It\'s also why brands running paid social at scale bring me in as a <a href="/services/creative-strategist">creative strategist</a>: the same three brains, pointed at the whole testing loop instead of a single asset.\n\n' +
           'If your funnel is live and the numbers aren\'t where they should be, the fastest way to find out why is to show me. Bring your pages and your conversion data to a strategy call, and I\'ll tell you where I\'d bet the leak is before you\'ve spent a dollar.',
       },
     ],
@@ -417,7 +417,7 @@ export const services: Service[] = [
           'Within 48 hours you\'ll have a fixed-price proposal with scope, deliverables, and timeline. Say yes and kickoff happens inside two weeks: research and diagnostic first, then objection mapping and architecture, then the draft, then one revision round. You see the work as it develops — never a single surprise drop at the end.',
       },
     ],
-    relatedServices: ['sales-page-copywriter', 'vsl-copywriter'],
+    relatedServices: ['creative-strategist', 'sales-page-copywriter', 'vsl-copywriter'],
     relatedVerticals: ['info-product-copywriter', 'health-supplement-copywriter'],
   },
   {
@@ -613,7 +613,7 @@ export const services: Service[] = [
           'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and strategic diagnostic, then architecture, then the script, then one revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
-    relatedServices: ['sales-page-copywriter', 'sales-funnel-copywriter'],
+    relatedServices: ['creative-strategist', 'sales-page-copywriter', 'sales-funnel-copywriter'],
     relatedVerticals: ['health-supplement-copywriter', 'clickbank-copywriter'],
   },
   {
@@ -812,7 +812,7 @@ export const services: Service[] = [
           'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and strategic diagnostic, then objection mapping and architecture, then the page draft, then one revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
-    relatedServices: ['vsl-copywriter', 'landing-page-copywriter'],
+    relatedServices: ['creative-strategist', 'vsl-copywriter', 'landing-page-copywriter'],
     relatedVerticals: ['ecommerce-dtc-copywriter', 'info-product-copywriter'],
   },
   {
@@ -1011,7 +1011,7 @@ export const services: Service[] = [
           'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and voice work, then architecture, then the letter draft, then one revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
-    relatedServices: ['sales-page-copywriter', 'email-copywriter'],
+    relatedServices: ['creative-strategist', 'sales-page-copywriter', 'email-copywriter'],
     relatedVerticals: ['financial-copywriter', 'health-supplement-copywriter'],
   },
   {
@@ -1203,7 +1203,7 @@ export const services: Service[] = [
           'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and audit, then sequence architecture, then the email drafts, then one revision round across the full sequence. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
-    relatedServices: ['sales-funnel-copywriter', 'upsell-downsell-copywriter'],
+    relatedServices: ['creative-strategist', 'sales-funnel-copywriter', 'upsell-downsell-copywriter'],
     relatedVerticals: ['ecommerce-dtc-copywriter', 'saas-copywriter'],
   },
   {
@@ -1400,7 +1400,7 @@ export const services: Service[] = [
           'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is audience and angle research, then hook library and architecture, then the finished ads with platform-specific tuning, then a testing roadmap. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
-    relatedServices: ['facebook-ads-copywriter', 'landing-page-copywriter'],
+    relatedServices: ['creative-strategist', 'facebook-ads-copywriter', 'landing-page-copywriter'],
     relatedVerticals: ['ecommerce-dtc-copywriter', 'saas-copywriter'],
   },
   {
@@ -1602,7 +1602,7 @@ export const services: Service[] = [
           'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is traffic-source analysis and message-match audit, then single-action architecture, then page writing with above-the-fold variations, then one revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
-    relatedServices: ['ad-copywriter', 'sales-page-copywriter'],
+    relatedServices: ['creative-strategist', 'ad-copywriter', 'sales-page-copywriter'],
     relatedVerticals: ['saas-copywriter', 'ecommerce-dtc-copywriter'],
   },
   {
@@ -1802,7 +1802,7 @@ export const services: Service[] = [
           'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is funnel diagnostic and audience research, then persuasion-arc architecture, then page-by-page writing, then one revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
-    relatedServices: ['vsl-copywriter', 'email-copywriter', 'upsell-downsell-copywriter'],
+    relatedServices: ['creative-strategist', 'vsl-copywriter', 'email-copywriter', 'upsell-downsell-copywriter'],
     relatedVerticals: ['clickbank-copywriter', 'info-product-copywriter'],
   },
   {
@@ -2000,7 +2000,7 @@ export const services: Service[] = [
           'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is back-end diagnostic and buyer-psychology mapping, then sequence architecture, then page-by-page writing, then one revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
-    relatedServices: ['sales-funnel-copywriter', 'email-copywriter'],
+    relatedServices: ['creative-strategist', 'sales-funnel-copywriter', 'email-copywriter'],
     relatedVerticals: ['clickbank-copywriter', 'health-supplement-copywriter'],
   },
   {
@@ -2199,7 +2199,7 @@ export const services: Service[] = [
           'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is the audit \u2014 I review your current copy workflow, prompts, AI tools, and draft-review process. Then skill installation, vault structuring, draft-review workflow, and team training. You\'ll see the system installed step by step \u2014 not as a single drop at the end.',
       },
     ],
-    relatedServices: ['ai-marketing-consultant', 'vsl-copywriter'],
+    relatedServices: ['creative-strategist', 'ai-marketing-consultant', 'vsl-copywriter'],
     relatedVerticals: ['saas-copywriter', 'info-product-copywriter'],
   },
   {
@@ -2397,7 +2397,7 @@ export const services: Service[] = [
           'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is the audit \u2014 I review your current AI usage, prompts, workflows, and output review process. Then system design, skill installation, team training, and the first round of ongoing optimisation. You\'ll see the methodology installed step by step \u2014 not as a single drop at the end.',
       },
     ],
-    relatedServices: ['ai-copywriting-consultant', 'sales-funnel-copywriter'],
+    relatedServices: ['creative-strategist', 'ai-copywriting-consultant', 'sales-funnel-copywriter'],
     relatedVerticals: ['ecommerce-dtc-copywriter', 'saas-copywriter'],
   },
   {
@@ -2593,7 +2593,7 @@ export const services: Service[] = [
           'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is audience and angle research (including Meta Ad Library mining), then hook library and architecture, then the finished ads with placement-specific tuning and compliance review, then a testing roadmap. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
-    relatedServices: ['ad-copywriter', 'landing-page-copywriter'],
+    relatedServices: ['creative-strategist', 'ad-copywriter', 'landing-page-copywriter'],
     relatedVerticals: ['ecommerce-dtc-copywriter', 'health-supplement-copywriter'],
   },
   {
@@ -2793,7 +2793,7 @@ export const services: Service[] = [
           'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is full-funnel audit and analytics ingestion, then copy-leak diagnosis and prioritization, then test-ready rewrites, then the testing roadmap. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
       },
     ],
-    relatedServices: ['sales-funnel-copywriter', 'landing-page-copywriter'],
+    relatedServices: ['creative-strategist', 'sales-funnel-copywriter', 'landing-page-copywriter'],
     relatedVerticals: ['ecommerce-dtc-copywriter', 'clickbank-copywriter'],
   },
 ]

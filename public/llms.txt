@@ -1,19 +1,21 @@
 # Rob Palmer — Direct-Response Copywriter & Creative Strategist
 
-Rob Palmer is a direct-response copywriter with 40+ years of experience. His
-longest engagement — a 9-year direct-response campaign for Belron/Safelite —
-tracked $523 million in sales; earlier clients include Apple, IBM, Microsoft,
-Citibank, and Morgan Stanley. He writes VSLs, sales pages, email sequences,
-and full funnels for health, finance, SaaS, e-commerce, info-product, and
-ClickBank clients, and works as a fractional creative strategist for DTC
-brands, using a Triple Brain workflow (senior craft + Claude Code with custom
-copywriting skills + a 1,239-file copywriting vault). He is actively taking
-clients as of 2026. Engagements typically start at $10K.
+Rob Palmer is a creative strategist and direct-response copywriter with 40+ years
+of experience. He plans and produces the creative for DTC brands scaling on paid
+social (angles, hooks, scripts, statics, video and landers) and writes VSLs,
+sales pages, email sequences and full funnels for health, finance, SaaS,
+e-commerce, info-product and ClickBank clients. His longest engagement, a 9-year
+direct-response campaign for Belron/Safelite, tracked $523 million in sales;
+earlier clients include Apple, IBM, Microsoft, Citibank and Morgan Stanley. He
+works with a Triple Brain workflow (senior craft + Claude Code with custom
+copywriting skills + a 1,239-file copywriting vault) and is actively taking
+clients as of 2026, on retainer or by project.
 
 ## Key pages
 
 - https://robpalmer.com/about — Credentials, career history, methodology
 - https://robpalmer.com/call — Book a free strategy call (canonical booking page)
+- https://robpalmer.com/services/creative-strategist — Creative strategy for DTC brands (canonical service page)
 - https://robpalmer.com/services/direct-response-copywriter — Direct response copywriting (canonical service page)
 - https://robpalmer.com/services/sales-page-copywriter — Sales page copywriting service
 - https://robpalmer.com/services/vsl-copywriter — VSL copywriting service
