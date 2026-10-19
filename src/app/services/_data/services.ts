@@ -59,6 +59,168 @@ export interface Service {
 
 export const services: Service[] = [
   {
+    title: 'Creative Strategist',
+    slug: 'creative-strategist',
+    tier: 'strategy',
+    schemaServiceType: 'Creative Strategy',
+    shortDescription:
+      'Creative strategy for DTC brands scaling on Meta — angles, hooks, scripts, statics and landers from one senior strategist with 40 years of direct response and $523M in tracked results.',
+    metaTitle: 'Creative Strategist for DTC Brands | Rob Palmer',
+    metaDescription:
+      'Senior creative strategist for DTC brands scaling paid social. Angles, hooks, scripts, statics and landers from one strategist — 40 years of direct response, $523M in tracked results.',
+    headline: 'The Creative Strategist Who Plans Your Next Winning Ads, Then Builds Them',
+    subheadline:
+      'I\'m one senior strategist who does the research, finds the angles and writes the scripts, statics and landers myself, so nothing gets lost between the brief and the ad. Behind me are 40 years of direct response and an AI production stack that turns an approved angle into finished creative fast enough to keep up with your account. The longest campaign I ran tracked $523 million in sales.',
+    heroImage: '/images/services/creative-strategist.jpg',
+    heroImageAlt: 'Creative strategist\'s desk with a storyboard of ad concepts and a performance dashboard',
+    definition: {
+      term: 'Creative Strategist',
+      text: 'A creative strategist decides what a brand\'s ads should say and test — the angles, hooks, formats and landing experiences — and runs the loop that turns ad-account data into the next round of creative. Rob Palmer is a creative strategist and direct-response copywriter with 40+ years of experience and $523M in tracked results who produces the creative he plans: scripts, statics, video and landers.',
+    },
+    heroStats: {
+      primary: { value: '$523M', label: 'In Tracked Client Results' },
+      secondary: [
+        { value: '40+', label: 'Years of Direct Response' },
+        { value: '300%', label: 'ROAS on a Campaign I Wrote (Ben Palmer)' },
+        { value: '190+', label: 'Proven Frameworks in the Testing Loop' },
+      ],
+    },
+    credentialBar: {
+      heading: 'Creative strategy for',
+      items: [
+        'DTC and E-Commerce Brands on Meta',
+        'YouTube and Native Advertisers',
+        'Health and Supplement Offers',
+        'ClickBank Platinum Vendors',
+        'SaaS and Info-Product Launches',
+        'In-House Growth Teams',
+      ],
+    },
+    sections: [
+      {
+        heading: 'Why Creative Is Now the Lever',
+        content:
+          'Meta has changed what it takes to scale. Since the Andromeda update, the ad system matches ads to people by reading the creative itself, so the account that feeds it more genuinely different concepts reaches more buyers. Targeting has largely been handed to the algorithm. The one thing it can\'t supply is the ideas.\n\n' +
+          'A winning ad that used to carry an account for a quarter can now fatigue in two or three weeks, sometimes in days. When it does, CPA climbs, the budget you planned to scale gets pulled back, and your media buyer can\'t fix any of it from the dashboard. The constraint has moved upstream, to how many good angles you can get into the account and how quickly.\n\n' +
+          'Most brands try to solve it in one of two ways. They hire a creative strategist who writes briefs and hands them to someone else, and the idea loses its edge somewhere between the brief and the edit. Or they hire a copywriter who delivers one polished asset a month when the account needs a dozen tests. The brands that scale have someone who finds the angle and builds the ad at the pace the account demands. That\'s the job I do.',
+      },
+      {
+        heading: 'What I Do, Stage by Stage',
+        content:
+          'You can bring me in at any stage. Some clients arrive with a winning ad and need more like it. Others have a product, a budget and no clear angle yet. Either way the work runs through the same four stages, and I do each one myself instead of passing it down a chain, which is what keeps the argument intact from the first line of research to the page that takes the order.',
+        bullets: [
+          '<strong>Research and angles.</strong> I mine reviews, forums, support logs and your competitors\' ads for the words your customers actually use, then rank the angles by awareness level so we know which to test first.',
+          '<strong>Briefs, scripts, statics and video.</strong> Every concept gets a one-page brief, and then I write it: UGC and talking-head scripts, static concepts with their copy, and AI-produced video for ideas that need testing before a shoot is worth paying for.',
+          '<strong>Landers and advertorials.</strong> I write the page each ad sends its traffic to, so the promise in the hook is the first thing a visitor sees after the click.',
+          '<strong>Testing and iteration.</strong> We read the account together, keep what\'s working and switch off what isn\'t, and the results write the brief for the next round.',
+        ],
+      },
+      {
+        heading: 'The Direct-Response Difference in Creative Strategy',
+        content:
+          'Creative strategy is a newer name for something direct response has done for a century: writing ads that have to pay for themselves, test by test, with the numbers in plain view. I\'ve been doing it since the early 1980s, and that background changes the work in four practical ways.\n\n' +
+          'I build angles from the prospect\'s awareness level, using Eugene Schwartz\'s model, so a cold audience that hasn\'t named its problem yet sees a different ad from one already comparing brands. I take hooks from story, secret, problem and proclamation leads, which have decades of tested results behind them. I write the ad and the lander as one argument, so the visitor never feels the switch from one to the other. And I build compliance into the copy from the first line, which matters most in health, supplements and finance, where one careless claim can cost you the ad account.\n\n' +
+          'It\'s also how one strategist keeps pace with a weekly creative drop. I work from a library of 190+ frameworks, 193 swipes and 512 pieces of my own tested copy, run through Claude Code with copywriting skills I built myself, so the research and first drafts move at production speed while every strategic call stays mine.\n\n' +
+          'If you\'re still weighing up the role, I\'ve written a full guide to <a href="/blog/creative-strategist">what a creative strategist does</a>. If what you mainly need is the long-form copy behind your ads, that\'s my <a href="/services/direct-response-copywriter">direct response copywriting</a> service.',
+      },
+      {
+        heading: 'How an Engagement Runs',
+        content:
+          'It starts with a strategy call. Bring your ad account and your current winners, and I\'ll tell you where I think your next angle is before we talk about scope. If I don\'t see one I\'m confident in, I\'ll say so on the call.\n\n' +
+          'After the call I audit the account properly: what\'s running, what\'s fatiguing, which angles you\'ve already spent through and which you haven\'t touched. That audit becomes the first testing plan.\n\n' +
+          'Then we choose the shape that fits. Most brands scaling on Meta choose a <strong>retainer</strong>, with a weekly drop of new creative and a monthly testing review where we read the results together and set the next round. Others start with a <strong>project</strong>: an angle map and a first batch of concepts, or a single campaign built from ad to lander. Either way, you\'ll have a fixed-price quote within 48 hours of the call, and there\'s no hourly billing.\n\n' +
+          'I take a small number of engagements each quarter, because I produce the work myself and I won\'t hand it to a junior to keep up.',
+      },
+      {
+        heading: 'Creative That Has Already Paid for Itself',
+        content:
+          'Ben Palmer, a ClickBank Platinum vendor, gets <strong>300% ROAS</strong> on the email-driven health funnel I wrote for him, built from one angle and carried through every message. For Abundant, a long-form, story-driven sales page took Facebook cold traffic to <strong>340% ROAS</strong>. The VSL funnel I wrote for Conor Reynolds converts at <strong>8% on cold traffic</strong>, with the video and the sales page drawn from the same angle map.\n\n' +
+          'The testing discipline behind all of it goes back to Belron, where I ran a direct-response campaign for nine years and kept putting new creative up against the control. It tracked <strong>$523 million</strong> in sales. More recently Stefan Georgi hired me as Copy Chief at Copy Accelerator, reviewing and fixing other professional copywriters\' work, and I\'ve written for funnels including the $40M Gluco 6 supplement and Mobile Profits, which reached #1 on ClickBank.\n\n' +
+          'Every one of those numbers came from paid traffic, where the creative either paid for itself or got switched off.',
+      },
+    ],
+    caseStudies: [
+      { name: 'Ben Palmer / ClickBank Platinum', category: 'Email-Driven Health Funnel', metric: '300% ROAS', detail: 'Angle, hooks and the full email funnel written as one argument.' },
+      { name: 'Abundant', category: 'Info-Product Campaign', metric: '340% ROAS', detail: 'Facebook cold traffic into a long-form story-driven TSL.' },
+      { name: 'Conor Reynolds', category: 'VSL Funnel', metric: '8% Cold-Traffic CVR', detail: 'Cold-traffic VSL and sales page built from the same angle map.' },
+      { name: 'Belron / Safelite', category: 'Nine-Year Direct-Response Control', metric: '$523M', detail: 'Continuously tested creative — the discipline the whole loop runs on.' },
+    ],
+    deliverablesHeading: 'What a Creative-Strategy Engagement Delivers',
+    deliverablesSubtext: 'Enter at any stage. Everything below is produced, not just briefed.',
+    deliverables: [
+      { title: 'Angle Map & Research Brief', description: 'Customer language mined from reviews, forums, support logs and competitor ads; angles ranked by awareness level and sophistication.' },
+      { title: 'Creative Brief Set', description: 'One brief per concept: hook, mechanism, proof, format, placement — ready for your editors or for me to produce.' },
+      { title: 'Scripts & Statics', description: 'UGC and talking-head scripts, narrative ads, static concepts with copy — written to the brief, not around it.' },
+      { title: 'Video Production', description: 'AI-produced video ads through my studio stack: voice, cut, captions — for concepts that need to move before a human shoot is justified.' },
+      { title: 'Landers & Advertorials', description: 'The page the ad lands on, written to match the angle so the click doesn\'t break on arrival.' },
+      { title: 'Testing Plan & Iteration Cadence', description: 'What ships, in what order, what we read in the account, and what the next round tests.' },
+    ],
+    testimonialIds: ['4', '38', '15'],
+    portfolioItems: [
+      { title: 'DTC Supplement — Meta Ad Concept Set', category: 'Ad Creative' },
+      { title: 'Health Offer — Advertorial Pre-Sell', category: 'Advertorial' },
+      { title: 'Info Product — Cold-Traffic Lander', category: 'Landing Page' },
+    ],
+    midCta: {
+      headline: 'Ready for creative that scales instead of fatigues?',
+      subtext: 'Book a strategy call. Bring your ad account and your current winners — I\'ll tell you where the next angle is before we talk about scope. Retainer or project, whichever fits.',
+    },
+    faqs: [
+      {
+        question: 'What does a creative strategist do?',
+        answer:
+          'A creative strategist decides what a brand\'s ads should say and test, then runs the loop that turns ad-account results into the next round of creative. In practice that means researching customers, finding angles, choosing hooks and formats, briefing or producing the ads, and reading the data to see which ideas are working. On Meta, where the algorithm rewards a steady supply of genuinely different concepts, it has become the role that decides whether an account can scale. If you\'re hiring for it, I\'ve written about <a href="/blog/hire-a-creative-strategist">how to hire a creative strategist</a>.',
+      },
+      {
+        question: 'How is a creative strategist different from a copywriter?',
+        answer:
+          'A copywriter is usually hired to deliver an asset: a sales page, an email sequence, a script. A creative strategist owns the whole testing program, meaning which angles to try, in what order and in which formats, and what the results mean for the next batch. The best creative strategists think like direct-response copywriters, because both jobs come down to finding the message that makes a stranger act. I\'ve done both for 40 years, which is why I can plan a round of tests and then write every piece of it.',
+      },
+      {
+        question: 'How is working with you different from hiring an agency?',
+        answer:
+          'At an agency, the strategist who wins the pitch is rarely the person writing your scripts, and every handoff between strategist, writer and editor loses a little of the idea. With me, the person who audits your account is the same person who writes your briefs, scripts, statics and landers. You get senior judgment on every concept, and changes move quickly because there\'s no chain to go through. If you need more volume than one strategist can produce, I\'ll work alongside your editors or your agency.',
+      },
+      {
+        question: 'Do you produce the creative as well as plan it?',
+        answer:
+          'Yes, and it\'s the main reason clients hire me. I write the UGC and talking-head scripts, the static concepts and their copy, the advertorials and the landing pages. For video, I produce AI-made ads through my own studio stack, with voice, edit and captions, so a concept can be tested before you pay for a human shoot. If you already have editors or creators you like, I\'ll brief them and write their scripts instead. Most clients end up using a mix of the two.',
+      },
+      {
+        question: 'Which platforms do you work on?',
+        answer:
+          'Meta, meaning Facebook and Instagram, is where most of my DTC clients spend and where most of my creative runs. I also write for YouTube ads and native placements such as Taboola and Outbrain, along with the advertorials, landers and emails that follow the click. The thinking carries across platforms because the job is the same everywhere: find the angle that stops the right person, then keep that promise all the way to the order. Formats and compliance rules differ, so I build each concept for the platform it will run on.',
+      },
+      {
+        question: 'How many new creatives do you deliver per month?',
+        answer:
+          'It depends on your spend and how fast your ads fatigue, so I set the number with you after the audit instead of quoting a standard package. As a rough guide, an account spending enough to read results every week needs new concepts every week, which is why a retainer is built around a weekly creative drop. A project might be a single batch of concepts with the lander behind them. I\'d also rather ship five genuinely different angles than twenty versions of one idea, because different angles are what teach the account something new.',
+      },
+      {
+        question: 'How do you measure whether the strategy is working?',
+        answer:
+          'We agree the numbers before anything ships. Usually that\'s cost per acquisition and ROAS, with hook rate, hold rate and click-through rate as the early signals that show which part of an ad is doing its job. In the monthly testing review we look at which angles found buyers, which fatigued and why, and that decides the next round. I track the lander too, because an ad can win the click and lose the sale on the page. Success means more winning concepts in rotation than when we started, and an account that can take more spend.',
+      },
+      {
+        question: 'How are creative-strategy engagements priced?',
+        answer:
+          'I work on a retainer or a project, whichever fits. A retainer covers ongoing work: a weekly creative drop and a monthly testing review. A project covers a defined piece, such as an angle map and a first batch of concepts, or one campaign built from ad to lander. The number depends on how many concepts you need each month, which formats they\'re in, and whether I\'m producing the finished creative or briefing your team to produce it. You\'ll have a fixed-price quote within 48 hours of the strategy call, with no hourly billing.',
+      },
+      {
+        question: 'How do we get started?',
+        answer:
+          'Book a strategy call. Beforehand, send me access to your ad account, or screenshots of your current winners and their numbers if you\'d rather not share access yet. On the call I\'ll tell you where I think your next angle is and whether I\'m the right fit for the account. If I\'m not, I\'ll tell you that too, and you\'ll leave with the angle anyway. If we go ahead, you\'ll have a fixed-price quote within 48 hours, and the first piece of work is the audit and angle map, which sets the testing plan for everything that follows.',
+      },
+      {
+        question: 'Do you work alongside in-house teams and editors?',
+        answer:
+          'Yes, and it\'s often the best setup. Plenty of brands already have a media buyer, editors or a roster of UGC creators, and what they\'re short of is a steady supply of strong angles and scripts. In that case I write the briefs and scripts, your team shoots and edits, and we review the results together. I fit into the tools you already use, whether that\'s Slack, Notion, Google Drive or Frame.io, so nobody has to learn a new process to work with me.',
+      },
+    ],
+    relatedServices: ['direct-response-copywriter', 'ad-copywriter', 'facebook-ads-copywriter', 'ai-marketing-consultant', 'conversion-rate-optimization'],
+    relatedVerticals: ['ecommerce-dtc-copywriter', 'health-supplement-copywriter', 'clickbank-copywriter'],
+  },
+  {
     title: 'Direct Response Copywriter',
     slug: 'direct-response-copywriter',
     tier: 'production',
