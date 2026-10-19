@@ -154,20 +154,20 @@ const tagToService: Record<string, string> = {
   'copywriter vs content writer': 'sales-page-copywriter',
   'copywriting roi': 'sales-page-copywriter',
 
-  // Creative-strategist cluster (2026-10 audit): route the priority cluster's
-  // authority to the DR money page — tags are processed before categories, so
-  // these always survive the 3-slot cap.
-  'creative strategist': 'direct-response-copywriter',
-  'what is a creative strategist': 'direct-response-copywriter',
-  'hire a creative strategist': 'direct-response-copywriter',
-  'creative strategist for hire': 'direct-response-copywriter',
-  'creative strategist services': 'direct-response-copywriter',
-  'how to hire a creative strategist': 'direct-response-copywriter',
-  'freelance creative strategist': 'direct-response-copywriter',
-  'creative strategist retainer': 'direct-response-copywriter',
-  'creative strategist salary': 'direct-response-copywriter',
-  'creative strategist rates': 'direct-response-copywriter',
-  'creative strategist cost': 'direct-response-copywriter',
+  // Creative-strategist cluster → the creative-strategist money page (2026-10
+  // repositioning). Tags are processed before categories, so these always
+  // survive the 3-slot cap.
+  'creative strategist': 'creative-strategist',
+  'what is a creative strategist': 'creative-strategist',
+  'hire a creative strategist': 'creative-strategist',
+  'creative strategist for hire': 'creative-strategist',
+  'creative strategist services': 'creative-strategist',
+  'how to hire a creative strategist': 'creative-strategist',
+  'freelance creative strategist': 'creative-strategist',
+  'creative strategist retainer': 'creative-strategist',
+  'creative strategist salary': 'creative-strategist',
+  'creative strategist rates': 'creative-strategist',
+  'creative strategist cost': 'creative-strategist',
   'performance creative': 'facebook-ads-copywriter',
 }
 
