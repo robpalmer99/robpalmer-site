@@ -800,7 +800,7 @@ export const verticals: Vertical[] = [
     title: 'SaaS Copywriter',
     slug: 'saas-copywriter',
     shortDescription:
-      'SaaS copy anchored on the 22% Chatterkick trial-to-paid lift, plus my role as Copy Chief at Copy Accelerator. Onboarding sequences, upgrade campaigns, and churn-reduction copy that compounds MRR \u2014 not just trial sign-ups.',
+      'SaaS copy anchored on the 22% Chatterkick trial-to-paid lift, plus my role as Copy Chief at Copy Accelerator. Onboarding sequences, upgrade campaigns, and churn-reduction copy that compounds MRR instead of stopping at the trial sign-up.',
     metaTitle: 'SaaS Copywriter | 22% Trial-to-Paid Lift + Creative Strategy',
     metaDescription:
       'SaaS copywriter and creative strategist behind a 22% trial-to-paid lift at Chatterkick. Lifecycle copy and creative tested against MRR, churn and upgrades.',

@@ -67,7 +67,7 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
     },
     url: `${SITE_URL}/verticals/${slug}`,
     areaServed: 'Worldwide',
-    serviceType: 'Direct-Response Copywriting',
+    serviceType: 'Creative Strategy & Direct-Response Copywriting',
   }
 
   const webPageSchema = {
