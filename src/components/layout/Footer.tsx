@@ -18,7 +18,7 @@ export function Footer() {
               <Logo className="h-10 w-auto" variant="light" />
             </Link>
             <p className="mt-4 text-base lg:text-[1rem] leading-relaxed text-paper-300">
-              Veteran direct-response copywriter. Triple Brain Marketing: 40+
+              Creative strategist and direct-response copywriter. Triple Brain Marketing: 40+
               years of craft, Claude Code with custom copywriting skills, and a
               1,239-file copywriting vault &mdash; behind $523M+ in tracked
               results.

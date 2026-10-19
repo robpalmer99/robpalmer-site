@@ -22,44 +22,80 @@ import { caseStudies } from '@/app/case-studies/_data/case-studies'
 import { testimonials } from '@/content/testimonials'
 import { SITE_URL } from '@/lib/constants'
 
-// Homepage testimonial selection — peer-endorsement triangle: Stefan (CA Labs Copy Chief), Justin Goff (industry recognition), Ben Palmer (300% ROAS measurable proof)
+// Homepage testimonial selection — peer-endorsement triangle: Stefan Georgi (Copy Chief hire), Justin Goff (industry recognition), Ben Palmer (300% ROAS measurable proof)
 const HOMEPAGE_TESTIMONIAL_IDS = ['2', '3', '4'] as const
 const homepageTestimonials = HOMEPAGE_TESTIMONIAL_IDS
   .map((id) => testimonials.find((t) => t.id === id))
   .filter((t): t is NonNullable<typeof t> => Boolean(t))
 
 export const metadata: Metadata = {
-  title: 'Rob Palmer | Direct-Response Copywriter | Triple Brain Marketing',
+  title: 'Creative Strategist & Direct-Response Copywriter | Rob Palmer',
   description:
-    'Three brains. One engagement. 40+ years of direct-response copywriting + Claude Code with custom copywriting skills + a 1,239-file Obsidian copywriting brain. Behind $523M+ in tracked results. The DR system Stefan Georgi\u2019s team chose for CA Labs.',
-  alternates: {
-    canonical: SITE_URL,
-  },
+    'Creative strategist and direct-response copywriter behind $523M in tracked results. One senior strategist from angle to shipped creative: scripts, statics, video and landers for DTC brands scaling on Meta.',
+  alternates: { canonical: SITE_URL },
 }
 
-// Tile-sized one-liners for the home Verticals section.
+// Tile-sized one-liners for the home Verticals section, in display order.
 // Each replaces the longer shortDescription used on /verticals/[slug] pages.
 const VERTICAL_TAGLINES: Record<string, string> = {
-  'health-supplement-copywriter': 'Compliance-aware DR copy that still converts.',
-  'financial-copywriter': 'Wall Street credibility with direct-response conversion.',
-  'ecommerce-dtc-copywriter': 'Lift conversion, AOV, and customer lifetime value.',
-  'clickbank-copywriter': 'Funnels top affiliates fight to promote.',
-  'saas-copywriter': 'Direct response on SaaS metrics — MRR, churn, LTV.',
-  'info-product-copywriter': 'Launches and evergreen systems that scale.',
+  'ecommerce-dtc-copywriter': 'Creative strategy for brands scaling on Meta.',
+  'health-supplement-copywriter': 'Compliance-aware angles that still convert cold.',
+  'clickbank-copywriter': 'Angles and funnels affiliates fight to promote.',
+  'financial-copywriter': 'Disclosure-aware hooks with Wall Street credibility.',
+  'saas-copywriter': 'Creative tested on MRR, churn and trial-to-paid.',
+  'info-product-copywriter': 'Launch and evergreen creative that keeps scaling.',
 }
+const HOMEPAGE_VERTICAL_ORDER = Object.keys(VERTICAL_TAGLINES)
+const homepageVerticals = HOMEPAGE_VERTICAL_ORDER
+  .map((slug) => verticals.find((v) => v.slug === slug))
+  .filter((v): v is NonNullable<typeof v> => Boolean(v))
+
+// "How it works" section: the engagement shape, and the agency comparison.
+const STAGES_HEADLINE = 'Strategy through to shipped creative.'
+const STAGES_INTRO = 'Bring me in at whichever stage your team is missing, or hand me all four.'
+const STAGES: { title: string; body: string }[] = [
+  {
+    title: 'Research & angles',
+    body: 'I read your reviews, support tickets, Reddit threads and competitors’ ads for the exact words your buyers use, then rank the angles worth testing first.',
+  },
+  {
+    title: 'Briefs, scripts, statics, video',
+    body: 'Each angle becomes a brief with its hook, proof and format. Then I write the UGC scripts and static copy, and produce AI video ads ready to upload.',
+  },
+  {
+    title: 'Landers & advertorials',
+    body: 'The click goes to a page I wrote from the same angle, so the first line a visitor reads keeps the promise the ad made.',
+  },
+  {
+    title: 'Testing & iteration',
+    body: 'We read hook rate, CPA and ROAS together every week. Winners get new variations, losers get switched off, and the results set the next brief.',
+  },
+]
+const AGENCY_COMPARISON: string[] = [
+  'An agency puts an account manager between you and the work, and a junior writer behind the strategist who won the pitch. Every handoff loses a little of the idea. With me there’s no handoff at all: the person who decides what to test is the person who writes and builds it.',
+  'Volume used to be the reason to hire an agency anyway. My AI production stack covers that now, so you get the weekly output of a small creative team, and every concept still passes through 40 years of judgment before it goes live.',
+]
 
 const homepageFaqs = [
-  { question: 'What is Triple Brain Marketing?', answer: 'Triple Brain Marketing is the integration of three brains into one engagement: my copywriting brain (40+ years of direct-response craft for the world\'s top brands, with $523M+ in tracked results), Claude Code\'s brain augmented by my custom-built copywriting skills (proprietary skill files that encode 40 years of frameworks into a working AI workflow), and my Obsidian copywriting brain (a 1,239-file knowledge base spanning the old direct-response masters through current AI marketing strategies). No copywriter and no AI tool can replicate the combination.' },
-  { question: 'What types of copywriting do you specialize in?', answer: 'I specialize in direct-response copywriting — the kind that\'s designed to generate a measurable action. This includes video sales letters (VSLs), text sales letters (TSLs), email sequences, landing pages, sales funnels, upsell/downsell pages, and paid ad copy. Every piece I write is engineered to convert.' },
+  { question: 'What does a creative strategist do, and how is that different from a copywriter?', answer: 'A creative strategist owns the thinking behind your ads: which angles to test, which hooks and formats to use, in what order, and what the results mean for the next round. A copywriter is usually hired to deliver one asset, such as a sales page or a script. I\'ve done both for 40 years, so I can plan the testing program for your Meta account and then write every ad and page in it. That matters more than it used to, because Meta now rewards accounts that keep feeding it concepts that actually differ from each other, and somebody has to come up with them.' },
+  { question: 'Do you also write the copy and produce the creative?', answer: 'Yes. I write the UGC and talking-head scripts, the static ads and their copy, the advertorials and the landing pages. For video, I produce AI-made ads through my own studio stack, with voiceover, edit and captions, so you can test a concept before you pay for a human shoot. If you already have editors or creators you trust, I\'ll brief them and write their scripts instead. Plenty of clients use a mix of the two, and the creative still comes from one angle map either way.' },
+  { question: 'Freelancer or agency \u2014 which are you?', answer: 'I\'m a freelancer with studio-level output. You deal with one person, directly, from the first call to the last test, and the strategist you speak to is the one writing your scripts and pages. That works because my AI production stack does the heavy lifting on volume, so a single senior strategist can keep a busy Meta account supplied with new creative every week. If your team already has editors or an agency, I\'ll slot in beside them and supply the angles and scripts.' },
+  { question: 'What is Triple Brain Marketing?', answer: 'Triple Brain Marketing is the integration of three brains into one engagement: my strategy brain (40+ years of direct-response craft for the world\'s top brands, with $523M+ in tracked results), my production brain (Claude Code augmented by my custom-built copywriting skills, proprietary skill files that encode 40 years of frameworks into a working AI workflow), and my knowledge brain (a 1,239-file Obsidian vault spanning the old direct-response masters through current AI marketing strategies).' },
   { question: 'Are you taking new clients?', answer: 'I take a selective number of new engagements each quarter to maintain quality. Most kickoffs happen within two weeks of the strategy call. If we\'re a fit, I\'ll send you a fixed-price proposal within 48 hours. If we\'re not, I\'ll tell you on the call and refer you to someone in my network.' },
-  { question: 'How much does it cost to hire you?', answer: 'Fees depend on the project scope, complexity, and format. Engagements typically start at $10K for single assets and run higher for full funnel builds. I\'ll give you a clear, fixed-price quote after our strategy call — no hourly billing, no surprises. For a general guide, see my blog post on copywriting rates.' },
-  { question: 'What industries do you work with?', answer: 'I\'ve written for health & supplement, financial, e-commerce/DTC, SaaS, info-product, and ClickBank markets. My direct-response principles apply across industries — I adapt the strategy and compliance approach to each vertical.' },
-  { question: 'How do you use AI in your copywriting process?', answer: 'I don\'t use AI the way most people use AI. I use Claude Code — the most capable AI writing tool available — augmented by my own custom-built copywriting skills. These are proprietary skill files that encode specific direct-response frameworks, headline formulas, and evaluation criteria into a workflow Claude applies on every project. Combined with my 1,239-file Obsidian copywriting brain (190 frameworks, 193 swipes, 512 pieces of my own tested copy), the AI has access to four decades of proven reference material — not generic training data.' },
+  { question: 'How much does it cost to hire you?', answer: 'I work on a retainer or a project, whichever fits the work. A retainer suits brands scaling on Meta that need new creative every week and a results review every month. A project suits a defined job, such as an angle map with a first round of concepts, a VSL, or a complete funnel. The price depends on how much creative you need, in which formats, and whether I\'m producing it or briefing your team. You\'ll have a fixed-price quote within 48 hours of our strategy call, with no hourly billing. For a general guide to what the market charges, see my blog post on copywriting rates.' },
+  { question: 'What industries do you work with?', answer: 'I\'ve written for e-commerce/DTC, health & supplement, financial, SaaS, info-product, and ClickBank markets. My direct-response principles apply across industries, and I adapt the strategy and compliance approach to each vertical.' },
+  { question: 'How do you use AI in your process?', answer: 'I don\'t use AI the way most people use AI. I use Claude Code — the most capable AI writing tool available — augmented by my own custom-built copywriting skills. These are proprietary skill files that encode specific direct-response frameworks, headline formulas, and evaluation criteria into a workflow Claude applies on every project. Combined with my 1,239-file Obsidian copywriting brain (190 frameworks, 193 swipes, 512 pieces of my own tested copy), the AI has access to four decades of proven reference material — not generic training data.' },
   { question: 'What results can I expect?', answer: 'Results vary by market, offer, and traffic quality. My track record includes $523M+ in tracked revenue across campaigns, a 9-year campaign for Belron/Safelite, the $40M Gluco 6 supplement subscription funnel, $30M Mobile Profits #1 on ClickBank, 5.7% Monetari Fund opt-in-to-sale, 22% Chatterkick SaaS trial-to-paid lift, 340% Abundant TSL on Facebook cold, 8% conversion on cold traffic (Conor Reynolds VSL), and 300% ROAS on a ClickBank email funnel (Ben Palmer). I focus on measurable outcomes — conversion rates, AOV, and revenue.' },
-  { question: 'How long does a typical project take?', answer: 'Timeline depends on the deliverable. A single email or landing page might take 3-5 business days. A full VSL or sales funnel build typically takes 2-4 weeks including research, drafting, and revisions. The Triple Brain workflow compresses traditional research and drafting timelines without sacrificing depth.' },
-  { question: 'Do you offer revisions?', answer: 'Yes. Every project includes a round of revisions to ensure the copy aligns with your voice, brand, and goals. My goal is copy you\'re confident putting in front of your audience.' },
   { question: 'How do I get started?', answer: 'Book a free strategy call — the calendar is at robpalmer.com/call. We\'ll discuss your project, goals, and timeline. If we\'re a good fit, I\'ll send you a fixed-price proposal within 48 hours. No pressure, no obligation.' },
 ]
+
+// Strategy tier first (where an engagement starts), then the creative I build.
+// ai-copywriting-consultant is the narrower sibling of ai-marketing-consultant;
+// one consultancy card is enough on the home grid.
+const homepageServices = [
+  ...services.filter((s) => s.tier === 'strategy' && s.slug !== 'ai-copywriting-consultant'),
+  ...services.filter((s) => s.tier === 'production'),
+].slice(0, 6)
 
 const homepageFaqJsonLd = {
   '@context': 'https://schema.org',
@@ -77,11 +113,11 @@ export default function HomePage() {
       {/* Hero */}
       <Hero
         variant="home"
-        headline="Three Brains. One Engagement. Behind $523M in Tracked Results."
-        subheadline="40+ years of direct-response copywriting + Claude Code with my custom copywriting skills + a 1,239-file Obsidian copywriting brain. The DR system Stefan Georgi's team chose for CA Labs."
+        headline="Creative Strategy for Brands Ready to Scale"
+        subheadline="I research your customers, find the angles, and write the scripts, statics and landers myself. Every concept draws on 40 years of direct response, an AI production stack and campaigns that have produced $523M in tracked results."
         cta={{ label: 'Book a Strategy Call', href: '/call' }}
         secondaryCta={{ label: 'See Case Studies', href: '/case-studies' }}
-        image={{ src: '/images/headshots/rob-palmer-clean.png', alt: 'Rob Palmer - Direct-Response Copywriter' }}
+        image={{ src: '/images/headshots/rob-palmer-clean.png', alt: 'Rob Palmer, creative strategist' }}
       >
         <FadeIn immediate delay={450} duration={800}>
           <p className="mt-5 text-sm sm:text-base lg:text-[0.95rem] text-paper-300 font-body">
@@ -122,7 +158,7 @@ export default function HomePage() {
                   </div>
                   <p className="mt-4 font-heading text-lg font-bold text-ink-950">Stefan Georgi</p>
                   <p className="text-sm text-paper-600 font-body">Founder, Copy Accelerator</p>
-                  <p className="mt-3 text-sm text-ink-700 italic font-body leading-snug">&ldquo;Hired as our Copy Chief for CA Labs.&rdquo;</p>
+                  <p className="mt-3 text-sm text-ink-700 italic font-body leading-snug">&ldquo;We hired Rob as our Copy Chief.&rdquo;</p>
                 </div>
               </FadeIn>
             </li>
@@ -166,7 +202,40 @@ export default function HomePage() {
         </Container>
       </Section>
 
-      {/* Triple Brain Marketing — the named mechanism */}
+      {/* Strategy → shipped creative: the engagement shape, and the agency comparison */}
+      <Section variant="alt" divider>
+        <Container>
+          <FadeIn>
+            <div className="text-center max-w-3xl mx-auto">
+              <Badge variant="gold">How it works</Badge>
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 mt-6">
+                {STAGES_HEADLINE}
+              </h2>
+              <p className="mt-5 text-lg text-ink-700 font-body leading-relaxed">{STAGES_INTRO}</p>
+            </div>
+          </FadeIn>
+          <ol role="list" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+            {STAGES.map((stage, index) => (
+              <li key={stage.title}>
+                <FadeIn delay={index * 100} distance={20} className="h-full">
+                  <div className="h-full rounded-xl border border-paper-200 bg-white p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:border-gold-200 hover:-translate-y-0.5">
+                    <div className="font-heading text-xs font-bold uppercase tracking-wide text-gold-600">Stage {index + 1}</div>
+                    <h3 className="mt-3 font-heading text-xl font-bold text-ink-950 leading-tight">{stage.title}</h3>
+                    <p className="mt-3 text-base text-ink-700 leading-relaxed font-body">{stage.body}</p>
+                  </div>
+                </FadeIn>
+              </li>
+            ))}
+          </ol>
+          <FadeIn delay={450}>
+            <div className="mt-12 max-w-3xl mx-auto text-lg text-ink-700 font-body leading-relaxed space-y-4">
+              {AGENCY_COMPARISON.map((para) => <p key={para.slice(0, 24)}>{para}</p>)}
+            </div>
+          </FadeIn>
+        </Container>
+      </Section>
+
+      {/* Triple Brain Marketing — the mechanism: why the creative wins */}
       <Section divider>
         <Container>
           <FadeIn>
@@ -177,7 +246,7 @@ export default function HomePage() {
                 <span className="text-gold-500">One engagement.</span>
               </h2>
               <p className="mt-5 text-lg text-ink-700 font-body leading-relaxed">
-                You don&apos;t need a copywriter. You need a persuasion architect with three brains working as one. The combination behind every winning DR campaign in 2026 — and one almost nobody else has fused.
+                Why does the creative win? Every concept I ship goes through three brains: one decides what to say, one builds it, and one checks it against everything that has worked before.
               </p>
             </div>
           </FadeIn>
@@ -189,10 +258,10 @@ export default function HomePage() {
                     Brain 1
                   </div>
                   <h3 className="mt-3 font-heading text-xl font-bold text-ink-950 leading-tight">
-                    My copywriting brain
+                    Strategy brain
                   </h3>
                   <p className="mt-3 text-base text-ink-700 leading-relaxed font-body">
-                    40+ years of direct-response copywriting for the world&apos;s top brands — Apple, IBM, Microsoft, Citibank, Morgan Stanley, plus the campaign behind $523M for Belron. Pattern recognition you can&apos;t fake or buy.
+                    40+ years of direct response for Apple, IBM, Microsoft, Citibank and Morgan Stanley, plus the Belron campaign that tracked $523M. That experience decides which angle to test, which hook leads, and what your account&apos;s numbers mean.
                   </p>
                 </div>
               </FadeIn>
@@ -204,10 +273,10 @@ export default function HomePage() {
                     Brain 2
                   </div>
                   <h3 className="mt-3 font-heading text-xl font-bold text-ink-950 leading-tight">
-                    Claude Code, with my custom copywriting skills
+                    Production brain
                   </h3>
                   <p className="mt-3 text-base text-ink-700 leading-relaxed font-body">
-                    Anthropic&apos;s most capable model, augmented by my own custom-built skill files. Not generic AI prompting — proprietary frameworks, formulas, and evaluation criteria from real campaigns, encoded for Claude to apply on every project. <a href="https://github.com/robpalmer99/claude-code-copywriting-skills" target="_blank" rel="noopener noreferrer" className="text-gold-600 underline-offset-4 hover:underline">Open-sourced on GitHub</a> (CC-BY-4.0) — <Link href="/blog/claude-code-copywriting-skills" className="text-gold-600 underline-offset-4 hover:underline">read the blog post</Link> for the full breakdown.
+                    Claude Code, running copywriting skills I built to encode the frameworks, formulas and review criteria from real campaigns. It takes an approved angle from script to video to page in days. <a href="https://github.com/robpalmer99/claude-code-copywriting-skills" target="_blank" rel="noopener noreferrer" className="text-gold-600 underline-offset-4 hover:underline">Open-sourced on GitHub</a> (CC-BY-4.0); <Link href="/blog/claude-code-copywriting-skills" className="text-gold-600 underline-offset-4 hover:underline">read the blog post</Link> for the full breakdown.
                   </p>
                 </div>
               </FadeIn>
@@ -219,10 +288,10 @@ export default function HomePage() {
                     Brain 3
                   </div>
                   <h3 className="mt-3 font-heading text-xl font-bold text-ink-950 leading-tight">
-                    My Obsidian copywriting brain
+                    Knowledge brain
                   </h3>
                   <p className="mt-3 text-base text-ink-700 leading-relaxed font-body">
-                    A 1,239-file knowledge base spanning the old direct-response masters through today&apos;s AI marketing strategies. 190 frameworks, 193 swipes, 512 pieces of my own tested copy — all indexed and instantly retrievable.
+                    A 1,239-file Obsidian vault covering the old direct-response masters through today&apos;s AI marketing: 190 frameworks, 193 swipes and 512 pieces of my own tested copy, indexed so every brief starts from what has already worked.
                   </p>
                 </div>
               </FadeIn>
@@ -253,30 +322,33 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto lg:flex lg:items-start lg:gap-16">
             <FadeIn className="lg:flex-shrink-0 lg:sticky lg:top-28">
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950 lg:max-w-sm">
-                Most Copywriters Write Content.{' '}
-                <span className="text-gold-500">I Architect Conversions.</span>
+                Most strategists brief.{' '}
+                <span className="text-gold-500">I build.</span>
               </h2>
             </FadeIn>
             <FadeIn delay={150} className="mt-8 lg:mt-0">
               <div className="space-y-6 text-lg text-ink-700 leading-relaxed font-body">
                 <p>
-                  There is a difference between a copywriter who can string words
-                  together and one who can engineer a persuasion sequence that
-                  turns cold traffic into customers. That difference shows up in
-                  your conversion rate, your AOV, and your bottom line.
+                  Meta&apos;s Andromeda update made creative the lever. The
+                  system now picks who sees an ad by reading the ad itself, so
+                  the accounts that scale are the ones feeding it a steady
+                  supply of genuinely different concepts. Winners fatigue
+                  faster, too. An ad that stayed profitable for three months
+                  can burn out in days, and your CPA climbs as soon as it does.
                 </p>
                 <p>
-                  In 2026, that difference also shows up in tooling. The senior
-                  copywriters with the craft mostly haven&apos;t built the AI
-                  workflow. The AI tools don&apos;t have the craft. The Triple
-                  Brain combination is rare on purpose — three assets that took
-                  decades to assemble, working as one.
+                  Most brands answer that with one of two hires, and both leave
+                  a gap. A strategist who writes briefs and hands them off
+                  leaves the editor guessing at research he never saw. A
+                  copywriter who delivers one polished asset at a time
+                  can&apos;t keep up with an account that needs a dozen new
+                  tests a month.
                 </p>
                 <p>
-                  Campaigns powered by it have generated over $523 million in
-                  tracked revenue for my clients. If you need a writer who treats
-                  your project like their business depends on it — because mine
-                  does — let&apos;s talk.
+                  I do both halves. 40 years of direct response taught me
+                  how to find the message that makes a stranger buy, and my
+                  production stack lets me build that message as statics,
+                  video and landers as fast as your account uses them up.
                 </p>
               </div>
               <div className="mt-10">
@@ -313,13 +385,13 @@ export default function HomePage() {
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gold-400" aria-hidden="true" />
-                  <span><strong className="text-ink-950">Fit.</strong> Engagements typically start at $10K. If yours is below, I&apos;ll refer you to a writer in my network &mdash; no finder&apos;s fee, just an honest match.</span>
+                  <span><strong className="text-ink-950">Fit.</strong> Retainer or project, whichever fits the work. Fixed-price quote within 48 hours of the call &mdash; and if I&apos;m not the right person, I&apos;ll say so and point you to someone who is.</span>
                 </li>
               </ul>
             </FadeIn>
             <FadeIn delay={300}>
               <p className="mt-10 text-lg text-ink-700 font-body leading-relaxed text-center italic">
-                I&apos;d rather refer a project than ship copy that won&apos;t beat your control.
+                I&apos;d rather refer a project than ship creative that won&apos;t beat your control.
               </p>
             </FadeIn>
           </div>
@@ -332,16 +404,16 @@ export default function HomePage() {
           <FadeIn>
             <div className="text-center mb-12">
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950">
-                Direct-Response Copy That Moves the Needle
+                Strategy First. Then the Creative That Delivers It.
               </h2>
               <p className="mt-4 text-lg text-ink-700 font-body max-w-2xl mx-auto">
-                From VSLs to email sequences, every piece of copy is engineered for
-                one thing: results.
+                Most engagements start with strategy, then move into the ads,
+                VSLs and pages I write to prove the angle works.
               </p>
             </div>
           </FadeIn>
           <ul role="list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.slice(0, 6).map((service, index) => (
+            {homepageServices.map((service, index) => (
               <li key={service.slug}>
                 <FadeIn delay={index * 100} distance={20} className="h-full">
                   <ServiceCard
@@ -371,16 +443,17 @@ export default function HomePage() {
           <FadeIn>
             <div className="text-center mb-12">
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink-950">
-                Industries I Specialize In
+                Markets I Know
               </h2>
               <p className="mt-4 text-lg text-ink-700 font-body max-w-2xl mx-auto">
-                Deep vertical expertise across the industries that demand
-                direct-response excellence.
+                I&apos;ve written for these markets for years, so I already
+                know their buyers, their compliance rules and the angles
+                they&apos;ve worn out.
               </p>
             </div>
           </FadeIn>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
-            {verticals.map((vertical, index) => (
+            {homepageVerticals.map((vertical, index) => (
               <FadeIn key={vertical.slug} delay={index * 80} className="h-full">
                 <Link
                   href={`/verticals/${vertical.slug}`}
@@ -438,8 +511,8 @@ export default function HomePage() {
 
       {/* CTA Banner */}
       <CTABanner
-        headline="Ready to put all three brains to work on your funnel?"
-        subtext="Let's discuss how Triple Brain Marketing can lift your conversion rate, your AOV, and your back-end revenue."
+        headline="Ready for creative that scales instead of fatigues?"
+        subtext="On a strategy call we'll look at your current ads together, and I'll tell you which angle I'd test next and why."
         variant="gold"
       />
 
@@ -475,7 +548,7 @@ export default function HomePage() {
         </Container>
       </Section>
 
-      {/* AI Advantage — Brain 2 deep dive: the AI-replaced-then-rehired narrative */}
+      {/* AI Advantage — Production brain deep dive: why AI-only creative fatigued on Meta */}
       <Section divider>
         <Container>
           <div className="max-w-4xl mx-auto lg:flex lg:gap-16 lg:items-start">
@@ -486,7 +559,7 @@ export default function HomePage() {
                   <span className="text-gold-500">experiment failed.</span>
                 </h2>
                 <p className="mt-5 text-lg text-ink-700 font-body leading-relaxed lg:max-w-xs">
-                  Companies that fired their copywriters for AI in 2024 are quietly rehiring in 2026. There&apos;s a reason.
+                  Meta rewards different ads, and AI on its own keeps making the same one.
                 </p>
                 {/* Decorative gold accent bar */}
                 <div className="mt-6 w-16 h-1 bg-gradient-to-r from-gold-400 to-gold-200 rounded-full" />
@@ -495,19 +568,22 @@ export default function HomePage() {
             <FadeIn delay={150}>
               <div className="space-y-6 text-lg text-ink-700 leading-relaxed font-body">
                 <p>
-                  Between 2023 and 2025, a wave of companies fired their copywriting teams and replaced them with ChatGPT, Jasper, and Copy.ai. Conversion rates dropped. Brand voice flattened. Cold traffic stopped converting. By 2026, most of those companies are quietly rehiring senior copywriters at higher rates than before.
+                  Over the last two years, brands flooded Meta with creative made by AI alone, and the result was thousands of near-identical ads with the same hooks, the same glossy faces and the same phrasing. Meta stopped rewarding them.
                 </p>
                 <p>
-                  AI alone produces fluent, generic, bland copy — the kind that
-                  doesn&apos;t offend anyone and doesn&apos;t convince anyone either. It can&apos;t architect a persuasion sequence. It can&apos;t read what a prospect isn&apos;t saying out loud. It doesn&apos;t know which lead type to use at which awareness level. Those decisions come from craft.
+                  AI on its own writes fluent, generic copy that doesn&apos;t
+                  offend anyone and doesn&apos;t convince anyone either. It
+                  can&apos;t read what a prospect isn&apos;t saying out loud,
+                  and it doesn&apos;t know which hook to use at which awareness
+                  level. Those decisions come from craft.
                 </p>
                 <p>
-                  My approach is different. I was the world&apos;s first blogger in 1993, writing copy before the internet had pictures. I built my own AI workflow because nothing off-the-shelf was good enough — and what it actually does is concrete:
+                  My approach is different. I was the world&apos;s first blogger in 1993, writing copy before the internet had pictures. I built my own AI workflow because nothing off-the-shelf was good enough, and here&apos;s what it actually does on every brief:
                 </p>
                 <ul role="list" className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gold-400" aria-hidden="true" />
-                    <span><strong className="text-ink-950">Skill files encode 190+ proven DR frameworks.</strong> Claude routes through a headline-formula matrix, lead-type evaluator, and awareness-stage routing on every draft. Not generic instruction-following; not single-prompt thinking. The frameworks come from forty years of campaigns I&apos;ve shipped.</span>
+                    <span><strong className="text-ink-950">Skill files encode 190+ proven DR frameworks.</strong> Claude routes through a headline-formula matrix, lead-type evaluator, and awareness-stage routing on every draft. Not generic instruction-following; not single-prompt thinking. The frameworks come from 40 years of campaigns I&apos;ve shipped.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gold-400" aria-hidden="true" />
@@ -641,8 +717,8 @@ export default function HomePage() {
 
       {/* Final CTA */}
       <CTABanner
-        headline="Three brains. Your next campaign. One conversation."
-        subtext="Book a free strategy call. No pressure, no obligation — just an honest conversation about whether Triple Brain Marketing is the right fit for your offer."
+        headline="One strategist, from angle to shipped creative."
+        subtext="Book a free strategy call. No pressure and no obligation: an honest conversation about whether I'm the right fit for your creative."
         variant="default"
       />
     </>

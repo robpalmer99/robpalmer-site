@@ -32,10 +32,10 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: SITE_URL,
-    siteName: 'Rob Palmer - Direct-Response Copywriter',
+    siteName: 'Rob Palmer - Creative Strategist & Direct-Response Copywriter',
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
-    images: [{ url: `${SITE_URL}/images/og-default.jpg`, width: 1200, height: 630, alt: 'Rob Palmer - Direct-Response Copywriter' }],
+    images: [{ url: `${SITE_URL}/images/og-default.jpg`, width: 1200, height: 630, alt: 'Rob Palmer - Creative Strategist & Direct-Response Copywriter' }],
   },
   twitter: {
     card: 'summary_large_image',

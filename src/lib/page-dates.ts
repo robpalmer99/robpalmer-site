@@ -7,7 +7,7 @@
  */
 
 export const STATIC_UPDATED: Record<string, string> = {
-  '': '2026-06-12',
+  '': '2026-10-19',
   '/about': '2026-06-12',
   '/services': '2026-03-01',
   '/verticals': '2026-03-01',
