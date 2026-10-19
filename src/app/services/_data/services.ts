@@ -2207,19 +2207,19 @@ export const services: Service[] = [
     slug: 'ai-marketing-consultant',
     tier: 'strategy',
     shortDescription:
-      'Triple Brain Marketing as a productized consultancy. The methodology Stefan Georgi\'s Copy Accelerator hired me as Copy Chief to run \u2014 installed in your marketing operation.',
-    metaTitle: 'AI Marketing Consultant | Triple Brain Marketing Methodology',
+      'Triple Brain Marketing as a productized consultancy: 40 years of direct-response craft, Claude Code with my custom skills and a 1,239-file copywriting brain, installed in your marketing operation.',
+    metaTitle: 'AI Marketing Consultant | Install the Triple Brain Methodology',
     metaDescription:
-      'Senior AI marketing consultant. Install the Triple Brain Marketing methodology Stefan Georgi\'s CA Labs hired me as Copy Chief to run. 40+ years of DR craft + Claude Code custom skills + 1,239-file Obsidian copywriting brain.',
-    headline: 'AI Marketing Consultant \u2014 Install the Triple Brain Methodology Stefan Georgi\'s CA Labs Hired',
+      'Senior AI marketing consultant. I install the Triple Brain Marketing methodology (40+ years of DR craft, Claude Code custom skills and a 1,239-file copywriting brain) in your team\'s workflow so AI output turns into revenue.',
+    headline: 'AI Marketing Consultant: Install the Methodology, Not Another Tool',
     subheadline:
-      'Stefan Georgi \u2014 the copywriter behind over $1B in tracked sales \u2014 hired me as Copy Chief inside Copy Accelerator\'s CA Labs. The methodology I install is Triple Brain Marketing: 40 years of direct-response craft, Claude Code with my custom-built copywriting skills, and a 1,239-file Obsidian copywriting brain \u2014 fused into one workflow your team can run. If your AI marketing is producing more output but not more revenue, this is the kind of work I do.',
+      'Triple Brain Marketing gives your team one workflow for AI copy that converts: 40 years of direct-response craft, Claude Code running my custom copywriting skills, and a 1,239-file copywriting brain. I audit your current setup, install the skills and train your people to use them, then review their drafts the way I did when Stefan Georgi hired me as Copy Chief at Copy Accelerator. If your AI marketing is producing more output but not more revenue, this is how you fix it.',
     heroImage: '/images/services/ai-marketing-consultant.jpg',
     heroImageAlt: 'AI-powered marketing strategy and campaign optimization',
     heroStats: {
       primary: { value: '1,239', label: 'File Obsidian Copywriting Brain (Brain 3 of the Methodology)' },
       secondary: [
-        { value: 'CA Labs', label: 'Stefan Georgi Hired Me as Copy Chief' },
+        { value: '190+', label: 'Proven DR Frameworks Encoded as Skills' },
         { value: '$523M+', label: 'Tracked DR Results Behind the Methodology' },
         { value: '40+', label: 'Years Direct Response' },
       ],
@@ -2227,7 +2227,7 @@ export const services: Service[] = [
     credentialBar: {
       heading: 'AI marketing consulting for',
       items: [
-        'Copy Accelerator / CA Labs (Stefan Georgi as Copy Chief)',
+        'Copy Accelerator (as Copy Chief)',
         'ClickBank Platinum Vendors',
         'Supplement Marketers',
         'Financial Publishers',
@@ -2241,12 +2241,12 @@ export const services: Service[] = [
         content:
           'You\'re paying for <a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Claude</a>, <a href="https://openai.com/chatgpt" target="_blank" rel="noopener noreferrer">ChatGPT</a>, Gemini, Jasper, and half a dozen specialized platforms. Your team is shipping more copy, more ads, more content than ever. But conversion rates are flat. CPA is creeping up. Revenue per email is the same it was 12 months ago. Your CFO is asking where the AI ROI is. You don\'t have a satisfying answer.\n\n' +
           'Here\'s the structural reason that keeps happening. AI tools aren\'t the bottleneck \u2014 every brand has the same tools you do. The bottleneck is the strategic direction those tools are pointed at. AI without direct-response architecture is just a faster way to produce mediocre marketing. More output, less revenue per impression, and the dawning realization that your competitors are running the same prompts you are.\n\n' +
-          'What separates brands actually scaling with AI from brands generating noise: a marketing operator who knows what a $30M funnel looks like from the inside, has internalised 190+ proven DR frameworks, and can tell you which AI capabilities create real leverage versus which create the illusion of progress. Most of the operators who could do that don\'t consult \u2014 they\'re running their own offers and wouldn\'t return your call. It\'s the same gap driving the scramble to <a href="/blog/hire-a-creative-strategist">hire a creative strategist</a> \u2014 the market is full of people with the title and short of people with the testing system.',
+          'What separates brands actually scaling with AI from brands generating noise: a marketing operator who knows what a $30M funnel looks like from the inside, has internalised 190+ proven DR frameworks, and can tell you which AI capabilities create real leverage versus which create the illusion of progress. Most of the operators who could do that don\'t consult \u2014 they\'re running their own offers and wouldn\'t return your call. It\'s the same gap driving the scramble to <a href="/services/creative-strategist">hire a creative strategist</a> \u2014 the market is full of people with the title and short of people with the testing system.',
       },
       {
-        heading: 'The Triple Brain Methodology Stefan Georgi\'s CA Labs Hired Me to Run',
+        heading: 'The Triple Brain Methodology I Install',
         content:
-          'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as <strong>Copy Chief inside Copy Accelerator\'s CA Labs</strong>. The methodology I install is <strong>Triple Brain Marketing</strong> \u2014 three brains fused into one workflow your team can run.\n\n' +
+          'The methodology I install is <strong>Triple Brain Marketing</strong>: three brains joined into one workflow your team can run on every brief. It\'s the workflow I ran as <strong>Copy Chief at Copy Accelerator</strong> after Stefan Georgi hired me, rebuilt so a whole team can use it. Each brain covers a gap the other two leave open.\n\n' +
           '<strong>Brain 1:</strong> 40 years of direct-response craft. Grounded in $523M+ of tracked client results across Apple UK direct mail, IBM, Microsoft, Citibank, Morgan Stanley, the Belron $523M / 9-year campaign, ClickBank-Platinum offers like Mobile Profits ($30M, #1 on ClickBank), the $40M Gluco 6 supplement funnel, the 5.7% opt-in-to-sale Monetari Fund financial bridge, and the 22% trial-to-paid Chatterkick SaaS onboarding sequence.\n\n' +
           '<strong>Brain 2:</strong> Claude Code augmented by my custom-built copywriting skills. Not generic ChatGPT prompting \u2014 proprietary skill files that encode 40 years of frameworks, formulas, and evaluation criteria into a working AI workflow. Open-sourced selectively as verifiable proof of substance.\n\n' +
           '<strong>Brain 3:</strong> A 1,239-file Obsidian copywriting brain. 190 frameworks, 193 swipe pieces, 125 book/course notes, 76 templates, and 512 pieces of my own tested copy \u2014 indexed and instantly retrievable while your team writes.\n\n' +
@@ -2256,7 +2256,7 @@ export const services: Service[] = [
       {
         heading: 'The Marketing Operators Who Hire Me to Run AI in Their Stack',
         content:
-          'Stefan Georgi (CA Labs / $1B in tracked sales) hired me as Copy Chief. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor, clocked <strong>300% ROAS</strong> on the email-driven funnel I wrote for him. The Belron CEO put it on record: <em>"You are our secret weapon. Keep your diary clear, please!"</em>\n\n' +
+          'Stefan Georgi, the copywriter behind over $1B in tracked sales, hired me as Copy Chief at Copy Accelerator. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor, clocked <strong>300% ROAS</strong> on the email-driven funnel I wrote for him. The Belron CEO put it on record: <em>"You are our secret weapon. Keep your diary clear, please!"</em>\n\n' +
           'These are operators who run marketing at the highest level. With their own money on the line.',
       },
       {
@@ -2286,10 +2286,10 @@ export const services: Service[] = [
     ],
     caseStudies: [
       {
-        name: 'Copy Accelerator / CA Labs',
+        name: 'Copy Accelerator',
         category: 'Copy Chief Engagement',
-        metric: 'Hired by Stefan Georgi',
-        detail: '"We hired Rob as our Copy Chief for CA Labs!" \u2014 Stefan Georgi, the copywriter behind over $1B in tracked sales.',
+        metric: 'Copy Chief',
+        detail: '"We hired Rob as our Copy Chief!" \u2014 Stefan Georgi, the copywriter behind over $1B in tracked sales.',
       },
       {
         name: 'Triple Brain Methodology',
@@ -2374,7 +2374,7 @@ export const services: Service[] = [
       {
         question: 'What does an AI marketing engagement cost?',
         answer:
-          'AI marketing engagements are fixed-price. Most engagements start at $10K (focused single-channel audit and playbook). Full multi-channel installations run higher \u2014 audit + system design + skill installation + team training + first round of optimisation. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a marketing operation paying for AI tools without strategic direction is paying for noise. The same operation with the methodology installed is paying for compounding leverage.',
+          'AI marketing engagements are fixed-price, scoped as a focused single-channel audit and playbook or as a full multi-channel installation: audit, system design, skill installation, team training and a first round of optimisation. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a marketing operation paying for AI tools without strategic direction is paying for noise. The same operation with the methodology installed is paying for compounding leverage.',
       },
       {
         question: 'How long does an AI marketing engagement take?',

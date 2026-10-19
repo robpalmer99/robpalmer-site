@@ -32,7 +32,7 @@ const SERVICE_UPDATED_DEFAULT = '2026-05-07'
 const SERVICE_UPDATED: Record<string, string> = {
   'creative-strategist': '2026-10-19',
   'direct-response-copywriter': '2026-10-09',
-  'ai-marketing-consultant': '2026-09-22',
+  'ai-marketing-consultant': '2026-10-19',
   'conversion-rate-optimization': '2026-09-22',
 }
 
