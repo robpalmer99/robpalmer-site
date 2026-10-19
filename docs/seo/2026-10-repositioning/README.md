@@ -1,5 +1,7 @@
 # 2026-10 creative-strategy repositioning — SEO tracking
 
+baseline.json = output of `.claude/skills/seo/.venv/bin/python scripts/gsc_query.py --days 90 --dimension query,page --json` on 2026-10-19 (1000 rows = the API cap). Rerun the identical command at each checkpoint.
+
 ## Baseline 2026-10-19 — DR cluster
 
 ```
