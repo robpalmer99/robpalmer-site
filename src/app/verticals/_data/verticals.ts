@@ -619,7 +619,7 @@ export const verticals: Vertical[] = [
       'ClickBank copywriter and creative strategist behind Mobile Profits, the #1 ClickBank offer at $30M+. EPC-driven angles, VSLs and back ends affiliates push.',
     headline: 'Creative Strategy and Funnels Affiliates Fight to Promote',
     subheadline:
-      'I find the angles that lift EPC, write the VSL and back-end stack around them, and give your affiliates swipes built from the same winners. The Mobile Profits VSL I wrote became the <strong>#1 offer on ClickBank</strong> and did over <strong>$30 million</strong>, and the email-driven funnel I wrote for Ben Palmer, a ClickBank Platinum vendor, drives <strong>300% ROAS</strong>. If your funnel converts but EPC sits below what top affiliates need, this is the work I do.',
+      'I find the angles that convert buyers and pay affiliates, write the VSL and back-end stack around them, and hand your affiliates swipes built from the same winners. The Mobile Profits VSL I wrote became the <strong>#1 offer on ClickBank</strong> and did over <strong>$30 million</strong>, and the email-driven funnel I wrote for Ben Palmer, a ClickBank Platinum vendor, drives <strong>300% ROAS</strong>. If your funnel converts but EPC sits below what top affiliates need, this is the work I do.',
     heroImage: '/images/industries/clickbank.jpg',
     heroImageAlt: 'Digital marketing analytics and performance metrics',
     heroStats: {
@@ -987,7 +987,7 @@ export const verticals: Vertical[] = [
       'Info product copywriter and creative strategist behind the 340% ROAS Abundant TSL on Facebook cold traffic. Launch and evergreen angles, pages and emails.',
     headline: 'Creative Strategy and Copy Behind the 340% ROAS Abundant Launch',
     subheadline:
-      '"Everything is on point and on brief! You knocked it out of the park with those!" That\'s Devon Brown, founder of Just Throw Some Sexy On It, on copy I shipped him. I plan the angles for your launch and your evergreen funnel, then write the sales page, emails and webinar that sell them. The Abundant TSL I wrote drove <strong>340% ROAS</strong> on Facebook cold traffic. If your course launches at $50K when the offer should do $500K, or your evergreen webinar converts at 1% when it should clear 4%, this is the work I do.',
+      '"Everything is on point and on brief! You knocked it out of the park with those!" That\'s Devon Brown, founder of Just Throw Some Sexy On It, on copy I shipped him. I find the angles that sell your program, then write the sales page, launch emails and webinar around the winners. The Abundant TSL I wrote drove <strong>340% ROAS</strong> on Facebook cold traffic. If your course launches at $50K when the offer should do $500K, or your evergreen webinar converts at 1% when it should clear 4%, this is the work I do.',
     heroImage: '/images/industries/info-products.jpg',
     heroImageAlt: 'Online learning and digital education',
     heroStats: {
