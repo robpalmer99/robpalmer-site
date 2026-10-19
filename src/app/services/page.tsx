@@ -8,10 +8,10 @@ import { ServiceCard } from '@/components/blocks/ServiceCard'
 import { CTABanner } from '@/components/blocks/CTABanner'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { SITE_URL } from '@/lib/constants'
-import { services } from './_data/services'
+import { services, type Service } from './_data/services'
 
 export const metadata: Metadata = {
-  title: 'Creative Strategy & Direct-Response Copywriting Services',
+  title: 'Creative Strategy & Copywriting Services',
   description:
     'Creative strategy for brands scaling on paid social, and the direct-response copy that delivers it: ads, VSLs, sales pages, emails, landers, funnels and upsells. $523M+ in tracked results.',
   alternates: { canonical: `${SITE_URL}/services` },
@@ -30,7 +30,8 @@ function Tier({
   badge: string
   heading: string
   intro: string
-  items: typeof services
+  items: Service[]
+  // Deliberately narrower than Section's union: tiers use the two paper backgrounds only.
   variant?: 'default' | 'alt'
 }) {
   return (

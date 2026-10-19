@@ -2359,7 +2359,7 @@ export const services: Service[] = [
       {
         question: 'What does an AI marketing consultant actually do?',
         answer:
-          'I install the Triple Brain Marketing methodology in your marketing operation \u2014 the same workflow Stefan Georgi\'s Copy Accelerator hired me as Copy Chief to run. That covers AI workflows for market research, audience intelligence, copy production, campaign optimisation, and offer development. Every system is grounded in the direct-response fundamentals behind $523M+ in tracked client results, not in generic prompt-engineering tutorials.',
+          'I install the Triple Brain Marketing methodology in your marketing operation: the workflow I used as Copy Chief at Stefan Georgi\'s Copy Accelerator, rebuilt for your team. That covers AI workflows for market research, audience intelligence, copy production, campaign optimisation, and offer development. Every system is grounded in the direct-response fundamentals behind $523M+ in tracked client results, not in generic prompt-engineering tutorials.',
       },
       {
         question: 'How is AI marketing consulting different from AI copywriting consulting?',
