@@ -63,12 +63,12 @@ export const verticals: Vertical[] = [
     slug: 'health-supplement-copywriter',
     shortDescription:
       'Health supplement copy anchored on the $40M Gluco 6 funnel. FDA-fluent VSLs, sales pages, and back-end stacks that convert cold traffic and clear platform review on the first pass.',
-    metaTitle: 'Health Supplement Copywriter | $40M Gluco 6 + FDA Fluent',
+    metaTitle: 'Health Supplement Copywriter | Compliance-Aware Creative',
     metaDescription:
-      'Senior health supplement copywriter behind the $40M Gluco 6 supplement funnel. FDA structure/function-fluent VSLs, sales pages, and upsell stacks for supplement brands. Fixed-price engagements, two-week kickoffs.',
-    headline: 'Health Supplement Copywriter Behind the $40M Gluco 6 Funnel',
+      'Health supplement copywriter and creative strategist behind the $40M Gluco 6 funnel. Compliance-aware angles, ads, VSLs and upsell stacks built to scale.',
+    headline: 'Creative Strategy and Copy for Supplement Offers That Scale Cleanly',
     subheadline:
-      '"Rob is probably the most methodical copywriter I\'ve seen. This impresses me." That\'s Mark Shay on a piece of supplement copy I shipped him. The Gluco 6 supplement funnel I worked on did <strong>$40 million</strong> end-to-end. If your supplement offer converts in testing but the platform reviewer kills it before it scales — or it scales and your AOV stalls $50 below where it needs to be — this is the kind of work I do.',
+      'I map the angles a supplement offer can test, screen each one against FDA structure/function limits before anyone writes an ad, then build the VSL, sales page and upsell stack around the winners. The Gluco 6 supplement funnel I worked on did <strong>$40 million</strong> end-to-end. If your strongest hooks keep getting rejected in review, or the safe ones that pass don\'t convert, this is the work I do.',
     heroImage: '/images/industries/health-supplements.jpg',
     heroImageAlt: 'Health supplements and natural products',
     heroStats: {
@@ -85,7 +85,7 @@ export const verticals: Vertical[] = [
         'Gluco 6 Supplement Funnel ($40M End-to-End)',
         'Ben Palmer / ClickBank Platinum Vendors',
         'Konscious Keto (Ryan Kowalski)',
-        'Copy Accelerator / CA Labs (Stefan Georgi as Copy Chief)',
+        'Copy Accelerator (as Copy Chief)',
         'Mark Shay / Supplement Marketers',
         'FDA / FTC Structure-Function Fluent',
       ],
@@ -98,10 +98,11 @@ export const verticals: Vertical[] = [
       {
         heading: 'Why Most Supplement Funnels Die Twice',
         content:
+          'In supplements, the angle test starts before the ad account does. I build the angle list from the words your buyers use, then screen every hook against FDA structure/function limits and Meta\'s health-ad policies before it goes into a brief. Whatever survives that screen is safe to test hard, so a winning angle can scale without a reviewer pulling it in week three. Angles that can\'t be made compliant get cut at the research stage, where cutting them costs you nothing.\n\n' +
           'You\'re a supplement marketer. You have an offer, an ingredient stack, an angle. Your team writes the VSL. Then one of two things happens.\n\n' +
           'Door one: the copy is aggressive enough to convert in private testing — then it doesn\'t survive review. Meta flags the hook. ClickBank kicks back the sales page. The FDA disclaimer language is wrong, the testimonials need stronger hedging, and the angle that beat your current control just got rejected. Two weeks of rewrites. Three. Now your launch window is gone.\n\n' +
           'Door two: the copy clears review by going so safe it doesn\'t convert. CPM is fine. Click-through is fine. But cold-traffic CVR is 0.6% on a funnel that needs 1.5% to break even, and your AOV is sitting at $97 when it should be $147 because the back-end upsell stack was bolted on after the front-end shipped.\n\n' +
-          'Either way, every dormant day costs you. At $5K/day in ad spend on a funnel that\'s 0.5 points off where it needs to be, that\'s $25K/week burning while the revenue compounds for the brand that figured the math out two months earlier.\n\n' +
+          'Either way, every dormant day costs you. At $5,000 a day in ad spend on a funnel that\'s 0.5 points off where it needs to be, that\'s $25,000 a week burning while the revenue compounds for the brand that figured the math out two months earlier.\n\n' +
           'The structural problem isn\'t willpower or word choice. It\'s that most supplement copywriters can write aggressively OR compliantly — not both at once. The skill the back-end actually rewards is writing copy where every claim lives inside structure/function-claim territory, every testimonial is hedged at the writing layer (not bolted on by legal at the end), and every step of the funnel — VSL, sales page, order bump, OTO1, OTO2, downsell, post-purchase email — is engineered to lift AOV from day one.',
       },
       {
@@ -116,7 +117,7 @@ export const verticals: Vertical[] = [
       {
         heading: 'The Supplement Copywriter Top DR Operators Hire',
         content:
-          'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as <strong>Copy Chief inside Copy Accelerator\'s CA Labs</strong>. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor, clocked <strong>300% ROAS</strong> on a funnel I wrote.\n\n' +
+          'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as <strong>Copy Chief at Copy Accelerator</strong>. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor, clocked <strong>300% ROAS</strong> on a funnel I wrote.\n\n' +
           'Ryan Kowalski at Konscious Keto looked at my copy and said: <em>"That\'s solid copy. I have a feeling this is going to be a winner. Great job!"</em>\n\n' +
           'These are operators with their own money on the line. In supplements, that money exits the business inside 60 days if compliance fails or AOV stalls. DR operators at this level keep handing me supplement work \u2014 and that\'s the proof that matters more than any individual stat.',
       },
@@ -172,6 +173,7 @@ export const verticals: Vertical[] = [
       },
     ],
     deliverables: [
+      { title: 'Compliance-Aware Angle Map', description: 'Angles and hooks mapped to awareness level and screened against FDA structure/function limits before a single ad is written.' },
       { title: 'Supplement VSL Scripts', description: 'Long-form video sales letters with structure/function-claim discipline built into every line. Cold-traffic-engineered hooks.' },
       { title: 'Long-Form Sales Pages', description: 'Compliance-aware supplement sales pages \u2014 leads, body, proof stack, close \u2014 written as one connected persuasion system.' },
       { title: 'Back-End Upsell Stack', description: 'Order bump + OTO1 + OTO2 + downsell + thank-you page sequence engineered to lift AOV by 30\u2013100% on existing traffic.' },
@@ -216,7 +218,7 @@ export const verticals: Vertical[] = [
       {
         question: 'What does supplement copywriting cost?',
         answer:
-          'Supplement engagements are fixed-price. A full supplement VSL or sales page starts at $10K. A full supplement funnel (VSL + sales page + back-end stack + email sequence) typically starts at $25K. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a supplement funnel that lifts cold-traffic CVR from 0.6% to 1.5% pays for the writer in the first week of scaled spend. A back-end stack that lifts AOV by 30% on existing traffic is pure margin.',
+          'Supplement engagements are fixed-price. Scope ranges from a single VSL or sales page to a full funnel (VSL, sales page, back-end stack and email sequence), on retainer or by project. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a supplement funnel that lifts cold-traffic CVR from 0.6% to 1.5% pays for the writer in the first week of scaled spend. A back-end stack that lifts AOV by 30% on existing traffic is pure margin.',
       },
       {
         question: 'How long does it take to write a supplement VSL or full funnel?',

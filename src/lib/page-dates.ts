@@ -39,6 +39,7 @@ const SERVICE_UPDATED: Record<string, string> = {
 // verticals.ts: all entries last touched 2026-06-11 (hero CTA change).
 const VERTICAL_UPDATED_DEFAULT = '2026-06-11'
 const VERTICAL_UPDATED: Record<string, string> = {
+  'health-supplement-copywriter': '2026-10-19',
   'ecommerce-dtc-copywriter': '2026-10-19',
 }
 
