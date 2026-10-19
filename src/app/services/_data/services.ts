@@ -1779,7 +1779,7 @@ export const services: Service[] = [
       {
         question: 'How much does sales funnel copywriting cost?',
         answer:
-          'Sales-funnel engagements are fixed-price. Most full-funnel projects start at $25K \u2014 funnels are 5\u20138 pages of senior DR work plus the email follow-up sequence, so they\'re the largest single engagements I run. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a funnel that lifts front-end CVR by 1% AND lifts AOV by 30% on the same traffic doesn\'t pay for itself \u2014 it changes your unit economics.',
+          'Sales-funnel engagements are fixed-price. Funnels are 5\u20138 pages of senior DR work plus the email follow-up sequence, so they\'re the largest single engagements I run. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a funnel that lifts front-end CVR by 1% AND lifts AOV by 30% on the same traffic doesn\'t pay for itself \u2014 it changes your unit economics.',
       },
       {
         question: 'How long does it take to write a complete funnel?',
@@ -2770,7 +2770,7 @@ export const services: Service[] = [
       {
         question: 'How much does CRO cost?',
         answer:
-          'CRO engagements are fixed-price. Single-page audit + test-ready rewrites typically start at $5K. Full-funnel CRO (5\u20138 pages, multiple test rounds, prioritized roadmap) starts at $15K. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: improving your conversion rate by even 0.5% on serious traffic pays for the engagement in the first week. CRO is the only investment that makes every other marketing investment work harder.',
+          'CRO engagements are fixed-price. Scope ranges from a single-page audit with test-ready rewrites to full-funnel CRO across 5\u20138 pages, on retainer or by project. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: improving your conversion rate by even 0.5% on serious traffic pays for the engagement in the first week. CRO is the only investment that makes every other marketing investment work harder.',
       },
       {
         question: 'How long does a CRO engagement take?',
