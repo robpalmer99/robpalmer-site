@@ -430,12 +430,12 @@ export const verticals: Vertical[] = [
     slug: 'ecommerce-dtc-copywriter',
     shortDescription:
       'E-commerce and DTC copy anchored on the $40M Gluco 6 supplement subscription funnel + 300% ROAS Ben Palmer ClickBank-health funnel + 30\u2013100% AOV lifts on anonymized back-end stacks. Product page through post-purchase email written as one connected revenue stack.',
-    metaTitle: 'E-Commerce & DTC Copywriter | $40M Subscription + 30\u2013100% AOV',
+    metaTitle: 'E-Commerce & DTC Copywriter | Creative Strategy for Meta',
     metaDescription:
-      'Senior e-commerce and DTC copywriter behind the $40M Gluco 6 subscription funnel + 300% ROAS Ben Palmer ClickBank-health funnel + 30\u2013100% AOV lifts on anonymized back-end stacks. Product page, email, ad, upsell stack as one connected revenue system.',
-    headline: 'E-Commerce & DTC Copywriter Behind $40M Subscription + 30\u2013100% AOV Lifts',
+      'E-commerce and DTC copywriter and creative strategist for Meta: angles, ads and landers, plus the email and upsell stack. Behind the $40M Gluco 6 funnel.',
+    headline: 'Creative Strategy and Copy for DTC Brands Ready to Scale',
     subheadline:
-      'I write the connected revenue stack for DTC operators \u2014 product page, abandoned cart, post-purchase upsell, subscription retention. The Gluco 6 supplement subscription funnel I worked on did <strong>$40 million</strong> end-to-end with the same DTC subscription dynamics. For Ben Palmer, a ClickBank Platinum vendor running an e-commerce-style health funnel, the email-driven funnel I wrote drove <strong>300% ROAS</strong>. Across multiple anonymized e-commerce back-end stacks, AOV lifts have landed in the <strong>30\u2013100%</strong> range. If your DTC brand has a 2% product-page CVR that should clear 4%, or your post-purchase email sequence is leaving back-end revenue on the table, this is the kind of work I do.',
+      'I find the angles your Meta account should test next, write the ads and the pages they send traffic to, then build the email and upsell stack that turns first orders into repeat revenue. The Gluco 6 supplement subscription funnel I worked on did <strong>$40 million</strong>, and the email-driven funnel I wrote for Ben Palmer drives <strong>300% ROAS</strong>. If your account burns through winning ads faster than your team can replace them, this is the work I do.',
     heroImage: '/images/industries/ecommerce-dtc.jpg',
     heroImageAlt: 'E-commerce shopping and online retail',
     heroStats: {
@@ -465,6 +465,7 @@ export const verticals: Vertical[] = [
       {
         heading: 'Why Most DTC Brands Burn the Front End and Starve the Back End',
         content:
+          'On Meta, the DTC brands that keep scaling ship the most good concepts, and that takes three things working together. The first is creative velocity: new angles reaching the account every week, each one built from a written brief. The second is congruence: the lander repeats the ad\'s promise in the ad\'s own words, so the visitor recognizes the offer and keeps reading. The third is a testing cadence, a weekly review that decides what scales, what gets cut and what the next brief says. As your <a href="/services/creative-strategist">creative strategist</a>, I handle all three and write the copy myself.\n\n' +
           'You\'re a DTC operator. Maybe you have one product, maybe a category. CAC has been creeping. ROAS has been compressing. iOS 14.5 hit your attribution two years ago and Meta hasn\'t given you the same signal since. You\'re running ads, you\'re shipping product, the bank account looks fine \u2014 but the math is getting tighter every quarter.\n\n' +
           'Here\'s why. Most DTC brands burn 80% of their copy budget on acquisition (ad creative + product page + landing page) and 20% on the back end (email sequences + post-purchase upsell + subscription retention). The front end is where the cost lives, so it gets the attention. The back end is where the margin lives, so it gets ignored.\n\n' +
           'Door one: your front-end CVR is okay (2% on a product page, 1% on a sales page) but post-purchase emails are a welcome series and three "did you forget us?" win-backs. Subscription retention has no copy at all. AOV stalls at $42 when it should clear $80. CLTV sits at $58 when it should be $180. The brand stays profitable on margin, but never breaks out.\n\n' +
@@ -484,7 +485,7 @@ export const verticals: Vertical[] = [
       {
         heading: 'The DTC Copywriter Top DR Operators Hire',
         content:
-          'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as <strong>Copy Chief inside Copy Accelerator\'s CA Labs</strong>. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor, clocked <strong>300% ROAS</strong> on a funnel I wrote.\n\n' +
+          'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as <strong>Copy Chief at Copy Accelerator</strong>. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor, clocked <strong>300% ROAS</strong> on a funnel I wrote.\n\n' +
           'Mark Shay, who has seen more DTC and supplement copy than most, put it on record: <em>"Rob is probably the most methodical copywriter I\'ve seen. This impresses me."</em>\n\n' +
           'These are operators with their own money on the line. DTC doesn\'t reward writers who can\'t make the AOV math compound \u2014 the CAC ceiling clears them out inside two quarters. DR operators at this level keep handing me e-commerce work \u2014 and that\'s the proof that matters more than any individual stat.',
       },
@@ -540,6 +541,7 @@ export const verticals: Vertical[] = [
       },
     ],
     deliverables: [
+      { title: 'Angle Map & Creative Brief Set', description: 'Customer-language research, angles ranked by awareness level, and one brief per concept for Meta: the strategy layer every other deliverable follows.' },
       { title: 'Product Page Copy', description: 'Conversion-optimized product pages built as sales pages in miniature \u2014 not just descriptions.' },
       { title: 'Email Stack', description: 'Welcome, abandoned cart, post-purchase upsell, subscription retention, win-back, and broadcast sequences as one connected revenue engine.' },
       { title: 'Back-End OTO Stack', description: 'Order bump + OTO1 + OTO2 + downsell + thank-you page sequence engineered for 30\u2013100% AOV lifts on existing traffic.' },
@@ -552,7 +554,7 @@ export const verticals: Vertical[] = [
       'Every deliverable is engineered for the DTC operator who needs both front-end CVR AND back-end AOV math \u2014 not one or the other.',
     testimonialIds: ['34', '32', '22', '6', '2', '3'],
     portfolioItems: [],
-    heroCta: { label: 'Audit my DTC stack', href: '/call' },
+    heroCta: { label: 'Audit my creative and my stack', href: '/call' },
     midCta: {
       headline: 'Ready for a DTC revenue stack that lifts AOV without lifting ad spend?',
       subtext:
@@ -577,7 +579,7 @@ export const verticals: Vertical[] = [
       {
         question: 'What does DTC copywriting cost?',
         answer:
-          'DTC engagements are fixed-price. A standalone product page or post-purchase email sequence starts at $5\u201310K. A full DTC revenue stack (product page + email sequences + OTO stack + ad copy + iteration roadmap) typically starts at $25K. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a back-end stack that lifts AOV by $40 on existing traffic at $1M ARR is $400K\u2013$1M of pure-margin revenue compounding monthly. The writer pays for himself in the first 60 days.',
+          'DTC engagements are fixed-price. Scope ranges from a standalone product page or email sequence to a full creative and revenue stack (angle map, ad creative, product page, email sequences and OTO stack), on retainer or by project. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a back-end stack that lifts AOV by $40 on existing traffic at $1M ARR is $400K\u2013$1M of pure-margin revenue compounding monthly. The writer pays for himself in the first 60 days.',
       },
       {
         question: 'How long does it take to write a DTC revenue stack?',
