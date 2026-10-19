@@ -249,12 +249,12 @@ export const verticals: Vertical[] = [
     slug: 'financial-copywriter',
     shortDescription:
       'Financial copy anchored on the 5.7% Monetari Fund opt-in-to-sale + Morgan Stanley and Citibank Fortune 500 lineage. VSLs, long-form promotions, and email sequences that convert the most skeptical audience in DR while clearing SEC, FINRA, and FTC review.',
-    metaTitle: 'Financial Copywriter | 5.7% Monetari + Morgan Stanley + Citibank',
+    metaTitle: 'Financial Copywriter | Disclosure-Aware Creative Strategy',
     metaDescription:
-      'Senior financial copywriter behind the 5.7% opt-in-to-sale Monetari Fund bridge + Fortune 500 lineage at Morgan Stanley and Citibank. SEC/FINRA-posture-aware VSLs, long-form promotions, and email sequences. Fixed-price engagements, two-week kickoffs.',
-    headline: 'Financial Copywriter Behind 5.7% Monetari + Morgan Stanley + Citibank',
+      'Financial copywriter and creative strategist: disclosure-aware hooks, VSLs, long-form promotions. 5.7% Monetari opt-in-to-sale; Morgan Stanley, Citibank.',
+    headline: 'Creative Strategy and Copy for Financial Offers Built to Scale',
     subheadline:
-      '"Rob is amazing. He got right to the crux of my copy problem." That\'s Andrew Stotz, CEO of Stotz Financial Research, on copy I shipped him. The Monetari Fund financial bridge I wrote delivered <strong>5.7% opt-in-to-sale</strong> on a regulated financial offer. Earlier in my career Morgan Stanley and Citibank handed me direct-response work. If your trading newsletter, fund LP, or financial advisory bleeds CTR because copy can\'t be aggressive enough \u2014 or it scales and lands in front of an SEC reviewer who doesn\'t love it \u2014 this is the kind of work I do.',
+      'I test hooks and angles for financial offers with the disclosure each one needs mapped in from the start, then write the VSL, promotion and email sequence around the winners. The Monetari Fund bridge I wrote delivered <strong>5.7% opt-in-to-sale</strong> on a regulated offer, and earlier in my career I wrote direct-response work for Morgan Stanley and Citibank. If compliance keeps gutting your strongest copy, or the version that survives can\'t sell, this is the work I do.',
     heroImage: '/images/industries/financial-services.jpg',
     heroImageAlt: 'Financial markets and trading data',
     heroStats: {
@@ -284,6 +284,7 @@ export const verticals: Vertical[] = [
       {
         heading: 'Why Most Financial Copy Either Reads Like a 10-K or Triggers a Reviewer',
         content:
+          'Financial hooks fail compliance in predictable places: performance claims, implied returns and urgency that sounds like investment advice. So I test hooks with the disclosure already attached. Each angle on the map carries the risk language it\'ll need, and I write the hook to work with that language on the page. When a hook wins the test, it can scale as written, because nobody in legal has to rebuild it first. The version that wins the test is the version that ships.\n\n' +
           'You\'re a financial publisher, fund operator, or trading-platform marketer. Your prospects are the most skeptical audience in direct response \u2014 they\'ve heard every claim, seen every chart pattern, and been burned by enough bad advice to develop strong defenses against marketing. And your copy has to clear three more gauntlets before it ever reaches them.\n\n' +
           'SEC. FINRA. FTC. Plus your in-house compliance officer. Plus the platform reviewer at Meta or Google.\n\n' +
           'Most financial copywriters can write to ONE of these constraints \u2014 the audience or the regulators. Not both. So one of two things happens.\n\n' +
@@ -305,7 +306,7 @@ export const verticals: Vertical[] = [
       {
         heading: 'The Financial Copywriter Top DR Operators Hire',
         content:
-          'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as <strong>Copy Chief inside Copy Accelerator\'s CA Labs</strong>. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor, clocked <strong>300% ROAS</strong> on a funnel I wrote.\n\n' +
+          'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as <strong>Copy Chief at Copy Accelerator</strong>. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor, clocked <strong>300% ROAS</strong> on a funnel I wrote.\n\n' +
           'Bob Diamond at Overages Blueprint \u2014 a financial-overages education business \u2014 reviewed my work and came back with: <em>"I really like the copy. Looks very good."</em>\n\n' +
           'Mark Shay, who has seen more compliance-sensitive copy than most, put it on record: <em>"Rob is probably the most methodical copywriter I\'ve seen. This impresses me."</em>\n\n' +
           'These are operators with their own money on the line \u2014 and in regulated financial verticals, that money also has the SEC, FINRA, and FTC watching. Financial publishers don\'t reward writers who can\'t draft inside compliance frameworks; the regulators clear them out faster than the marketplace does. DR operators at this level keep handing me financial work \u2014 and that\'s the proof that matters more than any individual stat.',
@@ -362,6 +363,7 @@ export const verticals: Vertical[] = [
       },
     ],
     deliverables: [
+      { title: 'Disclosure-Aware Angle Map', description: 'Hooks and angles for financial promotions, each mapped to the disclosure it will need, so compliance review is a quick sign-off.' },
       { title: 'Long-Form Financial Promotions', description: 'Agora/Stansberry-tradition long-form promotions \u2014 5,000\u201310,000+ words with compliance posture from the first draft.' },
       { title: 'Financial VSL & TSL Scripts', description: 'Long-form video and text sales letters for financial publishers, fund LPs, and trading-platform marketers. $27M stock-investing VSL anchors the track.' },
       { title: 'Sales Pages + Bridges', description: 'Long-form financial sales pages and bridge pages. Monetari Fund anchors the bridge track at 5.7% opt-in-to-sale.' },
@@ -401,7 +403,7 @@ export const verticals: Vertical[] = [
       {
         question: 'What does financial copywriting cost?',
         answer:
-          'Financial engagements are fixed-price. A standalone financial VSL or sales page starts at $10K. A full long-form Agora-style promotion starts at $25K. A complete financial promotion system (VSL or sales letter + bridge + email sequences + ad copy + compliance-review map) typically runs higher. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a financial offer at $1,000 average ticket on a 10K\u201350K list leaves $200K\u2013$1M on the table per failed promotion. A control-beater that lifts opt-in-to-sale from 1.5% to 4% pays for the writer in the first launch.',
+          'Financial engagements are fixed-price. Scope ranges from a standalone VSL or sales page to a full long-form promotion system, on retainer or by project. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a financial offer at $1,000 average ticket on a 10K\u201350K list leaves $200K\u2013$1M on the table per failed promotion. A control-beater that lifts opt-in-to-sale from 1.5% to 4% pays for the writer in the first launch.',
       },
       {
         question: 'How long does it take to write a financial promotion?',
