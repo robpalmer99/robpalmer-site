@@ -98,9 +98,10 @@ export default function CallPage() {
                   </li>
                   <li>
                     <strong className="text-ink-950">Fit.</strong>{' '}
-                    Engagements typically start at $10K. If yours is below,
-                    I&apos;ll refer you to a writer in my network &mdash; no
-                    finder&apos;s fee, just an honest match.
+                    Retainer or project, whichever fits the work. You&apos;ll have a
+                    fixed-price quote within 48 hours of the call &mdash; and if
+                    I&apos;m not the right person, I&apos;ll say so and point you
+                    to someone who is.
                   </li>
                 </ul>
               </div>
