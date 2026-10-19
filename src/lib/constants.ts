@@ -1,7 +1,7 @@
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://robpalmer.com'
-export const SITE_TITLE = 'Rob Palmer | Direct-Response Copywriter'
+export const SITE_TITLE = 'Rob Palmer | Creative Strategist & Direct-Response Copywriter'
 export const SITE_DESCRIPTION =
-  'Direct-response copywriter and conversion strategist with $523M+ in tracked results. AI-powered funnels, VSLs, email sequences, and campaigns for ClickBank & DTC brands.'
+  'Creative strategist and direct-response copywriter with $523M+ in tracked results. Angles, hooks, scripts, statics and landers for DTC brands scaling on Meta, plus VSLs, sales pages and funnels.'
 
 export const CALENDLY_URL =
   process.env.NEXT_PUBLIC_CALENDLY_URL ||
@@ -13,6 +13,7 @@ type NavDropdown = { readonly label: string; readonly children: readonly NavLink
 export type NavItem = NavLink | NavDropdown
 
 export const NAV_LINKS: readonly NavItem[] = [
+  { label: 'Creative Strategy', href: '/services/creative-strategist' },
   { label: 'Services', href: '/services' },
   {
     label: 'Experience',

@@ -61,11 +61,15 @@ const personJsonLd = {
   '@type': 'Person',
   '@id': `${SITE_URL}/#person`,
   name: 'Rob Palmer',
-  jobTitle: 'Direct-Response Copywriter',
+  jobTitle: 'Creative Strategist & Direct-Response Copywriter',
   description:
-    'Direct-response copywriter with 40+ years of experience, whose 9-year Belron/Safelite direct-response campaign tracked $523 million in sales. Earlier clients include Apple, IBM, Microsoft, Citibank, and Morgan Stanley. Specializes in VSLs, TSLs, email sequences, and sales funnels. Pioneer of blogging (1993) and AI-assisted copywriting.',
+    'Creative strategist and direct-response copywriter with 40+ years of experience. Plans and produces ad creative for DTC brands scaling on paid social, and writes VSLs, sales pages, email sequences and funnels. His 9-year Belron/Safelite direct-response campaign tracked $523 million in sales; earlier clients include Apple, IBM, Microsoft, Citibank and Morgan Stanley. Pioneer of blogging (1993) and AI-assisted copywriting.',
   url: SITE_URL,
   knowsAbout: [
+    'Creative strategy',
+    'Meta ads creative',
+    'DTC growth marketing',
+    'Ad creative testing',
     'Direct response copywriting',
     'Video sales letters (VSLs)',
     'Text sales letters (TSLs)',
@@ -79,7 +83,7 @@ const personJsonLd = {
   ],
   hasOccupation: {
     '@type': 'Occupation',
-    name: 'Direct-Response Copywriter',
+    name: 'Creative Strategist',
     occupationLocation: {
       '@type': 'Country',
       name: 'United States',
@@ -123,7 +127,7 @@ const websiteJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   '@id': `${SITE_URL}/#website`,
-  name: 'Rob Palmer - Direct-Response Copywriter',
+  name: 'Rob Palmer - Creative Strategist & Direct-Response Copywriter',
   url: SITE_URL,
   description: SITE_DESCRIPTION,
   author: { '@id': `${SITE_URL}/#person` },
