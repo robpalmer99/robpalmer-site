@@ -51,3 +51,39 @@ what should i look for when hiring an offshore creative strategist?  0  4  0.0% 
 ```
 
 Checkpoints: +2 weeks (2026-11-02), +6 weeks (2026-11-30). Decision rule: sustained drop > ~5 positions on "direct response copywriter" → review the slice that shipped before it; do not roll back the repositioning.
+
+## Shipped 2026-10-19
+
+All five slices of `docs/superpowers/plans/2026-10-19-creative-strategy-repositioning.md`
+deployed to production the same day, each gated by `npm run smoke -- --slice N`.
+
+| Slice | What | Key commits |
+|---|---|---|
+| 1 | `/services/creative-strategist` money page + links in (content-links remap, related-services, llms.txt, 3 cluster posts) | 775f351 f5f7b0a 17f6693 069f0ab 4dc4d9b 1323150 4de940a |
+| 2 | Home page strategy-first; SITE_TITLE/description; Person schema; nav; `/call`; logo/footer/OG | cbcb15e 04cb9ad 77d23fd 8fa7f22 |
+| 3 | Two-tier `/services` index; AI Marketing Consultant reframed off the CA Labs lead | 99b30f2 20b21e6 a07f655 cc25507 |
+| 4 | Six verticals lead on creative strategy (slugs unchanged) | af0d6d5 eaf0e06 88271e8 310abe3 8320f74 4136fcc 90f357e fb26c48 63eb34d 0f1d26f |
+| 5 | About page; price floor removed from every service page, blog author box and the Service JSON-LD; vertical schema serviceType; remaining cross-links | see git log after 0f1d26f |
+
+Rules the sweep baked in: no price figures anywhere on commercial pages; never lead on
+Stefan Georgi / CA Labs (testimonial quotes and a "Copy Chief at Copy Accelerator"
+credential are fine); child-page `metaTitle`s omit `| Rob Palmer` because the root
+layout's `title.template` appends it.
+
+## Checkpoints
+
+Run at +2 weeks (2026-11-02) and +6 weeks (2026-11-30):
+
+```bash
+.claude/skills/seo/.venv/bin/python scripts/gsc_query.py --days 28 --dimension query --contains "direct response copywriter"
+.claude/skills/seo/.venv/bin/python scripts/gsc_query.py --days 28 --dimension query --contains "creative strategist"
+.claude/skills/seo/.venv/bin/python scripts/gsc_query.py --days 28 --dimension page --contains "creative-strategist"
+```
+
+Compare against the baseline blocks above. Decision rule: a sustained drop of more than
+~5 positions on "direct response copywriter" triggers a review of the slice that shipped
+before it (most likely slice 5's DR-page metaDescription/definition edit, or slice 1's
+re-pointed DR-page link), not a rollback of the repositioning.
+
+GSC indexing requests (manual, UI only): `/`, `/about`, `/services`,
+`/services/creative-strategist`, `/services/ai-marketing-consultant`, all six `/verticals/*`.
