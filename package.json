@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "check:links": "node scripts/check-internal-links.mjs",
-    "prebuild": "node scripts/check-internal-links.mjs"
+    "prebuild": "node scripts/check-internal-links.mjs",
+    "smoke": "node scripts/smoke-repositioning.mjs"
   },
   "dependencies": {
     "@sentry/nextjs": "^10.47.0",
