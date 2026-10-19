@@ -801,19 +801,19 @@ export const verticals: Vertical[] = [
     slug: 'saas-copywriter',
     shortDescription:
       'SaaS copy anchored on the 22% Chatterkick trial-to-paid lift + Stefan Georgi\'s Copy Accelerator (where he hired me as Copy Chief). Onboarding sequences, upgrade campaigns, and churn-reduction copy that compounds MRR \u2014 not just trial sign-ups.',
-    metaTitle: 'SaaS Copywriter | 22% Chatterkick Trial-to-Paid + CA Labs',
+    metaTitle: 'SaaS Copywriter | 22% Trial-to-Paid Lift + Creative Strategy',
     metaDescription:
-      'Senior SaaS copywriter behind the 22% Chatterkick trial-to-paid onboarding lift + Stefan Georgi hired me as Copy Chief inside Copy Accelerator\'s CA Labs. Direct-response onboarding sequences, upgrade campaigns, churn reduction. Fixed-price engagements.',
-    headline: 'SaaS Copywriter Behind the 22% Chatterkick Trial-to-Paid Lift + CA Labs',
+      'SaaS copywriter and creative strategist behind a 22% trial-to-paid lift at Chatterkick. Lifecycle copy and creative tested against MRR, churn and upgrades.',
+    headline: 'Creative Strategy and Lifecycle Copy Behind a 22% Trial-to-Paid Lift',
     subheadline:
-      '"Rob, you are awesome. I love it. And Holy Moly, you are super quick!" That\'s Kristy Plucker, CEO of Chatterkick, on the SaaS onboarding sequence I wrote for her platform. The sequence lifted trial-to-paid conversion by <strong>22%</strong>. And Stefan Georgi \u2014 the copywriter behind over $1B in tracked sales \u2014 hired me as Copy Chief inside Copy Accelerator\'s CA Labs. If your SaaS lands trials but trial-to-paid sits at 8% when category benchmarks clear 18% \u2014 or churn drifts toward 6% monthly while activation flatlines \u2014 this is the kind of work I do.',
+      '"Rob, you are awesome. I love it. And Holy Moly, you are super quick!" That\'s Kristy Plucker, CEO of Chatterkick, on the onboarding sequence I wrote for her platform, which lifted trial-to-paid conversion by <strong>22%</strong>. I plan the angles for each stage of the lifecycle, from the first ad to the upgrade prompt, and write the copy for every one. If your SaaS gets trials but trial-to-paid sits at 8% when your category clears 18%, or churn creeps toward 6% a month, this is the work I do.',
     heroImage: '/images/industries/saas.jpg',
     heroImageAlt: 'Software dashboard and data analytics',
     heroStats: {
       primary: { value: '22%', label: 'Chatterkick Trial-to-Paid Lift (SaaS Onboarding)' },
       secondary: [
-        { value: 'CA Labs', label: 'Stefan Georgi Hired Me as Copy Chief' },
-        { value: '$1B+', label: 'Tracked Sales Behind the Methodology' },
+        { value: '$523M', label: 'In Tracked Client Results' },
+        { value: 'Fortune 500', label: 'Apple, IBM + Microsoft DR Lineage' },
         { value: '40+', label: 'Years Direct Response' },
       ],
     },
@@ -824,7 +824,7 @@ export const verticals: Vertical[] = [
         'Connectio (William Vanhout)',
         'LeadHub (Steven Piper)',
         'Zero to One (John Immel)',
-        'Copy Accelerator / CA Labs (Stefan Georgi as Copy Chief)',
+        'Copy Accelerator (as Copy Chief)',
         'B2B + B2C SaaS',
       ],
     },
@@ -836,6 +836,7 @@ export const verticals: Vertical[] = [
       {
         heading: 'Why Most SaaS Copy Drives Trials That Never Convert and Churn That Never Slows',
         content:
+          'Most SaaS creative gets judged on cost per trial, which is the easiest number to move and the least useful. I test ads, landing pages and onboarding emails against the numbers that pay the bills: trial-to-paid, monthly churn and MRR. An angle that brings in cheap trials who never activate loses money. An angle that brings in fewer, better-qualified users can grow MRR every month. So before I scale any angle, I read what its cohort did after the trial ended.\n\n' +
           'You\'re a SaaS founder, growth lead, or marketing operator. Your product works. Your category has demand. You\'re running paid acquisition that brings in trial sign-ups every day. But the numbers under the hood tell a different story.\n\n' +
           'Trial-to-paid sits at 8% when SaaS benchmarks in your category clear 18\u201325%. Activation rate flatlines at 30% \u2014 70% of trial users never hit the moment that makes them stay. Monthly churn drifts up by 0.5 points each quarter. Expansion revenue is supposed to be 30%+ of net new MRR; yours is sitting under 10%.\n\n' +
           'Here\'s why. Most SaaS copywriters write to the trial sign-up and stop. The landing page is a brand exercise, the onboarding email is "welcome to [Product]!", the upgrade prompt is a feature comparison table, the churn-prevention email doesn\'t exist. Every touchpoint after sign-up is treated as a product engineering problem when half of it is actually a copy problem.\n\n' +
@@ -845,17 +846,17 @@ export const verticals: Vertical[] = [
           'The structural problem isn\'t willpower or word choice. It\'s that most SaaS copywriters treat each touchpoint as a separate asset \u2014 landing page, welcome email, upgrade prompt, churn email \u2014 instead of as one connected lifecycle persuasion system. The skill SaaS MRR actually rewards: writing every touchpoint as part of one architecture where trial activation compounds into paid conversion compounds into expansion compounds into retention.',
       },
       {
-        heading: '22% Chatterkick Trial-to-Paid + CA Labs Copy Chief \u2014 Recent SaaS Wins',
+        heading: '22% Chatterkick Trial-to-Paid Lift \u2014 Recent SaaS Wins',
         content:
           'Chatterkick \u2014 a SaaS platform \u2014 needed a behavior-triggered onboarding sequence that would actually convert free trials into paying customers. The sequence I wrote for them lifted <strong>trial-to-paid conversion by 22%</strong>. Their CEO\'s reaction: <em>"Rob, you are awesome. I love it. And Holy Moly, you are super quick!"</em>\n\n' +
-          'Stefan Georgi \u2014 the copywriter behind over <strong>$1 billion</strong> in tracked sales \u2014 hired me as <strong>Copy Chief inside Copy Accelerator\'s CA Labs</strong>. The methodology I install is the same direct-response architecture that drove $523M+ across Apple UK, IBM, Microsoft, Citibank, Morgan Stanley, and the 9-year Belron campaign \u2014 ported into SaaS lifecycle copy.\n\n' +
+          'The methodology I install is the same direct-response architecture that drove $523M+ across Apple UK, IBM, Microsoft, Citibank, Morgan Stanley, and the 9-year Belron campaign \u2014 ported into SaaS lifecycle copy.\n\n' +
           'William Vanhout at Connectio (a SaaS marketing tool) reviewed work I shipped: <em>"I have to say that they were positively impressed with your work."</em> Steven Piper at LeadHub (a lead-gen software platform) came back with: <em>"This is exactly what I wanted. Awesome work, Rob."</em>\n\n' +
           'If you have a SaaS running and the trial-to-paid math, the activation rate, or the churn cohort isn\'t where it needs to be, I work as a control-beater. Send me your current onboarding sequence, your activation funnel, and your back-end metrics (trial-to-paid CVR, activation rate, monthly churn, expansion revenue %). I\'ll tell you on the strategy call exactly where the lifecycle is leaking and whether I can write something that beats your current control.',
       },
       {
         heading: 'The SaaS Copywriter Top DR Operators Hire',
         content:
-          'Stefan Georgi (CA Labs / $1B in tracked sales) hired me as Copy Chief. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor, clocked <strong>300% ROAS</strong> on a funnel I wrote.\n\n' +
+          'Stefan Georgi (the copywriter behind over $1B in tracked sales) hired me as Copy Chief at Copy Accelerator. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor, clocked <strong>300% ROAS</strong> on a funnel I wrote.\n\n' +
           'John Immel at Zero to One reviewed my work and came back with: <em>"Your quality of writing is off the charts better."</em>\n\n' +
           'Mark Shay, who has seen more lifecycle copy than most, put it on record: <em>"Rob is probably the most methodical copywriter I\'ve seen. This impresses me."</em>\n\n' +
           'These are operators with their own money on the line. SaaS doesn\'t reward writers who can\'t make the lifecycle math compound \u2014 the cohort numbers clear them out inside two quarters. DR operators at this level keep handing me SaaS work \u2014 and that\'s the proof that matters more than any individual stat.',
@@ -893,10 +894,10 @@ export const verticals: Vertical[] = [
         detail: '"Rob, you are awesome. I love it. And Holy Moly, you are super quick!" \u2014 Kristy Plucker, CEO, Chatterkick.',
       },
       {
-        name: 'Copy Accelerator / CA Labs',
+        name: 'Copy Accelerator',
         category: 'Copy Chief Engagement',
-        metric: 'Hired by Stefan Georgi',
-        detail: '"We hired Rob as our Copy Chief for CA Labs!" \u2014 Stefan Georgi, the copywriter behind over $1B in tracked sales.',
+        metric: 'Copy Chief',
+        detail: 'Hired by Stefan Georgi, the copywriter behind over $1B in tracked sales, to review and fix other professional copywriters\' work.',
       },
       {
         name: 'Connectio / William Vanhout',
@@ -912,6 +913,7 @@ export const verticals: Vertical[] = [
       },
     ],
     deliverables: [
+      { title: 'Lifecycle Angle Map', description: 'Angles for acquisition, activation and upgrade mapped to the metric each one moves: trial starts, trial-to-paid, expansion, churn.' },
       { title: 'SaaS Landing Pages', description: 'High-converting trial sign-up pages, demo-request pages, and lead-magnet bridges. Chatterkick LP anchors the track at 22% trial-to-paid lift.' },
       { title: 'Onboarding Sequence', description: 'Behavior-triggered email sequence engineered for activation and trial-to-paid conversion \u2014 not generic "welcome to [Product]" emails.' },
       { title: 'Upgrade + Expansion Campaigns', description: 'Free-to-paid conversion sequences plus expansion-revenue sequences for paid users at the upgrade decision point.' },
@@ -949,7 +951,7 @@ export const verticals: Vertical[] = [
       {
         question: 'What does SaaS copywriting cost?',
         answer:
-          'SaaS engagements are fixed-price. A standalone landing page or onboarding sequence starts at $5\u201310K. A full SaaS lifecycle system (landing page + onboarding + upgrade + expansion + churn-prevention + win-back) typically starts at $25K. AI copywriting consultancy installations for SaaS marketing teams shipping high-volume in-app and lifecycle copy run higher. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: at $50K MRR, lifting trial-to-paid from 8% to 18% is $50K\u2013$80K additional MRR per month \u2014 compounding into $600K\u2013$1M ARR over the year.',
+          'SaaS engagements are fixed-price. Scope ranges from a standalone landing page or onboarding sequence to a full lifecycle system (landing page, onboarding, upgrade, expansion, churn prevention and win-back), on retainer or by project. AI copywriting consultancy installations for SaaS marketing teams shipping high-volume in-app and lifecycle copy are scoped separately. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: at $50K MRR, lifting trial-to-paid from 8% to 18% is $50K\u2013$80K additional MRR per month \u2014 compounding into $600K\u2013$1M ARR over the year.',
       },
       {
         question: 'How long does it take to write a SaaS lifecycle sequence?',
