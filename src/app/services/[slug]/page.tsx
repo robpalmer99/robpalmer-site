@@ -66,15 +66,10 @@ export default async function ServicePage({ params }: ServicePageProps) {
     },
     url: `${SITE_URL}/services/${slug}`,
     areaServed: 'Worldwide',
-    serviceType: 'Direct-Response Copywriting',
+    serviceType: service.schemaServiceType ?? 'Direct-Response Copywriting',
     offers: {
       '@type': 'Offer',
-      priceSpecification: {
-        '@type': 'PriceSpecification',
-        minPrice: 10000,
-        priceCurrency: 'USD',
-      },
-      description: 'Fixed-price engagements, typically starting at $10,000. Quote within 48 hours of a strategy call.',
+      description: 'Fixed-price engagements — retainer or project. Quote within 48 hours of a strategy call.',
       url: `${SITE_URL}/call`,
     },
   }

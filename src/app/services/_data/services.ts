@@ -3,6 +3,10 @@ import type { FAQItem } from '@/components/blocks/FAQAccordion'
 export interface Service {
   title: string
   slug: string
+  /** Home grid + /services index group. strategy = where an engagement starts; production = the creative I build. */
+  tier: 'strategy' | 'production'
+  /** Overrides the Service JSON-LD serviceType (default 'Direct-Response Copywriting'). */
+  schemaServiceType?: string
   shortDescription: string
   metaTitle: string
   metaDescription: string
@@ -57,6 +61,7 @@ export const services: Service[] = [
   {
     title: 'Direct Response Copywriter',
     slug: 'direct-response-copywriter',
+    tier: 'production',
     shortDescription:
       'Senior direct response copywriter with 40+ years and $523M in tracked results. VSLs, sales pages, emails, and full funnels — every word accountable to the numbers.',
     metaTitle: 'Direct Response Copywriter | $523M in Tracked Results',
@@ -257,6 +262,7 @@ export const services: Service[] = [
   {
     title: 'VSL Copywriter',
     slug: 'vsl-copywriter',
+    tier: 'production',
     shortDescription:
       'Video sales letters that hold cold traffic through the close. Recent client funnel: 8% on cold. Past VSLs at $30M, $40M, and $27M.',
     metaTitle: 'VSL Copywriter | 8% Cold-Traffic VSLs, $30M+ Campaigns',
@@ -452,6 +458,7 @@ export const services: Service[] = [
   {
     title: 'Sales Page Copywriter',
     slug: 'sales-page-copywriter',
+    tier: 'production',
     shortDescription:
       'Long-form sales pages and TSLs anchored on a 9-year, $523M Belron campaign. Recent cold-traffic numbers: 8%, 340% ROAS, 5.7% opt-in-to-sale.',
     metaTitle: 'Sales Page Copywriter | High-Converting Sales Copy',
@@ -650,6 +657,7 @@ export const services: Service[] = [
   {
     title: 'Sales Letter Copywriter',
     slug: 'sales-letter-copywriter',
+    tier: 'production',
     shortDescription:
       'Long-form sales letters and TSLs in the Halbert/Carlton/Makepeace tradition. Anchored on a 9-year Belron direct-mail control that did $523M across 35+ countries.',
     metaTitle: 'Sales Letter Copywriter | Direct Mail + Digital TSL',
@@ -848,6 +856,7 @@ export const services: Service[] = [
   {
     title: 'Email Copywriter',
     slug: 'email-copywriter',
+    tier: 'production',
     shortDescription:
       'Email sequences that compound into revenue. Recent: 300% ROAS on a ClickBank funnel (Ben Palmer); 22% trial-to-paid lift on a SaaS onboarding sequence (Chatterkick).',
     metaTitle: 'Email Copywriter | Revenue-Driving Email Sequences',
@@ -1039,6 +1048,7 @@ export const services: Service[] = [
   {
     title: 'Ad Copywriter',
     slug: 'ad-copywriter',
+    tier: 'production',
     shortDescription:
       'Ad copy from Apple UK direct mail to 300% ROAS Facebook ads on ClickBank. Hooks, platform-tuned suites, compliance-aware copy for health and finance.',
     metaTitle: 'Ad Copywriter | Facebook, Google & YouTube Ad Copy',
@@ -1235,6 +1245,7 @@ export const services: Service[] = [
   {
     title: 'Landing Page Copywriter',
     slug: 'landing-page-copywriter',
+    tier: 'production',
     shortDescription:
       'Short-form bridge pages that earn the click to your VSL, TSL, webinar, or order form. Recent lifts: 22% Chatterkick trial-to-paid, 8% Conor cold-traffic, 5.7% Monetari opt-in-to-sale.',
     metaTitle: 'Landing Page Copywriter | Bridge Pages + Lead Capture',
@@ -1436,6 +1447,7 @@ export const services: Service[] = [
   {
     title: 'Sales Funnel Copywriter',
     slug: 'sales-funnel-copywriter',
+    tier: 'production',
     shortDescription:
       'End-to-end funnels architected as one persuasion system. Behind the $523M / 9-year Belron campaign and $30M, $40M, $27M individual funnels.',
     metaTitle: 'Sales Funnel Copywriter | End-to-End Funnel Architecture',
@@ -1635,6 +1647,7 @@ export const services: Service[] = [
   {
     title: 'Upsell & Downsell Copywriter',
     slug: 'upsell-downsell-copywriter',
+    tier: 'production',
     shortDescription:
       'Post-purchase upsell, downsell, and order-bump copy engineered to lift AOV by 30\u2013100% on traffic you\'ve already paid for. Sequences inside $30M+ and $40M+ ClickBank funnels.',
     metaTitle: 'Upsell & Downsell Copywriter | Post-Purchase AOV Engineering',
@@ -1832,6 +1845,7 @@ export const services: Service[] = [
   {
     title: 'AI Copywriting Consultant',
     slug: 'ai-copywriting-consultant',
+    tier: 'strategy',
     shortDescription:
       'Custom Claude Code copywriting skills and a 1,239-file Obsidian vault, installed in your copy team\'s workflow. Stefan Georgi\'s Copy Accelerator hired me as Copy Chief to run this.',
     metaTitle: 'AI Copywriting Consultant | Custom Claude Code Skills + Vault',
@@ -2030,6 +2044,7 @@ export const services: Service[] = [
   {
     title: 'AI Marketing Consultant',
     slug: 'ai-marketing-consultant',
+    tier: 'strategy',
     shortDescription:
       'Triple Brain Marketing as a productized consultancy. The methodology Stefan Georgi\'s Copy Accelerator hired me as Copy Chief to run \u2014 installed in your marketing operation.',
     metaTitle: 'AI Marketing Consultant | Triple Brain Marketing Methodology',
@@ -2227,6 +2242,7 @@ export const services: Service[] = [
   {
     title: 'Facebook Ads Copywriter',
     slug: 'facebook-ads-copywriter',
+    tier: 'production',
     shortDescription:
       'Facebook + Instagram ad copy at 300% ROAS on cold traffic, calibrated to clear Meta review. A decade of compliance-aware FB suites for supplement, financial, and ClickBank operators.',
     metaTitle: 'Facebook Ads Copywriter | Meta & Instagram Ad Copy',
@@ -2422,6 +2438,7 @@ export const services: Service[] = [
   {
     title: 'Conversion Rate Optimization',
     slug: 'conversion-rate-optimization',
+    tier: 'strategy',
     shortDescription:
       'Copy-driven CRO from the operator who ran the 9-year, $523M Belron direct-response control. I audit your funnel and ship test-ready rewrites that beat your current control \u2014 not button-color tweaks.',
     metaTitle: 'Conversion Rate Optimization | Beat Your Current Control with Copy',
