@@ -982,18 +982,18 @@ export const verticals: Vertical[] = [
     slug: 'info-product-copywriter',
     shortDescription:
       'Info-product copy anchored on the 340% ROAS Abundant TSL + Stefan Georgi\'s Copy Accelerator (where he hired me as Copy Chief). Webinar funnels, launch sequences, and evergreen systems for courses, coaching programs, and high-ticket masterminds.',
-    metaTitle: 'Info Product Copywriter | 340% ROAS Abundant + CA Labs',
+    metaTitle: 'Info Product Copywriter | 340% ROAS + Creative Strategy',
     metaDescription:
-      'Senior info-product copywriter behind the 340% ROAS Abundant TSL on Facebook cold traffic + Stefan Georgi hired me as Copy Chief inside Copy Accelerator\'s CA Labs. Webinar funnels, launch sequences, evergreen systems. Fixed-price engagements.',
-    headline: 'Info Product Copywriter Behind the 340% ROAS Abundant TSL + CA Labs',
+      'Info product copywriter and creative strategist behind the 340% ROAS Abundant TSL on Facebook cold traffic. Launch and evergreen angles, pages and emails.',
+    headline: 'Creative Strategy and Copy Behind the 340% ROAS Abundant Launch',
     subheadline:
-      '"Everything is on point and on brief! You knocked it out of the park with those!" That\'s Devon Brown, founder of Just Throw Some Sexy On It, on copy I shipped him. The Abundant TSL I wrote drove <strong>340% ROAS</strong> on Facebook cold traffic. And Stefan Georgi \u2014 the copywriter behind over $1B in tracked sales \u2014 hired me as Copy Chief inside Copy Accelerator\'s CA Labs. If your course launches at $50K when the offer should do $500K, or your evergreen webinar funnel converts at 1% when it should clear 4%, this is the kind of work I do.',
+      '"Everything is on point and on brief! You knocked it out of the park with those!" That\'s Devon Brown, founder of Just Throw Some Sexy On It, on copy I shipped him. I plan the angles for your launch and your evergreen funnel, then write the sales page, emails and webinar that sell them. The Abundant TSL I wrote drove <strong>340% ROAS</strong> on Facebook cold traffic. If your course launches at $50K when the offer should do $500K, or your evergreen webinar converts at 1% when it should clear 4%, this is the work I do.',
     heroImage: '/images/industries/info-products.jpg',
     heroImageAlt: 'Online learning and digital education',
     heroStats: {
       primary: { value: '340%', label: 'Abundant Info-Product TSL ROAS (Facebook Cold)' },
       secondary: [
-        { value: 'CA Labs', label: 'Stefan Georgi Hired Me as Copy Chief' },
+        { value: '$523M', label: 'In Tracked Client Results' },
         { value: 'Millions', label: 'Per-Launch Revenue on Multi-Week Sequences' },
         { value: '40+', label: 'Years Direct Response' },
       ],
@@ -1002,7 +1002,7 @@ export const verticals: Vertical[] = [
       heading: 'Info-product copy written for',
       items: [
         'Abundant (340% ROAS Info-Product TSL)',
-        'Copy Accelerator / CA Labs (Stefan Georgi as Copy Chief)',
+        'Copy Accelerator (as Copy Chief)',
         'Just Throw Some Sexy On It (Devon Brown)',
         'Zero to One (John Immel)',
         'Course Creators + Coaching Programs',
@@ -1017,6 +1017,7 @@ export const verticals: Vertical[] = [
       {
         heading: 'Why Most Info-Product Launches Stall at $50K When the Offer Should Do $500K',
         content:
+          'Launch creative and evergreen creative do different jobs. A launch has a fixed window and a warm list, so its angles can lean on deadlines, live events and the creator\'s own voice. An evergreen funnel meets cold traffic every day of the year, so its angles have to sell without a deadline and keep working after a prospect has seen the ad a dozen times. I build a separate angle set for each, test the evergreen hooks on paid traffic while the launch is live, and move the winners into the funnel once the cart closes.\n\n' +
           'You\'re a course creator, coach, or info-product founder. You have an offer, an email list, an audience that knows who you are. You launch. The number lands at $50K when you and your team had been forecasting $500K.\n\n' +
           'Here\'s why. Info products have no physical form, no ingredient list, no return policy that reassures the prospect. The copy is the product experience until the credit card hits. Most info-product copywriters can write for one of those constraints \u2014 they can describe the transformation OR they can architect the launch sequence \u2014 but not both.\n\n' +
           'Door one: the copy describes a beautiful transformation, but the launch sequence sags. Email open rates fall 60% across the launch week. Cart-open day converts at 0.4% when it should clear 2%. Cart close hits a wall because the urgency mechanism wasn\'t set up in pre-launch. You did $50K on a launch that the same offer would do $500K with a properly architected sequence.\n\n' +
@@ -1024,17 +1025,17 @@ export const verticals: Vertical[] = [
           'The structural problem isn\'t willpower or word choice. It\'s that most info-product copywriters write the sales page OR the launch sequence \u2014 not the connected system. The skill the info-product back-end actually rewards: writing the sales page, the launch sequence, the webinar script, AND the follow-up emails as one persuasion architecture where every step compounds the trust the next step needs.',
       },
       {
-        heading: '340% Abundant, $1B-Operator Stefan Georgi, Multi-Million-Per-Launch Sequences \u2014 Recent Info-Product Wins',
+        heading: '340% Abundant, Multi-Million-Per-Launch Sequences \u2014 Recent Info-Product Wins',
         content:
           'The <strong>Abundant TSL</strong> I wrote drove <strong>340% ROAS</strong> on Facebook cold traffic. Long-form info-product TSL on cold paid traffic is one of the harder asset types in info-product copywriting; 340% ROAS clears the funnel math most operators forecast and miss.\n\n' +
-          'Stefan Georgi \u2014 the copywriter behind over <strong>$1 billion</strong> in tracked sales \u2014 hired me as <strong>Copy Chief inside Copy Accelerator\'s CA Labs</strong>. Copy Accelerator runs the highest-tier info-product mastermind in DR; the Copy Chief role is the role that reviews the copy operators inside the room are about to ship.\n\n' +
+          'Stefan Georgi \u2014 the copywriter behind over <strong>$1 billion</strong> in tracked sales \u2014 hired me as <strong>Copy Chief at Copy Accelerator</strong>. Copy Accelerator runs the highest-tier info-product mastermind in DR; the Copy Chief role is the role that reviews the copy operators inside the room are about to ship.\n\n' +
           'Devon Brown at Just Throw Some Sexy On It came back: <em>"Everything is on point and on brief! You knocked it out of the park with those!"</em> Multi-week launch sequences I\'ve shipped have generated millions in revenue per launch for course creators and coaches.\n\n' +
           'If you have a launch coming or an evergreen funnel running and the numbers aren\'t where they need to be, I work as a control-beater. Send me your current sales page or launch sequence, your back-end metrics (cart-open CVR, email open/click rates, refund rate), and the offer brief. I\'ll tell you on the strategy call exactly where the persuasion architecture is leaking and whether I can write something that beats your control.',
       },
       {
         heading: 'The Info-Product Copywriter Top DR Operators Hire',
         content:
-          'Stefan Georgi (CA Labs / $1B in tracked sales) hired me as Copy Chief. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor running info-product-adjacent offers, clocked <strong>300% ROAS</strong> on a funnel I wrote.\n\n' +
+          'Stefan Georgi hired me as Copy Chief. Justin Goff publicly credited me with stepping up and knocking it out of the park. Ben Palmer, a ClickBank Platinum vendor running info-product-adjacent offers, clocked <strong>300% ROAS</strong> on a funnel I wrote.\n\n' +
           'Zane Myers, an entrepreneur shipping info-product offers, came back with: <em>"All I can say is absolutely brilliant, Rob! I can\'t improve on it."</em>\n\n' +
           'Mark Shay, who has seen more launch copy than most, put it on record: <em>"Rob is probably the most methodical copywriter I\'ve seen. This impresses me."</em>\n\n' +
           'These are operators with their own money on the line. Info-product launches don\'t reward writers who can\'t architect the persuasion sequence \u2014 the launch math clears them out inside one bad cycle. DR operators at this level keep handing me info-product work \u2014 and that\'s the proof that matters more than any individual stat.',
@@ -1072,10 +1073,10 @@ export const verticals: Vertical[] = [
         detail: 'Long-form info-product TSL converting Facebook cold traffic at 340% Return on Ad Spend.',
       },
       {
-        name: 'Copy Accelerator / CA Labs',
+        name: 'Copy Accelerator',
         category: 'Copy Chief Engagement',
-        metric: 'Hired by Stefan Georgi',
-        detail: '"We hired Rob as our Copy Chief for CA Labs!" \u2014 Stefan Georgi, the copywriter behind over $1B in tracked sales.',
+        metric: 'Copy Chief',
+        detail: 'Hired by Stefan Georgi, the copywriter behind over $1B in tracked sales, to review and fix other professional copywriters\' work.',
       },
       {
         name: 'Multi-Week Info-Product Launches',
@@ -1091,6 +1092,7 @@ export const verticals: Vertical[] = [
       },
     ],
     deliverables: [
+      { title: 'Launch Angle Map', description: 'Angles for the launch window and the evergreen run, ranked by awareness level, with the hooks each phase of the sequence will use.' },
       { title: 'Info-Product VSL/TSL Scripts', description: 'Long-form video and text sales letters for info-product offers. Abundant 340% ROAS anchors the cold-traffic track.' },
       { title: 'Long-Form Sales Pages', description: 'Sales pages for courses, coaching programs, masterminds, and digital products with the persuasion architecture launches require.' },
       { title: 'Launch Email Sequences', description: 'Pre-launch through cart-close sequences engineered as one connected persuasion arc \u2014 not separate emails handed to different writers.' },
@@ -1131,7 +1133,7 @@ export const verticals: Vertical[] = [
       {
         question: 'What does info-product copywriting cost?',
         answer:
-          'Info-product engagements are fixed-price. A standalone sales page or VSL/TSL starts at $10K. A full launch system (sales page + multi-week email sequence + webinar script + post-cart follow-up) typically starts at $25K. High-ticket coaching application funnels (application page + nurture + sales-call prep) start at $15K. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a launch that does $500K instead of $50K on the same audience pays for the writer 10x in the first cycle.',
+          'Info-product engagements are fixed-price. Scope ranges from a standalone sales page or VSL/TSL to a full launch system or a high-ticket application funnel, on retainer or by project. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a launch that does $500K instead of $50K on the same audience pays for the writer 10x in the first cycle.',
       },
       {
         question: 'How long does it take to write an info-product launch?',
