@@ -65,7 +65,7 @@ export const services: Service[] = [
     schemaServiceType: 'Creative Strategy',
     shortDescription:
       'Creative strategy for DTC brands scaling on Meta: angles, hooks, scripts, statics and landers from one senior strategist with 40 years of direct response and $523M in tracked results.',
-    metaTitle: 'Creative Strategist for DTC Brands | Rob Palmer',
+    metaTitle: 'Creative Strategist for DTC Brands',
     metaDescription:
       'Senior creative strategist for DTC brands on paid social. Angles, hooks, scripts, statics and landers, backed by 40 years and $523M in tracked results.',
     headline: 'The Creative Strategist Who Plans Your Next Winning Ads, Then Builds Them',
