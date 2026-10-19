@@ -68,7 +68,7 @@ export const verticals: Vertical[] = [
       'Health supplement copywriter and creative strategist behind the $40M Gluco 6 funnel. Compliance-aware angles, ads, VSLs and upsell stacks built to scale.',
     headline: 'Creative Strategy and Copy for Supplement Offers That Scale Cleanly',
     subheadline:
-      'I map the angles a supplement offer can test, screen each one against FDA structure/function limits before anyone writes an ad, then build the VSL, sales page and upsell stack around the winners. The Gluco 6 supplement funnel I worked on did <strong>$40 million</strong> end-to-end. If your strongest hooks keep getting rejected in review, or the safe ones that pass don\'t convert, this is the work I do.',
+      'I find the supplement angles you can test hard and still clear review, then build the VSL, sales page and upsell stack around the winners. The Gluco 6 supplement funnel I worked on did <strong>$40 million</strong> end-to-end. If your strongest hooks keep getting rejected, or the safe ones that pass don\'t convert, this is the work I do.',
     heroImage: '/images/industries/health-supplements.jpg',
     heroImageAlt: 'Health supplements and natural products',
     heroStats: {
@@ -254,7 +254,7 @@ export const verticals: Vertical[] = [
       'Financial copywriter and creative strategist: disclosure-aware hooks, VSLs, long-form promotions. 5.7% Monetari opt-in-to-sale; Morgan Stanley, Citibank.',
     headline: 'Creative Strategy and Copy for Financial Offers Built to Scale',
     subheadline:
-      'I test hooks and angles for financial offers with the disclosure each one needs mapped in from the start, then write the VSL, promotion and email sequence around the winners. The Monetari Fund bridge I wrote delivered <strong>5.7% opt-in-to-sale</strong> on a regulated offer, and earlier in my career I wrote direct-response work for Morgan Stanley and Citibank. If compliance keeps gutting your strongest copy, or the version that survives can\'t sell, this is the work I do.',
+      'I find the hooks that sell a financial offer and still get through compliance, then write the VSL, promotion and email sequence around the winners. The Monetari Fund bridge I wrote delivered <strong>5.7% opt-in-to-sale</strong> on a regulated offer, and earlier in my career I wrote direct-response work for Morgan Stanley and Citibank. If compliance keeps gutting your strongest copy, or the version that survives can\'t sell, this is the work I do.',
     heroImage: '/images/industries/financial-services.jpg',
     heroImageAlt: 'Financial markets and trading data',
     heroStats: {
@@ -284,7 +284,7 @@ export const verticals: Vertical[] = [
       {
         heading: 'Why Most Financial Copy Either Reads Like a 10-K or Triggers a Reviewer',
         content:
-          'Financial hooks fail compliance in predictable places: performance claims, implied returns and urgency that sounds like investment advice. So I test hooks with the disclosure already attached. Each angle on the map carries the risk language it\'ll need, and I write the hook to work with that language on the page. When a hook wins the test, it can scale as written, because nobody in legal has to rebuild it first. The version that wins the test is the version that ships.\n\n' +
+          'Financial hooks fail compliance in predictable places: performance claims, implied returns and urgency that sounds like investment advice. So I test hooks with the disclosure already attached. Each angle on the map carries the risk language it\'ll need, and I write the hook to work with that language on the page. When a hook wins the test, legal doesn\'t have to rebuild it, so the version that wins is the version that ships.\n\n' +
           'You\'re a financial publisher, fund operator, or trading-platform marketer. Your prospects are the most skeptical audience in direct response \u2014 they\'ve heard every claim, seen every chart pattern, and been burned by enough bad advice to develop strong defenses against marketing. And your copy has to clear three more gauntlets before it ever reaches them.\n\n' +
           'SEC. FINRA. FTC. Plus your in-house compliance officer. Plus the platform reviewer at Meta or Google.\n\n' +
           'Most financial copywriters can write to ONE of these constraints \u2014 the audience or the regulators. Not both. So one of two things happens.\n\n' +
@@ -469,7 +469,7 @@ export const verticals: Vertical[] = [
       {
         heading: 'Why Most DTC Brands Burn the Front End and Starve the Back End',
         content:
-          'On Meta, the DTC brands that keep scaling ship the most good concepts, and that takes three things working together. The first is creative velocity: new angles reaching the account every week, each one built from a written brief. The second is congruence: the lander repeats the ad\'s promise in the ad\'s own words, so the visitor recognizes the offer and keeps reading. The third is a testing cadence, a weekly review that decides what scales, what gets cut and what the next brief says. As your <a href="/services/creative-strategist">creative strategist</a>, I handle all three and write the copy myself.\n\n' +
+          'On Meta, the DTC brands that keep scaling are the ones feeding their account a steady supply of strong new concepts, and that takes three things working together. The first is creative velocity: new angles reaching the account every week, each one built from a written brief. The second is congruence: the lander repeats the ad\'s promise in the ad\'s own words, so the visitor recognizes the offer and keeps reading. The third is a testing cadence, a weekly review that decides what scales, what gets cut and what the next brief says. As your <a href="/services/creative-strategist">creative strategist</a>, I handle all three and write the copy myself.\n\n' +
           'You\'re a DTC operator. Maybe you have one product, maybe a category. CAC has been creeping. ROAS has been compressing. iOS 14.5 hit your attribution two years ago and Meta hasn\'t given you the same signal since. You\'re running ads, you\'re shipping product, the bank account looks fine \u2014 but the math is getting tighter every quarter.\n\n' +
           'Here\'s why. Most DTC brands burn 80% of their copy budget on acquisition (ad creative + product page + landing page) and 20% on the back end (email sequences + post-purchase upsell + subscription retention). The front end is where the cost lives, so it gets the attention. The back end is where the margin lives, so it gets ignored.\n\n' +
           'Door one: your front-end CVR is okay (2% on a product page, 1% on a sales page) but post-purchase emails are a welcome series and three "did you forget us?" win-backs. Subscription retention has no copy at all. AOV stalls at $42 when it should clear $80. CLTV sits at $58 when it should be $180. The brand stays profitable on margin, but never breaks out.\n\n' +
