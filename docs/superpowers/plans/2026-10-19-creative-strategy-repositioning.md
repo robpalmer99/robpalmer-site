@@ -286,7 +286,7 @@ Insert immediately after `export const services: Service[] = [` (line 56). Field
     schemaServiceType: 'Creative Strategy',
     shortDescription:
       'Creative strategy for DTC brands scaling on Meta — angles, hooks, scripts, statics and landers from one senior strategist with 40 years of direct response and $523M in tracked results.',
-    metaTitle: 'Creative Strategist for DTC Brands | Rob Palmer',
+    metaTitle: 'Creative Strategist for DTC Brands',
     metaDescription:
       'Senior creative strategist for DTC brands scaling paid social. Angles, hooks, scripts, statics and landers from one strategist — 40 years of direct response, $523M in tracked results.',
     headline: /* DRAFT — positive frame, same family as the home hero, ≤ 12 words, contains "Creative Strategist" */,
@@ -881,7 +881,7 @@ import { SITE_URL } from '@/lib/constants'
 import { services } from './_data/services'
 
 export const metadata: Metadata = {
-  title: 'Creative Strategy & Direct-Response Copywriting Services | Rob Palmer',
+  title: 'Creative Strategy & Direct-Response Copywriting Services',
   description:
     'Creative strategy for brands scaling on paid social, and the direct-response copy that carries it: ads, VSLs, sales pages, emails, landers, funnels and upsells. $523M+ in tracked results.',
   alternates: { canonical: `${SITE_URL}/services` },
@@ -1103,7 +1103,7 @@ Each vertical task has the same shape but its own content; do them in order. The
 - Modify: `src/app/about/page.tsx:17-22, 30-33, 59, 65-80, 191-240, 492-493`
 
 - [ ] **Step 1: Verbatim**
-  - metadata `title: 'About Rob Palmer | Creative Strategist & Direct-Response Copywriter'`.
+  - metadata `title: 'About | Creative Strategist & Direct-Response Copywriter'`.
   - Hero `headline="Forty years of direct response. Now pointed at your creative."`
   - Hero `subheadline="Creative strategist and direct-response copywriter. Behind $523M+ in tracked campaign results."`
   - Headshot `alt="Rob Palmer, creative strategist and direct-response copywriter"`.

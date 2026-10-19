@@ -139,7 +139,7 @@ creative-strategist blog posts. The blog posts keep their informational jobs
 |-------|---------|
 | `title` / `slug` | Creative Strategist / `creative-strategist` |
 | `tier` | `strategy` (new field, §6) |
-| `metaTitle` | `Creative Strategist for DTC Brands \| Rob Palmer` |
+| `metaTitle` | `Creative Strategist for DTC Brands` (root layout template appends `| Rob Palmer`) |
 | `metaDescription` | Role, stage-to-stage scope, Meta/DTC, $523M, 40 years. ≤155 chars |
 | `headline` / `subheadline` | Positive frame, same family as the home hero; one strategist from angle to shipped creative |
 | `definition` | GEO answer block: "A creative strategist…" in two sentences, consistent with `/blog/creative-strategist`'s definition |
