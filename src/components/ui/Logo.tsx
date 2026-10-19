@@ -11,6 +11,9 @@ export function Logo({
 }: LogoProps) {
   const textColor = variant === 'light' ? 'var(--color-paper-50)' : 'var(--color-ink-950)'
   const accentColor = 'var(--color-gold-400)'
+  // ~6.6 viewBox units per char at fontSize 7 with 0.3em tracking; 196 = x 14 → 210.
+  const SUBTITLE_MAX_WIDTH = 196
+  const subtitleOverflows = subtitle.length * 6.6 > SUBTITLE_MAX_WIDTH
 
   return (
     <svg
@@ -58,10 +61,10 @@ export function Logo({
         fontWeight="400"
         fontSize="7"
         letterSpacing="0.3em"
-        // Long subtitles are fitted to the viewBox (x 14 → 210) so they never
-        // overflow; short ones keep their natural letter-spacing.
-        textLength={subtitle.length > 24 ? 196 : undefined}
-        lengthAdjust={subtitle.length > 24 ? 'spacing' : undefined}
+        // Long subtitles are fitted to the viewBox so they never overflow;
+        // short ones keep their natural letter-spacing.
+        textLength={subtitleOverflows ? SUBTITLE_MAX_WIDTH : undefined}
+        lengthAdjust={subtitleOverflows ? 'spacing' : undefined}
         fill={accentColor}
       >
         {subtitle}

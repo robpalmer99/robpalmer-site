@@ -70,7 +70,7 @@ function DropdownNav({ item }: { item: NavDropdown }) {
         aria-controls={menuId}
         onClick={() => setIsOpen((prev) => !prev)}
         onKeyDown={handleButtonKeyDown}
-        className="flex items-center gap-1 font-heading text-sm font-medium text-paper-300 hover:text-gold-400 transition-colors"
+        className="flex items-center gap-1 whitespace-nowrap font-heading text-sm font-medium text-paper-300 hover:text-gold-400 transition-colors"
       >
         {item.label}
         <svg
@@ -133,13 +133,13 @@ export function Header() {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center lg:gap-5 xl:gap-8">
             {NAV_LINKS.map((item) =>
               'href' in item ? (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="font-heading text-sm font-medium text-paper-300 hover:text-gold-400 transition-colors"
+                  className="font-heading text-sm font-medium whitespace-nowrap text-paper-300 hover:text-gold-400 transition-colors"
                 >
                   {item.label}
                 </Link>
@@ -167,8 +167,9 @@ export function Header() {
                 />
               </svg>
             </Link>
-            <Button href="/call" size="sm">
-              Book a Strategy Call
+            <Button href="/call" size="sm" className="whitespace-nowrap">
+              <span className="xl:hidden">Book a Call</span>
+              <span className="hidden xl:inline">Book a Strategy Call</span>
             </Button>
           </div>
 
