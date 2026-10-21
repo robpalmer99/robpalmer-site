@@ -159,6 +159,8 @@ export function getPortfolioByCategory(category: PortfolioCategory): PortfolioIt
   return portfolioItems.filter((item) => item.category === category)
 }
 
+// `format` is deliberately a separate vocabulary from PortfolioItem.category:
+// 'TSL' here is the same thing as 'Sales Page' on the cards. Never compare the two.
 export interface FeaturedSample {
   slug: string
   title: string
@@ -215,7 +217,7 @@ John - Narrator:
 For my wife Jane and I, that was the most embarrassing day of our lives by far. It was awful! I cringe when I think of Jane being dragged off the plane, with passengers hurling abuse as we went. She was a pitiful sight, tears streaming down her cheeks, hands cuffed behind her back, humiliation written all over her face.
 
 All because she was just too fat.`,
-    docUrl: 'https://docs.google.com/document/d/1gktpwcfYt4iYMLoxkEooLsQJfoqTvEAYrcWC5iI2V9g/view',
+    docUrl: 'https://docs.google.com/document/d/1gktpwcfYt4iYMLoxkEooLsQJfoqTvEAYrcWC5iI2V9g/edit?usp=sharing',
     result: { text: '300% return on ad spend', source: 'Client testimonial, below' },
     testimonialId: '4',
   },
@@ -245,7 +247,7 @@ I yelled, “Quick! Somebody Call 911…NOW!”
 Hi...my name is Ross Robinson, and I’m an ex-Marine from Cedar Falls, Iowa. I’m just a regular guy, but I have an extraordinary story to tell. Honestly, you’ll be amazed when you hear what I have to share. As you’ll soon see, Sandra survived, thank God. And thanks to a strange twist of fate, that disastrous day changed everything.
 
 Because of what happened next, Sandra was never going to be humiliated again—ever! In fact, a wonderful new chapter in her life was just beginning.`,
-    docUrl: 'https://docs.google.com/document/d/15Q-4Dw_6UHEnvoNJ2AjcxgMx0GcrNJ33FFqUsv65_50/view',
+    docUrl: 'https://docs.google.com/document/d/15Q-4Dw_6UHEnvoNJ2AjcxgMx0GcrNJ33FFqUsv65_50/edit?usp=sharing',
     result: { text: '$1.4M in sales in the first six months', source: 'Client-reported' },
   },
   {
@@ -270,7 +272,7 @@ It’s a problem that doctors call Mild Cognitive Decline. But when you suffer f
 Left unchecked, the prognosis doesn’t look good. The decline in brain health is likely to continue, leading to further mental chaos—and then perhaps to more serious brain conditions.
 
 That’s an alarming prospect. But fortunately, it doesn’t have to be that way. Thanks to today’s innovative supplement science, you can replenish your brain health and regain your confidence. Better still, the solution is simple and easy to implement.`,
-    docUrl: 'https://docs.google.com/document/d/1QRAtR5FMZ4sqLkQt4LkzfF_1NcoLCqO8EP_efBWk1yo/view',
+    docUrl: 'https://docs.google.com/document/d/1QRAtR5FMZ4sqLkQt4LkzfF_1NcoLCqO8EP_efBWk1yo/edit?usp=sharing',
     result: { text: '$2.1M in sales in the first 90 days', source: 'Client-reported' },
   },
   {
@@ -307,7 +309,7 @@ And find a simple Sudanese secret that reversed my diabetes symptoms…
 Yet my own doctor, who I trusted, never mentioned ANY of this. And your doctor is likely keeping the truth from you, too.
 
 So it's vital you hear this.`,
-    docUrl: 'https://docs.google.com/document/d/1--Nn_5yi62Xl8MS0GhxnqNDfUuzBfCfqflr7wV9OlQ8/view',
+    docUrl: 'https://docs.google.com/document/d/1--Nn_5yi62Xl8MS0GhxnqNDfUuzBfCfqflr7wV9OlQ8/edit?usp=sharing',
   },
   {
     slug: 'supernus',
@@ -335,7 +337,7 @@ And it’s only by the grace of God that my life was spared.
 As my story unfolds, you’ll see how setting up my business the wrong way cost me everything. More importantly, you’ll discover how to avoid making the same mistakes—and how to put yourself on track for unstoppable success.
 
 So hitch a ride with me to the Indian Reservation on the Dakota Prairie where my terrifying dance with death unfolded…`,
-    docUrl: 'https://docs.google.com/document/d/153ICZuipLSMgfjH11K20BrFWsw6o9DVKGp3xsLpI28o/view',
+    docUrl: 'https://docs.google.com/document/d/153ICZuipLSMgfjH11K20BrFWsw6o9DVKGp3xsLpI28o/edit?usp=sharing',
     result: { text: '$800K in sales in 60 days', source: 'Client-reported' },
   },
   {
@@ -378,6 +380,6 @@ I can’t see your name on my calendar, and I don’t want you to miss out. As y
 Remember to book your strategy session, so we can talk things through and start you on the road to success. This is your chance to finally break through and get what you want from life.
 
 Other people are booking now, so secure your call with me while you still can.`,
-    docUrl: 'https://docs.google.com/document/d/1KcbZ-6WJaG1XsrkGIO1olIEUxhjCnzIDvHO3G4XsAqo/view',
+    docUrl: 'https://docs.google.com/document/d/1KcbZ-6WJaG1XsrkGIO1olIEUxhjCnzIDvHO3G4XsAqo/edit?usp=sharing',
   },
 ]
