@@ -951,4 +951,4 @@ Run: `node scripts/smoke-repositioning.mjs --slice 6`
 Expected: six `✓` against the live site, exit code 0.
 
 Run: `curl -s https://robpalmer.com/portfolio | grep -o "Read the full [a-z ]*" | sort | uniq -c`
-Expected: `3 Read the full script`, `2 Read the full sales page`, `1 Read the full emails` (the link noun follows the format after the Task 3 review).
+Expected: `6 Read the full script`, `4 Read the full sales page`, `2 Read the full emails`, plus a larger count for the bare prefix `Read the full ` that comes from the capitalised aria-labels. Every count is doubled because the Next.js RSC flight payload repeats the rendered text in the page source; 6/4/2 means 3/2/1 links.
