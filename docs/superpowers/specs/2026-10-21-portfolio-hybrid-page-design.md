@@ -131,9 +131,13 @@ attached to an exhibit only when the quote itself, or Rob, names that piece.
 - The results strip stands as is: $523M+ tracked revenue, 1,200+ projects, 8%+
   average cold-traffic CVR, 300%+ ROAS across campaigns.
 - The grid cards' remaining figures (Abundant 340% ROAS, Monetari 5.7%, BodyHacker
-  6.4%, Biz-Op 4.8%, Chatterkick 22%) were not in the question put to Rob; they
-  stay on the cards as today, since the cards are out of scope beyond the two
-  description corrections.
+  6.4%, Biz-Op 4.8%, Chatterkick 22%, Weight-Loss VSL 8.2%) were confirmed true by
+  Rob after launch (2026-10-21, post-review). They stay. The FAQ promises (quote
+  within 48 hours, two to three weeks for a VSL or sales page with one round of
+  edits, about a week for emails) were confirmed the same day.
+- Open follow-up, parked by Rob: the twelve grid cards still link to the Drive
+  folder via the unchanged card component. He wants something better than a Drive
+  link; not yet decided.
 
 ## 6. Data and components
 
