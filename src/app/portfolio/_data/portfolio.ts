@@ -183,7 +183,7 @@ export const featuredSamples: FeaturedSample[] = [
     format: 'VSL',
     market: 'Weight-loss gummy, sold on ClickBank to cold Facebook traffic',
     awareness: 'Problem-aware women over 40 who have failed on diets and distrust supplements',
-    angle: 'Open on the worst public humiliation the reader can picture, then make the husband the narrator so the promise arrives from someone who loves her, not someone selling to her.',
+    angle: 'Open on the worst public humiliation the reader can picture, then make the husband the narrator so the promise arrives from someone who loves her.',
     excerpt: `Flight attendant: “For the last time, madam, you must leave the plane immediately.”
 
 Jane: “But I don’t understand…I’m going on vacation. You can’t throw me off. What’s going on?
@@ -226,7 +226,7 @@ All because she was just too fat.`,
     title: 'Coffee Slimmer Pro',
     format: 'VSL',
     market: 'Weight-loss supplement, sold on ClickBank to cold traffic',
-    awareness: 'Problem-aware, has tried diets and exercise, sceptical of the next miracle',
+    awareness: "Problem-aware. She's tried diets and exercise and is skeptical of the next miracle",
     angle: 'A child says out loud what the reader fears everyone thinks. The ex-Marine narrator earns trust by being ordinary, and the 30-second-a-day promise is in the headline before the story starts.',
     excerpt: `Hidden Jungle Potion Melts 56 LBS of Fat
 
@@ -316,7 +316,7 @@ So it's vital you hear this.`,
     title: 'Supernus Business & Law Center',
     format: 'TSL',
     market: 'Legal and business-structure masterclass for new entrepreneurs',
-    awareness: 'Unaware of the risk. They are excited about starting a business, not worried about losing it',
+    awareness: "Unaware of the risk. They're excited about starting a business and haven't thought about losing it",
     angle: 'A true crime story carries a dry subject. The headline promises a method, the first line tells the reader to stop, and the founder\'s own near-death sets up every objection the course answers.',
     excerpt: `How Narrowly Escaping a Cold-Blooded Killer (and Being Swindled Out of My $12 Million Fortune) Taught Me the ‘4 Crucial Cornerstones of Success'
 

@@ -49,22 +49,22 @@ const FAQS: FAQItem[] = [
   {
     question: 'What do I get if I hire you?',
     answer:
-      'The piece you came for, written by me, plus the work that makes it convert: customer research, a short brief that names the angle and the awareness level we are writing to, and the script or page itself with a production note for your editor or designer. For paid-social clients that extends to the full creative programme: angles, hooks, statics, video scripts and landers on a monthly cadence.',
+      'You get the piece you came for, written by me, plus the work that makes it convert: customer research, a short brief that names the angle and the awareness level we\'re writing to, and the script or page itself with a production note for your editor or designer. For paid-social clients that extends to the full creative program: angles, hooks, statics, video scripts and landers on a monthly cadence.',
   },
   {
     question: 'How long does a VSL or sales page take?',
     answer:
-      'A VSL script or long-form sales page normally takes two to three weeks from brief to final draft, including one round of your edits. Email sequences take about a week. The first few days are research, and I will not skip them to hit a date, because the research is where the angle comes from.',
+      'A VSL script or long-form sales page normally takes two to three weeks from brief to final draft, including one round of your edits. Email sequences take about a week. The first few days are research, and I won\'t skip them to hit a date, because the angle comes out of the research.',
   },
   {
     question: 'How do we start?',
     answer:
-      'Book a free 30-minute strategy call. Tell me about the offer, the traffic and what the current control is doing. I will tell you on the call whether I think I can beat it and how I would go about it. If it is a fit, you get a written quote within 48 hours and a start date.',
+      'Book a free 30-minute strategy call. Tell me about the offer, the traffic and what the current control is doing. I\'ll tell you on the call whether I think I can beat it and how I\'d go about it. If it\'s a fit, you get a written quote within 48 hours and a start date.',
   },
   {
     question: 'Who is this not for?',
     answer:
-      'Anyone who needs volume over results, or copy by the end of the week. I take on a small number of projects at a time so each one gets the research it needs, and I turn down work that does not fit. If you are testing an unproven offer with no traffic yet, a strategy call is still worth having, but the first job is usually the offer, not the copy.',
+      'It isn\'t for anyone who needs volume over results, or copy by the end of the week. I take on a small number of projects at a time so each one gets the research it needs, and I turn down work that doesn\'t fit. If you\'re testing an unproven offer with no traffic yet, a strategy call is still worth having, but the first job is usually the offer itself.',
   },
 ]
 
@@ -177,7 +177,7 @@ export default function PortfolioPage() {
       {/* ───────────── 4. Mid-page CTA ───────────── */}
       <CTABanner
         headline="Want this for your offer?"
-        subtext="Tell me what the control is doing on a free 30-minute call. I will tell you whether I think I can beat it."
+        subtext="Tell me what the control is doing on a free 30-minute call. I'll tell you straight whether I can beat it."
         variant="gold"
       />
 
@@ -203,7 +203,7 @@ export default function PortfolioPage() {
             <FadeIn delay={100}>
               <div className="mt-8 space-y-6 text-lg text-ink-700 leading-relaxed font-body">
                 <p>
-                  None of these scripts started with writing. They started with the customer: what she had already tried, what she said about it in reviews and forums, and which promise she had stopped believing. The angle came out of that research. The words came last.
+                  Every one of these scripts started with the customer: what she had already tried, what she said about it in reviews and forums, and which promise she had stopped believing. The angle came out of that research, and the words came last.
                 </p>
                 <p>
                   That research-first process is what I sell now as{' '}
@@ -280,7 +280,7 @@ export default function PortfolioPage() {
                 More samples
               </h2>
               <p className="mt-3 text-lg text-ink-700 font-body">
-                A cross-section of the work across health, finance, SaaS and direct-response verticals.
+                These cover health, finance, SaaS and other direct-response verticals.
               </p>
             </div>
           </FadeIn>
