@@ -15,7 +15,7 @@ export const STATIC_UPDATED: Record<string, string> = {
   '/case-studies/belron-safelite-523m-campaign': '2026-06-12',
   '/case-studies/apple-direct-mail-campaign': '2026-06-12',
   '/testimonials': '2026-03-12',
-  '/portfolio': '2026-10-09',
+  '/portfolio': '2026-10-21',
   '/blog': '2026-06-12',
   '/contact': '2026-06-11',
   '/call': '2026-06-11',

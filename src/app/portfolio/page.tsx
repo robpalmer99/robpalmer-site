@@ -15,6 +15,7 @@ import { SampleExhibit } from '@/components/blocks/SampleExhibit'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { SITE_URL, TESTIMONIAL_COUNT } from '@/lib/constants'
 import { testimonials } from '@/content/testimonials'
+import { STATIC_UPDATED } from '@/lib/page-dates'
 import { portfolioItems, featuredSamples } from './_data/portfolio'
 
 const DRIVE_URL = 'https://drive.google.com/drive/folders/1ivFq-UhqthNnaGhlp6nJOc1G9s7H4iDI'
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
   },
 }
 
-const STATS = [
+const PORTFOLIO_STATS = [
   { stat: '$523M+', label: 'Tracked Revenue' },
   { stat: '1,200+', label: 'Projects Delivered' },
   { stat: '8%+', label: 'Avg. Cold Traffic CVR' },
@@ -39,6 +40,10 @@ const TESTIMONIAL_IDS = ['5', '38', '15', '16', '22', '26']
 const pickedTestimonials = TESTIMONIAL_IDS
   .map((id) => testimonials.find((t) => t.id === id))
   .filter((t): t is NonNullable<typeof t> => Boolean(t))
+
+if (pickedTestimonials.length !== TESTIMONIAL_IDS.length && process.env.NODE_ENV !== 'production') {
+  throw new Error('portfolio: TESTIMONIAL_IDS contains an id missing from testimonials.ts')
+}
 
 const FAQS: FAQItem[] = [
   {
@@ -63,36 +68,47 @@ const FAQS: FAQItem[] = [
   },
 ]
 
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': `${SITE_URL}/portfolio`,
+  url: `${SITE_URL}/portfolio`,
+  name: 'Copywriting Portfolio: VSL, Sales Page & Email Samples',
+  isPartOf: { '@id': `${SITE_URL}/#website` },
+  dateModified: STATIC_UPDATED['/portfolio'],
+}
+
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Copywriting portfolio: featured samples by Rob Palmer',
+  itemListElement: featuredSamples.map((s, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: {
+      '@type': 'CreativeWork',
+      name: s.title,
+      genre: s.format === 'Email' ? 'Email sequence' : s.format === 'TSL' ? 'Sales page' : 'Video sales letter',
+      author: { '@type': 'Person', name: 'Rob Palmer', url: SITE_URL },
+      url: `${SITE_URL}/portfolio#exhibit-${s.slug}`,
+    },
+  })),
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+  })),
+}
+
 export default function PortfolioPage() {
-  const itemListSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
-    name: 'Copywriting portfolio: featured samples by Rob Palmer',
-    itemListElement: featuredSamples.map((s, i) => ({
-      '@type': 'ListItem',
-      position: i + 1,
-      item: {
-        '@type': 'CreativeWork',
-        name: s.title,
-        genre: s.format === 'Email' ? 'Email sequence' : s.format === 'TSL' ? 'Sales page' : 'Video sales letter',
-        author: { '@type': 'Person', name: 'Rob Palmer', url: SITE_URL },
-        url: `${SITE_URL}/portfolio#exhibit-${s.slug}`,
-      },
-    })),
-  }
-
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: FAQS.map((faq) => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
-    })),
-  }
-
   return (
     <>
+      <JsonLd data={webPageSchema} />
       <JsonLd data={itemListSchema} />
       <JsonLd data={faqSchema} />
 
@@ -120,7 +136,7 @@ export default function PortfolioPage() {
       <Section variant="dark">
         <Container>
           <div className="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6">
-            {STATS.map((item, index) => (
+            {PORTFOLIO_STATS.map((item, index) => (
               <FadeIn key={item.label} delay={index * 100}>
                 <div className="text-center">
                   <CountUp
@@ -138,7 +154,7 @@ export default function PortfolioPage() {
       </Section>
 
       {/* ───────────── 3. Exhibits ───────────── */}
-      <Section id="exhibits">
+      <Section id="exhibits" className="scroll-mt-16 sm:scroll-mt-20">
         <Container>
           <FadeIn>
             <div className="max-w-3xl mx-auto text-center mb-14">
@@ -218,7 +234,7 @@ export default function PortfolioPage() {
                 What clients said after the copy ran
               </h2>
               <p className="mt-3 text-lg text-ink-700 font-body">
-                Six of the {TESTIMONIAL_COUNT} on the{' '}
+                Six of the {TESTIMONIAL_COUNT} client quotes on the{' '}
                 <Link href="/testimonials" className="text-gold-600 underline underline-offset-2 hover:text-gold-700">
                   testimonials page
                 </Link>
