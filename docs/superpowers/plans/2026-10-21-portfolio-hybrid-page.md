@@ -950,5 +950,5 @@ Expected: output ends with `Aliased: https://robpalmer.com`.
 Run: `node scripts/smoke-repositioning.mjs --slice 6`
 Expected: six `✓` against the live site, exit code 0.
 
-Run: `curl -s https://robpalmer.com/portfolio | grep -c "Read the full script"`
-Expected: `6`.
+Run: `curl -s https://robpalmer.com/portfolio | grep -o "Read the full [a-z ]*" | sort | uniq -c`
+Expected: `3 Read the full script`, `2 Read the full sales page`, `1 Read the full emails` (the link noun follows the format after the Task 3 review).
