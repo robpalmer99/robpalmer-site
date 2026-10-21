@@ -87,3 +87,12 @@ re-pointed DR-page link), not a rollback of the repositioning.
 
 GSC indexing requests (manual, UI only): `/`, `/about`, `/services`,
 `/services/creative-strategist`, `/services/ai-marketing-consultant`, all six `/verticals/*`.
+
+## Portfolio hybrid page — shipped 2026-10-21
+
+Spec: `docs/superpowers/specs/2026-10-21-portfolio-hybrid-page-design.md`.
+GA4 baseline (property 266179141, 90 days to 2026-10-21): ChatGPT → `/portfolio`
+landing sessions 71, key events 10; outbound clicks to the Drive folder 259.
+Check at +4 weeks (2026-11-18): key events from ChatGPT-landing-on-`/portfolio`
+sessions, and `click` events on `/portfolio` by `linkUrl` (docs.google.com per
+exhibit vs the Drive folder). Smoke: `npm run smoke -- --slice 6`.
