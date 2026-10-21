@@ -122,6 +122,19 @@ Rob confirms the figure column before implementation starts. Unconfirmed figures
 are omitted from both the exhibit and the grid card. A testimonial quote is
 attached to an exhibit only when the quote itself, or Rob, names that piece.
 
+**Confirmed by Rob, 2026-10-21:**
+- Figures confirmed true and kept: Coffee Slimmer Pro $1.4M in 6 months; Dynamic
+  Brain $2.1M in first 90 days; Supernus $800K in 60 days; Red Oak Capital 3.2%
+  cold-traffic conversion. Source line on the page: "Client-reported".
+- Testimonial 4 (Ben Palmer, "300% Return on Ad Spend") is about Puradrop and is
+  attached to that exhibit.
+- The results strip stands as is: $523M+ tracked revenue, 1,200+ projects, 8%+
+  average cold-traffic CVR, 300%+ ROAS across campaigns.
+- The grid cards' remaining figures (Abundant 340% ROAS, Monetari 5.7%, BodyHacker
+  6.4%, Biz-Op 4.8%, Chatterkick 22%) were not in the question put to Rob; they
+  stay on the cards as today, since the cards are out of scope beyond the two
+  description corrections.
+
 ## 6. Data and components
 
 **Data.** A new `featuredSamples: FeaturedSample[]` export in
