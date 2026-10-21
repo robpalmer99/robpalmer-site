@@ -136,6 +136,7 @@ export function Hero({
               </div>
             </FadeIn>
           )}
+          {children}
         </div>
       </Container>
     </section>
