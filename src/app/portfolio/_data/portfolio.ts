@@ -83,12 +83,12 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Supernus',
     slug: 'supernus',
-    category: 'VSL',
-    niche: 'Health',
+    category: 'Sales Page',
+    niche: 'Legal',
     description:
-      'Pharmaceutical-grade supplement VSL focused on joint health and mobility. Clinical tone balanced with emotional storytelling to build credibility and urgency.',
+      'Long-form text sales page for a business-structure and legal-protection masterclass from the Supernus Business & Law Center. A true-crime origin story carries a dry subject to a tiered launch offer.',
     image: '/images/portfolio/supernus.jpg',
-    imageAlt: 'Medical professional reviewing research data — Supernus VSL project',
+    imageAlt: 'Professional reviewing documents at a desk — Supernus sales page project',
     result: '$800K in 60 days',
   },
   {
