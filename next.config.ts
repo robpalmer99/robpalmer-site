@@ -36,15 +36,17 @@ const securityHeaders = [
     value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()',
   },
   {
+    // OpenAI Ads pixel: SDK + pixel-config load from bzrcdn.openai.com, events
+    // post to bzr.openai.com (hosts read from oaiq.min.js, 2026-10-23).
     key: 'Content-Security-Policy',
     value: [
       "default-src 'self'",
-      `script-src 'self' 'unsafe-inline'${devEval} https://assets.calendly.com https://va.vercel-scripts.com https://vitals.vercel-insights.com https://www.googletagmanager.com https://browser.sentry-cdn.com`,
+      `script-src 'self' 'unsafe-inline'${devEval} https://assets.calendly.com https://va.vercel-scripts.com https://vitals.vercel-insights.com https://www.googletagmanager.com https://browser.sentry-cdn.com https://bzrcdn.openai.com`,
       "worker-src 'self' blob:",
       "style-src 'self' 'unsafe-inline' https://assets.calendly.com",
       "img-src 'self' data: https:",
       "font-src 'self'",
-      "connect-src 'self' https://calendly.com https://assets.calendly.com https://va.vercel-scripts.com https://vitals.vercel-insights.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.sentry.io https://*.ingest.us.sentry.io",
+      "connect-src 'self' https://calendly.com https://assets.calendly.com https://va.vercel-scripts.com https://vitals.vercel-insights.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.sentry.io https://*.ingest.us.sentry.io https://bzrcdn.openai.com https://bzr.openai.com",
       "frame-src https://calendly.com",
       "frame-ancestors 'none'",
       "object-src 'none'",
