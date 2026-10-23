@@ -136,3 +136,17 @@ had already received a personal teardown email.
   Calendly records which lander a booking came from.
 - Advertiser name shown on ads is the account name, "GoFreelance".
 - Campaign still paused; relaunch is Rob's call.
+
+## Brand and images (2026-10-23)
+
+- Ads show brand name **Rob Palmer** (Settings → General: "Use this as your
+  brand and legal business name" unticked, so the legal/billing name stays
+  GoFreelance). Logo is the gold "RP" monogram. Account-level creative
+  enhancement switched off as well as the campaign-level setting.
+- Images: one per ad, square, gpt-image-1 high quality, in
+  `docs/ads/images/v2/` (prompts in `prompts2.json`). Rob rejected the
+  first dark set (`v1/`) as too dark; v2 is bright, high-key, with gold as
+  the brand accent. No text in images; each is a visual question the
+  title answers. B3 uses Rob's real headshot as the reference.
+- To swap an ad image in the Ads Manager: Edit Ad → "Clear selected image"
+  → file input appears → "Edit image" crop dialog → Save changes → Save.
