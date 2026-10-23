@@ -56,6 +56,14 @@ export const metadata: Metadata = {
   },
 }
 
+// OpenAI Ads (ChatGPT) measurement pixel. Loaded on every page only when the
+// ID is configured, so it captures the `oppref` click id on whichever page an
+// ad lands on (stored in a 30-day cookie) and can attribute the booking on
+// /call or the enquiry on /contact back to the ad. Conversions fire from
+// src/lib/analytics.ts. Loads after hydration rather than lazily so the click
+// id is captured even on a short visit.
+const OPENAI_PIXEL_ID = process.env.NEXT_PUBLIC_OPENAI_PIXEL_ID
+
 const personJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
@@ -152,6 +160,18 @@ export default function RootLayout({
             gtag('js', new Date());
             gtag('config', 'G-ND4QM9PG6P');`}
         </Script>
+        {OPENAI_PIXEL_ID && (
+          <Script id="oaiq-init" strategy="afterInteractive">
+            {`(function (w, d, s, u) {
+                if (w.oaiq) return;
+                var q = function () { q.q.push(arguments); };
+                q.q = []; w.oaiq = q;
+                var js = d.createElement(s); js.async = true; js.src = u;
+                var f = d.getElementsByTagName(s)[0]; f.parentNode.insertBefore(js, f);
+              })(window, document, 'script', 'https://bzrcdn.openai.com/sdk/oaiq.min.js');
+              oaiq('init', { pixelId: ${JSON.stringify(OPENAI_PIXEL_ID)} });`}
+          </Script>
+        )}
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-gold-400 focus:text-ink-950 focus:font-heading focus:font-semibold focus:rounded-lg focus:shadow-lg focus:outline-none"

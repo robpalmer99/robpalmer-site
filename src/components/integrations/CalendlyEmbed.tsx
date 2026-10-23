@@ -83,19 +83,29 @@ export function CalendlyEmbed({ url }: CalendlyEmbedProps) {
   }, [])
 
   useEffect(() => {
+    // Calendly's embed posts every lifecycle message twice (verified
+    // 2026-10-23: two identical `calendly.event_type_viewed` posts from
+    // https://calendly.com per widget load), which doubled every
+    // calendly_click count in GA4. Each event is reported once per mount;
+    // a booking can only be scheduled once per widget anyway.
+    const reported = new Set<string>()
     function handleCalendlyEvent(e: MessageEvent) {
       // Only Calendly's iframe may drive conversion events — any page can
       // postMessage to an open tab, which would pollute GA booking data.
       if (!e.origin.endsWith('.calendly.com') && e.origin !== 'https://calendly.com') {
         return
       }
-      if (e.data?.event === 'calendly.event_scheduled') {
-        trackCalendlyClick('event_scheduled')
-      } else if (e.data?.event === 'calendly.date_and_time_selected') {
-        trackCalendlyClick('date_and_time_selected')
-      } else if (e.data?.event === 'calendly.event_type_viewed') {
-        trackCalendlyClick('event_type_viewed')
+      const name = e.data?.event
+      if (
+        name !== 'calendly.event_scheduled' &&
+        name !== 'calendly.date_and_time_selected' &&
+        name !== 'calendly.event_type_viewed'
+      ) {
+        return
       }
+      if (reported.has(name)) return
+      reported.add(name)
+      trackCalendlyClick(name.replace('calendly.', ''))
     }
     window.addEventListener('message', handleCalendlyEvent)
     return () => window.removeEventListener('message', handleCalendlyEvent)
