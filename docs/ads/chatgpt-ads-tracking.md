@@ -167,3 +167,15 @@ First checks:
   lander engagement and Calendly clicks for lp-ads vs lp-copy.
 - Day 21 (2026-11-13): judge on bookings, then decide whether to create a
   conversions-objective campaign.
+
+## Day-7 check routine
+
+Cloud routine `trig_018rAYE2BvGLdXaySGn98Wq5` ("ChatGPT ads day-7 check
+(2026-10-30)") fires once at 2026-10-30 08:00 Bangkok (01:00 UTC). It is
+read-only: it searches Gmail for Calendly bookings since the relaunch,
+cross-checks them with the leads repo, classifies each by the "How did you
+hear about me?" answer, and emails rob@gofreelance.com. GA4 and the Ads
+Manager are not reachable from the cloud, so the email ends with a prompt
+to paste into Claude Code locally, which runs `scripts/chatgpt_ads_report.py`
+and reads per-ad CTR in the Ads Manager.
+https://claude.ai/code/routines/trig_018rAYE2BvGLdXaySGn98Wq5
