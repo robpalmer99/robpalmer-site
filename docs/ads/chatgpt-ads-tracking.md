@@ -118,3 +118,21 @@ had already received a personal teardown email.
 - Ad group context hints replaced with founder-conversation phrases.
 - Still open: new ad copy and the landing URL (currently /create). Both
   wait on Rob's approval.
+
+## Relaunch build (2026-10-23)
+
+- **Real ad limits are tighter than OpenAI's docs:** the Ads Manager form
+  caps the title at 32 characters and the description at 54 (docs say
+  50/100). Write to 32/54.
+- **Two ad groups** in "Creative Strategy Leads":
+  - "Creative Strategy 1" (DTC, Meta-creative hints) → https://robpalmer.com/lp/ads
+  - "Copywriting 1" (regular businesses, copy hints) → https://robpalmer.com/lp/copy
+- **Ten ads**, five per group, named A1–A5 and B1–B5 in the Ads Manager.
+  All reuse the old growth-chart image. The original "To The Moon" ad is
+  paused.
+- **Landers** live at /lp/ads and /lp/copy: noindex, not in the sitemap,
+  shared shell `src/components/landers/AdLander.tsx`, copy in each page
+  file. The Calendly embed carries `utm_campaign=lp-ads` / `lp-copy`, so
+  Calendly records which lander a booking came from.
+- Advertiser name shown on ads is the account name, "GoFreelance".
+- Campaign still paused; relaunch is Rob's call.
