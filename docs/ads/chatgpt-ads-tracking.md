@@ -150,3 +150,20 @@ had already received a personal teardown email.
   title answers. B3 uses Rob's real headshot as the reference.
 - To swap an ad image in the Ads Manager: Edit Ad → "Clear selected image"
   → file input appears → "Edit image" crop dialog → Save changes → Save.
+
+## Relaunched 2026-10-23
+
+Campaign switched on by Rob's go at about 11:50 Bangkok. Campaign, both
+ad groups and all ten ads show "Serving"; the old "To The Moon" ad stays
+paused. Pre-relaunch lifetime totals on the campaign (for subtracting
+later): 19,977 impressions, 308 clicks, THB 3,861.20 spend in the
+10 Oct–23 Oct window shown.
+
+First checks:
+- Day 1–2: impressions and clicks are coming from the US only (GA4
+  country for `chatgpt / cpc` sessions), and the Ads Manager event stream
+  shows page_viewed from real ad clicks.
+- Day 7 (2026-10-30): cut the weakest ads in each group by CTR; compare
+  lander engagement and Calendly clicks for lp-ads vs lp-copy.
+- Day 21 (2026-11-13): judge on bookings, then decide whether to create a
+  conversions-objective campaign.
