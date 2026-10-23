@@ -71,3 +71,29 @@ Calendly's embed posts each lifecycle message twice, so every `calendly_click`
 count in GA4 before 2026-10-23 is doubled (all daily counts were even). The
 embed now reports each event once per widget load. Halve pre-fix figures
 when comparing against anything after this date.
+
+## First campaign post-mortem (reviewed 2026-10-23)
+
+Campaign "Creative Strategy Leads", one ad group, one ad, 29 Sep → paused
+~17 Oct. Objective Clicks, autobid, THB 500/day, locations US + AU + UK +
+TH + CA, creative enhancement ON, no tracking parameters, no conversion
+event, landing URL `/create` (the DTC-teardown outreach lander).
+
+| 30-day totals (Ads Manager) | |
+|---|---|
+| Spend | THB 9,253 |
+| Impressions | 52,896 |
+| Clicks | 967 |
+| Avg CPC | THB 9.57 |
+
+GA4 saw 713 of those clicks land on `/create?oppref=...` and filed them as
+**direct** (no referrer), which is why ChatGPT referral traffic looked flat.
+**705 of 713 were from Thailand**, 78% mobile, 13% engaged, median visit a
+few seconds, 7 visits to /call, 2 Calendly interactions, 0 bookings. The
+four October bookings (US, Canada, Eastern Europe) were not from the ads.
+
+Root causes: Thailand in the location list + autobid "maximize results"
+bought the cheapest clicks available; creative enhancement auto-translated
+the ad for Thai users; the ad promised "scale your brand to the moon with
+the 40-year-old AI trick" and landed on a long pitch written for people who
+had already received a personal teardown email.
