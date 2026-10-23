@@ -97,3 +97,24 @@ bought the cheapest clicks available; creative enhancement auto-translated
 the ad for Thai users; the ad promised "scale your brand to the moon with
 the 40-year-old AI trick" and landed on a long pitch written for people who
 had already received a personal teardown email.
+
+## Retest setup (done 2026-10-23)
+
+- Data source `robpalmer.com`, pixel ID `QVds6vXEq7o879frFvQm3x`, set as
+  `NEXT_PUBLIC_OPENAI_PIXEL_ID` in Vercel production and deployed. Automatic
+  advanced matching is on (the data source has no toggle for it).
+- CSP in `next.config.ts` allows `bzrcdn.openai.com` (script + pixel-config)
+  and `bzr.openai.com` (events). Without it the SDK was blocked in
+  production. Verified live: SDK 200, `__oppref` cookie set, "Pixel
+  Initialization" events in the Ads Manager event stream.
+- Conversion events: "Strategy call booked" (appointment_scheduled) and
+  "Contact form lead" (lead_created), 30-day click / 1-day view windows.
+- Campaign: United States only, Thailand excluded, creative enhancement off,
+  tracking parameters
+  `utm_source=chatgpt&utm_medium=cpc&utm_campaign={campaign_id}&utm_content={ad_id}`,
+  "Strategy call booked" linked. Still paused.
+- The objective (Clicks) is locked on an existing campaign. Optimising for
+  bookings needs a new campaign with a conversions objective.
+- Ad group context hints replaced with founder-conversation phrases.
+- Still open: new ad copy and the landing URL (currently /create). Both
+  wait on Rob's approval.
