@@ -179,3 +179,28 @@ Manager are not reachable from the cloud, so the email ends with a prompt
 to paste into Claude Code locally, which runs `scripts/chatgpt_ads_report.py`
 and reads per-ad CTR in the Ads Manager.
 https://claude.ai/code/routines/trig_018rAYE2BvGLdXaySGn98Wq5
+
+## Day-5 check (2026-10-28)
+
+Ads Manager, 23–28 Oct (Bangkok time; the 23rd shows no delivery, today is
+preliminary): **THB 2,639 spend, 5,884 impressions, 52 clicks, CTR 0.88%,
+avg CPC THB 65.98, 0 conversions.** Daily spend: 24th 974, 25th 635,
+26th 540, 27th 490, so the THB 500/day budget is spent in full, with
+overdelivery on day one. CPC is about 7x the first campaign's THB 9.57;
+that is the price of US-only traffic.
+
+| Ad | Impr | Clicks | CTR | Spend |
+|---|---|---|---|---|
+| B3 523M | 1,521 | 19 | 1.25% | 721.75 |
+| B5 Raise ROI | 1,837 | 16 | 0.87% | 722.49 |
+| B4 Good offer | 1,440 | 8 | 0.56% | 582.07 |
+| A4 ChatGPT ads | 359 | 6 | 1.67% | 489.49 |
+| B1 Pays for itself | 331 | 2 | 0.60% | 97.48 |
+| A3 Ads stop working | 46 | 1 | 2.17% | 25.87 |
+| B2, A1, A2, A5 | 43–165 each | 0 | – | 0 |
+
+Ad groups: Copywriting 1 took THB 2,124 (80%), Creative Strategy 1 THB 515.
+GA4 saw only 24 `chatgpt / cpc` sessions against 52 billed clicks, so about
+half the clicks never register as a session (bounce before GA4 loads, or
+consent). GA4 engagement on /lp/copy was 2 of 19 sessions. No Calendly
+bookings since the relaunch.
