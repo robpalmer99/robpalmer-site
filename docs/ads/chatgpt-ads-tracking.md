@@ -204,3 +204,17 @@ GA4 saw only 24 `chatgpt / cpc` sessions against 52 billed clicks, so about
 half the clicks never register as a session (bounce before GA4 loads, or
 consent). GA4 engagement on /lp/copy was 2 of 19 sessions. No Calendly
 bookings since the relaunch.
+
+## /lp/copy first-screen rewrite (deployed 2026-10-28)
+
+The ads that spend (B3 "$523M", B5, B4) all say "your traffic is fine, the
+words are the problem", but the lander opened on a generic "Get More Leads,
+More Customers, and More Sales" headline with no face and no proof above the
+fold on mobile. New first screen: headline "Getting Clicks but Not Enough
+Sales? It's Usually the Words.", headshot + "40 years writing sales copy.
+$523M from one mail campaign.", the 8% result in the subhead, and a note
+under the CTA. The "launching" audience moved out of the hero.
+
+GA4 now loads `afterInteractive` on the landers only (AdLander); the rest of
+the site keeps `lazyOnload`. **Engagement and session counts for paid traffic
+are not comparable across 2026-10-28**: more fast bounces are now counted.

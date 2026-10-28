@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import Link from 'next/link'
+import Script from 'next/script'
 import { Logo } from '@/components/ui/Logo'
 import { Button } from '@/components/ui/Button'
 import { Container } from '@/components/ui/Container'
@@ -26,6 +28,10 @@ export interface LanderContent {
   headline: string
   subhead: string
   ctaLabel: string
+  /** One line under the hero CTA saying what the visitor is booking */
+  ctaNote?: string
+  /** Face + credential under the headline, so ad clicks see who they're dealing with on the first screen */
+  byline?: { image: string; name: string; credential: string }
   metrics: { value: string; label: string }[]
   sections: LanderSection[]
   proofHeading: string
@@ -38,6 +44,13 @@ export interface LanderContent {
   /** utm_campaign passed to Calendly so the booking records which lander it came from */
   calendlyCampaign: string
 }
+
+// The root layout loads GA with lazyOnload to keep it off the critical path
+// site-wide (8e98d72). Paid clicks often leave within a second or two, before
+// the load event, so they never registered: about half of the ChatGPT ad
+// clicks were missing from GA4 (2026-10-28). Landers load the same two scripts
+// early; next/script dedupes by src/id, so the layout's copies are skipped.
+const GA_ID = 'G-ND4QM9PG6P'
 
 const COPYRIGHT_YEAR = new Date().getFullYear()
 
@@ -65,6 +78,14 @@ export function AdLander({ content }: { content: LanderContent }) {
   return (
     <div className="fixed inset-0 z-[60] overflow-y-auto bg-paper-50">
       <style>{`body { overflow: hidden; }`}</style>
+      <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+      <Script id="ga-init" strategy="afterInteractive">
+        {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          window.gtag = gtag;
+          gtag('js', new Date());
+          gtag('config', '${GA_ID}');`}
+      </Script>
 
       {/* Hero */}
       <section className="bg-ink-950 text-paper-100 noise-overlay">
@@ -76,21 +97,42 @@ export function AdLander({ content }: { content: LanderContent }) {
           </header>
         </Container>
         <Container>
-          <div className="py-14 md:py-20">
+          <div className="pb-12 pt-6 md:py-20">
             <FadeIn immediate>
               <p className="font-heading text-sm font-semibold uppercase tracking-[0.2em] text-gold-400">
                 {content.eyebrow}
               </p>
-              <h1 className="mt-6 max-w-4xl font-heading text-4xl font-semibold leading-tight text-paper-50 md:text-5xl lg:text-6xl">
+              <h1 className="mt-4 max-w-4xl font-heading text-4xl font-semibold leading-tight text-paper-50 md:mt-6 md:text-5xl lg:text-6xl">
                 {t(content.headline)}
               </h1>
-              <p className="mt-8 max-w-2xl font-body text-xl leading-relaxed text-paper-300">
+              {content.byline && (
+                <div className="mt-6 flex items-center gap-4">
+                  <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full border-2 border-gold-400">
+                    <Image
+                      src={content.byline.image}
+                      alt={content.byline.name}
+                      fill
+                      className="object-cover"
+                      sizes="56px"
+                      priority
+                    />
+                  </div>
+                  <p className="font-body leading-snug">
+                    <span className="block font-heading font-semibold text-paper-50">{content.byline.name}</span>
+                    <span className="block text-sm text-paper-300">{t(content.byline.credential)}</span>
+                  </p>
+                </div>
+              )}
+              <p className="mt-6 max-w-2xl font-body text-lg leading-relaxed text-paper-300 md:mt-8 md:text-xl">
                 {t(content.subhead)}
               </p>
-              <div className="mt-10">
+              <div className="mt-8 md:mt-10">
                 <Button href="#book" size="lg">
                   {content.ctaLabel}
                 </Button>
+                {content.ctaNote && (
+                  <p className="mt-3 font-body text-sm text-paper-300">{t(content.ctaNote)}</p>
+                )}
               </div>
             </FadeIn>
           </div>

@@ -16,11 +16,17 @@ export const metadata: Metadata = {
 
 const content: LanderContent = {
   logoSubtitle: 'DIRECT-RESPONSE COPYWRITER',
-  eyebrow: "For business owners launching, or stuck with marketing that doesn't sell",
-  headline: 'Get More Leads, More Customers, and More Sales From Your Marketing',
+  eyebrow: "For businesses with traffic that isn't buying",
+  headline: "Getting Clicks but Not Enough Sales? It's Usually the Words.",
+  byline: {
+    image: '/images/headshots/rob-palmer-clean.png',
+    name: 'Rob Palmer',
+    credential: '40 years writing sales copy. $523M from one mail campaign.',
+  },
   subhead:
-    "Whether you're launching with nothing yet or paying for marketing that isn't working, the words decide who buys. Get them right, and every ad, page, letter and email you put out brings in more customers.",
+    "I rewrite the pages, ads and emails your customers already see, so more of them buy. One client's sales page now turns 8% of cold visitors into buyers.",
   ctaLabel: 'Get My Free Copy Review',
+  ctaNote: "30 minutes, free. Send me the page or ad that isn't selling.",
   metrics: [
     { value: '8%', label: "of cold visitors buying from one client's sales page" },
     { value: '340%', label: "return on ad spend from one client's Facebook campaign" },
