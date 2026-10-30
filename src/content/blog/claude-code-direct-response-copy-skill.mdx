@@ -4,7 +4,7 @@ description: "Download my free Claude Code skill for writing direct response cop
 metaTitle: "Claude Code DR Copy Skill: Write Sales Copy"
 metaDescription: "Free Claude Code skill for writing direct-response copy — built on frameworks from Schwartz, Halbert, and Ogilvy, plus 40 years of real campaign results."
 date: "2026-03-28"
-updated: "2026-07-17"
+updated: '2026-10-30'
 category: "AI Copywriting"
 tags: ["Claude Code direct response", "AI sales copy", "free Claude Code skill", "direct response copywriting", "AI copywriting skill", "sales page generator", "Claude Code"]
 published: true
@@ -14,7 +14,7 @@ faqs:
   - question: "What is the Claude Code direct response copy skill?"
     answer: "The Claude Code direct response copy skill is a free markdown file that turns Claude Code into a direct response copywriter. It contains the proven frameworks, techniques, and principles from legends like Eugene Schwartz, Gary Halbert, David Ogilvy, John Caples, Joseph Sugarman, and Robert Collier — structured so Claude can apply them to write sales pages, VSLs, emails, ads, headlines, CTAs, and any persuasive copy."
   - question: "How do I install the direct response copy skill?"
-    answer: "Create a .claude/skills folder in your project directory. Save the skill markdown file as direct-response-copy.md inside that folder. Claude Code will automatically detect it. When you ask Claude to write sales copy, headlines, emails, or any persuasive content, the skill activates and applies direct response frameworks to the output."
+    answer: "Create a direct-response-copy folder inside .claude/skills in your project directory and save the skill file inside it as SKILL.md. For every project on your machine, use ~/.claude/skills/direct-response-copy/SKILL.md instead. Claude Code detects the skill automatically when your request matches its description, or you can call it directly with /direct-response-copy."
   - question: "Is this skill really free?"
     answer: "Yes. The skill file is completely free to download and use. You need a Claude Code subscription to run it, but the skill itself — containing all the copywriting frameworks, techniques, and principles — costs nothing."
   - question: "What types of copy can this skill write?"
@@ -90,7 +90,7 @@ If you want expert-level *reviews* of your copy as well, grab the companion [cop
 
 ### Step 1: Save the Skill File
 
-Create a `.claude/skills/` directory in your project. Save the full skill markdown below as `direct-response-copy.md` inside that folder.
+Create a `direct-response-copy` folder inside `.claude/skills/` in your project and save the full skill markdown below inside it as `SKILL.md`, so the path is `.claude/skills/direct-response-copy/SKILL.md`. For every project on your machine, use `~/.claude/skills/direct-response-copy/SKILL.md` instead. You can also call the skill by name with `/direct-response-copy` at the start of a message.
 
 ### Step 2: Write Copy
 
@@ -108,7 +108,7 @@ For the best results, use the [copychief skill](/blog/claude-code-copychief-skil
 
 ## The Skill File
 
-Copy the entire contents below and save it as `direct-response-copy.md` in your `.claude/skills/` directory:
+Copy the entire contents below and save it as `.claude/skills/direct-response-copy/SKILL.md`:
 
 ````markdown
 ---
@@ -681,7 +681,7 @@ Write with this skill. Review with the copychief. Check compliance before you su
 
 ## Get the Skill
 
-Scroll up to the skill file section, copy the full markdown, and save it as `direct-response-copy.md` in your `.claude/skills/` directory. No signup. No paywall. No email gate.
+Scroll up to the skill file section, copy the full markdown, and save it as `SKILL.md` inside a `direct-response-copy` folder in `.claude/skills/`. No signup. No paywall. No email gate.
 
 Prefer git? The whole suite is on GitHub: [github.com/robpalmer99/claude-code-copywriting-skills](https://github.com/robpalmer99/claude-code-copywriting-skills/tree/main/direct-response-copy) — clone or copy the `direct-response-copy/` folder straight into your project's `.claude/skills/` directory. CC-BY-4.0.
 

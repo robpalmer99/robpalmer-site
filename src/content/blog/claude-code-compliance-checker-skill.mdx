@@ -4,7 +4,7 @@ description: "Download my free Claude Code compliance checker skill — catch th
 metaTitle: "Claude Code Compliance Checker Skill: Stop Ad Rejections"
 metaDescription: "Free Claude Code skill to catch trigger words, personal attribute violations, and policy landmines before your ads go live. Meta, Google, TikTok, ClickBank."
 date: "2026-04-03"
-updated: '2026-06-11'
+updated: '2026-10-30'
 category: "AI Copywriting"
 tags: ["Claude Code compliance", "AI compliance checker", "free Claude Code skill", "Meta ad compliance", "Facebook ad policy", "ad compliance tool", "Claude Code skill"]
 published: true
@@ -14,7 +14,7 @@ faqs:
   - question: "What is the Claude Code compliance checker skill?"
     answer: "The Claude Code compliance checker skill is a free markdown file that turns Claude Code into an ad compliance auditor. It checks your ad copy, landing pages, VSL scripts, and emails against platform-specific rules for Meta/Facebook, Google, TikTok, YouTube, and ClickBank — flagging trigger words, personal attribute violations, sensational language, and medical claims that get ads rejected and accounts banned."
   - question: "How do I install the compliance checker skill in Claude Code?"
-    answer: "Create a .claude/skills folder in your project directory. Save the skill markdown file as compliance-checker.md inside that folder, and save the trigger-words.md reference file in a references folder. Claude Code will automatically detect and use the skill when you ask it to check compliance or audit copy for platform policy violations."
+    answer: "Create a compliance-checker folder inside .claude/skills in your project directory. Save the skill file inside it as SKILL.md, and save trigger-words.md in a references folder inside that same compliance-checker folder. For every project on your machine, use ~/.claude/skills/compliance-checker/ instead. Claude Code detects the skill automatically when you ask it to check compliance, or you can call it directly with /compliance-checker."
   - question: "Is the compliance checker skill free?"
     answer: "Yes, the skill file and the trigger words reference file are both completely free. You need a Claude Code subscription to run them, but the skill itself — containing the full 9-point compliance checklist, platform-specific rules, and FDA language guidelines — costs nothing."
   - question: "What platforms does the compliance checker cover?"
@@ -38,7 +38,7 @@ faqs:
 - Every flagged issue includes a severity rating (HIGH/MEDIUM/LOW), the rule violated, and a drop-in compliant rewrite
 - Deep Meta/Facebook coverage including the 7 Deadly Sins and the 3-tier review system
 - Includes FDA language rules for health and supplement copy — the highest-risk category
-- Free to download — save the skill file and the trigger-words.md reference, then start checking copy immediately
+- Free to download: one folder holding a SKILL.md and the trigger-words.md reference, then start checking copy immediately
 - Pair it with the [ad copy skill](/blog/claude-code-ad-copy-skill) to write ads, then check them before submitting
 </KeyTakeaways>
 
@@ -98,7 +98,7 @@ Every row represents a real pattern that gets ads rejected on Meta. The non-comp
 
 ### Step 1: Save the Skill File
 
-Create a `.claude/skills/` directory in your project. Save the full skill markdown below as `compliance-checker.md` inside that folder.
+Create a `compliance-checker` folder inside `.claude/skills/` in your project and save the full skill markdown below inside it as `SKILL.md`, so the path is `.claude/skills/compliance-checker/SKILL.md`. For every project on your machine, use `~/.claude/skills/compliance-checker/SKILL.md` instead. You can also call the skill by name with `/compliance-checker` at the start of a message.
 
 ### Step 2: Save the Trigger Words Reference
 
@@ -116,7 +116,7 @@ Paste your ad copy, landing page, VSL script, or email into Claude Code and ask 
 
 ## The Skill File
 
-Copy the entire contents below and save it as `compliance-checker.md` in your `.claude/skills/` directory:
+Copy the entire contents below and save it as `.claude/skills/compliance-checker/SKILL.md`:
 
 ````markdown
 ---
@@ -488,7 +488,7 @@ The best modern DR copy is MORE sophisticated because of compliance. Smart copyw
 
 ## The Reference File
 
-Save the contents below as `trigger-words.md` in your `references/` directory:
+Save the contents below as `references/trigger-words.md` inside the `compliance-checker` skill folder:
 
 ````markdown
 # Trigger Words & Compliant Substitutions
@@ -639,7 +639,7 @@ See the [complete skill suite overview](/blog/claude-code-copywriting-skills) fo
 
 ## Get the Skill
 
-Scroll up to the skill file section. Copy the full compliance-checker.md content and save it. Copy the trigger-words.md content and save it. No signup, no paywall, no email gate.
+Scroll up to the skill file section. Copy the full skill content and save it as `SKILL.md` inside a `compliance-checker` folder in `.claude/skills/`, then save the trigger-words content as `references/trigger-words.md` in the same folder. No signup, no paywall, no email gate.
 
 Prefer git? The whole suite is on GitHub: [github.com/robpalmer99/claude-code-copywriting-skills](https://github.com/robpalmer99/claude-code-copywriting-skills/tree/main/compliance-checker) — clone or copy the `compliance-checker/` folder straight into your project's `.claude/skills/` directory. CC-BY-4.0.
 

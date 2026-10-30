@@ -4,7 +4,7 @@ description: "Download my free Claude Code copychief skill — built on 40 years
 metaTitle: "Claude Code Copychief Skill: Expert Copy Reviews in Seconds"
 metaDescription: "Free Claude Code copychief skill built on 40 years of direct-response experience — line-by-line copy reviews that catch what kills conversions, in seconds."
 date: "2026-03-28"
-updated: '2026-06-11'
+updated: '2026-10-30'
 category: "AI Copywriting"
 tags: ["Claude Code copychief", "AI copy review", "free copychief skill", "Claude Code skill", "copy review tool", "direct response copywriting", "AI copywriting"]
 published: true
@@ -14,7 +14,7 @@ faqs:
   - question: "What is the Claude Code copychief skill?"
     answer: "The Claude Code copychief skill is a free, downloadable markdown file that turns Claude Code into a world-class copy chief. It instructs Claude to review your sales copy the way a senior creative director at a top direct response agency would — evaluating strategic elements like the big idea, mechanism, and offer stack, then providing line-by-line feedback with specific rewrites grounded in proven direct response principles."
   - question: "How do I install the copychief skill in Claude Code?"
-    answer: "Create a folder called .claude/skills in your project directory. Save the skill markdown file as copychief.md inside that folder. Claude Code will automatically detect and use the skill when you ask it to review or copychief your copy. No configuration or plugins required."
+    answer: "Create a copychief folder inside .claude/skills in your project directory and save the skill file inside it as SKILL.md. For every project on your machine, use ~/.claude/skills/copychief/SKILL.md instead. Claude Code detects the skill automatically when you ask it to review or copychief your copy, or you can call it directly with /copychief. No configuration or plugins required."
   - question: "Is this skill free to use?"
     answer: "Yes, the skill itself is completely free. You do need a Claude Code subscription to use it, since the skill runs inside Claude Code. But the skill file — which contains all the strategic frameworks and review criteria — costs nothing."
   - question: "Can AI really copychief sales copy effectively?"
@@ -28,7 +28,7 @@ faqs:
   - question: "What is a Claude Code skill file?"
     answer: "A Claude Code skill file is a markdown document that gives Claude specialized instructions for a specific task. Think of it as a detailed brief that tells Claude exactly how to approach a type of work — what frameworks to use, what to evaluate, what output format to follow, and what quality standards to enforce. Skills turn a general-purpose AI into a domain expert."
   - question: "Can I customize the copychief skill for my brand?"
-    answer: "Yes. You can create a copychief-brief.md file in a references folder alongside the skill. This brief lets you specify your brand voice, target audience, compliance requirements, and any evaluation criteria specific to your business. The skill will incorporate your brief into every review."
+    answer: "Yes. Create a references folder inside the copychief skill folder and save a copychief-brief.md file there. This brief lets you specify your brand voice, target audience, compliance requirements, and any evaluation criteria specific to your business. The skill will incorporate your brief into every review."
   - question: "How does this compare to hiring a professional copy chief?"
     answer: "A professional copy chief brings irreplaceable strategic judgment, market intuition, and creative vision. This skill does not replace that. What it does is give you instant, structured feedback on demand — at 2am, on a Sunday, mid-draft. Use it for rapid iteration between professional reviews, for catching obvious issues before sending copy to a human reviewer, or as a training tool to develop your own copy evaluation instincts."
 ---
@@ -38,7 +38,7 @@ faqs:
 - It evaluates strategic elements (big idea, mechanism, offer stack) before touching individual lines
 - Every issue flagged includes the specific line, the problem, a concrete rewrite, and the underlying principle
 - Reviews end with a conversion readiness score, top 3 high-impact changes, and a kill list
-- The skill is free to download and install — just drop the markdown file into your Claude Code project
+- The skill is free to download and install: one SKILL.md in a copychief folder, and it works in Claude Code, Claude.ai and the Claude API
 - Pair it with the [direct response copy skill](/blog/claude-code-direct-response-copy-skill) to write AND review copy with the same proven frameworks
 </KeyTakeaways>
 
@@ -94,24 +94,26 @@ If you also need help *writing* the copy in the first place, grab the companion 
 
 ### Step 1: Set Up the Skill File
 
-Create a `.claude/skills/` directory in your project (or wherever you work with Claude Code). Save the skill markdown below as `copychief.md` inside that folder.
+Create a `copychief` folder inside `.claude/skills/` in your project and save the skill markdown below inside it as `SKILL.md`, so the full path is `.claude/skills/copychief/SKILL.md`. If you want the skill in every project on your machine, use `~/.claude/skills/copychief/SKILL.md` instead.
 
 ### Step 2: Ask Claude Code to Review Your Copy
 
-With the skill installed, simply paste your copy into Claude Code and ask it to copychief, review, or critique it. The skill activates automatically. You can say things like:
+With the skill installed, paste your copy into Claude Code and ask it to copychief, review, or critique it. The skill loads on its own when your request matches its description. You can say things like:
 
 - "Copychief this sales page"
 - "Review this VSL script for conversion issues"
 - "Critique this email sequence"
 - "What is killing conversions in this ad copy?"
 
+Or start your message with `/copychief`, paste the copy after it, and the skill runs whether or not Claude would have chosen it by itself.
+
 ### Step 3: Customize With Your Own Brief (Optional)
 
-For brand-specific reviews, create a `references/copychief-brief.md` file alongside the skill. Include your brand voice guidelines, target audience details, compliance requirements, and any evaluation criteria unique to your business.
+For brand-specific reviews, create a `references/copychief-brief.md` file inside the `copychief` folder, next to `SKILL.md`. Include your brand voice guidelines, target audience details, compliance requirements, and any evaluation criteria unique to your business.
 
 ## The Skill File
 
-Copy the entire contents below and save it as `copychief.md` in your `.claude/skills/` directory:
+Copy the entire contents below and save it as `.claude/skills/copychief/SKILL.md`:
 
 ````markdown
 ---
@@ -239,6 +241,16 @@ That is why this skill evaluates strategic architecture *first* — big idea, me
 
 The line-level review format (Location, Issue, Fix, Principle) exists because every copywriter has gotten feedback that says "the middle section needs work" without specifying which lines, what is wrong, or how to fix it. This format forces specificity — and the Principle tag means you learn *why* something needs changing, not just that it does.
 
+## Six Months of Copychief Passes: What I've Learned
+
+I built this skill for my own reviews, and since April it has run on every piece I've delivered, including the copy I wrote by hand. Three things stand out.
+
+**It catches what a tired writer misses.** On one batch of four client documents, four separate copychief passes flagged the same fault: zero contractions, so every page read like a report instead of a letter. I'd read all four and hadn't noticed. The fix was a hand pass, paragraph by paragraph. A find-and-replace contraction sweep breaks English in predictable ways, so don't let Claude run one for you.
+
+**Point it at the lead first.** AI drafts, and most human drafts, are weakest at the top. The close is formulaic and the model has seen thousands of them; the lead needs market knowledge and a judgment call about what will stop this reader. When time is short, ask for the Big Picture Assessment and the lead review only, fix those, then run the full pass.
+
+**Ask for AI tells by name.** The skill reviews for conversion. If the copy came out of a model, add one line to your request: "Also flag AI tells: the it's-not-X-it's-Y pattern, stacked three-word fragments, decorative emoji, and verbs stretched into metaphor." You'll get them back in the same Location, Issue, Fix, Principle format as everything else.
+
 ## Once the Copy Is Tight, You Need Something That Can Write the Next Draft
 
 This skill reviews. It does not write. Once you have tightened a piece using the copychief, you will want a tool that can generate the next draft from scratch — one that already understands the [direct response frameworks](/blog/copywriting-formulas) from Schwartz, Hopkins, Ogilvy, Halbert, Caples, and Sugarman so you are not starting from a blank page every time.
@@ -258,7 +270,7 @@ Use the writing skills to draft. Use this copychief skill to review and tighten.
 
 ## Get the Skill
 
-Scroll up to the skill file section, copy the full markdown, and save it as `copychief.md` in your `.claude/skills/` directory. No signup, no paywall, no email gate.
+Scroll up to the skill file section, copy the full markdown, and save it as `SKILL.md` inside a `copychief` folder in `.claude/skills/`. No signup, no paywall, no email gate.
 
 Prefer git? The whole suite is on GitHub: [github.com/robpalmer99/claude-code-copywriting-skills](https://github.com/robpalmer99/claude-code-copywriting-skills/tree/main/copychief) — clone or copy the `copychief/` folder straight into your project's `.claude/skills/` directory. CC-BY-4.0.
 

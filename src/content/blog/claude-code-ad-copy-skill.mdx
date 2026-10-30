@@ -4,7 +4,7 @@ description: "Download my free Claude Code skill for writing high-converting Met
 metaTitle: "Claude Code Ad Copy Skill: Write Meta Ads That Convert"
 metaDescription: "Free Claude Code skill for writing high-converting Meta ad copy — hooks, primary text, UGC scripts, and video ads built on proven direct-response frameworks."
 date: "2026-04-03"
-updated: '2026-06-11'
+updated: '2026-10-30'
 category: "AI Copywriting"
 tags: ["Claude Code ad copy", "AI ad copy", "free Claude Code skill", "Meta ad copy", "Facebook ad copy", "UGC script generator", "Claude Code skill"]
 published: true
@@ -14,7 +14,7 @@ faqs:
   - question: "What is the Claude Code ad copy skill?"
     answer: "The Claude Code ad copy skill is a free markdown file that turns Claude Code into a Meta ad copywriter. It contains proven frameworks for writing primary text, headlines, descriptions, UGC scripts, and video ad scripts — structured around direct response principles from Schwartz, Halbert, Makepeace, Sultanic, and others. It handles static ads, short UGC, ADHD super hook ads, and story-style video scripts."
   - question: "How do I install the ad copy skill in Claude Code?"
-    answer: "Create a .claude/skills folder in your project directory. Save the skill markdown file as ad-copy.md inside that folder, and save the reference file as references/meta-ad-specs.md. Claude Code will automatically detect and use the skill when you ask it to write Meta ads, Facebook ads, Instagram ads, hooks, UGC scripts, or any paid social ad copy."
+    answer: "Create an ad-copy folder inside .claude/skills in your project directory. Save the skill file inside it as SKILL.md, and save the reference file as references/meta-ad-specs.md inside the same ad-copy folder. For every project on your machine, use ~/.claude/skills/ad-copy/ instead. Claude Code detects the skill automatically when you ask it to write Meta ads, Facebook ads, Instagram ads, hooks, UGC scripts, or any paid social ad copy, or you can call it directly with /ad-copy."
   - question: "Is this skill free to use?"
     answer: "Yes. The skill file and the reference file are both completely free. You need a Claude Code subscription to run it, but the skill itself — containing all the ad copy frameworks, hook types, UGC script formats, and direct response principles — costs nothing."
   - question: "What ad formats does the skill cover?"
@@ -38,7 +38,7 @@ faqs:
 - It covers static ads, UGC scripts, ADHD super hook ads, and story-style video — not just text
 - Eight hook types with situational guidance give you the single biggest lever in ad performance
 - The Sell the Click vs. Sell the Solution framework handles the strategic decision most AI skips entirely
-- Free to download — save two markdown files and start writing better Meta ads immediately
+- Free to download: one folder holding a SKILL.md and a specs reference, and you're writing better Meta ads in minutes
 - Pair it with the [compliance checker skill](/blog/claude-code-compliance-checker-skill) to catch policy violations before Meta does
 </KeyTakeaways>
 
@@ -136,15 +136,15 @@ This skill is built for three specific situations:
 
 ### Step 1: Save the Skill File
 
-Create a `.claude/skills/` directory in your project. Save the full skill markdown below as `ad-copy.md` inside that folder.
+Create an `ad-copy` folder inside `.claude/skills/` in your project and save the full skill markdown below inside it as `SKILL.md`, so the path is `.claude/skills/ad-copy/SKILL.md`. For every project on your machine, use `~/.claude/skills/ad-copy/SKILL.md` instead.
 
 ### Step 2: Save the Reference File
 
-Create a `references/` directory in the same project. Save the Meta ad specs reference file below as `meta-ad-specs.md`. The skill reads this file automatically for platform-specific character limits, placement variations, and video specs.
+Create a `references` folder inside the `ad-copy` folder and save the Meta ad specs file below as `meta-ad-specs.md`, giving you `.claude/skills/ad-copy/references/meta-ad-specs.md`. The skill reads this file when it needs platform-specific character limits, placement variations, and video specs.
 
 ### Step 3: Write Ads
 
-Ask Claude Code to write any type of Meta ad copy. The skill activates automatically. Examples:
+Ask Claude Code to write any type of Meta ad copy and the skill loads on its own. Or start your message with `/ad-copy` to call it by name. Examples:
 
 - "Write 5 hook variations for this weight loss supplement targeting women over 40"
 - "Write a UGC script for this skincare product — 30 seconds, talking head"
@@ -154,7 +154,7 @@ Ask Claude Code to write any type of Meta ad copy. The skill activates automatic
 
 ## The Skill File
 
-Copy the entire contents below and save it as `ad-copy.md` in your `.claude/skills/` directory:
+Copy the entire contents below and save it as `.claude/skills/ad-copy/SKILL.md`:
 
 ````markdown
 ---
@@ -634,7 +634,7 @@ The greats all agree: know your audience before writing a word. Lead with their 
 
 ## The Reference File
 
-Save this as `meta-ad-specs.md` in your `references/` directory:
+Save this as `references/meta-ad-specs.md` inside the `ad-copy` skill folder:
 
 ````markdown
 # Meta Ad Specs Quick Reference
@@ -687,6 +687,16 @@ Structure primary text so the first 125 characters create an open loop:
 The goal: make "See more" irresistible.
 ````
 
+## Six Months of Ads Later: Three Rules I Added to My Own Briefs
+
+The skill has written or rewritten Meta ads for supplement, info-product and ecommerce offers most weeks since April. Three rules now go into every brief I give it, and I'd add them to yours.
+
+**Write results in first or third person, never second.** Meta's personal-attributes policy treats "you've been fighting belly fat since you turned 40" as a claim about the reader. "I'd been fighting it since I turned 40" or "she'd tried every diet since her second kid" says the same thing, sells harder, and passes review. Tell the skill this up front rather than fixing it after a rejection.
+
+**Cap emoji at three or four per ad, on structure only.** A person writing fast drops one on the offer line and forgets the rest. A model decorates evenly, one per line, and that distribution reads as machine-written even when every sentence is clean. Spend them on the offer, the date, and the call to action.
+
+**For lead-generation ads, put the buying action in the title.** A proof-led headline on its own ("The Copywriter Behind $523M") draws curiosity clicks from people wondering who you are. "Book the Copywriter Behind $523M" draws people who want to hire one, and the description then carries their problem and the outcome they want. I learned this the expensive way on my own campaign this month. The exception is a warm list that's already qualified, where a pure curiosity line can be the right call because you only need to push them into action.
+
 ## The Complete Toolkit
 
 This ad copy skill is one piece of a five-skill system. Each skill handles a different stage of the paid advertising workflow:
@@ -700,7 +710,7 @@ See the [complete skill suite overview](/blog/claude-code-copywriting-skills) fo
 
 ## Get the Skill
 
-Scroll up to the skill file section, copy the full markdown, and save it as `ad-copy.md` in your `.claude/skills/` directory. Save the reference file as `meta-ad-specs.md` in your `references/` directory. No signup, no paywall, no email gate.
+Scroll up to the skill file section, copy the full markdown, and save it as `SKILL.md` inside an `ad-copy` folder in `.claude/skills/`, with the reference file at `references/meta-ad-specs.md` in the same folder. No signup, no paywall, no email gate.
 
 Prefer git? The whole suite is on GitHub: [github.com/robpalmer99/claude-code-copywriting-skills](https://github.com/robpalmer99/claude-code-copywriting-skills/tree/main/ad-copy) — clone or copy the `ad-copy/` folder straight into your project's `.claude/skills/` directory. CC-BY-4.0.
 
