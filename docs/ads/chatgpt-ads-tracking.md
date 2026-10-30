@@ -218,3 +218,83 @@ under the CTA. The "launching" audience moved out of the hero.
 GA4 now loads `afterInteractive` on the landers only (AdLander); the rest of
 the site keeps `lazyOnload`. **Engagement and session counts for paid traffic
 are not comparable across 2026-10-28**: more fast bounces are now counted.
+
+## Day-7 check (2026-10-30)
+
+Ads Manager window 17–30 Oct (Bangkok; 30 Oct preliminary). The new ads
+only exist from 23 Oct, so their lifetime figures are the relaunch figures.
+The old "To The Moon" ad (Not serving) still shows 1,882 impressions /
+24 clicks / THB 281.66 in this window from before the relaunch; it is
+subtracted from the Creative Strategy 1 numbers below.
+
+| Relaunch totals (new ads) | |
+|---|---|
+| Spend | THB 3,789 (≈ THB 540/day on a THB 500/day budget) |
+| Impressions | 8,262 |
+| Clicks | 72 |
+| CTR | 0.87% |
+| Avg CPC | THB 52.63 |
+| Conversions | 0 |
+
+| Ad group | Lander | Spend | Impr | Clicks | CTR | CPC |
+|---|---|---|---|---|---|---|
+| Copywriting 1 | /lp/copy | 2,924.71 | 7,128 | 60 | 0.84% | 52.23 |
+| Creative Strategy 1 (new ads) | /lp/ads | 864.57 | 1,134 | 12 | 1.06% | 72.05 |
+
+| Ad | Impr | Clicks | CTR | Spend | CPC | GA4 sessions* |
+|---|---|---|---|---|---|---|
+| B3 523M | 2,673 | 30 | 1.12% | 1,141.80 | 43.92 | 30 |
+| B5 Raise ROI | 2,314 | 20 | 0.86% | 1,103.36 | 55.17 | ≤7 |
+| B4 Good offer | 1,666 | 8 | 0.48% | 582.07 | 72.76 | ≤7 |
+| B1 Pays for itself | 365 | 2 | 0.55% | 97.48 | 48.74 | ≤2 |
+| B2 Traffic no sales | 110 | 0 | 0% | 0 | – | 0 |
+| A4 ChatGPT ads | 719 | 10 | 1.39% | 771.41 | 77.14 | 5 |
+| A5 Old ad broken | 228 | 1 | 0.44% | 67.29 | 67.29 | ≤1 |
+| A3 Ads stop working | 70 | 1 | 1.43% | 25.87 | 25.87 | ≤1 |
+| A2 Same budget | 62 | 0 | 0% | 0 | – | 0 |
+| A1 Clicks no sales | 55 | 0 | 0% | 0 | – | 0 |
+
+*GA4 `chatgpt / cpc` sessions by `utm_content` ad id. The Ads Manager
+table does not expose ad ids, so the mapping is inferred from volumes:
+`ad_224576…` (30 sessions, /lp/copy) can only be B3, and the remaining
+/lp/copy ids carry 7, 2 and 1 sessions against B5/B4/B1's 20/8/2 clicks.
+Under every assignment B5 turns at most 7 of 20 billed clicks into a
+session (cost per landed session ≥ THB 158) while B3 lands all 30
+(THB 38). Confirm the ids on the 11-13 check (open each ad's edit view).
+
+**Pause decisions (recommended, not yet applied):**
+- Copywriting 1: pause **B4** (lowest CTR at volume, most expensive
+  clicks, 0 clicks from its last ~226 impressions, 20% of group spend) and
+  **B2** (0 clicks from 110). Keep B3 and B5; B1 is too small to judge.
+  B5 is the next cut if its click→session rate stays this low once the
+  ad-id mapping is confirmed.
+- Creative Strategy 1: pause **A5** (0.44%). Keep A4 (best CTR in the
+  group, but CPC 77 / CPM 1,118 and no lander engagement). A1–A3 have
+  55–70 impressions each and cost nothing; leave them. The group's real
+  problem is that it wins few auctions (1,134 impressions in 7 days vs
+  7,128) and its lander shows no engagement.
+
+**Lander comparison (GA4, 23–30 Oct):**
+
+| | /lp/copy | /lp/ads |
+|---|---|---|
+| Billed clicks | 60 | 12 |
+| Sessions | 40 (37 + 3 with lander unset, all B3) | 6 |
+| Engaged sessions | 10 (27%) | 1 (17%) |
+| Avg duration | 25 s | 2 s |
+| calendly_click | 3 (+1 unset) | 0 |
+| Bookings | 0 | 0 |
+
+/lp/copy before vs after the 28 Oct first-screen rewrite: 23–27 Oct
+18 sessions, 2 engaged (11%), 5 s, 1 calendly_click; 28–30 Oct 19
+sessions, 8 engaged (42%), 43 s, 2 calendly_clicks. The GA loading change
+on the 28th counts more fast bounces, which works against the new hero,
+so the direction is real even though the counts are small. B3's sessions
+alone went from 2/14 engaged to 6/16.
+
+**Bookings:** one since the relaunch (Bryan Ward, Warrior League, booked
+29 Oct, "How did you hear": a Gemini thread → the state-of-VSLs article;
+call held 30 Oct, proposal due Mon 2 Nov). None from the ads. Running
+total: THB 3,789 for 0 ad-attributed bookings. Next check 2026-11-13:
+judge on bookings; Creative Strategy 1 is the first thing to cut if
+still zero.
