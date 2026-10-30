@@ -298,3 +298,46 @@ call held 30 Oct, proposal due Mon 2 Nov). None from the ads. Running
 total: THB 3,789 for 0 ad-attributed bookings. Next check 2026-11-13:
 judge on bookings; Creative Strategy 1 is the first thing to cut if
 still zero.
+
+## Round 2 ads built 2026-10-30 (modelled on B3)
+
+Rob's read on B3: a bare credential title ("The Copywriter Behind $523M")
+pulls "who is this guy?" curiosity clicks, so the new titles put the
+buying action first and the description carries the reader's problem and
+outcome. Lesson saved in the vault (Headlines & Hooks, 2026-10-30), with
+Rob's edge case: a pure curiosity title can be right for an already
+qualified audience such as an email list.
+
+**"Hire" fails policy review.** B6 was first created as "Hire the
+Copywriter Behind $523M" and was rejected within seconds ("Ad has not
+passed policy", no appeal offered). Resubmitted with "Book" in place of
+"Hire" and the same description, and it was approved. All four ads use
+"Book", which also matches the landers' call to action. Do not use
+"Hire" in a ChatGPT ad title.
+
+| Ad | Group → lander | Title (32) | Description (54) | Image | Status at build |
+|---|---|---|---|---|---|
+| B6 Book 523M | Copywriting 1 → /lp/copy | Book the Copywriter Behind $523M | Clicks but few sales? I rewrite the words so they buy. | v2/B3-rob-desk.jpg | Serving |
+| B7 Book 8pct | Copywriting 1 → /lp/copy | Book Me: 8% of Cold Visitors Buy | One client's page does that. I'll write yours to sell. | v2/B3-rob-desk.jpg | Serving |
+| B8 Book 523M photo2 | Copywriting 1 → /lp/copy | Book the Copywriter Behind $523M | Clicks but few sales? I rewrite the words so they buy. | v3/B8-rob-standing.jpeg | In review |
+| A6 Book 340 ROAS | Creative Strategy 1 → /lp/ads | Book the Writer Behind 340% ROAS | Ads wearing out? I write new hooks that keep selling. | v2/B3-rob-desk.jpg | In review |
+
+What each one tests: B6 is the direct heir to B3 (action + proof title,
+reader problem + outcome description). B7 swaps the proof number to see
+whether any specific result works or only the $523M. B8 is B6's copy with
+a second photo of Rob (standing, arms folded, generated with gpt-image-2
+from the clean headshot and the desk shot as references) to isolate the
+image. A6 is the first proof-led, face-led ad in the DTC group, pointed
+at /lp/ads, and the cheapest test of whether that group can work before
+the 13 Nov decision.
+
+Build notes: Create → Create ad (not Duplicate Ad, which did nothing from
+the row menu); campaign and ad group pickers, then name, title,
+description, link; leave tracking parameters blank (campaign-level UTMs
+already apply); Upload image → square crop → Save changes → Create.
+Titles and descriptions at exactly 32/54 show "Copy may be truncated in
+some placements" but are accepted. New ads do not appear in the table
+until the page is reloaded.
+
+Serving after this round: B3, B5, B1, B6, B7 (+ B8 once approved) on
+/lp/copy; A4, A3, A2, A1 (+ A6 once approved) on /lp/ads.
