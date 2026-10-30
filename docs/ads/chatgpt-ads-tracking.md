@@ -262,7 +262,7 @@ Under every assignment B5 turns at most 7 of 20 billed clicks into a
 session (cost per landed session ≥ THB 158) while B3 lands all 30
 (THB 38). Confirm the ids on the 11-13 check (open each ad's edit view).
 
-**Pause decisions (recommended, not yet applied):**
+**Pause decisions (applied 2026-10-30 ~10:05 BKK on Rob's go: B4, B2 and A5 switched off via the Active toggle in the Ads tab, all three now "Not serving"; seven ads still serving):**
 - Copywriting 1: pause **B4** (lowest CTR at volume, most expensive
   clicks, 0 clicks from its last ~226 impressions, 20% of group spend) and
   **B2** (0 clicks from 110). Keep B3 and B5; B1 is too small to judge.
