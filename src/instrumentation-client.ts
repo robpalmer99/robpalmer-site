@@ -40,6 +40,11 @@ if (process.env.NODE_ENV === "production" && !isBotUA && !Sentry.getClient()) {
       // Chrome extensions
       /chrome-extension:\/\//,
       /moz-extension:\/\//,
+      // A Microsoft script injected into Chrome/Edge on Windows (Outlook
+      // SafeLinks / Bing extensions) rejects with this exact phrase. 18 events
+      // from one visitor on /create over six months (ROBPALMER-SITE-9) and
+      // never from our code.
+      /Object Not Found Matching Id:\d+, MethodName:\w+, ParamCount:\d+/,
       // Hydration mismatches almost always caused by browser translators
       // (Google Translate, Safari Translate) or extensions mutating the DOM
       // before React hydrates. Real hydration bugs show up with component
@@ -83,6 +88,11 @@ if (process.env.NODE_ENV === "production" && !isBotUA && !Sentry.getClient()) {
       /^safari-extension:\/\//i,
       // Common ad/tracking scripts
       /^blob:/,
+      // gtag's own beacon failing under an ad blocker or a dropped
+      // connection ("Failed to fetch" from region1.google-analytics.com,
+      // ROBPALMER-SITE-10). Nothing for us to fix and it burns quota.
+      /googletagmanager\.com/i,
+      /google-analytics\.com/i,
     ],
 
     // Session Replay is lazy-loaded after init (see below) so rrweb stays
