@@ -341,3 +341,95 @@ until the page is reloaded.
 
 Serving after this round: B3, B5, B1, B6, B7 (+ B8 once approved) on
 /lp/copy; A4, A3, A2, A1 (+ A6 once approved) on /lp/ads.
+
+## Day-14 check (2026-11-06)
+
+Ads Manager window 24 Oct–6 Nov (Bangkok; 6 Nov preliminary), which is
+the whole relaunch. The old "To The Moon" ad shows no metrics in this
+window, so no subtraction is needed. Ad ids are not exposed anywhere in
+the Ads Manager (table, row Actions → Edit Ad dialog, page DOM all
+checked), so the GA4 `utm_content` mapping below stays volume-inferred.
+
+| Relaunch totals, 14 days | |
+|---|---|
+| Spend | THB 7,334 (THB 500/day budget, 14 days = 7,000) |
+| Impressions | 16,867 |
+| Clicks | 132 |
+| CTR | 0.78% |
+| Avg CPC | THB 55.56 |
+| GA4 paid sessions | 101 (95 US, 3 Iran, 1 each AU/TH/UK) |
+| Calendar interactions | 9 (all /lp/copy) |
+| Bookings | 0 |
+
+| Ad group | Lander | Spend | Impr | Clicks | CTR | Sessions | Cost / session |
+|---|---|---|---|---|---|---|---|
+| Copywriting 1 | /lp/copy | 6,040 | 13,635 | 107 | 0.78% | 85 | THB 71 |
+| Creative Strategy 1 | /lp/ads | 1,294 | 3,232 | 25 | 0.77% | 15 | THB 86 |
+
+Per ad, lifetime and the week since the day-7 check (30 Oct midday → 6 Nov):
+
+| Ad | Lifetime impr / clicks / CTR / spend | Week impr / clicks / CTR / spend | GA4 sessions (week) | Engaged (week) |
+|---|---|---|---|---|
+| B5 Raise ROI | 4,525 / 39 / 0.86% / 2,230 | 2,211 / 19 / 0.86% / 1,127 | 14 | 2 |
+| B3 523M | 3,393 / 35 / 1.03% / 1,744 | 720 / 5 / 0.69% / 602 | 11 | 3 |
+| B8 Book 523M photo2 | 1,774 / 11 / 0.62% / 769 | same (new) | 14 | 3 |
+| B6 Book 523M | 528 / 6 / 1.14% / 365 | same (new) | 4 | 0 |
+| B7 Book 8pct | 660 / 5 / 0.76% / 173 | same (new) | 4 | 0 |
+| B1 Pays for itself | 977 / 3 / 0.31% / 177 | 612 / 1 / 0.16% / 79 | 1 | 1 |
+| A4 ChatGPT ads | 2,136 / 17 / 0.80% / 922 | 1,417 / 7 / 0.49% / 150 | 5 | 2 |
+| A2 Same budget | 321 / 4 / 1.25% / 128 | 259 / 4 / 1.54% / 128 | 3 | 0 |
+| A6 Book 340 ROAS | 130 / 1 / 0.77% / 63 | same (new) | ≤1 | 0 |
+| A1 Clicks no sales | 170 / 1 / 0.59% / 88 | 115 / 1 / 0.87% / 88 | ≤1 | 0 |
+| A3 Ads stop working | 246 / 1 / 0.41% / 26 | 176 / 0 / 0% / 0 | 0 | 0 |
+| B4, B2, A5 (paused 30 Oct) | unchanged | 0 | 0 | 0 |
+
+Week totals: THB 3,544, 8,602 impressions, 60 clicks, CTR 0.70% (down
+from 0.87%), 58 GA4 sessions, 5 calendar interactions, 0 bookings.
+
+GA4 ad-id mapping (volume-inferred, consistent under every assignment):
+`ad_224576…` = B3, `ad_022b28…` = B5, `ad_95cc5b…` = B8, `ad_6b615e…` =
+B1, `ad_e66ed8…` = B4, `ad_2da2ec…`/`ad_4c2536…` = B6/B7 (either way),
+`ad_7df7f2…` = A4, `ad_1d625b…` = A2. The day-7 worry that B5 lost most
+of its clicks before GA4 loaded has not held: this week B5 landed 14
+sessions from 19 clicks, the same rate as the others.
+
+**What the week says**
+
+- **Round 2 did not beat B3.** B6 (B3's direct heir) has the best CTR
+  of the round at 1.14% but on only 528 impressions; the auction fed B8
+  the most impressions (1,774) and it has the lowest CTR and the dearest
+  clicks of the round (THB 77). The second photo did not help. B7's
+  "8%" proof is below B3 too. Rob's "action + proof" titles have not
+  outpulled the bare curiosity title at this volume.
+- **B3 itself is fading:** 1.12% at day 7, 0.69% this week, with
+  THB 120 per click. Frequency is 1.05, so this is not repeat-serving
+  fatigue; the auction is giving it a worse slot.
+- **B5 now carries the group** (half of all Copywriting 1 clicks this
+  week) and lands its clicks properly.
+- **Creative Strategy 1 is still zero:** 14 days, THB 1,294, 15 lander
+  sessions, not one calendar interaction on /lp/ads. The day-7 note said
+  cut it on 11-13 if still zero; nothing in this week's numbers argues
+  for the extra week.
+- **The real hole is lander → booking.** 96 lander sessions, 9 calendar
+  interactions, 0 bookings. Engagement on /lp/copy is 20% lifetime
+  (19% this week), so the 28 Oct hero lift (42% on a small n) did not
+  hold. At any plausible cold-traffic booking rate the campaign should
+  have produced 1–3 bookings by now. A 30-minute call is a big ask of a
+  ChatGPT user who was mid-task.
+- A conversions-objective campaign has nothing to learn from with
+  0 conversions in 14 days; drop that idea until a booking exists.
+- The one booking in the window (Rob Sader, Asurion, 31 Oct) came from
+  Google/Gemini, not ads, and became a sent proposal. Organic AI
+  citations keep outperforming the paid placement at zero cost.
+
+**Recommended for Rob's go (not applied):**
+1. Pause Creative Strategy 1 (whole group) now, a week ahead of plan.
+2. Pause B8 and B1 in Copywriting 1. Keep B5, B3, B6, B7.
+3. Hold the budget at THB 500/day until 13 Nov; judge on bookings as
+   planned. If still zero on the 13th, pause the campaign rather than
+   write round 3: the ads are buying clicks at a sane price, the page
+   is not turning them into calls.
+4. Before any round 3, change the lander ask, not the ad copy: a
+   lower-friction step (short form or email reply) in front of the
+   call, or point B5/B3 at /portfolio (proof-led, 6 verbatim excerpts)
+   and compare calendar interactions.
