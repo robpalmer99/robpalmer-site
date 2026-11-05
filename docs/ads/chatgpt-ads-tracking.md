@@ -433,3 +433,15 @@ sessions from 19 clicks, the same rate as the others.
    lower-friction step (short form or email reply) in front of the
    call, or point B5/B3 at /portfolio (proof-led, 6 verbatim excerpts)
    and compare calendar interactions.
+
+## Campaign paused 2026-11-06
+
+Rob's decision after the day-14 check: THB 7,334 spent for 0 bookings,
+so the whole "Creative Strategy Leads" campaign was switched off via
+the campaign-row Active toggle at about 06:00 Bangkok on 6 Nov (status
+"Not serving", confirmed after a page reload). Both ad groups and all
+serving ads (B3, B5, B1, B6, B7, B8, A1, A2, A3, A4, A6) stop with it;
+their own Active toggles were left on, so re-enabling the campaign
+restarts the same set. The 13 Nov check is now a next-steps decision
+rather than a performance check. Final relaunch totals are the day-14
+table above (6 Nov preliminary figures may settle slightly).
