@@ -186,6 +186,18 @@ const tagToService: Record<string, string> = {
   'copywriting agency': 'creative-team',
   'copywriting agency vs freelance': 'creative-team',
   'creative team': 'creative-team',
+  'best supplement copywriters': 'vsl-copywriter',
+  'supplement copywriter for hire': 'vsl-copywriter',
+  'supplement copywriter': 'vsl-copywriter',
+  'health copywriter': 'vsl-copywriter',
+  'best sales letter copywriters': 'sales-letter-copywriter',
+  'direct mail copywriter for hire': 'sales-letter-copywriter',
+  'long form copywriter': 'sales-letter-copywriter',
+  'best ecommerce copywriters': 'creative-strategist',
+  'dtc copywriter for hire': 'creative-strategist',
+  'shopify copywriter': 'creative-strategist',
+  'best email copywriters': 'email-copywriter',
+  'email copywriter for hire': 'email-copywriter',
 }
 
 const tagToVertical: Record<string, string> = {
