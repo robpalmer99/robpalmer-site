@@ -2,6 +2,10 @@
 
 Status: approved by Rob 2026-11-09. Companion to `docs/strategy/2026-11-09-booked-calls-review.md`.
 
+Progress log:
+
+- 2026-11-10: Tier A posts 1 to 4 shipped (`best-vsl-copywriters`, `vsl-vs-tsl`, `is-a-copywriting-agency-worth-it`, `how-much-does-a-vsl-cost`), each with 10 FAQs, hero image, tag mappings in `content-links.ts`, copychief pass. Agency demand test page shipped as the 14th service, `/services/creative-team` (strategy tier, Service + FAQPage schema, linked from post 3 and the services index). Rob approved open-sourcing more skills (Tier B): angle-finder, static-ad, funnel-teardown, in that order. Next: CTA repair on state-of-vsl and what-is-a-vsl, then posts 5 to 8.
+
 ## The thesis
 
 Every booking with a known source came from a page that answers a decision-stage question, carries a date and an opinion, and gets cited by an AI assistant or ranks top-five on Google. None came from the high-traffic explainer posts. So the programme is:
@@ -60,7 +64,7 @@ List posts follow the best-direct-response-copywriter-to-hire template: ranked b
 
 - **Roundup:** `best-claude-code-skills-for-copywriting` ("best copywriting skill for claude" is 91 impressions at 3.4 and climbing). Rank the public skills across GitHub including ours, link the repo, explain SKILL.md installation. AI assistants cite roundups.
 - **Comparison:** `claude-code-vs-chatgpt-for-copywriting`. The chatgpt-for-copywriting post exists; this is the head-to-head buyers ask.
-- **New skill posts need new public skills.** The vault has skills the repo does not (angle-finder, static-ad, meta-ad-images, funnel-teardown, review-vsl, copy-judge, creating-advertorials). Decision for Rob: open-source two or three more. Suggested order by search demand and giveaway safety: `angle-finder`, `static-ad` ("static ads skill claude" already gets impressions), `funnel-teardown`. Each one is a post, a repo folder and a README update. The vault-specific skills (rob-voice, results-ledger, copywriting-lessons) stay private.
+- **New skill posts need new public skills.** The vault has skills the repo does not (angle-finder, static-ad, meta-ad-images, funnel-teardown, review-vsl, copy-judge, creating-advertorials). Rob approved open-sourcing more on 2026-11-10. Suggested order by search demand and giveaway safety: `angle-finder`, `static-ad` ("static ads skill claude" already gets impressions), `funnel-teardown`. Each one is a post, a repo folder and a README update. The vault-specific skills (rob-voice, results-ledger, copywriting-lessons) stay private.
 - **Refresh cadence:** the six existing skill posts were refreshed 2026-10-30. Re-check every time Claude Code ships a skills-surface change; the cluster decays on novelty.
 
 ## Tier C: 2027 editions of the dated posts (December)
@@ -100,7 +104,7 @@ sales-letter-examples (2,782 impr, pos 13.1), sales-page-examples (2,043, 13.5),
 
 One page, shipped in the first two weeks: a "full creative team" page describing the done-for-you option (strategy, ad creative at volume, landing pages, copy, on retainer, delivered with a team). Target queries: copywriting agency, creative strategy agency, dtc creative agency, agency vs freelance. Link it from post 3 and from /services. Measure impressions at 30 and 60 days. When the agency site launches, this page becomes the hand-off page that links across.
 
-Open question for Rob: route (`/services/creative-team` as a 14th service, or `/agency`). Recommendation: a 14th service so it inherits the Service schema and the services index.
+Route decided 2026-11-10: `/services/creative-team` as the 14th service (strategy tier), so it inherits the Service schema and the services index. Baseline for the 30- and 60-day impression checks: GSC property sc-domain:robpalmer.com, page filter `/services/creative-team`, queries containing agency, creative team, done-for-you.
 
 ## Cadence and measurement
 

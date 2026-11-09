@@ -220,6 +220,171 @@ export const services: Service[] = [
     relatedVerticals: ['ecommerce-dtc-copywriter', 'health-supplement-copywriter', 'clickbank-copywriter'],
   },
   {
+    // Agency-demand test page (content plan 2026-11, "Agency demand test on
+    // robpalmer.com"). Measures search demand for the done-for-you creative
+    // team offer before the separate agency site launches; becomes the
+    // hand-off page that links across once that site is live.
+    title: 'Full Creative Team',
+    slug: 'creative-team',
+    tier: 'strategy',
+    schemaServiceType: 'Creative Services',
+    shortDescription:
+      'A done-for-you creative team for brands scaling on paid traffic: strategy, ad creative at volume, landers, advertorials and funnel copy on a weekly retainer, led by a 40-year direct response copywriter.',
+    metaTitle: 'DTC Creative Agency Alternative | Full Creative Team on Retainer',
+    metaDescription:
+      'The alternative to a copywriting or creative strategy agency: a full creative team on retainer, led by a 40-year direct response copywriter with $523M in tracked results.',
+    headline: 'A Full Creative Team, Led by the Copywriter Who Writes the Control',
+    subheadline:
+      'Most brands choose between a freelancer who can\'t keep up and an agency that hands your account to a junior. The creative team is the third option. I find the angles and write the control myself, and a production team I\'ve worked with for years turns each approved angle into finished statics, video, landers and emails every week. The longest campaign I ran tracked $523 million in sales.',
+    heroImage: '/images/services/creative-team.jpg',
+    heroImageAlt: 'A creative studio in motion with ad concepts on screens and a storyboard wall of campaign ideas',
+    definition: {
+      term: 'Full Creative Team',
+      text: 'A done-for-you creative and copy team that supplies a brand with its strategy, ad creative, landing pages and funnel copy on a retainer, so the brand gets agency volume without building an in-house team. Rob Palmer\'s creative team is led by Rob, a direct-response copywriter with 40+ years of experience and $523M in tracked results, who writes the angles and the control while a production team and an AI creative engine deliver the volume.',
+    },
+    heroStats: {
+      primary: { value: '$523M', label: 'In Tracked Client Results' },
+      secondary: [
+        { value: '40+', label: 'Years of Direct Response' },
+        { value: '300%', label: 'ROAS on a ClickBank Email Funnel' },
+        { value: '8%', label: 'Cold-Traffic VSL Funnel Conversion' },
+      ],
+    },
+    credentialBar: {
+      heading: 'A creative team for',
+      items: [
+        'DTC Brands Scaling on Meta',
+        'Supplement and Health Offers',
+        'ClickBank Platinum Vendors',
+        'Info-Product and Coaching Launches',
+        'Financial Publishers',
+        'Founders Replacing an Agency',
+      ],
+    },
+    sections: [
+      {
+        heading: 'Why Brands End Up Needing a Team, Not a Writer',
+        content:
+          'A winning ad on Meta used to run for a quarter. Since the Andromeda update it can fatigue in two or three weeks, because the system matches ads to people by reading the creative itself and rewards accounts that feed it more genuinely different concepts. The constraint moved from targeting to how many good angles you can get into the account, and how fast.\n\n' +
+          'That is more than one copywriter can produce alone, however good. Most agencies struggle with it too, because the strategist who wins the pitch hands the account to a junior writer, and every handoff between strategist, writer and editor loses a little of the idea. You pay senior rates for mid-level creative and a four-week turnaround.\n\n' +
+          'The brands that scale have one senior brain deciding what to test and writing the control, with a production team behind that brain delivering the volume. I run that team, and if you are weighing it against an agency I have written an honest comparison in <a href="/blog/is-a-copywriting-agency-worth-it">is a copywriting agency worth it</a>.',
+      },
+      {
+        heading: 'What the Team Delivers Each Month',
+        content:
+          'Every engagement runs the same loop. I do the research, find the angles and write the briefs and the control copy. The team produces the finished creative from those briefs, and we read the account together to decide the next round.',
+        bullets: [
+          '<strong>Strategy and angles.</strong> Customer language mined from reviews, forums, support logs and competitor ads; angles ranked by awareness level; a testing plan for the month.',
+          '<strong>Ad creative at volume.</strong> Statics, carousels, UGC-style scripts and AI-produced video, mini VSLs and long-form story ads, each concept in several formats, delivered weekly.',
+          '<strong>Landing pages and advertorials.</strong> The page each ad sends its traffic to, written to the same angle and built mobile-first by the team.',
+          '<strong>Funnel copy.</strong> VSL or TSL, order form, upsells and downsells, and the email flows, written by me so the whole funnel tells one story.',
+          '<strong>Compliance on every asset.</strong> Meta, Google, TikTok and FTC review built into the copy from the first line, which matters most in health, supplements and finance.',
+          '<strong>Weekly creative review.</strong> A short review of what ran and what the account said, with the decisions for the next round made together.',
+        ],
+      },
+      {
+        heading: 'How an Engagement Starts: The Four-Week Proof Flight',
+        content:
+          'Nobody should sign a six-month agency contract on a pitch deck. So the engagement starts with a four-week proof flight: a fixed set of finished creatives across the formats your account needs, one landing page, and a one-page measurement plan agreed before anything ships. At the end of the four weeks you have real account data on real creative, and you decide whether to move to a retainer.\n\n' +
+          'The retainer that follows runs monthly: new concepts every week, landers and advertorials per concept, funnel copy as the offer evolves, and a monthly results review where we set the next round together. For accounts at scale the retainer is paired with a percentage of ad spend, so the team is paid to grow the account rather than to fill a quota.\n\n' +
+          'You will have a fixed-price quote for the proof flight within 48 hours of the strategy call.',
+      },
+      {
+        heading: 'The Creative Engine Behind the Volume',
+        content:
+          'The volume comes from two things working together. The first is a production team I have worked alongside for years on offers that reached the top of ClickBank: video editors, designers, developers and project managers who already know how a direct-response ad is built. The second is an AI creative engine I built on Claude Code, with my own <a href="https://github.com/robpalmer99/claude-code-copywriting-skills" target="_blank" rel="noopener noreferrer">copywriting skills</a> and a 1,239-file library of frameworks, swipes and tested copy, which turns an approved angle into scripts, statics and AI video in days.\n\n' +
+          'I make every strategic call and write every control. The engine and the team carry the volume. What is generated is checked by a human before it ships, and nothing goes to your account that I have not read.\n\n' +
+          'If you already have editors, creators or a media buyer you like, the team works alongside them. I write the briefs and the scripts; your people or mine produce them; we review the results together.',
+      },
+      {
+        heading: 'Creative That Has Already Paid for Itself',
+        content:
+          'Ben Palmer, a ClickBank Platinum vendor, gets <strong>300% ROAS</strong> on the email-driven health funnel I wrote for him, with every email built on the same angle. The cold-traffic VSL funnel I wrote for Conor Reynolds converts at <strong>8%</strong> at the sales page. For Abundant, a long-form story-driven TSL took Facebook cold traffic to <strong>340% ROAS</strong>. Giacomo Fusari of Arte Riconquista needed only six of the 20 ad texts I supplied, and three of those produced what he called truly amazing results.\n\n' +
+          'The testing discipline behind all of it goes back to Belron, where I ran a direct-response campaign for nine years, kept putting new creative up against the control, and tracked <strong>$523 million</strong> in sales. Stefan Georgi hired me as Copy Chief inside Copy Accelerator to review and fix other professional copywriters\' work. Every number here came from paid traffic, where the creative either paid for itself or got turned off.',
+      },
+    ],
+    caseStudies: [
+      { name: 'Ben Palmer / ClickBank Platinum', category: 'Email-Driven Health Funnel', metric: '300% ROAS', detail: 'Angle, hooks and the full email funnel written as one argument.' },
+      { name: 'Conor Reynolds', category: 'Cold-Traffic VSL Funnel', metric: '8% CVR', detail: 'VSL and sales page built from the same angle map.' },
+      { name: 'Abundant', category: 'Info-Product TSL', metric: '340% ROAS', detail: 'Facebook cold traffic into a long-form story-driven page.' },
+      { name: 'Belron / Safelite', category: 'Nine-Year Direct-Response Control', metric: '$523M', detail: 'Nine years of new creative tested against the control.' },
+    ],
+    deliverablesHeading: 'What a Creative-Team Retainer Delivers',
+    deliverablesSubtext: 'Strategy and the control from me. Finished creative from the team, every week.',
+    deliverables: [
+      { title: 'Angle Map & Monthly Testing Plan', description: 'Customer language and competitor research turned into ranked angles and a plan for what ships, in what order, and what we read in the account.' },
+      { title: 'Weekly Ad Creative Drop', description: 'Statics, carousels, UGC-style and AI-produced video, mini VSLs and story ads, several formats per concept, ready to upload.' },
+      { title: 'Landers & Advertorials', description: 'A page per concept, written to the angle and built mobile-first, so the promise in the hook is the first thing a visitor sees.' },
+      { title: 'Funnel Copy', description: 'VSL or TSL, order form, upsells and downsells, email flows, written by me so every piece of the funnel tells one story.' },
+      { title: 'Compliance Review', description: 'Meta, Google, TikTok and FTC review on every asset before it ships, with compliant equivalents for any line that has to change.' },
+      { title: 'Weekly Creative Review', description: 'A short review of what ran, what the account said, and what the next round tests, with the decisions made together.' },
+    ],
+    testimonialIds: ['4', '38', '5', '15'],
+    portfolioItems: [
+      { title: 'DTC Supplement Meta Ad Concept Set', category: 'Ad Creative' },
+      { title: 'Health Offer Advertorial Pre-Sell', category: 'Advertorial' },
+      { title: 'Info Product Cold-Traffic Lander', category: 'Landing Page' },
+    ],
+    midCta: {
+      headline: 'Need agency volume without the agency handoff?',
+      subtext: 'Book a strategy call. Bring your ad account and your current winners, and I\'ll tell you what the first four weeks would ship and what it would cost. You\'ll have a fixed-price quote for the proof flight within 48 hours.',
+    },
+    faqs: [
+      {
+        question: 'What is a full creative team, and how is it different from hiring you as a copywriter?',
+        answer:
+          'When you hire me as a copywriter, you get one senior writer producing a defined asset: a VSL, a sales page, an email sequence. The creative team is for brands that need that senior judgment and far more output than one writer can produce: new ad concepts every week, landers per concept, and the funnel copy, all delivered on a retainer. I still write the angles and the control. A production team and an AI creative engine deliver the volume.',
+      },
+      {
+        question: 'How is this different from a copywriting or creative agency?',
+        answer:
+          'At an agency the senior strategist who wins the pitch rarely writes your creative, and every handoff between strategist, writer and editor loses part of the idea. Here the person who audits your account is the person who writes your briefs and your control, and the team only produces what I have already decided and written. You get agency throughput with no delegation gap. I have written an honest comparison in <a href="/blog/is-a-copywriting-agency-worth-it">is a copywriting agency worth it</a>.',
+      },
+      {
+        question: 'Who is on the team?',
+        answer:
+          'Video editors, designers, developers and project managers I have worked alongside for years on direct-response offers, including ones that reached the top of ClickBank, plus the AI creative engine I built on Claude Code. I lead the team, make every strategic call and write every control. Nothing reaches your account that I have not read.',
+      },
+      {
+        question: 'What is the four-week proof flight?',
+        answer:
+          'A fixed-scope first engagement: a set number of finished creatives across the formats your account needs, one landing page, and a measurement plan agreed before anything ships. After four weeks you have real account data on real creative and you decide whether to move to a monthly retainer. It exists so you never have to sign a long contract on a pitch.',
+      },
+      {
+        question: 'How many creatives do you deliver each month?',
+        answer:
+          'It depends on your spend and how fast your ads fatigue, so the number is set after the account audit rather than from a standard package. As a guide, an account spending enough to read results weekly needs new concepts every week, each in several formats. I would rather ship five genuinely different angles than twenty versions of one idea, because different angles are what teach the account something new.',
+      },
+      {
+        question: 'How is the creative team priced?',
+        answer:
+          'The proof flight is a flat fee for the creative and the management, quoted within 48 hours of the strategy call. The retainer that follows is a monthly fee for the agreed volume of concepts, pages and funnel copy, and for accounts at scale it is paired with a percentage of ad spend so the team is paid to grow the account. No hourly billing.',
+      },
+      {
+        question: 'Which platforms and verticals do you work in?',
+        answer:
+          'Meta is where most of the creative runs, with YouTube, native placements and the advertorials, landers and emails that follow the click. Verticals: DTC and ecommerce, health and supplements, ClickBank and info products, and financial publishing. Each has its own compliance rules and buyer psychology, and the team builds every concept for the platform and the vertical it will run on.',
+      },
+      {
+        question: 'Do you work alongside my in-house team, editors or media buyer?',
+        answer:
+          'Yes, and it is often the best setup. If you already have a media buyer, editors or UGC creators, I write the briefs and the scripts, your people or mine produce them, and we review the results together. The team works inside the tools you already use: Slack, Notion, Google Drive and whatever your editors run.',
+      },
+      {
+        question: 'How do you measure whether it is working?',
+        answer:
+          'We agree the numbers before anything ships: cost per acquisition and ROAS, with hook rate, hold rate and click-through rate as the early signals. The weekly review looks at which angles found buyers, which fatigued and why, and that decides the next round. Success means more winning concepts in rotation than when we started and an account that can take more spend.',
+      },
+      {
+        question: 'How do we get started?',
+        answer:
+          'Book a strategy call. Beforehand, send me access to your ad account, or screenshots of your current winners and their numbers. On the call we will go through what is working and whether the team is the right fit. If it is not, I will say so and point you to a better option. If we go ahead, the proof flight starts with the account audit and the angle map.',
+      },
+    ],
+    relatedServices: ['creative-strategist', 'direct-response-copywriter', 'vsl-copywriter', 'landing-page-copywriter', 'facebook-ads-copywriter'],
+    relatedVerticals: ['ecommerce-dtc-copywriter', 'health-supplement-copywriter', 'clickbank-copywriter'],
+  },
+  {
     title: 'Direct Response Copywriter',
     slug: 'direct-response-copywriter',
     tier: 'production',

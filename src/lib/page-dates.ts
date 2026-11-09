@@ -9,7 +9,7 @@
 export const STATIC_UPDATED: Record<string, string> = {
   '': '2026-10-19',
   '/about': '2026-10-19',
-  '/services': '2026-10-19',
+  '/services': '2026-11-10',
   '/verticals': '2026-03-01',
   '/case-studies': '2026-06-11',
   '/case-studies/belron-safelite-523m-campaign': '2026-06-12',
@@ -31,6 +31,7 @@ export const STATIC_UPDATED: Record<string, string> = {
 const SERVICE_UPDATED_DEFAULT = '2026-05-07'
 const SERVICE_UPDATED: Record<string, string> = {
   'creative-strategist': '2026-10-19',
+  'creative-team': '2026-11-10',
   'direct-response-copywriter': '2026-10-09',
   'ai-marketing-consultant': '2026-10-19',
   'conversion-rate-optimization': '2026-09-22',

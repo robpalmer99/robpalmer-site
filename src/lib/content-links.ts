@@ -169,6 +169,23 @@ const tagToService: Record<string, string> = {
   'creative strategist rates': 'creative-strategist',
   'creative strategist cost': 'creative-strategist',
   'performance creative': 'facebook-ads-copywriter',
+
+  // 2026-11 decision-stage content programme (docs/content/2026-11-content-plan.md).
+  'best vsl copywriters': 'vsl-copywriter',
+  'vsl copywriter for hire': 'vsl-copywriter',
+  'vsl copywriter': 'vsl-copywriter',
+  'video sales letter': 'vsl-copywriter',
+  'vsl vs tsl': 'vsl-copywriter',
+  tsl: 'sales-page-copywriter',
+  'text sales letter': 'sales-page-copywriter',
+  'vsl cost': 'vsl-copywriter',
+  'how much does a vsl cost': 'vsl-copywriter',
+  'vsl copywriter cost': 'vsl-copywriter',
+  'vsl script price': 'vsl-copywriter',
+  'is a copywriting agency worth it': 'creative-team',
+  'copywriting agency': 'creative-team',
+  'copywriting agency vs freelance': 'creative-team',
+  'creative team': 'creative-team',
 }
 
 const tagToVertical: Record<string, string> = {
@@ -198,6 +215,7 @@ const tagToVertical: Record<string, string> = {
 
 const serviceTitles: Record<string, string> = {
   'creative-strategist': 'Creative Strategist',
+  'creative-team': 'Full Creative Team',
   'vsl-copywriter': 'VSL Copywriter',
   'sales-page-copywriter': 'Sales Page Copywriter',
   'sales-letter-copywriter': 'Sales Letter Copywriter',
