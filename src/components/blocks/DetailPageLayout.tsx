@@ -34,6 +34,8 @@ export interface DetailPageLayoutProps {
   credentialBar?: { heading?: string; items: string[] }
   definition?: { term: string; text: string }
   sections: { heading: string; content: string; bullets?: string[] }[]
+  /** ISO date of the last substantive copy change; rendered as a visible "Updated" line above the first section. */
+  updated?: string
   caseStudies?: {
     name: string
     category: string
@@ -58,6 +60,15 @@ export interface DetailPageLayoutProps {
   relatedLinksSlot: ReactNode
 }
 
+function formatUpdated(iso: string): string {
+  return new Date(`${iso}T00:00:00Z`).toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  })
+}
+
 export function DetailPageLayout({
   headline,
   subheadline,
@@ -70,6 +81,7 @@ export function DetailPageLayout({
   credentialBar,
   definition,
   sections,
+  updated,
   caseStudies,
   deliverablesHeading,
   deliverablesSubtext,
@@ -209,6 +221,12 @@ export function DetailPageLayout({
       <Section>
         <Container>
           <div className="max-w-3xl mx-auto space-y-10">
+            {updated && (
+              <p className="text-sm text-paper-600 font-body">
+                Updated{' '}
+                <time dateTime={updated}>{formatUpdated(updated)}</time>
+              </p>
+            )}
             {sections.map((section, index) => (
               <FadeIn key={index} delay={index * 100}>
                 <div>

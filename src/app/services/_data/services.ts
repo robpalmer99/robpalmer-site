@@ -7,6 +7,8 @@ export interface Service {
   tier: 'strategy' | 'production'
   /** Overrides the Service JSON-LD serviceType (default 'Direct-Response Copywriting'). */
   schemaServiceType?: string
+  /** Starting fixed-price in USD; emitted as Offer.priceSpecification.minPrice in the Service JSON-LD. */
+  offerPriceFrom?: number
   shortDescription: string
   metaTitle: string
   metaDescription: string
@@ -589,12 +591,13 @@ export const services: Service[] = [
     title: 'VSL Copywriter',
     slug: 'vsl-copywriter',
     tier: 'production',
+    offerPriceFrom: 10000,
     shortDescription:
       'Video sales letters that hold cold traffic through the close. Recent client funnel: 8% on cold. Past VSLs at $30M, $40M, and $27M.',
     metaTitle: 'VSL Copywriter | 8% Cold-Traffic VSLs, $30M+ Campaigns',
     metaDescription:
       'Senior VSL copywriter for cold-traffic offers. Recent client funnel converting at 8% on cold; past VSLs at $30M, $40M, and $27M. Fixed-price engagements, two-week kickoffs.',
-    headline: 'VSL Copywriter — Cold Traffic Converting at 8%',
+    headline: 'VSL Copywriter: Cold Traffic Converting at 8%',
     subheadline:
       '"The funnel you wrote is doing great. Sales page converting at 8% on cold traffic." That\'s a recent client report. Three earlier VSLs of mine did $30M, $40M, and $27M on single offers. If your VSL bleeds attention before the close, this is the kind of work I do.',
     heroImage: '/images/services/vsl-copywriter.jpg',
@@ -619,54 +622,60 @@ export const services: Service[] = [
     },
     sections: [
       {
-        heading: 'Why Most VSLs Bleed Ad Spend Long Before the Close',
+        heading: 'Why do most VSLs lose viewers before the close?',
         content:
-          'You launch a VSL. You send traffic. Then you watch the heatmap: most viewers gone before the 90-second mark, the rest drifting off somewhere in the middle, almost nobody reaching the order button. Meanwhile, the spend keeps draining. $500/day, $2,000/day, $5,000/day in spend \u2014 lit on fire because the script can\'t hold the viewer to minute 3.\n\n' +
-          'Here\'s the structural reason that keeps happening. A VSL isn\'t a blog post read over slides. It\'s a 15-to-45-minute persuasion sequence that has to hold a cold, skeptical stranger through every minute and walk them to a credit card. That demands strategic pacing, pattern interrupts, emotional escalation, and knowing exactly when to pivot from story to offer.\n\n' +
-          'Most VSL copywriters carry one or two of those instincts. The ones whose VSLs keep scaling after the novelty wears off have all four \u2014 plus the AI leverage to generate and test hook variations at speed, plus a working swipe library that already knows what\'s converting in your vertical right now.',
+          'Most VSLs lose the viewer because the script was written as an article read over slides, with no retention architecture underneath it. A VSL has to re-earn attention every thirty seconds for fifteen to forty-five minutes, and that takes four instincts most writers carry one or two of. The fix is structural, which is why a rewrite that only polishes the words leaves the retention curve where it was.\n\n' +
+          'You launch a VSL. You send traffic. Then you watch the heatmap: most viewers gone before the 90-second mark, the rest drifting off somewhere in the middle, almost nobody reaching the order button. Meanwhile the spend keeps draining. $500 a day, $2,000 a day, $5,000 a day, lit on fire because the script can\'t hold the viewer to minute three.\n\n' +
+          'A VSL isn\'t a blog post read over slides. It\'s a 15-to-45-minute persuasion sequence that has to hold a cold, skeptical stranger through every minute and walk them to a credit card. That demands strategic pacing, pattern interrupts, emotional escalation, and knowing exactly when to pivot from story to offer. The writers whose VSLs keep scaling after the novelty wears off have all four, plus the AI leverage to generate and test hook variations at speed, plus a working swipe library that already knows what\'s converting in your vertical right now.',
       },
       {
-        heading: 'What 8% on Cold Traffic Actually Looks Like',
+        heading: 'What does a VSL converting at 8% on cold traffic look like?',
         content:
-          'Recent client report, verbatim: <em>"The funnel you wrote is doing great. Sales page converting at 8% on cold traffic."</em> That\'s Conor Reynolds, an online marketer running paid traffic to a VSL-plus-sales-page funnel I wrote for him.\n\n' +
-          '8% on cold isn\'t a lucky split test. It\'s the predictable outcome of doing the strategic work upfront \u2014 finding the audience\'s actual buying language (not the language they think they use), building a unique mechanism that reframes what the offer is solving, and mapping the sequence to where the prospect sits on Schwartz\'s awareness scale.\n\n' +
-          'When a VSL is architected that way, ROAS follows. Ben Palmer (a ClickBank Platinum vendor) clocked <strong>300% ROAS</strong> on a campaign I wrote for him. Stefan Georgi \u2014 the copywriter behind over $1B in tracked sales \u2014 hired me as Copy Chief inside Copy Accelerator\'s CA Labs. Justin Goff publicly credited me with stepping up and knocking it out of the park. These are operators with their own money on the line.',
+          'It looks like a recent client funnel I wrote for Conor Reynolds, an online marketer running paid traffic to a VSL-plus-sales-page funnel. His report, verbatim: <em>"The funnel you wrote is doing great. Sales page converting at 8% on cold traffic."</em> The number came from research-led buying language, a unique mechanism and an entry point matched to the viewer\'s awareness, and that\'s why the result repeats.\n\n' +
+          '8% on cold isn\'t a lucky split test. It\'s the predictable outcome of doing the strategic work upfront: finding the audience\'s actual buying language (not the language they think they use), building a unique mechanism that reframes what the offer is solving, and mapping the sequence to where the prospect sits on Schwartz\'s awareness scale.\n\n' +
+          'When a VSL is architected that way, ROAS follows. Ben Palmer (a ClickBank Platinum vendor) clocked <strong>300% ROAS</strong> on a campaign I wrote for him. Stefan Georgi, the copywriter behind over $1B in tracked sales, hired me as Copy Chief inside Copy Accelerator\'s CA Labs. Justin Goff publicly credited me with stepping up and knocking it out of the park. These are operators with their own money on the line.',
       },
       {
-        heading: 'The VSLs Behind $30M, $40M, and $27M Offers',
+        heading: 'Which VSLs have you written, and what did they do?',
         content:
-          'Mobile Profits \u2014 the biz-op VSL I wrote that became the <strong>#1 offer on ClickBank</strong> \u2014 generated over <strong>$30 million</strong> and converted up to 4% on cold traffic. The Gluco 6 blood-sugar VSL did <strong>$40 million</strong>. A stock-investing VSL I architected did <strong>$27 million</strong>.\n\n' +
-          'Those numbers don\'t come from a clever turn of phrase. They come from reading a market, finding the angle nobody else has spotted, and building a script that earns every minute of attention it asks for. After 40+ years writing direct response \u2014 internalising the lineage from Schwartz, Halbert, and Hopkins through Georgi\'s RMBC method and Kell\'s VSL flow patterns \u2014 the structural problems in a script are visible to me the way a bad engine is audible to a mechanic. The diagnostic alone is worth more than another draft.',
+          'Mobile Profits, the biz-op VSL that became the <strong>#1 offer on ClickBank</strong>, generated over <strong>$30 million</strong> and converted up to 4% on cold traffic. The Gluco 6 blood-sugar VSL did <strong>$40 million</strong>. A stock-investing VSL I architected did <strong>$27 million</strong>. All three ran on cold traffic, in three different verticals.\n\n' +
+          'Those numbers don\'t come from a clever turn of phrase. They come from reading a market, finding the angle nobody else has spotted, and building a script that earns every minute of attention it asks for. After 40+ years writing direct response, internalising the lineage from Schwartz, Halbert and Hopkins through Georgi\'s RMBC method and Kell\'s VSL flow patterns, the structural problems in a script are visible to me the way a bad engine is audible to a mechanic. The diagnostic alone is worth more than another draft.',
       },
       {
-        heading: 'Already Have a VSL? I Work as a Control Beater',
+        heading: 'Can you rewrite a VSL that is already running?',
         content:
+          'Yes, and a control-beat is often the fastest win available. I start with your retention curve and your back-end numbers, find the minute where viewers leave, and rewrite that section and whatever feeds it, rather than starting from a blank page. Send me the current script and the numbers and I\'ll tell you on the strategy call whether I think I can beat it.\n\n' +
           'If you have a VSL running and the numbers aren\'t where you need them, the answer usually isn\'t "write another version." It\'s to diagnose what\'s killing the retention curve, then engineer the rewrite to fix that specifically.\n\n' +
-          'Most operators arrive here after trying the wrong fixes \u2014 a junior writer who delivered a draft that read well and sold worse, an AI tool that produced something polished and generic, an agency that staffed it to whoever was free. None of those approaches is wrong because the people are bad. They\'re wrong because the structure was missing one of the three brains a VSL needs to convert in 2026.\n\n' +
-          'Send me your current script and the back-end numbers. I\'ll tell you on the strategy call exactly where it\'s losing the prospect \u2014 and whether I think I can beat it.',
+          'Most operators arrive here after trying the wrong fixes: a junior writer who delivered a draft that read well and sold worse, an AI tool that produced something polished and generic, an agency that staffed it to whoever was free. None of those approaches is wrong because the people are bad. They\'re wrong because the structure was missing one of the three brains a VSL needs to convert in 2026.',
       },
       {
-        heading: 'How I Architect a VSL That Holds Attention Through the Close',
+        heading: 'How do you write a VSL?',
         content:
-          'Every VSL I write moves through the same four phases. None are optional. This is the actual work \u2014 not a "process" page filling space.',
+          'In four phases over two to four weeks: research, architecture, writing and production handoff. None is optional, and the research phase is where the conversion rate comes from. The research pass runs on Claude Code with my own copywriting skills and a 1,239-file library of frameworks and swipes, which is how it covers 50+ competitor VSLs in the time a manual pass reads three (I\'ve written up <a href="/blog/claude-code-vs-chatgpt-for-copywriting">why that beats a chat window</a>). I make every strategic and structural call myself.',
         bullets: [
-          'Phase 1 \u2014 Research: I mine forums, reviews, competitor scripts, and customer-support transcripts to find the exact words your prospects use to describe the pain. The hook comes out of this layer, not out of a brainstorm. My AI workflow runs through 50+ competitor VSLs in the time a manual pass takes to read three.',
-          'Phase 2 \u2014 Architecture: I build the unique mechanism, lock the awareness-stage entry point, and map the sequence that carries viewers from hook to close without losing momentum at minute 6, minute 12, or the price reveal.',
-          'Phase 3 \u2014 Writing: every sentence stress-tested against one question \u2014 would this keep a cold, skeptical viewer watching? If not, it gets cut or rewritten. Three to four hook variations and two close variations are written from the start, not bolted on later.',
-          'Phase 4 \u2014 Production handoff: full slide-by-slide notation, timing cues, on-screen text callouts. Your editor doesn\'t have to interpret anything. The script ships ready to record.',
+          'Phase 1, Research: I mine forums, reviews, competitor scripts and customer-support transcripts to find the exact words your prospects use to describe the pain. The hook comes out of this layer, not out of a brainstorm.',
+          'Phase 2, Architecture: I build the unique mechanism, lock the awareness-stage entry point, and map the sequence that carries viewers from hook to close without losing momentum at minute 6, minute 12 or the price reveal.',
+          'Phase 3, Writing: every sentence stress-tested against one question. Would this keep a cold, skeptical viewer watching? If not, it gets cut or rewritten. Three to four hook variations and two close variations are written from the start, not bolted on later.',
+          'Phase 4, Production handoff: full slide-by-slide notation, timing cues, on-screen text callouts. Your editor doesn\'t have to interpret anything. The script ships ready to record.',
         ],
       },
       {
-        heading: 'VSLs Across Health, Finance, Biz-Op, and DTC',
+        heading: 'How much does a VSL copywriter cost?',
         content:
-          'A VSL for a joint supplement is built differently than a VSL for a stock newsletter or a DTC launch. The compliance constraints differ, the buyer psychology differs, the regulators reading along differ. I\'ve shipped winning VSLs across every major DR vertical.',
+          'My VSL engagements are fixed-price and start at $10,000, with a quote within 48 hours of the strategy call. Across the market, senior writers with eight-figure VSLs behind them charge $20,000 to $50,000 or more for a script, often with a 3 to 5 percent royalty on net sales, and on the right offer I\'ll take a lower base plus a share of what the script produces. The full breakdown, including what moves the price, is in my guide to <a href="/blog/how-much-does-a-vsl-cost">how much a VSL costs</a>.\n\n' +
+          'The framing that matters: a VSL converting at 2% instead of 0.5% on the same traffic doesn\'t pay for itself, it changes the economics of the offer. On a funnel spending $50,000 a month, that gap is worth more than the biggest script fee on the table, every month the control runs. If you\'re still shortlisting writers, my guide to <a href="/blog/hire-a-vsl-copywriter">hiring a VSL copywriter</a> covers what to send, what to ask and the red flags.',
+      },
+      {
+        heading: 'What industries do you write VSLs for?',
+        content:
+          'Health and supplements, financial publishing, business opportunity, e-commerce and DTC, ClickBank offers, info products and coaching. A VSL for a joint supplement is built differently from a VSL for a stock newsletter or a DTC launch, because the compliance constraints, the buyer psychology and the regulators reading along all differ. I\'ve shipped winning VSLs across every major direct-response vertical.',
         bullets: [
-          '$40M generated \u2014 Gluco 6 blood-sugar supplement VSL',
-          '$30M generated \u2014 Mobile Profits biz-op VSL (#1 on ClickBank)',
-          '$27M generated \u2014 stock-investing newsletter VSL (compliance-aware long-form)',
+          '$40M generated: Gluco 6 blood-sugar supplement VSL',
+          '$30M generated: Mobile Profits biz-op VSL (#1 on ClickBank)',
+          '$27M generated: stock-investing newsletter VSL (compliance-aware long-form)',
           'E-commerce and DTC product launches',
           'ClickBank vendors and affiliates',
-          'Info products, coaching, and high-ticket offers',
+          'Info products, coaching and high-ticket offers',
         ],
       },
     ],
@@ -724,23 +733,23 @@ export const services: Service[] = [
     ],
     deliverablesHeading: 'What You Get When You Hire Me',
     deliverablesSubtext:
-      'Every deliverable is engineered to maximize your front-end conversion rate \u2014 not just fill a Google Doc.',
+      'Every deliverable is engineered to maximize your front-end conversion rate, not just fill a Google Doc.',
     testimonialIds: ['5', '4', '2', '3', '6'],
     portfolioItems: [
-      { title: 'Supplement VSL \u2014 Cold Traffic', category: 'VSL' },
+      { title: 'Supplement VSL: Cold Traffic', category: 'VSL' },
       { title: 'Financial Newsletter VSL', category: 'VSL' },
       { title: 'DTC Product Launch VSL', category: 'VSL' },
     ],
     midCta: {
       headline: 'Ready to ship a VSL that converts cold traffic?',
       subtext:
-        'Book a free strategy call. I\'ll tell you honestly whether I can beat what you\'re running now \u2014 and what it would cost to find out.',
+        'Book a free strategy call. I\'ll tell you honestly whether I can beat what you\'re running now, and what it would cost to find out.',
     },
     faqs: [
       {
         question: 'What is a VSL and why do I need a specialist VSL copywriter?',
         answer:
-          'A VSL (Video Sales Letter) is a long-form video presentation \u2014 typically 15 to 45 minutes \u2014 designed to sell directly to cold traffic. It runs a structured direct-response sequence: hook, story, mechanism, proof stack, offer, close. You need a specialist because the format demands pacing, retention mechanics, and persuasion architecture that general copywriters don\'t carry in their heads. A brand writer gives you a script that sounds nice. A VSL specialist gives you one that earns the next 30 seconds of attention, every 30 seconds, until the order button.',
+          'A VSL (Video Sales Letter) is a long-form video presentation, typically 15 to 45 minutes, designed to sell directly to cold traffic. It runs a structured direct-response sequence: hook, story, mechanism, proof stack, offer, close. You need a specialist because the format demands pacing, retention mechanics, and persuasion architecture that general copywriters don\'t carry in their heads. A brand writer gives you a script that sounds nice. A VSL specialist gives you one that earns the next 30 seconds of attention, every 30 seconds, until the order button.',
       },
       {
         question: 'Are you taking new VSL clients?',
@@ -750,32 +759,32 @@ export const services: Service[] = [
       {
         question: 'How do you use AI to write VSLs?',
         answer:
-          'I don\'t use generic ChatGPT prompting. I use Claude Code augmented by my own custom-built copywriting skills \u2014 proprietary skill files that encode 40 years of frameworks, hook formulas, and evaluation criteria into a working AI workflow, with my 1,239-file Obsidian copywriting brain as the reference layer. I make every strategic and structural call. The AI carries the volume.',
+          'I don\'t use generic ChatGPT prompting. I use Claude Code with my own copywriting skills, which are skill files that encode 40 years of frameworks, hook formulas and evaluation criteria into a working AI workflow, with my 1,239-file copywriting library as the reference layer. I make every strategic and structural call. The AI carries the research volume and the variations, and a review and compliance pass runs on every draft before I read it.',
       },
       {
         question: 'What does a VSL cost?',
         answer:
-          'VSL engagements are fixed-price. The number depends on length, offer complexity, and research scope. You\'ll have a clear quote within 48 hours of the strategy call. No hourly billing, no scope creep, no surprises. Here\'s the framing that matters: a VSL converting at 2% instead of 0.5% on the same traffic doesn\'t pay for itself \u2014 it changes the economics of the offer.',
+          'VSL engagements are fixed-price and start at $10,000. The number depends on length, offer complexity and research scope, and on the right offer I\'ll take a lower base plus a share of net sales. You\'ll have a clear quote within 48 hours of the strategy call, with no hourly billing and no scope creep. The framing that matters: a VSL converting at 2% instead of 0.5% on the same traffic doesn\'t just pay for itself, it changes the economics of the offer.',
       },
       {
         question: 'How long does it take to write a VSL?',
         answer:
-          'A typical VSL takes 2\u20134 weeks from kickoff to final draft. That includes audience research, competitive teardown, mechanism development, strategic architecture, scripting, and one revision round. Rush timelines are possible, but I never shortcut the research phase \u2014 that\'s where the conversion rate lives. Skipping research to save a few days is how a VSL ends up bleeding ad spend for months.',
+          'A typical VSL takes 2\u20134 weeks from kickoff to final draft. That includes audience research, competitive teardown, mechanism development, strategic architecture, scripting, and one revision round. Rush timelines are possible, but I never shortcut the research phase, because that\'s where the conversion rate lives. Skipping research to save a few days is how a VSL ends up bleeding ad spend for months.',
       },
       {
         question: 'How long should a VSL be?',
         answer:
-          'Length is dictated by price point and traffic temperature. Short-form VSLs (5\u201315 minutes) work for lower-priced impulse buys and lead generation. Long-form VSLs (20\u201345 minutes) are usually required for higher-ticket offers where the prospect needs more proof and more story before pulling out a card. I\'ll recommend the right length once I\'ve seen the offer \u2014 then write every second to earn its place.',
+          'Length is dictated by price point and traffic temperature. Short-form VSLs (5\u201315 minutes) work for lower-priced impulse buys and lead generation. Long-form VSLs (20\u201345 minutes) are usually required for higher-ticket offers where the prospect needs more proof and more story before pulling out a card. I\'ll recommend the right length once I\'ve seen the offer, then write every second to earn its place.',
       },
       {
         question: 'What industries do you write VSLs for?',
         answer:
-          'Health and supplement (including the $40M Gluco 6 VSL), financial publishers ($27M stock-investing VSL), business opportunity offers ($30M Mobile Profits \u2014 #1 on ClickBank), e-commerce and DTC, ClickBank vendors, info products, and coaching. Each vertical has its own compliance posture and buyer psychology. The frameworks adapt accordingly.',
+          'Health and supplement (including the $40M Gluco 6 VSL), financial publishers ($27M stock-investing VSL), business opportunity offers ($30M Mobile Profits, #1 on ClickBank), e-commerce and DTC, ClickBank vendors, info products, and coaching. Each vertical has its own compliance posture and buyer psychology. The frameworks adapt accordingly.',
       },
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and strategic diagnostic, then architecture, then the script, then one revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and strategic diagnostic, then architecture, then the script, then one revision round. You\'ll see the work as it\'s built, not as a single drop at the end.',
       },
     ],
     relatedServices: ['creative-strategist', 'sales-page-copywriter', 'sales-funnel-copywriter'],
@@ -974,7 +983,7 @@ export const services: Service[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and strategic diagnostic, then objection mapping and architecture, then the page draft, then one revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and strategic diagnostic, then objection mapping and architecture, then the page draft, then one revision round. You\'ll see the work as it\'s built, not as a single drop at the end.',
       },
     ],
     relatedServices: ['creative-strategist', 'vsl-copywriter', 'landing-page-copywriter'],
@@ -1173,7 +1182,7 @@ export const services: Service[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and voice work, then architecture, then the letter draft, then one revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and voice work, then architecture, then the letter draft, then one revision round. You\'ll see the work as it\'s built, not as a single drop at the end.',
       },
     ],
     relatedServices: ['creative-strategist', 'sales-page-copywriter', 'email-copywriter'],
@@ -1365,7 +1374,7 @@ export const services: Service[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and audit, then sequence architecture, then the email drafts, then one revision round across the full sequence. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is research and audit, then sequence architecture, then the email drafts, then one revision round across the full sequence. You\'ll see the work as it\'s built, not as a single drop at the end.',
       },
     ],
     relatedServices: ['creative-strategist', 'sales-funnel-copywriter', 'upsell-downsell-copywriter'],
@@ -1562,7 +1571,7 @@ export const services: Service[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is audience and angle research, then hook library and architecture, then the finished ads with platform-specific tuning, then a testing roadmap. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is audience and angle research, then hook library and architecture, then the finished ads with platform-specific tuning, then a testing roadmap. You\'ll see the work as it\'s built, not as a single drop at the end.',
       },
     ],
     relatedServices: ['creative-strategist', 'facebook-ads-copywriter', 'landing-page-copywriter'],
@@ -1764,7 +1773,7 @@ export const services: Service[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is traffic-source analysis and message-match audit, then single-action architecture, then page writing with above-the-fold variations, then one revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is traffic-source analysis and message-match audit, then single-action architecture, then page writing with above-the-fold variations, then one revision round. You\'ll see the work as it\'s built, not as a single drop at the end.',
       },
     ],
     relatedServices: ['creative-strategist', 'ad-copywriter', 'sales-page-copywriter'],
@@ -1964,7 +1973,7 @@ export const services: Service[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is funnel diagnostic and audience research, then persuasion-arc architecture, then page-by-page writing, then one revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is funnel diagnostic and audience research, then persuasion-arc architecture, then page-by-page writing, then one revision round. You\'ll see the work as it\'s built, not as a single drop at the end.',
       },
     ],
     relatedServices: ['creative-strategist', 'vsl-copywriter', 'email-copywriter', 'upsell-downsell-copywriter'],
@@ -2162,7 +2171,7 @@ export const services: Service[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is back-end diagnostic and buyer-psychology mapping, then sequence architecture, then page-by-page writing, then one revision round. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is back-end diagnostic and buyer-psychology mapping, then sequence architecture, then page-by-page writing, then one revision round. You\'ll see the work as it\'s built, not as a single drop at the end.',
       },
     ],
     relatedServices: ['creative-strategist', 'sales-funnel-copywriter', 'email-copywriter'],
@@ -2755,7 +2764,7 @@ export const services: Service[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is audience and angle research (including Meta Ad Library mining), then hook library and architecture, then the finished ads with placement-specific tuning and compliance review, then a testing roadmap. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is audience and angle research (including Meta Ad Library mining), then hook library and architecture, then the finished ads with placement-specific tuning and compliance review, then a testing roadmap. You\'ll see the work as it\'s built, not as a single drop at the end.',
       },
     ],
     relatedServices: ['creative-strategist', 'ad-copywriter', 'landing-page-copywriter'],
@@ -2955,7 +2964,7 @@ export const services: Service[] = [
       {
         question: 'What happens after the strategy call?',
         answer:
-          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is full-funnel audit and analytics ingestion, then copy-leak diagnosis and prioritization, then test-ready rewrites, then the testing roadmap. You\'ll see the work as it\'s built \u2014 not as a single drop at the end.',
+          'Within 48 hours of the call, you\'ll have a fixed-price proposal with full scope, deliverables, and timeline. If you say yes, kickoff is inside two weeks. The first phase is full-funnel audit and analytics ingestion, then copy-leak diagnosis and prioritization, then test-ready rewrites, then the testing roadmap. You\'ll see the work as it\'s built, not as a single drop at the end.',
       },
     ],
     relatedServices: ['creative-strategist', 'sales-funnel-copywriter', 'landing-page-copywriter'],

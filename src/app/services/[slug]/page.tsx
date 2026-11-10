@@ -69,8 +69,20 @@ export default async function ServicePage({ params }: ServicePageProps) {
     serviceType: service.schemaServiceType ?? 'Direct-Response Copywriting',
     offers: {
       '@type': 'Offer',
-      description: 'Fixed-price engagements — retainer or project. Quote within 48 hours of a strategy call.',
+      description: service.offerPriceFrom
+        ? `Fixed-price engagements from $${service.offerPriceFrom.toLocaleString('en-US')} USD. Quote within 48 hours of a strategy call.`
+        : 'Fixed-price engagements — retainer or project. Quote within 48 hours of a strategy call.',
       url: `${SITE_URL}/call`,
+      ...(service.offerPriceFrom
+        ? {
+            priceCurrency: 'USD',
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              minPrice: service.offerPriceFrom,
+              priceCurrency: 'USD',
+            },
+          }
+        : {}),
     },
   }
 
@@ -108,6 +120,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
         heroCta={{ label: 'Book a Strategy Call', href: '/call' }}
         breadcrumbParent={{ label: 'Services', href: '/services' }}
         breadcrumbLabel={service.title}
+        updated={serviceUpdated(slug)}
         heroImage={service.heroImage}
         heroImageAlt={service.heroImageAlt}
         heroStats={service.heroStats}

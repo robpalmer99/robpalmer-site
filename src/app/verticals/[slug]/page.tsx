@@ -106,6 +106,7 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
         heroCta={vertical.heroCta ?? { label: 'Book a Strategy Call', href: '/call' }}
         breadcrumbParent={{ label: 'Verticals', href: '/verticals' }}
         breadcrumbLabel={vertical.title}
+        updated={verticalUpdated(slug)}
         heroImage={vertical.heroImage}
         heroImageAlt={vertical.heroImageAlt}
         heroStats={vertical.heroStats}

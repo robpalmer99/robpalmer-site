@@ -1,0 +1,191 @@
+---
+title: "Claude Code vs ChatGPT for Copywriting: Which One Should You Use in 2026?"
+metaTitle: "Claude Code vs ChatGPT for Copywriting: Honest Comparison"
+description: "Claude Code vs ChatGPT for copywriting, compared by a working direct-response copywriter who uses both: skills vs prompts, files, review loops, compliance, cost, and which to pick for ads, VSLs and sales pages."
+date: "2026-11-10"
+updated: "2026-11-10"
+category: "AI Copywriting"
+tags: ["claude code vs chatgpt", "claude vs chatgpt for copywriting", "best ai for copywriting", "Claude Code", "ChatGPT", "AI copywriting", "Claude Code skills", "AI copywriting workflow"]
+published: true
+heroImage: "/images/blog/claude-code-vs-chatgpt-for-copywriting.jpg"
+heroAlt: "Two screens side by side on a copywriter's desk, one running a terminal agent and one running a chat window, with a printed sales page between them"
+faqs:
+  - question: "Is Claude Code or ChatGPT better for copywriting?"
+    answer: "For copy that has to convert, Claude Code is better, because it follows skill files, reads your research from disk and runs a draft, review and compliance pass as one job. ChatGPT is better for fast ideation, quick rewrites and teams that need a familiar chat window with no setup. Most professional copywriters who use both run Claude Code for production copy and ChatGPT for brainstorming."
+  - question: "What is the difference between Claude Code and ChatGPT?"
+    answer: "ChatGPT is a chat assistant. You type a prompt and get a reply, with Projects, custom GPTs and file uploads to add context. Claude Code is an agent that runs in your terminal, desktop or IDE. It reads and writes files, runs tools and follows skill files, so it can carry out a multi-step process, such as mining reviews, drafting ads, reviewing them and checking compliance, from one instruction."
+  - question: "Can ChatGPT use Claude Code skills?"
+    answer: "Partly. A skill is a markdown file, so you can paste its body into a custom GPT's instructions, subject to the 8,000-character cap, or attach it as a knowledge file. You lose the staged loading, the file access and the ability to chain skills. OpenAI's Codex, the agent counterpart to ChatGPT, reads the same Agent Skills format from a .agents/skills folder, so skills written for Claude Code run there with little change."
+  - question: "Does ChatGPT or Claude write better sales copy?"
+    answer: "Out of the box, both produce competent, generic marketing copy with the same tells: balanced sentences, stacked triplets and the reflexive negation pattern. The difference comes from method, not model. Claude Code with a copywriting skill installed writes to a framework, an awareness level and a voice file every time, and reviews its own draft before you read it. ChatGPT with a strong prompt can match a single draft, but not the repeatability."
+  - question: "How much does Claude Code cost compared with ChatGPT?"
+    answer: "Prices checked 10 November 2026. Claude Pro is $20 a month, or $17 billed annually, and includes Claude Code. Claude Max is $100 and Ultra is $200. ChatGPT Plus is $20 a month and ChatGPT Pro starts at $100, with a $200 tier above it. At the entry tier the two cost the same; the difference is what the $20 buys."
+  - question: "Do I need to know how to code to use Claude Code for copywriting?"
+    answer: "No. Claude Code runs from a terminal window or the desktop app, and the only command most copywriters ever type is the name of a skill followed by a brief. Installing a skill means copying a folder into .claude/skills. If you can organise files in folders, you can run it. Anthropic built it for engineers, which is why it reads files and runs long jobs, but nothing about copywriting work requires code."
+  - question: "What is a Claude Code skill for copywriting?"
+    answer: "A skill is a folder containing a SKILL.md file that tells Claude how to do one job: write a Meta ad to a given structure, review a sales page against named criteria, check copy against platform rules. Claude loads it when the task matches the description. Free copywriting skills exist for direct-response copy, ad copy, landing pages, copy review and compliance, and they follow the same open Agent Skills format Anthropic publishes."
+  - question: "Can I use ChatGPT custom GPTs instead of Claude Code skills?"
+    answer: "A custom GPT is the closest thing ChatGPT has, and for a single repeatable job it works well. The limits are an 8,000-character instruction box, a fixed set of knowledge files, no access to your working folders, and no way to chain one GPT into another. A skill has no length cap, reads other files and scripts alongside it, and hands its output to the next skill in the chain."
+  - question: "Which AI tool do professional copywriters use?"
+    answer: "The working copywriters I know use both, with a split. ChatGPT or Claude's chat app for research summaries, headline brainstorms and quick rewrites. Claude Code, or increasingly Codex, for production copy, because the skill files let them encode their own method and the agent runs it the same way every time. The model matters less than whether your process is written down in a file the tool can follow."
+  - question: "Should I hire a copywriter who uses Claude Code?"
+    answer: "Hire the copywriter for the record, then ask how they use AI. A writer running Claude Code with their own skills and research library can produce more tested variations, faster, without the quality drop a chat window produces. A writer pasting prompts into ChatGPT is producing the average of the internet with their name on it. The question to ask on the call is what method the AI follows, and whether you can read it."
+---
+
+Every week a brand owner asks me the same question in a different form. Should the team be on ChatGPT or Claude? Is Claude Code worth the learning curve for copy? Is there any real difference, or is this a fan argument? I use both every working day, on client funnels with real spend behind them, so here's the comparison I'd give a friend who was about to pick one.
+
+The honest version has a twist in it. The useful comparison isn't Claude versus GPT as models. The models trade places every few months. The comparison that matters for copy is a chat window versus an agent that follows a method. ChatGPT is the best-known chat window. Claude Code is the agent I run my [copywriting skills](/blog/claude-code-copywriting-skills) on. That difference decides which one writes copy that converts.
+
+<KeyTakeaways>
+- For production copy that has to convert, Claude Code wins, because it follows skill files, reads your research from disk and runs draft, review and compliance as one job
+- For ideation and quick rewrites, or a team that wants zero setup, ChatGPT wins, because a chat window is still the faster way to think out loud
+- Out of the box both models write the same generic marketing copy. The gap comes from method, and only one of the two tools runs a method from a file
+- Entry pricing is identical at $20 a month. Claude Pro includes Claude Code; ChatGPT Plus includes Projects and custom GPTs
+- A custom GPT is the nearest ChatGPT equivalent of a skill, capped at 8,000 characters of instructions. OpenAI's Codex reads real Agent Skills, so the gap is closing from that side
+</KeyTakeaways>
+
+## The short answer
+
+Use Claude Code if you write copy for a living or run paid traffic and need creative at volume that stays in your voice and inside platform rules. Use ChatGPT if you want a thinking partner for research and headlines, or your team won't tolerate a terminal.
+
+If you're choosing one tool for a marketing team, pick Claude Code and install the [copywriting skills](/blog/best-claude-code-skills-for-copywriting) on day one. If you're a founder writing your own emails on a Sunday night, ChatGPT or Claude's chat app with a good prompt is enough, and I wrote the [ChatGPT workflow](/blog/chatgpt-for-copywriting) I'd use for that.
+
+## What each tool actually is
+
+<DefinitionBox term="Claude Code">
+Anthropic's agent for the terminal, desktop app, web and IDE. It reads and writes files on your machine, runs tools and follows skill files, which are folders holding a SKILL.md that describes how to do one job. Included with the Claude Pro, Max and Ultra plans. The same skills also run in the Claude chat app and through the API.
+</DefinitionBox>
+
+**ChatGPT** is a chat assistant with layers added on top. Projects let you keep files and instructions together across chats. Custom GPTs let you package a set of instructions and knowledge files into a named assistant. Codex is OpenAI's agent for software work, available from the Plus plan up with expanded usage on Pro. For most copywriters, ChatGPT means the chat window and perhaps a custom GPT.
+
+**Claude Code** was built for engineers, and most of its users are engineers. Three things about it matter for copy and none of them involve code. It follows skills, so your method lives in a file rather than in a prompt you retype. It reads your files, so your reviews, your winning ads and your brand rules are on disk and read before it writes. It runs the whole job, so one instruction can mine the research, draft twelve hooks, review them and check compliance, and save the result where you asked.
+
+The fair counterpart to Claude Code on the OpenAI side is Codex, not ChatGPT. Codex now reads the same Agent Skills format from a `.agents/skills` folder. I'll come back to that, because it changes the advice for anyone already paying OpenAI.
+
+## Claude Code vs ChatGPT, head to head
+
+<ComparisonTable
+  caption="Claude Code vs ChatGPT for copywriting work, checked 10 November 2026"
+  headers='["Dimension", "ChatGPT", "Claude Code"]'
+  rows='[["How your method is stored", "A prompt you paste, a Project instruction, or a custom GPT capped at 8,000 characters", "A skill folder of any length, loaded when the task matches, chainable with other skills"],["Access to your research", "Files uploaded to a chat or Project, re-attached when they fall out of context", "Reads any folder on disk: reviews, tickets, swipe file, brand rules, past controls"],["Multi-step work", "One reply per prompt; you drive each step", "One instruction runs research, draft, review and compliance and saves the output"],["Voice consistency", "Drifts between chats unless you re-prompt", "A brand-voice skill applies every time without being asked"],["Copy review", "Ask it to critique its own draft in the same chat", "A separate review skill grades the draft against named criteria before you see it"],["Compliance", "Manual: you ask and hope it remembers the rules", "A compliance skill runs the platform and FTC checks as a pass"],["Volume", "Good for one piece at a time", "Built for ten to thirty concepts in a sitting, each written to the same method"],["Setup", "None", "Thirty minutes: install, copy skills into a folder, point it at your files"],["Learning curve", "Lowest of any tool", "A terminal or desktop window; no code, but a different habit"],["Best for", "Ideation, research summaries, quick rewrites, non-technical teams", "Production copy at volume for paid traffic, agencies, in-house creative teams"]]'
+/>
+
+The table flatters neither tool. ChatGPT is a better place to think. Claude Code is a better place to produce. Most of the argument online comes from people who want one tool to be both.
+
+## Where ChatGPT wins
+
+**Thinking out loud.** When I'm stuck on an angle, I want a fast back-and-forth, and a chat window is the right shape for that. Twenty headline variations, a list of objections from the customer's side, a summary of a competitor's funnel I've pasted in. ChatGPT does this well and so does Claude's chat app. Neither needs an agent.
+
+**Zero setup.** A founder or a junior marketer opens a browser and starts. Nothing to install and nothing to copy into a folder. For a team that has never used anything beyond a chat window, that matters more than any feature.
+
+**Familiarity.** More people in most companies have used ChatGPT than any other AI tool. Training a team on it is a lunch session. Training a team on an agent is a week, and someone has to own the skill files.
+
+**Custom GPTs for one repeatable job.** If you need a single assistant that writes product descriptions in your voice from a spec, a custom GPT with your style guide as a knowledge file does it, and you can share it with the team. The 8,000-character limit on instructions is the ceiling you'll hit, and you'll hit it the first time you try to encode a real framework.
+
+## Where Claude Code wins
+
+**It follows a method.** This is the whole argument. A skill is a method for one job, written once. Write a Meta ad to this structure, at this awareness level, with these words banned. Review a page on big idea, lead, mechanism, offer and close. Check this script against Meta and FTC rules. Install the skill, call it by name, and the output stops being the model's taste and starts being yours. The [five skills I open-sourced](/blog/claude-code-copywriting-skills) encode forty years of the method I'd otherwise have to re-explain in every prompt.
+
+**It reads your files.** The best copy comes from the customer's own words. Point Claude Code at a folder of reviews and support tickets and it reads them before it writes. Point it at your ten best-performing ads and it learns the voice from the evidence. A chat window has to be told everything each time, and it forgets as the conversation gets long.
+
+**It runs the loop.** Here's what one afternoon looks like on a client account. The agent mines the latest reviews and clusters the language, ranks the angles by awareness level, writes twelve hooks for the top three, runs the review skill and then the compliance skill, and saves the survivors to a folder with their scores. That's one instruction, and I read the output with coffee. The same loop in ChatGPT is forty prompts and a lot of copy and paste, and the compliance check is the step that gets skipped at 6pm.
+
+**It reviews itself before you see it.** The [copychief skill](/blog/claude-code-copychief-skill) is the one that changed my results, because it stops the first draft shipping. ChatGPT will critique its own draft if you ask, in the same chat, with the same blind spots it had when it wrote it. A separate skill with its own criteria catches more.
+
+**It keeps the ad account.** For supplements, finance, beauty, anything with a health-adjacent claim, the [compliance-checker](/blog/claude-code-compliance-checker-skill) running as a pass on every batch is worth more than any model improvement. A chat window relies on you remembering to ask.
+
+## The same brief in both tools
+
+I give both tools the same brief often enough to describe what happens, and I'll stay qualitative because the honest answer is a pattern, not a scoreboard.
+
+Give ChatGPT a good brief for a cold-traffic supplement ad and you get a competent ad. It opens with a hook, explains a mechanism and ends on a soft close. It also has the tells: the balanced sentence pairs, the stacked triplets, the reflexive negation that tells the reader what the product isn't before saying what it is. Ask for twelve variations and the first three are different, the next nine are the first three again in new clothes.
+
+Give Claude Code the same brief with the [ad-copy skill](/blog/claude-code-ad-copy-skill) installed and a folder of reviews beside it, and the twelve ads come out at different awareness levels because the skill asks for that, in the customer's phrases because the reviews were read, with the banned patterns stripped because the skill bans them, and with a compliance note on each because the checker ran. Two of the twelve are usually good. That ratio, from a method you can read in a file, is the entire case for the agent.
+
+Without the skill, Claude Code writes the same generic copy ChatGPT does. I want to be clear about that, because the model isn't the point. The method is the point, and only one of these tools runs a method from a file.
+
+## What each one costs
+
+<ComparisonTable
+  caption="Entry and power-user pricing, checked 10 November 2026"
+  headers='["Plan", "Monthly price", "What it includes for copy work"]'
+  rows='[["Claude Pro", "$20, or $17 billed annually", "Claude Code, the chat app, skills"],["Claude Max", "$100", "Five times Pro usage for heavy daily production"],["Claude Ultra", "$200", "Ten times Pro usage per week"],["ChatGPT Plus", "$20", "Projects, scheduled tasks, custom GPTs, expanded Codex usage"],["ChatGPT Pro", "From $100, with a $200 tier", "Expanded Projects and GPTs, longer Codex sessions, more usage"]]'
+/>
+
+At the entry tier the price is identical. The difference is that twenty dollars on the Claude side buys the agent, and twenty dollars on the OpenAI side buys the chat window with some Codex usage attached. Pricing pages change without notice, so check both before you decide. These figures are from the vendors' pricing pages and launch coverage on the date above.
+
+## Can ChatGPT run a skill?
+
+Three honest answers, because a lot of readers already pay OpenAI and don't want two subscriptions.
+
+**In the chat window, partly.** Paste a skill's SKILL.md body into a Project's instructions or a custom GPT and it will follow most of it, as long as it fits in 8,000 characters. My direct-response skill doesn't. You also lose the staged loading, where the agent reads the short description first and the full method only when the task matches, and you lose access to your folders.
+
+**In Codex, yes.** OpenAI's agent reads skills from `.agents/skills` in a repo or `~/.agents/skills` on your machine, each one a folder with a SKILL.md, loaded when chosen. That's the same open Agent Skills format Anthropic publishes, so a skill written for Claude Code runs in Codex with little or no change. Corey Haines's marketingskills repo, which I ranked second in my [skills roundup](/blog/best-claude-code-skills-for-copywriting), ships an install for Codex. If you're committed to OpenAI, the advice in this post applies with Codex in Claude Code's seat.
+
+**In a custom GPT with knowledge files, for one job.** Upload the skill as a knowledge file and the GPT will consult it. This works for a narrow repeatable task and falls apart when you want the review skill to read the ad skill's output.
+
+## How to set up Claude Code for copy in thirty minutes
+
+1. **Subscribe to Claude Pro** and install Claude Code from Anthropic's site. The desktop app is the easiest route if a terminal puts you off.
+2. **Make a project folder** with three subfolders: research, copy and brand. Put your reviews, support tickets and competitor ads in research, your ten best-performing pieces in brand, and leave copy empty.
+3. **Install the skills.** Copy the skill folders into `.claude/skills` inside the project, or `~/.claude/skills` to have them everywhere. Start with the four in my [ecommerce guide](/blog/claude-code-for-ecommerce-brands): ad copy, landing page, copychief and compliance.
+4. **Write a brand-voice skill.** Anthropic's skill-creator will scaffold one from your brand folder in an hour. The brand-voice skill is the one that makes the others sound like you.
+5. **Run one loop.** Ask for twelve ad concepts for one product at three awareness levels, reviewed and compliance-checked, saved to the copy folder. Read the output. Keep the two that are good. Repeat on Monday.
+
+That's the entire setup. Nothing in it requires code.
+
+## Which one should you choose?
+
+- **Solo founder writing your own copy:** ChatGPT or Claude's chat app, with the [professional ChatGPT workflow](/blog/chatgpt-for-copywriting). Upgrade to Claude Code when you're spending on traffic.
+- **In-house marketer at a DTC brand:** Claude Code with the four skills. The volume and the compliance pass pay for the setup in the first week.
+- **Agency or creative team:** Claude Code, with one person owning the skill files. The method in a file is what makes ten writers sound like one brand.
+- **Already paying for ChatGPT Pro:** Codex with the same skills in `.agents/skills`. You'll get most of the benefit without a second subscription.
+- **Freelance copywriter:** Both. The chat window for thinking, the agent for production, and your own skills as the thing clients can't get from a tool.
+
+## Before you book
+
+If you want the setup above running inside your marketing team, with the skills, the research library and the weekly loop installed and your people trained to run it, that's the work I do as an [AI marketing consultant](/services/ai-marketing-consultant). If you'd rather have the output than the system, I run it for DTC brands as a [creative strategist](/services/creative-strategist) and, with a production team behind me, as a [creative team](/services/creative-team).
+
+Either way the first step is a [strategy call](/call). Bring your current copy and your numbers, tell me which tool your team is on, and I'll tell you honestly whether the gap is the tool, the method or the strategy. Most of the time it's the method, and the method is free.
+
+<FAQSection>
+<FAQItem question="Is Claude Code or ChatGPT better for copywriting?">
+For copy that has to convert, Claude Code is better, because it follows skill files, reads your research from disk and runs a draft, review and compliance pass as one job. ChatGPT is better for fast ideation, quick rewrites and teams that need a familiar chat window with no setup. Most professional copywriters who use both run Claude Code for production copy and ChatGPT for brainstorming.
+</FAQItem>
+
+<FAQItem question="What is the difference between Claude Code and ChatGPT?">
+ChatGPT is a chat assistant. You type a prompt and get a reply, with Projects, custom GPTs and file uploads to add context. Claude Code is an agent that runs in your terminal, desktop or IDE. It reads and writes files, runs tools and follows skill files, so it can carry out a multi-step process, such as mining reviews, drafting ads, reviewing them and checking compliance, from one instruction.
+</FAQItem>
+
+<FAQItem question="Can ChatGPT use Claude Code skills?">
+Partly. A skill is a markdown file, so you can paste its body into a custom GPT's instructions, subject to the 8,000-character cap, or attach it as a knowledge file. You lose the staged loading, the file access and the ability to chain skills. OpenAI's Codex, the agent counterpart to ChatGPT, reads the same Agent Skills format from a .agents/skills folder, so skills written for Claude Code run there with little change.
+</FAQItem>
+
+<FAQItem question="Does ChatGPT or Claude write better sales copy?">
+Out of the box, both produce competent, generic marketing copy with the same tells: balanced sentences, stacked triplets and the reflexive negation pattern. The difference comes from method, not model. Claude Code with a copywriting skill installed writes to a framework, an awareness level and a voice file every time, and reviews its own draft before you read it. ChatGPT with a strong prompt can match a single draft, but not the repeatability.
+</FAQItem>
+
+<FAQItem question="How much does Claude Code cost compared with ChatGPT?">
+Prices checked 10 November 2026. Claude Pro is $20 a month, or $17 billed annually, and includes Claude Code. Claude Max is $100 and Ultra is $200. ChatGPT Plus is $20 a month and ChatGPT Pro starts at $100, with a $200 tier above it. At the entry tier the two cost the same; the difference is what the $20 buys.
+</FAQItem>
+
+<FAQItem question="Do I need to know how to code to use Claude Code for copywriting?">
+No. Claude Code runs from a terminal window or the desktop app, and the only command most copywriters ever type is the name of a skill followed by a brief. Installing a skill means copying a folder into .claude/skills. If you can organise files in folders, you can run it. Anthropic built it for engineers, which is why it reads files and runs long jobs, but nothing about copywriting work requires code.
+</FAQItem>
+
+<FAQItem question="What is a Claude Code skill for copywriting?">
+A skill is a folder containing a SKILL.md file that tells Claude how to do one job: write a Meta ad to a given structure, review a sales page against named criteria, check copy against platform rules. Claude loads it when the task matches the description. Free copywriting skills exist for direct-response copy, ad copy, landing pages, copy review and compliance, and they follow the same open Agent Skills format Anthropic publishes.
+</FAQItem>
+
+<FAQItem question="Can I use ChatGPT custom GPTs instead of Claude Code skills?">
+A custom GPT is the closest thing ChatGPT has, and for a single repeatable job it works well. The limits are an 8,000-character instruction box, a fixed set of knowledge files, no access to your working folders, and no way to chain one GPT into another. A skill has no length cap, reads other files and scripts alongside it, and hands its output to the next skill in the chain.
+</FAQItem>
+
+<FAQItem question="Which AI tool do professional copywriters use?">
+The working copywriters I know use both, with a split. ChatGPT or Claude's chat app for research summaries, headline brainstorms and quick rewrites. Claude Code, or increasingly Codex, for production copy, because the skill files let them encode their own method and the agent runs it the same way every time. The model matters less than whether your process is written down in a file the tool can follow.
+</FAQItem>
+
+<FAQItem question="Should I hire a copywriter who uses Claude Code?">
+Hire the copywriter for the record, then ask how they use AI. A writer running Claude Code with their own skills and research library can produce more tested variations, faster, without the quality drop a chat window produces. A writer pasting prompts into ChatGPT is producing the average of the internet with their name on it. The question to ask on the call is what method the AI follows, and whether you can read it.
+</FAQItem>
+</FAQSection>
