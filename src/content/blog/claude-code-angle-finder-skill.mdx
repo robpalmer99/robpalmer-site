@@ -1,0 +1,441 @@
+---
+title: "Free Claude Code Angle Finder Skill: Find Ad Angles Your Competitors Haven't Run"
+metaTitle: "Claude Code Angle Finder Skill: Find Fresh Ad Angles Free"
+metaDescription: "Free Claude Code skill that finds fresh ad angles, hooks and big ideas from real customer language and cross-domain research, scored and ready for the ad-copy skill."
+description: "Download my free Claude Code angle finder skill. It mines your reviews, ad comments and Reddit for the customer's own words, borrows mechanisms from unrelated fields, and outputs scored angle cards ready for the ad-copy skill."
+date: "2026-11-10"
+updated: "2026-11-10"
+category: "AI Copywriting"
+tags: ["Claude Code angle finder", "ad angles", "how to find ad angles", "angle finder skill", "free Claude Code skill", "Claude Code skill", "creative strategy", "AI copywriting"]
+published: true
+heroImage: "/images/blog/claude-code-angle-finder-skill.jpg"
+heroAlt: "A strategist's corkboard of index cards and photographs connected by gold string toward one central card beside a product bottle"
+faqs:
+  - question: "What is the Claude Code angle finder skill?"
+    answer: "A free skill file for Claude Code that finds fresh ad angles for a product or offer. It reads your offer brief, mines real customer language from reviews, ad comments and Reddit, researches on-topic and deliberately unrelated sources, and writes scored angle cards, each with a source claim, a bridge to the product, a big idea and a sample ad opener. The top three are called explicitly and the deck is saved as a file ready for the ad-copy skill."
+  - question: "What is an ad angle?"
+    answer: "An angle is the way into the sale: the belief, the enemy, the hidden cause, the mechanism or the identity an ad leads with. The same product can be sold on a dozen angles, and on paid social the angle usually decides whether a creative wins before the footage or the copy does. Accounts stall when they keep running the same three angles with new executions, which is the problem this skill exists to fix."
+  - question: "What is the difference between direct and translocate angles?"
+    answer: "Direct angles come from sources on-topic to the product: the mechanism, the condition, the ingredient, and above all the customer's own words. They are believable and the mechanism lives inside the category. Translocate angles come from deliberately unrelated fields, such as physics, history, ecology or sport, with a bridge forced back to the product. They are the breakout angles, because nobody in the niche is running a mechanism borrowed from a hospital cooling system or a beehive."
+  - question: "Is the angle finder skill free?"
+    answer: "Yes. The SKILL.md and its reference file are published under CC-BY-4.0 in the same GitHub repository as my other five copywriting skills. Copy the folder into .claude/skills, no signup or email gate. A link back to this page is the only thing I ask if it helps you."
+  - question: "Does the skill need any paid research tools?"
+    answer: "No. It uses Claude Code's built-in web search and fetch, the free PullPush archive API for Reddit comments, and yt-dlp for YouTube comments. If you have your own post-purchase surveys, ad comments or support tickets, those beat every external source and cost nothing. Paid review-scraping tools help with Amazon and Trustpilot but are optional."
+  - question: "How many angles does it produce?"
+    answer: "By default 20 to 26 angle cards across the direct and translocate passes, each scored from 0 to 10 for believability, freshness and fit to the avatar. The skill is told to cull hard and to name the top three with a one-line rationale each. The deliverable is those two or three breakout angles, not the pile."
+  - question: "Which markets does the angle finder work for?"
+    answer: "Any product sold on paid traffic: supplements, ecommerce and DTC, info products, finance, SaaS, coaching. For health, supplements and finance it weights the research sources more heavily and runs a stricter overclaim check, because a translocated claim from a real study is usually overstated in the punchy version and that is where compliance trouble starts."
+  - question: "How does the skill avoid compliance problems?"
+    answer: "Every card keeps the source claim close to verbatim alongside the sharpened ad opener, and the final step compares the two and flags any number, causal statement or outcome that outruns its source. Customer quotes are kept verbatim because the customer's own words are the safest phrasing available. For regulated markets the skill then offers to run the top three cards through the compliance-checker skill."
+  - question: "Does the angle finder work with ChatGPT or Codex?"
+    answer: "In Codex, yes: OpenAI's agent reads the same Agent Skills format from a .agents/skills folder, so the file runs there with little change. In ChatGPT's chat window you can paste the skill body into a Project or a custom GPT, within the 8,000-character instruction cap, and lose the file access and the chaining. I wrote a full Claude Code vs ChatGPT comparison for copy if you are deciding."
+  - question: "How do I turn an angle card into an ad?"
+    answer: "Paste the full card into a request to the ad-copy skill, for example 'write three Meta ads for angle 4', or to the landing-page-copy skill for the pre-sell page, or to the direct-response-copy skill for an advertorial lead. The card format exists so the source claim and the bridge travel with the hook, and the next skill writes from evidence rather than from the headline alone."
+---
+
+Most ad accounts don't run out of creative. They run out of angles. The media buyer asks for more ads, the team ships ten new executions of the same three ideas, and the account keeps paying more for the same customer. I've watched this happen on supplement, ecommerce and info-product accounts, and the fix is never more footage. The fix is a fourth angle the market hasn't seen.
+
+The angle finder is the skill I use to find it. It's the sixth skill in my free [Claude Code copywriting suite](/blog/claude-code-copywriting-skills), and the first one I've released since the original five in April. It mines the customer's own words, researches outside the niche on purpose, forces a bridge back to the product, and hands you a deck of scored angle cards that the [ad-copy skill](/blog/claude-code-ad-copy-skill) can write from directly. The full skill file is further down this page, free, no email gate.
+
+<KeyTakeaways>
+- An angle is the way into the sale, and on paid social it usually decides whether a creative wins before the copy or the footage does
+- The skill runs two passes: direct angles from the customer's own language and the category, and translocate angles borrowed from unrelated fields and bridged back to the product
+- Every angle is a card with a source claim, a bridge, a big idea and a sample opener, scored 0 to 10, with the top three called explicitly
+- An overclaim check compares each sharpened hook with its source, which is where translocated science claims usually go wrong
+- Install it in a minute, run it on your reviews and ad comments first, and chain the winners into the ad-copy skill
+</KeyTakeaways>
+
+<DefinitionBox term="Ad Angle">
+The belief, enemy, hidden cause, mechanism, identity or story an ad leads with. The product stays the same; the angle changes who stops scrolling and why. A creative strategist's main job on a paid social account is finding the next angle before the current one fatigues, which is why [creative strategy](/services/creative-strategist) has become a hiring category of its own.
+</DefinitionBox>
+
+## Why accounts run out of angles
+
+Here's the pattern. A brand finds a winning ad. The team studies it, writes a brief that describes it, and produces variations: a new hook or a new creator on the same angle. For a few weeks that works. Then every variation of the angle has been seen by every person it was ever going to stop, and the whole account fatigues at once, because the account only ever had one idea.
+
+The honest reason it happens is that finding a new angle is hard, and the way most teams try to do it is a brainstorm. Six people in a room, or six prompts in a chat window, producing the average of what the category already says. The angles that break out don't come from inside the category. They come from the customer's own words, which the team has stopped reading, and from fields that have nothing to do with the product, which the team never reads at all.
+
+The skill does both of those things on a schedule, and it writes down where every idea came from.
+
+## Direct and translocate: the two ways in
+
+<ComparisonTable
+  caption="The two sourcing strategies the angle finder runs"
+  headers='["Strategy", "Where the seeds come from", "What you get"]'
+  rows='[["Direct", "On-topic sources: the mechanism, the condition, the ingredient, competitor reviews, and above all your own customers in their own words", "Believable angles. The mechanism lives inside the category and the market already half-understands it"],["Translocate", "Deliberately unrelated fields: physics, history, ecology, computing, sport, a news story about a hospital or a power grid", "Breakout angles. A borrowed mechanism that feels new because nobody in the niche runs it, and the category mismatch is the curiosity loop"]]'
+/>
+
+Translocation is Stefan Georgi's term for the second move, and his own example is the clearest: read about a self-organising principle in quantum physics, ask whether human cells do the same thing, and if you sell an energy product you have an opener about what tired cells and burning stars have in common. The output isn't the borrowed fact. The output is the bridge, and the question "how could this possibly relate to what we sell?" is the whole technique.
+
+The skill runs both passes by default. Direct gives you the angles you can run on Monday. Translocate gives you the one that doubles the account in March.
+
+## What the skill does, step by step
+
+1. **Loads the context.** Reads your offer brief or product page and writes down the mechanism, avatar, awareness stage, sophistication, price and the angles you've already burned. It won't regenerate an angle you've tested and lost with.
+2. **Sources the seeds, first-party first.** If the offer is live, it asks for your post-purchase survey responses, the comments on your own ads and your support tickets before it looks anywhere else. Your own ad comments are the richest objection source there is, and nobody else has them.
+3. **Mines Reddit and reviews.** Reddit blocks live scraping, so the skill uses the free PullPush archive API to pull full comment bodies by phrase and subreddit. It reads one-star and three-star reviews first, because the failed promise is where the contrarian angles live.
+4. **Clusters before it writes.** Every quote goes into pain, objection, desire or trigger, weighted by how often it recurs, and the top clusters become named sub-avatars with a buying trigger. The direct cards are written to those people, not to the category.
+5. **Forces the bridges.** For each seed it writes a card in a fixed format, which I'll show you next, so the next skill can consume it.
+6. **Scores and culls.** Zero to ten for believability, freshness and fit, hidden angles marked, and the top three called with a line of rationale each. The skill is told that most cards are mediocre and to say so.
+7. **Checks for overclaim.** Each sharpened opener is compared with its source claim, and any number or causal statement that outruns the source gets a warning on the card.
+8. **Saves the deck and offers the next step.** A dated file with the method note, the top three, the warnings, a score table and the cards, then "write three ads for angle 4" hands off to the writing skills.
+
+## The angle card
+
+Every angle comes out in the same shape. This matters more than it looks, because the format is what lets the [ad-copy](/blog/claude-code-ad-copy-skill) and [landing page](/blog/claude-code-landing-page-copy-skill) skills write from the evidence rather than from a headline.
+
+Here's an illustrative card for a sleep product, written the way the skill writes them. The source claims are real; the product is generic.
+
+```markdown
+### 07. Your bedroom has a thermostat. Your body has a better one.
+
+`Hidden angle` · Bridge distance: **Moderate** · Types: Hidden Cause, Timing/Method · Awareness: problem
+
+- **Source claim:** Honeybees hold the brood nest at about 35°C by fanning their wings
+  and clustering, and the colony stops rearing brood when the temperature drifts.
+  Separately, human core body temperature falls by roughly a degree in the hours
+  before and during deep sleep, and sleep onset is harder when that drop is blocked.
+- **Bridge:** Both systems depend on a small, active temperature drop that the
+  organism has to produce itself. A warm bedroom, a late workout or a heavy meal
+  stops the drop, and the night fails for the same reason an overheated hive stops.
+- **Big idea:** Insomnia as a cooling problem, not a relaxation problem. The prospect
+  has tried calming down; nobody has told them to cool down.
+
+> Sample ad opener
+> A beehive runs at 35 degrees, and if it can't cool itself by a fraction the whole
+> colony stops working. I didn't know my body did the same thing at night until a
+> sleep researcher explained why I kept waking at 3am. The cause was heat, and nothing
+> I'd tried for stress had ever touched it.
+
+- **Momentum signals:** Cooling mattress pads and sleep-temperature content are
+  trending; the market half-knows the idea and nobody has named the mechanism.
+- **Awareness reasoning:** The sleep market is sophisticated on "calm" and "routine"
+  angles and naive on thermoregulation. Fresh at problem-aware.
+- **Source:** Hive thermoregulation: Seeley, The Wisdom of the Hive. Core temperature
+  and sleep onset: a review in Sleep Medicine Reviews; cite the specific paper before
+  running.
+```
+
+The warning block the skill would add under that card is the point of Step 7: "a fraction" and "the whole colony stops" are sharper than the source supports, and the opener's "sleep researcher" is a device, not a citation. The card is a good angle. The warning tells the writer where the compliance line is before the ad goes to Meta.
+
+## What it won't do
+
+The skill won't write the finished ad. That's deliberate. Angle finding and ad writing are different jobs with different criteria, and a skill that does both does both badly. It hands the card to the writing skills instead.
+
+It also won't choose the angle for you. It scores, culls and calls a top three, and then a person who has read the account decides what to test. In my experience that person is a creative strategist, and the skill is the research half of that role, running on a schedule instead of when someone finds the time. If you want the whole role, that's [what I do for DTC brands](/services/creative-strategist).
+
+And it won't make a translocated claim true. Translocate is where the breakout angles live and where the overclaims live, in the same card. The warning block exists because I learned that the expensive way on a health offer, with a punchy number that the source study didn't support.
+
+## Who this is for
+
+- **Creative strategists and in-house creative teams** who have to put new angles into a testing loop every week and have exhausted the brainstorm.
+- **Media buyers** whose account has fatigued and who need something to brief the creative team with other than "more hooks".
+- **Founders and small DTC brands** who can't afford a strategist and are running the same three ideas because nobody has read the reviews since launch.
+- **Copywriters** who want the research half of the job done before they open a blank page, with the sources attached.
+
+If your brand has never run a post-purchase survey, do that first. The first run of this skill on a hundred survey responses is the best creative brief most brands have ever had.
+
+## How to install and use the skill
+
+### Step 1: Save the skill file
+
+Create an `angle-finder` folder inside `.claude/skills/` in your project and save the skill markdown below as `SKILL.md`, so the path is `.claude/skills/angle-finder/SKILL.md`. For every project on your machine, use `~/.claude/skills/angle-finder/SKILL.md` instead.
+
+### Step 2: Save the reference file
+
+Create a `references` folder inside `angle-finder` and save the voice-of-customer sources file below as `voc-sources.md`. The skill reads it when it needs a source method, including the PullPush endpoint for Reddit.
+
+### Step 3: Run it
+
+Ask Claude Code for angles and the skill loads on its own, or start the message with `/angle-finder`. Examples:
+
+- "Find angles for this offer, both passes, 24 cards" with the offer brief in the folder
+- "Mine these 140 post-purchase survey responses for angles and shortlist five for next week's brief"
+- "What angles haven't we tried for the joint supplement? Here's what we've run"
+- "Translocate only. I want six ideas from fields nothing to do with skincare"
+- "Cluster the comments on our top three ads into objections and give me an angle for each of the top three"
+
+Then: "write three Meta ads for angle 4", and the [ad-copy skill](/blog/claude-code-ad-copy-skill) takes the card.
+
+## The skill file
+
+Copy the entire contents below and save it as `.claude/skills/angle-finder/SKILL.md`:
+
+````markdown
+---
+name: angle-finder
+description: Generate fresh ad angles, hooks and big ideas for a product or offer by mining real customer language and research, then forcing cross-domain bridges (the translocation method). Use whenever the user wants new angles, hooks, big ideas, ad concepts or "ways in" for an offer, e.g. "find angles for [offer]", "I need fresh hooks for [product]", "what angles haven't we tried", "mine these reviews / survey responses / ad comments for angles". Produces scored angle cards (source claim, bridge, big idea, sample ad opener) saved to a file, ready to hand to the ad-copy, landing-page-copy or direct-response-copy skills. Do NOT use it to write finished ads or pages; those skills do that.
+---
+
+# Angle Finder
+
+Turns a product or offer into a deck of **scored angle cards** by researching where the customer actually talks, researching outside the niche, and bridging back in. The deliverable is two or three breakout angles the market has not seen, not a big pile. Cull hard.
+
+An **angle** is the way into the sale: the belief, the enemy, the mechanism or the story the ad leads with. Most accounts die from running the same three angles with new footage. This skill exists to find the fourth.
+
+## When to use
+
+- "find angles / hooks / big ideas for [offer]"
+- "run angle finder on [product or URL]"
+- "I need fresh ways into [market]"
+- "what angles haven't we tried for [offer]"
+- "mine our reviews / post-purchase survey / ad comments for angles"
+
+## Inputs to gather first
+
+1. **The offer.** Read whatever exists: an offer brief, the product page, the current best ad, the landing page. Extract the mechanism, the avatar, the price, the awareness and sophistication of the market, and what has already been run. If only a URL is available, fetch it and extract the basics, and say the brief is thin.
+2. **Strategy.** **Direct**, **Translocate**, or **both**. Default to both, run as two passes.
+3. **Count.** Default 20 to 26 cards in total, split across the passes. Fewer with a thin brief.
+4. **Market.** For health, supplements and finance, weight the research sources and tighten the overclaim check in Step 5.
+5. **Burned angles.** Ask what has been tested. Never regenerate an angle the account has already run and lost with.
+
+## The two strategies
+
+| Strategy | Research targets | Yields |
+|---|---|---|
+| **Direct** | On-topic to the product: the mechanism, the category, the condition, the ingredient, the activity, and above all the customer's own words | Believable angles; the mechanism lives inside the category |
+| **Translocate** | Deliberately unrelated domains: physics, history, ecology, computing, sport, ancient practice, a news story | Breakout angles; a borrowed mechanism that feels new because nobody in the niche runs it |
+
+The translocation move, in one line: pull a real, citable claim from a domain that has nothing to do with the product, then answer the question "how could this possibly relate to what we sell?" The answer is the angle, and the category mismatch is itself the curiosity loop. (Stefan Georgi's term for the move is translocation; his example is a self-organising principle in quantum physics bridged to cellular energy, so a supplement ad can open on what tired cells and burning stars have in common.)
+
+## Workflow
+
+### Step 1: Load context
+
+Read the brief or the page. Write down, in a few lines at the top of the run file: mechanism, avatar, awareness stage, sophistication stage, price, and the angles already run. Everything downstream is judged against these lines.
+
+### Step 2: Source the seeds
+
+A seed is one real claim, quote or fact, with its provenance. Collect seeds from the sources below, in this order of value.
+
+**First-party voice of customer (live offers only, and the best source there is).** Ask for these before going anywhere else:
+
+- Post-purchase survey responses: what made them buy, what they had tried before, what nearly stopped them.
+- Comments on the brand's own ads, exported from the ad platform or pasted in. Every repeated objection is a candidate for the next ad to answer.
+- Support tickets and on-site reviews.
+
+Read only the rows added since the last run so the angles stay fresh. Generate the Direct angles in the customers' own language, and keep the verbatim quote that inspired each card in its `Source claim` field. Run comment mining as a separate objection pass: cluster objections by frequency and turn each of the top three into an answer-the-objection angle. A customer's own words are also the safest phrasing source for compliance, though a quote describing a health outcome is still a claim and still goes through a compliance check.
+
+**Reddit.** Lived experience, failed attempts, contrarian takes, and the exact phrases prospects use. Live scraping of Reddit is blocked for most tools, so use the free PullPush archive API instead, which returns full comment bodies with subreddit and author:
+
+```
+https://api.pullpush.io/reddit/search/comment/?q=<phrase>&subreddit=<sub>&size=100
+```
+
+Pick four to eight search phrases in the prospect's own words (pains, fears, failed attempts, wishes), target the subreddits where the avatar actually posts, and save the raw harvest alongside the run file. See `references/voc-sources.md` for the full method and the other review sources.
+
+**Competitor reviews.** Amazon, Trustpilot, Quora and app-store reviews carry buyer language Reddit lacks: what worked, what failed, the exact objection to a specific product. Amazon, Quora and Reddit skew toward product experience and emotion; Trustpilot skews toward service and logistics and is weaker for angles.
+
+**Research and science.** ScienceDaily, Google Scholar, pre-print servers and university press releases, for mechanism-grade claims. Essential for health and science offers, where the mechanism has to survive a sceptical reader.
+
+**YouTube and podcasts.** Trending, well-viewed framings of the problem, and the comments beneath them.
+
+For **Direct**, search on-topic terms. For **Translocate**, pick four to six deliberately unrelated, well-trafficked topics (a trending science story, a historical event, a sports method, a piece of infrastructure, a nature mechanism) and find one real claim in each.
+
+Capture for every seed: the claim, close to verbatim, and where it came from.
+
+### Step 2b: Cluster before you write
+
+Don't leave the quotes as a flat list. Cluster them into **pain, objection, desire, trigger**, weight each cluster by how often it recurs (repeated pains rise, one-off anecdotes fall), and keep each quote's source attached. From the top clusters, name two or three **sub-avatars with a buying trigger**, for example "the 3am negotiator: has tried every routine, now needs proof before trying another". Write the Direct cards off the top-ranked drivers, so the deck is evidence-led rather than taste-led.
+
+### Step 3: Force the bridges and write the cards
+
+For each seed, write one angle card. Aim for about five cards per strong seed. Use this exact schema so the next skill can consume the card directly:
+
+```markdown
+### NN. <Headline: the angle as a scroll-stopping line>
+
+`<Angle | Hidden angle>` · Bridge distance: **<Conservative | Moderate | Aggressive>** · Types: <Hidden Cause, Identity, Contrarian, Timing/Method, Deficiency, Differentiation> · Awareness: <unaware | problem | solution | product>
+
+- **Source claim:** <the real external claim or customer quote, faithful to the source>
+- **Bridge:** <how it connects to THIS offer; the connective logic>
+- **Big idea:** <the ownable reframing the prospect has never heard>
+
+> Sample ad opener
+> <the hook written out, two to five sentences, in-market voice>
+
+- **Momentum signals:** <why now: recency, trend alignment, adjacent awareness already in the market>
+- **Awareness reasoning:** <why this framing is fresh for this market at its sophistication stage>
+- **Source:** <title, URL or citation>
+```
+
+Card types, for the `Types` field:
+
+- **Hidden Cause**: the real reason the problem persists, which the prospect has never been told.
+- **Identity**: who the prospect is or wants to be, and what this product says about them.
+- **Contrarian**: the opposite of what the market has been told.
+- **Timing/Method**: the same goal reached by a new when or how.
+- **Deficiency**: something the prospect is missing and did not know mattered.
+- **Differentiation**: why this product and not the category.
+
+### Step 4: Score and cull
+
+Give each card a **0 to 10** score for believability, freshness and fit to the avatar, and show the score. Mark the genuinely novel-for-market cards as `Hidden angle`. Then **call the top three explicitly**, one line of rationale each. This is the deliverable the user acts on. Be honest: most cards are mediocre, and the run is a success if two or three are not. Thumbs down freely.
+
+### Step 5: Overclaim check
+
+Translocated claims come from real studies and the punchy version usually overstates them. For every card, compare the sharpened hook against the source claim and flag any specific number, causal statement or outcome that outruns it in a clearly marked **Warning** block under the card. Critical for health and finance. If the compliance-checker skill is installed, say so and offer to run the top three through it.
+
+### Step 6: Save the deck
+
+Write the deck to a file in the project, for example `angles/<offer>-angles-<YYYY-MM-DD>.md`, with:
+
+1. A one-paragraph method note: strategy used, sources, how many seeds, what was excluded as burned.
+2. The **top-three call**.
+3. The **overclaim warnings** gathered in one place.
+4. A **score summary table**: card number, headline, type, bridge distance, score.
+5. The cards.
+
+Keep the raw voice-of-customer harvest in a sibling file so the next run can read only what's new.
+
+### Step 7: Chain
+
+Offer the next step: "write three Meta ads for angle 4", "write a 500-word advertorial lead for angle 9", "write the pre-sell page for angle 2". Hand the card to the ad-copy, landing-page-copy or direct-response-copy skill, with the card pasted in full so the source claim and the bridge travel with the hook. When an angle gets tested, record the result next to the card so the next run knows what won.
+
+## Discipline (do not skip)
+
+- **The win is two or three breakout angles, not a big pile.** Score and cull ruthlessly.
+- **Translocate is where the breakouts live.** Don't let every card collapse back to on-topic claims.
+- **Customer language beats cleverness.** If a first-party quote and a translocated science claim compete for the same slot, the quote wins for a product-aware market and the claim wins for an unaware one.
+- **Always fact-check the sharpening.** A great emotional angle on an overstated number is a compliance liability, not a win.
+- **Keep it chain-ready.** The card schema exists so the next skill can consume an angle directly. Don't improvise the format.
+- **Never regenerate a burned angle.** Ask what has been run, and read the previous decks in the folder.
+````
+
+## The reference file
+
+Save this as `.claude/skills/angle-finder/references/voc-sources.md`:
+
+````markdown
+# Voice-of-customer sources for angle finding
+
+Where to get real customer language, in order of value, and how to get it without a paid scraping tool. The angle-finder skill reads this file when it needs a source method.
+
+## 1. First-party data (live offers)
+
+The best seeds are the ones only you have. Ask for them before searching anywhere else.
+
+| Source | What it gives you | How to get it |
+|---|---|---|
+| Post-purchase survey | Why they bought, what they tried before, what nearly stopped them | Export from the survey app (KnoCommerce, Fairing, Typeform) or a Google Sheet; paste the new rows |
+| Comments on your own ads | Objections, in volume, by frequency | Export from Ads Manager or copy the comment threads on the top three ads |
+| Support tickets | The question they ask after buying, which is the objection they had before buying | Export the last 30 days, or the tags the support team already uses |
+| On-site reviews | What worked, what disappointed, the words they use for the result | Judge.me, Okendo, Loox, Yotpo export |
+
+Method: read only the rows added since the last run. Generate Direct angles in the customers' own language and keep the verbatim quote on the card. Run comment mining as a separate objection pass: cluster by frequency, and turn the top three objections into answer-the-objection angles. Treat it as a recurring job, weekly or per creative sprint.
+
+## 2. Reddit via the PullPush archive
+
+Reddit blocks live scraping for most tools. PullPush is a free public archive with a Pushshift-style API that returns full comment bodies, subreddit and author.
+
+```
+https://api.pullpush.io/reddit/search/comment/?q=<phrase>&subreddit=<sub1,sub2>&size=100
+https://api.pullpush.io/reddit/search/submission/?q=<phrase>&subreddit=<sub>&size=100
+```
+
+Useful parameters: `q` (search phrase), `subreddit` (comma-separated), `size` (max 100), `after` and `before` (epoch seconds) to window the search, `sort=desc`.
+
+How to use it well:
+
+- Write four to eight search phrases in the prospect's own words: pains ("can't sleep past 3am"), fears, failed attempts ("tried magnesium"), wishes.
+- Target the subreddits where the avatar actually posts, not the category subreddit. A retiree with money worries posts in r/retirement and r/povertyfinance, not r/personalfinance.
+- For demographic themes, filter the results for avatar keywords (age, life stage). For themes like "scam burnout" or "wish I could", relax the filter to context words, because those posts rarely state an age.
+- Save the raw harvest as a markdown file beside the angle deck, with the subreddit and a date on each quote, and mine it for Direct angle seeds and for the voice-of-customer section of the offer brief.
+
+## 3. Competitor and category reviews
+
+| Source | Quality for angles | Access |
+|---|---|---|
+| Amazon reviews | High: product experience and emotion, exact objections | Blocks scraping; read by hand, or use a review-export tool if subscribed |
+| Quora | High: the question behind the search, long answers in plain language | Blocks scraping; read by hand |
+| YouTube comments | Medium to high: reactions to a framing, what viewers push back on | `yt-dlp --write-comments <url>` gives a JSON file of comments |
+| Trustpilot | Low for angles: skews to shipping, billing and service | Blocks scraping |
+| App stores, Steam, Hacker News | Medium, depending on product | Open APIs or hand reading |
+
+Read the one-star and three-star reviews first. Five-star reviews give you the benefit language; one-star reviews give you the objection and the failed promise, which is where the Contrarian and Hidden Cause angles come from.
+
+## 4. Research sources (Direct and Translocate)
+
+- **ScienceDaily** and university press releases: mechanism-grade claims in plain English, with the paper linked.
+- **Google Scholar** and pre-print servers: for the actual numbers, so the overclaim check in Step 5 has something to check against.
+- **News and long-form features** in unrelated fields: the usual Translocate seed. A hospital whose cooling failed in a heatwave, an ecosystem that recovered after one species returned, a sports team that changed when it trained, a piece of infrastructure that failed for a reason nobody expected.
+
+For every seed, record the claim close to verbatim and the source. The card's `Source claim` field must be faithful; the `Sample ad opener` is where the sharpening happens, and the gap between the two is what the overclaim check reads.
+
+## 5. Clustering the harvest
+
+Before writing cards, cluster every quote into one of four drivers and weight by frequency:
+
+| Driver | What it sounds like | Angle types it feeds |
+|---|---|---|
+| Pain | "I'm so tired of…", "nothing has worked" | Hidden Cause, Deficiency |
+| Objection | "sounds like a scam", "too expensive for what it is", "I've tried that" | Contrarian, Differentiation |
+| Desire | "I just want to…", "imagine if…" | Identity, Timing/Method |
+| Trigger | the event that made them search: a diagnosis, a birthday, a photo, a comment | Timing/Method, Identity |
+
+Name two or three sub-avatars from the top clusters, each with its buying trigger, and write the Direct cards to those people rather than to the category.
+````
+
+## The complete toolkit
+
+The angle finder is the research step of a six-skill system. Each skill handles a different stage of the paid advertising workflow:
+
+- **[Ad copy skill](/blog/claude-code-ad-copy-skill)**: writes the Meta ads from the angle card, with hook types, the WHY/WHAT/HOW structure and the platform specs built in.
+- **[Landing page copy skill](/blog/claude-code-landing-page-copy-skill)**: writes the pre-sell page the ad sends traffic to, on the same angle.
+- **[Direct response copy skill](/blog/claude-code-direct-response-copy-skill)**: for the advertorial, the VSL and the sales page behind the funnel.
+- **[Copychief skill](/blog/claude-code-copychief-skill)**: reviews everything before it ships, with the fix and the principle for each issue.
+- **[Compliance checker skill](/blog/claude-code-compliance-checker-skill)**: the pass the top three angles go through before Meta sees them.
+
+See the [complete skill suite overview](/blog/claude-code-copywriting-skills) for how they chain, and my [roundup of the best Claude Code copywriting skills](/blog/best-claude-code-skills-for-copywriting) for how they compare with the alternatives. If you're deciding between tools, I've also written up [Claude Code vs ChatGPT for copywriting](/blog/claude-code-vs-chatgpt-for-copywriting).
+
+## Get the skill
+
+Scroll up, copy the skill file and the reference file, and save them into `.claude/skills/angle-finder/`. No signup, no paywall, no email gate.
+
+Prefer git? The whole suite is on GitHub: [github.com/robpalmer99/claude-code-copywriting-skills](https://github.com/robpalmer99/claude-code-copywriting-skills/tree/main/angle-finder). Clone it or copy the `angle-finder/` folder straight into your project's `.claude/skills/` directory. CC-BY-4.0.
+
+Then do one thing this week. Export the comments on your three best ads, paste them in, and ask for the top three objections as angles. The ad that answers the objection your customers keep typing under your own ads is the cheapest winner you'll find this quarter.
+
+If it helps you find an angle that scales, a link back to this page is the only thing I ask. And if you'd rather have someone run the whole loop for you, from angles to finished creative, [book a strategy call](/call).
+
+<FAQSection>
+<FAQItem question="What is the Claude Code angle finder skill?">
+A free skill file for Claude Code that finds fresh ad angles for a product or offer. It reads your offer brief, mines real customer language from reviews, ad comments and Reddit, researches on-topic and deliberately unrelated sources, and writes scored angle cards, each with a source claim, a bridge to the product, a big idea and a sample ad opener. The top three are called explicitly and the deck is saved as a file ready for the ad-copy skill.
+</FAQItem>
+
+<FAQItem question="What is an ad angle?">
+An angle is the way into the sale: the belief, the enemy, the hidden cause, the mechanism or the identity an ad leads with. The same product can be sold on a dozen angles, and on paid social the angle usually decides whether a creative wins before the footage or the copy does. Accounts stall when they keep running the same three angles with new executions, which is the problem this skill exists to fix.
+</FAQItem>
+
+<FAQItem question="What is the difference between direct and translocate angles?">
+Direct angles come from sources on-topic to the product: the mechanism, the condition, the ingredient, and above all the customer's own words. They are believable and the mechanism lives inside the category. Translocate angles come from deliberately unrelated fields, such as physics, history, ecology or sport, with a bridge forced back to the product. They are the breakout angles, because nobody in the niche is running a mechanism borrowed from a hospital cooling system or a beehive.
+</FAQItem>
+
+<FAQItem question="Is the angle finder skill free?">
+Yes. The SKILL.md and its reference file are published under CC-BY-4.0 in the same GitHub repository as my other five copywriting skills. Copy the folder into .claude/skills, no signup or email gate. A link back to this page is the only thing I ask if it helps you.
+</FAQItem>
+
+<FAQItem question="Does the skill need any paid research tools?">
+No. It uses Claude Code's built-in web search and fetch, the free PullPush archive API for Reddit comments, and yt-dlp for YouTube comments. If you have your own post-purchase surveys, ad comments or support tickets, those beat every external source and cost nothing. Paid review-scraping tools help with Amazon and Trustpilot but are optional.
+</FAQItem>
+
+<FAQItem question="How many angles does it produce?">
+By default 20 to 26 angle cards across the direct and translocate passes, each scored from 0 to 10 for believability, freshness and fit to the avatar. The skill is told to cull hard and to name the top three with a one-line rationale each. The deliverable is those two or three breakout angles, not the pile.
+</FAQItem>
+
+<FAQItem question="Which markets does the angle finder work for?">
+Any product sold on paid traffic: supplements, ecommerce and DTC, info products, finance, SaaS, coaching. For health, supplements and finance it weights the research sources more heavily and runs a stricter overclaim check, because a translocated claim from a real study is usually overstated in the punchy version and that is where compliance trouble starts.
+</FAQItem>
+
+<FAQItem question="How does the skill avoid compliance problems?">
+Every card keeps the source claim close to verbatim alongside the sharpened ad opener, and the final step compares the two and flags any number, causal statement or outcome that outruns its source. Customer quotes are kept verbatim because the customer's own words are the safest phrasing available. For regulated markets the skill then offers to run the top three cards through the compliance-checker skill.
+</FAQItem>
+
+<FAQItem question="Does the angle finder work with ChatGPT or Codex?">
+In Codex, yes: OpenAI's agent reads the same Agent Skills format from a .agents/skills folder, so the file runs there with little change. In ChatGPT's chat window you can paste the skill body into a Project or a custom GPT, within the 8,000-character instruction cap, and lose the file access and the chaining. I wrote a full Claude Code vs ChatGPT comparison for copy if you are deciding.
+</FAQItem>
+
+<FAQItem question="How do I turn an angle card into an ad?">
+Paste the full card into a request to the ad-copy skill, for example "write three Meta ads for angle 4", or to the landing-page-copy skill for the pre-sell page, or to the direct-response-copy skill for an advertorial lead. The card format exists so the source claim and the bridge travel with the hook, and the next skill writes from evidence rather than from the headline alone.
+</FAQItem>
+</FAQSection>
