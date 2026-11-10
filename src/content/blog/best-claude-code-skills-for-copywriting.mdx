@@ -11,7 +11,7 @@ heroImage: "/images/blog/best-claude-code-skills-for-copywriting.jpg"
 heroAlt: "A copywriter's desk with a terminal open on a SKILL.md file beside a printed sales letter marked up in pen"
 faqs:
   - question: "What is the best Claude Code skill for copywriting?"
-    answer: "For direct response copy that has to convert on paid traffic, the strongest public option is the six-skill suite at github.com/robpalmer99/claude-code-copywriting-skills, which covers sales pages, Meta ads, landing pages, copy review and compliance and is the only one built from tracked campaign results. For SaaS and startup page copy, Corey Haines's marketingskills repository is the most complete, with 49 marketing skills including copywriting, copy editing, emails and offers."
+    answer: "For direct response copy that has to convert on paid traffic, the strongest public option is the seven-skill suite at github.com/robpalmer99/claude-code-copywriting-skills, which covers sales pages, Meta ads, landing pages, copy review and compliance and is the only one built from tracked campaign results. For SaaS and startup page copy, Corey Haines's marketingskills repository is the most complete, with 49 marketing skills including copywriting, copy editing, emails and offers."
   - question: "What is a Claude Code skill?"
     answer: "A Claude Code skill is a folder containing a SKILL.md file with YAML frontmatter (a name and a trigger description) followed by instructions Claude follows when the task matches. Skills live in .claude/skills/ inside a project or in ~/.claude/skills/ for every project, and they follow Anthropic's Agent Skills format, so the same file also works in Claude.ai projects and through the API."
   - question: "How do I install a copywriting skill in Claude Code?"
@@ -34,7 +34,7 @@ faqs:
 
 If you search for the best copywriting skill for Claude, you'll find GitHub repositories with six-figure star counts, half a dozen smaller ones written by actual copywriters, and no honest comparison of what any of them make Claude do. I've installed and run every skill on this list on real work, so here's that comparison.
 
-I'll be upfront about the conflict of interest. The first entry is mine. I wrote six of these skills, five in April and the angle finder in November, and I use them most days on client funnels, so I know exactly where they're strong and where the alternatives beat them. Where another skill is better for your job, I say so, because a reader who installs the wrong skill and gets generic copy doesn't come back.
+I'll be upfront about the conflict of interest. The first entry is mine. I wrote seven of these skills, five in April and two in November, and I use them most days on client funnels, so I know exactly where they're strong and where the alternatives beat them. Where another skill is better for your job, I say so, because a reader who installs the wrong skill and gets generic copy doesn't come back.
 
 <KeyTakeaways>
 - Eight public Claude Code copywriting skills and suites, ranked by what they make Claude produce, not by star count
@@ -58,7 +58,7 @@ What I didn't rank on is the size of the repository. Several of the entries belo
 
 **Repo:** [github.com/robpalmer99/claude-code-copywriting-skills](https://github.com/robpalmer99/claude-code-copywriting-skills). 49 stars, 10 forks, CC-BY-4.0.
 
-**What's in it:** Six skills that cover a direct response workflow end to end. [angle-finder](/blog/claude-code-angle-finder-skill) for scored ad angles from customer language and cross-domain research, added in November. [direct-response-copy](/blog/claude-code-direct-response-copy-skill) for sales pages, VSLs, emails and headlines. [ad-copy](/blog/claude-code-ad-copy-skill) for Meta, Instagram and UGC scripts, with a Meta specs reference. [landing-page-copy](/blog/claude-code-landing-page-copy-skill) for bridge and pre-sell pages. [copychief](/blog/claude-code-copychief-skill) for structured review against a brief. [compliance-checker](/blog/claude-code-compliance-checker-skill) with a trigger-words reference for Meta, Google, TikTok and the FTC.
+**What's in it:** Seven skills that cover a direct response workflow end to end. [angle-finder](/blog/claude-code-angle-finder-skill) for scored ad angles from customer language and cross-domain research, and [static-ad](/blog/claude-code-static-ad-skill) for paired copy-and-image concepts with a locking variation matrix, both added in November. [direct-response-copy](/blog/claude-code-direct-response-copy-skill) for sales pages, VSLs, emails and headlines. [ad-copy](/blog/claude-code-ad-copy-skill) for Meta, Instagram and UGC scripts, with a Meta specs reference. [landing-page-copy](/blog/claude-code-landing-page-copy-skill) for bridge and pre-sell pages. [copychief](/blog/claude-code-copychief-skill) for structured review against a brief. [compliance-checker](/blog/claude-code-compliance-checker-skill) with a trigger-words reference for Meta, Google, TikTok and the FTC.
 
 **What it makes Claude do:** Write to a Schwartz awareness level, pick a lead type, run the So What chain on every benefit, attach proof to the objection it answers, and avoid a named list of AI tells. The review skill grades a draft the way a copy chief does, with a conversion score and the top three fixes rather than line edits. The compliance skill is the one nobody else on this list has.
 
@@ -151,7 +151,7 @@ What I didn't rank on is the size of the repository. Several of the entries belo
 <ComparisonTable
   caption="Claude Code copywriting skills compared, November 2026"
   headers='["Skill or suite", "Stars", "Licence", "Strongest at", "Missing"]'
-  rows='[["robpalmer99/claude-code-copywriting-skills", "49", "CC-BY-4.0", "Angles, direct response, ads, review, compliance", "Brand voice for SaaS"],["coreyhaines31/marketingskills", "59,423", "MIT", "SaaS page copy, editing, offers", "Long-form sales, compliance"],["boraoztunc/skills", "460", "Apache-2.0", "Copy editing, slop removal", "Specialist depth"],["borghei/Claude-Skills", "1,083", "Custom", "Breadth, agent chains", "Opinion, licence clarity"],["OneWave-AI/claude-skills", "422", "MIT", "Task-shaped sales and email output", "Writing depth"],["Boring Marketer gist", "n/a", "None stated", "Creator-economy long copy", "Review pass, context cost"],["cyrwheelninja/copywriting-skill", "11", "None", "Framework library, trope detection", "Maintenance"],["anthropics/skills", "190,998", "Varies", "Building your own skill", "Copywriting itself"]]'
+  rows='[["robpalmer99/claude-code-copywriting-skills", "49", "CC-BY-4.0", "Angles, statics, direct response, ads, review, compliance", "Brand voice for SaaS"],["coreyhaines31/marketingskills", "59,423", "MIT", "SaaS page copy, editing, offers", "Long-form sales, compliance"],["boraoztunc/skills", "460", "Apache-2.0", "Copy editing, slop removal", "Specialist depth"],["borghei/Claude-Skills", "1,083", "Custom", "Breadth, agent chains", "Opinion, licence clarity"],["OneWave-AI/claude-skills", "422", "MIT", "Task-shaped sales and email output", "Writing depth"],["Boring Marketer gist", "n/a", "None stated", "Creator-economy long copy", "Review pass, context cost"],["cyrwheelninja/copywriting-skill", "11", "None", "Framework library, trope detection", "Maintenance"],["anthropics/skills", "190,998", "Varies", "Building your own skill", "Copywriting itself"]]'
 />
 
 ## How to choose
@@ -195,7 +195,7 @@ If you've run these skills and the copy is better but the numbers aren't, the ga
 
 <FAQSection>
 <FAQItem question="What is the best Claude Code skill for copywriting?">
-For direct response copy that has to convert on paid traffic, the strongest public option is the six-skill suite at github.com/robpalmer99/claude-code-copywriting-skills, which covers sales pages, Meta ads, landing pages, copy review and compliance and is the only one built from tracked campaign results. For SaaS and startup page copy, Corey Haines's marketingskills repository is the most complete, with 49 marketing skills including copywriting, copy editing, emails and offers.
+For direct response copy that has to convert on paid traffic, the strongest public option is the seven-skill suite at github.com/robpalmer99/claude-code-copywriting-skills, which covers sales pages, Meta ads, landing pages, copy review and compliance and is the only one built from tracked campaign results. For SaaS and startup page copy, Corey Haines's marketingskills repository is the most complete, with 49 marketing skills including copywriting, copy editing, emails and offers.
 </FAQItem>
 
 <FAQItem question="What is a Claude Code skill?">
