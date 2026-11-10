@@ -197,6 +197,21 @@ const tagToService: Record<string, string> = {
   'dtc copywriter for hire': 'creative-strategist',
   'shopify copywriter': 'creative-strategist',
   'best email copywriters': 'email-copywriter',
+  'best claude code skills for copywriting': 'ai-marketing-consultant',
+  'best copywriting skill for claude': 'ai-marketing-consultant',
+  'claude copywriting skill': 'ai-marketing-consultant',
+  'hire a vsl copywriter': 'vsl-copywriter',
+  'hire vsl copywriter': 'vsl-copywriter',
+  'vsl copywriter near me': 'vsl-copywriter',
+  'vsl script writer': 'vsl-copywriter',
+  'best financial copywriters': 'financial-copywriter',
+  'financial copywriter for hire': 'financial-copywriter',
+  'creative strategist vs media buyer': 'creative-strategist',
+  'claude code for ecommerce brands': 'ai-marketing-consultant',
+  'claude code ecommerce': 'ai-marketing-consultant',
+  'claude skills for marketers': 'ai-marketing-consultant',
+  'ai creative team': 'creative-team',
+
   'email copywriter for hire': 'email-copywriter',
 }
 

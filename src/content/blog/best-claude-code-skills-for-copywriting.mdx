@@ -1,0 +1,236 @@
+---
+title: "Best Claude Code Skills for Copywriting in 2026 (Ranked and Tested)"
+metaTitle: "Best Claude Code Skills for Copywriting 2026: Ranked"
+description: "The best Claude Code copywriting skills on GitHub, ranked by what they actually make Claude do. Star counts, licences, what each one is good at, and how to install them."
+date: "2026-11-10"
+updated: "2026-11-10"
+category: "AI Copywriting"
+tags: ["best claude code skills for copywriting", "best copywriting skill for claude", "Claude Code skills", "claude copywriting skill", "AI copywriting", "Claude Code", "copywriting skills"]
+published: true
+heroImage: "/images/blog/best-claude-code-skills-for-copywriting.jpg"
+heroAlt: "A copywriter's desk with a terminal open on a SKILL.md file beside a printed sales letter marked up in pen"
+faqs:
+  - question: "What is the best Claude Code skill for copywriting?"
+    answer: "For direct response copy that has to convert on paid traffic, the strongest public option is the five-skill suite at github.com/robpalmer99/claude-code-copywriting-skills, which covers sales pages, Meta ads, landing pages, copy review and compliance and is the only one built from tracked campaign results. For SaaS and startup page copy, Corey Haines's marketingskills repository is the most complete, with 49 marketing skills including copywriting, copy editing, emails and offers."
+  - question: "What is a Claude Code skill?"
+    answer: "A Claude Code skill is a folder containing a SKILL.md file with YAML frontmatter (a name and a trigger description) followed by instructions Claude follows when the task matches. Skills live in .claude/skills/ inside a project or in ~/.claude/skills/ for every project, and they follow Anthropic's Agent Skills format, so the same file also works in Claude.ai projects and through the API."
+  - question: "How do I install a copywriting skill in Claude Code?"
+    answer: "Create a folder named after the skill inside .claude/skills/ (or ~/.claude/skills/ for all projects), save the skill as SKILL.md inside it, and put any supporting files in a references/ subfolder in the same folder. Claude Code detects the skill automatically and you can call it by name with a slash command such as /copychief. Clone the GitHub repo if you want all of a suite at once."
+  - question: "Are Claude Code copywriting skills free?"
+    answer: "Every skill in this list is free to download. Licences vary: Rob Palmer's suite is CC-BY-4.0, Corey Haines's marketingskills and OneWave's library are MIT, boraoztunc's skills are Apache-2.0, and a couple of the smaller repos carry no licence at all, which means you can read them but have no formal right to redistribute. You need a Claude subscription to run any of them."
+  - question: "Which copywriting skill should I use for Meta ads?"
+    answer: "Use a skill written specifically for ads rather than a general copywriting skill. The ad-copy skill in the robpalmer99 suite includes Meta ad specs, hook formulas and compliance rules for health and supplement offers, and it pairs with a compliance-checker skill that audits the copy before you submit. Corey Haines's ad-creative skill is a good alternative for SaaS and ecommerce brands that are not in a regulated vertical."
+  - question: "Do these skills work in ChatGPT or Cursor?"
+    answer: "Most of them do, with varying effort. The Agent Skills format is plain markdown, so Cursor, Codex and other agents that support the spec read them directly, and Corey Haines's repo is explicitly built for that. For ChatGPT you paste the SKILL.md body into a custom GPT or project instruction. The slash-command invocation and the automatic triggering are Claude Code features and do not carry over."
+  - question: "Can a skill replace a copywriter?"
+    answer: "A good skill raises the floor of AI copy a long way, which is enough for a founder writing their own emails or a marketer who needs solid first drafts. A skill does not replace the judgement that decides which angle to run, which claim will survive compliance, or why a control is beating the challenger. For a campaign where one page decides whether the offer scales, the skill is the assistant and a senior copywriter is still the author."
+  - question: "What should I look for in a copywriting skill before I install it?"
+    answer: "Four things. Who wrote it and what they have shipped, because a skill is a distillation of the author's taste. Whether the output rules are specific (named formulas, named AI tells to avoid, awareness levels) or generic (be clear, be compelling). Whether it has a review or compliance companion, since the first draft is never the shipping draft. And the licence, if you plan to use it inside a team or product."
+  - question: "Why do some skills have hundreds of thousands of stars and others a few dozen?"
+    answer: "Star counts measure reach, not copy quality. The giant repositories are general-purpose frameworks or large catalogues that happen to include a copywriting skill, and their stars come from developers. The specialist repos were written by working copywriters for a much smaller audience. Judge the copywriting skill itself, which is one file, rather than the repository it sits in."
+  - question: "Will these skills keep working as Claude Code changes?"
+    answer: "The SKILL.md format has been stable since Anthropic published the Agent Skills specification in 2025, and skills written for it have survived every Claude Code release since. What changes is the surrounding tooling: slash commands, plugin marketplaces, portability to Claude.ai and the API. A well-maintained repo updates its install notes when that happens; check the last commit date before you depend on one."
+---
+
+If you search for the best copywriting skill for Claude, you'll find GitHub repositories with six-figure star counts, half a dozen smaller ones written by actual copywriters, and no honest comparison of what any of them make Claude do. I've installed and run every skill on this list on real work, so here's that comparison.
+
+I'll be upfront about the conflict of interest. The first entry is mine. I wrote five of these skills in April and I use them most days on client funnels, so I know exactly where they're strong and where the alternatives beat them. Where another skill is better for your job, I say so, because a reader who installs the wrong skill and gets generic copy doesn't come back.
+
+<KeyTakeaways>
+- Eight public Claude Code copywriting skills and suites, ranked by what they make Claude produce, not by star count
+- The specialist skills written by working copywriters beat the big catalogues for copy that has to convert; the catalogues win for breadth
+- Direct response, ads and compliance: the robpalmer99 suite. SaaS and startup pages: Corey Haines's marketingskills. Editing out AI slop: boraoztunc's copy-editing and stop-slop
+- Every skill is one folder with a SKILL.md inside, installs in under a minute, and follows the same Agent Skills format as Anthropic's official repo
+- Star counts in this market measure developer reach, not copy quality. The one-file skill is what you should judge
+</KeyTakeaways>
+
+<DefinitionBox term="Claude Code Skill">
+A folder containing a SKILL.md file: YAML frontmatter with a name and a trigger description, followed by the instructions Claude follows when a task matches. Skills live in a project's .claude/skills/ folder or in ~/.claude/skills/ for every project, and Claude Code loads them automatically or on a slash command such as /copychief. The format is Anthropic's Agent Skills specification, so the same file also works in Claude.ai projects, through the API, and in other agents that support the spec.
+</DefinitionBox>
+
+## How this list was built
+
+I ranked on three things. First, what the skill actually tells Claude to do: named formulas, awareness levels, AI tells to avoid, review criteria, compliance rules, or just "be clear and compelling". Second, who wrote it and what they have shipped, because a skill is a distillation of its author's taste and you inherit that taste. Third, maintenance and licence, checked on GitHub on 10 November 2026, with star counts quoted as of that date.
+
+What I didn't rank on is the size of the repository. Several of the entries below are one copywriting skill inside a catalogue of hundreds. The catalogue's stars tell you how many developers found it. They tell you nothing about the one file you'd be installing.
+
+## 1. Rob Palmer: claude-code-copywriting-skills
+
+**Repo:** [github.com/robpalmer99/claude-code-copywriting-skills](https://github.com/robpalmer99/claude-code-copywriting-skills). 49 stars, 10 forks, CC-BY-4.0.
+
+**What's in it:** Five skills that cover a direct response workflow end to end. [direct-response-copy](/blog/claude-code-direct-response-copy-skill) for sales pages, VSLs, emails and headlines. [ad-copy](/blog/claude-code-ad-copy-skill) for Meta, Instagram and UGC scripts, with a Meta specs reference. [landing-page-copy](/blog/claude-code-landing-page-copy-skill) for bridge and pre-sell pages. [copychief](/blog/claude-code-copychief-skill) for structured review against a brief. [compliance-checker](/blog/claude-code-compliance-checker-skill) with a trigger-words reference for Meta, Google, TikTok and the FTC.
+
+**What it makes Claude do:** Write to a Schwartz awareness level, pick a lead type, run the So What chain on every benefit, attach proof to the objection it answers, and avoid a named list of AI tells. The review skill grades a draft the way a copy chief does, with a conversion score and the top three fixes rather than line edits. The compliance skill is the one nobody else on this list has.
+
+**Where it's weakest:** It's opinionated about direct response, so if you want brand copy for a SaaS homepage it will push harder for the sale than you may like. And the skills are the public versions of what I run, without my private vault of 1,239 frameworks and swipes, so they encode the method rather than the library.
+
+**Best for:** Supplement, financial, info-product and DTC offers on paid traffic. Anyone who has to submit ads for review. Written from 40 years of campaigns and [$523 million in tracked results](/blog/523m-copywriting-campaign), which is the thing I can offer that a catalogue can't.
+
+## 2. Corey Haines: marketingskills
+
+**Repo:** [github.com/coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills). 59,423 stars, 8,678 forks, MIT.
+
+**What's in it:** 49 marketing skills, of which copywriting, copy-editing, emails, offers, ad-creative, cro and marketing-psychology are the ones a copywriter will use. A product-marketing context file sits underneath them all, so every skill reads your positioning before it writes.
+
+**What it makes Claude do:** The copywriting skill is the best-engineered general page-copy skill I've seen. It diagnoses the input first (blank brief, a draft with a real voice, or a point edit) and limits how much it's allowed to change, which stops the model imposing its own taste on a founder who already made good choices. It bans the "it's not X, it's Y" pattern and the "no X, no Y, no Z" tricolon by name, refuses to invent stats or customers, and names the evidence that would unlock a declined claim.
+
+**Where it's weakest:** It's built for SaaS and startup pages, so it assumes a product-aware visitor and a demo or trial as the action. There's no VSL or long-form sales letter structure, no awareness-level routing, and nothing about compliance. For a cold-traffic health offer it will produce clean, honest, under-powered copy.
+
+**Best for:** Technical founders and SaaS marketers. If your page needs to be clear more than it needs to be persuasive, start here.
+
+## 3. boraoztunc: skills
+
+**Repo:** [github.com/boraoztunc/skills](https://github.com/boraoztunc/skills). 460 stars, 70 forks, Apache-2.0.
+
+**What's in it:** A design-heavy catalogue with a copywriting cluster inside it: copywriting, copy-editing, landing-page, page-cro, pricing-page, ogilvy and stop-slop.
+
+**What it makes Claude do:** The copywriting skill shares its opening with Corey Haines's (same context questions, same page types), so treat it as a sibling. The two that earn the install are copy-editing, which tightens a draft without rewriting its argument, and stop-slop, a sweep for the vocabulary and rhythm that mark a paragraph as machine-written. The ogilvy skill is a nice touch: headline-first, research-led, long copy when the product deserves it.
+
+**Where it's weakest:** Breadth over depth. Most of the catalogue is front-end design, and the copywriting skills are competent generalists rather than specialists.
+
+**Best for:** Designers and developers who write their own landing pages and want the copy to stop reading like AI before a human sees it.
+
+## 4. borghei: Claude-Skills
+
+**Repo:** [github.com/borghei/Claude-Skills](https://github.com/borghei/Claude-Skills). 1,083 stars, 205 forks, custom licence.
+
+**What's in it:** 403 skills across every function. The marketing folder has copywriting, copy-editing, email-sequence, content-humanizer, paid-ads, landing-page-generator and launch-strategy among 40-odd others, plus agent definitions that chain them.
+
+**What it makes Claude do:** The copywriting skill is framework-driven: headline formulas, CTA patterns, objection handling, written for homepages, pricing and feature pages. Content-humanizer is the interesting one, a dedicated pass for AI tells that most teams would otherwise run by hand. The agents (brand-strategist, growth-marketer, marketing-analyst) let you run a sequence without prompting each step.
+
+**Where it's weakest:** With 403 skills, quality varies by folder, and the marketing ones read as thorough rather than opinionated. The licence is custom, so read it before using the skills inside a product.
+
+**Best for:** Marketing teams that want one install covering strategy, copy, email, ads and analytics, and will tune the skills afterwards.
+
+## 5. OneWave AI: claude-skills
+
+**Repo:** [github.com/OneWave-AI/claude-skills](https://github.com/OneWave-AI/claude-skills). 422 stars, 63 forks, MIT.
+
+**What's in it:** Around 230 skills for sales, marketing, design and engineering. The copy-relevant ones are landing-page-copywriter, email-subject-line-optimizer, cold-email-sequence-generator, review-response-writer, brand-voice-analyzer and a compliance-checker.
+
+**What it makes Claude do:** Task-shaped output. Each skill does one job with a defined deliverable, which makes them easy to drop into an automation. The brand-voice-analyzer is useful before any of the writing skills: it reads your existing copy and produces a voice profile the others can follow.
+
+**Where it's weakest:** The writing skills are shallower than the specialist ones above, and the compliance-checker is a general business compliance pass rather than an ad-platform one, so don't rely on it before a Meta submission.
+
+**Best for:** Sales and ops teams building pipelines where copy is one step among many.
+
+## 6. The Boring Marketer: The Direct Response Copy Skill
+
+**Where:** [A public GitHub gist](https://gist.github.com/boringmarketer/96192770df22ac2a9ff4aed72b4c20f4), published 27 January 2026. No licence stated.
+
+**What's in it:** One long skill file, roughly 15,000 words, covering headlines, opening lines, curiosity gaps, the slippery slide, pain quantification, founder stories, testimonials, disqualification and CTAs, with the classic frameworks (Schwartz, Hopkins, Ogilvy, Halbert, Caples, Sugarman, Collier) alongside modern internet-native examples.
+
+**What it makes Claude do:** Write long, specific, story-led copy in the voice of the creator economy: founder narratives, build-in-public proof, Marc Lou and Justin Welsh style examples. It's the closest thing on this list to a complete course in one prompt.
+
+**Where it's weakest:** Length is a cost. A 15,000-word skill eats context on every call, and the internet-native voice is a poor fit for a 55-year-old supplement buyer on native ads. There's no review companion, so the draft it produces is the draft you edit.
+
+**Best for:** Creators and solo founders selling courses, templates and software to an online-native audience.
+
+## 7. cyrwheelninja: copywriting-skill
+
+**Repo:** [github.com/cyrwheelninja/copywriting-skill](https://github.com/cyrwheelninja/copywriting-skill). 11 stars, no licence.
+
+**What's in it:** A single copywriting skill with a resources folder: 50-plus frameworks, an AI trope detector and 34 prompts adapted from Copyhackers.
+
+**What it makes Claude do:** Apply a named framework to a brief and then check its own output for AI tropes. The Copyhackers lineage shows in the conversion-copy vocabulary (voice-of-customer mining, message hierarchy, the Rule of One).
+
+**Where it's weakest:** A single push in February 2026 and no updates since, and no licence, so you can read and learn from it but have no formal right to redistribute. Treat it as a reference rather than a dependency.
+
+**Best for:** Studying how someone else structured a big framework library into one skill before you build your own.
+
+## 8. Anthropic: skills (the official reference)
+
+**Repo:** [github.com/anthropics/skills](https://github.com/anthropics/skills). 190,998 stars.
+
+**What's in it:** No copywriting skill. It's here because it is the specification every entry above follows, with the skill-creator skill, a template and the production document skills.
+
+**What it makes Claude do:** Build you a skill. Run skill-creator on a folder of your own winning copy and your brand rules and it will scaffold a SKILL.md you can then refine. If none of the seven above fits your voice, this is the fastest route to one that does.
+
+**Best for:** Anyone who wants their own skill rather than someone else's taste. Also worth reading before you install anything, so you understand what a skill can and cannot do.
+
+<ComparisonTable
+  caption="Claude Code copywriting skills compared, November 2026"
+  headers='["Skill or suite", "Stars", "Licence", "Strongest at", "Missing"]'
+  rows='[["robpalmer99/claude-code-copywriting-skills", "49", "CC-BY-4.0", "Direct response, ads, review, compliance", "Brand voice for SaaS"],["coreyhaines31/marketingskills", "59,423", "MIT", "SaaS page copy, editing, offers", "Long-form sales, compliance"],["boraoztunc/skills", "460", "Apache-2.0", "Copy editing, slop removal", "Specialist depth"],["borghei/Claude-Skills", "1,083", "Custom", "Breadth, agent chains", "Opinion, licence clarity"],["OneWave-AI/claude-skills", "422", "MIT", "Task-shaped sales and email output", "Writing depth"],["Boring Marketer gist", "n/a", "None stated", "Creator-economy long copy", "Review pass, context cost"],["cyrwheelninja/copywriting-skill", "11", "None", "Framework library, trope detection", "Maintenance"],["anthropics/skills", "190,998", "Varies", "Building your own skill", "Copywriting itself"]]'
+/>
+
+## How to choose
+
+Match the skill to the copy, not the star count.
+
+- **Cold traffic, paid, regulated vertical.** You need awareness-level routing, a review pass and a compliance pass. Install the robpalmer99 suite and run direct-response-copy, then copychief, then compliance-checker, in that order.
+- **SaaS or startup pages.** Corey Haines's copywriting and copy-editing skills, with the product-marketing context file filled in first. Add his offers skill if the pricing page is the problem.
+- **A draft that reads like AI.** boraoztunc's stop-slop or borghei's content-humanizer, then a human read. Neither fixes a weak argument; both fix the surface.
+- **Your own voice, your own winners.** Anthropic's skill-creator with a folder of your best-performing copy as the input. It takes an afternoon and you own the result.
+
+Whichever you pick, feed it references. A skill tells Claude how to write. Your winning controls tell it what winning looks like for your audience, and [six months of running these skills](/blog/claude-code-copywriting-skills) taught me that the second input matters more than the first.
+
+## Installing a skill in 60 seconds
+
+Every entry on this list uses the same layout, so the steps are the same whichever you choose.
+
+1. Create a folder in `.claude/skills/` inside your project, or in `~/.claude/skills/` if you want the skill in every project. Name it after the skill: `copychief/`.
+2. Save the skill file inside it as `SKILL.md`. If the skill ships with references (ad specs, trigger words, swipes), they go in a `references/` subfolder inside the same skill folder.
+3. Open Claude Code. The skill is detected automatically from the description in its frontmatter, and you can call it directly with a slash command such as `/copychief`.
+
+To install a whole suite, clone the repository and copy the folders you want. The same SKILL.md also works uploaded to a Claude.ai project or attached through the API, so a skill you tune in Claude Code travels with you.
+
+## Where a skill stops and a copywriter starts
+
+A skill fixes the most common failure of AI copy, which is that the model has no taste of its own and defaults to the average of everything it has read. Give it a point of view and the output improves faster than any prompt trick. That's enough for most of the copy most businesses write.
+
+It isn't enough for the page that decides whether an offer scales. Choosing the angle, knowing which claim will survive the platform reviewer, reading why the control is still winning after the challenger looked better on paper: that judgement comes from campaigns, and no skill file has run one. I built mine so the volume could come from the machine and the decisions could stay with me. If you're at the point where the decisions are the bottleneck, the skills are free and [a strategy call](/call) is where the rest of the work starts.
+
+---
+
+## Before you book
+
+If you've run these skills and the copy is better but the numbers aren't, the gap is usually the strategy above the draft rather than the draft itself. That's the work I do with clients, and the skills are what I use to do it faster.
+
+- **Capacity.** I take a small number of new engagements each quarter, across [direct response copy](/services/direct-response-copywriter), [creative strategy](/services/creative-strategist) and [AI marketing consulting](/services/ai-marketing-consultant) for teams who want the full method installed.
+- **Timeline.** Most kickoffs happen within two weeks of a strategy call, with a fixed-price quote within 48 hours.
+- **Fit.** Send your current copy and your numbers before the call. I'll tell you whether the problem is the draft, the angle or the offer, and whether I'm the right person to fix it.
+
+[Book a strategy call with Rob Palmer.](/call) No obligation. If the skills are all you need, I'll say so.
+
+<FAQSection>
+<FAQItem question="What is the best Claude Code skill for copywriting?">
+For direct response copy that has to convert on paid traffic, the strongest public option is the five-skill suite at github.com/robpalmer99/claude-code-copywriting-skills, which covers sales pages, Meta ads, landing pages, copy review and compliance and is the only one built from tracked campaign results. For SaaS and startup page copy, Corey Haines's marketingskills repository is the most complete, with 49 marketing skills including copywriting, copy editing, emails and offers.
+</FAQItem>
+
+<FAQItem question="What is a Claude Code skill?">
+A Claude Code skill is a folder containing a SKILL.md file with YAML frontmatter (a name and a trigger description) followed by instructions Claude follows when the task matches. Skills live in .claude/skills/ inside a project or in ~/.claude/skills/ for every project, and they follow Anthropic's Agent Skills format, so the same file also works in Claude.ai projects and through the API.
+</FAQItem>
+
+<FAQItem question="How do I install a copywriting skill in Claude Code?">
+Create a folder named after the skill inside .claude/skills/ (or ~/.claude/skills/ for all projects), save the skill as SKILL.md inside it, and put any supporting files in a references/ subfolder in the same folder. Claude Code detects the skill automatically and you can call it by name with a slash command such as /copychief. Clone the GitHub repo if you want all of a suite at once.
+</FAQItem>
+
+<FAQItem question="Are Claude Code copywriting skills free?">
+Every skill in this list is free to download. Licences vary: Rob Palmer's suite is CC-BY-4.0, Corey Haines's marketingskills and OneWave's library are MIT, boraoztunc's skills are Apache-2.0, and a couple of the smaller repos carry no licence at all, which means you can read them but have no formal right to redistribute. You need a Claude subscription to run any of them.
+</FAQItem>
+
+<FAQItem question="Which copywriting skill should I use for Meta ads?">
+Use a skill written specifically for ads rather than a general copywriting skill. The ad-copy skill in the robpalmer99 suite includes Meta ad specs, hook formulas and compliance rules for health and supplement offers, and it pairs with a compliance-checker skill that audits the copy before you submit. Corey Haines's ad-creative skill is a good alternative for SaaS and ecommerce brands that are not in a regulated vertical.
+</FAQItem>
+
+<FAQItem question="Do these skills work in ChatGPT or Cursor?">
+Most of them do, with varying effort. The Agent Skills format is plain markdown, so Cursor, Codex and other agents that support the spec read them directly, and Corey Haines's repo is explicitly built for that. For ChatGPT you paste the SKILL.md body into a custom GPT or project instruction. The slash-command invocation and the automatic triggering are Claude Code features and do not carry over.
+</FAQItem>
+
+<FAQItem question="Can a skill replace a copywriter?">
+A good skill raises the floor of AI copy a long way, which is enough for a founder writing their own emails or a marketer who needs solid first drafts. A skill does not replace the judgement that decides which angle to run, which claim will survive compliance, or why a control is beating the challenger. For a campaign where one page decides whether the offer scales, the skill is the assistant and a senior copywriter is still the author.
+</FAQItem>
+
+<FAQItem question="What should I look for in a copywriting skill before I install it?">
+Four things. Who wrote it and what they have shipped, because a skill is a distillation of the author's taste. Whether the output rules are specific (named formulas, named AI tells to avoid, awareness levels) or generic (be clear, be compelling). Whether it has a review or compliance companion, since the first draft is never the shipping draft. And the licence, if you plan to use it inside a team or product.
+</FAQItem>
+
+<FAQItem question="Why do some skills have hundreds of thousands of stars and others a few dozen?">
+Star counts measure reach, not copy quality. The giant repositories are general-purpose frameworks or large catalogues that happen to include a copywriting skill, and their stars come from developers. The specialist repos were written by working copywriters for a much smaller audience. Judge the copywriting skill itself, which is one file, rather than the repository it sits in.
+</FAQItem>
+
+<FAQItem question="Will these skills keep working as Claude Code changes?">
+The SKILL.md format has been stable since Anthropic published the Agent Skills specification in 2025, and skills written for it have survived every Claude Code release since. What changes is the surrounding tooling: slash commands, plugin marketplaces, portability to Claude.ai and the API. A well-maintained repo updates its install notes when that happens; check the last commit date before you depend on one.
+</FAQItem>
+</FAQSection>
