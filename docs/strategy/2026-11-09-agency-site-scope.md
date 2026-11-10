@@ -2,6 +2,8 @@
 
 Status: approved direction (one agency site, not two). Rob is sourcing the domain. This document is the brief to build from once the domain and the open decisions in section 9 are settled.
 
+> **Widened on 2026-11-10.** The agency is now Rob's own paid-media management offer (Google Ads and Meta Ads run with the creative, pages and offer economics inside one loop), not a creative-only joint venture with Ben. Positioning, services, pricing shape and the tooling build are in `2026-11-10-paid-media-management-plan.md`; that plan supersedes sections 1 to 3 and 9.1, 9.2 and 9.5 here. The site structure, entity rules and content guidance in sections 4 to 7 still apply, with media management added to the services and the name criteria shifted from "studio" to "growth" or "performance".
+
 ## 1. Purpose
 
 Reach the buyer robpalmer.com cannot: a brand or offer owner who wants a done-for-you team (strategy, ad creative at volume, landing pages, copy) on a retainer, and who searches or asks an AI assistant for an agency, not a freelancer. Leverage Ben's team (video editing under Niko, dev under Madhav and Ashish, product managers Faisa, Hains and Tom, plus the AI creative pipeline built for Smile Spirits and Paletrove) to deliver it. Rob is the named founder and creative director, which is the entity bridge that lets the new domain borrow robpalmer.com's authority.
