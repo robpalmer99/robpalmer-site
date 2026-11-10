@@ -1,0 +1,445 @@
+---
+title: "Free Claude Code Funnel Teardown Skill: Break Down Any Competitor Funnel, Then Model It Safely"
+metaTitle: "Claude Code Funnel Teardown Skill: Competitor Funnel Analysis"
+metaDescription: "Free Claude Code skill that tears down a live competitor funnel page by page, flags congruency breaks, swipes video ads scene by scene, and models a proven page into original copy with a compliance gate."
+description: "Download my free Claude Code funnel teardown skill. It walks a live competitor funnel from ad to checkout, critiques each page above and below the fold, flags congruency breaks, swipes a video ad scene by scene, and models a proven page's structure into original copy for your offer, with a mandatory compliance gate."
+date: "2026-11-10"
+updated: "2026-11-10"
+category: "AI Copywriting"
+tags: ["Claude Code funnel teardown", "funnel teardown", "competitor funnel analysis", "sales funnel audit", "free Claude Code skill", "Claude Code skill", "conversion rate optimization", "AI copywriting"]
+published: true
+heroImage: "/images/blog/claude-code-funnel-teardown-skill.jpg"
+heroAlt: "Four printed funnel pages laid in a row on a desk, ad to checkout, joined by gold thread and annotated above and below a drawn fold line"
+faqs:
+  - question: "What is the Claude Code funnel teardown skill?"
+    answer: "A free skill file for Claude Code with three modes. Mode A walks a live competitor funnel from the ad to the checkout, critiques every page above and below the fold, flags congruency breaks between steps and lists fixes in order of impact. Mode B swipes a video ad scene by scene so its structure can be rebuilt. Mode C models a proven page's persuasion architecture into original copy for your own offer, with a mandatory compliance and believability gate before anything is handed off."
+  - question: "What is a funnel teardown?"
+    answer: "A structured analysis of every step a buyer passes through, from the ad to the thank-you page, read as one argument rather than as separate pages. A good teardown maps the path, reviews each page above and below the fold, checks that the promise, mechanism, numbers and call to action stay consistent between steps, names what is working, and ranks the leaks by their effect on conversion."
+  - question: "What is a congruency break in a funnel?"
+    answer: "A point where one step contradicts the step before it. An ad about one problem landing on a page about another, a mechanism named differently on the ad and the page, a price or guarantee that changes at checkout, a product-aware ad sending traffic to a blind pre-sell. Each page can look fine on its own and the funnel still leaks at the seams. The skill checks six rows at every hand-off: promise, mechanism name, offer numbers, awareness hand-off, CTA verb and compliance parity."
+  - question: "Can the skill clone a competitor's sales page?"
+    answer: "It models the structure, not the words. Mode C extracts a skeleton of the reference page, the persuasion role of each section and the devices it uses, re-maps the offer model and the metaphors to your offer, and writes original copy section by section from your brief. Pasting a competitor's copy is plagiarism, and the skill refuses to do it. What transfers is the architecture."
+  - question: "Why does Mode C have a compliance gate?"
+    answer: "Because the proven page you are modelling may be winning with devices that will get your account banned or your processor pulled: fabricated testimonials, fake live counters, invented comment feeds, unsupported health or income claims, timers that reset. Cloning tools reproduce those by default. The skill strips or visibly flags each one and proposes a compliant substitute, and will not hand off a draft that fails the check without the flags showing."
+  - question: "Is the funnel teardown skill free?"
+    answer: "Yes. The SKILL.md and its reference file are published under CC-BY-4.0 in the same GitHub repository as my other copywriting skills. Copy the folder into .claude/skills, no signup or email gate. A link back to this page is the only thing I ask if it helps you."
+  - question: "What tools does the skill need to crawl a funnel?"
+    answer: "Claude Code's built-in web fetch covers most pages. If a crawler such as firecrawl is installed it uses that for JavaScript-rendered pages and multi-step flows. For video sales letters it uses captions or a transcript you paste. Where a checkout or an upsell sits behind a payment, it says the trail went cold rather than inventing the step."
+  - question: "Does the teardown skill help my competitor?"
+    answer: "No. Modes A and B are for study, and the output is what transfers to your own offers: the moves worth learning from and the leaks worth avoiding. The skill is told explicitly that a teardown is not optimisation help for the brand being analysed."
+  - question: "How does this differ from the copychief skill?"
+    answer: "Copychief reviews a single piece of copy for craft, with line-level fixes and the principle behind each one. Funnel teardown reads a whole funnel as one argument, checks the seams between pages, and in Mode C generates a structural clone. Run teardown on the funnel, then copychief on the page you decide to rewrite."
+  - question: "Does the funnel teardown skill work in ChatGPT or Codex?"
+    answer: "In Codex, yes: OpenAI's agent reads the same Agent Skills format from a .agents/skills folder and can fetch pages. In ChatGPT's chat window you can paste the skill body into a Project or a custom GPT within the 8,000-character instruction cap and paste the pages in by hand, which loses the crawl and the chaining into the compliance skill. I wrote a full Claude Code vs ChatGPT comparison for copy if you are deciding."
+---
+
+Most funnel reviews are page reviews. Someone looks at the sales page, lists what's wrong with the headline and the proof, and never opens the ad that sent the traffic. So the review misses the leak that matters most: the seam. The ad promised one thing, the page opens on another, and the visitor who clicked for the first thing leaves before the second thing gets a hearing.
+
+The funnel teardown skill reads the funnel as one argument. It walks the path a buyer takes from the ad to the checkout, critiques every page above and below the fold, flags where the steps contradict each other, and ranks the fixes by their effect on conversion. It also swipes video ads scene by scene, and in its third mode it models a proven page into original copy for your own offer with a compliance gate the cloning tools skip. It's the eighth skill in my free [Claude Code copywriting suite](/blog/claude-code-copywriting-skills), and the full skill file is further down this page.
+
+<KeyTakeaways>
+- Mode A tears down a live funnel page by page, above and below the fold, and flags congruency breaks between steps, which are the highest-leverage leaks in most funnels
+- Mode B turns a winning video ad into a scene table and a transferable structure a writer can rebuild for another product
+- Mode C models a proven page's persuasion architecture into original copy for your offer, section by section, grounded in your brief
+- Mode C's compliance and believability gate strips or visibly flags fake testimonials, fake counters, unsupported claims and dark-pattern timers before anything is handed off
+- Every output is dated, because live funnels change and a teardown is a snapshot
+</KeyTakeaways>
+
+<DefinitionBox term="Congruency Break">
+A point in a funnel where one step contradicts the one before it: the ad promises X and the page opens on Y, the mechanism changes its name, the price or guarantee shifts at checkout, a product-aware ad lands on a blind pre-sell. Each page can pass review on its own while the funnel leaks at the seams. Finding those seams is the first job of any [conversion rate optimisation](/services/conversion-rate-optimization) engagement.
+</DefinitionBox>
+
+## Why the seams matter more than the pages
+
+Here's a funnel I see every month in some form. The ad is a story about a woman who fixed her sleep by cooling her bedroom. The advertorial it links to is a listicle of seven sleep mistakes, cooling not among them. The sales page opens on a doctor and a mechanism about magnesium. The checkout offers a subscription the sales page never mentioned. Four competent pages, each written by a different person on a different week, and the visitor meets a different argument at every step.
+
+No single-page review catches that. The ad passes. The advertorial passes. The sales page could be stronger but it's fine. The leak lives between them, and the only way to find it is to walk the funnel in order with the previous step still in mind. That's what Mode A does, and it's why the skill checks six things at every hand-off: the promise, the mechanism name, the offer numbers, the awareness hand-off, the CTA verb and compliance parity.
+
+## Mode A: the live teardown
+
+1. **Map the funnel.** From the URL you give it, the skill walks the buyer's path: pre-sell, sales page or VSL, checkout, bumps and upsells where it can reach them. It fetches each page, uses a crawler if one is installed for JavaScript-heavy pages, and gets a VSL transcript from captions or a paste. Where a step sits behind a payment, it says the trail went cold instead of making the step up.
+2. **Critique each page above and below the fold.** Above: hook, promise, visual, and whether the visitor is in the right place given what sent them. Below: mechanism, proof, offer build, objections handled, close, urgency and risk reversal. Each page gets a "why it works or fails" note about the persuasion move, not the layout.
+3. **Flag the congruency breaks.** Step by step, the six rows.
+4. **Prioritise and grade.** Fixes in order of impact on conversion. What's working, with the reason, because the moves worth learning from are the point of studying a competitor. A verdict with a read of the awareness and sophistication stage the funnel was built for, graded on the right register: a branded commerce funnel isn't held to direct-response rules, and a direct-response funnel doesn't get to hide behind vibe.
+5. **Save a dated breakdown.** Funnel map, page by page, flags, what's working, priority fixes, verdict. The template is in the reference file so every teardown in a project is comparable.
+
+## Mode B: the video ad swipe
+
+For a winning video ad you want to rebuild the structure of, the skill produces a scene table: one row per beat with the timestamp, the spoken line, the on-screen text, the visual, the tone and the technique with why it works. Then it summarises the structure: opening hook type, beat pattern, proof devices, CTA, audience, and a transferable template written so a writer could rebuild the sequence for a different product without lifting a line.
+
+It needs a transcript, from captions, a download tool or a paste, and frames if you have them. It won't reconstruct an ad from memory, which is the failure mode of asking a chat window to "analyse this ad" from a URL it can't open.
+
+## Mode C: the structural clone, with the gate
+
+Mode C is the only mode that writes copy, and it's the reason the skill exists in this form.
+
+Take a proven page. Extract its skeleton: every section in order, the persuasion role each one plays (hook, hidden-mechanism reveal, agitation, solution tease, product introduction, price anchor, risk reversal, close) and the devices it uses (the mechanism metaphor, the proof type, the urgency mechanism, the offer model). That's a wireframe, not a critique.
+
+Then ground in your offer brief, re-map what has to change, and write original copy section by section. A paid-product page modelled for a free VSL turns its price and refund sections into "watch the full video" and "nothing to lose by watching". A mechanism metaphor built for tinnitus gets re-skinned for financial worry. The shape transfers. The words are new, and the skill refuses to paste the reference's copy, because that's plagiarism, not modelling.
+
+Before anything is handed off, the gate. The generated draft goes through the [compliance-checker](/blog/claude-code-compliance-checker-skill) and a believability check, and anything on this list is stripped or flagged in a visible warning block: fabricated testimonials, fake live or viewer counts, invented comment feeds, unsupported income or health claims, timers that reset. If the reference page's persuasion depends on one of those, the skill says so and proposes a compliant substitute instead of cloning the violation. I built the gate because the cloning tools I tested reproduce the manipulation even when told not to, and a page that converts for three weeks and then costs you the ad account is a loss.
+
+## What a teardown looks like
+
+Here's the shape of a Mode A output, abbreviated. The real file runs to a page per funnel step.
+
+```markdown
+# SleepCo: advertorial funnel teardown
+
+Date: 2026-11-10 (live snapshot) · Entry: Meta ad → listicle → VSL page → checkout
+Built for: problem-aware / stage 4 sophistication · Register: direct response
+
+## Congruency flags
+- Ad → listicle: BREAK. Ad promises a cooling mechanism; listicle lists seven
+  mistakes and never mentions temperature. The click was bought on a promise
+  the page doesn't continue.
+- VSL page → checkout: BREAK. Subscription-only at checkout; sales page
+  presented a one-time price. Compliance and conversion risk.
+
+## What's working
+- The ad's story hook lands at the exact moment of quiet crisis, before the
+  resolution. Worth studying.
+
+## Priority fixes
+1. Rewrite the listicle's first item to continue the cooling promise, or swap
+   the ad. Closes the largest leak in the funnel.
+2. Disclose the subscription on the sales page and at the price reveal.
+```
+
+The brand and the funnel are invented for the example. The flags are the kind the skill finds every time.
+
+## What it won't do
+
+It won't help the competitor. Modes A and B are for study, and the output is what transfers to your offers.
+
+It won't paste. Mode C models the structure and writes original copy, and it's told that in three places.
+
+It won't hand off a draft that fails the gate without the flags showing. If you want a clone that keeps the fake counter, you'll have to add it yourself, and the file will say why you shouldn't.
+
+## Who this is for
+
+- **Brand owners and media buyers** who suspect the funnel leaks somewhere between the ad and the sale and can't see where.
+- **Creative strategists** who need a weekly read of what competitors are running and why it works, in a format the team can act on.
+- **Copywriters** who've been asked to "write something like this page" and want to do that without copying it or inheriting its compliance problems.
+- **Anyone running a funnel audit** who wants the first pass done before the call, so the hour goes on the decisions. It's the pass I run before a [conversion rate optimisation](/services/conversion-rate-optimization) engagement.
+
+## How to install and use the skill
+
+### Step 1: Save the skill file
+
+Create a `funnel-teardown` folder inside `.claude/skills/` in your project and save the skill markdown below as `SKILL.md`, so the path is `.claude/skills/funnel-teardown/SKILL.md`. For every project on your machine, use `~/.claude/skills/funnel-teardown/SKILL.md` instead.
+
+### Step 2: Save the reference file
+
+Create a `references` folder inside `funnel-teardown` and save the output templates file below as `output-templates.md`. The skill reads it for the breakdown template, the scene table, the skeleton table and the gate checklist.
+
+### Step 3: Install the compliance checker alongside it
+
+Mode C calls the [compliance-checker skill](/blog/claude-code-compliance-checker-skill) at the gate when it's installed, and the [direct-response-copy skill](/blog/claude-code-direct-response-copy-skill) for the writing.
+
+### Step 4: Run it
+
+Paste a URL and say what you want, or start the message with `/funnel-teardown`. Examples:
+
+- "Tear down this funnel" with the ad or advertorial URL
+- "What is this funnel doing differently from ours?"
+- "Swipe this video ad's structure" with the ad URL and the transcript
+- "Model this sales page's structure for our joint supplement, free VSL offer model, and run the gate"
+- "Walk this quiz funnel and flag every congruency break"
+
+## The skill file
+
+Copy the entire contents below and save it as `.claude/skills/funnel-teardown/SKILL.md`:
+
+````markdown
+---
+name: funnel-teardown
+description: Tear down a LIVE competitor funnel or video ad from a URL, or structurally model a proven page into fresh copy for your own offer. Mode A walks the whole funnel (ad, pre-sell, sales page, checkout), critiques each page above and below the fold and flags congruency breaks. Mode B swipes a video ad scene by scene for recreation. Mode C models a proven page's structure and persuasion architecture into new, original copy for your offer with a MANDATORY compliance gate. Use when the user says "tear down this funnel", "break down this funnel", "what is this funnel doing", "swipe this video ad's structure", "analyze this competitor's funnel", or "clone / model / rebuild this page for my offer", or pastes a competitor funnel, ad or lander URL. For copy from scratch use direct-response-copy; for a single page saved as a swipe just save it.
+---
+
+# Funnel Teardown
+
+On-demand teardown of any **live** competitor funnel or video ad, producing a study-ready breakdown. Three modes. A and B **analyse** a competitor and produce a breakdown. C **generates** copy for your own offer by modelling a proven page's structure, and it's the only mode that writes copy.
+
+Pick the mode by intent and by what the URL is:
+
+- "tear down / break down / CRO this funnel" plus a URL: **Mode A**
+- "swipe this video ad's structure": **Mode B**
+- "clone / rebuild / model this page for my offer": **Mode C**
+
+## Mode A: live funnel teardown
+
+### A1. Map the funnel
+
+Start at the given URL (an ad, an advertorial or a lander) and walk the path a buyer takes: pre-sell or advertorial, sales page or VSL, checkout, then bumps and upsells if they're reachable. Fetch each page with whatever web tooling you have. Built-in web fetch covers most pages; if a crawler such as firecrawl is installed, prefer it for JS-rendered pages and multi-step flows. For a VSL, get the transcript if captions or a download are available; if the video can't be captured, say so rather than inventing its content.
+
+Note where the trail goes cold (a checkout behind a paywall, gated upsells) and say so. Don't invent steps.
+
+### A2. Critique each page, above and below the fold
+
+For every page in the funnel, split the review:
+
+- **Above the fold:** hook and headline, the promise, the visual, and the immediate "am I in the right place?" congruency with the ad or page that sent the visitor here.
+- **Below the fold:** mechanism, proof, offer build, objections handled, CTA and close, urgency and risk reversal.
+
+Flag **congruency breaks** explicitly: an ad about X landing on a page about Y, a mechanism named one way in the ad and another way on the page, a price or guarantee that changes between steps, a product-aware ad landing on a blind pre-sell. These are the highest-leverage leaks in most funnels, and they're invisible when each page is reviewed on its own.
+
+### A3. Prioritise and grade
+
+- List the biggest issues in **priority order**, by impact on conversion, not by how wrong they are.
+- Note what's **working**. A teardown that only criticises misses the moves worth learning from.
+- Give a short verdict, with a read of the awareness and sophistication stage the funnel is built for.
+- Judge the funnel on the right register. A branded commerce funnel is allowed a lighter voice; a direct-response funnel lives or dies on mechanism, specificity and proof. Don't grade one on the other's axis.
+
+### A4. Save the breakdown
+
+Write to a dated file, for example `teardowns/<brand>-<funnel-type>-teardown-<YYYY-MM-DD>.md`, using the template in `references/output-templates.md`: funnel map, page by page (above and below the fold), congruency flags, what's working, priority fixes, verdict. Annotate **why** each move works or fails, so the file teaches rather than lists. Date it: live funnels change, and a teardown is a snapshot.
+
+## Mode B: video ad swipe (scene by scene, for recreating the structure)
+
+For a winning video ad you want to structurally recreate.
+
+### B1. Get the transcript and frames
+
+Get a transcript from captions, a download tool with caption support, or a paste from the user, and frames or screenshots at the beat changes if you can. If neither is available, ask the user to paste the transcript and describe the visuals; don't reconstruct an ad from memory.
+
+### B2. Build the scene table
+
+Build a scene-by-scene table aimed at recreation, with one row per beat:
+
+| # | Timestamp | Spoken line | On-screen text | Visual / B-roll | Tone | Technique and why it works |
+
+Then summarise the ad's **structure**: the opening hook type, the pattern of beats, the authority and proof devices, the CTA, the target audience, and the transferable template (hook, agitate, mechanism, proof, offer, CTA, or whatever the ad actually does). The goal is that a copywriter could rebuild the structure for a different product without copying a line.
+
+### B3. Save as a swipe
+
+Write to `teardowns/<brand>-video-ad-teardown-<YYYY-MM-DD>.md` with the scene table, the structure summary and the key frames if you saved them.
+
+## Mode C: structural clone (generative, for YOUR offer)
+
+Take a proven page and rebuild its **structure and persuasion architecture** as fresh copy for your own offer, with a compliance gate that most cloning tools skip. The output is a draft ready to hand to a page builder.
+
+> **Model the structure, not the words.** Clone the section flow, the persuasion role of each beat, the offer model and the shape of the devices (the metaphor, the proof type, the urgency mechanism). Then write original copy for your offer. Never paste the reference's copy. That's plagiarism, not modelling.
+
+### C1. Extract the reference skeleton
+
+Scrape the reference page. Output a **wireframe, not a critique**. For each section in document order capture:
+
+- **Persuasion role:** hook, hidden-mechanism reveal, problem agitation, fear amplification, solution tease, product introduction, how to get it, scarcity, exclusivity, price anchor, discount, risk reversal, CTA, emotional close.
+- **Structural devices:** the mechanism metaphor, the proof type (testimonial, authority, demonstration, statistics), the urgency mechanism, and the **offer model** (paid product, free VSL, lead generation), because the offer model drives the re-mapping in C3.
+
+### C2. Ground in your offer
+
+Read your offer brief: mechanism, avatar, awareness and sophistication, proof, objections, price, guarantee. If there's no brief, build one from the product page and what the user tells you before writing a word, and say the brief is thin. The clone must be grounded in your offer, not in a bare product name.
+
+### C3. Adapt the model and generate section by section
+
+- **Re-map the offer model** where it differs from the reference. A paid-product page cloned for a free VSL turns the price, discount and refund sections into "watch the full video" and "nothing to lose by watching" equivalents.
+- **Re-skin the devices for your market.** Map the reference's mechanism metaphor to yours. A "stuck smoke alarm" metaphor for tinnitus can become a "stuck smoke alarm" for financial worry; the shape transfers, the content doesn't.
+- **Write each section** from the skeleton, filling it one to one from your brief. If the direct-response-copy skill is installed, use it for the writing; the skeleton tells it what each section has to do.
+
+### C4. MANDATORY compliance and believability gate
+
+Before emitting anything, run the generated copy through:
+
+- the **compliance-checker** skill if installed (platform policy, banned claims, billing-term disclosure), or the equivalent check by hand against the platforms the page will run on; and
+- a **believability check**: every claim has a source or a mechanism behind it, every proof element is real, and the urgency is true.
+
+Strip, or hard-flag in a visible warning block, any of these: fabricated testimonials, fake live or viewer counts, invented comment feeds, unsupported income or health claims, dark-pattern timers. **Do not hand off copy that fails the gate without explicit, visible flags.** If the reference's persuasion depends on a non-compliant device, say so and propose a compliant substitute rather than cloning the violation.
+
+### C5. Save
+
+Write to `copy/<offer>-<reference>-structural-clone-<YYYY-MM-DD>.md`, formatted **section by section as clean markdown ready for a page builder**, each section labelled with its persuasion role, with the reference URL and the date noted at the top. This is a draft for your funnel, not a swipe. When it's tested, record the result at the top of the file so the next clone starts from what won.
+
+## Discipline
+
+- **Modes A and B are for study, not for helping a competitor.** Extract what's transferable to your offers.
+- **Mode C models structure, not words.** Clone the architecture; write original copy.
+- **Mode C's compliance gate is non-negotiable.** Never emit a clone that smuggles the reference's non-compliant devices through unflagged.
+- **Live means perishable.** Date every file. Funnels and ads change.
+- **Don't invent unreachable steps.** Say where the trail went cold.
+- **Annotate the why.** A breakdown that lists pages without explaining the persuasion moves is a dump, not a swipe.
+
+## Reference files
+
+- `references/output-templates.md`: the Mode A breakdown template, the Mode B scene table, the Mode C skeleton table and the C4 gate checklist.
+````
+
+## The reference file
+
+Save this as `.claude/skills/funnel-teardown/references/output-templates.md`:
+
+````markdown
+# Output templates for funnel-teardown
+
+Use these shapes as written so every teardown and clone in a project is comparable. Fill every field or write "not reachable" or "unknown"; never leave a section implied.
+
+## Mode A: live funnel teardown
+
+```markdown
+# <Brand>: <funnel type> teardown
+
+Date: <YYYY-MM-DD> (live snapshot; the funnel may have changed since)
+Entry URL: <url>
+Funnel type: <ecom | quiz | vsl | advertorial | info-product | call funnel | lead gen>
+Market: <market> · Built for: <awareness stage> / <sophistication stage>
+Register: <direct response | branded commerce>
+
+## Funnel map
+1. <Ad or entry> → 2. <Pre-sell / advertorial> → 3. <Sales page / VSL> → 4. <Checkout> → 5. <Bump / upsells, or "not reachable">
+
+## Page by page
+
+### 1. <Page name> (<url>)
+**Above the fold**
+- Hook / headline: <quote, under 15 words> · <what it promises>
+- Visual: <what's shown>
+- Congruency with the previous step: <PASS | BREAK: how>
+**Below the fold**
+- Mechanism: <named? how?>
+- Proof: <types, and whether they're credible>
+- Offer build: <price, bundle, guarantee, bonuses>
+- Objections handled: <which, and which are missing>
+- CTA and close: <verb, placement, urgency device>
+**Why it works / fails:** <two or three sentences on the persuasion move, not the layout>
+
+(repeat per page)
+
+## Congruency flags
+- <Step X → Step Y>: <what breaks: promise, mechanism name, offer numbers, awareness hand-off, CTA verb, compliance parity>
+
+## What's working
+- <the moves worth learning from, with why>
+
+## Priority fixes (by impact on conversion)
+1. <fix> · <the leak it closes>
+2. …
+
+## Verdict
+<Three to five sentences: what the funnel is, who it's built for, the single biggest leak, the single best move.>
+```
+
+The six congruency rows to check at every hand-off: **promise** (does the page continue the ad's sentence?), **mechanism name** (identical string, not a synonym), **offer numbers** (price, discount, guarantee length, shipping, "X days" all match exactly), **awareness hand-off** (the level the visitor leaves at versus the level the next page assumes), **CTA verb** ("Shop now" lands on a buy box, "Learn more" on a pre-sell, "Watch" on a player), and **compliance parity** (the page escalates nothing the ad avoided).
+
+## Mode B: video ad scene table
+
+```markdown
+# <Brand>: video ad teardown
+
+Date: <YYYY-MM-DD> · Source: <url> · Length: <m:ss> · Platform: <Meta | YouTube | TikTok>
+Target audience: <who> · Awareness: <stage>
+
+| # | Time | Spoken line | On-screen text | Visual / B-roll | Tone | Technique and why it works |
+|---|---|---|---|---|---|---|
+| 1 | 0:00 | … | … | … | … | … |
+
+## Structure
+- Opening hook type: <curiosity | contrarian | social proof | story | demographic callout | result | pattern interrupt>
+- Beat pattern: <e.g. hook → agitate → mechanism → proof → offer → CTA>
+- Authority and proof devices: <list>
+- CTA: <verb and destination>
+- Transferable template: <the beat sequence written so it could be rebuilt for another product>
+```
+
+## Mode C: reference skeleton
+
+```markdown
+# Skeleton of <reference page>
+
+Date: <YYYY-MM-DD> · URL: <url> · Offer model: <paid product | free VSL | lead gen> · Target offer model: <ours>
+
+| # | Section (as it appears) | Persuasion role | Devices (metaphor, proof type, urgency) | Re-map for our offer |
+|---|---|---|---|---|
+| 1 | <headline block> | hook | <curiosity + authority> | <keep / change / drop, and how> |
+| 2 | … | … | … | … |
+```
+
+Then the draft, one block per row, labelled with the persuasion role:
+
+```markdown
+## 1. Hook
+<original copy for our offer>
+
+## 2. Hidden-mechanism reveal
+<original copy for our offer>
+…
+```
+
+## Mode C: the C4 gate checklist
+
+Run before handing off. Every item is a stop until it's fixed or visibly flagged.
+
+- [ ] No testimonial, review or quote that isn't real and attributable.
+- [ ] No live counters, viewer counts, "people watching now", comment feeds or notification pop-ups that aren't live and true.
+- [ ] No income, health, weight or performance claim without a source, a mechanism and the qualifiers the platform requires.
+- [ ] No countdown timer or scarcity line that resets, repeats or isn't true.
+- [ ] Billing terms (subscription, trial, auto-ship, cancellation) disclosed where the platform and the law require.
+- [ ] Every number on the page matches the offer brief: price, discount, guarantee length, shipping.
+- [ ] Any device the reference's persuasion depended on that fails the above is replaced with a compliant substitute and the substitution is noted at the top of the file.
+````
+
+## The complete toolkit
+
+The funnel teardown skill is the diagnostic step of an eight-skill system. Each skill handles a different stage of the direct response workflow:
+
+- **[Angle finder skill](/blog/claude-code-angle-finder-skill)**: finds the angle before anything gets written.
+- **[Static ad skill](/blog/claude-code-static-ad-skill)**: builds the angle into a paired copy-and-image concept and runs the variation matrix.
+- **[Ad copy skill](/blog/claude-code-ad-copy-skill)**: writes the Meta ads.
+- **[Landing page copy skill](/blog/claude-code-landing-page-copy-skill)**: writes the page the ad sends traffic to.
+- **[Direct response copy skill](/blog/claude-code-direct-response-copy-skill)**: the advertorial, VSL and sales page behind the funnel, and the engine Mode C writes with.
+- **[Copychief skill](/blog/claude-code-copychief-skill)**: reviews a single piece of copy for craft once the teardown has told you which page to rewrite.
+- **[Compliance checker skill](/blog/claude-code-compliance-checker-skill)**: the gate every clone goes through.
+
+See the [complete skill suite overview](/blog/claude-code-copywriting-skills) for how they chain, and the [roundup of the best Claude Code copywriting skills](/blog/best-claude-code-skills-for-copywriting) for how they compare with the alternatives.
+
+## Get the skill
+
+Scroll up, copy the skill file and the reference file, and save them into `.claude/skills/funnel-teardown/`. No signup, no paywall, no email gate.
+
+Prefer git? The whole suite is on GitHub: [github.com/robpalmer99/claude-code-copywriting-skills](https://github.com/robpalmer99/claude-code-copywriting-skills/tree/main/funnel-teardown). Clone it or copy the `funnel-teardown/` folder straight into your project's `.claude/skills/` directory. CC-BY-4.0.
+
+Then run it on your own funnel before you run it on a competitor's. Paste your best ad's URL, walk it to the checkout, and read the congruency flags. In my experience the first teardown of your own funnel finds a seam that's been leaking for months, and the fix is a paragraph.
+
+If it helps you find a leak that was costing you sales, a link back to this page is the only thing I ask. And if you'd rather have me walk the funnel with you, [book a strategy call](/call).
+
+<FAQSection>
+<FAQItem question="What is the Claude Code funnel teardown skill?">
+A free skill file for Claude Code with three modes. Mode A walks a live competitor funnel from the ad to the checkout, critiques every page above and below the fold, flags congruency breaks between steps and lists fixes in order of impact. Mode B swipes a video ad scene by scene so its structure can be rebuilt. Mode C models a proven page's persuasion architecture into original copy for your own offer, with a mandatory compliance and believability gate before anything is handed off.
+</FAQItem>
+
+<FAQItem question="What is a funnel teardown?">
+A structured analysis of every step a buyer passes through, from the ad to the thank-you page, read as one argument rather than as separate pages. A good teardown maps the path, reviews each page above and below the fold, checks that the promise, mechanism, numbers and call to action stay consistent between steps, names what is working, and ranks the leaks by their effect on conversion.
+</FAQItem>
+
+<FAQItem question="What is a congruency break in a funnel?">
+A point where one step contradicts the step before it. An ad about one problem landing on a page about another, a mechanism named differently on the ad and the page, a price or guarantee that changes at checkout, a product-aware ad sending traffic to a blind pre-sell. Each page can look fine on its own and the funnel still leaks at the seams. The skill checks six rows at every hand-off: promise, mechanism name, offer numbers, awareness hand-off, CTA verb and compliance parity.
+</FAQItem>
+
+<FAQItem question="Can the skill clone a competitor's sales page?">
+It models the structure, not the words. Mode C extracts a skeleton of the reference page, the persuasion role of each section and the devices it uses, re-maps the offer model and the metaphors to your offer, and writes original copy section by section from your brief. Pasting a competitor's copy is plagiarism, and the skill refuses to do it. What transfers is the architecture.
+</FAQItem>
+
+<FAQItem question="Why does Mode C have a compliance gate?">
+Because the proven page you are modelling may be winning with devices that will get your account banned or your processor pulled: fabricated testimonials, fake live counters, invented comment feeds, unsupported health or income claims, timers that reset. Cloning tools reproduce those by default. The skill strips or visibly flags each one and proposes a compliant substitute, and will not hand off a draft that fails the check without the flags showing.
+</FAQItem>
+
+<FAQItem question="Is the funnel teardown skill free?">
+Yes. The SKILL.md and its reference file are published under CC-BY-4.0 in the same GitHub repository as my other copywriting skills. Copy the folder into .claude/skills, no signup or email gate. A link back to this page is the only thing I ask if it helps you.
+</FAQItem>
+
+<FAQItem question="What tools does the skill need to crawl a funnel?">
+Claude Code's built-in web fetch covers most pages. If a crawler such as firecrawl is installed it uses that for JavaScript-rendered pages and multi-step flows. For video sales letters it uses captions or a transcript you paste. Where a checkout or an upsell sits behind a payment, it says the trail went cold rather than inventing the step.
+</FAQItem>
+
+<FAQItem question="Does the teardown skill help my competitor?">
+No. Modes A and B are for study, and the output is what transfers to your own offers: the moves worth learning from and the leaks worth avoiding. The skill is told explicitly that a teardown is not optimisation help for the brand being analysed.
+</FAQItem>
+
+<FAQItem question="How does this differ from the copychief skill?">
+Copychief reviews a single piece of copy for craft, with line-level fixes and the principle behind each one. Funnel teardown reads a whole funnel as one argument, checks the seams between pages, and in Mode C generates a structural clone. Run teardown on the funnel, then copychief on the page you decide to rewrite.
+</FAQItem>
+
+<FAQItem question="Does the funnel teardown skill work in ChatGPT or Codex?">
+In Codex, yes: OpenAI's agent reads the same Agent Skills format from a .agents/skills folder and can fetch pages. In ChatGPT's chat window you can paste the skill body into a Project or a custom GPT within the 8,000-character instruction cap and paste the pages in by hand, which loses the crawl and the chaining into the compliance skill. I wrote a full [Claude Code vs ChatGPT comparison](/blog/claude-code-vs-chatgpt-for-copywriting) for copy if you are deciding.
+</FAQItem>
+</FAQSection>
