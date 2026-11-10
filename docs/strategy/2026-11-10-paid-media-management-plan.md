@@ -57,7 +57,7 @@ Rob's words, 2026-11-10, paraphrased only where needed:
 - Developer tokens were retired on 9 September 2026. API access is now a property of a **Google Cloud project** at four levels: Test (test accounts only), **Explorer** (production accounts, 2,880 operations a day, automated approval in most cases, blocked from account creation, user management, planning and billing), **Basic** (15,000 a day, needs brand verification of the Cloud project first), Standard (unlimited, manual review, about ten business days).
 - Explorer is enough to run a handful of accounts. Apply for Basic once the brand (name, site) exists, because brand verification needs it.
 - A **manager account (MCC)** holds client links; clients grant access to the MCC, not to Rob's personal login. `GOOGLE_ADS_LOGIN_CUSTOMER_ID` is the MCC.
-- **Official MCP server** (`googleads/google-ads-mcp`, Python, `pipx run`, OAuth or application default credentials): **read-only**. Three tools: list accessible customers, GAQL `search`, resource metadata. Good for analysis; useless for changes.
+- **Official MCP server** (`googleads/google-ads-mcp`, Python, `pipx run`, service account or application default credentials): reads via `list_accessible_customers`, GAQL `search` and resource metadata; writes only assets and labels, each defaulting to validate-only with a checksum confirm. Good for analysis and asset upload; campaign, budget and bid changes need our own write layer.
 - **Writes** need our own thin layer over the Google Ads API Python client: bids, budgets, negatives, ad text, pause and enable, labels. Nothing else at first.
 
 **Meta Ads.**
@@ -141,7 +141,7 @@ Rob's time is the constraint. The tooling is built so one person can run three t
 
 Rob's call, suggested starting points:
 
-- Audit: $1,500, credited against month one. Free for the first three founding clients.
+- Audit: free while the offer is being proven (Rob, 2026-11-10): the audit shows the client the weaknesses in their setup and the value of the management. Price it ($1,500, credited against month one) once there are testimonials and a waiting list.
 - Management: $2,000 a month floor or 12% of spend, whichever is higher, for one platform; $3,000 or 15% for both. Creative included up to an agreed number of concepts a month; above that, the creative-team rates.
 - Founding client terms: 90 days, a results-based testimonial, a named case study with numbers, in exchange for the floor rate held for twelve months.
 
@@ -156,11 +156,13 @@ Rob's call, suggested starting points:
 
 ## 9. Decisions for Rob
 
-1. Confirm the pricing starting points in section 7, or set others.
-2. Which account is the Meta sandbox (one of Ben's, with his consent), and which Google account is the write-layer test (a Google test account, created free under the MCC).
-3. Whether to ship the robpalmer.com demand-test page and the Scott-findings post now, or wait for the name.
-4. The legal shape: agreement template, spend-cap wording, who holds the MCC and Business Manager (Rob's entity).
-5. The name and domain, when ready. Nothing above waits on it except Basic access and the site.
+Decided 2026-11-10:
+
+1. **Pricing:** section 7 as written, except audits are free for now. They are the demonstration of value; the fee comes later.
+2. **Ben and his accounts are not involved** at this stage. The Meta sandbox is one of Rob's own ad accounts or a fresh one in Rob's Business portfolio; the Google write-layer test is a Google test account under the MCC (free).
+3. **Demand-test page:** can ship now if it makes sense; a name is coming soon, so it stays on robpalmer.com as a service page and moves when the brand site exists. The anonymised Scott-findings post waits for Scott's reply.
+4. **Legal:** start the agreement template and spend-cap wording now; not critical until there is interest. Rob's entity holds the MCC and the Business portfolio.
+5. The name and domain, when ready. Nothing above waits on it except Basic access and the brand site.
 
 **Interim domain (Rob, 2026-11-10):** `bobpalmerinvests` is a dead Vercel project and domain that can be repurposed to get started. Use it for what needs a URL before the name exists: the Meta developer app's privacy policy and terms pages (App Review and the system-user app both need them), an unindexed audit landing page for founding clients, and the Vercel project the real site later moves into. Keep it `noindex` and off the entity graph: no Organization schema, no links from robpalmer.com, so nothing has to be unwound when the brand domain arrives. Don't use it for Google's brand verification; that should wait for the real name.
 
