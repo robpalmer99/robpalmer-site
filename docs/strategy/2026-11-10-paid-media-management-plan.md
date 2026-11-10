@@ -162,10 +162,13 @@ Rob's call, suggested starting points:
 4. The legal shape: agreement template, spend-cap wording, who holds the MCC and Business Manager (Rob's entity).
 5. The name and domain, when ready. Nothing above waits on it except Basic access and the site.
 
+**Interim domain (Rob, 2026-11-10):** `bobpalmerinvests` is a dead Vercel project and domain that can be repurposed to get started. Use it for what needs a URL before the name exists: the Meta developer app's privacy policy and terms pages (App Review and the system-user app both need them), an unindexed audit landing page for founding clients, and the Vercel project the real site later moves into. Keep it `noindex` and off the entity graph: no Organization schema, no links from robpalmer.com, so nothing has to be unwound when the brand domain arrives. Don't use it for Google's brand verification; that should wait for the real name.
+
 ## 10. This week's actions
 
 1. Rob: create the Google Cloud project, enable the Google Ads API, apply for Explorer access, create the MCC. Create the Meta developer app, system user and token in Business Manager.
 2. Fable: scaffold `paid-media-ops` (private), write CLAUDE.md with the guardrails, the onboarding checklist and the ledger format; install and test the Google MCP and the Meta Ads CLI against accounts Rob controls.
+   Also: repoint the `bobpalmerinvests` Vercel project at a minimal noindex site with privacy and terms pages for the Meta app, and the audit landing page.
 3. Opus 5.5: the Google read layer and exporters, then the Meta exporters, to the spec in 4.3, with tests against Scott's exports.
 4. Fable: `gads-forensics` as a skill, validated by reproducing the 10 Nov review from the raw exports.
 5. Rob: decide the founding-client list from the leads ledger and Scott's reply.
