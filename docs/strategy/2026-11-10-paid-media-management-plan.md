@@ -164,6 +164,14 @@ Decided 2026-11-10:
 4. **Legal:** start the agreement template and spend-cap wording now; not critical until there is interest. Rob's entity holds the MCC and the Business portfolio.
 5. The name and domain, when ready. Nothing above waits on it except Basic access and the brand site.
 
+**Meta constraint (found 2026-11-10):** Rob's personal Facebook profile has carried a profile-level advertising ban since 2023-04-13 (an impossible payment-verification demand; no ad was ever rejected). The case file and the reinstatement campaign live in `~/dev/projects/meta-ads-reinstatement/case-file.md`. A banned profile cannot create a business portfolio, an ad account or a system user token, so Meta account management cannot start from Rob's own assets until the ban is lifted. Rob's standing rule holds: his own account or nothing; no new profiles, no borrowed logins, never added to anyone's Business Manager, nothing run through Ben's accounts. Consequences for this plan:
+
+- The offer launches **Google-first**. Meta account management is the upsell that switches on with reinstatement.
+- Meta **creative** is unaffected: angles, statics, ad copy, compliance passes and landers are delivered as files; the client's own team uploads them. That keeps "both platforms" in the pitch as creative plus Google management.
+- The reinstatement campaign (Meta Verified chat, BBB complaint) is now a business workstream, not a chore, and gets scheduled.
+- The Meta tooling in `paid-media-ops` is still built against the Ads CLI docs so it runs the day a token exists.
+- A hired media buyer with their own clean profile, when numbers justify the hire, is the other route to Meta management; it is a later decision and must not look like evasion while the appeal is open.
+
 **Interim domain (Rob, 2026-11-10):** `bobpalmerinvests` is a dead Vercel project and domain that can be repurposed to get started. Use it for what needs a URL before the name exists: the Meta developer app's privacy policy and terms pages (App Review and the system-user app both need them), an unindexed audit landing page for founding clients, and the Vercel project the real site later moves into. Keep it `noindex` and off the entity graph: no Organization schema, no links from robpalmer.com, so nothing has to be unwound when the brand domain arrives. Don't use it for Google's brand verification; that should wait for the real name.
 
 ## 10. This week's actions
