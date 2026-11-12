@@ -182,3 +182,8 @@ Decided 2026-11-10:
 3. Opus 5.5: the Google read layer and exporters, then the Meta exporters, to the spec in 4.3, with tests against Scott's exports.
 4. Fable: `gads-forensics` as a skill, validated by reproducing the 10 Nov review from the raw exports.
 5. Rob: decide the founding-client list from the leads ledger and Scott's reply.
+
+## Status log
+
+- **2026-11-10:** plan written. Google Cloud project `paid-media-ops-2026`, Ads API enabled, Explorer approved, service account `ads-ops@paid-media-ops-2026.iam.gserviceaccount.com` on Rob's manager account 919-294-6872; first live API call returned. Private repo `paid-media-ops` scaffolded (CLAUDE.md guardrails, templates, Opus brief, access guide). Meta blocked by the 2023 profile ban (see section 9).
+- **2026-11-12:** brand Vumiko, vumiko.com live on Vercel (holding page, privacy, terms; noindex). Meta One Advanced subscribed; support assistant escalated to a live agent, waiting. `gads-forensics` skill written with a script that reproduces the 10 Nov review from the UI exports (headline, inventory, rebuild days, quarter ROAS, landing pages) and surfaced a new finding (site-wide mobile speed collapse in Q3 2025). Opus 5.5 building the Google read layer and exporters (Phase 1 of the build brief).
