@@ -226,6 +226,12 @@ const tagToService: Record<string, string> = {
   'claude code ecommerce': 'ai-marketing-consultant',
   'claude skills for marketers': 'ai-marketing-consultant',
   'ai creative team': 'creative-team',
+  'google ads management': 'google-ads-management',
+  'google ads copywriting': 'google-ads-management',
+  'google ads audit': 'google-ads-management',
+  'google ads forensics': 'google-ads-management',
+  'ppc copywriting': 'google-ads-management',
+  'ai copy google ads': 'google-ads-management',
 
   'email copywriter for hire': 'email-copywriter',
 }
