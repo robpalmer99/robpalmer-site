@@ -121,3 +121,7 @@ Route decided 2026-11-10: `/services/creative-team` as the 14th service (strateg
 - Copychief and the lessons file before committing major copy.
 - Verify every named person and figure in the list posts against a primary source.
 - Pushing main does not deploy; deploy deliberately with `vercel deploy --prod --yes` after a clean build.
+
+### 2026-11-12: Google Ads management demand-test page
+
+Shipped `/services/google-ads-management` (tier strategy, offerPriceFrom 2000, free forensic audit as the CTA, ten FAQs, hero). Tags mapped: google ads management, google ads copywriting, google ads audit, google ads forensics, ppc copywriting, ai copy google ads. GSC baseline (90 days to 2026-11-09): "google ads copywriting" 21 impr pos 20, "copywriting google ads" 19 impr pos 13, "ai copy google ads" 17 impr pos 7.5, "ppc copywriting" 7 impr pos 8.4, no clicks. Check 2026-12-12 and 2027-01-12. The page moves to vumiko.com when that site exists. The anonymised Scott-findings post waits for his reply (plan decision 3).
