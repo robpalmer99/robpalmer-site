@@ -162,7 +162,7 @@ Decided 2026-11-10:
 2. **Ben and his accounts are not involved** at this stage. The Meta sandbox is one of Rob's own ad accounts or a fresh one in Rob's Business portfolio; the Google write-layer test is a Google test account under the MCC (free).
 3. **Demand-test page:** can ship now if it makes sense; a name is coming soon, so it stays on robpalmer.com as a service page and moves when the brand site exists. The anonymised Scott-findings post waits for Scott's reply.
 4. **Legal:** start the agreement template and spend-cap wording now; not critical until there is interest. Rob's entity holds the MCC and the Business portfolio.
-5. The name and domain, when ready. Nothing above waits on it except Basic access and the brand site.
+5. **Name and domain (Rob, 2026-11-12): Vumiko, vumiko.com** (Namecheap). Vercel project `vumiko` (team go-freelance) holds the holding page, privacy and terms; the bobpalmerinvests interim project is retired. Basic API access brand verification can proceed under this name.
 
 **Meta constraint (found 2026-11-10):** Rob's personal Facebook profile has carried a profile-level advertising ban since 2023-04-13 (an impossible payment-verification demand; no ad was ever rejected). The case file and the reinstatement campaign live in `~/dev/projects/meta-ads-reinstatement/case-file.md`. A banned profile cannot create a business portfolio, an ad account or a system user token, so Meta account management cannot start from Rob's own assets until the ban is lifted. Rob's standing rule holds: his own account or nothing; no new profiles, no borrowed logins, never added to anyone's Business Manager, nothing run through Ben's accounts. Consequences for this plan:
 
@@ -172,7 +172,7 @@ Decided 2026-11-10:
 - The Meta tooling in `paid-media-ops` is still built against the Ads CLI docs so it runs the day a token exists.
 - A hired media buyer with their own clean profile, when numbers justify the hire, is the other route to Meta management; it is a later decision and must not look like evasion while the appeal is open.
 
-**Interim domain (Rob, 2026-11-10):** `bobpalmerinvests` is a dead Vercel project and domain that can be repurposed to get started. Use it for what needs a URL before the name exists: the Meta developer app's privacy policy and terms pages (App Review and the system-user app both need them), an unindexed audit landing page for founding clients, and the Vercel project the real site later moves into. Keep it `noindex` and off the entity graph: no Organization schema, no links from robpalmer.com, so nothing has to be unwound when the brand domain arrives. Don't use it for Google's brand verification; that should wait for the real name.
+**Interim domain (Rob, 2026-11-10, superseded 2026-11-12 by vumiko.com):** `bobpalmerinvests` is a dead Vercel project and domain that can be repurposed to get started. Use it for what needs a URL before the name exists: the Meta developer app's privacy policy and terms pages (App Review and the system-user app both need them), an unindexed audit landing page for founding clients, and the Vercel project the real site later moves into. Keep it `noindex` and off the entity graph: no Organization schema, no links from robpalmer.com, so nothing has to be unwound when the brand domain arrives. Don't use it for Google's brand verification; that should wait for the real name.
 
 ## 10. This week's actions
 
