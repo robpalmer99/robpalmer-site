@@ -385,92 +385,89 @@ export const services: Service[] = [
     ],
     relatedServices: ['creative-strategist', 'direct-response-copywriter', 'vsl-copywriter', 'landing-page-copywriter', 'facebook-ads-copywriter'],
     relatedVerticals: ['ecommerce-dtc-copywriter', 'health-supplement-copywriter', 'clickbank-copywriter'],
-  },  {
-    // Demand-test page for the paid-media management offer (Vumiko), per
-    // docs/strategy/2026-11-10-paid-media-management-plan.md section 6. Google
-    // first; Meta creative inside the loop. Moves to vumiko.com when that site
-    // exists and this page becomes the hand-off.
-    title: 'Google Ads Management',
+  },
+  {
+    // Copywriting angle of the Google Ads offer. Account management moved to
+    // Vumiko (vumiko.com) on 2026-11-13; this page keeps the creative: search
+    // ads, landing pages, advertorials and pre-sell pages written to Google's
+    // policy and matched to the search terms.
+    title: 'Google Ads Copywriting',
     slug: 'google-ads-management',
-    tier: 'strategy',
-    schemaServiceType: 'Google Ads Management',
-    offerPriceFrom: 2000,
+    tier: 'production',
+    schemaServiceType: 'Google Ads Copywriting',
     shortDescription:
-      'Google Ads account management for direct response brands, run by a 40-year copywriter on an AI engine that reads your account, your search terms and your pages every week. Starts with a free forensic audit of the last two years.',
-    metaTitle: 'Google Ads Management by a Copywriter | Free Forensic Account Audit',
+      'Google Ads copywriting for direct response brands: search ads, landing pages, advertorials and pre-sell pages written as one argument to Google\'s policy and matched to the search terms that bring the click.',
+    metaTitle: 'Google Ads Copywriting | Ads, Landing Pages & Advertorials',
     metaDescription:
-      'Google Ads management for direct response brands: a free two-year forensic audit, then the account run by a 40-year copywriter with AI tooling and the creative loop inside.',
-    headline: 'Google Ads Management That Starts by Finding Where the Money Went',
+      'Google Ads copywriting for direct response brands: search ads, landing pages and advertorials written as one argument, to Google\'s policy, matched to your search terms.',
+    headline: 'Google Ads Copywriting That Turns the Same Spend Into More Sales',
     subheadline:
-      'Most Google Ads accounts are run by someone who can see the dashboard and nothing else: not the pages the clicks land on, not what a customer is worth, not the demand that dried up outside the account. I run accounts the other way round. A free two-year forensic audit first, then the account managed week by week with the ads, pages and offer economics inside one loop, led by a copywriter who has tracked $523 million in sales.',
+      'Most Google Ads accounts pay for the click and then lose the sale between the ad and the page, because the ad, the page and the offer were written by three different people. I write them as one argument, matched to the search term that brought the click and kept inside Google\'s policy, so the same spend produces more customers. The proof is a 300% return on ad spend for a ClickBank Platinum vendor and $523 million in tracked sales from a nine-year direct-response control.',
     heroImage: '/images/services/google-ads-management.jpg',
     heroImageAlt: 'A bright desk with a Google Ads performance chart on a laptop, a printed audit with figures circled, and a search terms list beside it',
     definition: {
-      term: 'Google Ads Management',
-      text: 'The ongoing running of a Google Ads account: structure, bidding targets, budgets, keywords and negatives, ad text, landing page direction and reporting. Rob Palmer\'s Google Ads management for direct response brands begins with a free forensic audit of the last two years and then runs the account, the creative and the landing pages as one weekly loop, with every change logged and the targets set from what a customer is actually worth.',
+      term: 'Google Ads Copywriting',
+      text: 'The writing of everything a Google Ads click depends on: search ad headlines and descriptions, the landing page or advertorial the click arrives on, and the offer that page makes. Rob Palmer\'s Google Ads copywriting for direct response brands starts from the account\'s real search terms, writes the ad and the page as one continuous argument, and checks every asset against Google\'s advertising policies before it ships.',
     },
     heroStats: {
       primary: { value: '$523M', label: 'In Tracked Client Results' },
       secondary: [
         { value: '40+', label: 'Years of Direct Response' },
-        { value: '2 years', label: 'Of Account Data in Every Audit' },
-        { value: '48 hrs', label: 'From Access to Recovery Brief' },
+        { value: '300%', label: 'ROAS for a ClickBank Platinum Vendor' },
+        { value: '8%', label: 'Cold-Traffic VSL Funnel CVR' },
       ],
     },
     credentialBar: {
-      heading: 'Google Ads management for',
+      heading: 'Google Ads copywriting for',
       items: [
         'Supplement and Health Brands',
         'DTC and Ecommerce',
         'Info-Product and Coaching Offers',
         'Financial Publishers',
         'Subscription and Rebill Businesses',
-        'Founders Flying Blind on Their Own Account',
+        'Brands Whose Ads Get Clicks but Not Sales',
       ],
     },
     sections: [
       {
-        heading: 'Why can\'t your Google Ads manager tell you why sales halved?',
+        heading: 'Why do Google Ads clicks fail to turn into sales?',
         content:
-          'Because the answer is usually outside the account. In a recent two-year review of a supplement brand\'s account, tracked revenue had fallen by half in a year. The manager had rebuilt the campaigns three times looking for the cause, and each rebuild threw away what Google\'s bidding had learned, which cost the brand somewhere between $25,000 and $30,000 on its own. The real cause was that searches for the brand\'s own name had fallen by two thirds. Google Ads collects brand demand; it does not create it. Something upstream had stopped sending people, and no setting inside the account could have shown that.\n\n' +
-          'The same review found the account bidding to an 83% return on a $95 first order in a subscription business with no lifetime value passed back, informational searches burning two thirds of the cold budget with no sale, and the two biggest product pages scoring 2 out of 10 on mobile speed. None of it took admin access to find. It took someone reading the account, the pages and the customer economics at the same time, and that is the job I do.',
+          'Because the sale is usually lost after the click. The ad promises one thing, the page opens with another, and the offer on the page was never written for the person who typed that search. Google\'s system can only deliver the click. Everything after it is copy, and in most accounts that copy was written in three separate places by three people who never read each other\'s work.\n\n' +
+          'I write the ad, the page and the offer as one argument, so the first sentence the visitor reads continues the sentence the ad started. Closing that gap recovers a lot of wasted spend, because it fixes the step the bidding settings cannot reach.',
       },
       {
-        heading: 'What does the free forensic audit cover?',
+        heading: 'What do I write for a Google Ads account?',
         content:
-          'I ask for reports-only access, so nothing can be changed, and I pull two full years: campaign performance by month, the complete change history, the landing page report and the search terms. Then the audit answers the questions a dashboard never will.',
+          'Anything the click depends on, written to Google\'s policy and matched to the search terms behind it.',
         bullets: [
-          '<strong>Brand versus cold.</strong> What a customer who already knew you cost, what a cold one cost, and which campaigns have been claiming brand orders to look better than they are.',
-          '<strong>The rebuild history.</strong> Every day a campaign was paused and replaced, what it was earning before, what replaced it earned after, and what each reset cost.',
-          '<strong>Targets against customer value.</strong> What the bidding has been told a customer is worth, against what a subscriber or repeat buyer is actually worth to you.',
-          '<strong>Search-term waste.</strong> The themes with spend and no sale, the share going to one-click searches a negative list can never reach, and whether the same exact-match searches stopped buying.',
-          '<strong>Where the clicks land.</strong> Which pages take the money, at what cost per click, and how they score on mobile speed, by quarter, so a site change that nobody mentioned shows up on the date it happened.',
-          '<strong>Policy exposure.</strong> Limited campaigns, disapproved ads and the rewording pattern that means someone is working around disapprovals a word at a time.',
+          '<strong>Search ads.</strong> Headlines and descriptions written for the intent behind each search theme, with the claim inside what Google will approve for your vertical.',
+          '<strong>Landing pages.</strong> Short <a href="/services/landing-page-copywriter">landing pages</a> that open with the promise the ad made and take the visitor one step toward the sale.',
+          '<strong>Advertorials and pre-sell pages.</strong> Longer pages for cold searchers who do not yet know they need your product, written as an article that earns the right to sell.',
+          '<strong>Offer and guarantee.</strong> The terms the page makes, tested against what the search tells me the buyer already believes.',
+          '<strong>Policy and compliance checks.</strong> Every asset checked against Google\'s advertising policies and the health, finance or subscription rules that apply, before it goes near the account.',
         ],
       },
       {
-        heading: 'What do you get, and when?',
+        heading: 'How do the search terms shape the copy?',
         content:
-          'Within 48 hours of access you get a recovery brief: a short, plain-English document with the numbers in tables, one recommendation per section, each tied to a week, and a closing section on what the account cannot fix. The brief is yours whatever you decide. If you want to act on it yourself or hand it to your current manager, that is a fine outcome. If you would rather I ran it, the brief becomes the first eight weeks of the plan.\n\n' +
-          'The audit is free for the founding accounts I take on this quarter, because it is the fastest way to show what the management would do. I would rather you see the weaknesses in the current setup with your own eyes than read a pitch about them.',
+          'The search terms report is the most honest customer research a brand owns. It shows the exact words people used when they were ready to act, which is the language the ad and the page should use back. I read the terms for the themes that buy, the ones that only browse, and the questions hiding inside them, and then each theme gets its own ad and page angle rather than one generic page for everything.\n\n' +
+          'A searcher typing a symptom needs a different first paragraph from one typing a brand comparison. Writing to that difference is most of the job.',
       },
       {
-        heading: 'How is the account run week to week?',
+        heading: 'What did a two-year account review show me?',
         content:
-          'The same loop I run for the <a href="/services/creative-team">creative team</a>, with the account added. On Monday the tooling reads the account: spend, cost of a new customer, share of cold clicks that buy, brand against cold, disapprovals and anomalies, in a one-page note I read before anything else. Tuesday decides what the data says to test next: search terms into negatives or new ad groups, fatigue into new concepts, a congruency break into a page fix. Wednesday and Thursday are creative and copy, written to Google\'s policy and matched to the page they land on. Friday the changes are made through tooling that logs who, what, why and the before and after, and the creatives go up.\n\n' +
-          'Every two weeks you get a written report of five numbers: brand searches and what a brand click costs, the cost of a new customer from cold searches, the share of cold clicks that buy, the share of spend going to searches with no sale, and a list of what was changed and why. Once a month we reset the targets from updated customer-value data. No structure rebuilds without a written case and a four-week read, which is the discipline most accounts have never had.',
+          'Before I write for an account, I read it. In a recent review for a supplement brand, tracked revenue had halved in a year and the manager had rebuilt the campaigns three times looking for the cause, which cost somewhere between $25,000 and $30,000 in lost bidding history. The real cause was upstream: searches for the brand\'s own name had fallen by two thirds. The same review found informational searches burning two thirds of the cold budget and the two biggest product pages scoring 2 out of 10 on mobile speed. Reading the account first is how I know which page to write and for which search.',
       },
       {
-        heading: 'What makes this different from a Google Ads agency?',
+        heading: 'Where does Google Ads account management live now?',
         content:
-          'Three things. The person reading your account is the person writing your ads and your landing pages, so a search-term finding becomes a page fix the same week instead of a ticket to another department. The targets are set from what a customer is worth over a year, not from a first order, because most of my clients sell something people buy again. And the reading is done by an AI engine I built on Claude Code, with my own <a href="https://github.com/robpalmer99/claude-code-copywriting-skills" target="_blank" rel="noopener noreferrer">copywriting skills</a> and a private library of frameworks and tested copy, so two years of search terms get read in minutes rather than sampled on a quarterly call.\n\n' +
-          'The creative that feeds the account comes from the same place: angles mined from your customers\' own words, statics and ad copy written to the angle, landing pages and advertorials that continue the ad\'s sentence, and a compliance pass on every asset before it ships. For brands also running Meta, the same creative loop supplies that account too, so one argument runs across both platforms.',
+          'My Google Ads account management now runs through <a href="https://vumiko.com" target="_blank" rel="noopener noreferrer">Vumiko</a>, a Google Ads agency I founded. Vumiko begins with a free two-year forensic audit of your account and handles the weekly management from there. I stay on the copy: the ads, pages and advertorials that go into the account, written to what the audit and the search terms show.',
       },
       {
         heading: 'Who is this for?',
         content:
-          'Direct response brands spending roughly $5,000 to $100,000 a month on Google Ads, where paid traffic is most of revenue and the owner cannot read the account well enough to know whether the manager is doing a good job. Supplements and health are my home vertical; DTC, info products and financial publishing follow the same loop with their own compliance rules. The work behind it is the direct-response testing discipline I learned at Belron, where a campaign I ran for nine years tracked $523 million in sales, and the copy that has produced a 300% return on ad spend for a ClickBank Platinum vendor and an 8% cold-traffic conversion rate for a VSL funnel.\n\n' +
-          'If the audit shows your account is already well run, I will say so and point to whatever the real constraint is. That happens, and it is still worth the two days.',
+          'Direct response brands spending roughly $5,000 to $100,000 a month on Google Ads, where paid search is a large share of revenue and the clicks are not converting as well as the traffic quality suggests they should. Supplements and health are my home vertical, and DTC, info products and financial publishing follow the same method with their own compliance rules.\n\n' +
+          'The method comes from the testing discipline I learned at Belron, where a campaign I ran for nine years tracked $523 million in sales, and from copy that produced a 300% return on ad spend for a ClickBank Platinum vendor and an 8% cold-traffic conversion rate for a VSL funnel.',
       },
     ],
     caseStudies: [
@@ -479,15 +476,15 @@ export const services: Service[] = [
       { name: 'Conor Reynolds', category: 'Cold-Traffic VSL Funnel', metric: '8% CVR', detail: 'VSL and sales page built from the same angle map.' },
       { name: 'Belron / Safelite', category: 'Nine-Year Direct-Response Control', metric: '$523M', detail: 'Nine years of new creative tested against the control.' },
     ],
-    deliverablesHeading: 'What Google Ads Management Delivers',
-    deliverablesSubtext: 'The audit first, free. Then the account, the creative and the pages run as one loop.',
+    deliverablesHeading: 'What Google Ads Copywriting Delivers',
+    deliverablesSubtext: 'The ad, the page and the offer, written as one argument and matched to the searches that bring the click.',
     deliverables: [
-      { title: 'Two-Year Forensic Audit & Recovery Brief', description: 'Brand versus cold, rebuild history and its cost, targets against customer value, search-term waste, landing pages and speed, policy exposure. Delivered within 48 hours of access.' },
-      { title: 'Customer-Value Bid Targets', description: 'The allowable cost of a new customer worked out from your first-order margin, subscription share, rebills and refunds, turned into Target CPA and Target ROAS per campaign, with a revisit date.' },
-      { title: 'Weekly Account Management', description: 'Budgets, bids, negatives, ad text and structure decisions made through tooling that logs every change with its reason, inside agreed spend caps.' },
-      { title: 'Ads, Landers & Advertorials', description: 'Search ads written to policy, and the pages they land on written to the same angle, so the promise in the ad is the first thing the visitor reads.' },
-      { title: 'Fortnightly Five-Number Report', description: 'Brand searches and brand CPC, cost of a new customer, share of cold clicks that buy, share of spend with no sale, and what changed and why, in plain English.' },
-      { title: 'Monthly Strategy Call', description: 'Targets reset from updated customer-value data, the next month\'s tests agreed, and the honest read on what the account can and cannot fix.' },
+      { title: 'Search Term Research', description: 'Your search terms sorted into the themes that buy, the ones that browse and the questions inside them, so each theme gets its own angle.' },
+      { title: 'Search Ad Copy', description: 'Headlines and descriptions written for the intent behind each theme, with the claims kept inside Google\'s policy for your vertical.' },
+      { title: 'Landing Pages', description: 'Short pages that open with the promise the ad made, so the first sentence the visitor reads continues the ad\'s own.' },
+      { title: 'Advertorials & Pre-Sell Pages', description: 'Longer article-style pages for cold search traffic that has not yet decided it needs the product.' },
+      { title: 'Offer & Guarantee Copy', description: 'The terms the page makes, written from what the search tells me the buyer already believes.' },
+      { title: 'Policy & Compliance Pass', description: 'Every asset checked against Google\'s advertising policies and the health, finance or subscription rules that apply.' },
     ],
     testimonialIds: ['4', '5', '6', '11'],
     portfolioItems: [
@@ -496,62 +493,52 @@ export const services: Service[] = [
       { title: 'Info Product Cold-Traffic Lander', category: 'Landing Page' },
     ],
     midCta: {
-      headline: 'Want to know where the money went?',
-      subtext: 'Book a strategy call. Grant reports-only access to your Google Ads account before it and you\'ll have the recovery brief within 48 hours, free, whatever you decide to do with it.',
+      headline: 'Want the ad and the page to make one argument?',
+      subtext: 'Book a strategy call. Bring your search terms report and the pages your clicks land on, and I\'ll tell you where the sale is being lost and what the fix would cost.',
     },
     faqs: [
       {
-        question: 'What is Google Ads management, and what do you actually do each week?',
+        question: 'What does Google Ads copywriting cover?',
         answer:
-          'Google Ads management is the ongoing running of your account: structure, bidding targets, budgets, keywords and negatives, ad text, landing page direction and reporting. Each week I read the account with my tooling on Monday, decide the tests on Tuesday, write the creative and pages on Wednesday and Thursday, and make the logged changes on Friday. Every two weeks you get a written report, and once a month we reset the targets from your customer-value data.',
+          'It covers everything the click depends on: the search ad headlines and descriptions, the landing page or advertorial the click arrives on, and the offer and guarantee on that page. I write them together so they make one argument. The ad promises something specific, the page opens by delivering it, and the offer follows naturally. Most accounts write these separately, and the sale leaks out in the gap between them.',
       },
       {
-        question: 'Is the audit really free, and what is the catch?',
+        question: 'How do you match ads to landing pages?',
         answer:
-          'The audit is free for the founding accounts I take on this quarter, and the brief is yours whatever you decide. The reason is simple: showing you the weaknesses in your current setup is the quickest way to show what management would do. The only thing I ask is reports-only access to the account for two years of data, which means I can read everything and change nothing.',
+          'I start from the search theme, not the page. Each group of searches that share an intent gets its own ad angle and a page that opens with the same promise in the same words. If someone searches for a specific problem, the first line they see after the click names that problem. Visitors decide in seconds whether they are in the right place, so the match has to be visible straight away.',
       },
       {
-        question: 'How much does Google Ads management cost?',
+        question: 'How do you keep Google Ads copy inside policy?',
         answer:
-          'Management starts at $2,000 a month or 12% of ad spend, whichever is higher, for Google Ads alone, with creative included up to an agreed number of concepts a month. Google management with the Meta creative loop added is quoted after the audit. Founding clients get the rate held for twelve months in exchange for a results-based testimonial after the first ninety days. No hourly billing and no long contract: a ninety-day initial term, then month to month.',
+          'I write to the policy from the first draft instead of fixing disapprovals afterwards. Every asset gets a compliance pass against Google\'s advertising policies, and against the health, finance or subscription rules that apply to your vertical. That matters because an account that keeps getting disapprovals tends to end up with watered-down wording that no longer sells. The aim is copy that stays live and still makes a strong claim.',
       },
       {
-        question: 'Do you need admin access to my account?',
+        question: 'Do advertorials work for cold Google search traffic?',
         answer:
-          'For the audit, reports-only access is enough, and I prefer it, because nothing can be changed by accident. For management you link your account to my manager account, which you can unlink at any time, and we agree spend caps and a structure freeze in writing before any change is made. You keep the account, the data and the payment method.',
+          'Often, yes, especially when the searcher is looking for an answer and not for a product. An advertorial meets them with the explanation first and the product second, which suits informational and problem-aware searches that a straight sales page converts badly. Not every account needs one. Where the search terms show a lot of problem-aware traffic, an advertorial or pre-sell page is usually the page I would test first.',
       },
       {
-        question: 'What do you mean by a structure freeze?',
+        question: 'How do the search terms inform the copy?',
         answer:
-          'For the first eight weeks no campaigns are created or deleted and nothing is paused and replaced, unless you approve it in writing. Google\'s bidding needs weeks of steady data to learn, and the most common fault I find in accounts is a manager who rebuilds every quarter and resets that learning each time. Bids, budgets, negatives and ad text can all change inside the freeze; the structure holds while we read what it is really doing.',
+          'The search terms report shows the exact words people used when they were ready to act, so I use those words back to them. I sort the terms into themes that buy, themes that only browse and the questions hiding inside them. Each buying theme gets its own ad and page angle. I also use the terms that never buy to decide what the page should stop promising, which saves spend as well as lifting conversion.',
       },
       {
-        question: 'How do you set the bidding targets?',
+        question: 'What does Google Ads copywriting cost?',
         answer:
-          'From what a customer is worth, not from the first order. I take your first-order margin, the share of customers who subscribe or reorder, the average number of repeat orders and the refund rate, and work out the allowable cost of a new customer at the payback period your cash can carry. That number becomes the Target CPA or Target ROAS per campaign, with brand and cold campaigns judged separately, and we revisit it monthly.',
+          'Engagements are fixed-price and scoped to the assets: a set of search ads, a landing page, an advertorial, or a full ad-to-page build for several search themes. You get a clear quote within 48 hours of the strategy call. There is no hourly billing and no scope creep. At serious daily budgets, a page that converts at 3% instead of 2% on the same clicks pays for the writing quickly.',
       },
       {
         question: 'Can you work with my existing agency or in-house team?',
         answer:
-          'Yes. The audit is often the most useful thing a brand can hand its current manager, and some clients keep their manager and bring me in for the creative and the pages only. If you want a second pair of eyes rather than a change of manager, say so on the call and the engagement is shaped around that.',
+          'Yes. Many clients keep the agency or the in-house buyer running the account and bring me in for the copy only. I write the ads, pages and advertorials, and your team loads them, tests them and reports on them. I work from the search terms and the account data your team already has, so there is no handover problem, and the engagement is shaped around how your team likes to work.',
       },
       {
-        question: 'Do you manage Meta ads as well?',
+        question: 'Do you still manage Google Ads accounts?',
         answer:
-          'The creative loop runs across both platforms: angles, statics, ad copy, landing pages and compliance passes are delivered for Meta alongside the Google work, so one argument runs everywhere your customer sees you. Day-to-day Meta account management is offered as the next step for Google clients once the Google account is in shape, and is quoted separately after the audit.',
-      },
-      {
-        question: 'How do you use AI in Google Ads management?',
-        answer:
-          'For the reading, not the judgment. The tooling I built on Claude Code pulls two years of campaign data, change history, landing pages and search terms, works out brand versus cold, the cost of every rebuild and the waste by theme, and drafts the Monday notes and the fortnightly report. I make every decision and write every control. What the AI changes is how much of the account a human can actually read each week, which on most accounts is the difference between finding the cause and guessing.',
-      },
-      {
-        question: 'How do we get started?',
-        answer:
-          'Book a strategy call. Before it, grant reports-only access to your Google Ads account to the email I send you, and tell me roughly what a first order and a repeat customer are worth. On the call we go through what you have seen in the account and what you want it to do. Within 48 hours you have the recovery brief, and the decision about management is yours to make with the findings in front of you.',
+          'My Google Ads account management now runs through <a href="https://vumiko.com" target="_blank" rel="noopener noreferrer">Vumiko</a>, a Google Ads agency I founded. It starts with a free two-year forensic audit of your account, then moves to weekly management, with the details on the Vumiko site. If you want both, the two fit together: Vumiko runs the account and I write the ads, pages and advertorials that go into it.',
       },
     ],
-    relatedServices: ['creative-team', 'creative-strategist', 'conversion-rate-optimization', 'landing-page-copywriter', 'ai-marketing-consultant'],
+    relatedServices: ['ad-copywriter', 'landing-page-copywriter', 'direct-response-copywriter', 'creative-strategist', 'conversion-rate-optimization'],
     relatedVerticals: ['health-supplement-copywriter', 'ecommerce-dtc-copywriter', 'clickbank-copywriter'],
   },
 
