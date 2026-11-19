@@ -48,6 +48,14 @@ The queries "best direct response copywriters" are dominated by aggregator listi
 - [ ] Identify the top 3 listicles ranking for "best direct response copywriter(s)"
 - [ ] Pitch inclusion with the entity string, tracked results, and the "still taking clients" differentiator (most names on those lists have moved to coaching — that's the hook that gets editors to update).
 
+## Tier 6 — Inbound link requests (added 2026-11-19)
+
+Site owners regularly email asking for a link or mention on one of the blog posts. Each one is handled
+as a link opportunity: vet the site, then reply with a specific counter-ask pointing at
+`/services/creative-strategist`, `/services/direct-response-copywriter` or the matching vertical page.
+The working policy and the request log are kept in the private leads repo (`~/dev/leads`), and the
+daily leads sweep routes new requests there. Links that land get logged under "Landed placements" below.
+
 ## Rules
 
 - Never the banned scarcity phrasing ("last senior DR copywriter…") — imply via capacity signals.
