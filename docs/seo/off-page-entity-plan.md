@@ -64,4 +64,4 @@ daily leads sweep routes new requests there. Links that land get logged under "L
 
 ## Landed placements
 
-_(none yet — add as they land)_
+- 2026-11-19: flowjam.com, "23 Best SaaS Landing Page Examples That Actually Convert", anchor "SaaS copywriter" to `/verticals/saas-copywriter` (followed, verified live).
