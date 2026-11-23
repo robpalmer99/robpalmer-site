@@ -247,6 +247,31 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/history-of-sales-letters',
+        destination: '/blog/history-of-direct-response-advertising',
+        permanent: true,
+      },
+      {
+        source: '/blog/email-sequence-vs-sales-funnel',
+        destination: '/blog/single-sales-page-vs-full-funnel',
+        permanent: true,
+      },
+      {
+        source: '/blog/geo-copywriting-guide',
+        destination: '/blog/generative-engine-optimization-for-copywriters',
+        permanent: true,
+      },
+      {
+        source: '/blog/ai-sales-page-generator',
+        destination: '/blog/can-ai-write-sales-copy',
+        permanent: true,
+      },
+      {
+        source: '/services/facebook-ads-copywriter',
+        destination: '/services/ad-copywriter',
+        permanent: true,
+      },
+      {
         source: '/blog/best-direct-response-copywriters-2026',
         destination: '/blog/best-direct-response-copywriter-to-hire',
         permanent: true,

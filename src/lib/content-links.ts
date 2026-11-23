@@ -98,8 +98,8 @@ const tagToService: Record<string, string> = {
   'email copywriting': 'email-copywriter',
   'ad copy': 'ad-copywriter',
   ads: 'ad-copywriter',
-  'facebook ads': 'facebook-ads-copywriter',
-  'meta ads': 'facebook-ads-copywriter',
+  'facebook ads': 'ad-copywriter',
+  'meta ads': 'ad-copywriter',
   'landing page': 'landing-page-copywriter',
   'landing page optimization': 'landing-page-copywriter',
   'sales funnel': 'sales-funnel-copywriter',
@@ -168,7 +168,7 @@ const tagToService: Record<string, string> = {
   'creative strategist salary': 'creative-strategist',
   'creative strategist rates': 'creative-strategist',
   'creative strategist cost': 'creative-strategist',
-  'performance creative': 'facebook-ads-copywriter',
+  'performance creative': 'ad-copywriter',
 
   // 2026-11 decision-stage content programme (docs/content/2026-11-content-plan.md).
   'best vsl copywriters': 'vsl-copywriter',
@@ -274,7 +274,6 @@ const serviceTitles: Record<string, string> = {
   'upsell-downsell-copywriter': 'Upsell & Downsell Copywriter',
   'ai-copywriting-consultant': 'AI Copywriting Consultant',
   'ai-marketing-consultant': 'AI Marketing Consultant',
-  'facebook-ads-copywriter': 'Facebook Ads Copywriter',
   'conversion-rate-optimization': 'Conversion Rate Optimization',
   'direct-response-copywriter': 'Direct Response Copywriter',
 }
