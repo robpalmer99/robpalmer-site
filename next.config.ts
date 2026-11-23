@@ -272,6 +272,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/sales-funnel-vs-single-sales-page',
+        destination: '/blog/single-sales-page-vs-full-funnel',
+        permanent: true,
+      },
+      {
         source: '/blog/best-direct-response-copywriters-2026',
         destination: '/blog/best-direct-response-copywriter-to-hire',
         permanent: true,
