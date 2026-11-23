@@ -747,7 +747,6 @@ export const services: Service[] = [
     title: 'VSL Copywriter',
     slug: 'vsl-copywriter',
     tier: 'production',
-    offerPriceFrom: 10000,
     shortDescription:
       'Video sales letters that hold cold traffic through the close. Recent client funnel: 8% on cold. Past VSLs at $30M, $40M, and $27M.',
     metaTitle: 'VSL Copywriter | 8% Cold-Traffic VSLs, $30M+ Campaigns',
@@ -818,7 +817,7 @@ export const services: Service[] = [
       {
         heading: 'How much does a VSL copywriter cost?',
         content:
-          'My VSL engagements are fixed-price and start at $10,000, with a quote within 48 hours of the strategy call. Across the market, senior writers with eight-figure VSLs behind them charge $20,000 to $50,000 or more for a script, often with a 3 to 5 percent royalty on net sales, and on the right offer I\'ll take a lower base plus a share of what the script produces. The full breakdown, including what moves the price, is in my guide to <a href="/blog/how-much-does-a-vsl-cost">how much a VSL costs</a>.\n\n' +
+          'My VSL engagements are fixed-price, with a quote within 48 hours of the strategy call. Across the market, senior writers with eight-figure VSLs behind them charge $20,000 to $50,000 or more for a script, often with a 3 to 5 percent royalty on net sales, and on the right offer I\'ll take a lower base plus a share of what the script produces. The full breakdown, including what moves the price, is in my guide to <a href="/blog/how-much-does-a-vsl-cost">how much a VSL costs</a>.\n\n' +
           'The framing that matters: a VSL converting at 2% instead of 0.5% on the same traffic doesn\'t pay for itself, it changes the economics of the offer. On a funnel spending $50,000 a month, that gap is worth more than the biggest script fee on the table, every month the control runs. If you\'re still shortlisting writers, my guide to <a href="/blog/hire-a-vsl-copywriter">hiring a VSL copywriter</a> covers what to send, what to ask and the red flags.',
       },
       {
@@ -920,7 +919,7 @@ export const services: Service[] = [
       {
         question: 'What does a VSL cost?',
         answer:
-          'VSL engagements are fixed-price and start at $10,000. The number depends on length, offer complexity and research scope, and on the right offer I\'ll take a lower base plus a share of net sales. You\'ll have a clear quote within 48 hours of the strategy call, with no hourly billing and no scope creep. The framing that matters: a VSL converting at 2% instead of 0.5% on the same traffic doesn\'t just pay for itself, it changes the economics of the offer.',
+          'VSL engagements are fixed-price. The number depends on length, offer complexity and research scope, and on the right offer I\'ll take a lower base plus a share of net sales. You\'ll have a clear quote within 48 hours of the strategy call, with no hourly billing and no scope creep. The framing that matters: a VSL converting at 2% instead of 0.5% on the same traffic doesn\'t just pay for itself, it changes the economics of the offer.',
       },
       {
         question: 'How long does it take to write a VSL?',
