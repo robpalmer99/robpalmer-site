@@ -585,7 +585,7 @@ export const services: Service[] = [
         content:
           'Search for a copywriter and you\'ll find thousands of writers who produce clean, professional, pleasant-to-read copy. Run traffic to that copy and you\'ll discover the expensive truth: almost none of it sells. The ad clicks come in, the page reads beautifully, and the conversion rate sits at a fraction of a percent while your ad spend burns.\n\n' +
           'The reason is simple. Most copywriters were trained to write about a product. A direct response copywriter is trained to close a stranger — to take someone from "who is this?" to "take my money" in a single sitting, and to be judged entirely on how often that happens. Different training, different craft, different accountability.\n\n' +
-          'So when you\'re evaluating a <a href="/blog/direct-response-copywriter-for-hire">direct response copywriter for hire</a>, ignore the portfolio prose and ask one question: what did the copy sell, and can they show you the numbers? Writers who have them will tell you. Writers who don\'t will change the subject.',
+          'So when you\'re evaluating a direct response copywriter for hire, ignore the portfolio prose and ask one question: what did the copy sell, and can they show you the numbers? Writers who have them will tell you. Writers who don\'t will change the subject.',
       },
       {
         heading: '40 Years of Numbers I Can Show You',

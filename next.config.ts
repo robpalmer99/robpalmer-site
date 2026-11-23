@@ -215,6 +215,37 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       // Consolidated best-DR listicle — merged into the to-hire post (Phase 4)
+      // Consolidated 2026-11-23: posts Google crawled but would not index, folded into the stronger sibling
+      {
+        source: '/blog/direct-response-copywriting-ai',
+        destination: '/blog/ai-copywriting',
+        permanent: true,
+      },
+      {
+        source: '/blog/copywriting-vs-content-writing',
+        destination: '/blog/copywriter-vs-content-writer-for-sales',
+        permanent: true,
+      },
+      {
+        source: '/blog/copywriting-services',
+        destination: '/blog/professional-copywriter-services',
+        permanent: true,
+      },
+      {
+        source: '/blog/direct-response-copywriter-for-hire',
+        destination: '/services/direct-response-copywriter',
+        permanent: true,
+      },
+      {
+        source: '/blog/direct-response-copywriting-specialist',
+        destination: '/services/direct-response-copywriter',
+        permanent: true,
+      },
+      {
+        source: '/blog/how-to-write-a-sales-letter',
+        destination: '/blog/how-to-write-a-sales-page',
+        permanent: true,
+      },
       {
         source: '/blog/best-direct-response-copywriters-2026',
         destination: '/blog/best-direct-response-copywriter-to-hire',
