@@ -6,7 +6,7 @@ tracking parameters), with utm_content = the OpenAI ad id. Organic ChatGPT
 citations stay as chatgpt.com / ai-assistant and are shown for contrast.
 
 Run on Rob's Mac (needs the GA4 service-account key in ~/.config/claude-seo/):
-  .claude/skills/seo/.venv/bin/python -I scripts/chatgpt_ads_report.py [--since 2026-10-23] [--until today]
+  ~/dev/seo-vault/.venv/bin/python -I scripts/chatgpt_ads_report.py [--since 2026-10-23] [--until today]
 
 Note: Rob's own Thailand test visits on 2026-10-23 carried utm_campaign=verify*; ignore them.
 calendly_click was double-counted before 2026-10-23 (fixed that day),

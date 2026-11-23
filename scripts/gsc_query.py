@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Pull Search Console data for robpalmer.com.
 
-Usage (run with the seo skill venv python):
-  ~/.claude/skills/seo/.venv/bin/python scripts/gsc_query.py                  # top queries + pages, 28d
-  ~/.claude/skills/seo/.venv/bin/python scripts/gsc_query.py --days 90
-  ~/.claude/skills/seo/.venv/bin/python scripts/gsc_query.py --contains "direct response"
-  ~/.claude/skills/seo/.venv/bin/python scripts/gsc_query.py --dimension page # page-level rollup
-  ~/.claude/skills/seo/.venv/bin/python scripts/gsc_query.py --json           # raw JSON out
+Superseded 2026-11-23 by the shared tool, which reads the same data and adds
+true property totals, pagination and junk-term filtering:
+  ~/dev/seo-vault/bin/seo gsc robpalmer-site [--days 90] [--contains "..."] [--dimension page]
+
+This script still runs, with the vault's Python environment:
+  ~/dev/seo-vault/.venv/bin/python scripts/gsc_query.py [--days 90] [--contains "..."] [--dimension page] [--json]
 
 Credentials: service-account JSON at ~/.config/claude-seo/service_account.json
 (path overridable in ~/.config/claude-seo/google-api.json). The service account
