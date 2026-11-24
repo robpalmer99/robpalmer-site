@@ -96,3 +96,32 @@ landing sessions 71, key events 10; outbound clicks to the Drive folder 259.
 Check at +4 weeks (2026-11-18): key events from ChatGPT-landing-on-`/portfolio`
 sessions, and `click` events on `/portfolio` by `linkUrl` (docs.google.com per
 exhibit vs the Drive folder). Smoke: `npm run smoke -- --slice 6`.
+
+### +4-week check, run 2026-11-25
+
+GA4 property 266179141. Post = 2026-10-22 to 2026-11-24 (34 days); pre = the 34 days
+before, 2026-09-18 to 2026-10-21. `calendly_click` was double-counted until 2026-10-23,
+so the pre figure of 8 is about 4 real clicks.
+
+| Sessions landing on `/portfolio` | Pre | Post |
+|---|---|---|
+| All sources: sessions | 74 | 70 |
+| ChatGPT: sessions | 31 | 16 |
+| ChatGPT: engaged sessions | 19 | 11 |
+| ChatGPT: `calendly_click` | 8 raw (about 4) | 1 |
+| Google: sessions / engaged | 17 / 12 | 22 / 8 |
+| All sources: `/call` pageviews | 3 | 2 |
+| All sources: pageviews per session | 2.2 | 1.5 |
+| All sources: `scroll` (90%) events | 20 | 22 |
+
+Outbound clicks on `/portfolio`: Drive folder 78 → 13; the six sample docs 0 → 29
+(Puradrop 8, Coffee Slimmer Pro 8, Supernus 4, email sequence 4, Gluco6 3, Dynamic Brain 2).
+
+Context: ChatGPT sessions site-wide fell 204 → 119 (−42%) over the same windows, so the
+halving on `/portfolio` (−48%) is the referral decline, not the page. Zero
+`calendly_click` events fire on `/portfolio` itself in either window; bookings happen on
+`/call`, and 2 of 70 landing sessions reached it.
+
+Read: the Drive-folder leak is closed and readers open individual samples, as designed.
+No evidence the rebuild raised bookings; 16 ChatGPT sessions is too few to say it lowered
+them. Re-read at the 2026-11-30 monthly review and again at 90 days (2027-01-19).
