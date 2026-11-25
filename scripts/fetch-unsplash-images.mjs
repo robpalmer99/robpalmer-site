@@ -151,7 +151,7 @@ const IMAGE_MAP = {
   "state-of-direct-response-copywriting-2026": "direct response marketing trends",
   "state-of-email-marketing-2026": "email marketing trends analytics",
   "state-of-landing-pages-2026": "landing page design trends",
-  "state-of-vsl-marketing-2026": "video marketing trends",
+  "state-of-vsl-marketing-2027": "video marketing trends",
 
   // --- Swipe file ---
   "swipe-file": "inspiration mood board clips",

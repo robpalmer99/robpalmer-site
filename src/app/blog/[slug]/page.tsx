@@ -26,7 +26,26 @@ import { getRelatedPages } from '@/lib/content-links'
 import { getPublicImageSize } from '@/lib/image-dims'
 import { ShareButtons } from '@/components/ui/ShareButtons'
 
+// Markdown links to other sites open in a new tab, per the site convention
+// for external links. Internal and anchor links render unchanged.
+function MdxLink({ href = '', children, ...rest }: React.ComponentProps<'a'>) {
+  const isExternal = /^https?:\/\//.test(href) && !href.startsWith(SITE_URL)
+  if (!isExternal) {
+    return (
+      <a href={href} {...rest}>
+        {children}
+      </a>
+    )
+  }
+  return (
+    <a href={href} {...rest} target="_blank" rel="noopener noreferrer">
+      {children}
+    </a>
+  )
+}
+
 const mdxComponents = {
+  a: MdxLink,
   DefinitionBox,
   KeyTakeaways,
   FAQSection,
