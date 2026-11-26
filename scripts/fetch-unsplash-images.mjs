@@ -149,7 +149,7 @@ const IMAGE_MAP = {
   // --- State of industry ---
   "state-of-ai-copywriting-2027": "AI future technology",
   "state-of-direct-response-copywriting-2026": "direct response marketing trends",
-  "state-of-email-marketing-2026": "email marketing trends analytics",
+  "state-of-email-marketing-2027": "email marketing trends analytics",
   "state-of-landing-pages-2026": "landing page design trends",
   "state-of-vsl-marketing-2027": "video marketing trends",
 

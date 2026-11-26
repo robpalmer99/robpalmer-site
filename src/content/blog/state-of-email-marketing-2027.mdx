@@ -1,0 +1,202 @@
+---
+title: "The State of Email Marketing in 2027: Inbox AI, Unreliable Opens and Where the Revenue Is"
+description: "Email marketing going into 2027: what Gmail and Apple now do to a marketing email, why open rates can't be trusted, what the mailbox providers require, and where email revenue comes from."
+metaTitle: "State of Email Marketing 2027: What Changed and What Works"
+metaDescription: "Email marketing in 2027: inbox AI summaries, sender rules that now reject mail, open rates you can't trust, flow versus campaign revenue, and the new legal risks."
+date: "2026-11-26"
+updated: "2026-11-26"
+category: "Industry Trends"
+tags: ["email marketing 2027", "email deliverability", "inbox AI", "email copywriting", "email segmentation", "revenue per subscriber"]
+published: true
+heroImage: "/images/blog/state-of-email-marketing-2027.jpg"
+heroAlt: "The state of email marketing in 2027: inbox AI, deliverability rules and revenue per subscriber for direct-response marketers"
+faqs:
+  - question: "Is email marketing still effective in 2027?"
+    answer: "Yes, and it's still the one audience you own. In Sinch Mailgun's 2026 survey of more than 1,200 senders, 60 percent of those who measure the return on promotional email said it was greater than 10 dollars for every dollar spent. The catch is in the same survey: only 46 percent said they can measure that return at all. Email pays best for the businesses that track revenue, not opens."
+  - question: "How has inbox AI changed email marketing?"
+    answer: "The inbox now reads your email before your subscriber does. Gmail rolled out AI Overview summaries to everyone in January 2026 and brought its AI Inbox to paid Workspace users in October 2026. Apple Mail sorts mail into Primary, Transactions, Updates and Promotions. An email has to make its point in the first lines, because a summary or a category label may be all the reader sees before deciding."
+  - question: "What is a good open rate for email marketing in 2027?"
+    answer: "Published benchmarks cluster around 30 percent: Klaviyo reports 31 percent for campaigns and Omnisend about 30. Treat any open rate with suspicion. Apple accounted for 75.84 percent of opens in Litmus's October 2026 data, and opens from Apple's Mail Privacy Protection aren't reliable. My own working benchmark for a well-kept list is 18 to 28 percent, and I judge a program on clicks and revenue."
+  - question: "What is revenue per subscriber and why does it matter?"
+    answer: "Revenue per subscriber is the revenue email produces in a month divided by the number of active subscribers. It matters because it can't be inflated by a privacy feature or a bot. My working numbers for direct-response programs are 3 to 8 dollars per subscriber per month for the best, 50 cents to 1.50 dollars for the average, and under 50 cents for lists that are mostly broadcast."
+  - question: "Do automated flows really make more money than campaigns?"
+    answer: "Per email, by a wide margin. Klaviyo's 2026 benchmarks, drawn from over 183,000 customers, show flows producing nearly 41 percent of email revenue from 5.3 percent of sends. Omnisend's data across more than 27,000 brands puts automated emails at 3.41 dollars per send against 15.5 cents for campaigns. Campaigns still matter for launches and promotions, but the flows are where a business should spend its first copywriting budget."
+  - question: "What do Gmail, Yahoo and Outlook require from senders now?"
+    answer: "If you send around 5,000 or more messages a day, all three expect authenticated mail: SPF, DKIM and a DMARC record. Gmail and Yahoo also require one-click unsubscribe on marketing mail and a spam complaint rate kept under 0.3 percent, and Gmail advises staying below 0.1. Since November 2025 Gmail has been rejecting mail that doesn't comply, and Outlook.com bounces unauthenticated high-volume mail."
+  - question: "Can a misleading subject line get me sued?"
+    answer: "In Washington State, yes. In April 2025 the state's supreme court held that its Commercial Electronic Mail Act prohibits any false or misleading information in a commercial email's subject line. The law firm Ballard Spahr counted 105 lawsuits filed under it in the following year, with statutory penalties of 500 dollars per violation. Federal law has long said the same thing more quietly: the FTC's CAN-SPAM guide tells businesses not to use deceptive subject lines."
+  - question: "Should marketing emails be plain text or designed HTML?"
+    answer: "For direct response I default to plain or lightly formatted emails that read like a message from a person. That's my experience across my own campaigns, and I haven't found a recent independent test that settles it. There's a new practical reason as well: an email that is mostly images gives an AI summary nothing to work with, while a plainly written one summarizes as the point you wanted to make."
+  - question: "How is AI being used in email marketing?"
+    answer: "On both sides of the inbox. Mailbox providers use it to summarize, sort and prioritize. Marketers use it for subject-line variations, first drafts and segmentation. I use it for drafts and variations inside a written method, and I still decide the angle of a sequence and write its opening emails by hand, because the first emails set the voice the rest have to keep."
+  - question: "What should I fix first in my email program?"
+    answer: "Authentication, then flows, then measurement. Get SPF, DKIM and DMARC right so the mail arrives. Write or rewrite the welcome, abandoned cart and post-purchase flows, since they earn the most per send. Then change the number you report from open rate to revenue per subscriber. Campaign copy comes after those three."
+---
+
+<KeyTakeaways>
+- Email still pays: 60 percent of senders who measure it report more than 10 dollars back per dollar spent on promotional email. Fewer than half can measure it
+- The inbox reads your email first. Gmail gave AI summaries to everyone in January 2026, its AI Inbox reached paid Workspace users in October, and Apple Mail sorts marketing into a Promotions category
+- Open rates are close to meaningless. Apple accounted for 75.84 percent of tracked opens in October 2026, and its privacy feature makes those opens unreliable
+- The rules have teeth now. Gmail has been rejecting non-compliant bulk mail since November 2025, and only 42 percent of domains in Valimail's 2026 report enforce DMARC
+- Flows earn the money: nearly 41 percent of email revenue from 5.3 percent of sends in Klaviyo's data
+- Subject lines became a legal risk. A Washington State ruling produced 105 lawsuits in a year over misleading ones
+</KeyTakeaways>
+
+## Where Does Email Marketing Stand Going Into 2027?
+
+Email is still the most profitable channel most direct-response businesses have, and it's harder to see what it's doing than it has ever been.
+
+Sinch Mailgun surveyed more than 1,200 email senders for its 2026 Email Impact Report. As [Mailjet summarized it](https://mailjet.com/blog/marketing/email-in-2026-strong-roi-rising-ai-adoption-and-a-measurement-problem-nobodys-fixing/), "60% of senders who measure ROI for promotional emails say it is greater than $10 for every $1 spent." In the same survey, only "46% of senders say they can measure the ROI of promotional emails." So the channel works, and more than half the people using it can't prove it.
+
+I've been writing direct-response email since the inbox was plain text, as part of 40 years in this business and $523M+ in tracked results across the record. This report covers what changed in the last year, what the published data says, and what I see in my own campaigns. Where a number is mine, I'll say so.
+
+## What Changed Since the 2026 Edition?
+
+I published the first edition in February 2026. Here's what moved.
+
+**Gmail's AI reached everyone.** In January 2026 Google [announced](https://blog.google/products-and-platforms/products/gmail/gmail-is-entering-the-gemini-era/) that "AI Overview conversation summaries are rolling out today for everyone at no cost," and introduced an AI Inbox that "filters out the clutter so you can focus on what's most important." In October 2026 the AI Inbox [reached paid Workspace users](https://workspaceupdates.googleblog.com/2026/10/gmails-ai-inbox-is-rolling-out-to-paid-Workspace-users.html), with a line every B2B sender should note: "There is no admin control for this feature."
+
+**Gmail's sender rules now bite.** Google's [sender guidelines FAQ](https://support.google.com/a/answer/14229414) says: "Starting November 2025, Gmail is ramping up its enforcement on non-compliant traffic." Mail that fails the requirements gets temporary and permanent rejections. A year on, that's the normal state of things.
+
+**Unsubscribing got easier.** Gmail's [Manage subscriptions](https://blog.google/products-and-platforms/products/gmail/new-manage-subscriptions-unsubscribe/) view lists a user's senders, the most frequent first, with one-click unsubscribe beside each. If you mail often and add little, you're now at the top of a list built for leaving.
+
+**Subject lines became a litigation target.** A Washington State ruling in April 2025 set off more than a hundred lawsuits over misleading subject lines. I cover it below.
+
+**The federal subscription rule stalled.** The FTC's click-to-cancel rule was struck down in court in July 2025, and in March 2026 the agency [asked for public comment](https://www.ftc.gov/news-events/news/press-releases/2026/03/ftc-seeks-public-comment-response-advance-notice-proposed-rulemaking-regarding-negative-option) on starting again.
+
+### What I got wrong, and right, last year
+
+I said inbox AI would keep getting more sophisticated and that lazy sending would be punished. That held, and the tools arrived faster than I expected.
+
+I said the copywriting layer would stay human because AI can't manufacture voice. I'd put that differently now. AI drafts a good share of my email copy inside a written method, as I explained in my [State of AI Copywriting](/blog/state-of-ai-copywriting-2027) report. What stays with me is the angle of the sequence and its first emails, which set the voice.
+
+I said revenue per subscriber was the number to watch. Everything that has happened to open tracking since has made that more true.
+
+I described "inbox AI" mostly as a filter that decides where your email lands. That was too narrow. The bigger change is that the inbox now summarizes and ranks what it lets through.
+
+## What Does Inbox AI Do to a Marketing Email?
+
+It reads the email before your subscriber does, and it may show them its own version.
+
+Start with what the providers have said. Gmail summarizes conversations for every user. Its AI Inbox pulls out what it judges important. [Apple Mail](https://support.apple.com/en-hk/104971) "automatically sorts your emails into four categories," Primary, Transactions, Updates and Promotions, and says that "Promotions includes emails from businesses and organizations." Yahoo Mail's [Catch Up](https://www.yahooinc.com/press/yahoo-rolls-out-new-catch-up-feature-to-help-users-tackle-inbox-overload) feature lets users clear unread mail from AI summaries. None of these companies publishes how the ranking works, so everything past this point is my reading and not theirs.
+
+Is it hurting results? The only measurement I've found is from the audience-data company Omeda, [reported by MediaCat](https://mediacat.uk/ai-summaries-are-affecting-email-clicks-according-to-study/amp/). Its report covered 2.03 billion emails sent in the second quarter of 2025. Against the quarter before, open rates rose while unique click-through "fell from 4.35% to 3.93%." Omeda suggested Gmail's summaries could be the cause, and the report is frank that this can't be confirmed. It's one data set, and it's a year old. I'd treat it as a reason to watch your own click rate, not as proof.
+
+Here's how I've changed the way I write for it.
+
+**The first two lines carry the point.** If a summary is built from the email, the email has to state what it's about and why it matters before it does anything else. A long wind-up before the idea gets summarized as nothing.
+
+**One email, one idea.** An email with three offers summarizes as a list. An email with one idea summarizes as that idea.
+
+**The words have to be in the text.** An email that is one large image gives a summary nothing to read.
+
+**The subject line and the opening line agree.** A subject line that teases something the email doesn't deliver looked bad before. Now a machine may put the two side by side.
+
+## Can You Still Trust Open Rates?
+
+No. You can use them as a rough signal within one list over time, and that's all.
+
+Litmus publishes [email client market share](https://www.litmus.com/email-client-market-share) from its tracking data. For October 2026, "calculated from over 1.7 billion opens," Apple accounted for 75.84 percent and Gmail for 17.02 percent. Litmus adds the important caveat itself: opens from people using Apple's Mail Privacy Protection "are not considered reliable opens." Apple's software fetches the email whether or not a person reads it.
+
+The size of the distortion is startling. In its commentary on the UK Data & Marketing Association's 2026 benchmark report, [Validity cites](https://www.validity.com/blog/the-2026-dma-email-benchmark-report-what-the-numbers-really-mean-for-revenue/) data from Zeta Global "showing unique opens of 40 percent against a 'true open' rate, with mailbox provider inflation stripped out, of just 11 percent."
+
+So when a platform tells you 40 percent of your list opened an email, the honest reading is that you don't know. The numbers I report to clients are clicks, orders and revenue per subscriber.
+
+<DefinitionBox term="Revenue Per Subscriber (RPS)">
+The revenue attributed to email in a month, divided by the number of active subscribers. It combines deliverability, engagement and conversion in one figure, and it can't be inflated by a privacy feature that opens emails on a reader's behalf. It answers the question an owner cares about: what is each name on this list worth to the business each month?
+</DefinitionBox>
+
+These are my own working numbers from the direct-response programs I write for and advise, not a published survey:
+
+- **Top programs:** $3 to $8 per subscriber per month. Clean lists, full automation, strong copy and offers that fit.
+- **Average programs:** $0.50 to $1.50. Decent lists run mostly on broadcasts.
+- **Weak programs:** under $0.50. Large, tired lists mailed the same promotion.
+
+## What Do the Mailbox Providers Require Now?
+
+Authenticated mail, an easy way out, and a low complaint rate. Miss them and your mail is refused.
+
+**Gmail.** Google's [sender guidelines](https://support.google.com/a/answer/81126) apply the bulk rules to anyone sending "more than 5,000 messages per day" to Gmail accounts. "Marketing messages and subscribed messages must support one-click unsubscribe." On complaints, Google says to keep reported spam rates "below 0.10% and avoid ever reaching a spam rate of 0.30% or higher."
+
+**Yahoo.** Its [sender best practices](https://senders.yahooinc.com/best-practices/) are short: "Keep your spam rate below 0.3%" and "Honor unsubscribes within 2 days."
+
+**Outlook.com.** Microsoft applies its rules when "you send 5,000 or more email messages to Microsoft consumer email services," and [its support page](https://support.microsoft.com/en-us/outlook/fix-ndr-error-550-5-7-515-in-outlook-com) shows the bounce a non-compliant sender gets: the sending domain "does not meet the required authentication level."
+
+Most businesses aren't fully there. Valimail's [2026 State of DMARC report](https://www.valimail.com/?p=11937) found that "actual enforcement has plateaued at just 42 percent." Many domains have published a DMARC record to tick the box and left it at a setting that doesn't stop anyone forging their address.
+
+I went through this on my own domains in September 2026. I set up SPF, DKIM and DMARC, started at a monitoring-only policy, read the reports for a few weeks to make sure nothing legitimate was failing, and then moved to quarantine. None of it is difficult. In most businesses it's simply a job nobody owns until the bounces start.
+
+One number in those rules deserves a second look. A complaint rate of 0.3 percent is three people in a thousand pressing the spam button. A single badly judged promotion to a cold segment can do that, which is why the oldest advice in email, stop mailing people who never engage, now protects your delivery as well as your pride.
+
+## Where Does Email Revenue Come From?
+
+Mostly from the emails you write once.
+
+Klaviyo's [2026 benchmarks](https://www.klaviyo.com/products/email-marketing/benchmarks), "based on over 183,000 Klaviyo customers," report that campaigns make up 94.7 percent of send volume, yet "flows generate nearly 41% of total email revenue from just 5.3% of sends." Average revenue per recipient from flows is "nearly 18x higher than campaigns." Click rates tell the same story: "1.69% for campaigns and 5.58% for flows."
+
+Omnisend's [benchmark report](https://www.omnisend.com/blog/email-marketing-benchmarks/), covering more than 27,000 brands, found that "automated emails generated $3.41 per email sent in 2025, compared with $0.155 for campaign emails," and that "automated emails converted at 1.49%, while campaign emails converted at 0.08%."
+
+The reason is timing. A flow email arrives because the subscriber just did something: joined, browsed, abandoned a cart, bought, or went quiet. A campaign arrives because it's Tuesday.
+
+That has an obvious consequence for where the writing budget goes. The sequence I wrote for Chatterkick, a social media management platform, was seven emails triggered by what a trial user did and didn't do, and it lifted trial-to-paid conversion by 22 percent. That's seven emails, written once.
+
+For an e-commerce or supplement business the order I'd write them in is: welcome, abandoned cart, post-purchase, replenishment or pre-renewal, and win-back. I've set out each one in [e-commerce email flows](/blog/ecommerce-email-flows), and the SaaS version in [SaaS onboarding sequences](/blog/saas-email-onboarding-sequences).
+
+Campaigns still earn their place for launches, promotions and the regular contact that keeps a list warm. But if your flows are the templates your email platform shipped with, that's the first thing to fix.
+
+## What Kind of Email Copy Is Working?
+
+Copy that sounds like one person writing to another about one thing.
+
+**One angle through the whole sequence.** For Ben Palmer, a ClickBank Platinum vendor, I wrote an email-driven health funnel with every email built on the same angle. It gets 300 percent ROAS. A sequence where each email tries a different argument teaches the reader nothing. A sequence that comes at one belief from seven directions builds it.
+
+**Story over announcement.** In my campaigns, story-driven sequences have lifted revenue per subscriber by 40 to 60 percent over straight promotional ones. That's my working number. The offers were the same. The reader simply had a reason to open the next one.
+
+**A plain format.** I default to emails that look like a message and not a brochure. I haven't found a recent independent test I'd rest that on, so take it as my practice. The summary problem above is a second reason for it.
+
+**Short subject lines that tell the truth.** I keep subject lines to about 40 characters so they survive a phone screen, and I've written up the method in [how to write email subject lines](/blog/how-to-write-email-subject-lines). The truth part used to be good manners. As the next section shows, it's now also a legal matter.
+
+**A real person's name on it.** Mail from a named person, written in that person's voice, gets treated as correspondence by the reader. That's the whole reason the old direct-mail letter was signed.
+
+<ExpertQuote
+  quote="The inbox has always been the most personal place in marketing. Now it has an assistant reading over the subscriber's shoulder. An email that says one clear thing in a human voice gets passed along. An email that's a wall of offers gets summarized as a wall of offers."
+  author="Rob Palmer"
+  title="Direct-Response Copywriter, $523M+ in tracked results"
+/>
+
+If your flows are still the defaults, or your sequence changes its argument with every email, that's the work I do as an [email copywriter](/services/email-copywriter). Send me the sequence before a [strategy call](/call) and I'll tell you where it's losing people.
+
+## What Is Legally Riskier Than It Was a Year Ago?
+
+Subject lines, and anything to do with recurring billing. I'm a copywriter and this isn't legal advice.
+
+**Misleading subject lines.** In April 2025 the Washington Supreme Court ruled, in a case against Old Navy, that the state's Commercial Electronic Mail Act prohibits any false or misleading information in the subject line of a commercial email. The law firm [Ballard Spahr reported](https://www.ballardspahr.com/insights/alerts-and-articles/2026/04/cema-ingly-endless-litigation-brown-v-old-navy-turns-1-year-old) a year later that "a whopping 105 CEMA lawsuits have been filed since Brown was decided in April 2025," seeking "statutory penalties of $500 per violation." Most of the suits have targeted retailers. According to the firm, many concern subject lines about "limited time" or "expiring" sales that were later extended, and others target "free" gifts that turn out to need a purchase. You don't need to be based in Washington to have Washington subscribers.
+
+**The federal baseline.** The FTC's [CAN-SPAM compliance guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) says "each separate email in violation of the CAN-SPAM Act is subject to penalties of up to $53,088." Its rules are the familiar ones: no deceptive subject lines, a working opt-out, and opt-outs honored within 10 business days.
+
+**Subscriptions and auto-ship.** The click-to-cancel rule is gone for now. As [Gibson Dunn put it](https://gibsondunn.com/ftc-restarts-negative-option-rulemaking-after-eighth-circuit-vacatur-enforcement-under-rosca-continues/), "in July 2025, the Eighth Circuit vacated the Click to Cancel Rule," and the FTC "continues to regulate subscription practices through enforcement" under an older law. If your emails sell a subscribe-and-save offer or a free trial that bills later, the terms belong in the email in plain words.
+
+The fake deadline is the common thread. "Last chance" on an offer that returns next week has always cost trust. In one state it now costs $500 a time. I covered the UK regulator's fines for fake countdown timers in my [State of VSL Marketing](/blog/state-of-vsl-marketing-2027) report, and the direction is the same everywhere.
+
+## What Should You Stop Doing?
+
+<ComparisonTable
+  caption="Email Marketing Going Into 2027: What to Keep and What to Drop"
+  headers='["Area", "Keep or start", "Stop"]'
+  rows='[["Measurement", "Clicks, orders and revenue per subscriber", "Reporting open rate as the headline number"],["Authentication", "SPF, DKIM and DMARC moved to enforcement", "A DMARC record left on monitor-only forever"],["Flows", "Welcome, cart, post-purchase and win-back written for your offer", "The default templates from your email platform"],["Campaigns", "One idea per email, stated in the first two lines", "Three offers and a slow wind-up"],["Subject lines", "Short, specific and true", "Deadlines and discounts that are not real"],["List hygiene", "Sunsetting subscribers who never engage", "Mailing the whole list to protect the list size"],["Format", "Plain emails with the words in the text", "One large image with the copy baked in"],["Sequences", "One angle across every email", "A new argument each day"],["Subscriptions", "Billing terms stated plainly in the email", "Terms that live only on the checkout page"]]'
+/>
+
+## Where I'd Start in 2027
+
+In this order.
+
+1. **Make sure the mail arrives.** Authenticate, move DMARC to enforcement, add one-click unsubscribe, and watch the complaint rate.
+2. **Rewrite the flows.** They're a small share of your sends and a large share of your revenue.
+3. **Change the scoreboard.** Revenue per subscriber, month by month.
+4. **Give each sequence one angle.** Then write the emails.
+5. **Clean the list.** A smaller list that reads your email earns more than a big one that doesn't.
+6. **Audit your subject lines** against what the emails deliver.
+
+For who to hire, I keep a sourced list of the [best email copywriters](/blog/best-email-copywriters) with an availability line for each. My own approach is on the [email copywriter](/services/email-copywriter) page, and the foundations are in my guide to [email copywriting](/blog/email-copywriting).
+
+[Book a strategy call](/call) and send me your current flows and your revenue-per-subscriber figure if you have one. I'll tell you which sequence I'd rewrite first and what I'd expect it to do.
