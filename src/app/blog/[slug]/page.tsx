@@ -241,6 +241,18 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   },
                 }}
               />
+              {/* FAQ schema is built from frontmatter. When the post body has no
+                  FAQSection of its own, show the same questions here so the
+                  markup always matches what the reader can see. */}
+              {post.meta.faqs?.length && !post.content.includes('<FAQSection') ? (
+                <FAQSection>
+                  {post.meta.faqs.map((faq) => (
+                    <FAQItem key={faq.question} question={faq.question}>
+                      {faq.answer}
+                    </FAQItem>
+                  ))}
+                </FAQSection>
+              ) : null}
             </div>
 
             {/* Share Banner */}

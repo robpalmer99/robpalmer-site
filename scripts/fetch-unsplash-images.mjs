@@ -147,7 +147,7 @@ const IMAGE_MAP = {
   "vsl-cold-traffic-conversion-case-study": "video conversion analytics",
 
   // --- State of industry ---
-  "state-of-ai-copywriting-2026": "AI future technology",
+  "state-of-ai-copywriting-2027": "AI future technology",
   "state-of-direct-response-copywriting-2026": "direct response marketing trends",
   "state-of-email-marketing-2026": "email marketing trends analytics",
   "state-of-landing-pages-2026": "landing page design trends",
