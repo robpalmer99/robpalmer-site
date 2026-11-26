@@ -272,6 +272,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/state-of-landing-pages-2026',
+        destination: '/blog/state-of-landing-pages-2027',
+        permanent: true,
+      },
+      {
         source: '/blog/state-of-email-marketing-2026',
         destination: '/blog/state-of-email-marketing-2027',
         permanent: true,
