@@ -24,6 +24,13 @@ const eslintConfig = [
       ".firecrawl/**",
     ],
   },
+  {
+    // CommonJS scripts use require() by definition
+    files: ["**/*.cjs"],
+    rules: {
+      "@typescript-eslint/no-require-imports": "off",
+    },
+  },
 ];
 
 export default eslintConfig;
