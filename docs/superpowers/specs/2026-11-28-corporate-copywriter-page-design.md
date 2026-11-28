@@ -1,7 +1,7 @@
 # Corporate copywriter and executive speechwriter pages: design
 
 Date: 2026-11-28
-Status: design approved by Rob in session; revised the same day to add client names, BT detail and a speechwriter page; spec awaiting his review
+Status: design approved by Rob in session; revised the same day to add client names, BT detail and a speechwriter page; approved by Rob 2026-11-28
 
 ## 1. Why
 
@@ -75,7 +75,7 @@ Corporate search demand reaching the site is close to zero today. The page will 
 - **Type:** a sixteenth entry in `src/app/services/_data/services.ts`, using the existing `Service` interface and template. No new layout.
 - **metaTitle:** leads with "Executive Speechwriter".
 - **Reader:** a communications director, chief of staff or executive assistant who needs a speech written for a senior executive, or the executive.
-- **Content, in page order:** hero (speeches for senior executives, written by a direct response writer); client names as on the corporate page; definition of an executive speechwriter; the problem (a speech that reads well on paper and dies in the room, or one that sounds like the communications team and not the speaker); what I write (conference keynotes, internal addresses, shareholder and results speeches, event remarks, subject to Rob confirming the list); how it works (briefing call with the speaker, draft, rehearsal edits); why a persuasion writer (a speech has to move an audience to do something); proof (Gary Lubner plus other testimonials; no speech samples exist to show); FAQ (confidentiality and ghostwriting, turnaround, working with the speaker's own voice, slides, remote briefing); strategy-call CTA.
+- **Content, in page order:** hero (speeches for senior executives, written by a direct response writer); client names as on the corporate page; definition of an executive speechwriter; the problem (a speech that reads well on paper and dies in the room, or one that sounds like the communications team and not the speaker); what I write (conference keynotes first, then internal addresses, shareholder and results speeches, and event remarks; list confirmed by Rob); how it works (briefing call with the speaker, draft, rehearsal edits); why a persuasion writer (a speech has to move an audience to do something); proof (speeches written for Gary Lubner, CEO of Belron International, who may be named, with his testimonial; other speakers described by role only: chief executives, chairmen, and marketing directors or VPs of marketing; no speech samples exist to show); FAQ (confidentiality and ghostwriting, turnaround, working with the speaker's own voice, slides, remote briefing); strategy-call CTA.
 - **Cross-links:** corporate page and speechwriter page link to each other.
 - **Topic check:** speechwriting is a new topic for the site, not a near-duplicate of any of the 53 crawled-not-indexed URLs, so the hold on near-topic pages does not apply.
 
@@ -94,7 +94,7 @@ Corporate search demand reaching the site is close to zero today. The page will 
 - First person ("I", "my", "you") in body copy; third person only in meta, schema and alt text.
 - No own-price figures.
 - The $523M is a career total. The Belron share of it is never published.
-- Nothing states or implies the corporate work is recent. Use "I have written for" and let the names carry it. No dates are attached to the corporate client list, and none are invented. The same applies to speechwriting: no named executives, speeches or events unless Rob supplies them.
+- Nothing states or implies the corporate work is recent. Use "I have written for" and let the names carry it. No dates are attached to the corporate client list, and none are invented. The same applies to speechwriting: Gary Lubner is the only executive named. Other speakers are described by role (CEO, chairman, marketing director or VP of marketing) and are not tied to a named company. No specific speeches or events are described.
 - Scarcity is implied, never stated.
 - No Stefan Georgi / CA Labs lead on this page.
 - Design tokens only (`ink-*`, `gold-*`, `paper-*`), `text-gold-600` for card links, `text-paper-600` for meta text.
@@ -115,7 +115,9 @@ Corporate search demand reaching the site is close to zero today. The page will 
 - **Search:** impressions and position for "corporate copywriter", "corporate copywriting", the two feeder queries, and "executive speechwriter", "speechwriter" and "speech writer for hire", via `seo gsc robpalmer-site`. The speechwriter terms start from zero, so the first measure is whether the page is indexed and gains impressions.
 - **Checkpoint:** 2027-01-27 (60 days). If the pages are indexed and have drawn no corporate booking, decide between a feeder post aimed at "copywriting services vs in-house" and a LinkedIn route. If it has drawn one, scope the sub-pages from approach B.
 
-## 11. Open items for Rob
+## 11. Decisions confirmed by Rob (2026-11-28)
 
-- Spelling check: the spec uses "Reckitt & Colman" (the company's spelling) where Rob typed "Reckitt & Coleman".
-- Speechwriting: which kinds of speech to list, whether any company can be named as a speechwriting client specifically, and whether any executive may be named or described by role.
+- Two pages approved. More pages can follow where the evidence supports them; none are scoped here.
+- "Reckitt & Colman" is the correct spelling.
+- Speech types: all four listed in section 6, with conference keynotes leading.
+- Gary Lubner may be named as a speechwriting client. Other executives are described by role only.
