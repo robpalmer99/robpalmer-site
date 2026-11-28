@@ -26,8 +26,8 @@
 - FadeIn stagger: `delay={index * 80}` (or 100, 150) for cascading reveals
 
 ## Data Architecture
-- Services: `src/app/services/_data/services.ts` (15 items, Service interface)
-- Verticals: `src/app/verticals/_data/verticals.ts` (6 items, Vertical interface)
+- Services: `src/app/services/_data/services.ts` (16 items, Service interface)
+- Verticals: `src/app/verticals/_data/verticals.ts` (7 items, Vertical interface)
 - Portfolio: `src/app/portfolio/_data/portfolio.ts` (12 items)
 - Case Studies: `src/app/case-studies/_data/case-studies.ts` (2 items)
 - Testimonials: `src/content/testimonials.ts` (38 items, IDs '1'-'38')

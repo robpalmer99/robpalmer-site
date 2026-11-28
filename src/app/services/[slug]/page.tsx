@@ -133,6 +133,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
         deliverables={service.deliverables}
         midCtaHeadline={service.midCta?.headline || `Ready to hire a ${service.title.toLowerCase()}?`}
         midCtaSubtext={service.midCta?.subtext || 'Book a free strategy call to discuss your project.'}
+        finalCtaHeadline={service.finalCtaHeadline}
         testimonialIds={service.testimonialIds}
         fadeTestimonialsLink
         portfolioItems={service.portfolioItems}

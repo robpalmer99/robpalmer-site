@@ -51,6 +51,8 @@ export interface Vertical {
     headline: string
     subtext: string
   }
+  /** Closing banner headline; defaults to the direct-response wording. */
+  finalCtaHeadline?: string
   heroCta?: {
     label: string
     href: string
@@ -1156,6 +1158,190 @@ export const verticals: Vertical[] = [
     ],
     relatedServices: ['vsl-copywriter', 'sales-page-copywriter', 'sales-funnel-copywriter', 'email-copywriter'],
     relatedVerticals: ['clickbank-copywriter', 'health-supplement-copywriter'],
+  },
+  {
+    title: 'Corporate Copywriter',
+    slug: 'corporate-copywriter',
+    shortDescription:
+      'Direct response campaigns, AI copywriting for in-house teams and executive speeches for corporate marketing departments. Written for Apple, IBM, BT, Barclays and Vodafone.',
+    metaTitle: 'Corporate and B2B Copywriter for Marketing Teams',
+    metaDescription:
+      'Corporate and B2B copywriter Rob Palmer has written for Apple, IBM, BT, Barclays and Vodafone. Measured campaigns, AI for in-house teams, speeches.',
+    headline: 'A Corporate and B2B Copywriter for Marketing Teams That Report on Results',
+    subheadline:
+      'At least ten teams inside BT hired me, each from its own budget. I\'ve also written for Apple, IBM, Barclays and Vodafone. I write direct response campaigns for corporate marketing departments, set up AI copywriting for in-house teams, and write speeches for senior executives.',
+    heroImage: '/images/industries/corporate.jpg',
+    heroImageAlt: 'Corporate marketing team reviewing campaign results in a bright meeting room',
+    heroStats: {
+      primary: { value: '$523M', label: 'In Tracked Client Results' },
+      secondary: [
+        { value: '13', label: 'Corporate Clients Named Below' },
+        { value: '10+', label: 'BT Teams, Each on Its Own Budget' },
+        { value: '40+', label: 'Years Direct Response' },
+      ],
+    },
+    credentialBar: {
+      heading: 'Corporate copy written for',
+      items: [
+        'Apple',
+        'IBM',
+        'Microsoft',
+        'AT&T',
+        'BT',
+        'Vodafone',
+        'Barclays',
+        'Citibank',
+        'Morgan Stanley',
+        'Belron',
+        'Reckitt & Colman',
+        'Securicor',
+        'Nurdin & Peacock',
+      ],
+    },
+    definition: {
+      term: 'corporate copywriting',
+      text: 'Corporate copywriting is the writing of marketing and communications for large organizations: campaigns, direct mail, email, landing pages and executive speeches. Corporate teams hire a copywriter when they need senior writing skill for a specific project without adding headcount. A direct response corporate copywriter also builds each piece so its results can be measured.',
+    },
+    sections: [
+      {
+        heading: 'Why Good-Looking Campaigns Get Hard to Defend at Budget Time',
+        content:
+          'You run marketing for a department inside a large company. The work your agency delivers is polished, on brand and approved by everyone who needed to approve it. Then finance asks what it sold, and nobody in the room can say.\n\n' +
+          'The campaign report shows impressions and reach. It can\'t show sales, because the campaign was never built to be counted: it made no offer and gave the reader no way to reply.\n\n' +
+          'I write everything as direct response. Each piece carries one offer and one way to respond, so the answer to finance is a count of replies. Wherever your list allows a test, you also learn which version drew more.\n\n' +
+          'There\'s a second pressure now. Your team has been told to use AI, and the drafts sound like every other company\'s. The AI has never been given your own rules: your brand voice, what legal won\'t pass, and the best emails your team has already sent.',
+      },
+      {
+        heading: 'Three Ways Corporate Teams Bring Me In',
+        content:
+          'Most departments start with one of these. Each is a defined piece of work with a fixed scope, so it fits inside a departmental budget.',
+        bullets: [
+          '<strong>A measured campaign.</strong> Direct mail, email or a landing page, written as <a href="/services/direct-response-copywriter">direct response</a>: one offer, one action, and a result you can report upward. Where your list allows it, I write test versions so you finish with a winner and the numbers behind it.',
+          '<strong>AI copywriting for your in-house team.</strong> I install the Claude Code copywriting skills and reference vault I use on my own client work, then train your writers to run them. Your team keeps the system. The detail is on my <a href="/services/ai-copywriting-consultant">AI copywriting consultant</a> page.',
+          '<strong>A speech for a senior executive.</strong> Conference keynotes, results presentations and internal addresses, written to be spoken, with one thing the audience should do afterwards. See <a href="/services/executive-speechwriter">executive speechwriter</a>.',
+        ],
+      },
+      {
+        heading: 'Start With One Project on One Budget',
+        content:
+          'You don\'t need a retainer to work with me. Pick the one piece of work your department has to answer for: a campaign that has to produce leads, a launch email, a keynote, or a pilot of AI drafting with one team.\n\n' +
+          'I scope it on a strategy call and send a fixed-price proposal within 48 hours. The scope, the deliverables and the timeline fit on one page, which is usually what procurement and your finance partner want to see.\n\n' +
+          'If the first project does its job, we talk about a second. If it doesn\'t, you\'ve spent one project\'s budget and nothing more.',
+      },
+      {
+        heading: 'Used to the Way Large Companies Buy',
+        content:
+          'I\'ve worked with corporate clients for most of my career, so the paperwork is familiar. You raise a purchase order and I invoice against it. If procurement needs me set up as a supplier, I fill in the forms. I sign your NDA before you share anything sensitive, and I work to your brand guidelines and your legal sign-off.\n\n' +
+          'I\'m also used to working alongside the agency you already have. They keep brand, design and media, and I write the pieces that have to produce a response. Your team gets a senior writer without a new process to manage.',
+      },
+      {
+        heading: 'Ten BT Teams, Ten Separate Budgets',
+        content:
+          'At least ten teams inside BT hired me for unrelated projects: BT International, BT Corporate Services, BT Research Labs and many of the regional BT marketing departments. Each paid from its own budget.\n\n' +
+          'Most of them reached me the same way. Someone I had written for passed my name to a colleague in another department. That makes ten separate decisions by ten budget holders, and it\'s the reason I\'m happy to start with one small project for you. The second one has to be earned.',
+      },
+      {
+        heading: 'What Happened at Belron and Apple',
+        content:
+          'Belron, the group behind Safelite, brought me in after five copywriters before me had failed. The <a href="/case-studies/belron-safelite-523m-campaign">campaign I wrote</a> ran for nine years. Gary Lubner, CEO of Belron International, told me: <em>"You are our secret weapon. Keep your diary clear, please!"</em>\n\n' +
+          'For Apple UK I wrote a <a href="/case-studies/apple-direct-mail-campaign">direct mail campaign</a> that tested three offers against each other. The winning offer brought in more demand than the dealer network could serve, so the campaign was shut down.\n\n' +
+          'Across my career, the campaigns I have written account for more than <strong>$523M</strong> in tracked results. I have also written for IBM, Microsoft, AT&amp;T, Vodafone, Barclays, Citibank, Morgan Stanley, Reckitt &amp; Colman, Securicor and Nurdin &amp; Peacock.',
+      },
+    ],
+    caseStudies: [
+      {
+        name: 'Belron / Safelite',
+        category: 'Direct Response Campaign',
+        metric: '9 Years',
+        detail: 'A campaign that ran for nine years, written after five previous copywriters had failed. "You are our secret weapon." Gary Lubner, CEO, Belron International.',
+      },
+      {
+        name: 'Apple Computer UK',
+        category: 'Direct Mail',
+        metric: '3 Offers Tested',
+        detail: 'Three offers tested head to head. The winner brought in more demand than the dealer network could serve.',
+      },
+      {
+        name: 'BT',
+        category: 'Multi-Department Engagement',
+        metric: '10+ Teams',
+        detail: 'BT International, BT Corporate Services, BT Research Labs and regional marketing departments, each on its own budget.',
+      },
+    ],
+    deliverables: [
+      { title: 'Direct Mail Campaigns', description: 'Letters and mail packs with one offer and one reply route, so response can be counted and the next mailing improved.' },
+      { title: 'Email Campaigns and Sequences', description: 'Launch emails, lead-nurture sequences and customer campaigns, each written around a single action.' },
+      { title: 'Landing Pages', description: 'Campaign pages that carry the message from the ad or the mailing through to the enquiry or the sale.' },
+      { title: 'AI Copywriting Systems', description: 'Claude Code copywriting skills and a reference library installed in your team\'s workflow, built around your brand rules and best past work.' },
+      { title: 'AI Training for In-House Writers', description: 'Working sessions that show your writers how to brief, draft and review with AI so the output sounds like your company.' },
+      { title: 'Executive Speeches', description: 'Conference keynotes, results speeches and internal addresses for chief executives, chairmen and marketing leaders.' },
+    ],
+    deliverablesHeading: 'What Corporate Teams Hire Me to Write',
+    deliverablesSubtext:
+      'Each one is scoped as its own project, with a fixed price agreed before any work starts.',
+    testimonialIds: ['1', '11', '26', '22', '33', '27'],
+    portfolioItems: [],
+    heroCta: { label: 'Discuss a first project', href: '/call' },
+    finalCtaHeadline: 'Ready to scope a first project?',
+    midCta: {
+      headline: 'Have one project that needs to show a result?',
+      subtext:
+        'Book a free strategy call. Bring the brief, the last campaign that disappointed you, or your team\'s current AI workflow. I\'ll tell you what I would change and whether I am the right person to do it.',
+    },
+    faqs: [
+      {
+        question: 'What does a corporate copywriter do?',
+        answer:
+          'A corporate copywriter writes the marketing and communications a large company sends to customers, staff and shareholders: campaigns, emails, landing pages, direct mail and speeches. I come at it from direct response, so every piece I write asks the reader to do one specific thing and is built so you can count how many did.',
+      },
+      {
+        question: 'What does a first project look like?',
+        answer:
+          'One deliverable with a clear job: a mailing, an email campaign, a landing page, a speech, or an AI pilot with one team. We scope it on a strategy call, I send a fixed-price proposal within 48 hours, and once you approve it I take a briefing, write the draft and revise it with you.',
+      },
+      {
+        question: 'How do purchase orders and invoicing work?',
+        answer:
+          'I quote a fixed price for a defined scope. Once you approve the proposal, raise a purchase order in your usual way and I invoice against it. If your company needs me set up as a supplier first, send me the forms after the strategy call and I\'ll complete them.',
+      },
+      {
+        question: 'Will you sign our NDA?',
+        answer:
+          'Yes. Most corporate work is confidential, and a good deal of what I have written has never carried my name. Send your standard agreement before the briefing and I\'ll sign it before you share anything sensitive.',
+      },
+      {
+        question: 'Can you work alongside our agency?',
+        answer:
+          'Yes. I write the response-driven pieces and your agency keeps brand, design and media. I work to your brand guidelines and hand over copy your designers can take straight into layout. I don\'t need to own the account.',
+      },
+      {
+        question: 'How is the AI copywriting work delivered to our team?',
+        answer:
+          'In four stages: an audit of how your team writes now, installation of the copywriting skill files in your environment, a reference library built from your brand rules and your best past work, and training sessions with your writers. Your team owns everything I install.',
+      },
+      {
+        question: 'Will the AI work fit inside our IT and security rules?',
+        answer:
+          'Tell me before the audit which AI tools your company has approved. I build around those and nothing else, and I don\'t ask your team to put customer data or confidential documents into any tool your IT department hasn\'t cleared.',
+      },
+      {
+        question: 'Do you write speeches for executives?',
+        answer:
+          'Yes. I write conference keynotes, results speeches, internal addresses and event remarks for chief executives, chairmen and marketing leaders. The work is ghostwritten and confidential. There is more on my <a href="/services/executive-speechwriter">executive speechwriter</a> page.',
+      },
+      {
+        question: 'How do we work across time zones?',
+        answer:
+          'I work with teams in the United States, the UK and Europe and take calls during your working day. Drafts and revisions move by email and shared documents, so most projects need a briefing call and a review call and little else.',
+      },
+      {
+        question: 'Are you taking new corporate clients?',
+        answer:
+          'I take a limited number of new engagements each quarter so that I write every project myself. Most start within two weeks of the strategy call. If your date is fixed, tell me on the call and I\'ll say straight away whether I can meet it.',
+      },
+    ],
+    relatedServices: ['executive-speechwriter', 'ai-copywriting-consultant', 'ai-marketing-consultant', 'direct-response-copywriter'],
+    relatedVerticals: ['financial-copywriter', 'saas-copywriter'],
   },
 ]
 

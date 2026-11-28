@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Container } from '@/components/ui/Container'
 import { FadeIn } from '@/components/ui/FadeIn'
 import { FORTUNE_500_CLIENTS } from '@/lib/constants'
@@ -56,6 +57,18 @@ export function ClientLogoBar({ variant = 'dark', className }: ClientLogoBarProp
             </FadeIn>
           ))}
         </div>
+
+        <p className="mt-6 text-center">
+          <Link
+            href="/verticals/corporate-copywriter"
+            className={cn(
+              'text-sm font-heading font-semibold transition-colors',
+              variant === 'dark' ? 'text-gold-400 hover:text-gold-500' : 'text-gold-600 hover:text-gold-500'
+            )}
+          >
+            Copywriting for corporate teams &rarr;
+          </Link>
+        </p>
 
         {/* Divider */}
         <div

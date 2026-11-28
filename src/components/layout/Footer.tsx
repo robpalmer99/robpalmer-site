@@ -56,6 +56,22 @@ export function Footer() {
               )}
               <li>
                 <Link
+                  href="/verticals/corporate-copywriter"
+                  className="text-sm text-paper-400 hover:text-gold-400 transition-colors"
+                >
+                  Corporate Copywriting
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/executive-speechwriter"
+                  className="text-sm text-paper-400 hover:text-gold-400 transition-colors"
+                >
+                  Executive Speechwriting
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/tools"
                   className="text-sm text-paper-400 hover:text-gold-400 transition-colors"
                 >

@@ -94,7 +94,7 @@ const homepageFaqs = [
 // one consultancy card is enough on the home grid.
 const homepageServices = [
   ...services.filter((s) => s.tier === 'strategy' && s.slug !== 'ai-copywriting-consultant'),
-  ...services.filter((s) => s.tier === 'production'),
+  ...services.filter((s) => s.tier === 'production' && s.slug !== 'executive-speechwriter'),
 ].slice(0, 6)
 
 const homepageFaqJsonLd = {

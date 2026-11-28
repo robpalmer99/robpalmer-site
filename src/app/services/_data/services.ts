@@ -57,6 +57,8 @@ export interface Service {
     headline: string
     subtext: string
   }
+  /** Closing banner headline; defaults to the direct-response wording. */
+  finalCtaHeadline?: string
 }
 
 export const services: Service[] = [
@@ -2414,6 +2416,12 @@ export const services: Service[] = [
           'Vertical calibration \u2014 ClickBank, supplement, financial, DTC, SaaS, info-product, coaching',
         ],
       },
+      {
+        heading: 'For In-House Marketing Teams at Larger Companies',
+        content:
+          'The same installation works inside a corporate marketing department. The difference is where it starts. I begin with one team and one kind of copy, such as campaign emails or product pages, and build the skill files around your brand rules, your legal constraints and the best work that team has already produced.\n\n' +
+          'Once those writers are getting drafts they would put their name to, the setup can be copied to the next team. If you run marketing inside a large organization and want AI drafting that sounds like your company, start with my <a href="/verticals/corporate-copywriter">corporate copywriter</a> page.',
+      },
     ],
     caseStudies: [
       {
@@ -2529,7 +2537,7 @@ export const services: Service[] = [
       },
     ],
     relatedServices: ['creative-strategist', 'ai-marketing-consultant', 'vsl-copywriter'],
-    relatedVerticals: ['saas-copywriter', 'info-product-copywriter'],
+    relatedVerticals: ['corporate-copywriter', 'saas-copywriter', 'info-product-copywriter'],
   },
   {
     title: 'AI Marketing Consultant',
@@ -2611,6 +2619,12 @@ export const services: Service[] = [
           'Info products and coaching businesses \u2014 launch sequences plus the daily broadcast streams that feed them',
           'Marketing agencies \u2014 team training plus system templates the agency can run for multiple clients',
         ],
+      },
+      {
+        heading: 'For In-House Marketing Teams at Larger Companies',
+        content:
+          'If your marketing department already has AI licenses, the question to ask is which campaign did better because of them.\n\n' +
+          'I pick one workflow with a number attached, such as lead-nurture emails or campaign landing pages, rebuild it with your team, and measure it against the way you did it before. My <a href="/verticals/corporate-copywriter">corporate copywriter</a> page explains how a first project is scoped and approved.',
       },
     ],
     caseStudies: [
@@ -2727,7 +2741,7 @@ export const services: Service[] = [
       },
     ],
     relatedServices: ['creative-strategist', 'ai-copywriting-consultant', 'sales-funnel-copywriter'],
-    relatedVerticals: ['ecommerce-dtc-copywriter', 'saas-copywriter'],
+    relatedVerticals: ['corporate-copywriter', 'ecommerce-dtc-copywriter', 'saas-copywriter'],
   },
   {
     title: 'Conversion Rate Optimization',
@@ -2928,6 +2942,158 @@ export const services: Service[] = [
     ],
     relatedServices: ['creative-strategist', 'sales-funnel-copywriter', 'landing-page-copywriter'],
     relatedVerticals: ['ecommerce-dtc-copywriter', 'clickbank-copywriter'],
+  },
+  {
+    title: 'Executive Speechwriter',
+    slug: 'executive-speechwriter',
+    tier: 'production',
+    schemaServiceType: 'Speechwriting',
+    shortDescription:
+      'Conference keynotes, results speeches and internal addresses for chief executives, chairmen and marketing leaders. Written for the ear, in the speaker\'s own voice.',
+    metaTitle: 'Executive Speech Writer for Hire | Keynotes and Speeches',
+    metaDescription:
+      'Executive speech writer for hire. Rob Palmer writes conference keynotes, results speeches and internal addresses for CEOs, chairmen and marketing leaders.',
+    headline: 'Executive Speech Writer for Conference Keynotes and Corporate Speeches',
+    subheadline:
+      'I write speeches for chief executives, chairmen and marketing leaders, including the CEO of Belron International. Conference keynotes are most of what I write. Each speech is written in the speaker\'s voice, for the ear, with one thing the audience should do when it ends.',
+    heroImage: '/images/services/executive-speechwriter.jpg',
+    heroImageAlt: 'Executive delivering a keynote speech from a lectern at a conference',
+    heroStats: {
+      primary: { value: '40+', label: 'Years Writing to Persuade' },
+      secondary: [
+        { value: 'C-Suite', label: 'CEOs, Chairmen and Marketing Directors' },
+        { value: '$523M', label: 'In Tracked Client Results' },
+        { value: '13', label: 'Corporate Clients Named Below' },
+      ],
+    },
+    credentialBar: {
+      heading: 'Corporate clients include',
+      items: [
+        'Apple',
+        'IBM',
+        'Microsoft',
+        'AT&T',
+        'BT',
+        'Vodafone',
+        'Barclays',
+        'Citibank',
+        'Morgan Stanley',
+        'Belron',
+        'Reckitt & Colman',
+        'Securicor',
+        'Nurdin & Peacock',
+      ],
+    },
+    definition: {
+      term: 'executive speechwriting',
+      text: 'Executive speechwriting is the writing of speeches for senior leaders to deliver as their own: conference keynotes, shareholder and results presentations, internal addresses and event remarks. Companies hire a speechwriter when a speech matters too much to leave to a slide deck and the speaker has no time to write it. The work is ghostwritten and confidential.',
+    },
+    sections: [
+      {
+        heading: 'Why Speeches That Read Well Often Fall Flat on Stage',
+        content:
+          'A speech often reaches the lectern by committee. One department drafts it, others add paragraphs, and the speaker meets it close to the day. It reads well on paper. On stage it sounds like a document being read aloud.\n\n' +
+          'The sentences are too long to say in one breath, and the argument is buried under acknowledgements. Nothing in it sounds like the person speaking, so the speaker never looks up from the page.\n\n' +
+          'A speech is written for the ear and for one voice. Short sentences. One idea at a time. Repetition where a reader would not need it and a listener does. And a clear answer to the question every audience brings into the room: what do you want from me?',
+      },
+      {
+        heading: 'The Speeches I Write',
+        content: 'Most executive speechwriting falls into four kinds.',
+        bullets: [
+          '<strong>Conference keynotes.</strong> The speech that sets out where the company, or the industry, is going, in front of customers, peers and press. A keynote has the most to gain from a good script and the most to lose from an average one.',
+          '<strong>Internal addresses.</strong> Sales conferences, all-hands meetings and announcements of change, where the job is to get your own people to believe something and act on it.',
+          '<strong>Shareholder and results speeches.</strong> Annual meetings and results presentations, where every figure has to be right and the story around the figures has to hold.',
+          '<strong>Event remarks.</strong> Openings, awards, dinners and launches, where a few minutes leave no room for filler.',
+        ],
+      },
+      {
+        heading: 'How a Speech Gets Written',
+        content: 'The process is short, and it depends on time with the speaker.',
+        bullets: [
+          '<strong>Briefing.</strong> A conversation with the speaker, not only with their office. I need to hear how they talk, what they believe about the subject and what they want the audience to do.',
+          '<strong>Outline.</strong> One page setting out the argument, the opening, the close and the stories that will carry it. Agreeing this first saves rewrites later.',
+          '<strong>Draft.</strong> The full script, written for speaking and timed to the slot, in the speaker\'s own vocabulary and rhythm.',
+          '<strong>Rehearsal edits.</strong> Once the speaker has read it aloud, I change whatever does not sit comfortably when they say it.',
+          '<strong>Slides, if you want them.</strong> I can design the deck to follow the finished script, so you get the speech and the presentation as one done-for-you job.',
+        ],
+      },
+      {
+        heading: 'Why Hire a Direct Response Writer for a Speech',
+        content:
+          'Most of my career has been spent on copy that is judged by what people did after reading it. A speech is the same problem with a live audience. People leave the room and back the plan, place the order or stay with the company. Or they don\'t.\n\n' +
+          'So I write a speech the way I write a sales letter. I open on something the audience already cares about, make one argument, back it with proof they can check, answer the objection they\'re already forming, and finish by asking for one specific action.\n\n' +
+          'I bring the same approach to my <a href="/verticals/corporate-copywriter">corporate copywriting</a>.',
+      },
+      {
+        heading: 'Who I Have Written Speeches For',
+        content:
+          'I wrote speeches for Gary Lubner, CEO of Belron International, the group behind Safelite. He said of my work for the group: <em>"You are our secret weapon. Keep your diary clear, please!"</em>\n\n' +
+          'Other speakers have been chief executives, chairmen, marketing directors and vice presidents of marketing at large companies. I don\'t name them or publish their speeches. A speech belongs to the person who delivers it, and the arrangement only works if the writer stays out of sight.\n\n' +
+          'My corporate clients have included Apple, IBM, Microsoft, AT&amp;T, BT, Vodafone, Barclays, Citibank, Morgan Stanley, Reckitt &amp; Colman, Securicor and Nurdin &amp; Peacock.',
+      },
+    ],
+    deliverables: [
+      { title: 'Speaker Briefing', description: 'A call with the speaker to capture their voice, their view of the subject and what they want from the audience.' },
+      { title: 'One-Page Outline', description: 'The argument, the opening, the close and the supporting stories, agreed before the full draft is written.' },
+      { title: 'Full Script', description: 'The complete speech, written for the ear and timed to the slot.' },
+      { title: 'Rehearsal Revisions', description: 'Changes made after the speaker has read the speech aloud, so the final version sounds like them.' },
+      { title: 'Slides (Optional)', description: 'The deck designed to follow the script, for a complete done-for-you speech and presentation.' },
+    ],
+    deliverablesHeading: 'What You Get',
+    deliverablesSubtext:
+      'A speech the speaker can deliver as their own, with the slides to go with it if you want the whole job done for you.',
+    testimonialIds: ['1', '11', '13', '27'],
+    portfolioItems: [],
+    finalCtaHeadline: 'Ready to talk about the speech?',
+    midCta: {
+      headline: 'Have a keynote coming up?',
+      subtext:
+        'Book a free strategy call. Tell me the event, the audience and the date, and what the speaker wants people to do afterwards. I\'ll tell you how I would approach it and whether I can meet the date.',
+    },
+    faqs: [
+      {
+        question: 'What does an executive speech writer do?',
+        answer:
+          'An executive speech writer (or speechwriter) writes a speech for a senior leader to deliver as their own. That means learning how the speaker talks, working out the one argument the speech should make, writing it for the ear, and revising it once the speaker has rehearsed. The writer stays anonymous.',
+      },
+      {
+        question: 'What kinds of speech do you write?',
+        answer:
+          'Conference keynotes above all, along with internal addresses such as sales conferences and all-hands meetings, shareholder and results speeches, and shorter event remarks for openings, awards and launches.',
+      },
+      {
+        question: 'Is the work confidential?',
+        answer:
+          'Yes. Speeches are ghostwritten, and I don\'t name speakers or publish their speeches without permission. I will sign your NDA before the briefing, and anything shared for the speech is used for the speech only.',
+      },
+      {
+        question: 'How do you capture the speaker\'s own voice?',
+        answer:
+          'By listening before I write. On the briefing call I pay as much attention to how the speaker talks as to what they say: the words they reach for, how long their sentences run and how they tell a story.',
+      },
+      {
+        question: 'How far ahead of the event should we start?',
+        answer:
+          'As early as you can, mainly because of the speaker\'s diary. The briefing and the rehearsal read-through both need their time. Tell me the date on the strategy call and I\'ll say whether I can do the speech justice in the time available.',
+      },
+      {
+        question: 'Do you design the slides as well?',
+        answer:
+          'Yes, if you want them. I can write the script on its own, or deliver the speech and the slides together as a done-for-you package, so the speaker gets one finished presentation from one person. Either way the script comes first, because a deck built before the speech tends to become the speech.',
+      },
+      {
+        question: 'Can you brief the speaker remotely?',
+        answer:
+          'Yes. Briefings and rehearsal read-throughs work well on a video call, and I take them during the speaker\'s working day in the United States, the UK or Europe.',
+      },
+      {
+        question: 'What happens after the strategy call?',
+        answer:
+          'Within 48 hours you will have a fixed-price proposal covering the speech, the timeline and the revision rounds. Once you approve it, we book the briefing with the speaker and I start on the outline.',
+      },
+    ],
+    relatedServices: ['ai-copywriting-consultant', 'direct-response-copywriter', 'email-copywriter'],
+    relatedVerticals: ['corporate-copywriter', 'financial-copywriter'],
   },
 ]
 

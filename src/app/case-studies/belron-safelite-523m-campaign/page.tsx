@@ -238,6 +238,13 @@ export default function BelronCaseStudyPage() {
                 >
                   Sales Funnel Copywriting →
                 </Link>
+                <span className="text-paper-300">|</span>
+                <Link
+                  href="/verticals/corporate-copywriter"
+                  className="text-sm font-heading font-semibold text-gold-600 hover:text-gold-700 transition-colors"
+                >
+                  Corporate Copywriting →
+                </Link>
               </div>
             </div>
           </article>

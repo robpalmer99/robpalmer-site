@@ -65,11 +65,15 @@ const categoryToServices: Record<string, string[]> = {
 }
 
 const categoryToVerticals: Record<string, string[]> = {
+  'Hiring & Strategy': [
+    'corporate-copywriter',
+  ],
   'Direct Response Formats': [
     'health-supplement-copywriter',
     'clickbank-copywriter',
   ],
   'Industry Guides': [
+    'corporate-copywriter',
     'health-supplement-copywriter',
     'financial-copywriter',
     'ecommerce-dtc-copywriter',
@@ -237,6 +241,11 @@ const tagToService: Record<string, string> = {
 }
 
 const tagToVertical: Record<string, string> = {
+  // Corporate / in-house buyers.
+  'b2b copywriting': 'corporate-copywriter',
+  'b2b marketing': 'corporate-copywriter',
+  'in-house copywriter': 'corporate-copywriter',
+  'marketing team': 'corporate-copywriter',
   // Creative-strategist cluster targets DTC brands — surface that vertical.
   'performance creative': 'ecommerce-dtc-copywriter',
   health: 'health-supplement-copywriter',

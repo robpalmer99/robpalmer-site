@@ -48,6 +48,8 @@ export interface DetailPageLayoutProps {
   // CTAs (defaults resolved by the route)
   midCtaHeadline: string
   midCtaSubtext: string
+  /** Overrides the closing banner headline (default: "Ready to beat your control?"). */
+  finalCtaHeadline?: string
   // Social proof
   testimonialIds: string[]
   /** Services wrap the "Read all testimonials" link in FadeIn; verticals don't. */
@@ -88,6 +90,7 @@ export function DetailPageLayout({
   deliverables,
   midCtaHeadline,
   midCtaSubtext,
+  finalCtaHeadline,
   testimonialIds,
   fadeTestimonialsLink = false,
   portfolioItems,
@@ -537,7 +540,7 @@ export function DetailPageLayout({
       )}
 
       <CTABanner
-        headline="Ready to beat your control?"
+        headline={finalCtaHeadline ?? 'Ready to beat your control?'}
         subtext="Book a free strategy call — 30 minutes, straight answers, and a clear next step."
         buttonText="Book a Strategy Call"
         buttonHref="/call"

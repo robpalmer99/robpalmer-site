@@ -7,13 +7,13 @@
  */
 
 export const STATIC_UPDATED: Record<string, string> = {
-  '': '2026-10-19',
+  '': '2026-11-28',
   '/about': '2026-10-19',
   '/services': '2026-11-10',
   '/verticals': '2026-03-01',
   '/case-studies': '2026-06-11',
-  '/case-studies/belron-safelite-523m-campaign': '2026-06-12',
-  '/case-studies/apple-direct-mail-campaign': '2026-06-12',
+  '/case-studies/belron-safelite-523m-campaign': '2026-11-28',
+  '/case-studies/apple-direct-mail-campaign': '2026-11-28',
   '/testimonials': '2026-03-12',
   '/portfolio': '2026-10-21',
   '/blog': '2026-06-12',
@@ -35,13 +35,16 @@ const SERVICE_UPDATED: Record<string, string> = {
   'google-ads-management': '2026-11-12',
   'vsl-copywriter': '2026-11-10',
   'direct-response-copywriter': '2026-10-09',
-  'ai-marketing-consultant': '2026-10-19',
+  'ai-marketing-consultant': '2026-11-28',
+  'ai-copywriting-consultant': '2026-11-28',
+  'executive-speechwriter': '2026-11-28',
   'conversion-rate-optimization': '2026-09-22',
 }
 
 // verticals.ts: all entries last touched 2026-06-11 (hero CTA change).
 const VERTICAL_UPDATED_DEFAULT = '2026-06-11'
 const VERTICAL_UPDATED: Record<string, string> = {
+  'corporate-copywriter': '2026-11-28',
   'info-product-copywriter': '2026-10-19',
   'saas-copywriter': '2026-10-19',
   'clickbank-copywriter': '2026-10-19',

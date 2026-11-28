@@ -119,6 +119,7 @@ export default async function VerticalPage({ params }: VerticalPageProps) {
         deliverables={vertical.deliverables}
         midCtaHeadline={vertical.midCta?.headline || `Ready to scale your ${vertical.title.toLowerCase().replace(' copywriter', '')} campaigns?`}
         midCtaSubtext={vertical.midCta?.subtext || 'Book a free strategy call to discuss your project.'}
+        finalCtaHeadline={vertical.finalCtaHeadline}
         testimonialIds={vertical.testimonialIds}
         portfolioItems={vertical.portfolioItems}
         faqs={vertical.faqs}

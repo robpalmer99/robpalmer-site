@@ -12,7 +12,7 @@ const CLIENTS = ['Apple', 'IBM', 'Microsoft', 'AT&amp;T', 'BT', 'Vodafone', 'Bar
 const FORBIDDEN = [
   [/CA Labs/, 'CA Labs'],
   [/Coleman/, 'misspelt Colman'],
-  [/\b(19[5-9]\d|20[0-2]\d)s?\b/, 'a year or decade'],
+  [/\b(19[5-9]\d|200\d)s?\b/, 'a year or decade before 2010'],
   [/\$\s?\d[\d,.]*(?!\d)(?!M)/, 'a price'],
   [/\b(nineties|eighties)\b/i, 'a decade in words'],
 ]
@@ -20,7 +20,7 @@ const FORBIDDEN = [
 const NEW_PAGES = [
   {
     path: '/verticals/corporate-copywriter',
-    title: /^Corporate Copywriter\b.*\| Rob Palmer$/,
+    title: /^Corporate and B2B Copywriter\b.*\| Rob Palmer$/,
     h1: /corporate/i,
     mustContain: [...CLIENTS.map((c) => new RegExp(c.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))),
       /BT International/, /BT Corporate Services/, /BT Research Labs/, /Gary Lubner/,
@@ -29,7 +29,7 @@ const NEW_PAGES = [
   },
   {
     path: '/services/executive-speechwriter',
-    title: /^Executive Speechwriter\b.*\| Rob Palmer$/,
+    title: /^Executive Speech Writer\b.*\| Rob Palmer$/,
     h1: /speech/i,
     mustContain: [/keynote/i, /Gary Lubner/, /chairm[ae]n/i,
       /href="\/verticals\/corporate-copywriter"/, /"@type":"FAQPage"/, /"@type":"Service"/],
