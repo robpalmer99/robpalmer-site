@@ -65,7 +65,7 @@ Corporate search demand reaching the site is close to zero today. The page will 
 | Proof | `caseStudies`, `testimonialIds` | Belron/Safelite and Apple UK case studies; Gary Lubner (id 1) plus three or four others chosen from the 38. |
 | Mid CTA | `midCta` | Strategy call. |
 | FAQ | `faqs` | Purchase orders and invoicing, NDAs, working alongside the company's agency, time zones, what a first project looks like, how the AI work is delivered. |
-| Related | `relatedServices`, `relatedVerticals` | speechwriter, ai-copywriting-consultant, ai-marketing-consultant, direct-response-copywriter, email-copywriter; financial-copywriter, saas-copywriter. |
+| Related | `relatedServices`, `relatedVerticals` | executive-speechwriter, ai-copywriting-consultant, ai-marketing-consultant, direct-response-copywriter, email-copywriter; financial-copywriter, saas-copywriter. |
 
 `portfolioItems` lists the Apple UK and Belron work only. A hero image is generated to the existing vertical hero spec (gpt_image.py, 1200x800 jpg, bright and high-key).
 
